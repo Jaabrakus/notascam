@@ -1,0 +1,380 @@
+<canvas id="world3d" aria-label="3D view of the world"></canvas><div id="food3d" aria-hidden="true"></div><div id="say3d" aria-hidden="true"></div><div id="tag3d" hidden></div><div id="build3d" hidden></div><div id="useon3d" hidden></div><div id="lockbar" class="ovonly" hidden><span id="lockname"></span><button id="lockoff" type="button" data-do="lockcam" data-value="">Unlock</button></div><div id="box3d" hidden></div><div id="hoverbar" class="ovonly" hidden></div><section id="settings" class="ovonly" hidden aria-label="Settings"><b>Settings</b><div id="setGuest" hidden><p class="hint">Playing as a guest: nothing you build is kept.</p><button type="button" onclick="rmGuestSignUp()">Link your account to keep this village</button></div><label>Difficulty <select id="setDiff"><option value="peaceful">Peaceful: no armies</option><option value="normal">Normal: a raid each season</option><option value="brutal">Brutal: bigger raids, twice a season</option></select></label><p class="hint" id="setDiffHint"></p><label id="setFogRow"><input type="checkbox" id="setFog"> Fog of war: you see only round your people and buildings (a world setting, the host's)</label><label>HUD size <select id="setScale"><option value="auto">Auto: fits the window</option><option value="0.9">Small</option><option value="1">Normal</option><option value="1.15">Large</option><option value="1.3">Extra large</option></select></label><label><input type="checkbox" id="setCB"> Colour-blind friendly colours</label><label>3D look <select id="setLook"><option value="hd2d">3D world, 2D sprites for units</option><option value="models">3D world and 3D unit models</option><option value="flat">Original flat sprites</option></select></label><label><input type="checkbox" id="setXP"> Show XP pop-ups over the map (level-ups are always in Village › Log › Skills)</label><label>Health <select id="setHp"><option value="ring">on the ring under each unit</option><option value="bars">as bars over their heads</option><option value="off" title="No health bars or rings over any unit, the selected included; the unit card still shows health">off (none over any unit)</option></select></label><p class="hint">Keys: the Guide (F3) lists every shortcut under Shortcuts. Ctrl+Z undoes the last plan or order.</p><button type="button" id="setBug" hidden title="Report a bug&#10;Tell the admins what went wrong. The game can add where you are and what your selected units were doing.">Report a bug</button><button id="setClose">Close</button></section><section id="daycard" class="ovonly" hidden aria-label="Daily summary"></section><section id="awaycard" class="ovonly" hidden aria-label="While you were away"></section><section id="guestbar" class="ovonly" hidden aria-label="Playing as a guest"></section><section id="worldmap" class="ovonly" hidden aria-label="World map"><header><b>World map</b><span id="wmLayers"></span><button id="wmClose" aria-label="Close the world map">×</button></header><canvas id="wmCanvas" width="1000" height="1000"></canvas><p class="hint" id="wmHint">Explored land only. Click a spot to move the camera there.</p><p class="wmlegend" aria-hidden="true"><span><i class="lg-u"></i>your people</span><span><i class="lg-s"></i>stockpile</span><span><i class="lg-c"></i>camera view</span></p></section><div id="marks3d" aria-hidden="true"></div><div id="menu3d" role="menu" hidden></div><section id="usecard" class="ovonly" role="dialog" aria-label="Interact" hidden></section><section id="askcard" class="ovonly" role="dialog" aria-modal="true" aria-label="Question" hidden></section><section id="questcard" class="ovonly" role="dialog" aria-label="Notice" hidden></section><aside id="questtrack" class="ovonly" aria-label="Quests" hidden></aside><section id="startcard" class="ovonly" role="dialog" aria-label="Begin" hidden><div class="sc-eyebrow">A Dungeon Master Tale</div><h2>Banners of the Deep</h2><p>A new land lies before you. Choose the people you will lead: each begins with its own tools and strengths, and the rest is up to you.</p><button class="sc-go" data-do="action" data-value="race">Choose your people</button></section><button id="goaltrack" class="ovonly" data-do="tab" data-value="guide" title="Your next goal. Click for the Guide (F3)." hidden><span>Next goal</span><b></b><small></small></button>
+<div id="topbar" class="ovonly"><span class="res datebox"><img class="ic" data-icon="daynight-sun" alt=""><span id="tbDate"></span></span><span class="res" title="Units in your company"><img class="ic" data-icon="area" alt=""><b id="tbUnits">0</b><small>people</small></span><span class="res" title="Idle units"><img class="ic" data-icon="who" alt=""><b id="tbIdle">0</b><small>idle</small></span><span class="res" title="Selected units"><img class="ic" data-icon="equip" alt=""><b id="tbSel">0</b><small>selected</small></span><span class="res" id="tbOnlineRes" hidden title="Players online in this world"><b id="tbOnline">0</b><small>online</small></span><span class="res" id="tbPos" title="Camera position
+Tile x, y on the map, and the level you are looking at"></span><span class="speedctl" role="group" aria-label="Game speed"><button data-do="speed" data-value="0" title="Pause (Space): give orders while time stands still">⏸</button><button data-do="speed" data-value="1" title="Normal speed">▶</button><button data-do="speed" data-value="2" title="Fast">▶▶</button><button data-do="speed" data-value="3" title="Faster">▶▶▶</button></span><button id="tbHost" data-do="tab" data-value="realm" hidden title="Hosting for friends: click for the address">Hosting</button><button id="tbRank" data-do="tab" data-value="realm" title="Your settlement rank: click for what comes next">♛ Camp</button><span class="playmode" role="group" aria-label="Play as" hidden><button data-do="playmode" data-value="hero" id="pmHero" title="Play one character; the village works on its own">Hero</button><button data-do="playmode" data-value="village" id="pmVillage" title="Manage the whole village">Village</button></span><button data-do="undo" id="btnUndo" title="Undo the last plan or order (Ctrl+Z)">Undo</button><button data-do="savenow" id="btnSave" title="Save the game now">Save</button><button id="btn3d" hidden title="Remastered is always 3D">3D</button></div>
+<aside id="roster" class="ovonly" aria-label="Company outliner"><h4 title="Company
+Click: fold or unfold the list."><span>Company</span><span id="rosterCount"></span></h4><div id="rosterList"></div></aside>
+<section id="heroframe" class="ovonly" aria-label="Selected unit"></section>
+<div id="toasts" class="ovonly" aria-live="polite"></div>
+<section id="chatbox" class="ovonly idle" aria-label="Chat and log"><div class="cb-tabs" role="tablist" aria-label="Chat box"><button type="button" role="tab" data-cbtab="all" aria-selected="true" title="All&#10;Talk, news, tips and fights.">All</button><button type="button" role="tab" data-cbtab="chat" aria-selected="false" title="Chat&#10;What players say: World, Local and Kingdom.">Chat</button><button type="button" role="tab" data-cbtab="log" aria-selected="false" title="Log&#10;The game's news, tips and fights (Village › Log has it all).">Log</button></div><div id="cbLines" class="cb-lines" role="log" aria-live="polite"></div><div class="cb-input"><button type="button" id="cbChan" title="Who hears you&#10;World: everyone online. Local: players looking or with people near where you look. Kingdom: your realm, its ruler and the realms that serve it. Click to switch, or start a line with /w, /l or /k.">World</button><input id="cbText" maxlength="300" placeholder="Press Enter to talk" aria-label="Chat message" autocomplete="off"></div></section>
+<div id="warbar" hidden></div><div id="pausebanner" hidden>Paused <small>Space to carry on · orders still work</small></div><div id="dmgfloats" aria-hidden="true"></div><div id="xpdrops" aria-hidden="true"></div>
+<header><div><div class="eyebrow">A DUNGEON MASTER TALE</div><div class="brand">Banners of the Deep</div></div><button class="quiet" data-do="tab" data-value="guide" aria-label="Open guide">?</button></header>
+<div class="commandbar">
+<section class="taskmode" aria-label="Task entry mode">
+ <div class="modebuttons"><button id="doNow" data-do="queue" data-value="now" aria-pressed="true" title="Do now
+A new order replaces the unit's work.">Do now</button><button id="queue" data-do="queue" data-value="add" aria-pressed="false" title="Add tasks
+A new order goes after the unit's work.">Add tasks</button><button id="deselect" data-do="action" data-value="clear" title="Deselect all units; their work continues. Shift+Space works on the map."><strong id="deselectLabel">Deselect (0)</strong><small>Work continues</small></button></div>
+ <div class="modefooter"><p class="hint" id="modeHint">Do now replaces that unit’s work.</p><div id="quickDock" class="quickdock" role="group" aria-label="Quick unit commands"><button class="danger" data-do="action" data-value="stop" data-key="P" aria-describedby="dockHint" title="Stop (P)
+Clears the selected units' tasks." disabled><img class="ic" data-icon="stop" alt=""><span>Stop</span></button><button id="btnAttack" data-do="attackmode" data-value="" data-key="R" aria-describedby="dockHint" title="Attack (R)
+Then click an enemy, or the ground to attack-move. Esc or a right-click cancels." disabled><b class="gear sword">⚔</b><span>Attack</span></button><button id="btnLethal" data-do="lethal" data-value="" aria-pressed="false" aria-describedby="dockHint" title="Lethal or Non-lethal
+Non-lethal knocks enemies and animals out instead of killing them (no shooting or throwing); then click them to capture or tame." disabled><b class="gear fist">⚔</b><span>Lethal</span></button><button id="btnGather" data-do="gather" data-value="" data-key="G" aria-pressed="false" title="Gather (G)
+On: a click on rock mines it, on a tree chops it, on a fishing spot fishes it.
+Off: those clicks walk there; right-click them to mine, chop or fish."><b class="gear pick">⛏</b><span>Gather off</span></button><button data-do="action" data-value="interact" data-key="I" aria-describedby="dockHint" title="Interact (I)
+What the selected unit can do with the creature beside it." disabled><img class="ic" data-icon="interact" alt=""><span>Interact</span></button><button data-do="action" data-value="goto" data-key="Z" aria-describedby="dockHint" title="Focus (Z)
+Centres the camera on the selection." disabled><img class="ic" data-icon="goto" alt=""><span>Focus</span></button><button data-ui="controls-open" aria-haspopup="dialog" aria-controls="borderControls" title="All controls
+Every command, with a search."><img class="ic" data-icon="pointer" alt=""><span>Controls</span></button></div><p id="dockHint" class="hint">Select a unit first.</p></div>
+ <button id="cancelmode" class="danger" data-do="cancelmode" style="width:100%;margin-top:8px" hidden>Cancel placement mode</button>
+</section>
+<nav aria-label="Command tabs">
+ <button data-do="tab" data-value="units" title="Your units: character sheets, skills and bags"><img class="ic" data-icon="area" alt=""><span>Units</span></button><button data-do="tab" data-value="village" title="Your village: company, land, board and log"><img class="ic" data-icon="build" alt=""><span>Village</span></button><button data-do="tab" data-value="orders" title="Orders for the selected units"><img class="ic" data-icon="waypoint" alt=""><span>Orders</span></button><button data-do="tab" data-value="work" title="Work: digging, building, zones and stockpiles"><img class="ic" data-icon="autodig" alt=""><span>Work</span></button><button data-do="tab" data-value="build" title="Build: walls, floors, bridges, stairs and workshops; your workers fetch the material and build them"><b class="gear">⚒</b><span>Build</span></button><button data-do="tab" data-value="realm" title="Your realm: rank, metal age and milestones"><b class="gear">♛</b><span>Realm</span></button><button id="btnMap" title="World map of everything you have explored"><img class="ic" data-icon="all" alt=""><span>Map</span></button><button data-do="tab" data-value="army" title="Army
+Formations: the shape a group keeps when you send it.
+Captives: who you hold, their rope and loyalty."><img class="ic" data-icon="equip" alt=""><span>Army</span></button><button data-do="tab" data-value="quests" title="Quests&#10;Notices you took, and the ones you put up. Post one at your notice board (Build › Workshops)."><img class="ic" data-icon="msg" alt=""><span>Quests</span></button><button data-do="tab" data-value="admin" hidden title="Admin&#10;Notices, players, reports and the log: for the staff."><img class="ic" data-icon="who" alt=""><span>Admin</span></button><button data-do="tab" data-value="guide" data-key="F3" title="How to play"><img class="ic" data-icon="updates" alt=""><span>Guide</span></button><button id="btnSettings" title="Settings: difficulty, sound, HUD size and camera"><b class="gear">⚙</b><span>Settings</span></button>
+</nav>
+<button id="attack" data-do="attack" hidden title="Go to the unit under attack (Backspace)">Attack alert · Go to unit</button><button id="attackx" data-do="attackdismiss" hidden aria-label="Dismiss the attack alert" title="Dismiss">×</button><div id="foodalert" class="ovonly" hidden><button id="foodalertgo" data-do="foodalert" data-value="go"></button><button data-do="foodalert" data-value="x" aria-label="Dismiss the food alert" title="Dismiss">×</button></div>
+</div>
+<section class="commandcategories" aria-label="More command categories"><p>More commands</p><div id="commandCategories"></div></section>
+<section class="world" aria-label="World overview">
+ <details id="cameraOverview" class="cameraoverview"><summary><span class="worldline"><span class="worldseason"><img id="worldDayIcon" alt="" hidden><span id="season">Connecting…</span></span><span id="coords"></span></span><span class="cameralabel">Camera &amp; minimap</span></summary>
+ <div class="overview">
+  <canvas id="minimap" width="192" height="192" aria-label="World map. Click to move the camera." tabindex="0"></canvas>
+  <div><div class="navpad"><span></span><button data-do="pan" data-value="n" aria-label="Camera north">↑</button><span></span><button data-do="pan" data-value="w" aria-label="Camera west">←</button><button data-do="action" data-value="goto" aria-label="Centre on selection">◎</button><button data-do="pan" data-value="e" aria-label="Camera east">→</button><span></span><button data-do="pan" data-value="s" aria-label="Camera south">↓</button><span></span></div>
+  <div class="layers" id="layers"></div></div>
+ </div>
+ </details>
+ <div class="worldtools"><span class="cam3d" role="group" aria-label="Camera"><button id="camNorth" title="Turn the camera to face north (N)">N</button><button id="camTop" title="Look straight down on the 3D view">Top</button><button id="camIso" title="Isometric view: the classic strategy angle, on a diagonal. Turn and tilt freely; press it to return to this angle, or to switch it off.">Iso</button><button id="camChase" data-do="chasecam" data-value="" data-key="F9" title="Lock the camera on the selected unit: it follows the unit as it moves; pan, turn, tilt and zoom as you like (F9 too). Press again to free the camera.">Chase</button></span></div>
+</section>
+<div id="notice" role="status" aria-live="polite">Select a unit, then click ground, a tree, rock or loose resource.</div>
+<main>
+ <button class="panelclose" id="panelClose" aria-label="Close panel" title="Close">×</button>
+ <div id="panelhead" class="ovonly" aria-hidden="true"><div class="crest"><img class="ic" alt=""></div><div class="ph-t"><b id="phTitle"></b><small id="phSub"></small></div></div>
+ <section class="page" id="page-units">
+  <details class="worldpanel" id="worldPanel"><summary>Your land</summary><div class="statrows" id="worldRows"></div></details>
+  <div class="sectionhead"><h2>Your company</h2><span id="selection" class="badge">No selection</span></div>
+  <div class="grid selectiontools"><button data-do="action" data-value="all">Select all</button><button id="multi" data-do="multi" aria-pressed="false">Add units</button><button id="idle" data-do="idle" aria-label="Select the next idle unit">Next idle</button><button id="groupsOpener" data-ui="groups-open" aria-haspopup="dialog" aria-controls="unitGroups" disabled>Groups</button></div>
+  <p class="hint selectionhint">Select a unit, then click a work target. Deselect keeps work running.</p>
+  <div id="units"></div>
+  <button id="start" data-do="action" data-value="race" style="width:100%" hidden>Choose your race &amp; begin</button>
+ </section>
+ <section class="page" id="page-village" hidden>
+  <div class="sectionhead"><h2>Village</h2><span id="villageCount" class="badge"></span></div>
+  <div class="vsubtabs" role="tablist" aria-label="Village views"><button data-do="villageview" data-value="roster" role="tab"><img class="ic" data-icon="area" alt=""><span>Roster</span></button><button data-do="villageview" data-value="lineage" role="tab"><img class="ic" data-icon="race" alt=""><span>Lineage &amp; connections</span></button><button data-do="villageview" data-value="board" role="tab"><img class="ic" data-icon="updates" alt=""><span>Bulletin board</span></button><button data-do="villageview" data-value="log" role="tab"><img class="ic" data-icon="msg" alt=""><span>Log</span></button></div>
+  <div id="villageLog" hidden><p class="hint" id="vlogHint">Everything that happened in the village, newest first. Click an entry to go there.</p><div id="vlogFilters" class="vfilters" role="group" aria-label="Filter the log"></div><div id="vlogList" class="vlog"></div></div>
+  <div id="villageBoard" hidden>
+   <div class="bstats" id="boardStats"></div>
+   <div class="bgrid">
+    <div class="bside">
+     <div class="bcard"><h3>Post a work order</h3>
+      <label>Work <select id="bpKind"><option value="wood">Chop wood</option><option value="stone">Mine stone</option><option value="food">Collect food</option></select></label>
+      <label>Amount <input id="bpAmount" type="number" min="1" max="200" value="20"></label>
+      <label>Priority <select id="bpPriority"><option value="1">High</option><option value="2" selected>Normal</option><option value="3">Low</option></select></label>
+      <label>Workers <select id="bpWorkers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select></label>
+      <label>Where <select id="bpWhere"><option value="stock">Around the stockpile</option><option value="view">Where the camera is now</option></select></label>
+      <button id="bpPost">Post on the board</button>
+     </div>
+     <div class="bcard"><h3>Standing orders</h3><p class="hint">Keep at least this much in the stockpile. When it drops, the board posts work by itself.</p><div id="boardStanding"></div></div>
+    </div>
+    <div class="bmain"><h3>Work orders</h3><p id="boardEmpty" class="hint">No open work orders. Post one, or turn on a standing order.</p><div id="boardOrders"></div>
+     <details id="boardDoneBox"><summary>Finished</summary><div id="boardDone"></div><button data-do="boardclear" data-value="1">Clear finished</button></details>
+    </div>
+   </div>
+  </div>
+  <div id="villageLineage" hidden><p class="hint">Loading families…</p></div>
+  <div id="villageRoster">
+  <div id="popCard" class="popcard" hidden></div>
+  <p id="villageNeeds" class="hint"></p>
+  <div id="villageFilters" class="vfilters" role="group" aria-label="Filter villagers"></div>
+  <div class="vtools"><input id="villageSearch" type="search" placeholder="Find by name, race, job or task…" aria-label="Search villagers" autocomplete="off" spellcheck="false">
+   <label class="vsortlabel">Sort <select id="villageSort" aria-label="Sort villagers"><option value="name">Name</option><option value="job">Job</option><option value="status">Status</option><option value="health">Health (low first)</option><option value="food">Food (low first)</option><option value="rest">Rest (low first)</option><option value="level">Level</option><option value="age">Age</option></select></label></div>
+  <div class="vbulk" id="villageBulk"><label class="vcheckall"><input type="checkbox" id="villageAll" aria-label="Check all shown"> <span id="villageChecked">0 checked</span></label>
+   <button id="villageSelect" disabled>Select on map</button>
+   <select id="villageBulkJob" aria-label="Set job for checked" disabled><option value="">Set job…</option><option value="manual">Manual</option><option value="woodcutter">Woodcutter</option><option value="miner">Miner</option><option value="hauler">Hauler</option><option value="builder">Builder</option><option value="farmer">Farmer</option><option value="hunter">Hunter</option><option value="cook">Cook</option><option value="board">Board worker</option></select>
+   <select id="villageBulkPriority" aria-label="Set priority for checked" disabled><option value="">Priority…</option><option value="1">1 · High</option><option value="2">2 · Normal</option><option value="3">3 · Low</option></select>
+   <select id="villageBulkDefense" aria-label="Set defense for checked" disabled><option value="">Defense…</option><option value="assist">Help nearby</option><option value="self">Defend self</option><option value="off">No response</option></select></div>
+  <div class="vtable" role="table" aria-label="Villagers">
+   <div class="vrow vhead" role="row"><span></span><span></span><span role="columnheader">Villager</span><span role="columnheader">Job</span><span role="columnheader">Priority</span><span role="columnheader">Defense</span><span role="columnheader">Doing</span><span role="columnheader">Health · Food · Rest</span><span></span></div>
+   <div id="villageRows"></div>
+  </div>
+  <p id="villageEmpty" class="empty" hidden>No villagers match.</p>
+  </div>
+ </section>
+ <section class="page" id="page-orders" hidden>
+  <div class="sectionhead"><h2>Give an order</h2><span id="ordercount" class="badge"></span></div>
+  <p class="hint">Click ground to move, or an ordinary resource to collect. With <b>Gather</b> on (G), a click on a tree chops it and on mineable terrain digs it; off, right-click them to chop or mine. Add tasks keeps their order (or hold Shift while clicking).</p>
+  <div class="grid"><button id="dropOff" data-do="dropoff" aria-describedby="deliveryReason" disabled>Drop off<small id="dropHint">Deliver accepted resources, then continue</small></button><button id="unloadResume" data-do="unloadresume" aria-describedby="deliveryReason" disabled>Unload &amp; resume<small>Deliver now, then return to this task</small></button></div>
+  <p id="deliveryReason" class="hint">Select a unit and set a drop-off in Work.</p>
+  <button id="deliverySetup" data-do="tab" data-value="work" hidden>Open stockpile settings</button>
+  <p id="ordersEmpty" class="empty" hidden>No units selected. Their work continues. Select a unit to see or change its tasks.</p>
+  <div id="orderunits"></div>
+  <button data-do="action" data-value="stop" class="danger" style="width:100%">Stop selected units · clear their tasks</button>
+  <h3>Stance</h3><div class="grid three"><button data-do="stance" data-value="hold">Hold</button><button data-do="stance" data-value="guard">Guard</button><button data-do="stance" data-value="aggressive">Aggressive</button></div>
+  <h3>Nearby resources</h3><div class="grid three"><button data-do="action" data-value="pickwood">Wood</button><button data-do="action" data-value="pickstone">Stone</button><button data-do="action" data-value="pickfood">Food</button><button data-do="action" data-value="pickores">Ores</button><button data-do="action" data-value="pickgems">Gems</button><button data-do="action" data-value="pickarmour">Equipment</button></div>
+  <div class="grid"><button data-do="action" data-value="equip">Equip carried gear</button><button data-do="action" data-value="autodig">Autodig</button></div>
+  <details><summary>All commands &amp; shortcuts</summary><div id="commands" class="actionlist"></div></details>
+ </section>
+ <section class="page" id="page-work" hidden>
+  <h2 style="font:18px HudText,Georgia,serif;margin:0 0 8px">Jobs, workshops and stockpiles</h2>
+  <p class="hint">Commands apply to selected units. Supplies stay real items in their bags. Walls, floors, bridges and stairs are planned in the <b>Build</b> tab.</p>
+  <h3 id="jobBoardHead">Supply chain</h3><p class="hint"><b>Gather</b> goods, <b>make</b> things from them, <b>serve</b> them to the village. Villagers you give to the <b>job board</b> take the work by themselves, High priority first. Click a line to open it.</p><div id="jobBoard"></div>
+  <h3>Place a workshop</h3>
+  <p class="hint">Choose one, then click the ground in the 3D view. A selected builder fetches the material, walks there and builds it.</p>
+  <div class="grid three" id="shopPicker"></div>
+  <h3>Build at the selected builder</h3>
+  <div class="grid"><button data-do="build" data-value="campfire"><strong>Campfire</strong><small>1 wood · warmth &amp; cooking</small></button><button data-do="build" data-value="carpentry"><strong>Carpentry</strong><small>1 wood · two clear tiles</small></button></div>
+  <p class="reason">Carry wood and leave two tiles between workshops. Invalid builds explain what is missing.</p>
+  <div class="grid"><button data-do="action" data-value="build">More buildings &amp; race abilities</button><button id="mentalAbilities" data-do="action" data-value="mental" aria-describedby="mentalReason" disabled>Mental abilities<small>Illithid · F6</small></button></div><p id="mentalReason" class="reason">Select an Illithid unit first.</p>
+  <button id="magicTargetOpener" data-do="action" data-value="magictarget" aria-haspopup="dialog" aria-controls="magicTargets" aria-describedby="magicTargetReason" style="width:100%" disabled>Choose magic target</button><p id="magicTargetReason" class="reason">Select a unit first.</p>
+  <h3>Stockpile</h3><p id="stockpile" class="hint">No stockpile yet.</p>
+  <div class="grid"><button data-do="stockpile" data-value="unit">Set at selected unit</button><button data-do="stockpile" data-value="camera">Set at view centre</button></div><div class="grid" id="stockfilters"><button data-do="stockfilter" data-value="wood">Wood</button><button data-do="stockfilter" data-value="stone">Stone</button><button data-do="stockfilter" data-value="woodstone">Wood + stone only</button><button data-do="stockfilter" data-value="mixed">Wood, stone and minerals</button><button data-do="stockfilter" data-value="mining">Mining supplies</button></div><p class="hint" id="stockAccepts">Accepts ordinary wood and stone. Deposited supplies stay here until deliberately collected.</p><button data-do="stockpile" data-value="clear" class="quiet" style="width:100%">Remove stockpile</button>
+  <h3>Stockpile zones</h3><p class="hint">Extra stores with their own filter. Board workers with nothing to do carry matching items here from the main stockpile; eating, cooking, seeds, tools and counts use every store.</p>
+  <div class="zoneadd"><select id="zoneFilter" aria-label="Zone type"></select><button id="zoneAddUnit">At selected unit</button><button id="zoneAddCam">At view centre</button></div><div id="zoneList" class="zonelist"></div><p id="workNotice" class="hint" role="status"></p>
+  <h3 id="roleHeading" tabindex="-1">Worker role</h3><div id="jobs" class="grid"></div><p id="roleReason" class="hint"></p><button data-do="workarea" data-value="unit" style="width:100%">Centre work area on selected units</button>
+  <div class="grid three"><button data-do="priority" data-value="1" title="High priority
+These villagers pick shared work first.">1 · High</button><button data-do="priority" data-value="2" title="Normal priority">2 · Normal</button><button data-do="priority" data-value="3" title="Low priority
+These villagers take what the others leave.">3 · Low</button></div>
+  <p class="hint">Roles work within 6 tiles of their assigned area. Direct tasks take priority; the role resumes afterward. Stop pauses the role.</p>
+  <h3 id="productionHeading" tabindex="-1">Production queue</h3><div id="recipes" class="grid"></div><p id="recipeReason" class="hint"></p>
+  <button data-do="cancel" data-value="all" class="quiet" style="width:100%">Cancel selected production queues</button>
+  <div id="workunits"></div>
+ </section>
+ <section class="page" id="page-build" hidden>
+  <div class="sectionhead"><h2>Build</h2><span id="buildCount" class="badge"></span></div>
+  <div class="bstats" id="buildStats"></div>
+  <div class="vsubtabs" role="tablist" aria-label="Build views"><button type="button" role="tab" data-buildview="catalog"><img class="ic" data-icon="build" alt=""><span>What to build</span></button><button type="button" role="tab" data-buildview="tasks"><img class="ic" data-icon="updates" alt=""><span id="buildTasksTab">Construction</span></button></div>
+  <div class="bgrid">
+   <div class="bside" id="buildCatalogView">
+    <div class="bcard"><h3>What to build</h3>
+     <div id="buildCats" class="buildcats" role="tablist" aria-label="Build categories"></div>
+     <div id="buildItems" class="builditems"></div>
+     <p class="hint" id="buildHint">Pick one, then click or drag on the ground. Each plan becomes a construction task.</p>
+    </div>
+   </div>
+   <div class="bmain" id="buildTasksView" hidden><h3>Construction</h3><p id="buildEmpty" class="hint">Nothing planned yet. Pick something under What to build and paint it on the ground. Workers fetch the material from the stockpiles and build it tile by tile.</p><div id="buildSites"></div>
+    <details id="buildDoneBox" hidden><summary>Finished</summary><div id="buildDone"></div><button data-do="siteclear" data-value="1">Clear finished</button></details>
+   </div>
+  </div>
+ </section>
+ <section class="page" id="page-realm" hidden>
+  <div class="sectionhead"><h2>Your realm</h2></div>
+  <div class="vsubtabs rsubtabs" role="tablist" aria-label="Realm views"><button type="button" role="tab" data-realmview="overview" aria-selected="true" title="Overview&#10;Your people, goods and workplaces at a glance, and what needs you.">Overview</button><button type="button" role="tab" data-realmview="realm" aria-selected="false" title="Rank and house&#10;Your settlement's rank, metal age, house, allies and rooms.">Rank &amp; house</button></div>
+  <div id="realmOverview" hidden></div>
+  <div id="realmBody"><p class="hint">Your settlement's rank appears when the game connects.</p></div>
+ </section>
+ <section class="page" id="page-army" hidden>
+  <div class="sectionhead"><h2>Formations and captives</h2></div>
+  <div class="vsubtabs" role="tablist" aria-label="Army views"><button type="button" role="tab" data-armyview="formations" aria-selected="true" title="Formations&#10;The shape a group keeps when you send it somewhere."><img class="ic" data-icon="waypoint" alt=""><span>Formations</span></button><button type="button" role="tab" data-armyview="captives" aria-selected="false" title="Captives&#10;Who you hold: their rope, loyalty and the chance they break free."><img class="ic" data-icon="who" alt=""><span>Captives</span><b class="armyn" id="armyCapN"></b></button></div>
+  <div id="armyFormations" role="tabpanel"><p class="hint">How a group lines up when you send it somewhere. Every move order you give next uses this shape; the band card's Orders tab has the same choice. The top of each diagram is the front.</p><div id="armyShapes" class="armyshapes" role="group" aria-label="Formation"></div><div id="armyFormEditor" hidden></div></div>
+  <div id="armyCaptives" role="tabpanel" hidden><div id="armyCapList"></div></div>
+ </section>
+ <section class="page" id="page-quests" hidden>
+  <div class="sectionhead"><h2>Notices taken and put up</h2><span id="questRenown" class="hint"></span></div>
+  <div class="vsubtabs" role="tablist" aria-label="Quest views"><button type="button" role="tab" data-questview="taken" aria-selected="true" title="Taken&#10;Quests you took: what is left and where to hand it in."><span>Taken</span><b class="armyn" id="questTakenN"></b></button><button type="button" role="tab" data-questview="ours" aria-selected="false" title="Ours&#10;The notices you put up, and posting a new one at your notice board."><span>Ours</span><b class="armyn" id="questOursN"></b></button></div>
+  <div id="questBody" role="tabpanel"></div>
+ </section>
+ <section class="page" id="page-admin" hidden>
+  <div class="sectionhead"><h2>Notices, players, reports, log</h2><span id="adminLevel" class="hint"></span></div>
+  <div class="vsubtabs" role="tablist" aria-label="Admin views"><button type="button" role="tab" data-admview="quests" aria-selected="true" title="Quests&#10;Every notice in the world."><span>Quests</span></button><button type="button" role="tab" data-admview="players" aria-selected="false" title="Players&#10;Everyone online, and everyone the world knows."><span>Players</span></button><button type="button" role="tab" data-admview="reports" aria-selected="false" title="Reports&#10;What players reported, open ones first."><span>Reports</span><b class="armyn" id="adminOpenN"></b></button><button type="button" role="tab" data-admview="log" aria-selected="false" title="Log&#10;Every admin action, newest first."><span>Log</span></button><button type="button" role="tab" data-admview="words" aria-selected="false" title="Words&#10;Words that come out as stars in chat, notices and names."><span>Words</span></button><button type="button" role="tab" data-admview="bugs" aria-selected="false" title="Bugs&#10;Players' bug reports and the errors the game caught by itself, new ones first."><span>Bugs</span><b class="armyn" id="adminBugsN"></b></button></div>
+  <div class="adm-top"><input id="adminFind" placeholder="Search names, titles, words" aria-label="Search"><input id="adminWhy" maxlength="200" placeholder="Reason or message (goes in the log)" aria-label="Reason or message"></div>
+  <div id="adminRestart" class="adm-restart"></div>
+  <div id="adminBody" role="tabpanel"></div>
+ </section>
+ <section class="page guide" id="page-guide" hidden>
+  <div class="sectionhead"><h2>A place to call home</h2><button class="quiet" data-do="tutorial">Show / hide goals</button></div>
+  <p>Start small. Keep your company fed, equipped and warm, then grow a settlement that can defend itself.</p>
+  <button data-ui="controls-open" aria-haspopup="dialog" aria-controls="borderControls" style="width:100%">All controls · commands &amp; shortcuts</button>
+  <div id="goals"></div>
+  <h3>How to play</h3>
+  <ul><li><b>Select</b> one of your people by clicking them (or their row in Company); drag a box for several.</li><li><b>Give orders</b> by clicking: something on the ground to pick up, open ground to walk; with <b>Gather</b> on (G, in the bar at the bottom), a tree to chop, rock to mine (any block up its face: the miner works up to it) or a fishing spot. With it off, right-click a tree or rock to chop or mine. Up on a mountain, Gather on digs its top down. With several selected, a tree or rock goes to one of them and the ground moves them all.</li><li><b>Do now</b> replaces what a unit is doing; <b>Add tasks</b> (or Shift+click) adds to its list. Work carries on when you deselect or pick someone else.</li><li><b>Stores:</b> set a stockpile in the Work tab. <b>Drop off</b> and <b>Unload &amp; resume</b> take carried goods there; <b>Auto unload</b> on the unit card does it by itself.</li><li><b>Pause</b>, <b>Resume</b> and <b>Stop</b> are on the unit card. Stop clears its orders and pauses its job and crafting.</li><li><b>Workshops:</b> with a unit selected, click one to open its menu (Craft, and more); the nearest of them walks over first.</li><li><b>Right-click</b> anything to see what you can do with it. The unit card’s tabs hold its bag, health, family, combat, skills and spells; click a bag item to use it.</li><li>If something can’t be done, the unit card says why (no tool, too heavy, can’t reach) and <b>Resume</b> tries again.</li></ul>
+  <h3>More to know</h3><ul class="hint guidenew"><li><b>Bag bar</b> on the unit card: click an item for its choices, double-click to use it, drag it onto another unit to give it. Unload / Take buttons work with the stores; Best armour puts on the best pieces carried.</li><li><b>Groups:</b> with several units selected, pick a formation (Keep, Line, Column, Box) and a stance. <b>Patrol › Set route</b>, click points, Finish.</li><li><b>Village tab:</b> Roster, Lineage, Bulletin board (work orders, workshop orders with costs) and Log (click an entry to go there; <b>Messages</b> keeps every message and fight line of the session).</li><li><b>Army tab:</b> Formations (the shape a group keeps when you send it) and Captives (who you hold, their rope and loyalty).</li><li><b>Work tab:</b> stockpile and stockpile zones (food store, ore yard, armoury...).</li><li><b>Place tab:</b> pick a wall, floor, bridge, stairs or workshop and paint it on the ground. Each plan is a construction task that shows what it needs ("10 stone: 8 in stockpiles, 2 missing"). Assign workers there, or give villagers the <b>Builder</b> job: they fetch the material from the stockpiles, build tile by tile and take leftovers back. With nothing in stock the task waits and posts a work order on the board.</li><li><b>Map</b> (top right): everything you have explored. Pings on the minimap show recent fights, births and deaths.</li><li><b>Camera:</b> right-drag moves it; F9 (or Chase, under the minimap) follows the selected unit. <b>3D</b>: middle-drag turns it and tilts it down to the horizon (Q/E turn too); click, double-click, right-click menu, drag a box; N and Top camera buttons. Ctrl+Z or Undo removes the last plan or order.</li><li>Hover a target with units selected to see what they would do and who can't. Each morning a short report sums up the day.</li></ul>
+  <h3>Shortcuts</h3><ul class="hint guidekeys"><li><b>Select:</b> click a unit; drag a box; Shift+click adds or removes; double-click (or Ctrl/Cmd+click) one of yours selects all of that people on screen; Ctrl+A selects everyone. Shift+Space or Escape deselects (work goes on); with a window open, Escape closes it first.</li><li><b>Orders:</b> left-click a target to give an order; Shift+click queues it after the current work. A, then a click: attack, or attack-move on open ground (Esc or a right-click cancels). P stops. F aims a race special. G turns Gather on or off; B opens the Build bar (B or Esc goes back). Ctrl+Z undoes the last plan or order. Right-click opens the menu of choices, and a second right-click on the same spot runs its main one (Settings can make right-click give orders instead, as in StarCraft).</li><li><b>Groups:</b> Ctrl+1–9 keeps the selection as a group, Shift+1–9 adds to it, 1–9 calls it back (press twice: the camera goes there). The chips above the action bar do the same.</li><li><b>Camera:</b> arrow keys or the window edge pan, the wheel zooms, Q/E turn, N faces north, Z centres on the selection, C cuts the rock away (or shows this layer only), X shows the layer above as a ghost; right-drag moves, middle-drag turns. Press or drag on the minimap to go there; right-click it to send the selected units there.</li><li><b>Finding people:</b> F1 selects the next idle unit; Backspace goes to the unit under attack.</li><li><b>Time:</b> Space pauses and resumes; give orders while paused. F3 opens this guide.</li></ul>
+  <h3>Seasons &amp; survival</h3><p class="hint">Fullness and rest are remaining reserves: low values need attention. Cold and blood loss are warnings. Campfires provide warmth; food, beds and equipment matter. Different races use different tools and recipes.</p>
+  <details class="guidealch" id="guideAlchemy"><summary><b>Alchemy &amp; the Cauldron</b></summary>
+   <p class="hint">Brew potions in a bottle at a campfire, or in big batches in a Cauldron. Drink them, or throw them to burst into a cloud: healing mist, sleeping mist, poison, smoke, or fire.</p>
+   <ol class="hint">
+    <li><b>Build a Cauldron</b>: Place › Cauldron (1 stone, one tile). A builder walks over and builds it.</li>
+    <li><b>Stand one unit beside it</b> and select only that unit: the <b>Cauldron</b> box appears on its unit card.</li>
+    <li><b>Fill it</b>: <i>Add</i> puts in one ingredient from the bag (5 units), <i>×N</i> adds all of that kind. <i>Pour water</i> adds 30 if a lake or river is within 6 tiles. It holds 150.</li>
+    <li><b>Heat it</b>: <i>Add wood</i> (each piece burns about a minute); it heats up to 160°. <i>Douse</i> / <i>Light</i>. A brew forms on its own once the mix is right and hot enough.</li>
+    <li><b>Bottle it</b>: carry Empty Bottles and press <i>Fill bottles</i> (up to 30 each). The unit's <b>Alchemy</b> box can then <i>Drink</i> or <i>Throw</i> (click a tile up to 7 away).</li>
+   </ol>
+   <p class="hint">No Cauldron? A unit with an Empty Bottle can brew 30 units at a time: its <b>Alchemy</b> box adds ingredients, draws water beside a lake, and heats the bottle at a campfire within 2 tiles. The ★ recipes need the Cauldron.</p>
+   <h4>Where ingredients come from</h4>
+   <table class="alchtab"><tr><th>Ingredient</th><th>Source</th></tr>
+    <tr><td>Water</td><td>Any lake or river</td></tr>
+    <tr><td>Fruit juice</td><td>Grapes and tomatoes: plant their seeds, then pick</td></tr>
+    <tr><td>Meat</td><td>Butcher any creature's body</td></tr>
+    <tr><td>Bone dust</td><td>Bones, skulls, shells from bodies (skeletons drop bones and a skull)</td></tr>
+    <tr><td>Blood</td><td>Bloody limbs cut off in fights</td></tr>
+    <tr><td>Venom</td><td>Poison and toxic glands: cave spiders, lizardmen, dragons, death beetles</td></tr>
+    <tr><td>Root sap</td><td>Poison roots from poison spore plants</td></tr>
+    <tr><td>Fungus</td><td>Fell Tower Caps (giant mushrooms; their seeds grow more)</td></tr>
+    <tr><td>Ruby / emerald / diamond dust</td><td>Gems found by chance while digging rock</td></tr>
+    <tr><td>Empty Bottles</td><td>Melt sand at a Smelter (or a Glass Forge); drinking a potion leaves one</td></tr>
+   </table>
+   <h4>Recipes</h4>
+   <p class="hint">Proportions matter; more of the same mix makes a bigger batch. Recipes share ingredients, so leftovers can turn into something else first.</p>
+   <table class="alchtab"><tr><th>Brew</th><th>Mix</th><th>Heat</th><th>Effect</th></tr>
+    <tr><td>Healing Draught</td><td>2 water · 1 juice</td><td>60°</td><td>Heals</td></tr>
+    <tr><td>Lifebloom</td><td>2 juice · 1 emerald dust</td><td>60°</td><td>Stronger healing</td></tr>
+    <tr><td>Sleeping Draught</td><td>1 juice · 1 root sap</td><td>–</td><td>Sleep (thrown: sleeping mist)</td></tr>
+    <tr><td>Venom Draught</td><td>2 venom · 1 water</td><td>60°</td><td>Poison (thrown: poison cloud)</td></tr>
+    <tr><td>Alchemist's Fire</td><td>1 ruby · 1 bone dust · 1 water</td><td>90°</td><td>Sets alight (thrown: burns)</td></tr>
+    <tr><td>Mana Elixir</td><td>1 diamond dust · 2 water</td><td>90°</td><td>Restores mana</td></tr>
+    <tr><td>Smoke Powder</td><td>2 bone dust · 1 fungus</td><td>–</td><td>Thrown: smoke screen</td></tr>
+    <tr><td>Strength Tonic</td><td>2 meat · 1 blood</td><td>60°</td><td>Stronger for 3 minutes</td></tr>
+    <tr><td>★ Elixir of Life</td><td>2 Healing Draught · 1 emerald · 1 diamond</td><td>140°</td><td>Full heal, stops bleeding</td></tr>
+    <tr><td>★ Dragonfire</td><td>2 Alchemist's Fire · 1 ruby</td><td>150°</td><td>Thrown: a firestorm</td></tr>
+    <tr><td>★ Stoneskin</td><td>1 Strength Tonic · 2 bone dust · 1 water</td><td>120°</td><td>Tougher armour for 3 minutes</td></tr>
+    <tr><td>★ Plague</td><td>1 Venom Draught · 1 blood · 1 fungus</td><td>100°</td><td>Sickness (thrown: rot and poison)</td></tr>
+    <tr><td>★ Archmage's Draught</td><td>2 Mana Elixir · 1 diamond dust</td><td>140°</td><td>Full mana</td></tr>
+   </table>
+   <p class="hint"><b>Fire spreads</b> to wooden walls, floors, trees and anything that burns, so brew and throw fire away from your village. Dragons, gargoyles, the possessed and the Ashen don't burn. Rotting bodies give off a sickly cloud: bury or burn them.</p>
+  </details>
+  <details class="guidealch" id="guideRunes"><summary><b>Rune circuits: doors, traps and alarms</b></summary>
+   <p class="hint">Rune pieces carry mana like wires carry power. Pieces touching side by side form one <b>circuit</b>; its <b>Mana crystals</b> pay for everything on it. A <b>pressure plate</b> or <b>lever</b> sends a signal, and every device on the circuit acts at once.</p>
+   <ol class="hint">
+    <li><b>Build the pieces</b> from the workshop picker (Work › Place a workshop, or the 3D ghost). Rune lines stay in place mode: click tile after tile, Esc when done. A builder walks to each tile and builds it.</li>
+    <li><b>Power it</b>: put a <b>Mana crystal</b> (1 gem) on the circuit. Crystals hold 100 mana and recharge slowly on their own; mana vapour (thrown Mana Elixir) on a crystal charges it fast.</li>
+    <li><b>Wire it</b>: lay rune lines so the plate or lever, the crystal and the devices all touch side by side. Diagonals don't connect.</li>
+    <li><b>Use it</b>: select one unit beside a piece; the <b>Runes</b> box shows the circuit's mana and lets you Pull a lever, Open/Close a door, Test a signal, set a plate to go off for <i>Enemies only</i> or <i>Anyone</i>, or Scratch out a piece (cutting the circuit there).</li>
+   </ol>
+   <table class="alchtab"><tr><th>Piece</th><th>Cost</th><th>Does</th><th>Mana</th></tr>
+    <tr><td>Rune line</td><td>free</td><td>Joins pieces into a circuit</td><td>–</td></tr>
+    <tr><td>Mana crystal</td><td>1 gem</td><td>Stores up to 100 mana</td><td>–</td></tr>
+    <tr><td>Pressure plate</td><td>1 stone</td><td>Signals when an enemy or animal steps on it</td><td>–</td></tr>
+    <tr><td>Lever</td><td>1 wood</td><td>Signals when a unit pulls it</td><td>–</td></tr>
+    <tr><td>Rune door</td><td>1 stone</td><td>Opens or closes on a signal (never on someone)</td><td>2</td></tr>
+    <tr><td>Spike trap</td><td>1 stone</td><td>Stabs whoever stands on it</td><td>3</td></tr>
+    <tr><td>Fire jet</td><td>1 stone</td><td>A burst of burning firedamp</td><td>6</td></tr>
+    <tr><td>Alarm bell</td><td>1 stone</td><td>Warns you where the trap went off</td><td>1</td></tr>
+    <tr><td>Rune lamp</td><td>1 stone</td><td>Glows while the circuit has mana</td><td>a trickle</td></tr>
+   </table>
+   <p class="hint">A classic: a corridor with a plate, spikes and a fire jet, a rune door to shut raiders in, and a bell so you know. With no mana nothing fires, so keep crystals charged; and fire jets burn wood, so build trap halls in stone.</p>
+  </details>
+  <details class="guidealch" id="guideSpecials"><summary><b>Race specials (F)</b></summary>
+   <p class="hint">Every race has one aimed skill. Select units and press <b>F</b> (or the ✦ button on the unit card), then click where to aim it; the shape shows on the ground while you aim. Right-click or Esc cancels. Specials never hurt your own people or a realm you are at peace with.</p>
+   <table class="alchtab"><tr><th>Race</th><th>Special</th><th>Does</th><th>Wait</th></tr>
+    <tr><td>Dragon</td><td>Fire breath</td><td>A stream of fire from the jaws to a spot: burns everything within 2 tiles and sets it alight (frost or poison for those dragons). Breathing in a fight, it scorches those beside its foe too</td><td>12 s</td></tr>
+    <tr><td>Spider</td><td>Web shot</td><td>Sticks the first enemy in line for 3 s, then slows it (10 silk)</td><td>8 s</td></tr>
+    <tr><td>Human</td><td>Shield charge</td><td>Dashes up to 4 tiles; stuns the first enemy in the way</td><td>10 s</td></tr>
+    <tr><td>Dwarf</td><td>Ground slam</td><td>Hurts and staggers enemies within 2 tiles</td><td>12 s</td></tr>
+    <tr><td>Elf</td><td>Piercing arrow</td><td>Goes through every enemy in a 9-tile line</td><td>10 s</td></tr>
+    <tr><td>Orc</td><td>War leap</td><td>Leaps up to 4 tiles and crashes down on those around</td><td>12 s</td></tr>
+    <tr><td>Goblin</td><td>Fire pot</td><td>A thrown burst of fire</td><td>14 s</td></tr>
+    <tr><td>Lizardman</td><td>Tail sweep</td><td>Knocks back enemies beside it</td><td>8 s</td></tr>
+    <tr><td>Frogman</td><td>Tongue lash</td><td>Pulls the first enemy in line up close</td><td>9 s</td></tr>
+    <tr><td>Kobold</td><td>Poison dart</td><td>Poisons the first enemy in line</td><td>6 s</td></tr>
+    <tr><td>Ratman</td><td>Plague cloud</td><td>A thrown cloud of poison gas that slows</td><td>14 s</td></tr>
+    <tr><td>Svartalfar</td><td>Shadow step</td><td>Blinks up to 6 tiles; the next blow lands hard</td><td>10 s</td></tr>
+    <tr><td>Devourer</td><td>Acid spit</td><td>Burns the first enemy in line and eats its armour</td><td>9 s</td></tr>
+    <tr><td>Illithid</td><td>Mind blast</td><td>Stuns and drains everyone in a cone</td><td>14 s</td></tr>
+   </table>
+  </details>
+  <details class="guidealch" id="guideWar"><summary><b>War, sieges and peace</b></summary>
+   <p class="hint">Realms start at peace: your people won't attack another realm's. In the <b>Realm</b> tab, a ruler can <b>Declare war</b> (fighting starts after 60 seconds, or at once if they attacked you first) and <b>Offer peace</b>; the other ruler accepts or refuses, and peace brings a 10-minute truce. A red strip at the top shows each war and its score (1 a kill, 5 a banner, 1 a capture).</p>
+   <p class="hint"><b>Sieges:</b> stand your people within 2 tiles of an enemy banner with nobody guarding it within 5: a ring and a bar fill up, and at 100% the banner and its land are yours, with a quarter of their coins. A realm that loses its last banner sues for peace. At war you may also dig and tear down inside their land.</p>
+  </details>
+  <details class="guidealch" id="guideSiege"><summary><b>Siege engines</b></summary>
+   <p class="hint">Build them at the Carpentry: a <b>Battering Ram</b> (3 wood) pounds a wall or door beside it; a <b>Catapult</b> (4 wood, 1 stone) hurls boulders 3 to 10 tiles and hurts anyone where they land. An engine moves and fires only with one of your people within 2 tiles. Click it to select it, then click a wall or door (or Attack and click one, or an enemy for the catapult). Walls: wood 1,000, stone 3,000, obsidian 4,500; doors 10. A <b>Ballista</b> (3 wood, 1 lump of iron) shoots a heavy bolt straight at an enemy up to 12 tiles off: built for great beasts, it hits the part it is aimed at and, at a dragon in the air, mostly its wings.</p>
+   <p class="hint">Leave an engine without crew and enemies at war (or raiders) beside it will wreck it and may set it alight; your crew beat out the flames. Engines are saved with the world.</p>
+  </details>
+  <details class="guidealch" id="guideFamily"><summary><b>Families, captives and your house</b></summary>
+   <p class="hint"><b>Have a child:</b> select one unit; the unit card lists partners nearby. Choose one and the pair go off together; the card then shows "Expecting".</p>
+   <p class="hint"><b>Capture:</b> subdue an enemy you may fight (stun, web or knock it out, or wound it badly), then use <b>Capture</b> on the unit card or the right-click list with one of your people beside it. Tying a person takes a rope your people carry (or one lying on a stockpile, which they fetch): plant rope from wood at a Carpentry, leather or silk rope at a Leatherworks, or Iron Chains from a Forge; better rope is harder to break. A captive never joins by itself: on its card's Interact tab, <b>Win over</b> (one of yours talks and shares food until loyalty reaches 100%) or <b>Enslave</b> (works for you, never fights, not of your house). While roped they try to break free about every 30 s: keep guards near and use good rope. Animals are tamed at once. Rulers can't be captured.</p>
+   <p class="hint"><b>Your house:</b> name it in the Realm tab. Your people ("{Blackhide} Grak"), banners and realm carry the name.</p>
+   <p class="hint"><b>Interact buttons:</b> what a unit can do itself (fly, rest, dragon breath, mist, gem spells, its weapon's power) is on the <b>Interact</b> tab of its card, bottom left. What it can do with the creature beside it (feed from, breed with, rescue, capture, tame) is the <b>Interact (I)</b> button in the middle bar.</p>
+  </details>
+  <details class="guidealch" id="guideHalfDemons"><summary><b>Altars and half-demons</b></summary>
+   <p class="hint"><b>Good Altar:</b> Place tab, workshops. It takes stone, and the builder must also carry a lump of silver and a golden nugget. Pray at it for points; spend 150 on a Holy Shield; bless a Flask of Water into <b>Holy Water</b>.</p>
+   <p class="hint"><b>Desecration:</b> a Good Altar has a <b>Sacrifice</b> choice too. Each sacrifice darkens it; the third turns it into an <b>Evil Altar</b>, its worship the worth of what was given. Evil Altars can't be built any other way. There: sacrifice, Unholy Vigor (150 worship), bless a Flask of Blood into <b>Unholy Blood</b>, bless a flask of embers into <b>Hellfire</b>.</p>
+   <p class="hint"><b>Flasks:</b> a Metal Flask (Forge) or Leather Flask (Leatherworks). Fill it at water, from a pool of blood, or with embers beside an ember vent in the Ashlands. Double-click it in the bag for its choices, Drink among them.</p>
+   <p class="hint"><b>Half-demon</b> &mdash; possessed at the hell portal: red eyes, then red all over, then a Demon. Only those with no subrace can be taken: never the undead, vampires or devourers.</p>
+   <p class="hint"><b>Marked</b> &mdash; drank Unholy Blood. The dark gods' mark: smouldering eyes, small horns. +3 weapon damage and a little health back from every kill. Holy Water washes it out.</p>
+   <p class="hint"><b>Ashen</b> &mdash; drank Hellfire and lived through the burning (about half its health; a wounded unit dies). Grey as cinders, ember cracks under the skin. Can't burn, shrugs off heat, its blows may set foes alight; cold bites it twice as hard. Holy Water washes it out.</p>
+   <p class="hint"><b>Hellblooded</b> &mdash; born, not made: the child of a Demon and a half-demon of any kind, or of a Hellblooded parent, of the half-demon parent's race. Red-skinned, horned and tailed; a half-demon's strength, growing every level, and no fear of heat or cold. The NPC Alliance attacks it on sight, and nothing washes it out.</p>
+   <p class="hint">Silver and blessed weapons do every half-demon extra harm.</p>
+  </details>
+  <details class="guidealch" id="guideBeasts"><summary><b>Fighting great beasts</b></summary>
+   <p class="hint">A dragon or a great spider takes up the ground under its legs, head and wings: others walk round it or between its legs. Fight it part by part: select units and right-click the beast; its parts are laid out as they sit on its body, each with how whole it is, the one under the pointer lit. Or just attack it and each unit goes for the nearest part.</p>
+   <p class="hint"><b>Legs:</b> nothing is ever cut off a great beast, but a mangled leg makes it limp, and two leave it unable to walk until they mend. <b>Head:</b> the deadly blows. <b>Wings:</b> broken, it can't take off, and one in the air comes crashing down; they mend in a few minutes. Archers and thrown weapons at a beast in the air mostly hit its wings; a <b>ballista</b> is made for it: select it to see its reach and what it is aiming at.</p>
+   <p class="hint">With units selected, point at a beast: a ring marks the part under the pointer. Each part's health, and how long broken wings take to mend, are on its <b>Health</b> tab. Wild dragons fight back: they breathe fire on the thickest knot of your people, come down while hurt wings still carry them, and back off when badly hurt. A grown dragon (or a great spider queen) bites and breathes from two tiles away, where its head is, and steps back from anyone right under it.</p>
+   <p class="hint"><b>Butchering</b> a dead dragon gives, besides meat and bones, its <b>scales</b> (Dragonscale armour at the Forge: three pieces worn and fire can't take you), its great <b>bones</b> (laid over scales: Dragonbone armour at Bone crafting, the strongest), <b>teeth and claws</b> (Fang weapons at Bone crafting), its <b>heart</b> (Dragon's Blood: with a Strength Tonic and water, hot in the Cauldron, a Dragonheart Draught) and <b>wing hide</b> (serves as skin). A great spider gives chitin, <b>fangs</b> and a <b>venom sac</b>. Each beast has a light version at the Leatherworks (<b>Dragonhide</b> from wing hide, <b>Spidersilk</b> from silk set with chitin, <b>Bonehide</b> from hide studded with a dragon's bones) and a mage's robe (<b>Dragonscale</b>, <b>Spider Silk</b> and <b>Dragonbone Robes</b>: +10% to a school of magic).</p>
+   <p class="hint"><b>Taming.</b> A great beast is too big to knock out. Either <b>steal an egg</b> from a wild dragon's nest (pick it up; its mother hunts whoever carries it) and lay it down far from the nest to hatch into a dragon of your own; or <b>chain it down</b>: make Iron Chains at the Forge (2 iron ingots), right-click the beast, <b>Chain it down</b>. Your units wear it down without killing it, then bind it (a dragon takes 3 chains, a great spider 2). Then right-click it, <b>Feed it raw meat</b>, three times a minute or more apart, and it is yours; left unfed for three minutes it snaps a chain, and with none left it breaks free. Its card shows the chains left, how far it trusts you and how long until it is hungry; a young dragon's card, how long until it is full grown.</p>
+   <p class="hint"><b>Lairs.</b> A few cave mouths are a <b>dragon's lair</b> (scorched ground and bones before the mouth) or a <b>spider's nest</b> (webbed over): the grown beast sleeps inside on its hoard, with its eggs, and its young roam the cave. With units selected, <b>right-click any cave mouth → Enter the cave</b>: they walk there and go down together, up to 8. Kill the beast and carry the hoard out: a cleared lair stays cleared, and what you leave behind is still there next time. One visit per cave a day. A dragon's lair is floored with its gold. <b>Your own dragon</b>, grown and standing beside rock, can <b>make its lair</b> there (its cave box, or right-click it): your own cave with no visit limit, where treasure you leave stays, the gold floor grows with the hoard, and the dragon heals faster asleep on it.</p>
+  </details>
+  <details class="guidealch" id="guideWeapons"><summary><b>Weapons and swing speed</b></summary>
+   <p class="hint">Each weapon swings on its own time, whatever its wielder is doing; slower weapons hit harder, so a fight lasts about as long whatever is in hand.</p>
+   <p class="hint"><b>Weapon moves.</b> Every weapon has moves, and enchanted or rare ones also carry spells. Which a unit has depends on how its skills are built: each move needs the weapon's own skill (Sword, Axe, Bow...) and character skills (Attack, Strength, Defence, Ranged, Magic) at a level. A swordsman trained in Attack lunges, one trained in Strength swings a heavy blow, one trained in Defence ripostes. They're on the unit card's <b>Spells</b> tab, with its spells; locked ones say what they need. A unit uses its ready moves by itself in a fight (click <b>Auto</b> to keep one for when you choose), or click one to use it now. A move's blow always lands.</p>
+   <p class="hint"><b>Enchanted weapons hold their own mana</b>, shown on the <b>Spells</b> tab with their spells: their own powers, open to whoever wields them, and branch spells the wielder's skills unlock. Spells and powers cost the weapon's mana, never the unit's. It fills slowly by itself, faster from a <b>Rune Stone</b> carried in the bag (cut from a gem at the Gem cutter), and fastest standing beside a rune circuit with mana. A <b>Crystal Staff</b> tops up the other magic weapons its bearer carries.</p>
+   <table class="alchtab"><tr><th>Weapon</th><th>A swing every</th></tr>
+    <tr><td>Dagger</td><td>1 s</td></tr><tr><td>Sword, scimitar, claws, bare hands</td><td>1.2 s</td></tr>
+    <tr><td>Longsword, mace, hand axe, spear</td><td>1.4 s</td></tr><tr><td>Morning star</td><td>1.5 s</td></tr>
+    <tr><td>Warhammer, pickaxe, staff; a dragon</td><td>1.6 s</td></tr><tr><td>Battle axe</td><td>1.8 s</td></tr><tr><td>Halberd</td><td>2 s</td></tr></table>
+   <p class="hint"><b>Beast weapons</b>, from what great beasts are butchered into: <b>Dragonfang</b> blades (dragon teeth and claws, Bone crafting) now and then set the target alight; <b>Spiderfang</b> blades (great spider fangs) carry its venom into the wound; <b>Dragonbone</b> weapons hit hard enough to stagger, and the <b>Dragonbone Bow</b> shoots from 7 tiles (other bows 5). The <b>Dragon Skull Staff</b> sets foes alight and keeps its bearer from burning; the <b>Spider Staff</b> binds them in silk for 3 s.</p>
+   <p class="hint"><b>Magic gear</b> (from its own mana). Crystal Staff: its mana refills fast and tops up your other magic weapons; it lights the way at night. Orb Staff: its bearer's race special (F) now and then strikes twice. Skull Staff: <b>Raise Skeleton</b> raises a skull in sight as yours (15 mana); with Magic 20, <b>Bone spear</b>. Flame Staff: its bearer's fire always catches. Nature Staff: your people near it heal faster and crops ripen faster. Runeblade: Astral damage on every hit; with Sword 20 and Magic 15, <b>Rune bolt</b>. Flametongue: sets foes alight; with Sword and Strength 20, <b>Fire wave</b>. Frostbite Axe: slows and chills; with Axe and Attack 20, <b>Frozen hamstring</b>. Stormcaller Spear: lightning jumps to a second foe; with Spear and Magic 20, <b>Call lightning</b>. Voidedge: a third of each hit heals its wielder. Dawnbringer: double damage to the undead, demons and half-demons.</p>
+  </details>
+  <details class="guidealch" id="guideCare"><summary><b>Looking after your people</b></summary>
+   <p class="hint"><b>Food.</b> Villagers eat from <b>Food pots</b> (1 stone) and <b>Food stalls</b> (1 wood), both in the Place tab's workshops; with none, they eat from the stockpile. Food never rots in them, and they count as food in your stock. Wood under a pot stews raw food hot (Add wood, Light), and "hot stew" is the best meal. At war, an enemy's food can be poisoned: a unit beside a pot with a poison in its bag gets "Slip in" buttons. Taste, Inspect and Empty are in the food box; an Antidote or a Doctor's purge cures the poisoned.</p>
+   <p class="hint"><b>The Doctor.</b> Build a <b>Doctor's stall</b> (1 wood) and give someone the Doctor job. Three herbs, <b>Athelas</b>, <b>Feverfew</b> and <b>Milk thistle</b>, grow wild around your village and grow back after picking. The Doctor makes remedies from them and treats whoever is worst off: bleeding, poisoned, feverish or badly hurt. With no herb to hand it posts a Gather order on the Board. A remedy in a bag is used like a potion, or by the bag rule.</p>
+   <p class="hint"><b>Sickness.</b> Food kept for an hour turns rotten and gives food poisoning; <b>salt</b> (from mined rock) keeps it. Rot, bad air from bodies, plague and sick neighbours can give the <b>fever</b> (coughing, fever, very ill). A Feverfew tonic cures it and gives a while of immunity. <b>Wine</b>: a few cups make a villager merry, then staggering, sick, and at last asleep; at the <b>Tavern</b> (1 wood) friends who drink together may brawl, with blows that never kill, until a sober guard breaks it up.</p>
+   <p class="hint"><b>The fallen.</b> Build a <b>Graveyard</b> (1 stone) and the gravedigger carries your dead there and buries them, and clears blood and mess when there is nobody to bury. Build an <b>Operating table</b> (1 wood): the Doctor carries downed villagers to it and can fit a lost limb from a body, a carried limb or a made false limb (iron, wood, bone, gem, or automail). A graft from another race brings some of its strength, but may be rejected, and demon flesh can drive its wearer mad. Lizardmen, Vampires and Werewolves regrow limbs by themselves.</p>
+   <p class="hint"><b>Souls and blood.</b> A rare <b>soul stone</b> turns up in mountain rock; used beside a dead villager's body it takes their soul, and used beside a soulless gargoyle of yours it wakes it with their name, level and skills. Drinking <b>Unholy Blood</b> (blessed at an Evil Altar) turns one drinker in four into a Vampire.</p>
+   <p class="hint">Click a villager to see how they look at a glance (pale, coughing, drunk, bleeding, a false arm) under their name, and everything wrong with them on the <b>Health</b> tab.</p>
+  </details>
+  <details class="guidealch" id="guideBuilding"><summary><b>Building</b></summary>
+   <p class="hint"><b>How it works.</b> Pick a piece in the <b>Build</b> tab and paint it on the ground: drag for walls, floors, roads and track, click for single pieces. Each plan becomes a construction task that shows what it needs. Select units first to make them its workers, or give villagers the <b>Builder</b> job. They fetch the material from your stockpiles and build it, floors first and walls last; a building's door goes in last of all, so nobody is shut out.</p>
+   <p class="hint"><b>Walls and the wall-walk.</b> A <b>Fortress wall</b> painted two or three rows side by side becomes one wide wall. Every finished wall that is not part of a house gets a <b>walk</b> on top. Right-click a wall, <b>Man the wall here</b>: your units climb up and stand two to a tile, a front rank and a back rank. A move order onto a walk finds the stairs or ramp by itself. The side facing out gets battlements and the side facing your yard a low lip; a wall standing alone in the open has battlements only on the side away from your banner. Breach a wall and the walk above it falls, with anyone on it.</p>
+   <p class="hint"><b>Getting up.</b> <b>Wall stairs</b> (1 stone) go beside a wall with a walk. A <b>Ramp up the wall</b> runs three tiles along it (3 stone), or is cut into the inner row of a wall two tiles thick (free). A 3&times;3 block of wall becomes a round <b>Tower</b>. A wooden wall with a walk is a timber rampart: pointed logs outside, a plank walk with a hand rail inside.</p>
+   <p class="hint"><b>Gates.</b> Leave a one-tile gap between two walls and set a door in it (<b>Gate</b>): the walk carries on over it. Between wooden walls it is a timber gatehouse with a little roof; between stone walls a stone arch. Either has a torch each side outside. A <b>Portcullis</b> fills a gap of up to 3 tiles (or a tunnel mouth), and a <b>Drawbridge</b> spans a moat in front of a gate (up to 5 tiles across). Lay rune lines to them from a lever: each pull costs 3 mana, or nothing while a turning axle beside them drives them. A portcullis never drops on anyone.</p>
+   <p class="hint"><b>Houses and forts.</b> Walls round a room whose floor is mostly built make a house. So does a small walled space of 4 to 40 tiles with a door or an open doorway, whatever its floor: its walls get no walk, and it gets a roof. A fort therefore needs a bigger yard (more than 40 tiles inside), or no way in. A strip of bank between a wall and a moat is not a doorway.</p>
+   <p class="hint"><b>Roofs.</b> Houses get thatch over timber walls and slate over stone: a pitched roof on a rectangle, sloping on every side on other shapes. While you play, every roof on screen is see-through so you can look inside; zoom far out and they turn solid. Halls in a mountain, and anything underground, have the rock for a roof.</p>
+   <p class="hint"><b>Roads and bridges.</b> A <b>Cobbled road</b> (1 stone a tile) makes walkers about 40% faster, a <b>Dirt track</b> (free) about 15% faster. Roads go on open ground, not over water, built floors, fields or stairs; a track can be cobbled over. <b>Bridges</b> cross water and chasms; stone ones cross lava too.</p>
+   <p class="hint"><b>Halls in mountains.</b> In <b>Halls</b>, press <b>Ceiling &uarr;</b> for a higher roof (3 to 6), then drag a hall of 4 by 4 or more onto open ground or into a mountain. It lays out the walls (where it is cut into rock, the rock is the wall), pillars or beams to hold the roof, beds, a table or a fire and a workshop, and digs a tunnel to its door. With the camera on a hall inside a mountain, the rock in front of it is cut away so you can see in.</p>
+   <p class="hint"><b>Mine carts.</b> In <b>Rails</b>, drag track (1 wood a tile), put a <b>Cart stop</b> beside the stockpile and another at the mine, then a <b>Mine cart</b> on the track. It runs between the stops by itself, 20 loads at a time, and miners drop what they dig at the mine stop when it is nearer than the stockpile. Track makes no one walk faster.</p>
+   <p class="hint"><b>Power and lifts.</b> In <b>Power</b>, a <b>Water wheel</b> on a bank beside water makes 10 power, a <b>Windmill</b> under open sky 6 (10 on a mountain top). Drag a line of <b>Axles</b> from it to the machines it drives: <b>Bellows</b> beside a forge, smelter or melter (4 power; the smith works twice as fast), a <b>Rune dynamo</b> touching a rune circuit (5; it charges the crystals), a <b>Lift</b> (6). A line that can't feed all its machines runs none of them. A lift goes one level up or down: up a cliff or onto a wall walk, or down a shaft to the tunnels. Its winch stands where you build it, beside an axle. Units ride a running lift like stairs and leave one without power alone.</p>
+  </details>
+  <details class="guidealch" id="guideFishing"><summary><b>Fishing</b></summary>
+   <p class="hint">Fishing spots bubble on the shore. Select units and click a spot (or right-click → Fish here); Fisher workers find spots themselves. Make a <b>Fishing Rod</b>, <b>Fishing Net</b> or <b>Lobster Cage</b> at the Carpentry and a <b>Harpoon</b> at the Forge. Without a tool, only shallow water can be fished, by hand.</p>
+   <table class="alchtab"><tr><th>Water</th><th>Tool</th><th>Fish (Fishing level)</th></tr>
+    <tr><td>Shallow</td><td>Net</td><td>Shrimp 1, Anchovy 15</td></tr>
+    <tr><td>Shallow</td><td>Rod</td><td>Sardine 5, Herring 10</td></tr>
+    <tr><td>River</td><td>Rod</td><td>Trout 20, Pike 25, Salmon 30</td></tr>
+    <tr><td>Deep</td><td>Lobster cage</td><td>Lobster 40</td></tr>
+    <tr><td>Deep</td><td>Harpoon</td><td>Tuna 35, Swordfish 50, Shark 76</td></tr>
+    <tr><td>Swamp</td><td>Net</td><td>Tropical fish 12, Blowfish 22</td></tr>
+    <tr><td>Cave</td><td>Rod</td><td>Cave fish 18, Cave eel 38</td></tr>
+   </table>
+  </details>
+  <details class="guidealch" id="guideSkills"><summary><b>Skills and levels</b></summary>
+   <p class="hint">Skills level like RuneScape: every action earns experience (a swing of the axe or pick 4 XP, a craft 15–30, a cooked meal 30, a shrimp 10, a shark 110) and the level follows RuneScape's table: level 2 at 83 XP, 10 at 1,154, 50 at 101,333, 92 at 6,517,253 (half of 99) and 99 at 13,034,431. Levels go on to 120. It is slow on purpose: keep your people at the work they are good at.</p>
+   <p class="hint"><b>A fair start:</b> the common races start at level 1 in everything. Crafting still works 45% of the time at level 1 (certain from level 19), and chopping and mining work as if at level 12.</p>
+   <p class="hint"><b>Rare races</b> (Dragon, Spider, Devourer, Svartalfar, Illithid) only appear in the race list when drawn: 4% each, plus 3% for every achievement you have ever reached. <b>Early raids</b> on Normal are small and poorly trained until your settlement grows.</p>
+  </details>
+  <details class="about"><summary>About Banners of the Deep</summary>
+   <p><b>Banners of the Deep: A Dungeon Master Tale</b> is based on <b>Dungeon Master</b>, the BYOND game by Aaron Davey and contributors, released under the GNU General Public License v2. Its rules, races and world are theirs; this remake adds the 3D world, the HUD and new systems on top.</p>
+   <p class="hint">It runs on OpenDream (MIT) and RobustToolbox (MIT and asset licences). The licences are inside the app (Contents/Resources/licenses). "Dungeon Master" is used here only to credit the original game.</p>
+  </details>
+ </section>
+ <div class="footer"><button type="button" data-hudlog="1" title="Messages
+Every message and fight line of this session, in Village › Log.">Messages</button></div>
+</main>
+<dialog id="borderControls" class="controlsdrawer" role="dialog" aria-labelledby="controlsTitle">
+ <header class="drawerhead"><h2 id="controlsTitle">Controls</h2><button data-ui="controls-close" aria-label="Close controls">Close</button></header>
+ <div class="drawerfilters"><div class="controlsearch"><input id="controlSearch" type="search" placeholder="Find wood, build, equip…" aria-label="Search controls" autocomplete="off" spellcheck="false"><button id="clearControlSearch" data-ui="controls-clear" disabled>Clear</button></div><div id="borderFilters" role="group" aria-label="Filter controls by purpose"></div><div class="filtermeta"><span id="controlsCount" role="status" aria-live="polite">Connecting…</span><span>Choose a command below</span></div></div>
+ <div class="drawerbody">
+  <div id="borderCatalog"><p class="hint">Controls will appear when the game connects.</p></div>
+  <div id="controlsEmpty" class="empty" hidden><p id="controlsEmptyText">No matching controls.</p><button data-ui="controls-reset">Show all controls</button></div>
+ </div>
+ <div class="borderdisplay"><button id="borderVisibility" data-do="border" hidden>Show classic border</button><p id="borderVisibilityHint" class="hint"></p></div>
+</dialog>
+<dialog id="buildPalette" class="controlsdrawer palette" role="dialog" aria-labelledby="paletteTitle" aria-describedby="paletteHint">
+ <header class="drawerhead"><h2 id="paletteTitle" tabindex="-1">Build &amp; abilities</h2><button data-ui="palette-close" aria-label="Close build and ability choices">Close</button></header>
+ <div class="drawerbody"><p id="paletteHint" class="hint">Choose an option. Some open another menu or ask you a question.</p><p id="paletteRecovery" class="reason" hidden></p><div id="paletteChoices" class="palettechoices"></div></div>
+</dialog>
+<dialog id="magicTargets" class="controlsdrawer palette" role="dialog" aria-labelledby="magicTargetTitle" aria-describedby="magicTargetHint">
+ <header class="drawerhead"><h2 id="magicTargetTitle" tabindex="-1">Choose magic target</h2><button data-ui="magictarget-close" aria-label="Close magic targets">Close</button></header>
+ <div class="drawerbody"><p id="magicTargetActors" class="hint"></p><p id="magicTargetHint" class="hint">Choose a visible unit for your next spell. Choosing a target keeps current work running; cast the ability separately.</p><p id="magicTargetBlocked" class="reason" role="status" hidden></p><div id="magicTargetChoices" class="palettechoices"></div><p id="magicTargetEmpty" class="empty" hidden>No visible targets. Close this menu and move the camera closer.</p></div>
+</dialog>
+<dialog id="unitGroups" class="controlsdrawer" role="dialog" aria-labelledby="groupsTitle" aria-describedby="groupsHint">
+ <header class="drawerhead"><h2 id="groupsTitle" tabindex="-1">Unit groups</h2><button data-ui="groups-close" aria-label="Close unit groups">Close</button></header>
+ <div class="drawerbody"><p id="groupsHint" class="hint">Recall selects a group; current work continues. Set replaces its members with your selection. Add keeps its existing members. Groups last for this game session.</p><p id="groupsSelection" class="hint" role="status"></p><p id="groupsReason" class="reason" hidden></p><div id="groupRows"></div></div>
+</dialog>
+<script>

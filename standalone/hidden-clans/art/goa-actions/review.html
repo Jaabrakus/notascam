@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>GOA actions review</title>
+<style>body{margin:0;padding:16px;background:#1e2026;color:#ddd;font:13px system-ui}h2{font-size:15px;margin:18px 0 6px}
+.row{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap}.pair{display:flex;gap:4px}figure{margin:0;text-align:center}
+figcaption{font-size:11px;color:#aab}canvas{image-rendering:pixelated;background:#464a54;display:block}</style>
+<body><div id="out"></div>
+<script>
+/* GOA's frames (32 px, doubled) beside ?set=out (the Human's parts posed, default) or ?set=updated (GOA's own frames
+   updated to 64 px, updated.py), playing at GOA's timing: punches and kicks 2 ticks a frame,
+   the run 1 tick (a tick = 0.1 s). */
+const SET=new URLSearchParams(location.search).get('set')||'out',ACTIONS=[...(SET==='updated'?[['Walk','Walk',4,2]]:[]),['PunchA-1','Jab (right hand)',2,2],['PunchA-2','Cross (left hand)',2,2],['KickA-1','Kick 1',2,2],['KickA-2','Kick 2',2,2],['Run','Run',4,1]],D='SNEW',Z=3,live=[];
+function load(u){const i=new Image();i.src=u;return i.decode().then(()=>i);}
+(async()=>{const out=document.getElementById('out');
+ for(const [id,label,n,ticks] of ACTIONS){const h=document.createElement('h2');h.textContent=label+' · '+id;out.append(h);const row=document.createElement('div');row.className='row';out.append(row);
+  for(const d of D){const fig=document.createElement('figure'),pair=document.createElement('div');pair.className='pair';
+   const frames={goa:[],me:[]};for(let f=0;f<n;f++){frames.goa.push(await load('ref/'+id+'-'+d+f+'.png'));frames.me.push(await load(SET+'/'+id+'-'+d+f+'.png'));}
+   for(const k of ['goa','me']){const c=document.createElement('canvas');c.width=c.height=64*Z;pair.append(c);live.push({c,frames:frames[k],ticks});}
+   fig.append(pair);const cap=document.createElement('figcaption');cap.textContent=d+': GOA | '+(SET==='updated'?'GOA updated to 64':'Human 64');fig.append(cap);row.append(fig);}}
+ const t0=performance.now();(function tick(now){for(const L of live){const f=Math.floor((now-t0)/(100*L.ticks))%L.frames.length,x=L.c.getContext('2d');x.imageSmoothingEnabled=false;x.clearRect(0,0,L.c.width,L.c.height);x.drawImage(L.frames[f],0,0,L.c.width,L.c.height);}requestAnimationFrame(tick);})(t0);
+ document.body.dataset.ready='1';})();
+</script></body></html>

@@ -1,0 +1,1 @@
+// mob/Monsters/Bump: this file's part is step RmChainBump_Bump in Code/Remastered/Chains/Bump.dm

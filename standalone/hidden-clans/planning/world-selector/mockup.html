@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>World Selector Mock-up</title>
+<!-- A mock-up only (planning/WORLD_SELECTOR_PLAN_2026-10-31.md): the launcher window (920x600) after Play, drawn in
+     the launcher's own look (Launcher.m DMHoverButton plates, the art, Luminari). Add #new for the New world sheet,
+     #host for Host for friends, #delete for the Trash question. -->
+<style>
+  :root {
+    --ink: #16110c; --panel: rgba(18, 13, 9, 0.93); --gold: #b08a3d; --gold-lit: #fadb85; --text: #ede3c9;
+    --dim: #c9bb9b; --faint: #a89a80; --bronze-top: #8f6b2e; --bronze-bottom: #523814; --dark-top: #362b1f; --dark-bottom: #1a140e;
+  }
+  html, body { margin: 0; background: var(--ink); }
+  .win { position: relative; width: 920px; height: 600px; overflow: hidden; font: 13px -apple-system, "Helvetica Neue", sans-serif; color: var(--text);
+    background: url("../../mac-app/launcher-art.png") 0 0 / 920px 600px no-repeat; }
+  .dim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10, 8, 5, 0) 34%, rgba(10, 8, 5, 0.55) 46%, rgba(10, 8, 5, 0.75) 100%); }
+  .panel { position: absolute; left: 100px; top: 262px; width: 720px; height: 274px; box-sizing: border-box; background: var(--panel);
+    border: 2px solid var(--gold); border-radius: 6px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 0 4px var(--panel), inset 0 0 0 5px rgba(242, 212, 128, 0.22); padding: 12px 16px 12px; }
+  .head { display: flex; align-items: baseline; justify-content: space-between; margin: 0 2px 6px; }
+  .head h1 { margin: 0; font: 21px Luminari, Georgia, serif; color: var(--gold-lit); text-shadow: 0 1px 2px #000; font-weight: normal; }
+  .head .who { color: var(--faint); font-size: 12px; }
+  .rows { display: flex; flex-direction: column; gap: 6px; height: 174px; overflow: hidden; }
+  .row { display: flex; align-items: center; gap: 12px; height: 54px; padding: 0 12px 0 6px; border-radius: 5px; border: 1px solid rgba(176, 138, 61, 0.28);
+    background: linear-gradient(to bottom, rgba(54, 43, 31, 0.75), rgba(26, 20, 14, 0.75)); }
+  .row.sel { border: 2px solid var(--gold-lit); background: linear-gradient(to bottom, rgba(110, 82, 36, 0.55), rgba(58, 40, 16, 0.6)); height: 52px; }
+  .pic { width: 72px; height: 48px; flex: none; border-radius: 3px; background-color: rgba(0, 0, 0, 0.35); image-rendering: pixelated;
+    background-image: url("../../art/hud/src/assets/screens-races.png"); background-size: 72px 672px; background-repeat: no-repeat; }
+  .pic.none { background-image: none; display: grid; place-items: center; color: var(--gold); font: 22px Luminari, Georgia, serif; }
+  .txt { flex: 1; min-width: 0; }
+  .name { font: 17px Luminari, Georgia, serif; color: var(--gold-lit); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 1px 2px #000; }
+  .name small { font: 11px -apple-system, sans-serif; color: var(--faint); margin-left: 8px; text-shadow: none; }
+  .facts { color: var(--dim); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .when { flex: none; text-align: right; color: var(--faint); font-size: 12px; line-height: 1.35; }
+  .when b { color: var(--text); font-weight: 600; }
+  .more { color: var(--faint); font-size: 11px; text-align: center; margin-top: 4px; }
+  .buttons { display: flex; gap: 10px; margin-top: 10px; }
+  .plate { height: 34px; padding: 0 16px; border-radius: 5px; border: 2px solid #b08a3d; display: grid; place-items: center; color: #eedcae; font: 500 13px -apple-system, sans-serif;
+    background: linear-gradient(to bottom, var(--dark-top), var(--dark-bottom)); box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px rgba(242, 212, 128, 0.18); white-space: nowrap; }
+  .plate.primary { background: linear-gradient(to bottom, var(--bronze-top), var(--bronze-bottom)); color: #f7dc8c; font: 18px Luminari, Georgia, serif; padding: 0 26px; text-shadow: 0 1px 2px #000;
+    box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px rgba(242, 212, 128, 0.45); }
+  .plate.warn { color: #f0c2a8; }
+  .spacer { flex: 1; }
+  .foot { position: absolute; left: 0; right: 0; bottom: 22px; display: flex; justify-content: flex-end; gap: 8px; padding: 0 34px; }
+  .foot .plate { height: 26px; padding: 0 12px; font-size: 12px; }
+  .build { position: absolute; left: 34px; bottom: 28px; color: #a89a80; font-size: 11px; }
+  /* the sheets (NSAlert sheets in the real launcher) */
+  .sheet { display: none; position: absolute; left: 260px; top: 0; width: 400px; box-sizing: border-box; padding: 18px 20px 16px; background: #2a241e;
+    border: 1px solid #4a3f33; border-top: none; border-radius: 0 0 10px 10px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7); color: #eee; }
+  .sheet h2 { margin: 0 0 6px; font: 600 14px -apple-system, sans-serif; }
+  .sheet p { margin: 0 0 12px; color: #c9c2b8; font-size: 12px; line-height: 1.45; }
+  .sheet .field { height: 24px; border: 1px solid #5d5348; border-radius: 4px; background: #1d1915; color: #8f877c; padding: 0 8px; display: flex; align-items: center; font-size: 13px; margin-bottom: 8px; }
+  .sheet .field.typed { color: #eee; }
+  .sheet .btns { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
+  .sheet .btn { height: 24px; padding: 0 14px; border-radius: 5px; background: #4b443d; display: grid; place-items: center; font-size: 13px; }
+  .sheet .btn.def { background: #a8792a; color: #fff; }
+  .sheet .btn.red { background: #b0412e; color: #fff; }
+  .shade { display: none; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.35); }
+  body.new .shade, body.new #sheet-new, body.del .shade, body.del #sheet-del, body.host .shade, body.host #sheet-host { display: block; }
+</style>
+</head>
+<body>
+<div class="win">
+  <div class="dim"></div>
+  <div class="panel">
+    <div class="head"><h1 id="title">Choose a world</h1><span class="who">Signed in with Discord as Kiwi</span></div>
+    <div class="rows">
+      <div class="row sel">
+        <div class="pic" style="background-position: 0 -48px"></div>
+        <div class="txt"><div class="name">Mountains of the Hidden Temple</div>
+          <div class="facts">Your company: 63 Dwarves &middot; Fall of 975 &middot; Age of the Burning Dragon</div></div>
+        <div class="when"><b>Today, 09:12</b><br>last played</div>
+      </div>
+      <div class="row">
+        <div class="pic" style="background-position: 0 -96px"></div>
+        <div class="txt"><div class="name">Friday nights<small>Stars of the Lost Scroll</small></div>
+          <div class="facts">Your company: 12 Elves &middot; Winter of 212 &middot; 2 friends' companies</div></div>
+        <div class="when"><b>Oct 28</b><br>last played</div>
+      </div>
+      <div class="row">
+        <div class="pic none">&#9873;</div>
+        <div class="txt"><div class="name">Plains of the Ancient Dragon</div>
+          <div class="facts">No company of yours here yet &middot; Summer of 640</div></div>
+        <div class="when"><b>Oct 19</b><br>last played</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="plate primary" id="primary">Continue</div>
+      <div class="plate">New world</div>
+      <div class="plate">Rename</div>
+      <div class="plate warn">Move to Trash</div>
+      <div class="spacer"></div>
+      <div class="plate">Back</div>
+    </div>
+  </div>
+  <div class="build">Build 147</div>
+  <div class="foot"><div class="plate">Join our Discord</div><div class="plate">Saves &amp; logs</div><div class="plate">Quit</div></div>
+  <div class="shade"></div>
+  <div class="sheet" id="sheet-new">
+    <h2>New world</h2>
+    <p>The same land, fresh and empty, with its own name and history. Your settings, achievements and saved designs come with you.</p>
+    <div class="field">Name (leave empty and the land names itself)</div>
+    <div class="btns"><div class="btn">Back</div><div class="btn def">Make and play</div></div>
+  </div>
+  <div class="sheet" id="sheet-del">
+    <h2>Move &ldquo;Plains of the Ancient Dragon&rdquo; to the Trash?</h2>
+    <p>Its companies, buildings and history go with it (84 MB). You can put it back from the Trash until the Trash is emptied.</p>
+    <div class="btns"><div class="btn">Cancel</div><div class="btn red">Move to Trash</div></div>
+  </div>
+  <div class="sheet" id="sheet-host">
+    <h2>Host &ldquo;Friday nights&rdquo; for friends</h2>
+    <p>Choose a password your friends will type to join. Once the world is open, the Realm tab shows the address to give them.</p>
+    <div class="field">Password (at least 4 characters)</div>
+    <div class="btns"><div class="btn">Back</div><div class="btn def">Open my world</div></div>
+  </div>
+</div>
+<script>
+  // #new, #delete, #host show the sheets; #host also shows the list in host mode
+  function show(mode) {
+    const host = mode === 'host', rows = document.querySelectorAll('.row');
+    document.body.className = mode === 'delete' ? 'del' : mode;
+    document.getElementById('title').textContent = host ? 'Host for friends: choose a world' : 'Choose a world';
+    document.getElementById('primary').textContent = host ? 'Host this world' : 'Continue';
+    rows.forEach((r, i) => r.classList.toggle('sel', i === (host ? 1 : mode === 'delete' ? 2 : 0)));
+  }
+  show(location.hash.slice(1));
+  addEventListener('hashchange', () => show(location.hash.slice(1)));
+</script>
+</body>
+</html>

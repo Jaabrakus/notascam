@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quest Dialog Mock-up</title>
+<!-- A mock-up only (planning/QUEST_MAKER_PLAN_2026-10-31.md section 15): a keeper's quest dialog and the quest
+     tracker, over a real capture of the game (app 146, 43 Dwarves). The frames, buttons and colours are the HUD's own
+     stone material (art/hud/src/003-style.css, RACE-FRAMES); fonts from game/Interface/fonts.
+     Add #editor for the maker's side: the unit card's Keeper tab. -->
+<style>
+@font-face{font-family:HudText;src:url(../../game/Interface/fonts/hud-text.ttf);size-adjust:109%}
+@font-face{font-family:HudText;src:url(../../game/Interface/fonts/hud-figures.ttf);size-adjust:109%;unicode-range:U+0030-0039}
+@font-face{font-family:HudText;src:url(../../game/Interface/fonts/hud-text-italic.ttf);font-style:italic;size-adjust:109%}
+@font-face{font-family:HudText;src:url(../../game/Interface/fonts/hud-textcaps.ttf);size-adjust:109%;unicode-range:U+0041,U+004D,U+0052,U+0054}
+@font-face{font-family:HudHead;src:url(../../game/Interface/fonts/hud-head.ttf);size-adjust:84%}
+@font-face{font-family:HudCaps;src:url(../../game/Interface/fonts/hud-caps.ttf);unicode-range:U+0041,U+0045,U+004D,U+0052,U+0054}
+body.overlay[data-mat=stone]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABYElEQVR42mNkY2X7z0BDwMLAwMCQ5/4Lq+SknWwMHa09ODWvXr2a4eyFk3j1s8A43dMmMJw/cgQuuWzZGgYGBgaGR48eEeXSqKgQONvQxoahNKuAgYGBgYEJJohsODbw7t07ooMF2SwmYjUJCQnB2Tw8PERbhtWCXbt24dX05csXovWwoIc5Orhx4wZRLn3z5hNWMxjpkkyNDcyxSp69cJLh1+9fjPgMYGNl++9k78agoaGBIi4nJ8dQUV0CsSA0NBQjORIbNCRHMikphJjkzERMCiEFICdnkvIBVYKIlNyKDWALXiZ83iMVYAteFmoEw8ePHxlOnjyJIgbjMw54fWBsYM7Az8+P04B9B3cRVx8gl+e7du1iePPmE5yPnkvRLWBgYGAQEeFjcHNzw6hPsCZTZIXEZkBsekjKB8gphJTkzIRczZGbW9EBslnwOIDVodiAnJwcQUuR6wJkNs2TKQDqIHtnb0xtmQAAAABJRU5ErkJggg==);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiklEQVR42sVXPW/EIAx1LQuhKEO2duj//3kZbkAIeehE6wQMhuRSpugA8+z3/HEfX5/fO/zjIgCAZVmah1JK4Jyr7oUQYNs2SClNAUDLIe1xCXDWxgEAEXUvM3Pxrd2zgDwAkMa1y/Kx/K3du4WCGW6993XBERVgsed9j//a+RhjdY+ZC7pQoptVci1iFl0UFGRvRzmtPWa1ga0w9SKSubZ6awIgjfX4z1xrnFs0hfDwOkf1UQC1iHYBSDFp+W21UdMUjij8zHWtKmo2tH28wzNL2mn7BACw79dGghDC/DzQmwVCCL/zgve+mXJEBIh44FreVymwluAYI3jv1fPMPFzOUUsP+Zs0+nq9ugVqRFNoKRjyQeecuUL2BMjMfwBG2m4GZ20467rqmrkyeFibUEu4+K5yO92OnxhIZLu/HYAlA3J0nHMlgNZA2etwRNSdDdSZ0CKYmhEp3hbv2giP72g8I82oqAOWemBNWUlntnumuKgDs//zah5KOrPdM8V4NYR5LctSgLcUqh9oktxJQK12cgAAAABJRU5ErkJggg==);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42mNkY2X7z0ACYGFgYGA4sdCPYc0FLYKKe/o7IBrWXNBi2HdwH17FFy6eYWBgYGBgYiARjGogOuKQw5kQYCQ1aQAAS24P+uGuHyMAAAAASUVORK5CYII=);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD4cLKMoa6uhaDiSTvZGBjZWNn+57n/YpCTk8CrWENDg8Gn+BgDEwOJYFQD0REHC2diACOpSQMAW7sMwoyTq5sAAAAASUVORK5CYII=);--macc:#cea654;--mink:#e8e2d2;--mband:#706c74;--mpane:#222126;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+html,body{margin:0;background:#111}
+body{font:12px/1.4 HudText,Georgia,serif}
+.win{position:relative;width:1280px;height:748px;overflow:hidden;background:url(../../devlog/2026-10-30/img/memory-1030-real-app-43-dwarves.png) 0 0/1280px 748px no-repeat}
+.panel{position:absolute;border:10px solid transparent;border-image:var(--mf) 8 / 16px / 6px round;background:var(--mpane) var(--mt) 0 0/64px 64px;background-clip:padding-box;
+  box-shadow:0 8px 18px rgba(0,0,0,.55);image-rendering:pixelated;color:var(--mink);box-sizing:border-box}
+button{font:12px HudText,Georgia,serif;border:6px solid transparent;border-image:var(--mb) 4 fill / 8px / 0 stretch;background:none;color:var(--mink);
+  text-shadow:1px 1px 0 #000;image-rendering:pixelated;padding:2px 8px;min-height:30px;cursor:pointer}
+button.on{border-image-source:var(--mbp);color:#fff}
+.cap{font:11px var(--mfont);letter-spacing:.12em;color:var(--macc);text-transform:uppercase}
+.title{font:17px var(--mfont);letter-spacing:.06em;color:var(--macc);text-shadow:1px 1px 0 #000}
+.muted{color:#b9b2a2}
+.line{height:1px;background:var(--mband);opacity:.7;margin:7px 0}
+/* the "!" over the keeper in the 3D view: drawn per viewer */
+.mark{position:absolute;left:1029px;top:395px;width:22px;height:30px;font:bold 28px/30px HudHead,Georgia,serif;color:#ffd75e;text-align:center;
+  text-shadow:0 0 6px #000,2px 2px 0 #000,-1px -1px 0 #000}
+.ring{position:absolute;left:1012px;top:452px;width:56px;height:24px;border:3px solid #ffd75e;border-radius:50%;box-shadow:0 0 10px #ffd75e88}
+/* quest tracker */
+#tracker{left:6px;top:246px;width:250px;padding:4px 8px 6px}
+#tracker .q{margin:5px 0 6px}
+#tracker .q b{display:block;font:13px HudText,Georgia,serif;color:#f1e7c8}
+#tracker .q span{display:block;font-size:11.5px;color:#d6cfbd;padding-left:10px}
+#tracker .q span.done{color:#8fbf73}
+#tracker .q .kind{float:right;font-size:10px;color:var(--macc);letter-spacing:.08em}
+/* the keeper's dialog (an AskCard kind "quest") */
+#dialog{left:318px;top:84px;width:520px;padding:6px 12px 10px}
+.head{display:flex;gap:10px;align-items:center;padding:0 0 6px}
+.portrait{flex:none;width:64px;height:78px;border:1px solid var(--mband);background:#141318 url(../../art/hud/src/assets/screens-races.png) -14px -104px/144px 1344px no-repeat;image-rendering:pixelated}
+.head .who{flex:1;min-width:0}
+.head .who small{display:block;font-size:11px;color:#b9b2a2}
+.x{min-height:26px;width:28px;padding:0;align-self:flex-start}
+.says{margin:2px 0 8px;padding:8px 10px;background:#141318;border:1px solid var(--mband);font:italic 13.5px/1.5 HudText,Georgia,serif;color:#efe6cc;position:relative}
+.says .by{position:absolute;right:8px;bottom:-9px;font:normal 10px HudText,Georgia,serif;color:#9e978a;background:var(--mpane);padding:0 5px}
+.list button{display:flex;width:100%;align-items:center;gap:8px;text-align:left;margin:0 0 3px;min-height:30px}
+.list i{flex:none;width:16px;font:bold 15px HudHead,Georgia,serif;font-style:normal;text-align:center}
+.list i.av{color:#ffd75e}.list i.go{color:#b9b2a2}.list i.in{color:#ffd75e}
+.list small{margin-left:auto;font-size:10.5px;color:#b9b2a2}
+.game{margin-top:8px;padding:8px 10px 6px;border:1px solid var(--macc);background:linear-gradient(#1d1c22,#16151a);position:relative}
+.game .seal{position:absolute;right:8px;top:-9px;font:10px HudText,Georgia,serif;color:var(--macc);background:var(--mpane);padding:0 6px;letter-spacing:.06em}
+.game h4{margin:0 0 4px;font:15px HudText,Georgia,serif;color:#f1e7c8}
+.grid2{display:grid;grid-template-columns:96px minmax(0,1fr);gap:3px 10px;font-size:12px}
+.grid2 dt{color:#b9b2a2}.grid2 dd{margin:0;color:#ebe3cf}
+.chip{display:inline-block;padding:0 6px;margin-right:4px;border:1px solid #8a3b2f;background:#3a1914;color:#ffb3a0;font-size:11px}
+.chip.ok{border-color:#56713f;background:#1d2a16;color:#bfe0a0}
+.chip.warn{border-color:#8a6a2a;background:#33270f;color:#ffd98a}
+.foot{display:flex;gap:6px;margin-top:9px}
+.foot .grow{flex:1}
+/* the maker's side: the unit card's Keeper tab */
+#editor{display:none;left:318px;top:80px;width:580px;padding:4px 12px 8px}
+#editorview:target ~ #editor{display:block}
+#editorview:target ~ #dialog{display:none}
+.tabs{display:flex;gap:2px;margin:0 0 6px}
+.tabs button{min-height:26px;padding:0 4px;font-size:11px}
+.row{display:grid;grid-template-columns:104px minmax(0,1fr);gap:8px;align-items:center;margin:0 0 4px}
+.row label{color:#b9b2a2;font-size:12px}
+.field{padding:3px 8px;background:#141318;border:1px solid var(--mband);color:#efe6cc;font:12.5px HudText,Georgia,serif;min-height:16px}
+.field.def{color:#8e887c;font-style:italic}
+.field.sel::after{content:" \25BE";color:var(--macc)}
+.tok{display:inline-block;padding:0 5px;border:1px solid var(--mband);background:#2b2a31;color:var(--macc);font-size:11px;margin-right:4px}
+.offers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 10px}
+.offers span{font-size:12px}
+.offers b{color:#8fbf73;font-weight:normal}
+.note{font-size:11px;color:#9e978a;margin-top:6px}
+</style>
+</head>
+<body class="overlay" data-mat="stone">
+<div class="win">
+  <i id="editorview"></i>
+  <div class="ring"></div>
+  <div class="mark">!</div>
+
+  <div id="tracker" class="panel">
+    <div class="cap">Quests &middot; 3</div>
+    <div class="q"><b>Take the east tower <span class="kind">FORT</span></b>
+      <span>Try on &middot; 6 in the party &middot; 3:40 left</span>
+      <span>&#9675; Open the chest in the keep</span></div>
+    <div class="q"><b>Bring iron for the forge</b>
+      <span>&#9675; Iron bars 12/20</span></div>
+    <div class="q"><b>Clear the spider hollow</b>
+      <span class="done">&#10003; Find the hollow</span>
+      <span>&#9675; Kill the spider</span></div>
+  </div>
+
+  <div id="dialog" class="panel">
+    <div class="head">
+      <div class="portrait"></div>
+      <div class="who"><div class="title">Thorgrimdrin</div>
+        <small>Quest giver of House Ironbrow &middot; by the east gate</small>
+        <small>A Dwarf, Attack 41. A keeper: one of their own people.</small></div>
+      <button class="x">&times;</button>
+    </div>
+    <div class="says">"Six crews have come for my tower, friend. One left with the gold. Bring your best, and bring a doctor."
+      <span class="by">their words</span></div>
+    <div class="list">
+      <button class="on"><i class="av">!</i>Take the east tower<small>fort challenge</small></button>
+      <button><i class="av">!</i>Bring iron for the forge<small>20 iron bars</small></button>
+      <button><i class="in">?</i>Logs for the palisade<small>ready to hand in</small></button>
+      <button><i class="go">&hellip;</i>Clear the spider hollow<small>you took this</small></button>
+    </div>
+    <div class="game"><span class="seal">checked by the game</span>
+      <h4>Take the east tower</h4>
+      <dl class="grid2">
+        <dt>Goal</dt><dd>&#9675; Open the chest in the keep while the garrison stands</dd>
+        <dt>Garrison</dt><dd>14 of their people &middot; Attack about 35 &middot; armour about 40%</dd>
+        <dt>Rules</dt><dd><span class="chip">Lethal</span><span class="chip ok">No captives</span>Entry 20 coins</dd>
+        <dt>In the chest</dt><dd>200 coins, a steel greatsword (Grand Quality), 4 gold ingots: held until it closes</dd>
+        <dt>For your party</dt><dd><span class="chip warn">Danger: high</span>6 picked, Attack about 28</dd>
+        <dt>Tries</dt><dd>7 &middot; won 1, lost 6 &middot; 19 takers fell, 9 defenders fell</dd>
+        <dt>Where</dt><dd>48 tiles north-east, up the hill road</dd>
+      </dl>
+    </div>
+    <div class="foot">
+      <button class="on">Take it: pick a party</button>
+      <button>Ask about&hellip;</button>
+      <span class="grow"></span>
+      <button>Goodbye</button>
+    </div>
+  </div>
+
+  <div id="editor" class="panel">
+    <div class="head">
+      <div class="portrait" style="width:48px;height:58px;background-position:-10px -78px;background-size:108px 1008px"></div>
+      <div class="who"><div class="title">Thorgrimdrin</div><small>Your Dwarf &middot; Keeper</small></div>
+      <button class="x">&times;</button>
+    </div>
+    <div class="tabs"><button>Overview</button><button>Health</button><button>Family</button><button>Interact</button><button>Combat</button><button>Skills</button><button>Spells</button><button class="on">Keeper</button></div>
+    <div class="row"><label>Job</label><div class="field sel">Quest giver</div></div>
+    <div class="row"><label>Stands at</label><div class="field">Notice board by the east gate &nbsp;<span class="tok">Pick on the map</span></div></div>
+    <div class="row"><label>Offers</label><div class="offers"><span><b>&#10003;</b> Take the east tower</span><span><b>&#10003;</b> Bring iron for the forge</span><span><b>&#10003;</b> Logs for the palisade</span><span class="muted">&#9675; Clear the spider hollow</span></div></div>
+    <div class="line"></div>
+    <div class="cap" style="margin-bottom:5px">Their words (empty = a Dwarf's own default, shown faded)</div>
+    <div class="row"><label>Greeting</label><div class="field">Well met, {taker}. You've the look of someone after work.</div></div>
+    <div class="row"><label>While you work</label><div class="field">Still {left} to go. The forge won't wait.</div></div>
+    <div class="row"><label>Thanks</label><div class="field def">Good work. It's yours, as promised.</div></div>
+    <div class="row"><label>Turn away</label><div class="field def">Not for the likes of your realm.</div></div>
+    <div class="row"><label>Ask about</label><div class="field">"The tower" &rarr; My grandfather cut it from the hill. Nobody has held the keep against us since.</div></div>
+    <div class="row"><label></label><div><span class="tok">+ a topic (3 at most)</span></div></div>
+    <div class="row"><label>Fill-ins</label><div><span class="tok">{taker}</span><span class="tok">{left}</span><span class="tok">{reward}</span><span class="tok">{house}</span></div></div>
+    <div class="foot"><button>Preview</button><button>Use default words</button><span class="grow"></span><button class="on">Save</button></div>
+    <div class="note">Words are filtered like chat and can be reported. Goals, rewards, rules and danger are always written by the game.</div>
+  </div>
+</div>
+</body>
+</html>

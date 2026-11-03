@@ -1,0 +1,3424 @@
+{
+ "render_px": 256,
+ "tile_px": 32,
+ "camera_elevation": 30.0,
+ "dirs": [
+  "south",
+  "north",
+  "east",
+  "west"
+ ],
+ "sheets": [
+  {
+   "name": "DevourerZombie",
+   "file": "DevourerZombie.dmi",
+   "layer": "base",
+   "race": "Zombie",
+   "source": "DevourerZombie.dmi",
+   "states": [
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/_blank/f0_south.png",
+      "DevourerZombie/_blank/f0_north.png",
+      "DevourerZombie/_blank/f0_east.png",
+      "DevourerZombie/_blank/f0_west.png",
+      "DevourerZombie/_blank/f1_south.png",
+      "DevourerZombie/_blank/f1_north.png",
+      "DevourerZombie/_blank/f1_east.png",
+      "DevourerZombie/_blank/f1_west.png",
+      "DevourerZombie/_blank/f2_south.png",
+      "DevourerZombie/_blank/f2_north.png",
+      "DevourerZombie/_blank/f2_east.png",
+      "DevourerZombie/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/Sleep/f0_south.png",
+      "DevourerZombie/Sleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoRightArm/f0_south.png",
+      "DevourerZombie/NoRightArm/f0_north.png",
+      "DevourerZombie/NoRightArm/f0_east.png",
+      "DevourerZombie/NoRightArm/f0_west.png",
+      "DevourerZombie/NoRightArm/f1_south.png",
+      "DevourerZombie/NoRightArm/f1_north.png",
+      "DevourerZombie/NoRightArm/f1_east.png",
+      "DevourerZombie/NoRightArm/f1_west.png",
+      "DevourerZombie/NoRightArm/f2_south.png",
+      "DevourerZombie/NoRightArm/f2_north.png",
+      "DevourerZombie/NoRightArm/f2_east.png",
+      "DevourerZombie/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLeftArm/f0_south.png",
+      "DevourerZombie/NoLeftArm/f0_north.png",
+      "DevourerZombie/NoLeftArm/f0_east.png",
+      "DevourerZombie/NoLeftArm/f0_west.png",
+      "DevourerZombie/NoLeftArm/f1_south.png",
+      "DevourerZombie/NoLeftArm/f1_north.png",
+      "DevourerZombie/NoLeftArm/f1_east.png",
+      "DevourerZombie/NoLeftArm/f1_west.png",
+      "DevourerZombie/NoLeftArm/f2_south.png",
+      "DevourerZombie/NoLeftArm/f2_north.png",
+      "DevourerZombie/NoLeftArm/f2_east.png",
+      "DevourerZombie/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoArms/f0_south.png",
+      "DevourerZombie/NoArms/f0_north.png",
+      "DevourerZombie/NoArms/f0_east.png",
+      "DevourerZombie/NoArms/f0_west.png",
+      "DevourerZombie/NoArms/f1_south.png",
+      "DevourerZombie/NoArms/f1_north.png",
+      "DevourerZombie/NoArms/f1_east.png",
+      "DevourerZombie/NoArms/f1_west.png",
+      "DevourerZombie/NoArms/f2_south.png",
+      "DevourerZombie/NoArms/f2_north.png",
+      "DevourerZombie/NoArms/f2_east.png",
+      "DevourerZombie/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLeftLeg/f0_south.png",
+      "DevourerZombie/NoLeftLeg/f0_north.png",
+      "DevourerZombie/NoLeftLeg/f0_east.png",
+      "DevourerZombie/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoRightLeg/f0_south.png",
+      "DevourerZombie/NoRightLeg/f0_north.png",
+      "DevourerZombie/NoRightLeg/f0_east.png",
+      "DevourerZombie/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLegs/f0_south.png",
+      "DevourerZombie/NoLegs/f0_north.png",
+      "DevourerZombie/NoLegs/f0_east.png",
+      "DevourerZombie/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/None/f0_south.png",
+      "DevourerZombie/None/f0_north.png",
+      "DevourerZombie/None/f0_east.png",
+      "DevourerZombie/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoRightLegNoLeftArm/f0_south.png",
+      "DevourerZombie/NoRightLegNoLeftArm/f0_north.png",
+      "DevourerZombie/NoRightLegNoLeftArm/f0_east.png",
+      "DevourerZombie/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLeftLegNoRightArm/f0_south.png",
+      "DevourerZombie/NoLeftLegNoRightArm/f0_north.png",
+      "DevourerZombie/NoLeftLegNoRightArm/f0_east.png",
+      "DevourerZombie/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoRightArmNoRightLeg/f0_south.png",
+      "DevourerZombie/NoRightArmNoRightLeg/f0_north.png",
+      "DevourerZombie/NoRightArmNoRightLeg/f0_east.png",
+      "DevourerZombie/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLeftArmNoLeftLeg/f0_south.png",
+      "DevourerZombie/NoLeftArmNoLeftLeg/f0_north.png",
+      "DevourerZombie/NoLeftArmNoLeftLeg/f0_east.png",
+      "DevourerZombie/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLegsNoLeftArm/f0_south.png",
+      "DevourerZombie/NoLegsNoLeftArm/f0_north.png",
+      "DevourerZombie/NoLegsNoLeftArm/f0_east.png",
+      "DevourerZombie/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoLegsNoRightArm/f0_south.png",
+      "DevourerZombie/NoLegsNoRightArm/f0_north.png",
+      "DevourerZombie/NoLegsNoRightArm/f0_east.png",
+      "DevourerZombie/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoArmsNoLeftLeg/f0_south.png",
+      "DevourerZombie/NoArmsNoLeftLeg/f0_north.png",
+      "DevourerZombie/NoArmsNoLeftLeg/f0_east.png",
+      "DevourerZombie/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "DevourerZombie/NoArmsNoRightLeg/f0_south.png",
+      "DevourerZombie/NoArmsNoRightLeg/f0_north.png",
+      "DevourerZombie/NoArmsNoRightLeg/f0_east.png",
+      "DevourerZombie/NoArmsNoRightLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Dwarves",
+   "file": "Dwarves.dmi",
+   "layer": "base",
+   "race": "Dwarf",
+   "source": "Human.dmi",
+   "states": [
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Dwarves/_blank/f0_south.png",
+      "Dwarves/_blank/f0_north.png",
+      "Dwarves/_blank/f0_east.png",
+      "Dwarves/_blank/f0_west.png",
+      "Dwarves/_blank/f1_south.png",
+      "Dwarves/_blank/f1_north.png",
+      "Dwarves/_blank/f1_east.png",
+      "Dwarves/_blank/f1_west.png",
+      "Dwarves/_blank/f2_south.png",
+      "Dwarves/_blank/f2_north.png",
+      "Dwarves/_blank/f2_east.png",
+      "Dwarves/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/Sleep/f0_south.png",
+      "Dwarves/Sleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoRightArm/f0_south.png",
+      "Dwarves/NoRightArm/f0_north.png",
+      "Dwarves/NoRightArm/f0_east.png",
+      "Dwarves/NoRightArm/f0_west.png",
+      "Dwarves/NoRightArm/f1_south.png",
+      "Dwarves/NoRightArm/f1_north.png",
+      "Dwarves/NoRightArm/f1_east.png",
+      "Dwarves/NoRightArm/f1_west.png",
+      "Dwarves/NoRightArm/f2_south.png",
+      "Dwarves/NoRightArm/f2_north.png",
+      "Dwarves/NoRightArm/f2_east.png",
+      "Dwarves/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLeftArm/f0_south.png",
+      "Dwarves/NoLeftArm/f0_north.png",
+      "Dwarves/NoLeftArm/f0_east.png",
+      "Dwarves/NoLeftArm/f0_west.png",
+      "Dwarves/NoLeftArm/f1_south.png",
+      "Dwarves/NoLeftArm/f1_north.png",
+      "Dwarves/NoLeftArm/f1_east.png",
+      "Dwarves/NoLeftArm/f1_west.png",
+      "Dwarves/NoLeftArm/f2_south.png",
+      "Dwarves/NoLeftArm/f2_north.png",
+      "Dwarves/NoLeftArm/f2_east.png",
+      "Dwarves/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoArms/f0_south.png",
+      "Dwarves/NoArms/f0_north.png",
+      "Dwarves/NoArms/f0_east.png",
+      "Dwarves/NoArms/f0_west.png",
+      "Dwarves/NoArms/f1_south.png",
+      "Dwarves/NoArms/f1_north.png",
+      "Dwarves/NoArms/f1_east.png",
+      "Dwarves/NoArms/f1_west.png",
+      "Dwarves/NoArms/f2_south.png",
+      "Dwarves/NoArms/f2_north.png",
+      "Dwarves/NoArms/f2_east.png",
+      "Dwarves/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoRightLeg/f0_south.png",
+      "Dwarves/NoRightLeg/f0_north.png",
+      "Dwarves/NoRightLeg/f0_east.png",
+      "Dwarves/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLeftLeg/f0_south.png",
+      "Dwarves/NoLeftLeg/f0_north.png",
+      "Dwarves/NoLeftLeg/f0_east.png",
+      "Dwarves/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLeftLegNoRightArm/f0_south.png",
+      "Dwarves/NoLeftLegNoRightArm/f0_north.png",
+      "Dwarves/NoLeftLegNoRightArm/f0_east.png",
+      "Dwarves/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoRightLegNoLeftArm/f0_south.png",
+      "Dwarves/NoRightLegNoLeftArm/f0_north.png",
+      "Dwarves/NoRightLegNoLeftArm/f0_east.png",
+      "Dwarves/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLegs/f0_south.png",
+      "Dwarves/NoLegs/f0_north.png",
+      "Dwarves/NoLegs/f0_east.png",
+      "Dwarves/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoRightArmNoRightLeg/f0_south.png",
+      "Dwarves/NoRightArmNoRightLeg/f0_north.png",
+      "Dwarves/NoRightArmNoRightLeg/f0_east.png",
+      "Dwarves/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLeftArmNoLeftLeg/f0_south.png",
+      "Dwarves/NoLeftArmNoLeftLeg/f0_north.png",
+      "Dwarves/NoLeftArmNoLeftLeg/f0_east.png",
+      "Dwarves/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLegsNoRightArm/f0_south.png",
+      "Dwarves/NoLegsNoRightArm/f0_north.png",
+      "Dwarves/NoLegsNoRightArm/f0_east.png",
+      "Dwarves/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoLegsNoLeftArm/f0_south.png",
+      "Dwarves/NoLegsNoLeftArm/f0_north.png",
+      "Dwarves/NoLegsNoLeftArm/f0_east.png",
+      "Dwarves/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/None/f0_south.png",
+      "Dwarves/None/f0_north.png",
+      "Dwarves/None/f0_east.png",
+      "Dwarves/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoArmsNoLeftLeg/f0_south.png",
+      "Dwarves/NoArmsNoLeftLeg/f0_north.png",
+      "Dwarves/NoArmsNoLeftLeg/f0_east.png",
+      "Dwarves/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Dwarves/NoArmsNoRightLeg/f0_south.png",
+      "Dwarves/NoArmsNoRightLeg/f0_north.png",
+      "Dwarves/NoArmsNoRightLeg/f0_east.png",
+      "Dwarves/NoArmsNoRightLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "FrogMan",
+   "file": "FrogMan.dmi",
+   "layer": "base",
+   "race": "Frogman",
+   "source": "FrogMan.dmi",
+   "states": [
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "FrogMan/_blank/f0_south.png",
+      "FrogMan/_blank/f0_north.png",
+      "FrogMan/_blank/f0_east.png",
+      "FrogMan/_blank/f0_west.png",
+      "FrogMan/_blank/f1_south.png",
+      "FrogMan/_blank/f1_north.png",
+      "FrogMan/_blank/f1_east.png",
+      "FrogMan/_blank/f1_west.png",
+      "FrogMan/_blank/f2_south.png",
+      "FrogMan/_blank/f2_north.png",
+      "FrogMan/_blank/f2_east.png",
+      "FrogMan/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLeftArm/f0_south.png",
+      "FrogMan/NoLeftArm/f0_north.png",
+      "FrogMan/NoLeftArm/f0_east.png",
+      "FrogMan/NoLeftArm/f0_west.png",
+      "FrogMan/NoLeftArm/f1_south.png",
+      "FrogMan/NoLeftArm/f1_north.png",
+      "FrogMan/NoLeftArm/f1_east.png",
+      "FrogMan/NoLeftArm/f1_west.png",
+      "FrogMan/NoLeftArm/f2_south.png",
+      "FrogMan/NoLeftArm/f2_north.png",
+      "FrogMan/NoLeftArm/f2_east.png",
+      "FrogMan/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoRightArm/f0_south.png",
+      "FrogMan/NoRightArm/f0_north.png",
+      "FrogMan/NoRightArm/f0_east.png",
+      "FrogMan/NoRightArm/f0_west.png",
+      "FrogMan/NoRightArm/f1_south.png",
+      "FrogMan/NoRightArm/f1_north.png",
+      "FrogMan/NoRightArm/f1_east.png",
+      "FrogMan/NoRightArm/f1_west.png",
+      "FrogMan/NoRightArm/f2_south.png",
+      "FrogMan/NoRightArm/f2_north.png",
+      "FrogMan/NoRightArm/f2_east.png",
+      "FrogMan/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoArms/f0_south.png",
+      "FrogMan/NoArms/f0_north.png",
+      "FrogMan/NoArms/f0_east.png",
+      "FrogMan/NoArms/f0_west.png",
+      "FrogMan/NoArms/f1_south.png",
+      "FrogMan/NoArms/f1_north.png",
+      "FrogMan/NoArms/f1_east.png",
+      "FrogMan/NoArms/f1_west.png",
+      "FrogMan/NoArms/f2_south.png",
+      "FrogMan/NoArms/f2_north.png",
+      "FrogMan/NoArms/f2_east.png",
+      "FrogMan/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLeftLeg/f0_south.png",
+      "FrogMan/NoLeftLeg/f0_north.png",
+      "FrogMan/NoLeftLeg/f0_east.png",
+      "FrogMan/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoRightLeg/f0_south.png",
+      "FrogMan/NoRightLeg/f0_north.png",
+      "FrogMan/NoRightLeg/f0_east.png",
+      "FrogMan/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLegs/f0_south.png",
+      "FrogMan/NoLegs/f0_north.png",
+      "FrogMan/NoLegs/f0_east.png",
+      "FrogMan/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/None/f0_south.png",
+      "FrogMan/None/f0_north.png",
+      "FrogMan/None/f0_east.png",
+      "FrogMan/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoRightLegNoLeftArm/f0_south.png",
+      "FrogMan/NoRightLegNoLeftArm/f0_north.png",
+      "FrogMan/NoRightLegNoLeftArm/f0_east.png",
+      "FrogMan/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLeftLegNoRightArm/f0_south.png",
+      "FrogMan/NoLeftLegNoRightArm/f0_north.png",
+      "FrogMan/NoLeftLegNoRightArm/f0_east.png",
+      "FrogMan/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLeftArmNoLeftLeg/f0_south.png",
+      "FrogMan/NoLeftArmNoLeftLeg/f0_north.png",
+      "FrogMan/NoLeftArmNoLeftLeg/f0_east.png",
+      "FrogMan/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoRightArmNoRightLeg/f0_south.png",
+      "FrogMan/NoRightArmNoRightLeg/f0_north.png",
+      "FrogMan/NoRightArmNoRightLeg/f0_east.png",
+      "FrogMan/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLegsNoLeftArm/f0_south.png",
+      "FrogMan/NoLegsNoLeftArm/f0_north.png",
+      "FrogMan/NoLegsNoLeftArm/f0_east.png",
+      "FrogMan/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoLegsNoRightArm/f0_south.png",
+      "FrogMan/NoLegsNoRightArm/f0_north.png",
+      "FrogMan/NoLegsNoRightArm/f0_east.png",
+      "FrogMan/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoArmsNoLeftLeg/f0_south.png",
+      "FrogMan/NoArmsNoLeftLeg/f0_north.png",
+      "FrogMan/NoArmsNoLeftLeg/f0_east.png",
+      "FrogMan/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "FrogMan/NoArmsNoRightLeg/f0_south.png",
+      "FrogMan/NoArmsNoRightLeg/f0_north.png",
+      "FrogMan/NoArmsNoRightLeg/f0_east.png",
+      "FrogMan/NoArmsNoRightLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Goblins",
+   "file": "Goblins.dmi",
+   "layer": "base",
+   "race": "Goblin",
+   "source": "Goblins.dmi",
+   "states": [
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Goblins/_blank/f0_south.png",
+      "Goblins/_blank/f0_north.png",
+      "Goblins/_blank/f0_east.png",
+      "Goblins/_blank/f0_west.png",
+      "Goblins/_blank/f1_south.png",
+      "Goblins/_blank/f1_north.png",
+      "Goblins/_blank/f1_east.png",
+      "Goblins/_blank/f1_west.png",
+      "Goblins/_blank/f2_south.png",
+      "Goblins/_blank/f2_north.png",
+      "Goblins/_blank/f2_east.png",
+      "Goblins/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/Sleep/f0_south.png",
+      "Goblins/Sleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLeftArm/f0_south.png",
+      "Goblins/NoLeftArm/f0_north.png",
+      "Goblins/NoLeftArm/f0_east.png",
+      "Goblins/NoLeftArm/f0_west.png",
+      "Goblins/NoLeftArm/f1_south.png",
+      "Goblins/NoLeftArm/f1_north.png",
+      "Goblins/NoLeftArm/f1_east.png",
+      "Goblins/NoLeftArm/f1_west.png",
+      "Goblins/NoLeftArm/f2_south.png",
+      "Goblins/NoLeftArm/f2_north.png",
+      "Goblins/NoLeftArm/f2_east.png",
+      "Goblins/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoRightArm/f0_south.png",
+      "Goblins/NoRightArm/f0_north.png",
+      "Goblins/NoRightArm/f0_east.png",
+      "Goblins/NoRightArm/f0_west.png",
+      "Goblins/NoRightArm/f1_south.png",
+      "Goblins/NoRightArm/f1_north.png",
+      "Goblins/NoRightArm/f1_east.png",
+      "Goblins/NoRightArm/f1_west.png",
+      "Goblins/NoRightArm/f2_south.png",
+      "Goblins/NoRightArm/f2_north.png",
+      "Goblins/NoRightArm/f2_east.png",
+      "Goblins/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoArms/f0_south.png",
+      "Goblins/NoArms/f0_north.png",
+      "Goblins/NoArms/f0_east.png",
+      "Goblins/NoArms/f0_west.png",
+      "Goblins/NoArms/f1_south.png",
+      "Goblins/NoArms/f1_north.png",
+      "Goblins/NoArms/f1_east.png",
+      "Goblins/NoArms/f1_west.png",
+      "Goblins/NoArms/f2_south.png",
+      "Goblins/NoArms/f2_north.png",
+      "Goblins/NoArms/f2_east.png",
+      "Goblins/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLeftLeg/f0_south.png",
+      "Goblins/NoLeftLeg/f0_north.png",
+      "Goblins/NoLeftLeg/f0_east.png",
+      "Goblins/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoRightLeg/f0_south.png",
+      "Goblins/NoRightLeg/f0_north.png",
+      "Goblins/NoRightLeg/f0_east.png",
+      "Goblins/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLegs/f0_south.png",
+      "Goblins/NoLegs/f0_north.png",
+      "Goblins/NoLegs/f0_east.png",
+      "Goblins/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoRightLegNoLeftArm/f0_south.png",
+      "Goblins/NoRightLegNoLeftArm/f0_north.png",
+      "Goblins/NoRightLegNoLeftArm/f0_east.png",
+      "Goblins/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLeftLegNoRightArm/f0_south.png",
+      "Goblins/NoLeftLegNoRightArm/f0_north.png",
+      "Goblins/NoLeftLegNoRightArm/f0_east.png",
+      "Goblins/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoRightArmNoRightLeg/f0_south.png",
+      "Goblins/NoRightArmNoRightLeg/f0_north.png",
+      "Goblins/NoRightArmNoRightLeg/f0_east.png",
+      "Goblins/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLeftArmNoLeftLeg/f0_south.png",
+      "Goblins/NoLeftArmNoLeftLeg/f0_north.png",
+      "Goblins/NoLeftArmNoLeftLeg/f0_east.png",
+      "Goblins/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLegsNoLeftArm/f0_south.png",
+      "Goblins/NoLegsNoLeftArm/f0_north.png",
+      "Goblins/NoLegsNoLeftArm/f0_east.png",
+      "Goblins/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoLegsNoRightArm/f0_south.png",
+      "Goblins/NoLegsNoRightArm/f0_north.png",
+      "Goblins/NoLegsNoRightArm/f0_east.png",
+      "Goblins/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/None/f0_south.png",
+      "Goblins/None/f0_north.png",
+      "Goblins/None/f0_east.png",
+      "Goblins/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoArmsNoRightLeg/f0_south.png",
+      "Goblins/NoArmsNoRightLeg/f0_north.png",
+      "Goblins/NoArmsNoRightLeg/f0_east.png",
+      "Goblins/NoArmsNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Goblins/NoArmsNoLeftLeg/f0_south.png",
+      "Goblins/NoArmsNoLeftLeg/f0_north.png",
+      "Goblins/NoArmsNoLeftLeg/f0_east.png",
+      "Goblins/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Human",
+   "file": "Human.dmi",
+   "layer": "base",
+   "race": "Human",
+   "source": "Human.dmi",
+   "states": [
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Human/_blank/f0_south.png",
+      "Human/_blank/f0_north.png",
+      "Human/_blank/f0_east.png",
+      "Human/_blank/f0_west.png",
+      "Human/_blank/f1_south.png",
+      "Human/_blank/f1_north.png",
+      "Human/_blank/f1_east.png",
+      "Human/_blank/f1_west.png",
+      "Human/_blank/f2_south.png",
+      "Human/_blank/f2_north.png",
+      "Human/_blank/f2_east.png",
+      "Human/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/Sleep/f0_south.png",
+      "Human/Sleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Human/NoRightArm/f0_south.png",
+      "Human/NoRightArm/f0_north.png",
+      "Human/NoRightArm/f0_east.png",
+      "Human/NoRightArm/f0_west.png",
+      "Human/NoRightArm/f1_south.png",
+      "Human/NoRightArm/f1_north.png",
+      "Human/NoRightArm/f1_east.png",
+      "Human/NoRightArm/f1_west.png",
+      "Human/NoRightArm/f2_south.png",
+      "Human/NoRightArm/f2_north.png",
+      "Human/NoRightArm/f2_east.png",
+      "Human/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Human/NoLeftArm/f0_south.png",
+      "Human/NoLeftArm/f0_north.png",
+      "Human/NoLeftArm/f0_east.png",
+      "Human/NoLeftArm/f0_west.png",
+      "Human/NoLeftArm/f1_south.png",
+      "Human/NoLeftArm/f1_north.png",
+      "Human/NoLeftArm/f1_east.png",
+      "Human/NoLeftArm/f1_west.png",
+      "Human/NoLeftArm/f2_south.png",
+      "Human/NoLeftArm/f2_north.png",
+      "Human/NoLeftArm/f2_east.png",
+      "Human/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Human/NoArms/f0_south.png",
+      "Human/NoArms/f0_north.png",
+      "Human/NoArms/f0_east.png",
+      "Human/NoArms/f0_west.png",
+      "Human/NoArms/f1_south.png",
+      "Human/NoArms/f1_north.png",
+      "Human/NoArms/f1_east.png",
+      "Human/NoArms/f1_west.png",
+      "Human/NoArms/f2_south.png",
+      "Human/NoArms/f2_north.png",
+      "Human/NoArms/f2_east.png",
+      "Human/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoRightLeg/f0_south.png",
+      "Human/NoRightLeg/f0_north.png",
+      "Human/NoRightLeg/f0_east.png",
+      "Human/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoLeftLeg/f0_south.png",
+      "Human/NoLeftLeg/f0_north.png",
+      "Human/NoLeftLeg/f0_east.png",
+      "Human/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoLeftLegNoRightArm/f0_south.png",
+      "Human/NoLeftLegNoRightArm/f0_north.png",
+      "Human/NoLeftLegNoRightArm/f0_east.png",
+      "Human/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoRightLegNoLeftArm/f0_south.png",
+      "Human/NoRightLegNoLeftArm/f0_north.png",
+      "Human/NoRightLegNoLeftArm/f0_east.png",
+      "Human/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoLegs/f0_south.png",
+      "Human/NoLegs/f0_north.png",
+      "Human/NoLegs/f0_east.png",
+      "Human/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoRightArmNoRightLeg/f0_south.png",
+      "Human/NoRightArmNoRightLeg/f0_north.png",
+      "Human/NoRightArmNoRightLeg/f0_east.png",
+      "Human/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoLeftArmNoLeftLeg/f0_south.png",
+      "Human/NoLeftArmNoLeftLeg/f0_north.png",
+      "Human/NoLeftArmNoLeftLeg/f0_east.png",
+      "Human/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoLegsNoRightArm/f0_south.png",
+      "Human/NoLegsNoRightArm/f0_north.png",
+      "Human/NoLegsNoRightArm/f0_east.png",
+      "Human/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoLegsNoLeftArm/f0_south.png",
+      "Human/NoLegsNoLeftArm/f0_north.png",
+      "Human/NoLegsNoLeftArm/f0_east.png",
+      "Human/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/None/f0_south.png",
+      "Human/None/f0_north.png",
+      "Human/None/f0_east.png",
+      "Human/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoArmsNoLeftLeg/f0_south.png",
+      "Human/NoArmsNoLeftLeg/f0_north.png",
+      "Human/NoArmsNoLeftLeg/f0_east.png",
+      "Human/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Human/NoArmsNoRightLeg/f0_south.png",
+      "Human/NoArmsNoRightLeg/f0_north.png",
+      "Human/NoArmsNoRightLeg/f0_east.png",
+      "Human/NoArmsNoRightLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Kobold",
+   "file": "Kobold.dmi",
+   "layer": "base",
+   "race": "Kobold",
+   "source": "Kobold.dmi",
+   "states": [
+    {
+     "name": "Normal",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Kobold/Normal/f0_south.png",
+      "Kobold/Normal/f0_north.png",
+      "Kobold/Normal/f0_east.png",
+      "Kobold/Normal/f0_west.png",
+      "Kobold/Normal/f1_south.png",
+      "Kobold/Normal/f1_north.png",
+      "Kobold/Normal/f1_east.png",
+      "Kobold/Normal/f1_west.png",
+      "Kobold/Normal/f2_south.png",
+      "Kobold/Normal/f2_north.png",
+      "Kobold/Normal/f2_east.png",
+      "Kobold/Normal/f2_west.png"
+     ]
+    },
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/Sleep/f0_south.png",
+      "Kobold/Sleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLeftArm/f0_south.png",
+      "Kobold/NoLeftArm/f0_north.png",
+      "Kobold/NoLeftArm/f0_east.png",
+      "Kobold/NoLeftArm/f0_west.png",
+      "Kobold/NoLeftArm/f1_south.png",
+      "Kobold/NoLeftArm/f1_north.png",
+      "Kobold/NoLeftArm/f1_east.png",
+      "Kobold/NoLeftArm/f1_west.png",
+      "Kobold/NoLeftArm/f2_south.png",
+      "Kobold/NoLeftArm/f2_north.png",
+      "Kobold/NoLeftArm/f2_east.png",
+      "Kobold/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoRightArm/f0_south.png",
+      "Kobold/NoRightArm/f0_north.png",
+      "Kobold/NoRightArm/f0_east.png",
+      "Kobold/NoRightArm/f0_west.png",
+      "Kobold/NoRightArm/f1_south.png",
+      "Kobold/NoRightArm/f1_north.png",
+      "Kobold/NoRightArm/f1_east.png",
+      "Kobold/NoRightArm/f1_west.png",
+      "Kobold/NoRightArm/f2_south.png",
+      "Kobold/NoRightArm/f2_north.png",
+      "Kobold/NoRightArm/f2_east.png",
+      "Kobold/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoArms/f0_south.png",
+      "Kobold/NoArms/f0_north.png",
+      "Kobold/NoArms/f0_east.png",
+      "Kobold/NoArms/f0_west.png",
+      "Kobold/NoArms/f1_south.png",
+      "Kobold/NoArms/f1_north.png",
+      "Kobold/NoArms/f1_east.png",
+      "Kobold/NoArms/f1_west.png",
+      "Kobold/NoArms/f2_south.png",
+      "Kobold/NoArms/f2_north.png",
+      "Kobold/NoArms/f2_east.png",
+      "Kobold/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLeftLeg/f0_south.png",
+      "Kobold/NoLeftLeg/f0_north.png",
+      "Kobold/NoLeftLeg/f0_east.png",
+      "Kobold/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoRightLeg/f0_south.png",
+      "Kobold/NoRightLeg/f0_north.png",
+      "Kobold/NoRightLeg/f0_east.png",
+      "Kobold/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLegs/f0_south.png",
+      "Kobold/NoLegs/f0_north.png",
+      "Kobold/NoLegs/f0_east.png",
+      "Kobold/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoRightArmNoRightLeg/f0_south.png",
+      "Kobold/NoRightArmNoRightLeg/f0_north.png",
+      "Kobold/NoRightArmNoRightLeg/f0_east.png",
+      "Kobold/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLeftArmNoLeftLeg/f0_south.png",
+      "Kobold/NoLeftArmNoLeftLeg/f0_north.png",
+      "Kobold/NoLeftArmNoLeftLeg/f0_east.png",
+      "Kobold/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoRightLegNoLeftArm/f0_south.png",
+      "Kobold/NoRightLegNoLeftArm/f0_north.png",
+      "Kobold/NoRightLegNoLeftArm/f0_east.png",
+      "Kobold/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLeftLegNoRightArm/f0_south.png",
+      "Kobold/NoLeftLegNoRightArm/f0_north.png",
+      "Kobold/NoLeftLegNoRightArm/f0_east.png",
+      "Kobold/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLegsNoLeftArm/f0_south.png",
+      "Kobold/NoLegsNoLeftArm/f0_north.png",
+      "Kobold/NoLegsNoLeftArm/f0_east.png",
+      "Kobold/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoLegsNoRightArm/f0_south.png",
+      "Kobold/NoLegsNoRightArm/f0_north.png",
+      "Kobold/NoLegsNoRightArm/f0_east.png",
+      "Kobold/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/None/f0_south.png",
+      "Kobold/None/f0_north.png",
+      "Kobold/None/f0_east.png",
+      "Kobold/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoArmsNoLeftLeg/f0_south.png",
+      "Kobold/NoArmsNoLeftLeg/f0_north.png",
+      "Kobold/NoArmsNoLeftLeg/f0_east.png",
+      "Kobold/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Kobold/NoArmsNoRightLeg/f0_south.png",
+      "Kobold/NoArmsNoRightLeg/f0_north.png",
+      "Kobold/NoArmsNoRightLeg/f0_east.png",
+      "Kobold/NoArmsNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "Sneak",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Kobold/Sneak/f0_south.png",
+      "Kobold/Sneak/f0_north.png",
+      "Kobold/Sneak/f0_east.png",
+      "Kobold/Sneak/f0_west.png",
+      "Kobold/Sneak/f1_south.png",
+      "Kobold/Sneak/f1_north.png",
+      "Kobold/Sneak/f1_east.png",
+      "Kobold/Sneak/f1_west.png",
+      "Kobold/Sneak/f2_south.png",
+      "Kobold/Sneak/f2_north.png",
+      "Kobold/Sneak/f2_east.png",
+      "Kobold/Sneak/f2_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "LizardMan",
+   "file": "LizardMan.dmi",
+   "layer": "base",
+   "race": "Lizardman",
+   "source": "LizardMan.dmi",
+   "states": [
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "LizardMan/_blank/f0_south.png",
+      "LizardMan/_blank/f0_north.png",
+      "LizardMan/_blank/f0_east.png",
+      "LizardMan/_blank/f0_west.png",
+      "LizardMan/_blank/f1_south.png",
+      "LizardMan/_blank/f1_north.png",
+      "LizardMan/_blank/f1_east.png",
+      "LizardMan/_blank/f1_west.png",
+      "LizardMan/_blank/f2_south.png",
+      "LizardMan/_blank/f2_north.png",
+      "LizardMan/_blank/f2_east.png",
+      "LizardMan/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/Sleep/f0_south.png",
+      "LizardMan/Sleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoRightArm/f0_south.png",
+      "LizardMan/NoRightArm/f0_north.png",
+      "LizardMan/NoRightArm/f0_east.png",
+      "LizardMan/NoRightArm/f0_west.png",
+      "LizardMan/NoRightArm/f1_south.png",
+      "LizardMan/NoRightArm/f1_north.png",
+      "LizardMan/NoRightArm/f1_east.png",
+      "LizardMan/NoRightArm/f1_west.png",
+      "LizardMan/NoRightArm/f2_south.png",
+      "LizardMan/NoRightArm/f2_north.png",
+      "LizardMan/NoRightArm/f2_east.png",
+      "LizardMan/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLeftArm/f0_south.png",
+      "LizardMan/NoLeftArm/f0_north.png",
+      "LizardMan/NoLeftArm/f0_east.png",
+      "LizardMan/NoLeftArm/f0_west.png",
+      "LizardMan/NoLeftArm/f1_south.png",
+      "LizardMan/NoLeftArm/f1_north.png",
+      "LizardMan/NoLeftArm/f1_east.png",
+      "LizardMan/NoLeftArm/f1_west.png",
+      "LizardMan/NoLeftArm/f2_south.png",
+      "LizardMan/NoLeftArm/f2_north.png",
+      "LizardMan/NoLeftArm/f2_east.png",
+      "LizardMan/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoArms/f0_south.png",
+      "LizardMan/NoArms/f0_north.png",
+      "LizardMan/NoArms/f0_east.png",
+      "LizardMan/NoArms/f0_west.png",
+      "LizardMan/NoArms/f1_south.png",
+      "LizardMan/NoArms/f1_north.png",
+      "LizardMan/NoArms/f1_east.png",
+      "LizardMan/NoArms/f1_west.png",
+      "LizardMan/NoArms/f2_south.png",
+      "LizardMan/NoArms/f2_north.png",
+      "LizardMan/NoArms/f2_east.png",
+      "LizardMan/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLeftLeg/f0_south.png",
+      "LizardMan/NoLeftLeg/f0_north.png",
+      "LizardMan/NoLeftLeg/f0_east.png",
+      "LizardMan/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoRightLeg/f0_south.png",
+      "LizardMan/NoRightLeg/f0_north.png",
+      "LizardMan/NoRightLeg/f0_east.png",
+      "LizardMan/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLegs/f0_south.png",
+      "LizardMan/NoLegs/f0_north.png",
+      "LizardMan/NoLegs/f0_east.png",
+      "LizardMan/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/None/f0_south.png",
+      "LizardMan/None/f0_north.png",
+      "LizardMan/None/f0_east.png",
+      "LizardMan/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoRightLegNoLeftArm/f0_south.png",
+      "LizardMan/NoRightLegNoLeftArm/f0_north.png",
+      "LizardMan/NoRightLegNoLeftArm/f0_east.png",
+      "LizardMan/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLeftLegNoRightArm/f0_south.png",
+      "LizardMan/NoLeftLegNoRightArm/f0_north.png",
+      "LizardMan/NoLeftLegNoRightArm/f0_east.png",
+      "LizardMan/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoRightArmNoRightLeg/f0_south.png",
+      "LizardMan/NoRightArmNoRightLeg/f0_north.png",
+      "LizardMan/NoRightArmNoRightLeg/f0_east.png",
+      "LizardMan/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLeftArmNoLeftLeg/f0_south.png",
+      "LizardMan/NoLeftArmNoLeftLeg/f0_north.png",
+      "LizardMan/NoLeftArmNoLeftLeg/f0_east.png",
+      "LizardMan/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLegsNoLeftArm/f0_south.png",
+      "LizardMan/NoLegsNoLeftArm/f0_north.png",
+      "LizardMan/NoLegsNoLeftArm/f0_east.png",
+      "LizardMan/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoLegsNoRightArm/f0_south.png",
+      "LizardMan/NoLegsNoRightArm/f0_north.png",
+      "LizardMan/NoLegsNoRightArm/f0_east.png",
+      "LizardMan/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoArmsNoLeftLeg/f0_south.png",
+      "LizardMan/NoArmsNoLeftLeg/f0_north.png",
+      "LizardMan/NoArmsNoLeftLeg/f0_east.png",
+      "LizardMan/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "LizardMan/NoArmsNoRightLeg/f0_south.png",
+      "LizardMan/NoArmsNoRightLeg/f0_north.png",
+      "LizardMan/NoArmsNoRightLeg/f0_east.png",
+      "LizardMan/NoArmsNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "Tail",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "LizardMan/Tail/f0_south.png",
+      "LizardMan/Tail/f0_north.png",
+      "LizardMan/Tail/f0_east.png",
+      "LizardMan/Tail/f0_west.png",
+      "LizardMan/Tail/f1_south.png",
+      "LizardMan/Tail/f1_north.png",
+      "LizardMan/Tail/f1_east.png",
+      "LizardMan/Tail/f1_west.png",
+      "LizardMan/Tail/f2_south.png",
+      "LizardMan/Tail/f2_north.png",
+      "LizardMan/Tail/f2_east.png",
+      "LizardMan/Tail/f2_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Night Elf",
+   "file": "Night Elf.dmi",
+   "layer": "base",
+   "race": "Elf",
+   "source": "Night Elf.dmi",
+   "states": [
+    {
+     "name": "Normal",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Night Elf/Normal/f0_south.png",
+      "Night Elf/Normal/f0_north.png",
+      "Night Elf/Normal/f0_east.png",
+      "Night Elf/Normal/f0_west.png",
+      "Night Elf/Normal/f1_south.png",
+      "Night Elf/Normal/f1_north.png",
+      "Night Elf/Normal/f1_east.png",
+      "Night Elf/Normal/f1_west.png",
+      "Night Elf/Normal/f2_south.png",
+      "Night Elf/Normal/f2_north.png",
+      "Night Elf/Normal/f2_east.png",
+      "Night Elf/Normal/f2_west.png"
+     ]
+    },
+    {
+     "name": "WSleep",
+     "dirs": 1,
+     "frames": 2,
+     "delay": [
+      5,
+      5
+     ],
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/WSleep/f0_south.png",
+      "Night Elf/WSleep/f1_south.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoRightArm/f0_south.png",
+      "Night Elf/NoRightArm/f0_north.png",
+      "Night Elf/NoRightArm/f0_east.png",
+      "Night Elf/NoRightArm/f0_west.png",
+      "Night Elf/NoRightArm/f1_south.png",
+      "Night Elf/NoRightArm/f1_north.png",
+      "Night Elf/NoRightArm/f1_east.png",
+      "Night Elf/NoRightArm/f1_west.png",
+      "Night Elf/NoRightArm/f2_south.png",
+      "Night Elf/NoRightArm/f2_north.png",
+      "Night Elf/NoRightArm/f2_east.png",
+      "Night Elf/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoRightLeg/f0_south.png",
+      "Night Elf/NoRightLeg/f0_north.png",
+      "Night Elf/NoRightLeg/f0_east.png",
+      "Night Elf/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLeftLeg/f0_south.png",
+      "Night Elf/NoLeftLeg/f0_north.png",
+      "Night Elf/NoLeftLeg/f0_east.png",
+      "Night Elf/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLeftLegNoRightArm/f0_south.png",
+      "Night Elf/NoLeftLegNoRightArm/f0_north.png",
+      "Night Elf/NoLeftLegNoRightArm/f0_east.png",
+      "Night Elf/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoRightLegNoLeftArm/f0_south.png",
+      "Night Elf/NoRightLegNoLeftArm/f0_north.png",
+      "Night Elf/NoRightLegNoLeftArm/f0_east.png",
+      "Night Elf/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLegs/f0_south.png",
+      "Night Elf/NoLegs/f0_north.png",
+      "Night Elf/NoLegs/f0_east.png",
+      "Night Elf/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoRightArmNoRightLeg/f0_south.png",
+      "Night Elf/NoRightArmNoRightLeg/f0_north.png",
+      "Night Elf/NoRightArmNoRightLeg/f0_east.png",
+      "Night Elf/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLeftArmNoLeftLeg/f0_south.png",
+      "Night Elf/NoLeftArmNoLeftLeg/f0_north.png",
+      "Night Elf/NoLeftArmNoLeftLeg/f0_east.png",
+      "Night Elf/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLegsNoRightArm/f0_south.png",
+      "Night Elf/NoLegsNoRightArm/f0_north.png",
+      "Night Elf/NoLegsNoRightArm/f0_east.png",
+      "Night Elf/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLegsNoLeftArm/f0_south.png",
+      "Night Elf/NoLegsNoLeftArm/f0_north.png",
+      "Night Elf/NoLegsNoLeftArm/f0_east.png",
+      "Night Elf/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/None/f0_south.png",
+      "Night Elf/None/f0_north.png",
+      "Night Elf/None/f0_east.png",
+      "Night Elf/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoArmsNoLeftLeg/f0_south.png",
+      "Night Elf/NoArmsNoLeftLeg/f0_north.png",
+      "Night Elf/NoArmsNoLeftLeg/f0_east.png",
+      "Night Elf/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": null,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoArmsNoRightLeg/f0_south.png",
+      "Night Elf/NoArmsNoRightLeg/f0_north.png",
+      "Night Elf/NoArmsNoRightLeg/f0_east.png",
+      "Night Elf/NoArmsNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoLeftArm/f0_south.png",
+      "Night Elf/NoLeftArm/f0_north.png",
+      "Night Elf/NoLeftArm/f0_east.png",
+      "Night Elf/NoLeftArm/f0_west.png",
+      "Night Elf/NoLeftArm/f1_south.png",
+      "Night Elf/NoLeftArm/f1_north.png",
+      "Night Elf/NoLeftArm/f1_east.png",
+      "Night Elf/NoLeftArm/f1_west.png",
+      "Night Elf/NoLeftArm/f2_south.png",
+      "Night Elf/NoLeftArm/f2_north.png",
+      "Night Elf/NoLeftArm/f2_east.png",
+      "Night Elf/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "Night Elf/NoArms/f0_south.png",
+      "Night Elf/NoArms/f0_north.png",
+      "Night Elf/NoArms/f0_east.png",
+      "Night Elf/NoArms/f0_west.png",
+      "Night Elf/NoArms/f1_south.png",
+      "Night Elf/NoArms/f1_north.png",
+      "Night Elf/NoArms/f1_east.png",
+      "Night Elf/NoArms/f1_west.png",
+      "Night Elf/NoArms/f2_south.png",
+      "Night Elf/NoArms/f2_north.png",
+      "Night Elf/NoArms/f2_east.png",
+      "Night Elf/NoArms/f2_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Orc",
+   "file": "Orc.dmi",
+   "layer": "base",
+   "states": [
+    {
+     "name": "Normal",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Orc/Normal/f0_south.png",
+      "Orc/Normal/f0_north.png",
+      "Orc/Normal/f0_east.png",
+      "Orc/Normal/f0_west.png",
+      "Orc/Normal/f1_south.png",
+      "Orc/Normal/f1_north.png",
+      "Orc/Normal/f1_east.png",
+      "Orc/Normal/f1_west.png",
+      "Orc/Normal/f2_south.png",
+      "Orc/Normal/f2_north.png",
+      "Orc/Normal/f2_east.png",
+      "Orc/Normal/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLeftArm/f0_south.png",
+      "Orc/NoLeftArm/f0_north.png",
+      "Orc/NoLeftArm/f0_east.png",
+      "Orc/NoLeftArm/f0_west.png",
+      "Orc/NoLeftArm/f1_south.png",
+      "Orc/NoLeftArm/f1_north.png",
+      "Orc/NoLeftArm/f1_east.png",
+      "Orc/NoLeftArm/f1_west.png",
+      "Orc/NoLeftArm/f2_south.png",
+      "Orc/NoLeftArm/f2_north.png",
+      "Orc/NoLeftArm/f2_east.png",
+      "Orc/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoRightArm/f0_south.png",
+      "Orc/NoRightArm/f0_north.png",
+      "Orc/NoRightArm/f0_east.png",
+      "Orc/NoRightArm/f0_west.png",
+      "Orc/NoRightArm/f1_south.png",
+      "Orc/NoRightArm/f1_north.png",
+      "Orc/NoRightArm/f1_east.png",
+      "Orc/NoRightArm/f1_west.png",
+      "Orc/NoRightArm/f2_south.png",
+      "Orc/NoRightArm/f2_north.png",
+      "Orc/NoRightArm/f2_east.png",
+      "Orc/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoArms/f0_south.png",
+      "Orc/NoArms/f0_north.png",
+      "Orc/NoArms/f0_east.png",
+      "Orc/NoArms/f0_west.png",
+      "Orc/NoArms/f1_south.png",
+      "Orc/NoArms/f1_north.png",
+      "Orc/NoArms/f1_east.png",
+      "Orc/NoArms/f1_west.png",
+      "Orc/NoArms/f2_south.png",
+      "Orc/NoArms/f2_north.png",
+      "Orc/NoArms/f2_east.png",
+      "Orc/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLeftLeg/f0_south.png",
+      "Orc/NoLeftLeg/f0_north.png",
+      "Orc/NoLeftLeg/f0_east.png",
+      "Orc/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoRightLeg/f0_south.png",
+      "Orc/NoRightLeg/f0_north.png",
+      "Orc/NoRightLeg/f0_east.png",
+      "Orc/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLegs/f0_south.png",
+      "Orc/NoLegs/f0_north.png",
+      "Orc/NoLegs/f0_east.png",
+      "Orc/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/None/f0_south.png",
+      "Orc/None/f0_north.png",
+      "Orc/None/f0_east.png",
+      "Orc/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoRightLegNoLeftArm/f0_south.png",
+      "Orc/NoRightLegNoLeftArm/f0_north.png",
+      "Orc/NoRightLegNoLeftArm/f0_east.png",
+      "Orc/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLeftLegNoRightArm/f0_south.png",
+      "Orc/NoLeftLegNoRightArm/f0_north.png",
+      "Orc/NoLeftLegNoRightArm/f0_east.png",
+      "Orc/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoRightArmNoRightLeg/f0_south.png",
+      "Orc/NoRightArmNoRightLeg/f0_north.png",
+      "Orc/NoRightArmNoRightLeg/f0_east.png",
+      "Orc/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLeftArmNoLeftLeg/f0_south.png",
+      "Orc/NoLeftArmNoLeftLeg/f0_north.png",
+      "Orc/NoLeftArmNoLeftLeg/f0_east.png",
+      "Orc/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLegsNoLeftArm/f0_south.png",
+      "Orc/NoLegsNoLeftArm/f0_north.png",
+      "Orc/NoLegsNoLeftArm/f0_east.png",
+      "Orc/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoLegsNoRightArm/f0_south.png",
+      "Orc/NoLegsNoRightArm/f0_north.png",
+      "Orc/NoLegsNoRightArm/f0_east.png",
+      "Orc/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoArmsNoRightLeg/f0_south.png",
+      "Orc/NoArmsNoRightLeg/f0_north.png",
+      "Orc/NoArmsNoRightLeg/f0_east.png",
+      "Orc/NoArmsNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Orc/NoArmsNoLeftLeg/f0_south.png",
+      "Orc/NoArmsNoLeftLeg/f0_north.png",
+      "Orc/NoArmsNoLeftLeg/f0_east.png",
+      "Orc/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "OrcGear",
+   "file": "OrcGear.dmi",
+   "layer": "overlay",
+   "body": "Orc",
+   "states": [
+    {
+     "name": "Bronze Axe",
+     "slot": "weapon",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "OrcGear/Bronze Axe/f0_south.png",
+      "OrcGear/Bronze Axe/f0_north.png",
+      "OrcGear/Bronze Axe/f0_east.png",
+      "OrcGear/Bronze Axe/f0_west.png",
+      "OrcGear/Bronze Axe/f1_south.png",
+      "OrcGear/Bronze Axe/f1_north.png",
+      "OrcGear/Bronze Axe/f1_east.png",
+      "OrcGear/Bronze Axe/f1_west.png",
+      "OrcGear/Bronze Axe/f2_south.png",
+      "OrcGear/Bronze Axe/f2_north.png",
+      "OrcGear/Bronze Axe/f2_east.png",
+      "OrcGear/Bronze Axe/f2_west.png"
+     ]
+    },
+    {
+     "name": "Iron Axe",
+     "slot": "weapon",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "OrcGear/Iron Axe/f0_south.png",
+      "OrcGear/Iron Axe/f0_north.png",
+      "OrcGear/Iron Axe/f0_east.png",
+      "OrcGear/Iron Axe/f0_west.png",
+      "OrcGear/Iron Axe/f1_south.png",
+      "OrcGear/Iron Axe/f1_north.png",
+      "OrcGear/Iron Axe/f1_east.png",
+      "OrcGear/Iron Axe/f1_west.png",
+      "OrcGear/Iron Axe/f2_south.png",
+      "OrcGear/Iron Axe/f2_north.png",
+      "OrcGear/Iron Axe/f2_east.png",
+      "OrcGear/Iron Axe/f2_west.png"
+     ]
+    },
+    {
+     "name": "Steel Axe",
+     "slot": "weapon",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "OrcGear/Steel Axe/f0_south.png",
+      "OrcGear/Steel Axe/f0_north.png",
+      "OrcGear/Steel Axe/f0_east.png",
+      "OrcGear/Steel Axe/f0_west.png",
+      "OrcGear/Steel Axe/f1_south.png",
+      "OrcGear/Steel Axe/f1_north.png",
+      "OrcGear/Steel Axe/f1_east.png",
+      "OrcGear/Steel Axe/f1_west.png",
+      "OrcGear/Steel Axe/f2_south.png",
+      "OrcGear/Steel Axe/f2_north.png",
+      "OrcGear/Steel Axe/f2_east.png",
+      "OrcGear/Steel Axe/f2_west.png"
+     ]
+    },
+    {
+     "name": "Wooden Buckler",
+     "slot": "shield",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "OrcGear/Wooden Buckler/f0_south.png",
+      "OrcGear/Wooden Buckler/f0_north.png",
+      "OrcGear/Wooden Buckler/f0_east.png",
+      "OrcGear/Wooden Buckler/f0_west.png",
+      "OrcGear/Wooden Buckler/f1_south.png",
+      "OrcGear/Wooden Buckler/f1_north.png",
+      "OrcGear/Wooden Buckler/f1_east.png",
+      "OrcGear/Wooden Buckler/f1_west.png",
+      "OrcGear/Wooden Buckler/f2_south.png",
+      "OrcGear/Wooden Buckler/f2_north.png",
+      "OrcGear/Wooden Buckler/f2_east.png",
+      "OrcGear/Wooden Buckler/f2_west.png"
+     ]
+    },
+    {
+     "name": "Iron War Helm",
+     "slot": "helmet",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": null,
+     "cells": [
+      "OrcGear/Iron War Helm/f0_south.png",
+      "OrcGear/Iron War Helm/f0_north.png",
+      "OrcGear/Iron War Helm/f0_east.png",
+      "OrcGear/Iron War Helm/f0_west.png",
+      "OrcGear/Iron War Helm/f1_south.png",
+      "OrcGear/Iron War Helm/f1_north.png",
+      "OrcGear/Iron War Helm/f1_east.png",
+      "OrcGear/Iron War Helm/f1_west.png",
+      "OrcGear/Iron War Helm/f2_south.png",
+      "OrcGear/Iron War Helm/f2_north.png",
+      "OrcGear/Iron War Helm/f2_east.png",
+      "OrcGear/Iron War Helm/f2_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Skeleton",
+   "file": "Skeleton.dmi",
+   "layer": "base",
+   "race": "Skeleton",
+   "source": "Skeleton.dmi",
+   "states": [
+    {
+     "name": "Normal",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/Normal/f0_south.png",
+      "Skeleton/Normal/f0_north.png",
+      "Skeleton/Normal/f0_east.png",
+      "Skeleton/Normal/f0_west.png",
+      "Skeleton/Normal/f1_south.png",
+      "Skeleton/Normal/f1_north.png",
+      "Skeleton/Normal/f1_east.png",
+      "Skeleton/Normal/f1_west.png",
+      "Skeleton/Normal/f2_south.png",
+      "Skeleton/Normal/f2_north.png",
+      "Skeleton/Normal/f2_east.png",
+      "Skeleton/Normal/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoRightArm/f0_south.png",
+      "Skeleton/NoRightArm/f0_north.png",
+      "Skeleton/NoRightArm/f0_east.png",
+      "Skeleton/NoRightArm/f0_west.png",
+      "Skeleton/NoRightArm/f1_south.png",
+      "Skeleton/NoRightArm/f1_north.png",
+      "Skeleton/NoRightArm/f1_east.png",
+      "Skeleton/NoRightArm/f1_west.png",
+      "Skeleton/NoRightArm/f2_south.png",
+      "Skeleton/NoRightArm/f2_north.png",
+      "Skeleton/NoRightArm/f2_east.png",
+      "Skeleton/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLeftArm/f0_south.png",
+      "Skeleton/NoLeftArm/f0_north.png",
+      "Skeleton/NoLeftArm/f0_east.png",
+      "Skeleton/NoLeftArm/f0_west.png",
+      "Skeleton/NoLeftArm/f1_south.png",
+      "Skeleton/NoLeftArm/f1_north.png",
+      "Skeleton/NoLeftArm/f1_east.png",
+      "Skeleton/NoLeftArm/f1_west.png",
+      "Skeleton/NoLeftArm/f2_south.png",
+      "Skeleton/NoLeftArm/f2_north.png",
+      "Skeleton/NoLeftArm/f2_east.png",
+      "Skeleton/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoArms/f0_south.png",
+      "Skeleton/NoArms/f0_north.png",
+      "Skeleton/NoArms/f0_east.png",
+      "Skeleton/NoArms/f0_west.png",
+      "Skeleton/NoArms/f1_south.png",
+      "Skeleton/NoArms/f1_north.png",
+      "Skeleton/NoArms/f1_east.png",
+      "Skeleton/NoArms/f1_west.png",
+      "Skeleton/NoArms/f2_south.png",
+      "Skeleton/NoArms/f2_north.png",
+      "Skeleton/NoArms/f2_east.png",
+      "Skeleton/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLeftLeg/f0_south.png",
+      "Skeleton/NoLeftLeg/f0_north.png",
+      "Skeleton/NoLeftLeg/f0_east.png",
+      "Skeleton/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoRightLeg/f0_south.png",
+      "Skeleton/NoRightLeg/f0_north.png",
+      "Skeleton/NoRightLeg/f0_east.png",
+      "Skeleton/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLegs/f0_south.png",
+      "Skeleton/NoLegs/f0_north.png",
+      "Skeleton/NoLegs/f0_east.png",
+      "Skeleton/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoRightArmNoRightLeg/f0_south.png",
+      "Skeleton/NoRightArmNoRightLeg/f0_north.png",
+      "Skeleton/NoRightArmNoRightLeg/f0_east.png",
+      "Skeleton/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLeftArmNoLeftLeg/f0_south.png",
+      "Skeleton/NoLeftArmNoLeftLeg/f0_north.png",
+      "Skeleton/NoLeftArmNoLeftLeg/f0_east.png",
+      "Skeleton/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoRightLegNoLeftArm/f0_south.png",
+      "Skeleton/NoRightLegNoLeftArm/f0_north.png",
+      "Skeleton/NoRightLegNoLeftArm/f0_east.png",
+      "Skeleton/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLeftLegNoRightArm/f0_south.png",
+      "Skeleton/NoLeftLegNoRightArm/f0_north.png",
+      "Skeleton/NoLeftLegNoRightArm/f0_east.png",
+      "Skeleton/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/None/f0_south.png",
+      "Skeleton/None/f0_north.png",
+      "Skeleton/None/f0_east.png",
+      "Skeleton/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLegsNoRightArm/f0_south.png",
+      "Skeleton/NoLegsNoRightArm/f0_north.png",
+      "Skeleton/NoLegsNoRightArm/f0_east.png",
+      "Skeleton/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoLegsNoLeftArm/f0_south.png",
+      "Skeleton/NoLegsNoLeftArm/f0_north.png",
+      "Skeleton/NoLegsNoLeftArm/f0_east.png",
+      "Skeleton/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoArmsNoLeftLeg/f0_south.png",
+      "Skeleton/NoArmsNoLeftLeg/f0_north.png",
+      "Skeleton/NoArmsNoLeftLeg/f0_east.png",
+      "Skeleton/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Skeleton/NoArmsNoRightLeg/f0_south.png",
+      "Skeleton/NoArmsNoRightLeg/f0_north.png",
+      "Skeleton/NoArmsNoRightLeg/f0_east.png",
+      "Skeleton/NoArmsNoRightLeg/f0_west.png"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Vampire",
+   "file": "Vampire.dmi",
+   "layer": "base",
+   "race": "Vampire",
+   "source": "Vampire.dmi",
+   "states": [
+    {
+     "name": "Sleep",
+     "dirs": 1,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/Sleep/f0_south.png"
+     ]
+    },
+    {
+     "name": "",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Vampire/_blank/f0_south.png",
+      "Vampire/_blank/f0_north.png",
+      "Vampire/_blank/f0_east.png",
+      "Vampire/_blank/f0_west.png",
+      "Vampire/_blank/f1_south.png",
+      "Vampire/_blank/f1_north.png",
+      "Vampire/_blank/f1_east.png",
+      "Vampire/_blank/f1_west.png",
+      "Vampire/_blank/f2_south.png",
+      "Vampire/_blank/f2_north.png",
+      "Vampire/_blank/f2_east.png",
+      "Vampire/_blank/f2_west.png"
+     ]
+    },
+    {
+     "name": "WSleep",
+     "dirs": 1,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/WSleep/f0_south.png"
+     ]
+    },
+    {
+     "name": "NoLeftArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLeftArm/f0_south.png",
+      "Vampire/NoLeftArm/f0_north.png",
+      "Vampire/NoLeftArm/f0_east.png",
+      "Vampire/NoLeftArm/f0_west.png",
+      "Vampire/NoLeftArm/f1_south.png",
+      "Vampire/NoLeftArm/f1_north.png",
+      "Vampire/NoLeftArm/f1_east.png",
+      "Vampire/NoLeftArm/f1_west.png",
+      "Vampire/NoLeftArm/f2_south.png",
+      "Vampire/NoLeftArm/f2_north.png",
+      "Vampire/NoLeftArm/f2_east.png",
+      "Vampire/NoLeftArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArm",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoRightArm/f0_south.png",
+      "Vampire/NoRightArm/f0_north.png",
+      "Vampire/NoRightArm/f0_east.png",
+      "Vampire/NoRightArm/f0_west.png",
+      "Vampire/NoRightArm/f1_south.png",
+      "Vampire/NoRightArm/f1_north.png",
+      "Vampire/NoRightArm/f1_east.png",
+      "Vampire/NoRightArm/f1_west.png",
+      "Vampire/NoRightArm/f2_south.png",
+      "Vampire/NoRightArm/f2_north.png",
+      "Vampire/NoRightArm/f2_east.png",
+      "Vampire/NoRightArm/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoArms",
+     "dirs": 4,
+     "frames": 3,
+     "delay": [
+      2,
+      2,
+      2
+     ],
+     "movement": 1,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoArms/f0_south.png",
+      "Vampire/NoArms/f0_north.png",
+      "Vampire/NoArms/f0_east.png",
+      "Vampire/NoArms/f0_west.png",
+      "Vampire/NoArms/f1_south.png",
+      "Vampire/NoArms/f1_north.png",
+      "Vampire/NoArms/f1_east.png",
+      "Vampire/NoArms/f1_west.png",
+      "Vampire/NoArms/f2_south.png",
+      "Vampire/NoArms/f2_north.png",
+      "Vampire/NoArms/f2_east.png",
+      "Vampire/NoArms/f2_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLeftLeg/f0_south.png",
+      "Vampire/NoLeftLeg/f0_north.png",
+      "Vampire/NoLeftLeg/f0_east.png",
+      "Vampire/NoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoRightLeg/f0_south.png",
+      "Vampire/NoRightLeg/f0_north.png",
+      "Vampire/NoRightLeg/f0_east.png",
+      "Vampire/NoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegs",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLegs/f0_south.png",
+      "Vampire/NoLegs/f0_north.png",
+      "Vampire/NoLegs/f0_east.png",
+      "Vampire/NoLegs/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftArmNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLeftArmNoLeftLeg/f0_south.png",
+      "Vampire/NoLeftArmNoLeftLeg/f0_north.png",
+      "Vampire/NoLeftArmNoLeftLeg/f0_east.png",
+      "Vampire/NoLeftArmNoLeftLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightArmNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoRightArmNoRightLeg/f0_south.png",
+      "Vampire/NoRightArmNoRightLeg/f0_north.png",
+      "Vampire/NoRightArmNoRightLeg/f0_east.png",
+      "Vampire/NoRightArmNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLegsNoLeftArm/f0_south.png",
+      "Vampire/NoLegsNoLeftArm/f0_north.png",
+      "Vampire/NoLegsNoLeftArm/f0_east.png",
+      "Vampire/NoLegsNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLegsNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLegsNoRightArm/f0_south.png",
+      "Vampire/NoLegsNoRightArm/f0_north.png",
+      "Vampire/NoLegsNoRightArm/f0_east.png",
+      "Vampire/NoLegsNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "None",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/None/f0_south.png",
+      "Vampire/None/f0_north.png",
+      "Vampire/None/f0_east.png",
+      "Vampire/None/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoLeftLegNoRightArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoLeftLegNoRightArm/f0_south.png",
+      "Vampire/NoLeftLegNoRightArm/f0_north.png",
+      "Vampire/NoLeftLegNoRightArm/f0_east.png",
+      "Vampire/NoLeftLegNoRightArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoRightLegNoLeftArm",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoRightLegNoLeftArm/f0_south.png",
+      "Vampire/NoRightLegNoLeftArm/f0_north.png",
+      "Vampire/NoRightLegNoLeftArm/f0_east.png",
+      "Vampire/NoRightLegNoLeftArm/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoRightLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoArmsNoRightLeg/f0_south.png",
+      "Vampire/NoArmsNoRightLeg/f0_north.png",
+      "Vampire/NoArmsNoRightLeg/f0_east.png",
+      "Vampire/NoArmsNoRightLeg/f0_west.png"
+     ]
+    },
+    {
+     "name": "NoArmsNoLeftLeg",
+     "dirs": 4,
+     "frames": 1,
+     "delay": null,
+     "movement": 0,
+     "rewind": 0,
+     "cells": [
+      "Vampire/NoArmsNoLeftLeg/f0_south.png",
+      "Vampire/NoArmsNoLeftLeg/f0_north.png",
+      "Vampire/NoArmsNoLeftLeg/f0_east.png",
+      "Vampire/NoArmsNoLeftLeg/f0_west.png"
+     ]
+    }
+   ]
+  }
+ ]
+}

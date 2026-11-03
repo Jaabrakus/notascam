@@ -1,0 +1,1059 @@
+:root{color-scheme:dark;--bg:#101b19;--panel:#1a2925;--raised:#23362f;--line:#3b4e42;--ink:#eef0dc;--muted:#adbcab;--gold:#e0bb73;--green:#82bf8a;--red:#f2a18b}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 HudText,Georgia,serif;overscroll-behavior:contain;-webkit-text-size-adjust:100%}
+button,summary{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button,select{font:inherit;color:inherit;min-height:46px;border:1px solid var(--line);border-radius:9px;background:var(--raised);padding:10px 12px;cursor:pointer}
+button:hover{border-color:var(--gold)}button:active{transform:translateY(1px);background:#3a5041}button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+button[aria-pressed=true],button.active{border-color:var(--gold);color:var(--gold);background:#354135}button:disabled{opacity:.48;cursor:default;transform:none}button small{display:block;color:var(--muted);font-size:11px}
+header{padding:14px 16px 10px;display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:1px solid var(--line)}
+.brand{font-family:HudText,Georgia,serif;font-size:20px;letter-spacing:.03em}.eyebrow{font-size:10px;letter-spacing:.2em;color:var(--gold)}.quiet{background:transparent}
+.world{padding:10px 12px;border-bottom:1px solid var(--line)}.worldline,.row{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.worldline{justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:0}.worldseason{display:flex;align-items:center;gap:6px}.worldseason img{width:22px;height:22px;image-rendering:pixelated;object-fit:contain}.cameraoverview{margin:3px 0 0}.cameraoverview summary{min-height:46px;color:var(--ink)}.cameraoverview[open]{padding-bottom:6px}
+.overview{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:center}canvas{display:block;width:130px;height:130px;background:#24352c;border:1px solid var(--line);border-radius:8px;image-rendering:pixelated;touch-action:none;cursor:crosshair}
+.navpad{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.navpad button{padding:3px;min-width:40px;min-height:42px}.navpad .spacer{visibility:hidden}
+.layers{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:5px}.layers button{min-height:44px;padding:4px;font-size:12px}.badge{display:inline-block;border:1px solid var(--line);padding:2px 6px;border-radius:5px;font-size:11px;color:var(--gold)}
+.commandbar{position:sticky;top:0;z-index:5;background:var(--bg);box-shadow:0 3px 10px #0004}nav{display:grid;grid-template-columns:repeat(5,1fr);padding:8px;background:var(--bg);gap:4px;border-bottom:1px solid var(--line)}nav button{border:0;background:transparent;padding:9px 2px;border-radius:7px;font-size:13px}
+#notice{padding:10px 16px;background:#26392c;border-bottom:1px solid var(--line);font-size:13px;color:#e3dfbd;min-height:42px;overflow-wrap:anywhere}
+main{padding:12px 12px 24px}.page[hidden]{display:none}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:6px;margin:0 0 10px}.sectionhead h2{font:18px HudText,Georgia,serif;margin:0}p{margin:7px 0 12px;color:var(--muted)}.hint{font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:10px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.grid button{text-align:left}.grid button strong{font-weight:600}.grid.three button{text-align:center;padding:7px 4px;font-size:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:11px;margin:8px 0;padding:10px}.card.selected{border-color:#819866}.unitpick{display:flex;align-items:center;gap:9px;width:100%;text-align:left;border:0;background:transparent;padding:0;min-height:48px}.portrait{width:42px;height:48px;object-fit:contain;image-rendering:pixelated;background:#2e3b30;border-radius:7px}.unitname{font-weight:650;font-size:14px;overflow-wrap:anywhere}.unitmeta{font-size:11px;color:var(--muted)}.tick{margin-left:auto;color:var(--gold);font-size:12px}.vitals{display:grid;grid-template-columns:1fr 1fr;gap:7px 12px;margin-top:9px}.vital{font-size:11px;color:var(--muted)}.vital .label{display:flex;justify-content:space-between;gap:5px}.meter{height:5px;background:#0c1511;border-radius:3px;margin-top:4px;overflow:hidden}.fill{display:block;height:100%;width:0;background:var(--green)}.fill.food{background:var(--gold)}.fill.rest{background:#8fbaca}.fill.carry{background:#b8a2ce}.status{font-size:12px;margin-top:8px;color:var(--gold);overflow-wrap:anywhere}.warnings{font-size:12px;color:var(--red);margin-top:5px}.card:not(.selected) .vitals,.card:not(.selected) details{display:none}
+details{margin-top:9px}.sheet{margin-top:8px}.sheet h4{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:10px 0 4px}.sheet h4:first-child{margin-top:0}.statrows{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}.statrow{display:flex;justify-content:space-between;gap:6px;font-size:12px;padding:3px 0;border-bottom:1px solid var(--line)}.statrow span:first-child{color:var(--muted)}.statrow.bad span:last-child{color:var(--red)}.worldpanel{background:var(--panel);border:1px solid var(--line);border-radius:11px;margin:8px 0;padding:10px}.worldpanel .statrows{grid-template-columns:1fr}.worldpanel .statrow span:last-child{text-align:right;overflow-wrap:anywhere}summary{cursor:pointer;padding:12px 2px;min-height:44px;font-size:13px;color:var(--muted)}details p{font-size:12px}.inventory{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.inventory.bag{grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:4px}
+.inventory.bag button{position:relative;aspect-ratio:1;padding:0;display:grid;place-items:center;background:linear-gradient(#141a16,#0b0f0c);border:2px solid #5d4a2a;border-radius:4px;box-shadow:inset 0 0 0 1px #000,inset 0 2px 6px rgba(0,0,0,.8);min-height:0}
+.inventory.bag button:hover,.inventory.bag button:focus-visible{border-color:var(--gold);box-shadow:inset 0 0 0 1px #000,0 0 8px rgba(231,196,115,.45)}
+.bagicon{width:80%;height:80%;object-fit:contain;image-rendering:pixelated}
+.baglabel{font-size:9px;line-height:1.05;text-align:center;color:#d8cfb6;padding:2px}
+.bagstate{position:absolute;right:2px;bottom:1px;font-size:10px;font-weight:700;color:#f2d27a;text-shadow:0 0 2px #000,0 0 2px #000}
+.card:not(.selected) .bagwrap,.card:not(.selected) .levelplate{display:none}
+.card.selected{background:linear-gradient(180deg,#2a2417 0,#17150f 46px,#121a14 100%);border:2px solid #8a6d36;box-shadow:inset 0 0 0 1px #000,inset 0 0 18px rgba(0,0,0,.6),0 0 0 1px #2c2210;border-radius:8px}
+.card.selected .portrait{width:68px;height:76px;border:3px solid #b08a3e;border-radius:50% 50% 10px 10px;box-shadow:0 0 0 2px #2c2210,inset 0 0 10px rgba(0,0,0,.8);background:radial-gradient(#3b4a3a,#151c16)}
+.card.selected .unitname{font-family:HudText,Georgia,serif;font-size:17px;color:#f2d27a;text-shadow:0 1px 0 #000}
+.levelplate{margin:8px 0 4px;padding:4px 8px;text-align:center;font-size:12px;letter-spacing:.04em;color:#efe6ff;background:linear-gradient(#5b2a86,#3a1658);border:1px solid #b08a3e;border-radius:3px;box-shadow:inset 0 1px 0 rgba(255,255,255,.15)}
+.consolehead{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:10px 0 5px}
+.card.selected .statrow{background:linear-gradient(#141a16,#0e120f);border:1px solid #3a3020;border-radius:3px;padding:4px 6px;margin:1px 0}
+.card.selected .statrow span:last-child{color:#f4ecd2;font-weight:600}.inventory button{font-size:12px;padding:7px;overflow-wrap:anywhere;text-align:left}
+.empty{padding:18px 10px;border:1px dashed var(--line);border-radius:10px;text-align:center;margin:10px 0}.reason{font-size:12px;color:var(--muted);margin:2px 0 10px}.actionlist{display:grid;gap:5px}.actionlist button{text-align:left;display:flex;align-items:center;justify-content:space-between;gap:10px}.actionlist kbd{font-size:11px;color:var(--gold)}
+.task{padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}.task.done{color:var(--green)}.task small{display:block;color:var(--muted);margin:4px 0 0 23px}.tag{font-size:11px;color:var(--muted)}h3{font-size:14px;margin:18px 0 8px;color:var(--gold)}.guide li{margin:7px 0}.guide ul{padding-left:20px}.workunit{padding:9px 0;border-bottom:1px solid var(--line)}.workunit strong{font-size:13px}.workunit small{display:block;color:var(--muted);font-size:12px}.controls{display:grid;grid-template-columns:1fr 1fr;gap:6px}.footer{display:flex;gap:6px;margin-top:16px}.footer button{flex:1;font-size:12px;padding:8px}.danger{color:var(--red)}.pending{color:var(--gold)}.taskmode{padding:10px 12px;border-bottom:1px solid var(--line);background:var(--panel)}.taskmode .grid{margin:0}.taskmode p{margin:7px 0 0}.orderwork{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}.card:not(.selected) .orderwork{display:none}.tasklist{padding:0;list-style:none;margin:8px 0}.taskrow{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line);padding:5px 0;font-size:12px}.taskrow span{flex:1;overflow-wrap:anywhere}.taskrow button{font-size:12px;padding:7px 9px;flex:none;min-width:66px}.workbuttons{display:grid;grid-template-columns:1fr 1fr;gap:6px}.workbuttons .wide{grid-column:1/-1}.currenttask{font-size:12px;color:var(--gold);padding:5px 0;overflow-wrap:anywhere}
+.unitdefense{margin-top:8px}.defensestate{font-size:12px;color:var(--gold);overflow-wrap:anywhere}.defenseoptions{margin-top:8px}.defenseoptions label{display:block;font-size:12px;margin-bottom:5px}.defenseoptions select{display:block;width:100%;min-width:0;min-height:46px}.defenseoptions p{margin:6px 0 0}.card:not(.selected) .defenseoptions{display:none}
+.portrait{position:relative;display:grid;place-items:center;flex:none;overflow:hidden}.portraitfallback{font-size:12px;font-weight:600;color:var(--muted)}.portraitimage{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;image-rendering:pixelated;visibility:hidden}.portraitimage.loaded{visibility:visible}
+.palette{height:auto;max-height:calc(calc(var(--sh,100vh)*1) - 24px)}.palette .drawerhead h2{min-width:0;overflow-wrap:anywhere}.palette .drawerhead button{flex:none}.palettechoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding-bottom:8px}.palettechoices button{display:flex;align-items:center;gap:8px;min-width:0;min-height:64px;padding:9px;text-align:left}.palettechoices img{width:32px;height:32px;object-fit:contain;image-rendering:pixelated;flex:none;visibility:hidden}.palettechoices img.loaded{visibility:visible}.palettecopy{min-width:0;overflow-wrap:anywhere;font-size:13px}.palettecopy small{color:var(--red);margin-top:4px}.palette .hint{overflow-wrap:anywhere}
+#magicTargetChoices small{color:var(--muted)}#magicTargetChoices [data-blocked=true] small{color:var(--red)}
+.modebuttons{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.35fr);gap:7px}.modebuttons button{padding:8px 4px;min-height:54px;font-size:12px}#deselect{background:#e0bb73;border-color:#e0bb73;color:#18231c}#deselect strong{display:block;font-size:13px}#deselect small{color:#344638;font-size:10px}
+.modefooter{margin-top:6px}.modefooter #modeHint{margin:0 0 7px;font-size:11px}.quickdock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.quickdock button{min-width:0;min-height:46px;padding:7px 3px;font-size:12px;font-weight:600}.quickdock [data-ui=controls-open]{border-color:#768466;background:#304233}.taskmode #dockHint{margin:6px 0 0;font-size:11px;color:var(--muted)}
+.commandcategories{padding:9px 12px;border-bottom:1px solid var(--line);background:#14221d}.commandcategories p{margin:0 0 5px;font-size:11px;color:var(--muted)}#commandCategories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}#commandCategories button{font-size:12px;min-width:0;min-height:46px;padding:6px 2px;background:transparent}
+.controlsdrawer{padding:0;border:1px solid var(--line);border-radius:12px;color:var(--ink);background:var(--bg);width:calc(100% - 20px);max-width:580px;height:min(780px,calc(calc(var(--sh,100vh)*1) - 24px));max-height:calc(calc(var(--sh,100vh)*1) - 24px);overflow:hidden}.controlsdrawer[open]{display:flex;flex-direction:column}.controlsdrawer::backdrop{background:#0009}.drawerhead{padding:10px 12px;background:var(--panel);flex:none}.drawerhead h2{font:19px HudText,Georgia,serif;margin:0}.drawerhead button{min-width:64px;min-height:46px}.drawerfilters{padding:10px 12px 7px;flex:none;border-bottom:1px solid var(--line)}.controlsearch{display:flex;gap:6px}.controlsearch input{min-width:0;flex:1;min-height:46px;padding:10px;border:1px solid var(--line);border-radius:8px;background:#0f1b16;color:var(--ink);font:16px HudText,Georgia,serif}.controlsearch button{min-width:58px;min-height:46px;font-size:12px;padding:8px}#borderFilters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:8px}#borderFilters button{min-width:0;min-height:46px;padding:7px 3px;font-size:12px}.filtermeta{display:flex;gap:8px;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:7px}.drawerbody{padding:0 12px 12px;min-height:0;flex:1;overflow-y:auto;overscroll-behavior:contain}.borderdisplay{flex:none;padding:8px 12px;background:var(--panel);border-top:1px solid var(--line)}.borderdisplay button{width:100%;min-height:46px;font-size:12px;padding:7px}.borderdisplay p{margin:5px 0 0;font-size:11px}.controlgroup h3{font-size:15px;margin:14px 0 3px}.bordercontrol{display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.bordercontrol img{width:32px;height:32px;object-fit:contain;image-rendering:pixelated;background:#26382f;border:1px solid var(--line);border-radius:6px}.bordercontrol[data-has-icon=false]{grid-template-columns:minmax(0,1fr)}.bordercontrol h4{font-size:14px;margin:0}.bordercontrol p{font-size:12px;margin:5px 0 9px;overflow-wrap:anywhere}.bordercontrol button{width:100%;min-height:48px}.bordercontrol[data-active=true] h4{color:var(--gold)}.controlmeta{font-size:11px;color:var(--gold);margin:4px 0}.controlindicator{font-size:12px;color:var(--muted)}.bordercontrol .reason{color:var(--red)}
+@media(max-width:340px){header{padding:10px}.brand{font-size:18px}.world{padding:9px}.overview{grid-template-columns:112px 1fr;gap:8px}canvas{width:112px;height:112px}main{padding:9px}.navpad button{min-width:32px}.grid.three{grid-template-columns:1fr 1fr}}
+.world{padding:6px 12px}.cameraoverview{margin:0}.cameraoverview summary{display:block;padding:4px 0;min-height:46px}.cameralabel{display:block;font-size:11px;margin-top:2px;color:var(--muted)}.cameralabel::before{content:'▸ '}.cameraoverview[open] .cameralabel::before{content:'▾ '}.cameraoverview .overview{margin:8px 0}
+.selectiontools{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.selectiontools button{font-size:12px;min-width:0;padding:8px 3px}#attack{width:100%;border-radius:0;background:#58382e;color:#fff0db;border-color:#a56b4d}
+.unitgroup{padding:12px 0;border-bottom:1px solid var(--line)}.groupheading{display:flex;align-items:center;justify-content:space-between;gap:8px}.groupheading h3{margin:0;font-size:15px}.groupmembers{font-size:12px;margin:6px 0 8px;overflow-wrap:anywhere}.groupactions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.groupactions button{min-width:0;min-height:46px;padding:8px 4px}.groupwrite{display:contents}
+@media(max-height:740px){.commandcategories,.selectionhint{display:none}body>header{padding:8px 12px}.brand{font-size:18px}.taskmode{padding:8px 10px}.taskmode #dockHint{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0}.modefooter #modeHint{margin-bottom:5px}.sectionhead{margin-bottom:7px}}
+@media(pointer:coarse){button,summary{min-height:48px}.navpad button{min-height:46px}}
+@media(prefers-reduced-motion:reduce){button:active{transform:none}}
+
+
+/* ===== Layered HUD (map fills the window; HUD floats over it) =====
+   Crusader Kings / Europa-style top bar, left panel and right outliner,
+   WoW-style unit frame, action bar and minimap. */
+html.overlay,body.overlay{background:transparent!important}
+body.overlay{height:calc(var(--sh,100vh)*1);overflow:hidden;font-size:13px;--trim:#9a7a3c;--trimdark:#4a3a1c;--pane:rgba(20,18,13,.93);--pane2:rgba(13,16,13,.95)}
+.ovonly{display:none}body.overlay .ovonly{display:block}
+body.overlay .commandbar{display:contents}
+body.overlay header,body.overlay nav,body.overlay .world,body.overlay .taskmode,body.overlay main,body.overlay #topbar,body.overlay #roster,body.overlay #heroframe,body.overlay .toast{background:linear-gradient(180deg,var(--pane),var(--pane2));border:1px solid var(--trim);box-shadow:0 0 0 1px #000,inset 0 0 0 1px var(--trimdark),0 6px 18px rgba(0,0,0,.55);border-radius:4px}
+body.overlay button,body.overlay select{min-height:34px;padding:5px 8px;border-radius:4px;border:1px solid #5d4a2a;background:linear-gradient(#2a2f27,#171b16);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+body.overlay button:hover{border-color:var(--gold)}
+/* top-left: realm block + panel buttons */
+body.overlay header{position:fixed;top:6px;left:6px;width:300px;padding:6px 10px;border-bottom:1px solid var(--trim)}
+body.overlay header .eyebrow{font-size:9px}body.overlay .brand{font-size:16px;color:#f2d27a;text-shadow:0 1px 0 #000}
+body.overlay header button{min-height:28px;padding:2px 9px}
+body.overlay nav{position:fixed;top:58px;left:6px;width:300px;padding:4px;gap:3px;border-bottom:1px solid var(--trim)}
+body.overlay nav button{min-height:30px;padding:3px 2px;font-family:HudText,Georgia,serif;font-size:12px;color:#e8dcb8;border:1px solid #5d4a2a;background:linear-gradient(#2a2f27,#171b16)}
+body.overlay nav button.active{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f);border-color:#f2d27a}
+/* left panel (character / orders / work / guide) */
+body.overlay main{position:fixed;top:102px;left:6px;width:min(420px,calc(var(--sw,100vw)*0.42));bottom:150px;overflow:auto;padding:28px 10px 12px;display:none}
+body.overlay.panel-open main{display:block}
+.panelclose{display:none}body.overlay .panelclose{display:block;position:absolute;top:3px;right:4px;min-height:24px!important;padding:0 8px!important;font-size:14px;line-height:22px}
+body.overlay main .footer{margin-top:10px}
+/* top bar: resources and date */
+body.overlay #topbar{position:fixed;top:0;left:50%;transform:translateX(-50%);display:flex;gap:2px;align-items:center;padding:3px 6px;border-top:0;border-radius:0 0 6px 6px;flex-wrap:wrap;justify-content:center;max-width:calc(calc(var(--sw,100vw)*1) - 440px)}
+#topbar .res{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;border-right:1px solid #3a3020;color:#e8dcb8;font-size:12px}
+#topbar .res b{color:#f2d27a;font-weight:600}#topbar .res:last-of-type{border-right:0}
+#topbar button{min-height:24px!important;padding:1px 8px!important;font-size:11px;margin-left:4px}
+#topbar .playmode{display:inline-flex;margin-left:4px}#topbar .playmode button{margin-left:0;border-radius:0}#topbar .playmode button:first-child{border-radius:3px 0 0 3px}#topbar .playmode button:last-child{border-radius:0 3px 3px 0}#topbar .playmode button.on{background:linear-gradient(#8a6a2a,#5a4216);color:#fff3c4;border-color:#d8b25a}
+/* top-right: minimap */
+body.overlay .world{position:fixed;top:6px;right:6px;width:196px;padding:6px;border-bottom:1px solid var(--trim)}
+body.overlay .world summary{list-style:none}body.overlay .world summary::-webkit-details-marker{display:none}
+body.overlay .worldline{font-size:11px}body.overlay .cameralabel{display:none}
+body.overlay .overview{grid-template-columns:1fr;gap:5px;margin-top:4px}
+body.overlay canvas{width:182px;height:182px;border:2px solid var(--trim);border-radius:50%;box-shadow:0 0 0 2px #000,inset 0 0 12px #000}
+body.overlay .navpad{display:none}body.overlay .layers{grid-template-columns:repeat(4,1fr);gap:2px}body.overlay .layers button{min-height:24px;font-size:10px;padding:1px}
+body.overlay #notice,body.overlay .commandcategories{display:none}
+/* right outliner */
+body.overlay #roster{position:fixed;right:6px;top:268px;bottom:150px;width:196px;overflow:auto;padding:4px}
+#roster h4{margin:2px 4px 4px;font:12px HudText,Georgia,serif;color:#f2d27a;display:flex;justify-content:space-between}
+#roster .member{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:center;width:100%;min-height:38px!important;padding:3px 5px!important;margin:0 0 3px;text-align:left}
+#roster .member img{width:30px;height:32px;object-fit:contain;image-rendering:pixelated;background:#141a16;border:1px solid #5d4a2a;border-radius:3px}
+#roster .member .nm{font-size:11px;line-height:1.15;color:#e8dcb8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#roster .member .hpbar{height:4px;background:#2a0f0c;border-radius:2px;margin-top:3px;overflow:hidden}#roster .member .hpbar span{display:block;height:100%;background:linear-gradient(#7fd06a,#3f8f34)}
+#roster .member.sel{border-color:#f2d27a;box-shadow:0 0 6px rgba(242,210,122,.35)}
+#roster .member .st{font-size:10px;color:var(--muted)}
+/* bottom-left: hero frame (one unit) / settlement frame (several) */
+body.overlay #heroframe{position:fixed;left:6px;bottom:6px;width:300px;padding:8px 10px}
+#heroframe .hf{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;align-items:center}
+#heroframe .ring{width:70px;height:78px;border:3px solid #b08a3e;border-radius:50% 50% 10px 10px;background:radial-gradient(#3b4a3a,#151c16);display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 2px #2c2210,inset 0 0 10px #000}
+#heroframe .ring img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+#heroframe .hn{font:16px HudText,Georgia,serif;color:#f2d27a;text-shadow:0 1px 0 #000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#heroframe .lv{margin:3px 0 5px;padding:1px 6px;font-size:11px;text-align:center;color:#efe6ff;background:linear-gradient(#5b2a86,#3a1658);border:1px solid #b08a3e;border-radius:3px}
+#heroframe .bar{position:relative;height:12px;margin:2px 0;background:#111;border:1px solid #000;border-radius:2px;overflow:hidden}
+#heroframe .bar span{display:block;height:100%}#heroframe .bar i{position:absolute;inset:0;font:9px/12px HudText,Georgia,serif;font-style:normal;text-align:center;color:#fff;text-shadow:0 0 2px #000}
+#heroframe .bar.hp span{background:linear-gradient(#7fd06a,#2f7f28)}#heroframe .bar.food span{background:linear-gradient(#e9b562,#9c6a1c)}#heroframe .bar.rest span{background:linear-gradient(#6aa6e8,#22528f)}
+#heroframe .hb{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:7px}#heroframe .hb button{min-height:28px;padding:2px;font-size:11px}
+#heroframe .group{display:flex;flex-wrap:wrap;gap:3px;margin-top:6px}#heroframe .group img{width:30px;height:32px;object-fit:contain;image-rendering:pixelated;background:#141a16;border:1px solid #5d4a2a;border-radius:3px}
+#rosterList .member.fighting .st{color:#ff9a86;font-weight:600}#rosterList .member.fighting{border-color:#a5443a}#rosterList>.member.hc-off{display:none!important}
+#heroframe .succ{margin:-2px -4px 8px;padding:6px 8px;border:1px solid #b08a3e;border-radius:3px;background:linear-gradient(#3a1c1c,#1e0f0f);color:#f0e2c0;font-size:12px;line-height:1.4}#heroframe .succ b{display:block;font:14px HudText,Georgia,serif;color:#f2d27a}
+#heroframe .facts{font-size:12px;color:#e8dcb8;line-height:1.5}#heroframe .facts b{color:#f2d27a}
+/* bottom-centre: action bar */
+body.overlay .taskmode{position:fixed;bottom:6px;left:50%;transform:translateX(-50%);width:min(660px,calc(calc(var(--sw,100vw)*1) - 640px));padding:6px 8px;border-bottom:1px solid var(--trim)}
+body.overlay .modebuttons{gap:4px}body.overlay .modebuttons button{min-height:38px;padding:3px 6px}
+body.overlay .modefooter{display:block}body.overlay .modefooter .hint{margin:3px 2px;font-size:11px;text-align:center}
+body.overlay .quickdock{gap:4px}body.overlay .quickdock button{min-height:36px}
+#marks3d{position:fixed;inset:0;pointer-events:none;z-index:5}#marks3d span{position:absolute;left:0;top:0;width:16px;height:18px;color:#fff6d8;font:bold 13px/18px HudText,Georgia,serif;text-align:center;text-shadow:0 0 3px #000,0 0 2px #000}#marks3d span[hidden]{display:none}body:not(.v3d) #marks3d{display:none}
+#menu3d{max-height:calc(var(--sh,100vh)*0.6);overflow-y:auto}#menu3d .m3h{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:6px 6px 2px;border-top:1px solid rgba(176,138,62,.35);font-size:12px}#menu3d .m3h:first-child{border-top:0}#menu3d .m3h small{opacity:.7;font-size:10px}#menu3d .m3acts{display:flex;flex-wrap:wrap;gap:3px;padding:0 4px 4px}#menu3d .m3acts button{flex:1 1 auto}#menu3d .m3grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;padding:0 4px 4px}#menu3d .m3grid button{position:relative;min-height:30px;margin:0;padding:3px 5px 7px;font-size:11px;text-align:center}#menu3d .m3grid button i{position:absolute;left:5px;bottom:3px;height:3px;border-radius:2px}#menu3d .m3grid button.here{outline:1.5px solid #f2a24a;outline-offset:-1px}
+#box3d{position:fixed;z-index:6;border:1px solid #f2d27a;background:rgba(242,210,122,.12);pointer-events:none}#menu3d{position:fixed;z-index:12;display:flex;flex-direction:column;min-width:200px;padding:4px;background:linear-gradient(#2a241a,#18140e);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 6px 18px rgba(0,0,0,.6)}#menu3d[hidden]{display:none}#menu3d button{text-align:left;min-height:28px;margin:1px 0;font-size:12px}
+#worldmap{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:50;width:min(calc(var(--sw,100vw)*0.86),calc(calc(var(--sh,100vh)*0.86) + 120px));padding:8px 10px;background:linear-gradient(#211c13,#14110c);border:1px solid #b08a3e;border-radius:6px;box-shadow:0 10px 40px rgba(0,0,0,.7)}#worldmap[hidden]{display:none!important}#worldmap header{display:flex;align-items:center;gap:8px;margin-bottom:6px;color:#f2d27a;font:15px HudText,Georgia,serif;background:none!important;border:0!important;box-shadow:none!important}#worldmap header b{flex:1}#worldmap header button{min-height:26px;padding:0 9px}#wmLayers{display:flex;gap:3px}#wmCanvas{display:block;width:100%;aspect-ratio:1;max-height:calc(var(--sh,100vh)*0.76);background:#07090a;border:1px solid #4a3a1c;border-radius:3px;cursor:crosshair;image-rendering:pixelated}body.overlay #worldmap canvas{width:auto!important;max-width:100%;height:calc(var(--sh,100vh)*0.76)!important;margin:0 auto;border-radius:3px!important;box-shadow:none!important}
+.vlog{display:flex;flex-direction:column;gap:3px;max-height:calc(var(--sh,100vh)*0.56);overflow:auto}.vlog .ventry{display:flex;justify-content:space-between;gap:10px;text-align:left;min-height:30px;padding:4px 8px;border-left:3px solid #6a5a3a}.vlog .ventry small{opacity:.7;white-space:nowrap}.vlog .k-fight{border-left-color:#c0503c}.vlog .k-good{border-left-color:#5aa04a}.vlog .k-problem{border-left-color:#d8a03a}.vlog .k-work{border-left-color:#5a8ac0}.k-skill{border-left-color:#f2d27a}.vlog .k-birth{border-left-color:#c09adc}.vlog .k-death{border-left-color:#777}
+#hoverbar{position:fixed;top:66px;left:50%;transform:translateX(-50%);z-index:8;padding:3px 12px;border:1px solid #9a7a3c;border-radius:3px;background:rgba(20,18,13,.9);color:#f2d27a;font:12px HudText,Georgia,serif;pointer-events:none;white-space:nowrap}#hoverbar[hidden],body.v3d #hoverbar{display:none!important}#hoverbar.warn,#tag3d.warn{border-color:#d8a03a;color:#ffd08a}
+.zoneadd{display:grid;grid-template-columns:1fr auto auto;gap:4px;margin:4px 0}.zonelist{display:flex;flex-direction:column;gap:3px}.zonelist .zone{display:grid;grid-template-columns:1fr auto auto auto;gap:4px;align-items:center;padding:3px 6px;border:1px solid #4a3a1c;border-radius:3px}.zonelist .zone small{opacity:.75}
+#topbar .cam3d{display:none}body.v3d #topbar .cam3d{display:inline-flex}#topbar .cam3d button{margin-left:2px}#camTop[aria-pressed=true],#camIso[aria-pressed=true]{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f)}
+.droptarget{outline:2px solid #f2d27a!important;outline-offset:-2px;background:rgba(242,210,122,.15)!important}.autouse{display:flex;flex-direction:column;gap:2px;margin-top:6px;font-size:12px}.autouse b{color:#f2d27a;font-weight:600}.autouse label{display:flex;gap:6px;align-items:center}
+body.bagdragging,body.bagdragging *{cursor:grabbing!important}#bagtip{position:fixed;left:0;top:0;z-index:120;max-width:260px;padding:6px 9px;background:linear-gradient(#211c13,#14110c);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 6px 16px rgba(0,0,0,.55);color:#efe3c2;font-size:12px;line-height:1.35;white-space:pre-line;pointer-events:none}#bagtip[hidden]{display:none}#bagtip b{display:block;font:14px HudText,Georgia,serif;color:#f2d27a}#bagtip small{display:block;margin-top:4px;color:#a89b7c;font-size:11px}.bagghost{position:fixed;left:0;top:0;z-index:100;width:30px;height:30px;pointer-events:none;opacity:.85;background:#141a16;border:1px solid #f2d27a;border-radius:3px;padding:1px}.bagghost img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+#heroframe .groupctl{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin-top:5px;font-size:11px}#heroframe .groupctl span{width:58px;opacity:.75}#heroframe .groupctl button{min-height:22px!important;padding:0 6px!important;font-size:11px}#heroframe .groupctl button[aria-pressed=true]{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f)}
+#heroframe .guidealch{margin:8px 0}.guidealch summary{cursor:pointer;font:15px HudText,Georgia,serif;color:var(--gold)}.guidealch h4{font:13px HudText,Georgia,serif;margin:10px 0 4px;color:#e8d8b0}.guidealch ol{padding-left:18px;margin:6px 0}.alchtab{width:100%;border-collapse:collapse;font-size:11px;margin:4px 0 6px}.alchtab th{text-align:left;color:var(--muted);font-weight:normal;border-bottom:1px solid #3a3a2a;padding:2px 4px}.alchtab td{padding:2px 4px;border-bottom:1px solid #26261c;vertical-align:top}
+.runebox{border-color:#4a3a7a;background:rgba(26,20,44,.6)}.runeshop{border-color:#5a4a8a}
+.alchemy{margin:4px 0 2px;padding:4px 6px;border:1px solid #3c4a3a;border-radius:4px;background:rgba(20,30,22,.6);font-size:11px}.alchemy .alchead span{color:var(--muted)}.alchemy .alcmix{margin:2px 0;color:#d8e8d0}.alchemy .alcmix i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:3px;vertical-align:middle}.alchemy .alcrow{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin-top:3px}.alchemy .alcrow span{color:var(--muted)}.alchemy button{min-height:22px!important;padding:2px 7px!important;font-size:11px}
+.skillbar{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin:4px 0 2px}.skillbar>span{font-size:11px;color:var(--muted);margin-right:2px}.skillbar .br{flex-basis:100%;height:0}.skillbar>span{width:44px}.skillbar .skill{display:inline-block;text-align:left;max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:22px!important;padding:2px 8px!important;font-size:11px;border-color:#7a5b2a;background:linear-gradient(#3a2c16,#231a0d);color:#f2d27a}.skillbar .skill.magic{border-color:#5a4a8a;background:linear-gradient(#2c2346,#191428);color:#cdbcff}
+.bagbar{display:flex;flex-wrap:wrap;gap:3px;margin-top:6px}#heroframe .bagslot{width:30px;height:30px;min-height:30px!important;padding:1px!important;background:#141a16;border:1px solid #5d4a2a;border-radius:3px}#heroframe .bagslot.eq{border-color:#b08a3e;box-shadow:inset 0 0 0 1px #b08a3e}#heroframe .bagslot img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}#heroframe .bagbar small{opacity:.7}#heroframe .bagstock{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin-top:5px;font-size:11px}#heroframe .bagstock button{min-height:22px!important;padding:0 6px!important;font-size:11px}#heroframe .bagslot{position:relative}#heroframe .bagcount{position:absolute;right:1px;bottom:0;font:bold 10px/11px HudText,Georgia,serif;font-style:normal;color:#fff;text-shadow:0 0 2px #000,0 0 2px #000}
+.renamebox{display:grid;grid-template-columns:1fr auto;gap:4px;margin-top:6px}
+#daycard{position:fixed;top:66px;right:210px;z-index:9;width:250px;padding:8px 10px;background:linear-gradient(#211c13,#14110c);border:1px solid #b08a3e;border-radius:5px;box-shadow:0 6px 18px rgba(0,0,0,.55);color:#efe3c2;font-size:12px}#daycard[hidden]{display:none!important}#daycard b{display:block;font:15px HudText,Georgia,serif;color:#f2d27a;margin-bottom:3px}#daycard .row{display:flex;justify-content:space-between}#daycard .hb{display:flex;gap:4px;margin-top:6px}#daycard button{min-height:24px;padding:0 8px;font-size:11px}
+#guestbar{position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:11;display:flex;gap:10px;align-items:center;width:min(640px,calc(var(--sw,100vw) - 32px));box-sizing:border-box;padding:6px 10px;background:linear-gradient(#211c13,#14110c);border:1px solid #b08a3e;border-radius:6px;box-shadow:0 4px 14px rgba(0,0,0,.5);color:#efe3c2;font-size:12px;line-height:1.35}#guestbar b{color:#f2d27a;white-space:nowrap}#guestbar span{flex:1}#guestbar button{flex:none}#awaycard{position:fixed;top:14%;left:50%;transform:translateX(-50%);z-index:12;width:380px;max-width:calc(calc(var(--sw,100vw)*1) - 32px);max-height:calc(var(--sh,100vh)*0.7);overflow:auto;padding:12px 14px;background:linear-gradient(#211c13,#14110c);border:1px solid #b08a3e;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.6);color:#efe3c2;font-size:12px;line-height:1.4}#awaycard[hidden]{display:none!important}#awaycard>b{display:block;font:18px HudText,Georgia,serif;color:#f2d27a}#awaycard>small{display:block;color:#a89b7c;margin:1px 0 6px}#awaycard ul{margin:4px 0;padding-left:16px}#awaycard li{margin:2px 0}#awaycard h4{margin:8px 0 3px;font:13px HudText,Georgia,serif;color:#e8d8b0}#awaycard .goods{display:flex;flex-wrap:wrap;gap:3px 10px}#awaycard .goods span{white-space:nowrap}#awaycard .goods i{font-style:normal;color:#f2d27a}#awaycard .life{margin-top:8px}#awaycard .ev{color:#d9c08a}#awaycard .hb{display:flex;gap:6px;justify-content:flex-end;margin-top:10px}#awaycard button{min-height:26px;padding:0 10px;font-size:12px}
+#settings{position:fixed;top:66px;left:50%;transform:translateX(-50%);z-index:52;width:280px;display:flex;flex-direction:column;gap:6px;padding:10px 12px;background:linear-gradient(#211c13,#14110c);border:1px solid #b08a3e;border-radius:5px;box-shadow:0 8px 24px rgba(0,0,0,.6);color:#efe3c2;font-size:12px}#settings[hidden]{display:none!important}#settings b{font:15px HudText,Georgia,serif;color:#f2d27a}#settings label{display:flex;gap:6px;align-items:center;justify-content:space-between}
+body.cb{--hp-good:#3b8fd6}body.cb #heroframe .bar.hp span,body.cb .hpbar span{background:linear-gradient(#5aa6e8,#2a5f9a)!important}body.cb #rosterList .member.fighting .st{color:#ffd166!important}body.cb .vlog .k-fight{border-left-color:#ffd166}body.cb .vlog .k-good{border-left-color:#5aa6e8}
+#foodalert{position:fixed;top:78px;left:50%;transform:translateX(-50%);z-index:9;gap:4px;max-width:calc(var(--sw,100vw)*0.62)}body.overlay #foodalert:not([hidden]){display:flex}body.overlay[data-mat] #foodalert{gap:16px}#foodalert button{min-height:32px;background:linear-gradient(#3f5c16,#24360a);border:1px solid #b9e07a;color:#f4ffe0}#foodalertgo{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:calc(var(--sw,100vw)*0.58);padding:4px 14px}#foodalert button+button{width:32px;padding:0;font-size:16px}
+.foodwarn{color:#e4ffb0;background:#2c3a12;border:1px solid #6f8f2e;border-radius:4px;padding:3px 6px;margin:3px 0;font-size:12px}
+#food3d{position:fixed;inset:0;pointer-events:none;z-index:0}#food3d span{position:absolute;left:0;top:0;padding:0 6px;border-radius:8px;background:rgba(30,22,12,.72);color:#ffe9b8;font:600 11px/16px HudText,Georgia,serif;white-space:nowrap;text-shadow:0 0 2px #000}#food3d span.empty{color:#bfb39a}#food3d span.warn{background:rgba(64,88,18,.88);color:#e8ffb0}#food3d span[hidden]{display:none}body:not(.v3d) #food3d{display:none}
+#heroframe .hflook{margin:2px 0 4px;color:#d8c9a0;font:italic 12px/15px HudText,Georgia,serif}#heroframe .hflook:empty{display:none}
+#say3d{position:fixed;inset:0;pointer-events:none;z-index:0}#say3d span{position:absolute;left:0;top:0;max-width:180px;padding:2px 8px;border:1px solid #2a2418;border-radius:9px;background:#f6f0de;color:#2a2418;font:600 12px/16px HudText,Georgia,serif;white-space:nowrap;box-shadow:0 1px 3px rgba(0,0,0,.45)}#say3d span::after{content:'';position:absolute;left:50%;bottom:-6px;margin-left:-5px;border:5px solid transparent;border-top-color:#f6f0de;border-bottom:0}#say3d span[hidden]{display:none}body:not(.v3d) #say3d{display:none}
+#attackx{display:none}body.overlay #attackx:not([hidden]){display:block;position:fixed;top:40px;left:calc(50% + 96px);z-index:9;min-height:32px;width:32px;padding:0;background:linear-gradient(#7a1d14,#4a0f0a);border:1px solid #f2a18b;color:#fff;font-size:16px}
+body.overlay #attack{position:fixed;top:40px;left:50%;transform:translateX(-50%);width:auto;max-width:calc(var(--sw,100vw)*0.5);z-index:9;min-height:32px;padding:4px 18px;background:linear-gradient(#7a1d14,#4a0f0a);border:1px solid #f2a18b;color:#fff}
+/* bottom-right: event toasts */
+#toasts{position:fixed;right:6px;bottom:6px;width:300px;display:flex;flex-direction:column;gap:4px;pointer-events:none}
+body.overlay .toast{padding:6px 10px;font-size:12px;color:#efe6cc;border-left:3px solid #f2d27a;animation:toastin .25s ease-out;transition:opacity .6s}
+.toast.fade{opacity:0}@keyframes toastin{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}
+body.overlay dialog{max-height:calc(var(--sh,100vh)*0.86)}
+
+/* Village roster: manage everyone at once */
+.vfilters{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 8px}
+.vfilters button{min-height:28px;padding:2px 9px;font-size:12px;border-radius:14px}
+.vfilters button b{color:var(--gold);margin-left:4px}
+.vtools{display:flex;gap:8px;align-items:center;margin-bottom:8px}.vtools input{flex:1;min-width:0;min-height:32px;padding:4px 8px;border-radius:4px;border:1px solid var(--line);background:#101611;color:var(--ink)}
+.vsortlabel{font-size:12px;color:var(--muted);white-space:nowrap}.vtools select{min-height:32px;padding:3px 6px}
+.vbulk{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:6px;margin-bottom:6px;border:1px solid #3a3020;border-radius:4px;background:rgba(0,0,0,.25)}
+.vbulk button,.vbulk select{min-height:30px;padding:3px 8px;font-size:12px}.vcheckall{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:5px;margin-right:4px}
+.vtable{font-size:12px}
+.vrow{display:grid;grid-template-columns:22px 34px minmax(140px,1.5fr) 112px 86px 112px minmax(120px,1.4fr) 130px 44px;gap:6px;align-items:center;padding:4px 6px;border-bottom:1px solid #2a2a1e}
+.vrow:not(.vhead):hover{background:rgba(242,210,122,.06)}.vrow.sel{background:rgba(242,210,122,.10);box-shadow:inset 3px 0 0 #f2d27a}
+.vhead{position:sticky;top:-28px;z-index:2;background:#16140f;color:var(--gold);font:11px HudText,Georgia,serif;letter-spacing:.05em;text-transform:uppercase;border-bottom:1px solid var(--trim,#9a7a3c)}
+.vrow img{width:30px;height:32px;object-fit:contain;image-rendering:pixelated;background:#141a16;border:1px solid #5d4a2a;border-radius:3px}
+.vname{min-height:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;text-align:left;cursor:pointer;line-height:1.25}
+.vname b{display:block;color:#f2d27a;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.vname small{display:block;color:var(--muted);font-size:11px}
+.vrow select{min-height:28px!important;padding:2px 4px!important;font-size:12px;width:100%}
+.vdoing{color:#e8dcb8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vdoing .home{display:block;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.vdoing .warn{display:block;color:var(--red);font-size:11px;white-space:normal}
+.vbars{display:grid;gap:2px}.vbars div{height:6px;background:#111;border:1px solid #000;border-radius:2px;overflow:hidden}.vbars span{display:block;height:100%}
+.vbars .h span{background:#5fbf4f}.vbars .f span{background:#d79a3c}.vbars .r span{background:#4f8fd8}
+.vgo{min-height:28px!important;padding:2px 6px!important;font-size:11px}
+.vrow input[type=checkbox],.vcheckall input{width:16px;height:16px;accent-color:#f2d27a}
+.crown{color:#f2d27a;margin-right:3px}
+body.overlay.wide main{width:calc(calc(var(--sw,100vw)*1) - 222px)}
+
+/* Village > Lineage & connections */
+.vsubtabs{display:flex;gap:4px;margin:0 0 10px;border-bottom:1px solid #3a3020}
+.vsubtabs button{min-height:30px;padding:3px 14px;border-radius:4px 4px 0 0;border-bottom:0;font-family:HudText,Georgia,serif}
+.vsubtabs button[aria-selected=true]{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f);border-color:#f2d27a}
+.lin{display:grid;grid-template-columns:230px minmax(0,1fr);gap:14px;align-items:start}
+.houses h3,.tree h3{margin:0 0 6px;font:13px HudText,Georgia,serif;color:var(--gold)}
+.house{border:1px solid #3a3020;border-left:6px solid var(--hc,#7a5a1f);border-radius:4px;padding:7px 9px;margin-bottom:6px;background:rgba(0,0,0,.25)}
+.house b{font:15px HudText,Georgia,serif;color:#f2d27a}.house small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.house .rename{display:flex;gap:4px;margin-top:6px}.house .rename input{flex:1;min-width:0;min-height:28px;padding:2px 6px;border-radius:4px;border:1px solid var(--line);background:#101611;color:var(--ink)}
+.house .rename button{min-height:28px!important;padding:2px 8px!important;font-size:11px}
+.conn{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:4px;margin:4px 0 10px}
+.conn div{border:1px solid #3a3020;border-radius:3px;padding:4px 7px;background:rgba(0,0,0,.25);font-size:11px;color:var(--muted)}.conn b{display:block;color:#f4ecd2;font-size:13px}
+.lrow{margin:0 0 8px}.lrow>span{display:block;font:11px HudText,Georgia,serif;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.lcards{display:flex;flex-wrap:wrap;gap:6px}
+.pcard{position:relative;display:grid;grid-template-columns:34px minmax(0,1fr);gap:7px;align-items:center;width:178px;min-height:46px!important;padding:4px 7px!important;text-align:left;border-left:5px solid var(--hc,#555)!important}
+.pcard img,.pcard .ghost{width:32px;height:36px;object-fit:contain;image-rendering:pixelated;background:#141a16;border:1px solid #5d4a2a;border-radius:3px}
+.pcard .ghost{display:grid;place-items:center;color:#8d8775;font:16px HudText,Georgia,serif}
+.pcard b{display:block;font-size:12px;color:#f2d27a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pcard small{display:block;font-size:10px;color:var(--muted);line-height:1.25}
+.pcard.dead{opacity:.62;filter:grayscale(.7)}.pcard.unknown{opacity:.5;cursor:default}
+.pcard.focus{width:230px;border-color:#f2d27a!important;box-shadow:0 0 10px rgba(242,210,122,.35)}
+.focusline{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.focusline .sep{color:var(--muted);font-size:11px;padding:0 2px}
+
+/* Build tab: what to build (top), construction tasks (below) */
+#page-build .bgrid{grid-template-columns:minmax(0,1fr);gap:4px}
+.buildcats{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px}.buildcats button{min-height:28px!important;padding:2px 9px!important;font-size:12px}.buildcats button.active{border-color:#e0bb73;color:#f2d27a}
+.builditems{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-bottom:6px;max-height:calc(var(--sh,100vh)*0.38);overflow-y:auto}
+.bitem{display:flex;align-items:center;gap:7px;min-height:48px;padding:5px 7px!important;text-align:left;width:100%;border:1px solid #3a3020;border-radius:4px;background:rgba(0,0,0,.25)}div.bitem{grid-column:1/-1}
+.bitem.active{border-color:#e0bb73;box-shadow:0 0 0 1px #e0bb73 inset}.bitem.active .bitext b{color:#2a1d08}.bitem.active .bitext small{color:#3a2a10}
+.bitem img{width:32px;height:32px;object-fit:contain;image-rendering:pixelated;flex:none}
+.bitext{display:flex;flex-direction:column;min-width:0;flex:1}.bitext b{color:#f2d27a;font-size:13px}.bitext small{font-size:11px;color:var(--muted);overflow-wrap:anywhere}.bitext .bwho{font-style:italic}
+.bdirs{display:flex;gap:4px;flex:none}.bdirs button{min-height:30px;padding:2px 8px;font-size:12px}
+.bplan{display:grid;gap:1px;flex:none;margin-left:auto;padding:2px;background:rgba(0,0,0,.35);border-radius:2px}.bplan i{display:block;width:6px;height:6px;border-radius:1px}
+.brotline{grid-column:1/-1;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}.brotline b{color:#f2d27a}.brotline button{min-height:28px!important;padding:2px 10px!important;font-size:12px}
+.sneed{font-size:12px;color:#e8dcb8;margin:3px 0}.sneed.miss{color:var(--red)}
+.screw{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-top:5px}.screw .chip{display:inline-flex;align-items:center;gap:4px;border:1px solid #5d4a2a;border-radius:12px;padding:1px 4px 1px 8px;font-size:11px;color:#e8dcb8}
+.screw .chip button{min-height:20px!important;padding:0 5px!important;font-size:11px;border-radius:10px}.screw .sassign,.screw .sworkers button{min-height:26px!important;padding:2px 8px!important;font-size:11px}.screw .sworkers{font-size:11px;color:var(--muted);margin-left:auto;display:inline-flex;gap:3px;align-items:center}
+.ocard.st-waiting{border-left-color:#d8573f}.ocard.st-unassigned{border-left-color:#55606a}.ocard.st-working{border-left-color:#7fae5a}
+
+/* Village > Bulletin board */
+.bstats{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.bstats span{border:1px solid #3a3020;border-radius:14px;padding:3px 10px;font-size:12px;color:var(--muted);background:rgba(0,0,0,.25)}.bstats b{color:#f2d27a}
+.bstats .bwarn{color:var(--red);border-color:#6a2a20}
+/* the Build panel's hints as buttons that look like its chips (hud-controls, 10-26) */
+#buildStats .bgo{font:inherit;font-size:12px;line-height:normal;min-height:0;margin:0;border:1px solid #3a3020;border-image:none;border-radius:14px;padding:3px 10px;color:var(--muted);background:rgba(0,0,0,.25);box-shadow:none;text-shadow:none;image-rendering:auto;cursor:pointer;text-decoration:underline dotted;text-underline-offset:3px}
+#buildStats .bgo.bwarn{color:var(--red);border-color:#6a2a20}
+#buildStats .bgo:hover{filter:brightness(1.3);border-color:var(--macc,var(--gold))}
+#buildStats .bgo:focus-visible{outline:2px solid var(--macc,var(--gold));outline-offset:1px}
+body.overlay #page-build #buildStats .bgo{padding:1px 8px;font-size:11px}
+.hcgolit{box-shadow:0 0 0 2px var(--macc,var(--gold))!important;border-radius:4px}
+.bgrid{display:grid;grid-template-columns:280px minmax(0,1fr);gap:14px;align-items:start}
+.bcard{border:1px solid #3a3020;border-radius:4px;padding:9px;margin-bottom:10px;background:rgba(0,0,0,.25)}
+.bcard h3,.bmain h3{margin:0 0 8px;font:13px HudText,Georgia,serif;color:var(--gold)}
+.bcard label{display:grid;grid-template-columns:70px 1fr;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:5px}
+.bcard input,.bcard select{min-height:30px!important;padding:2px 6px!important;font-size:12px;border-radius:4px;border:1px solid var(--line);background:#101611;color:var(--ink);width:100%}
+#bpPost{width:100%;margin-top:4px;min-height:34px}
+.srow{display:grid;grid-template-columns:52px 64px 1fr 74px 30px;gap:5px;align-items:center;margin-bottom:5px;font-size:12px}
+.srow b{color:#e8dcb8}.srow small{color:var(--muted);font-size:11px}.srow button{min-height:28px!important;padding:2px 6px!important;font-size:11px}
+.srow input[type=checkbox]{width:18px;height:18px;accent-color:#f2d27a}
+.ocard{border:1px solid #3a3020;border-left:4px solid #9a7a3c;border-radius:4px;padding:7px 9px;margin-bottom:6px;background:rgba(0,0,0,.25)}
+.ocard.p1{border-left-color:#d8573f}.ocard.p3{border-left-color:#55606a}
+.ocard .ohead{display:flex;justify-content:space-between;align-items:center;gap:8px}.ocard .ohead b{color:#f2d27a;font-size:13px}
+.ocard .tag{font-size:10px;border:1px solid #5d4a2a;border-radius:10px;padding:1px 7px;color:var(--muted);margin-left:6px}
+.ocard .obar{height:8px;background:#111;border:1px solid #000;border-radius:3px;overflow:hidden;margin:6px 0}.ocard .obar span{display:block;height:100%;background:linear-gradient(#e2c06a,#9c7a2c)}
+.ocard .omsg{font-size:11px;color:var(--muted)}.ocard .omsg em{color:#e8dcb8;font-style:normal}
+.ocard .oact{display:flex;gap:5px;align-items:center}.ocard .oact select,.ocard .oact button{min-height:26px!important;padding:1px 6px!important;font-size:11px}
+#boardDone .ocard{opacity:.65}
+
+/* RuneScape-style skills */
+.skillbox h4{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:4px 0 5px;display:flex;justify-content:space-between}
+.skillbox h4 b{color:#f4ecd2;letter-spacing:0;text-transform:none;font-size:12px}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:3px;margin-bottom:8px}
+.skill{position:relative;display:grid;grid-template-columns:26px 1fr auto;gap:5px;align-items:center;padding:3px 6px;border:1px solid #3a3020;border-radius:3px;background:linear-gradient(#1a1f1a,#0f130f);font-size:11px;color:#d8cfb6;overflow:hidden}
+.skill i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font:600 10px HudText,Georgia,serif;font-style:normal;color:#1b160c;background:radial-gradient(#f2d27a,#9c7a2c);box-shadow:0 0 0 1px #000}
+.skill.g-Combat i{background:radial-gradient(#e88b78,#8f2f22);color:#fff}.skill.g-Gathering i{background:radial-gradient(#9fd88f,#3f7f2f)}.skill.g-Support i{background:radial-gradient(#9ec3ec,#2f5b8b);color:#fff}
+.skill span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.skill b{font:15px HudText,Georgia,serif;color:#f2d27a}
+.skill .bar{position:absolute;left:0;bottom:0;height:2px;background:#f2d27a}
+#xpdrops{position:fixed;left:50%;bottom:190px;width:0;height:0;pointer-events:none;z-index:30}
+.xpd{position:absolute;left:0;bottom:0;transform:translateX(-50%);white-space:nowrap;font:600 13px HudText,Georgia,serif;color:#f2d27a;text-shadow:0 1px 2px #000,0 0 3px #000;animation:xpfloat 2.6s ease-out forwards}
+.xpd.lvl{font:16px HudText,Georgia,serif;color:#fff;padding:3px 10px;border:1px solid #f2d27a;border-radius:4px;background:linear-gradient(#5b2a86,#3a1658);box-shadow:0 0 14px rgba(242,210,122,.6);animation-duration:4s}
+@keyframes xpfloat{0%{transform:translate(-50%,0);opacity:0}10%{opacity:1}80%{opacity:1}100%{transform:translate(-50%,-90px);opacity:0}}
+
+.skill{cursor:pointer}.skill:hover{border-color:#f2d27a}.skill.open{border-color:#f2d27a;box-shadow:0 0 6px rgba(242,210,122,.4)}
+.parttip{position:fixed;z-index:60;pointer-events:none;padding:2px 7px;border-radius:3px;background:rgba(20,14,8,.85);border:1px solid #a8642a;color:#ffd9a0;font:12px HudText,Georgia,serif}
+.sguide{border:1px solid #5d4a2a;border-radius:4px;padding:8px 10px;margin:-4px 0 10px;background:linear-gradient(#211c12,#141410)}
+.sguide h5{margin:0 0 6px;font:14px HudText,Georgia,serif;color:#f2d27a;display:flex;justify-content:space-between}.sguide h5 small{color:var(--muted);font:11px HudText,Georgia,serif}
+.sguide .row{display:grid;grid-template-columns:42px 1fr;gap:8px;align-items:start;font-size:12px;padding:2px 0;color:#9c9584}
+.sguide .row b{text-align:center;border-radius:3px;background:#2a2417;color:#c9b98a;font-size:11px;padding:1px 0}
+.sguide .row.done{color:#e8dcb8}.sguide .row.done b{background:#5b4a1f;color:#f2d27a}
+.sguide .row.next{color:#fff}.sguide .row.next b{background:linear-gradient(#5b2a86,#3a1658);color:#fff}
+.sguide .tool{margin-top:6px;padding-top:6px;border-top:1px solid #3a3020;font-size:12px;color:#e8dcb8}.sguide .tool.bad{color:var(--red)}
+
+/* 3D view */
+#world3d{position:fixed;inset:0;width:100%;height:100%;display:none;z-index:0;background:#0b0f0c;cursor:crosshair;border:0!important;border-radius:0!important;box-shadow:none!important}
+body.v3d #world3d{display:block}
+body.v3d #btn3d{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f);border-color:#f2d27a}
+#lockbar{position:fixed;top:74px;left:50%;transform:translateX(-50%);z-index:31;display:flex;gap:10px;align-items:center;padding:4px 6px 4px 12px;border:1px solid #9fd2a0;border-radius:4px;background:rgba(14,22,15,.92);color:#cfeccf;font:13px HudText,Georgia,serif}#lockbar[hidden]{display:none}#lockbar button{min-height:24px;padding:2px 10px;font-size:12px}
+#useon3d{position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:30;padding:5px 14px;border:1px solid #8fd06a;border-radius:4px;background:rgba(16,24,12,.93);color:#c9f2a8;font:13px HudText,Georgia,serif;pointer-events:none;white-space:nowrap}#useon3d[hidden],body:not(.v3d) #useon3d{display:none}.bagheld{outline:2px solid #8fd06a!important;outline-offset:-2px}
+#build3d{position:fixed;top:40px;left:50%;transform:translateX(-50%);z-index:30;padding:5px 14px;border:1px solid #f2d27a;border-radius:4px;background:rgba(20,18,13,.92);color:#f2d27a;font:13px HudText,Georgia,serif;pointer-events:none}body:not(.v3d) #build3d{display:none}
+#tag3d{position:fixed;z-index:40;pointer-events:none;padding:2px 7px;border:1px solid #9a7a3c;border-radius:3px;background:rgba(20,18,13,.9);color:#f2d27a;font:12px HudText,Georgia,serif;transform:translate(-50%,-140%);white-space:nowrap}
+
+#shopPicker button{min-height:40px;padding:4px 6px;font-size:12px;line-height:1.2}#shopPicker button small{font-size:10px}
+
+/* ===== Race frames (2026-10-19): pixel-art panels, buttons and bars in the material of the
+   selected unit's race (stone for dwarves, timber for orcs, bone for the dead, ...). The frame
+   images come from art/pipeline/make_hud_frames.py; drawn at 1x, shown at 2x, pixelated. */
+/* RACE-FRAMES-BEGIN (generated by art/pipeline/make_hud_frames.py; do not edit by hand) */
+body.overlay[data-mat=stone]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABYElEQVR42mNkY2X7z0BDwMLAwMCQ5/4Lq+SknWwMHa09ODWvXr2a4eyFk3j1s8A43dMmMJw/cgQuuWzZGgYGBgaGR48eEeXSqKgQONvQxoahNKuAgYGBgYEJJohsODbw7t07ooMF2SwmYjUJCQnB2Tw8PERbhtWCXbt24dX05csXovWwoIc5Orhx4wZRLn3z5hNWMxjpkkyNDcyxSp69cJLh1+9fjPgMYGNl++9k78agoaGBIi4nJ8dQUV0CsSA0NBQjORIbNCRHMikphJjkzERMCiEFICdnkvIBVYKIlNyKDWALXiZ83iMVYAteFmoEw8ePHxlOnjyJIgbjMw54fWBsYM7Az8+P04B9B3cRVx8gl+e7du1iePPmE5yPnkvRLWBgYGAQEeFjcHNzw6hPsCZTZIXEZkBsekjKB8gphJTkzIRczZGbW9EBslnwOIDVodiAnJwcQUuR6wJkNs2TKQDqIHtnb0xtmQAAAABJRU5ErkJggg==);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiklEQVR42sVXPW/EIAx1LQuhKEO2duj//3kZbkAIeehE6wQMhuRSpugA8+z3/HEfX5/fO/zjIgCAZVmah1JK4Jyr7oUQYNs2SClNAUDLIe1xCXDWxgEAEXUvM3Pxrd2zgDwAkMa1y/Kx/K3du4WCGW6993XBERVgsed9j//a+RhjdY+ZC7pQoptVci1iFl0UFGRvRzmtPWa1ga0w9SKSubZ6awIgjfX4z1xrnFs0hfDwOkf1UQC1iHYBSDFp+W21UdMUjij8zHWtKmo2tH28wzNL2mn7BACw79dGghDC/DzQmwVCCL/zgve+mXJEBIh44FreVymwluAYI3jv1fPMPFzOUUsP+Zs0+nq9ugVqRFNoKRjyQeecuUL2BMjMfwBG2m4GZ20467rqmrkyeFibUEu4+K5yO92OnxhIZLu/HYAlA3J0nHMlgNZA2etwRNSdDdSZ0CKYmhEp3hbv2giP72g8I82oqAOWemBNWUlntnumuKgDs//zah5KOrPdM8V4NYR5LctSgLcUqh9oktxJQK12cgAAAABJRU5ErkJggg==);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42mNkY2X7z0ACYGFgYGA4sdCPYc0FLYKKe/o7IBrWXNBi2HdwH17FFy6eYWBgYGBgYiARjGogOuKQw5kQYCQ1aQAAS24P+uGuHyMAAAAASUVORK5CYII=);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD4cLKMoa6uhaDiSTvZGBjZWNn+57n/YpCTk8CrWENDg8Gn+BgDEwOJYFQD0REHC2diACOpSQMAW7sMwoyTq5sAAAAASUVORK5CYII=);--macc:#cea654;--mink:#e8e2d2;--mband:#706c74;--mpane:#222126;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=timber]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABTUlEQVR42rVWsWrDMBR8Nra+oHhIQGju5NljMKRozpChf9DQ7qFj6B5ofqSDoGAyFdMxU2YjSAbRL3AHdwgVcmw9gRXfYvMs3ukep5MDEpMGPHH4fNXv6XzT+hb9LxCiBM6zzvPr4xttvtoVIERpJYtcu6uqqrcupQRKKQAAcJ7pukmmFWCQUnZqlFLd/LqpSbbe7iHCxiNE2Wpkg5cCE0qp3jqqwOmQw9GxgqAKglvY9O1l1qsgnW8uBO9PecstSik4n3+gOBGof+sA3X9MmnxaQ5ret9zFGIPVroAQc8stEJrWG5XAV4XNYSGMjF6CJEkGN7we9SgKzFGPQmCqCEhMGjNizZO43u69ySJXluTTGm0wWzxYg5Lz7EKAZclkcudlAqcCH0dpAkyB6yA+Pi+t49FXJqbADLAhceJUwBgDxtjgEXXuA+wXZAj+AL9vryZDoAD2AAAAAElFTkSuQmCC);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABeklEQVR42t1XwY7EIAhliGE9NZue5/8/b87EmGZPbqgFFLeTSZbLJOjg4z0B+3h+f73gg5b2fYda69mZ0sXnGRFBKWUJAGoHSR8RDYOsHg4AgHcGTymFweBMho2JlJK7p9YKs/F+AWiILZ+UZgTGY2kogZZF/8cGJkp5f+cQACDnfNkofUSkVgURncBGKucEgJkvC9JnZSn9tdYlWfCuhnIcx3vK0KK3Zd9+o7e/2ePjrXjbtlsDllJCbGCUes1yzq4UXqlitHFohzOzm7W3hhFqNdNKeNZyzlcAWlMaZdFkklLMSMnMVwAzGfWHNJk8KSwpcWUEaw+QlTY8NYyswH2m1rAaJThdBdYwWqke2Xtwtg3LgKuj+P+0YtluV1/ELcbSOJbat8O9S6f1lhYD7yil/tL1cfreIvdipO9763JN22eVNkZo8xgasWfdExPAX4bMLItENP9hctdjRTJVSgFExJM+1jSMvhNmJyoy80mfnnrrm2G1YnoQP7t62THUuY4EAAAAAElFTkSuQmCC);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42mNkY2X7z0ACYGFgYGC4sb+KYdm0LQQVN62+BNGwbNoWhj23vuNVfOLKXQYGBgYGJgYSwagGoiMOOZwJAUZSkwYAih4RrOsNp2EAAAAASUVORK5CYII=);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD4+XwRQ2tdHUHFTbMfMDCysbL9r0tVYJCTk8OrWENDg8EmdBYDEwOJYFQD0REHC2diACOpSQMAf88Mwi4yF0YAAAAASUVORK5CYII=);--macc:#dec480;--mink:#f0e2c4;--mband:#7a502a;--mpane:#2a1e15;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=bone]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABfUlEQVR42sVVMWvCQBT+Ti6Hk2ARyVCkP0EydeicHyGOTk7i4FBKxSWDQ8lcMkp+RMbi0Cn4Exw6BIe6ShReh6JczLtoNdIPAi9397279+6794SyFE0nPbz5M+gYDroYjQOcC7tezfwn6w0AQChLkV2vYhFHmQVtx0Wy3iDdpoJzuFrOKQxDjMYBTPzhoAvJTQLAIo7Qdlws4g86ntvtdpmTF/HlqdCTJMmNNRqNs1NX0UPi7HNh4ks9JM6O4zjnzHVdNiWcDWUpajVr9P31Sa1mLWMrS5HpxKvlnHyvT0V83+uT2DsxyawUmU4nPZY0GgdGmeoZSLepmL2/kuM4v5vZNu7uH4WyFEkA6HQ6xg2uRQUAmg9PuVNyY5fgoCIp5UHznHKuiuCWkGU50t+GXkpKiWC1nJNprJQIwjA0zolb94NMqdC/fanwvT5xKeBKDcc/2Q/0nEZRft3zi39dP9CxLwUXvYN/6weZi7Rt4wYX94O/XDLHL6UfFMn8B4QGFigJGu4GAAAAAElFTkSuQmCC);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABp0lEQVR42q1XQa7EIAh1CGnMLHqHv3P5j/Dvf5i/bAxxMSsm1AKKrasZUXw8H2Bff78//+mBsW1bIiLVlnNOtVbVBqWU08TqfyJKOWfVLg8vpZyAvu4wwJERUdq2LbSX98Ad2jmy6OFyTwgAIppzKyCI6Aog52xuaK2Zc/JeZ8DknNO+71cAllpnomHwM2BqranWGteAxRAAfMFLAFZqfvetCs8DFtEDrKq3/81a0HTCYtWAQRSxRq+MXssUBkZEFzvM3JkHEBFDwu0ZAu2wHqUnpOM4zKhnAoDZfPecj9Z7AdwqxT1gK1IPIIxEJG1aDZDCkpFKP4hosgB9bjNadiBtmthGUbPdWgdeqVxtUJKNYSW0FoyULbMgqvyQCEeO2M6Ue910CYDGkDanaWbmpQQrDcRby+Baa+5D9QKgXxilsgfnaYh9t9bsK9BS86nBvhFxrhLOZsQMg2YzklewSv9MHVHbcS+sSHvlfSPQZiW8GykzNwLt9oInxsq1nb4LtOdS5JCV5/zp0+z9fg/TrdYainRUhE5XYD0qelb6SL2qOHpLppTSB9Jb9yFZk9S5AAAAAElFTkSuQmCC);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42mNkY2X7z0ACYGFgYGB4cXcHw6cvfwgqVtP3gWj49OUPQ1lBLV7Fmw5dZGBgYGBgYiARjGogOuKQw5kQYCQ1aQAA6wMRDPWh9pYAAAAASUVORK5CYII=);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD4+esBw9TOOoKKi2oXMTCysbL972uOY5CTk8OrWENDg0HHPIaBiYFEMKqB6IiDhTMxgJHUpAEAoSMMwjsJwLQAAAAASUVORK5CYII=);--macc:#eee2be;--mink:#f2e8ce;--mband:#d6ccb0;--mpane:#403021;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=kingdom]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABUElEQVR42t1VMW7CMBR9QSEnyJzcwRODxYBENiQGlmZi5gbdmNobMDOlSwYkNiMxIA9MvkM9dPIJ0oEuxTXJx0klaNW+6cf+/33n+yUviPrRCXdECADLh4rcXL5EKLd7L8FsMvLWh+eHx9UKr1LazaIoAABKqU4nzfPcxinneF4svt4AwAW5izk7eomfiDWXK2w72VoNbKy1RpIktYzSW9+jFoUQZHKTvL0mrM+8DnlldHUYY0iO4EdkWm73UEphzo525lJKHHYbVO9V4COI+tFpOJ6Cc25FsVYDMMYwm4zoO7gl/lYDrXV7AyqpKygZ976j9f9/BxSCX/eD4XjqJTjsNt38wP2fCyFgjAEA+4X6GgBAHMfIsqzhJ+QduIldZXytptUPGobDAODNazhkg5Rz0tVcw6HRNJyUc+BzRLbB2UPrYIx1UsuFFzjx3WX6AW63dyIbK21UAAAAAElFTkSuQmCC);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmklEQVR42rVXsY7DMAjlELI8db7pvuH+/6NuymBZKOpERH2AsdN6aWI78Px4YPr1/fP7BwBQa4XWGqyO3juUUmB3oDy01qD37jrxxuicmfcAWMb0vKxFYAAAiMic94Ch/iAyLmu7dBMR1Fr/AUKN7E4sxyHO9AEtjeEsbrImhrIxFmfefrGHUdwsx95ezV5kLxRhhtKZRgTsTKwmgIje4ziWNOBljczLL0YppN8tWi3AnsOxcMm+EMBMcBaoUgrUWoGZr/VxnwaJOr6rVSzKHCK67Gm7RPQCCL38XC0yWeaY+WUdM2V0FlfPoZ73sgIjdJGQMimpDzSqX54xe5lk8l+0FJV0vb/3ni9EUb4LazMtWeziO1S/yppmArP39juB9t7h8XjYAHZOsxM2CRd+woGwaF1go0Axm1orLMn6eZ7TmoI73dBYWjMpd7sfyICZ9QxTAHcFuHOn4E4KZsLlsTH6wJ3ikYmtx8bYY+JK3HbadmY2v7u64ru9QAS0lAJEFDKGK2mTZWslVKn/hkLXJ9hKaWBUru737o4nS070pgtNStYAAAAASUVORK5CYII=);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42mNkY2X7z0ACYGFgYGC4tTmEYdUNJ4KKa0qzIBpW3XBiWLJkFV7Ft64cYmBgYGBgYiARjGogOuKQw5kQYCQ1aQAACJ4P03AQQ9AAAAAASUVORK5CYII=);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD4ebuGob2ujqDihuVsDIxsrGz/GyJ/McjJyeFVrKGhwWCVeICBiYFEMKqB6IiDhTMxgJHUpAEAZ8cMwgBXPnYAAAAASUVORK5CYII=);--macc:#e0b85a;--mink:#e8eaf0;--mband:#808692;--mpane:#181e30;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=moon]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABW0lEQVR42sVVsW6DMBB9WIQviBTJWzJnRVkZMpO1ijoxdWBmYmRiZujEFFWdKpWhU1WxVu3IXDak/kI6pJNdY8i5lKCeZAnje/ee7fOd5cycEyY0GwDWSx8AkN7fIrq6kYtVXWC/i8kAd48JibfFRF8UxE3TtP754TWK7NAhOodnYpGyKEsQZQkAnA1OHpEpeBrGvd8AUG5yEm85M+e0XvpShX6Gnht0CAFIovItB4WXBOpWhVNVF1gttqTCj89nUHhr6jRlALDfxfDcAJ4b4Om1gecGUvnx62hRAwBWi20L67mBTG92SbVpGMs7au3A5DT6iMQDGmtqGncIxAPqcxoaXBXLTAr+YuprZ1NecIfg0hcsS8W/9oOhpWJwP5jP571F7oeAxtumeq4H1kt2ucnH9QNdsZoIv0lpppZXXUlVF512KQKrwSk8MzlxzuV4f3hpzTnnRpLJ0/QbcwveyN3X6ioAAAAASUVORK5CYII=);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmElEQVR42rWXvW6FMAyFTy0LZWDq0Efo+z9ZJ4bIQqiTaRocxyHAhHKDffz5J7kfX5/fP3joEREsy/JvLaWEnDOYGfu+n/vWdYWIgHpGmTksoHYOADlnADid6z4RAYD7AlJKj1DrCtAIWutRQhqxKWAEc/2UaD1SVnpOAT0jvd/vEAynoEcoQq8VfViAV3gROlb+9TsawdvDqZGWPW85TSmd5EhfZgqxjpSITHu6VgZCTxSah7zMv5WKUBvOiLPElLV0tqFXqaPpSSldRJdCzBTUeFqTK1Lhevi0CtRsw9qQftDD75GLpJM8Q8w81R0exctpaDmq1VpnfY9Oi5Cu08xE02Ly0mBRKPc3J6FFpBVxtGD1OY7jT0Arx5aw3iiOtm9pm0Yq14u0NKrvXlqV5tBxrLlrdczI4FKaFHFcCxjN+e0LSYlSRNxzPZJ/Zr7Q43pDy2Cr1UaK2Fqj3oa3JqEGS7O33rvnxL7vYGZQb9Obf0oAgLzCUvy1w9GBFOoCr4/vOIxSeuVOCADbtsUE1NGq8llB0e75BfJy9IrRIFe6AAAAAElFTkSuQmCC);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAS0lEQVR42mNkY2X7z0ACYGFgYGDYdvIZw5SyNoKKtx2cwsDIxsr238s+h+HOk1N4Fd95cIbh399/DEwMJIJRDURHHCyciQGMpCYNAPBoFNKdbyZ3AAAAAElFTkSuQmCC);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGC49/EnQ13dZIKKl0wsYWBkY2X7H5PfwyAnJ4dXsYaGBkOctx4DEwOJYFQD0REHC2diACOpSQMAmdcMwgRcxmcAAAAASUVORK5CYII=);--macc:#bcceec;--mink:#e2e0f6;--mband:#463a68;--mpane:#161226;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=swamp]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABpElEQVR42u2VsUvDUBDGfw0aOolDCSWIQ4YOb5IOCsUhQ2cRp85dBDf/AKHg/yC4dHYSEUfBN5RCHUqnDEUySAnhUUQ6SRx0kNS0SdNHRSdvvHvffbnvLncFc9384BdtDaBxKgAIozcAymaRx0GI//BC6/IoBeq3u1SbNQBax9e5eCMGhdEbh40qAI+DkN2dMgBKKaSUDIdDpJQopZg4Ef12Fykly/BGkvnmqs+z98q22Jz6dCwPbyQfxsFVLQtvxJrNB8tmUTtxHt6Y10w3eam+xYZvsgxf+JMxbV0ezUwEwIZvctsLid6jQl4Cc938ODnfT/kty6J1fP1FECecl4BeqPWVnudlEkwr6Le7TJxo5sHE97VlsG07X6Jqs4ZSKhWUdLQIgiBI+SqVyjfBojJ1TQiRX8HiMl9W7sHo7mmWIKtMXXMch/H9aMZXbda47SWmKKtM3R6M70epIfnbHy1vnx/slSnVt/B9HyEEnudh2zZBECCE4OKs87N7MHGilL6LVvb/PVjpHqwlNUs2KTbXdcH92leWa02XWLwKluF/fUw/ASv7BVa2oBZ5AAAAAElFTkSuQmCC);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmUlEQVR42rVXQa7EIAjlE9KQSQ8wB/j3P9pfdWFM0/wVDWVE0HZYNVbxAe+h/rx/339grNYKy7LArO37DkQEzAyllK5PBABg5svguq7n9wwQIgIAODfv+UE7UdC2vu+YDfICwItgNO09wDbIE4AstM7seGteC3RUMpsJ9KIVEom9Xq+u4yxXbCYwmiyOIy7Y/17NLVCMEM+S0CP2cRxjAJ5Sg0RuuYQ6VT2i3WlMPUOdKiFki5jS3Waz1RpjZl+GLVVoeWZLIplrZbCU4svQ2ySjdy3ZCCh9o+ZR00qpwEOeBZblC45Gl629Ja23Dp+Sk43Ynifd4/gJs51PAHkt+esZiI7hIQARq6Mop2Qodau1wmivGGrFs4y3/2b7Bt493bz7gpTFAvu4ET1ZT23btjWBfdyILEKZMNJOW+lPd0LvmBQHHhCdqVEiap8YaVdHohdG+s72DBxdKCCY+QLIcidbQhyVkjzbSilARM1nWJYD+75fAehaejclu1Ev0khRROSXoPUQsVFFG2iwHlD3bZhh9igRNQhp8f9ErPeApdpKpAAAAABJRU5ErkJggg==);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAR0lEQVR42mNkY2X7z0ACYGFgYGDYd7GIYd2WMwQVT6k+BNGwbssZhj0bXuFVfOvcLQYGBgYGJgYSwagGoiMOOZwJAUZSkwYAsW0RxW1OWLQAAAAASUVORK5CYII=);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGB49nMWQ11dHUHFczpfMDCysbL9TymXYJCTk8OrWENDgyHMeREDEwOJYFQD0REHC2diACOpSQMAeusMwvoO+gsAAAAASUVORK5CYII=);--macc:#c4d678;--mink:#e2ecce;--mband:#68803a;--mpane:#182418;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=blood]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABJklEQVR42sVVsW7CMBB9thIrA7NXpIrB5WtAivgYZpSPQZbot1QVeEBIrJ47RBRhJiJytR234PZNjnXv3ln3LsdEKRwyogCAyfilu9CjCvVnCwDYHw9YzOtogvVGR/nFfbAeVXhdLqGbpgsyxvQSWmshpfSK+ficBu2aJlittRaztoW1NhhD+fxenVZDIaXEW1V5XxDidwK3J63MvvftE/EhxGeiFC7aJMajTT67S7TJ7E9supjX39yyNVuc3QWnrxOLJRClcAXjmKpp714phfVGgyMzOLVhNoEUj6eA8nmKx3+SnBbJUzyeCl+RT28yLTK7i9i/74NHfxWD+4BOKMX77uO5+2AIv94HQ4P48D4YGsQQv6BBWk16yZVS3rOvBz5+dpteAc0ZxiYALLDGAAAAAElFTkSuQmCC);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVR42sVXu47EMAhkEUIUV9xH3P9/2lUpIoSiq5z1Ej8g3tW5SWTFBmaGRx4/X9+/sLCICMwMAADMDIgIVBWYeXiOmUFVAaOGipHR/nEcQERd4yJy2XusIrC60MP5rw70YH7X8gESUVwD7zBuZi/6MLOnAyPVquoyRWYGInLeVQSJ3kgvZe5SVCt/3/fL+8cpqI229IYrEc0oiwgSI2qNRNSibKavbiXMiC1irIcIM7dFOIuyNuIv37Yt5TiNPK8bTZTjWRPy2YR3GlBGbD2KhyKMLN9yM7oxs2caRiCLQN2jqpW2tbN4F8ZIw2HmqaAxM/GsDC5hB/wFZcxaWYWuFh3o1dwzNtsvzxalZc/TcVZCZj7b5cpMOIu2VTWxF2H5OJol3pGW+FpIoz/koVTV4aSbqRvTdiwiTajN7DLJZFt3L4AXB47juD1gZL9tItCrXNlpN3MG/eHaaxEJObQyztPocAbuu0ULV2a/GRWRO3AUfQbalsojCA5/zTJl2ef5OXJNKPkDgcbp/zDoPDAAAAAASUVORK5CYII=);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAARklEQVR42mNkY2X7z0ACYGFgYGC4oK3FkMHBQ1DxibOnIBoyOHgY/rx6hVfxuWePGBgYGBiYGEgEoxqIjjjkcCYEGElNGgBTVQ61QdSC+gAAAABJRU5ErkJggg==);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASElEQVR42mNkY2X7z0ACYGFgYGD4ERzEULdiBUHFXaxsDIxsrGz/y37/YpAjoFhDQ4PB5e49BiYGEsGoBqIjDhbOxABGUpMGADSrDMJo6HtQAAAAAElFTkSuQmCC);--macc:#d63030;--mink:#f2d6d2;--mband:#342e32;--mpane:#240c10;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=scale]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABR0lEQVR42u1VIU8DMRh917QlOU2WqVOQ1M0gkZMEhZxELOG/oCeQZ0hQBEUmKxuSE5ATxVSN08tETwyx3Ljeut64ZJzhc+97fd/X9jX9Is74GkcMCgD356c7xN37B074ALNRAqk0bidXyPMcABw8zUxQT3xdb55TfH2+Obmq+D68T098JAA8XU86XUlTT3xk1/DpqY+s714qjWTAIZXe5hzMeFBPQyQAzGMOLAHE/CdZx2VYH/3JM52NEicplcY85liUgC1tFCrAGV8PGTBeWVxenDncNDObBkKI4LM7JJo+Vf5QAHhIX3YWY/m7BqZwTyCEQPr4umnQPJpU2jW1Q1Q3QnDk+Peg1YOo93kwZOECizKsp23/+Xhlt76Ywjo+mcIiZTyop23/eeWPVNrxqsJpZvqdB6RtHnQpXteTQ4oLIYK413nwDVYUuA8nbY/zAAAAAElFTkSuQmCC);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABi0lEQVR42rVWQW7EMAikyLKsqIe+ov9/Wc8WsqKeqAgBgu3Ul10lDswwA/bH99fnDwRrjAGlFFhdRAS11suz1hr03gEAAJ8C7CQHAKi1whjjAoKTmwCICHbXGONGwot7A3AcRzqRV52ZqqFGrtHPMNVaTwOYQc7J5TdWmflZWoJdvS0T8m9r7T0AVrXkM/mfQUr3PwKw0HIg610p5SKLrEwkrQug9262UynFZCL3Zo1MRLEEFvKZLsn4At8w2sp4/gOQ6d3dcRxKgIjpxG+M6ZsJtaGs9pHaSRArg+tGclZrKVnWG5HMqFvsP5aUWcuIkg0RmUMmwyxiKWXW+1AHtIaMV3bJxrr5bE1CL1F0X+B92huRV3C29zOteJ7n2n3A0zJrTmYa+UHHQs3IYugF1ns5eGRkjsXfonZy9LFO6DH1hpvVNSWjb+TwGWms+Lg6yWYB6eRcaVw5cvU9/0k6CzDLVLROmXJrsDunpNuGb19CXhtEb92GbgB2XD5Dwj2MvDn+tCLz8TEcxfwFa63r4m9CKMwAAAAASUVORK5CYII=);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAS0lEQVR42mNkY2X7z0ACYGFgYGB4tdOBYUfDC4KK447fYGBkY2X7v8hSg2HKiy94FZ959Izh399/DEwMJIJRDURHHCyciQGMpCYNAPMGFN5KbfX1AAAAAElFTkSuQmCC);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD4+TCDYXrdJIKKCxayMTCysbL9nxD/i0FOjguvYg0NDQat6CsMTAwkglENREccLJyJAYykJg0Aa0cMwr6TICUAAAAASUVORK5CYII=);--macc:#f0be46;--mink:#f8e2c4;--mband:#9e3424;--mpane:#26100c;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+body.overlay[data-mat=chitin]{--mf:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACAklEQVR42u2VsWvbQBTGfxLROZBBHTwaD64G4SlT6NTRFNqlQ2mGtsnklhAwGVwwZPBQCCRDCIRgezAOcaGOIaGDQXjolKF06qghXUT/gHrIYBdyHdw7S3JskoDo0g8eEk/3vXdP9+57hrCEJEGYAN2OR8Z2OGmdk7EdMrZDrd4GYPXp+kxDmoT5GdvR792ON0mwVdzk6Lihs+4c7PHhfRUA3/fJZrNT5vu+Xh/mp1KCo+MGW8VNAAxhCdnteKRSgsGvgSZdDa949/YVyw8fzSz/++U3MK45aZ3f+P31+vNxgozt6J0DVEplAH4OLm+VYB7fVItViZVSWS+8C3YO9nTgCF9YQn4++yJz6bzsfOzJXDovc+m8bDZPpbCEFAuL880Sstk8jfDCfCPpNl0AdLtNwbhm9HtkzAsgLCGRJsvOSsTvui6feq1xgtVnbyJtpw/wnigUCgRBMLkHypnYTU5cKv4niKPf78faNOa8D+JdN5aRv2L3T+cB0pxvQK3e1jwVQ80DhCVkLp2XXu9Ca5F6Ki1acR/PNMUPc73ehebrQ95YK06p4l0QVmEV61YD5yadiRzmj6/U6m2WUkvaZz+wGQ5HvHj5ZDIywzsB9MgMS0ncFNTacOUqpgmw3ziMlFUpldnerUaUMQiCKXNdF4Dt3Wok+MZakf3G4eQXJXmV/wBJMiC8U2NA2gAAAABJRU5ErkJggg==);--mt:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABhUlEQVR42sVWMW7FMAilCFk+QIeq9z9fhyiDhRg68eUQMLbz1XqJHCfweDzAH1+f3z/MDP+1cMZ5rXW4312lFMDokIgAAICZobV2OTuO4y0AmNkHUGsFEXmhtKjtu9FSO3avT/Sc2Igtao/KKEXKpN2/nhbhLpU9mFEANxFahCPBrIKZsYM7Ub6LLZeB3ZSoYWsvYw6twyglniGbey+AEXMikqeglAIi4hpCxEfpIKIcADOHrMwKeJiCmdb7rgqZBrBSxzsV0jOHuz9mzjPxbQHwSjSif1aguDtGMyHOChR38nme54WV0T+ZoHEUXWTYG9FR1FbQS7Mgyi8Ruc68rmpt3GZBT5Xn0BOeiLjvLd19ekKxZrlc6XY93VnkLoCsnlcaTv9tb/umgayN9ue7LbfXwk0DTy8aEXMzYGut8GyeDjRiA9O9AiYiaK09BzC7tEK0hC/X8r9ey8OImcPul6VDI49GPM6gLKXccjjbMyLH+j+uimvUmFYuMsogPrlurVzdIju/25HfoJ2GIMMAAAAASUVORK5CYII=);--mb:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAS0lEQVR42mNkY2X7z0ACYGFgYGC4cPEWQ1ZMBkHFxy7vY2BkY2X7b6XrxPDi0yO8ih88ucfw7+8/BiYGEsGoBqIjDhbOxABGUpMGAOqCFOz28s+BAAAAAElFTkSuQmCC);--mbp:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAASklEQVR42mNkY2X7z0ACYGFgYGD48fMnQ11dO0HFXZ0NDIxsrGz/y8obGOTk5PAq1tDQYHBxtmJgYiARjGogOuJg4UwMYCQ1aQAAoOcMwl9T+jEAAAAASUVORK5CYII=);--macc:#d6d6e0;--mink:#e8e2ec;--mband:#36283e;--mpane:#120e14;--mfont:HudCaps,Herculanum,HudHead,Georgia,serif}
+/* race -> material: stone=dwarf gargoyle stone sand; timber=orc goblin kobold ratman gremlin; bone=skeleton zombie werewolf devourer fleshcrawler unholy lich; kingdom=human; moon=elf svartalfar illithid; swamp=lizard frog water plant towercap; blood=vampire demon blooded; scale=dragon; chitin=spider queen warrior worker egg */
+/* RACE-FRAMES-END */
+body.overlay[data-mat] :is(header,nav,.world,.taskmode,main,#topbar,#roster,#heroframe,#settings,#worldmap,#daycard,#awaycard,#menu3d,#nearcard,#usecard,#askcard,#questcard,#loghist,#attack,#attackx){
+ border:10px solid transparent;border-image:var(--mf) 8 / 16px / 6px round;background:var(--mt) 0 0/64px 64px;background-clip:padding-box;border-radius:0;
+ box-shadow:0 8px 18px rgba(0,0,0,.55);image-rendering:pixelated;color:var(--mink)}
+body.overlay[data-mat] :is(header,nav,.world,.taskmode,main,#topbar,#roster,#heroframe)::before,body.overlay[data-mat] :is(header,nav,.world,.taskmode,main,#topbar,#roster,#heroframe)::after{content:none}
+/* notices: chat-box lines, text only (no frames), like an MMO chat log */
+body.overlay[data-mat] #toasts{gap:1px;padding:4px 6px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.35) 30%)}
+body.overlay[data-mat] .toast{border:0;border-radius:0;background:none;box-shadow:none;padding:1px 0;font-size:12px;line-height:1.35;color:var(--mink);text-align:right;text-shadow:1px 1px 0 #000,0 0 3px #000;animation:none}
+body.overlay .toast.chat{font-size:12px}
+body.overlay .toast.chat.hit{color:#f0c8a0}
+body.overlay .toast.chat.gore{color:#ff7a62;font-weight:600}
+body.overlay .toast.chat.good{color:#f2d27a}
+body.overlay .toast.chat.fav{color:#ffe08a;font-weight:700}
+body.overlay .quickdock .sword{font-size:26px;line-height:32px;height:32px;color:#e4dfd0;text-shadow:0 0 3px #000}
+body.overlay .quickdock #btnAttack:disabled .sword{opacity:.45}
+body.overlay.attacking #world3d,body.overlay.attacking{cursor:crosshair}
+/* Realm tab */
+#realmBody .ladder{display:flex;align-items:center;gap:0;margin:2px 0 10px}#realmBody .ladder i{flex:1;height:2px;background:#000;box-shadow:0 1px 0 var(--mband,#5d4a2a)}
+#realmBody .rung{flex:0 0 auto;padding:4px 6px;border:2px solid #000;background:rgba(0,0,0,.35);box-shadow:inset 0 0 0 1px var(--mband,#4a3c22);font-size:10px;opacity:.6}
+#realmBody .rung.on{opacity:1;color:var(--macc,#f2d27a)}#realmBody .rung.here{box-shadow:inset 0 0 0 2px var(--macc,#f2d27a)}
+#realmBody .realmnow{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:0 0 10px}#realmBody .realmnow>div{padding:6px;border:2px solid #000;background:rgba(0,0,0,.3);box-shadow:inset 0 0 0 1px var(--mband,#4a3c22)}
+#realmBody .realmnow small{display:block;font-size:10px;opacity:.7}#realmBody .realmnow b{font:15px var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a)}#realmBody .realmnow em{display:block;font-size:10px;font-style:normal;opacity:.7}
+#realmBody .need{display:grid;grid-template-columns:1fr auto;gap:2px 8px;margin:0 0 6px;font-size:12px}#realmBody .need .meter{grid-column:1/-1;height:8px}#realmBody .need.done{color:#9fd88a}
+#realmBody .milestones{display:grid;grid-template-columns:1fr 1fr;gap:4px}#realmBody .ms{font-size:11px;padding:4px 6px;border:2px solid #000;background:rgba(0,0,0,.25);opacity:.55}#realmBody .ms.got{opacity:1;color:var(--macc,#f2d27a)}#realmBody .ms small{display:block;font-size:9px;opacity:.7;color:var(--mink,#ddd)}
+body.overlay #topbar #tbRank{font-family:var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a)}
+#realmBody .tradebox{margin:0 0 12px;padding:8px;border:2px solid #000;background:rgba(0,0,0,.3);box-shadow:inset 0 0 0 1px var(--macc,#b08a3e)}
+#realmBody .wares{display:grid;grid-template-columns:1fr 1fr;gap:4px}#realmBody .wares button{min-height:40px!important;font-size:11px;text-align:left}#realmBody .wares small{display:block;opacity:.7}
+/* damage numbers over units in 3D */
+#dmgfloats{position:fixed;left:0;top:0;width:0;height:0;pointer-events:none;z-index:29}
+#dmgfloats .dmg{position:absolute;left:0;top:0;font:bold 18px/1 HudText,Georgia,serif;color:#fff;text-shadow:0 0 3px #000,1px 1px 0 #000,-1px -1px 0 #000;white-space:nowrap;will-change:transform}
+#dmgfloats .dmg.big{color:#ffd24a;font-size:22px}#dmgfloats .dmg.hurt{color:#ff5a48}#dmgfloats .dmg.miss{color:#bdbdbd;font-size:11px;font-weight:600;opacity:.8}#dmgfloats .dmg.kill{color:#ff3b30;font-size:22px}#dmgfloats .dmg.parry{color:#bcd7ff;font-size:15px}#dmgfloats .dmg.stagger{color:#ffb347;font-size:15px}#dmgfloats .dmg.burn{color:#ff7a2a;font-size:15px}#dmgfloats .dmg.venom{color:#9be060;font-size:15px}#dmgfloats .dmg.webbed{color:#ececf4;font-size:15px}#dmgfloats .dmg.chill{color:#a8dcff;font-size:15px}#dmgfloats .dmg.echo{color:#c9a2ff;font-size:15px}.dmg.ko{color:#cdbcff;font-size:15px}
+body.overlay .quickdock .fist{font-size:24px;line-height:32px;height:32px;color:#e4dfd0;text-shadow:0 0 3px #000}body.overlay .quickdock #btnLethal[aria-pressed=true]{border-color:#9d8be0;box-shadow:inset 0 0 0 1px #9d8be0}body.overlay .quickdock #btnLethal[aria-pressed=true] .fist{color:#cdbcff}body.overlay .quickdock #btnLethal:disabled .fist{opacity:.45}#dmgfloats .dmg.bleed{color:#b3121a;font-size:13px}
+body.overlay[data-mat] #heroframe .bar.mood span{--bc:#58b86a}body.overlay[data-mat] #heroframe .bar.mood[data-m=ok] span{--bc:#d6a93a}body.overlay[data-mat] #heroframe .bar.mood[data-m=bad] span{--bc:#c0392b}
+#heroframe .bar.mood{cursor:help}
+.housebox input{flex:1 1 140px;min-width:0;padding:3px 6px;background:rgba(0,0,0,.35);color:inherit;border:1px solid rgba(176,138,62,.6);border-radius:3px}
+#dmgfloats .dmg.catchw{color:#9fe3ff;font-size:15px}
+#heroframe .spbtn{display:block;width:100%;margin:0 0 4px;padding:2px 6px;font-size:11px;text-align:left}#heroframe .spbtn:disabled{opacity:.55}
+#heroframe .wrole{font-size:10px;margin:-2px 0 3px;color:var(--macc,#f2d27a);opacity:.85}
+#heroframe .chips{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin:6px 0 0}#heroframe .chips>span{width:44px;font-size:11px;color:var(--muted)}#heroframe .chips button{min-height:20px!important;padding:0 6px!important;font-size:11px;max-width:110px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* game speed and the Paused banner */
+body.overlay #topbar .speedctl{display:inline-flex;margin-left:4px}body.overlay #topbar .speedctl button{margin-left:0!important;min-width:30px;padding:0 4px!important;font-size:10px;letter-spacing:-1px}
+#pausebanner{position:fixed;top:56px;left:50%;transform:translateX(-50%);z-index:35;padding:4px 18px;font:18px var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a);background:rgba(0,0,0,.6);border:2px solid #000;box-shadow:inset 0 0 0 1px var(--mband,#6a5530);text-shadow:1px 1px 0 #000;pointer-events:none;text-align:center}
+#warbar{position:fixed;top:56px;left:50%;transform:translateX(-50%);z-index:35;padding:3px 16px;font:14px var(--mfont,HudText,Georgia,serif);color:#ffd9cf;background:rgba(90,10,6,.78);border:2px solid #000;box-shadow:inset 0 0 0 1px #c0392b;text-shadow:1px 1px 0 #000;pointer-events:none;white-space:nowrap}
+.atwar{color:#ff7b6b}.warbtn{border-color:#a93226!important;color:#ffb3a8!important}.siegebar{display:inline-block;width:80px;height:8px;background:rgba(0,0,0,.5);border:1px solid #000;vertical-align:middle}.siegebar i{display:block;height:100%;background:#e0453a}
+body.atwar #pausebanner{top:88px}
+#pausebanner small{display:block;font:11px HudText,Georgia,serif;color:var(--mink,#ddd);opacity:.8}
+/* lettering: a carved/inked title face per race, hard pixel shadows */
+body.overlay[data-mat] :is(h2,h3,h4,.brand,.alchead b,.sectionhead h2,#heroframe .hn,summary){font-family:var(--mfont);color:var(--macc);text-shadow:1px 1px 0 #000,2px 2px 0 rgba(0,0,0,.45);letter-spacing:.03em}
+body.overlay[data-mat] :is(#topbar b,#topbar strong,.eyebrow,.badge,.tick){color:var(--macc)}
+body.overlay[data-mat] :is(p,.hint,.unitmeta,.vital,.statrow span:first-child){text-shadow:1px 1px 0 #000}
+/* buttons: nine-slice pixel buttons, pressed = the race's accent */
+body.overlay[data-mat] :is(button,select){border:6px solid transparent;border-image:var(--mb) 4 fill / 8px / 0 stretch;background:none;border-radius:0;box-shadow:none;color:var(--mink);text-shadow:1px 1px 0 #000;image-rendering:pixelated;padding:2px 6px;transition:none}
+body.overlay[data-mat] :is(button,select):hover:not(:disabled){filter:brightness(1.22);border-color:transparent;box-shadow:none}
+body.overlay[data-mat] button:active:not(:disabled){transform:translateY(1px);filter:brightness(.92)}
+body.overlay[data-mat] :is(button[aria-pressed=true],button.active,button.on,nav button.active){border-image-source:var(--mbp);color:#fff;text-shadow:1px 1px 0 #000}
+body.overlay[data-mat] button:disabled{opacity:.5;filter:saturate(.4)}
+body.overlay[data-mat] nav button{border-image:none;background:none}
+body.overlay[data-mat] nav button.active{border-image:var(--mbp) 4 fill / 8px / 0 stretch}
+/* bars: square, notched, with a lit top row and a dark bottom row */
+body.overlay[data-mat] #heroframe .bar,body.overlay[data-mat] .meter,body.overlay[data-mat] .hpbar{height:12px;border-radius:0;border:2px solid #000;background:#141214;box-shadow:0 0 0 1px var(--mband)}
+body.overlay[data-mat] #heroframe .bar span,body.overlay[data-mat] .meter .fill,body.overlay[data-mat] .hpbar span{border-radius:0;box-shadow:inset 0 2px 0 rgba(255,255,255,.28),inset 0 -2px 0 rgba(0,0,0,.35)}
+body.overlay[data-mat] #roster .member .hpbar{height:8px;border:1px solid #000;margin-top:4px;box-shadow:0 0 0 1px var(--mband)}
+body.overlay[data-mat] #roster .member .hpbar span{box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+body.overlay[data-mat] #heroframe .bar span{background-image:repeating-linear-gradient(90deg,transparent 0 14px,rgba(0,0,0,.45) 14px 16px)!important;background-color:var(--bc)}
+body.overlay[data-mat] #heroframe .bar.hp span{--bc:#c4382c}body.overlay[data-mat] #heroframe .bar.food span{--bc:#d6962e}body.overlay[data-mat] #heroframe .bar.rest span{--bc:#4678d2}
+body.overlay[data-mat] #heroframe .bar span::after{content:none}
+body.overlay[data-mat] #heroframe .bar i{font:bold 9px/8px HudText,Georgia,serif;text-shadow:1px 1px 0 #000}
+/* portrait and level plate */
+body.overlay[data-mat] #heroframe .ring{border-radius:0;border:8px solid transparent;border-image:var(--mf) 8 / 16px / 2px round;background:#0c0b0c;box-shadow:none}
+body.overlay[data-mat] #heroframe .lv{border-radius:0;border:2px solid #000;background:var(--mband);color:#fff;text-shadow:1px 1px 0 #000;box-shadow:inset 0 1px 0 rgba(255,255,255,.25)}
+/* item slots, roster rows, small boxes */
+body.overlay[data-mat] :is(#heroframe .bagslot,#heroframe .group img,.inventory.bag button,.portrait){border-radius:0!important;border:2px solid #000!important;background:#0e0d0f!important;box-shadow:inset 0 0 0 1px var(--mband)!important}
+body.overlay[data-mat] #heroframe .bagslot.eq{box-shadow:inset 0 0 0 2px var(--macc)!important}
+/* a bag thing the held one combines with (UseOn.dm RmCombineList): outlined gold, pulsing */
+:is(#heroframe .bagslot,.inventory.bag button).bagcombine{outline:2px solid #f2d27a!important;outline-offset:-1px;box-shadow:0 0 8px rgba(242,210,122,.75)!important;animation:bagcomb 1.1s ease-in-out infinite}
+@keyframes bagcomb{50%{box-shadow:0 0 2px rgba(242,210,122,.3)!important}}
+body.overlay[data-mat] #roster .member{border-radius:0!important;border:2px solid #000!important;background:rgba(0,0,0,.35)!important;box-shadow:inset 0 0 0 1px var(--mband)!important}
+body.overlay[data-mat] #roster .member.sel{box-shadow:inset 0 0 0 2px var(--macc)!important}
+body.overlay[data-mat] :is(.alchemy,.runebox,.card,.worldpanel,#heroframe .succ){border-radius:0;border:2px solid #000;background:rgba(0,0,0,.32);box-shadow:inset 0 0 0 1px var(--mband)}
+body.overlay[data-mat] .skillbar .skill{border-radius:0}
+body.overlay[data-mat] h3{border-image:none;border-bottom:2px solid var(--mband)}
+/* Classic mode is retired: its border toggle goes too */
+#borderVisibility,#borderVisibilityHint{display:none!important}
+/* ===== WoW / Crusader Kings pass: icon action bar, one-row resource strip ===== */
+body.overlay img.ic{width:32px;height:32px;image-rendering:pixelated;mix-blend-mode:screen;pointer-events:none}
+body.overlay img.ic:not([src]){visibility:hidden}
+/* action bar: square icon slots with a small caption, gold glow on hover like an MMO bar */
+body.overlay .quickdock{display:flex;justify-content:center;gap:6px}
+body.overlay .quickdock button{flex:0 0 66px;height:62px;min-height:62px!important;padding:3px 2px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:10px;line-height:1}
+body.overlay .quickdock button:hover:not(:disabled) img.ic{filter:drop-shadow(0 0 3px var(--macc,#f2d27a))}
+body.overlay .quickdock button:disabled img.ic{filter:grayscale(1) brightness(.6)}
+body.overlay .modebuttons button{min-height:30px!important;padding:2px 8px!important;font-size:12px}
+body.overlay .modebuttons button small{display:none}
+body.overlay .modefooter #modeHint,body.overlay #dockHint{font-size:10px;margin:3px 0;text-align:center;opacity:.8}
+/* top bar: one strip - date, then counts with icons, then the menu buttons */
+body.overlay #topbar{flex-wrap:nowrap;max-width:calc(calc(var(--sw,100vw)*1) - 520px);white-space:nowrap;padding:0 4px}
+body.overlay #topbar .res{gap:3px;padding:0 8px;font-size:12px}
+body.overlay #topbar .res img.ic{width:24px;height:24px}
+body.overlay #topbar .res b{font-size:13px}
+body.overlay #topbar #tbPos{opacity:.65;font-size:11px}
+body.overlay #topbar button{min-height:24px!important;padding:0 6px!important;font-size:11px;margin-left:2px}
+@media (max-width:1300px){body.overlay #topbar #tbPos{display:none}}
+body.overlay #topbar .datebox{display:none}
+body.overlay #topbar{left:318px;transform:none;max-width:calc(calc(var(--sw,100vw)*1) - 318px - 216px);overflow:hidden}/* the date lives on the minimap plate */
+body.overlay[data-mat] #deselect,body.overlay[data-mat] #deselect strong{color:var(--mink)}
+
+/* ===== WoW-style unit frame, round minimap, quieter band panel ===== */
+/* unit frame: round portrait in a ring, level badge on its rim, name over the race plate */
+body.overlay[data-mat] #heroframe{position:fixed}
+body.overlay[data-mat] #heroframe .hf{grid-template-columns:78px 1fr;gap:8px}
+body.overlay[data-mat] #heroframe .pw{position:relative;width:76px;height:76px}
+body.overlay[data-mat] #heroframe .ring{width:76px;height:76px;border-radius:50%;border:3px solid var(--mband);border-image:none;background:radial-gradient(circle at 50% 40%,#3a3a3a,#0b0a0b 70%);overflow:hidden;box-shadow:0 0 0 2px #000,0 0 0 4px var(--macc),0 0 0 6px #000,inset 0 0 10px #000}
+body.overlay[data-mat] #heroframe .ring img{transform:scale(1.25) translateY(4px)}
+body.overlay[data-mat] #heroframe .lvb{position:absolute;left:-6px;bottom:-6px;min-width:26px;height:26px;padding:0 4px;border-radius:50%;display:grid;place-items:center;font:bold 12px/1 HudText,Georgia,serif;color:#fff;text-shadow:1px 1px 0 #000;background:radial-gradient(circle at 40% 35%,var(--mband),#111);box-shadow:0 0 0 2px #000,0 0 0 3px var(--macc),0 0 0 4px #000}
+body.overlay[data-mat] #heroframe .hn{font-size:15px}
+body.overlay[data-mat] #heroframe .lv{display:inline-block;margin:2px 0 4px;padding:0 6px;font-size:10px}
+body.overlay[data-mat] #heroframe .bar{height:14px;margin:3px 0}
+body.overlay[data-mat] #heroframe .bar.hp{height:16px}
+/* the More/Less fold: formation, stance, patrol and unload rows hide until asked for */
+body.overlay #heroframe .hfmore{position:absolute;top:2px;right:2px;z-index:2;min-height:20px!important;padding:0 6px!important;font-size:10px}
+body.overlay #heroframe:not(.more) :is(.groupctl:not(.patrolctl),.bagstock){display:none}
+body.overlay #heroframe .hn{padding-right:44px}
+#heroframe .hftabs{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2px;margin:7px 0 0;padding-top:5px;border-top:1px solid #5d4a2a}#heroframe .hftabs button:nth-child(-n+3){grid-column:span 4}#heroframe .hftabs button:nth-child(n+4){grid-column:span 3}#heroframe .hftabs button{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:22px!important;padding:1px 2px!important;font-size:11px;border-radius:0 0 3px 3px;opacity:.72}#heroframe .hftabs button[aria-selected=true]{opacity:1;color:#1b160c;background:linear-gradient(#f2d27a,#b8913f)}
+#heroframe[data-tab=overview] [data-pane]:not([data-pane=overview]),#heroframe[data-tab=health] [data-pane]:not([data-pane=health]),#heroframe[data-tab=family] [data-pane]:not([data-pane=family]),#heroframe[data-tab=interact] [data-pane]:not([data-pane=interact]),#heroframe[data-tab=combat] [data-pane]:not([data-pane=combat]),#heroframe[data-tab=skills] [data-pane]:not([data-pane=skills]),#heroframe[data-tab=spells] [data-pane]:not([data-pane=spells]){display:none!important}
+#heroframe .hfrow{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin:4px 0;font-size:11px}#heroframe .hfrow>span{width:44px;color:var(--muted)}#heroframe .hfrow>b{color:#f2d27a;margin-right:4px}#heroframe .hfrow button{min-height:22px!important;padding:0 6px!important;font-size:11px}#heroframe .hfrow button[aria-pressed=true]{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f)}#heroframe .hfrow>div{flex:1;min-width:0;display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:3px}#heroframe .hfrow>div button{padding:0 3px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#heroframe .hflv{display:grid;grid-template-columns:repeat(var(--c,3),minmax(0,1fr));gap:3px;margin:5px 0}#heroframe .hflv>div{position:relative;display:flex;align-items:center;gap:3px;padding:2px 4px;background:#141a16;border:1px solid #5d4a2a;border-radius:3px;font-size:11px;overflow:hidden}#heroframe .hflv span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#e8dcb8}#heroframe .hflv b{color:#fff}#heroframe .hflv[style*="--c:4"]>div{font-size:10px;padding:2px 3px}#heroframe .hflv em{position:absolute;left:0;bottom:0;height:2px;background:#7fd06a}
+#heroframe .hfbody{display:grid;grid-template-columns:58px minmax(0,1fr);gap:8px;align-items:start;margin:4px 0}#heroframe .hfdoll{width:58px;height:100px}#heroframe .hfdoll .z{stroke:#000;stroke-width:1;cursor:pointer}#heroframe .hfdoll .z:hover{filter:brightness(1.25)}#heroframe .hfdoll .z.sel{stroke:#fff;stroke-width:2}#heroframe .hfdoll .s0{fill:#58b86a}#heroframe .hfdoll .s1{fill:#a6c85a}#heroframe .hfdoll .s2{fill:#d6b03a}#heroframe .hfdoll .s3{fill:#e07a3a}#heroframe .hfdoll .s4{fill:#c8382c}#heroframe .hfdoll .s5{fill:none;stroke:#8a8070;stroke-dasharray:2 2}
+#heroframe .hfblood{position:relative;height:12px;margin:0 0 5px;background:#111;border:1px solid #000;overflow:hidden}#heroframe .hfblood span{display:block;height:100%;background:linear-gradient(#b0302a,#6a1410)}#heroframe .hfblood i{position:absolute;inset:0;font:9px/12px HudText,Georgia,serif;font-style:normal;text-align:center;color:#fff;text-shadow:0 0 2px #000}
+#heroframe .hfconds{display:flex;flex-wrap:wrap;gap:3px}#heroframe .hfconds span{padding:1px 6px;font-size:10px;border:1px solid #5d4a2a;background:#141a16;color:#e8dcb8}#heroframe .hfconds .s2{border-color:#a8862a;color:#f2d27a}#heroframe .hfconds .s3{border-color:#b05a2a;color:#f0a070}#heroframe .hfconds .s4,#heroframe .hfconds .s5{border-color:#a8302a;color:#ff8a7a;background:#2a1010}
+#heroframe .hfparts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 8px;margin:4px 0;font-size:10px}#heroframe .hfparts>div{display:flex;justify-content:space-between;gap:4px;padding:1px 0;border-bottom:1px solid rgba(255,255,255,.06)}#heroframe .hfparts span{color:#c8bc9c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#heroframe .hfparts b{font-weight:normal;color:#7fd06a;white-space:nowrap}#heroframe .hfparts .s1 b{color:#b8d06a}#heroframe .hfparts .s2 b{color:#f2d27a}#heroframe .hfparts .s3 b{color:#f0a070}#heroframe .hfparts .s4 b{color:#ff6a5a}#heroframe .hfparts .s5 b{color:#8a8070;text-decoration:line-through}
+#heroframe .hfhouse{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:4px 0;font-size:11px}#heroframe .hfhouse i{width:10px;height:10px;border:1px solid #000}#heroframe .hfhouse b{color:#f2d27a;font-weight:normal}#heroframe .hfhouse span{color:var(--muted)}
+#heroframe .hfkin{display:flex;gap:4px;align-items:baseline;margin:3px 0;font-size:11px}#heroframe .hfkin>span{flex:none;width:52px;color:var(--muted)}#heroframe .hfbreed>span{width:auto}#heroframe .hfkin>div{display:flex;flex-wrap:wrap;gap:3px;min-width:0}#heroframe .hfkin button{min-height:20px!important;padding:0 6px!important;font-size:11px}#heroframe .hfkin .dead,#heroframe .hfkin .away{padding:1px 4px;color:#a89b7c}#heroframe .hfkin em{color:#6a6250;font-style:normal}
+#heroframe .hfnear{display:flex;justify-content:space-between;align-items:center;gap:4px;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:11px}#heroframe .hfnear>div:first-child{min-width:0}#heroframe .hfnear b{display:block;font-weight:normal;color:#f2d27a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#heroframe .hfnear span{display:block;font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#heroframe .hfnear>div:last-child{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:3px;max-width:62%}#heroframe .hfnear button{min-height:20px!important;padding:0 5px!important;font-size:10px}#heroframe .hfab.near{border-color:#4a6a3a;background:linear-gradient(#24361c,#15200f);color:#cfe8b0}
+#heroframe .hfh{margin:6px 0 -2px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}#heroframe .hfnote{margin:6px 0;font-size:11px;color:var(--muted)}
+#heroframe .hfstump{margin:3px 0;padding:2px 6px;border-left:3px solid #c8402e;background:rgba(0,0,0,.28);font-size:11px;line-height:1.35;color:var(--mink,#e8dcb8)}#heroframe .hfstump b{font-weight:normal;color:var(--macc,#f2d27a)}#heroframe .hfstump.st-bandaged{border-left-color:#d8a030}#heroframe .hfstump.st-sealed{border-left-color:#8a8678}body.cb #heroframe .hfstump.st-open{border-left-color:#d55e00}body.cb #heroframe .hfstump.st-bandaged{border-left-color:#e6c229}
+#heroframe .hfab{min-height:22px!important;padding:2px 8px!important;font-size:11px;max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-color:#7a5b2a;background:linear-gradient(#3a2c16,#231a0d);color:#f2d27a}#heroframe .hfspells{display:flex;flex-wrap:wrap;gap:3px;margin:5px 0}#heroframe .hfab.magic{border-color:#5a4a8a;background:linear-gradient(#2c2346,#191428);color:#cdbcff}
+/* The middle bar's Interact (I) with one unit selected: the creatures beside it and what it can do with them. */
+#nearcard{position:fixed;left:50%;bottom:118px;transform:translateX(-50%);z-index:13;width:360px;max-width:calc(var(--sw,100vw) - 24px);max-height:calc(var(--sh,100vh)*0.5);overflow-y:auto;padding:6px 10px 8px;background:linear-gradient(#2a241a,#18140e);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 6px 18px rgba(0,0,0,.6);color:#e8dcb8}#nearcard[hidden]{display:none}
+#nearcard .nchead{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:2px 0 5px;border-bottom:1px solid rgba(176,138,62,.4)}#nearcard .nchead b{font:14px HudText,Georgia,serif;color:#f2d27a}#nearcard .nchead button{min-height:22px!important;padding:0 8px!important;font-size:11px}
+#nearcard .hfh{margin:6px 0 -2px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}#nearcard .hfnote{margin:6px 0;font-size:11px;color:var(--muted)}#nearcard .hfspells{display:flex;flex-wrap:wrap;gap:3px;margin:5px 0}
+#nearcard .hfnear{display:flex;justify-content:space-between;align-items:center;gap:4px;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:11px}#nearcard .hfnear>div:first-child{min-width:0}#nearcard .hfnear b{display:block;font-weight:normal;color:#f2d27a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#nearcard .hfnear span{display:block;font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#nearcard .hfnear>div:last-child{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:3px;max-width:62%}#nearcard .hfnear button{min-height:20px!important;padding:0 5px!important;font-size:10px}
+#nearcard .hfab{min-height:22px!important;padding:2px 8px!important;font-size:11px;max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-color:#4a6a3a;background:linear-gradient(#24361c,#15200f);color:#cfe8b0}
+#heroframe .hfpower{margin:3px 0;font-size:11px;color:#e8dcb8;line-height:1.35}#heroframe .hfpower b{color:#f2d27a;font-weight:normal}
+/* A captive's card (Captives.dm, capture-rope): bound or a slave, its rope, loyalty and the odds it breaks free. */
+#heroframe .hfcap{margin:4px 0 2px}#heroframe .caprow{display:flex;gap:6px;align-items:baseline;margin:2px 0;font-size:11px;color:var(--muted)}#heroframe .caprow b{font-weight:normal;color:var(--macc,#f2d27a);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}#heroframe .caprow em{flex:none;font-style:normal;font-size:10px;color:var(--mink,#e8dcb8)}
+#heroframe .bar.caploy span{--bc:#5f9a46}body.cb #heroframe .bar.caploy span{--bc:#4f9fd8}
+#heroframe .caprisk{margin:4px 0 2px;font-size:11px;color:var(--mink,#e8dcb8)}#heroframe .caprisk strong{font-weight:600}#heroframe .caprisk.r0 strong,#heroframe .caprisk.r1 strong{color:#8fc36a}#heroframe .caprisk.r2 strong{color:#e6c229}#heroframe .caprisk.r3 strong{color:#f0a040}#heroframe .caprisk.r4 strong{color:#e0533a}
+body.cb #heroframe .caprisk.r0 strong,body.cb #heroframe .caprisk.r1 strong{color:#56b4e9}body.cb #heroframe .caprisk.r2 strong,body.cb #heroframe .caprisk.r3 strong{color:#f0e442}body.cb #heroframe .caprisk.r4 strong{color:#d55e00}
+/* Weapon moves and spells (WeaponSkills.dm): ready ones are buttons, locked ones say what they need. */
+#heroframe .hfmove{display:flex;justify-content:space-between;align-items:center;gap:6px;margin:2px 0;font-size:11px}#heroframe .hfmove em{font-style:normal;font-size:10px;color:var(--muted);text-align:right}
+#heroframe .hfmv{padding:2px 8px;font-size:11px;color:#e8dcb8;border:1px dashed rgba(176,138,62,.45);border-radius:3px}#heroframe .hfmv.lock{color:var(--muted);border-color:rgba(255,255,255,.12)}
+#heroframe .hfauto{min-height:20px!important;padding:0 6px!important;font-size:10px}#heroframe .hfauto[aria-pressed=true]{border-color:#7a9a4a;color:#cfe8b0}
+#heroframe .bar.wmana span{background:linear-gradient(#8f7ae8,#4b2f9a)}#heroframe .hfwm{margin:4px 0 2px;font-size:11px;color:#cdbcff}
+body.overlay[data-mat] #heroframe :is(.hftabs button,.hflv>div,.hfab){border-radius:0}body.overlay[data-mat] #heroframe .hftabs button[aria-selected=true]{border-image-source:var(--mbp);color:#fff;text-shadow:1px 1px 0 #000}
+body.overlay #heroframe .facts{font-size:11px;opacity:.85}
+/* minimap: a round map in a metal ring, the date on a small plate above, layer tabs under it */
+body.overlay[data-mat] .world{border:0;border-image:none;background:none;box-shadow:none;padding:0;width:196px}
+body.overlay[data-mat] .world summary{display:block;padding:0;min-height:0;margin:0 auto 8px;text-align:center}
+body.overlay[data-mat] .world .worldline{display:inline-flex;justify-content:center;gap:6px;padding:2px 10px;background:var(--mt) 0 0/64px 64px;border:2px solid #000;box-shadow:inset 0 0 0 1px var(--mband);color:var(--mink);text-shadow:1px 1px 0 #000}
+body.overlay[data-mat] .world #coords{opacity:.6}
+body.overlay[data-mat] #minimap{width:164px;height:164px;margin:4px auto 0;border-radius:50%;border:4px solid var(--mband);box-shadow:0 0 0 2px #000,0 0 0 5px var(--macc),0 0 0 7px #000,0 8px 16px rgba(0,0,0,.6)}
+body.overlay[data-mat] .world .overview{gap:10px}
+body.overlay[data-mat] .world .layers{display:flex;justify-content:center;flex-wrap:wrap;gap:3px;margin-top:2px}
+body.overlay[data-mat] .world .layers{flex-wrap:nowrap}body.overlay[data-mat] .world .layers button{flex:1 1 0;min-width:0;min-height:22px!important;padding:0 2px!important;font-size:9px}
+body.overlay #roster>h4{position:sticky;top:0;z-index:1;background:var(--mt,#1a1612) 0 0/64px 64px}
+/* no title block in the overlay: the tabs sit at the top-left corner (Guide is one of them) */
+body.overlay>header{display:none!important}body.overlay nav{top:6px}body.overlay main{top:54px}
+/* ===== Crusader Kings side bar: icon tabs down the right edge; panels open full height beside it ===== */
+body.overlay nav{top:6px!important;left:auto;right:6px;width:64px;display:flex;flex-direction:column;gap:3px;padding:4px}
+body.overlay nav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:100%;min-height:52px!important;padding:2px 0!important;font:10px/1 HudText,Georgia,serif}
+body.overlay nav button img.ic{width:32px;height:32px}
+body.overlay nav button .gear{font-size:24px;line-height:32px;height:32px;color:var(--macc,#f2d27a);font-weight:normal}
+body.overlay[data-mat] nav button{border:6px solid transparent;border-image:var(--mb) 4 fill / 8px / 0 stretch}
+body.overlay[data-mat] nav button.active{border-image-source:var(--mbp)}
+body.overlay .world,body.overlay #roster{right:84px!important}
+/* a page (Village, Work, Build, Realm, Guide) opens at the right edge, under the menu row (the minimap and roster hide while it is open) and above the action bar, so the menu and the bar stay in reach to switch pages */
+body.overlay main{left:auto!important;right:6px!important;top:84px!important;bottom:92px!important;width:min(420px,calc(var(--sw,100vw)*0.4))!important;z-index:20}
+body.overlay #topbar{left:6px!important;max-width:calc(calc(var(--sw,100vw)*1) - 6px - 300px)!important}
+/* ===== CK3 panel insides: crest header, icon sub-tabs, portrait rows ===== */
+body.overlay main{padding:0 10px 12px!important}
+body.overlay #panelhead{display:flex;align-items:center;gap:10px;margin:0 -10px 6px;padding:5px 44px 5px 12px;position:sticky;top:0;z-index:3;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.25)),var(--mt,#1a1612) 0 0/64px 64px;border-bottom:2px solid #000;box-shadow:0 1px 0 var(--mband,#6a5530),0 4px 8px rgba(0,0,0,.45)}
+body.overlay #panelhead .crest{flex:0 0 38px;height:44px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,var(--mband,#6a5530),#111 75%);clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);box-shadow:inset 0 0 0 2px var(--macc,#f2d27a)}
+body.overlay #panelhead .crest::after{content:"";position:absolute}
+body.overlay #panelhead .crest img{width:26px;height:26px;margin-top:-5px}
+body.overlay #panelhead .ph-t{display:flex;flex-direction:column;min-width:0}
+body.overlay #panelhead b{font:22px/1.1 var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a);text-shadow:1px 1px 0 #000,2px 2px 0 rgba(0,0,0,.45);letter-spacing:.04em}
+body.overlay #panelhead small{font-size:11px;color:var(--mink,#e8dcb8);opacity:.75;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.overlay .panelclose{position:sticky!important;float:right;top:12px!important;z-index:4;margin:12px -2px -40px 0;width:30px;height:30px;min-height:30px!important;padding:0!important;font-size:16px}
+body.overlay .page.headed>.sectionhead>h2,body.overlay #page-work.headed>h2:first-child{display:none}
+body.overlay .page.headed>.sectionhead{justify-content:flex-end;margin-top:-4px}
+/* sub-tabs: a row of square icon buttons under the header */
+body.overlay .vsubtabs{display:flex;gap:4px;margin:0 0 10px}
+body.overlay .vsubtabs button{flex:1 1 0;min-width:0;min-height:54px!important;padding:2px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font:10px/1.1 HudText,Georgia,serif;white-space:normal;text-align:center}
+body.overlay .vsubtabs button img.ic{width:28px;height:28px}
+/* the Build page: a lean header (one line of facts, short tabs, small category chips) so the buildings get the room */
+body.overlay #page-build .bstats{gap:4px;margin:0 0 6px}
+body.overlay #page-build .bstats span{padding:1px 8px;font-size:11px}
+body.overlay #page-build .vsubtabs{margin:0 0 6px}
+body.overlay #page-build .vsubtabs button{flex-direction:row;min-height:32px!important;gap:6px;font-size:12px}
+body.overlay #page-build .vsubtabs button img.ic{width:20px;height:20px}
+body.overlay #page-build .bcard{padding:6px;margin-bottom:4px}
+body.overlay #page-build .bcard>h3{display:none}
+body.overlay #page-build .buildcats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px;margin-bottom:6px}
+body.overlay #page-build .buildcats button{min-height:24px!important;padding:1px 1px!important;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.overlay #page-build .builditems{max-height:none;overflow:visible}
+body.overlay #page-build .bitext{flex-flow:row wrap;align-items:baseline;column-gap:6px}
+body.overlay #page-build .bitext b{flex:0 0 100%}
+body.overlay #page-build .bitem{min-height:40px;padding:3px 6px!important}
+body.overlay[data-mat] .vsubtabs button[aria-selected=true]{border-image-source:var(--mbp);color:#fff}
+/* roster rows: a plate per person, round portrait, name over the details, controls below */
+body.overlay .vtable .vhead{display:none}
+body.overlay .vrow{display:flex;flex-wrap:wrap;gap:4px 6px;padding:6px 8px;margin:0 0 4px;border:2px solid #000;border-bottom:2px solid #000;background:rgba(0,0,0,.28);box-shadow:inset 0 0 0 1px var(--mband,#4a3c22)}
+body.overlay .vrow:nth-child(even){background:rgba(0,0,0,.18)}
+body.overlay .vrow>*{flex:1 1 28%;min-width:0}
+body.overlay .vrow>:first-child{flex:0 0 18px}
+body.overlay .vrow>img,body.overlay .vrow>:nth-child(2){flex:0 0 40px}
+body.overlay .vrow>:nth-child(3){flex:1 1 calc(100% - 90px)}
+body.overlay .vrow>:nth-child(7){flex:1 1 60%}
+body.overlay .vrow img{width:40px!important;height:40px!important;border-radius:50%!important;border:2px solid var(--mband,#5d4a2a)!important;box-shadow:0 0 0 2px #000,0 0 0 3px var(--macc,#b08a3e);background:radial-gradient(#3a3a3a,#0b0a0b 70%)!important}
+body.overlay .vrow.sel{box-shadow:inset 0 0 0 2px var(--macc,#f2d27a)}
+/* unit cards on the Units tab: same plates */
+body.overlay #units .card{border-radius:0;border:2px solid #000;background:rgba(0,0,0,.28);box-shadow:inset 0 0 0 1px var(--mband,#4a3c22)}
+body.overlay #units .card.selected{box-shadow:inset 0 0 0 2px var(--macc,#f2d27a)}
+body.overlay[data-mat] #units .card .portrait{width:44px!important;height:44px!important;border-radius:50%!important;box-shadow:0 0 0 2px #000,0 0 0 3px var(--macc,#b08a3e)!important}
+body.overlay #units .unitname{font-family:var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a);font-size:15px;text-shadow:1px 1px 0 #000}
+/* cinematic shots (recorded trailers): the HUD steps away */
+body.overlay.cine :is(nav,.world,.taskmode,main,#topbar,#roster,#heroframe,#daycard,#awaycard,#lockbar,#tag3d,#build3d,#attack,#attackx,#foodalert,#food3d,#say3d){display:none!important}
+/* an open panel covers the minimap and Company list, as in CK3; they step aside */
+body.overlay.panel-open :is(.world,#roster){visibility:hidden}
+body.overlay[data-mat] :is(main,#worldmap,#settings,#daycard,#awaycard){background:var(--mt) 0 0/64px 64px,var(--mpane)}
+
+.cstyle{display:flex;gap:4px;align-items:center;margin:8px 0 4px;flex-wrap:wrap}.cstyle span{font-size:11px;color:var(--muted);margin-right:2px}.cstyle button{min-height:26px;padding:2px 8px;font-size:11px}.cstyle button[aria-pressed=true]{border-color:#e0bb73;color:#f2d27a}.subsk{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:3px 0;font-size:11px}.subsk b{width:56px;color:#f2d27a;font-weight:600}.subsk .sub{display:inline-flex;gap:3px;padding:2px 6px;border:1px solid var(--line);border-radius:6px;cursor:pointer;min-height:0}.subsk .sub em{font-style:normal;font-weight:700;color:#f2d27a}
+#topbar .playmode[hidden],#topbar #btn3d[hidden]{display:none!important}
+/* HUD pass: one slim action bar at the bottom centre. The six quick commands are square buttons, with their
+   key (A, I, Z: the original shortcuts; the digits stay quick unit groups) in the corner; Do now / Add tasks and Deselect sit beside them; the hint lines became button tips. */
+body.overlay .taskmode{width:auto!important;display:flex!important;align-items:center;gap:6px;padding:5px 6px!important}
+body.overlay .taskmode .modefooter{display:contents!important}
+body.overlay .taskmode #modeHint,body.overlay .taskmode #dockHint{display:none!important}
+body.overlay .taskmode .quickdock{order:1;display:flex!important;gap:4px!important}
+body.overlay .taskmode .quickdock button{position:relative;flex:0 0 52px!important;width:52px;height:50px!important;min-height:50px!important;padding:2px 1px!important;gap:1px!important;font-size:9px!important}
+body.overlay .taskmode .quickdock button img.ic{width:26px;height:26px}
+body.overlay .taskmode .quickdock :is(.sword,.fist){font-size:20px!important;line-height:26px!important;height:26px!important}
+body.overlay .taskmode .quickdock button[data-key]::before{content:attr(data-key);position:absolute;top:2px;left:4px;font:bold 9px/1 HudText,Georgia,serif;color:var(--macc,#f2d27a);text-shadow:1px 1px 0 #000}
+body.overlay .taskmode .modebuttons{order:2;display:grid!important;grid-template-columns:auto auto;grid-template-rows:24px 24px;gap:2px!important;padding-left:6px;border-left:1px solid var(--trim)}
+body.overlay .taskmode .modebuttons :is(#doNow,#queue){grid-column:1;min-height:24px!important;height:24px;padding:0 8px!important;font-size:11px!important}
+body.overlay .taskmode .modebuttons #deselect{grid-column:2;grid-row:1/3;min-height:50px!important;height:50px;padding:2px 8px!important;font-size:11px!important}
+body.overlay .taskmode #cancelmode{order:3;width:auto!important;margin:0!important;min-height:50px}
+/* HUD pass: the right-hand column. The rail keeps six buttons (Village, Work, Build, Realm, Log, Settings):
+   Units and Orders open from the unit card, Map and Guide sit in the minimap panel with the camera buttons,
+   and the Company list is only as tall as the company. */
+body.overlay nav :is([data-value=units],[data-value=orders]){display:none!important}
+body.overlay .world .worldtools{display:grid;grid-template-columns:26px minmax(0,1fr) minmax(0,1fr) minmax(0,1.4fr);gap:2px;margin-top:6px}
+body.overlay .world .worldtools :is(.cam3d,.wtnav){display:contents!important}
+body.overlay .world .worldtools button{min-width:0;min-height:22px!important;padding:0 2px!important;font-size:10px;margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.overlay #roster{bottom:auto!important}
+/* HUD pass: game messages in one dark panel at the bottom right (only while there are any), newest at the
+   bottom, each line fading after 10 s, instead of loose text over the terrain. */
+body.overlay #toasts:empty{display:none}
+body.overlay #toasts{max-height:128px;overflow:hidden;justify-content:flex-end}body.overlay.panel-open #toasts{max-height:86px}body.overlay.hc-small[data-mat] #toasts{width:224px}
+body.overlay #toasts,body.overlay[data-mat] #toasts{width:268px;padding:5px 9px!important;gap:2px!important;background:rgba(14,12,9,.8)!important;border:1px solid var(--trim,#5d4a2a);border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.45)}
+body.overlay #toasts .toast{margin:0!important;padding:1px 0!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;font-size:12px;line-height:1.35;color:#efe3c2;text-shadow:1px 1px 0 #000;transition:opacity .6s}
+body.overlay #toasts .toast+.toast{border-top:1px solid rgba(255,255,255,.06)!important}
+/* The band card's tabs (Band, Orders, Combat). With tabs, nothing hides behind More any more. */
+#heroframe[data-tab=band] [data-pane]:not([data-pane=band]),#heroframe[data-tab=orders] [data-pane]:not([data-pane=orders]){display:none!important}
+#heroframe[data-tab] .hfmore{display:none!important}
+#heroframe[data-tab] :is(.groupctl,.bagstock){display:flex!important}
+#heroframe .group .gpick{width:32px;height:34px;min-height:0!important;padding:0!important;border:1px solid #5d4a2a;background:#141a16;font-size:10px;color:#e8dcb8}
+#heroframe .group .gpick img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated;border:0!important;background:none!important}
+#heroframe .group>span{align-self:center;font-size:11px;color:var(--muted)}
+#heroframe .hfrow>span{flex:none;width:auto!important;min-width:44px}
+/* Easier reading: words beside the top bar's numbers, bigger text in the unit bars, the Company status
+   lines and the Health tab. */
+body.overlay #topbar .res small{margin-left:3px;font-size:11px;color:var(--muted)}
+body.overlay[data-mat] #heroframe .bar i{font:bold 10px/10px HudText,Georgia,serif!important}
+body.overlay .member .st{font-size:11px}
+#heroframe .hfparts,#heroframe .hfconds span{font-size:11px}
+/* The menu (Village, Work, Build, Realm, Log, Settings) runs across the top right instead of down the right edge,
+   so the minimap column sits at the edge; Village shows how many units are idle. */
+body.overlay nav{top:6px!important;right:6px!important;left:auto!important;width:auto!important;display:flex!important;flex-direction:row!important;gap:3px!important;padding:3px!important}
+body.overlay nav button{position:relative;width:56px!important;min-height:44px!important;height:44px;padding:2px 0!important;gap:2px!important;font:10px/1 HudText,Georgia,serif!important}
+body.overlay nav button img.ic{width:22px!important;height:22px!important}
+body.overlay nav button .gear{font-size:17px!important;line-height:22px!important;height:22px!important}
+body.overlay nav button[data-badge]:not([data-badge=""])::after{content:attr(data-badge);position:absolute;top:1px;right:2px;min-width:16px;height:16px;padding:0 4px;box-sizing:border-box;border-radius:8px;background:#c8382c;border:1px solid #000;color:#fff;font:bold 10px/14px HudText,Georgia,serif;text-align:center}
+body.overlay .world,body.overlay #roster{right:6px!important}
+body.overlay #topbar{max-width:calc(calc(var(--sw,100vw)*1) - 6px - 512px)!important}
+#heroframe .hfweapon{margin:2px 0 6px;font-size:11px;color:#f2d27a}#heroframe .hfweapon span{display:inline-block;width:52px;color:var(--muted)}
+body.overlay #roster.folded #rosterList{display:none}body.overlay #roster>h4{cursor:pointer}body.overlay #roster.folded>h4 span:first-child::after{content:' ▸';opacity:.7}
+/* The Interact card (right-click in 3D): the thing, its actions with icons, the main one highlighted, the tile below. */
+#menu3d{width:320px;max-height:calc(var(--sh,100vh)*0.7);padding:6px 8px 8px}
+#menu3d .ic-head{display:flex;gap:9px;align-items:center;padding:2px 0 7px;border-bottom:1px solid rgba(176,138,62,.4)}
+#menu3d .ic-kind{flex:none;width:34px;height:34px;display:grid;place-items:center;font-size:18px;border:1px solid #5d4a2a;background:#141a16;color:#f2d27a}
+#menu3d .ic-kind.k-npc,#menu3d .ic-kind.k-player{color:#ff8a7a}#menu3d .ic-kind.k-animal{color:#b8e08a}#menu3d .ic-kind.k-mine{color:#9ff0a8}
+#menu3d .ic-name{flex:1;min-width:0}#menu3d .ic-name b{display:block;font:15px HudText,Georgia,serif;color:#f2d27a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#menu3d .ic-name small{display:block;font-size:11px;color:var(--muted)}
+#menu3d .ic-hp{display:block;height:5px;margin-top:4px;background:#111;border:1px solid #000}#menu3d .ic-hp span{display:block;height:100%;background:linear-gradient(#7fd06a,#2f7f28)}
+#menu3d .ic-x{flex:none;align-self:flex-start;min-height:24px!important;width:26px;padding:0!important;font-size:15px;text-align:center}
+#menu3d .ic-chips{display:flex;flex-wrap:wrap;gap:3px;padding:6px 0 0}#menu3d .ic-chips button{min-height:22px!important;margin:0;padding:0 7px!important;font-size:11px}#menu3d .ic-chips button[aria-pressed=true]{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f)}
+#menu3d .ic-acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:8px 0 2px}
+#menu3d .ic-act{display:flex;align-items:center;gap:7px;min-height:34px!important;margin:0!important;padding:3px 8px!important;font-size:12px;text-align:left}
+#menu3d .ic-act i{flex:none;width:18px;font-style:normal;font-size:15px;text-align:center;color:#f2d27a}
+#menu3d .ic-act span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#menu3d .ic-act.primary{grid-column:1/-1;color:#1b160c;background:linear-gradient(#f2d27a,#b8913f);border-color:#f2d27a}#menu3d .ic-act.primary i{color:#1b160c}
+#menu3d .ic-tile{margin-top:6px;padding-top:6px;border-top:1px solid rgba(176,138,62,.3)}
+#menu3d .ic-tilerow{display:flex;flex-wrap:wrap;gap:3px;align-items:center;margin:3px 0}#menu3d .ic-tilerow small{flex-basis:100%;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+#menu3d .ic-tilerow .ic-act{flex:1 1 auto;min-height:28px!important}
+/* The workshop's Interact card ("Use / open"): centred, its options grouped, a Find box when there are many. */
+#usecard{position:fixed;left:50%;top:46%;transform:translate(-50%,-50%);z-index:13;width:420px;max-width:calc(calc(var(--sw,100vw)*1) - 24px);max-height:calc(var(--sh,100vh)*0.72);display:flex;flex-direction:column;padding:8px 10px 10px;background:linear-gradient(#2a241a,#18140e);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.65)}
+#usecard[hidden]{display:none}
+#usecard .ic-head{display:flex;gap:9px;align-items:center;padding:2px 0 8px;border-bottom:1px solid rgba(176,138,62,.4)}
+#usecard .ic-kind{flex:none;width:36px;height:36px;display:grid;place-items:center;font-size:19px;border:1px solid #5d4a2a;background:#141a16;color:#f2d27a}
+#usecard .ic-name{flex:1;min-width:0}#usecard .ic-name b{display:block;font:16px HudText,Georgia,serif;color:#f2d27a}#usecard .ic-name small{display:block;font-size:11px;color:var(--muted)}
+#usecard .ic-x{flex:none;align-self:flex-start;min-height:24px!important;width:26px;padding:0!important;font-size:15px}
+#usecard .uc-q{margin:8px 0 2px;padding:5px 8px;font-size:12px;background:#0f0d0a;border:1px solid #5d4a2a;color:#efe3c2}
+#usecard .uc-body{overflow-y:auto;padding:4px 0 0}
+#usecard .uc-group{margin:8px 0 3px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#usecard .uc-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+#usecard .uc-opts button{min-height:30px!important;margin:0;padding:3px 8px!important;font-size:12px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#usecard .uc-opts button[hidden]{display:none}#usecard .uc-sec[hidden]{display:none}
+body.overlay[data-mat] #menu3d .ic-act.primary{border-image-source:var(--mbp)!important;color:#fff!important;text-shadow:1px 1px 0 #000}body.overlay[data-mat] #menu3d .ic-act.primary i{color:#f2d27a!important}
+/* The question card (AskCard.dm) and the log history: the Interact card's look. */
+#askcard{position:fixed;left:50%;top:44%;transform:translate(-50%,-50%);z-index:14;width:400px;max-width:calc(calc(var(--sw,100vw)*1) - 24px);max-height:calc(var(--sh,100vh)*0.72);display:flex;flex-direction:column;padding:8px 10px 10px;background:linear-gradient(#2a241a,#18140e);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.65)}
+#askcard[hidden],#loghist[hidden]{display:none}
+#askcard .ic-head,#loghist .ic-head{display:flex;gap:9px;align-items:center;padding:2px 0 8px;border-bottom:1px solid rgba(176,138,62,.4)}
+#askcard .ic-kind,#loghist .ic-kind{flex:none;width:36px;height:36px;display:grid;place-items:center;font:bold 19px HudText,Georgia,serif;border:1px solid #5d4a2a;background:#141a16;color:#f2d27a}
+#askcard .ic-name,#loghist .ic-name{flex:1;min-width:0}#askcard .ic-name b,#loghist .ic-name b{display:block;font:16px HudText,Georgia,serif;color:#f2d27a}#askcard .ic-name small,#loghist .ic-name small{display:block;font-size:11px;color:var(--muted)}
+#askcard .ic-x,#loghist .ic-x{flex:none;align-self:flex-start;min-height:24px!important;width:26px;padding:0!important;font-size:15px}
+#askcard .uc-q{margin:8px 0 2px;padding:5px 8px;font-size:12px;background:#0f0d0a;border:1px solid #5d4a2a;color:#efe3c2}
+#askcard .uc-body{overflow-y:auto;padding:8px 0 0}
+#askcard .uc-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}#askcard .uc-opts.one{grid-template-columns:1fr}
+/* Onboarding (playtest): the start card, the next-goal tracker, the race pick and arrival story in the ask card. */
+#startcard{position:fixed;left:50%;top:44%;transform:translate(-50%,-50%);z-index:13;width:430px;max-width:calc(var(--sw,100vw) - 24px);padding:18px 24px 14px;text-align:center;background:linear-gradient(#2a241a,#18140e);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.65);color:#efe3c2}#startcard[hidden]{display:none}
+#startcard .sc-eyebrow{font:11px HudText,Georgia,serif;letter-spacing:.34em;text-transform:uppercase;color:#b08a3e}#startcard h2{margin:2px 0 8px;font:32px HudCaps,Herculanum,HudHead,Georgia,serif;color:#f2d27a;text-shadow:1px 1px 0 #000,2px 2px 0 rgba(0,0,0,.45)}
+#startcard p{margin:0 0 14px;font-size:13px;line-height:1.5;color:#d9cdb0}#startcard .sc-go{display:block;width:100%;min-height:40px!important;font-size:16px!important}#startcard small{display:block;margin-top:6px;font-size:11px;color:#9c8f72}
+#goaltrack{position:fixed;left:8px;top:56px;z-index:8;display:flex;flex-direction:column;align-items:flex-start;gap:1px;max-width:300px;min-height:0!important;margin:0;padding:6px 12px 7px!important;text-align:left;background:rgba(14,12,9,.84)!important;border:1px solid #5d4a2a!important;border-left:3px solid #f2d27a!important;border-image:none!important;border-radius:3px!important;box-shadow:0 4px 14px rgba(0,0,0,.45);color:#efe3c2;cursor:pointer}
+#goaltrack[hidden]{display:none}#goaltrack span{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#b08a3e}#goaltrack b{font:15px HudText,Georgia,serif;color:#f2d27a}#goaltrack small{font-size:11.5px;line-height:1.35;color:#d9cdb0;white-space:normal}#goaltrack:hover b{color:#ffe7a3}
+#askcard.race{width:540px}#askcard.story{width:470px}#askcard .race-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#askcard .race-opts button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:54px!important;margin:0;padding:6px 10px!important;text-align:left;white-space:normal}#askcard .race-opts button b{font:15px HudText,Georgia,serif;color:#f2d27a}#askcard .race-opts button small{font-size:11px;line-height:1.3;color:#d9cdb0}
+#askcard .story-text{margin:10px 2px 10px;font-size:13.5px;line-height:1.55;color:#e8dcb8}#askcard .story-next{margin:0 2px 10px;padding-top:8px;border-top:1px solid rgba(176,138,62,.35);font-size:12px;line-height:1.4;color:#c9b47a}#askcard .story-go{display:block;width:100%;min-height:38px!important;font-size:15px!important}
+#askcard .uc-opts button{min-height:36px!important;margin:0;padding:4px 10px!important;font-size:13px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#askcard .uc-opts button[hidden]{display:none}
+#askcard.group .uc-opts button{white-space:normal;text-overflow:clip;line-height:1.2}   /* the group Interact (GroupInteract.dm): long choices wrap, never cut */
+#askcard .ask-foot{display:flex;justify-content:flex-end;margin-top:8px;padding-top:8px;border-top:1px solid rgba(176,138,62,.3)}#askcard .ask-cancel{min-height:28px!important;padding:0 16px!important;font-size:12px}
+#loghist{position:fixed;right:6px;bottom:6px;z-index:9;width:380px;max-width:calc(calc(var(--sw,100vw)*1) - 24px);height:calc(var(--sh,100vh)*0.46);display:flex;flex-direction:column;padding:8px 10px 10px;background:linear-gradient(#2a241a,#18140e);border:1px solid #b08a3e;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+#loghist .lg-chips{display:flex;gap:3px;padding:6px 0}#loghist .lg-chips button{min-height:22px!important;padding:0 9px!important;font-size:11px}#loghist .lg-chips button[aria-pressed=true]{color:#1b160c;background:linear-gradient(#f2d27a,#b8913f)}
+#loghist .lg-list{flex:1;overflow-y:auto;font-size:12px;line-height:1.35}
+#loghist .lg-row{display:flex;gap:7px;padding:2px 0;border-bottom:1px solid rgba(255,255,255,.05);color:#efe3c2}#loghist .lg-row time{flex:none;width:36px;font-size:10px;color:var(--muted);padding-top:1px}
+#loghist .lg-row.k-fight{color:#f0c8a0}#loghist .lg-row.k-note{color:#f2d27a}
+body.logopen #toasts{display:none!important}
+#menu3d .ic-act.wide{grid-column:1/-1}
+/* The loading cover (bootCoverOff): the title on a dark vignette until the 3D world is drawn. */
+#bootcover{position:fixed;inset:0;z-index:500;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;background:radial-gradient(ellipse at 50% 42%,#2b2418 0%,#100d09 62%,#060504 100%);transition:opacity .8s ease}
+#bootcover img{width:min(600px,calc(var(--sw,100vw)*0.72));height:auto;filter:drop-shadow(0 8px 22px rgba(0,0,0,.65))}
+#bootcover p{margin:0;font:15px HudText,Georgia,serif;letter-spacing:.12em;color:#c9b88f}
+#bootcover p::after{content:'...';display:inline-block;width:1.4em;overflow:hidden;vertical-align:bottom;animation:bootdots 1.6s steps(4) infinite}
+@keyframes bootdots{from{width:0}to{width:1.4em}}
+#bootcover.off{opacity:0;pointer-events:none}
+#bootcover small{margin-top:-12px;max-width:min(560px,calc(var(--sw,100vw)*0.8));font:italic 13px HudText,Georgia,serif;letter-spacing:.03em;color:#ab9b7e;text-align:center}
+/* ===== hud-craft polish (overnight 2026-10-22): one visual language over the race frames. Type steps 10/11/12/13/15/22,
+   a 4 px spacing step, gold focus rings, clean bars with a damage trail, transitions of 150 ms or less. Visual only:
+   nothing here changes what a panel holds or does. ===== */
+/* numbers that tick keep their width, so rows don't shift as counts change */
+body.overlay :is(#topbar,#roster,#heroframe .bar i,.hpbar,#coords,.facts,.vfilters b,#realmBody,#loghist time){font-variant-numeric:lining-nums tabular-nums}
+/* bars: one clean fill (lit top, shaded foot), faint tenths, and a pale trail that drains a beat after a loss */
+body.overlay[data-mat] #heroframe .bar{position:relative;height:15px;margin:3px 0;border:1px solid #000;background:linear-gradient(#08080a,#1b191d);box-shadow:0 0 0 1px var(--mband),inset 0 2px 3px rgba(0,0,0,.7);overflow:hidden}
+body.overlay[data-mat] #heroframe .bar.hp{height:17px}
+body.overlay[data-mat] #heroframe .bar span{position:relative;z-index:1;height:100%;background-image:linear-gradient(180deg,rgba(255,255,255,.36) 0,rgba(255,255,255,.1) 42%,rgba(0,0,0,0) 58%,rgba(0,0,0,.3) 100%)!important;background-color:var(--bc);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),1px 0 0 rgba(0,0,0,.6)!important;transition:width .15s ease-out}
+body.overlay[data-mat] #heroframe .bar.wmana span{--bc:#7058d0}
+body.overlay.cb[data-mat] #heroframe .bar.hp span{--bc:#3f86d0}
+body.overlay[data-mat] #heroframe .bar::after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 calc(10% - 1px),rgba(0,0,0,.3) calc(10% - 1px) 10%)}
+#heroframe .bar .trl,#roster .hpbar .trl{position:absolute;left:0;top:0;bottom:0;z-index:0;display:block;background:linear-gradient(#fff6dc,#e2c07e);opacity:.85;transition:width .45s cubic-bezier(.4,0,.6,1) .3s}
+body.overlay[data-mat] #heroframe .bar i{z-index:3;display:flex;align-items:center;justify-content:center;font:600 10px/1 HudText,Georgia,serif!important;letter-spacing:.03em;color:#fff;text-shadow:0 0 2px #000,0 1px 1px #000,1px 0 1px #000,-1px 0 1px #000}
+body.overlay[data-mat] #heroframe .bar.hp i{font-size:11px!important}
+body.overlay[data-mat] #roster .member .hpbar{position:relative;height:7px;border:1px solid #000;background:#0c0b0d;box-shadow:0 0 0 1px var(--mband)}
+body.overlay[data-mat] #roster .member .hpbar span{position:relative;z-index:1;box-shadow:inset 0 1px 0 rgba(255,255,255,.35);transition:width .15s ease-out}
+@media(prefers-reduced-motion:reduce){#heroframe .bar span,#heroframe .bar .trl,#roster .hpbar span,#roster .hpbar .trl{transition:none}}
+/* every control: one hover, press, focus and disabled language */
+body.overlay[data-mat] :is(button,select){transition:filter .08s ease-out,color .08s ease-out}
+body.overlay :is(button,select,input,summary,[role=button],[tabindex]):focus-visible{outline:2px solid var(--macc,#f2d27a);outline-offset:1px;box-shadow:0 0 0 4px rgba(0,0,0,.55)}
+body.overlay[data-mat] button:disabled{cursor:default;filter:saturate(.35) brightness(.85)}
+body.overlay[data-mat] button:disabled img.ic{opacity:.6}
+/* the log is a window of its own: the Company list steps aside while it is open, as it does for a page */
+body.overlay.logopen #roster{visibility:hidden}
+/* the minimap's level tabs: a quiet plate, the current level picked out in gold, not a bright bar */
+body.overlay[data-mat] .world .layers button{border:1px solid #000;border-image:none;background:rgba(0,0,0,.38);box-shadow:inset 0 0 0 1px var(--mband);min-height:20px!important;font:600 10px/1 HudText,Georgia,serif;letter-spacing:.04em;color:var(--mink);opacity:.8}
+/* level tabs are as wide as their words, sharing the spare room: WebKit never draws text under 9 px on screen, so at the
+   0.8 HUD scale their 10 px type is set at 11.25 px and equal quarters cut "Surface" */
+body.overlay[data-mat] .world .layers{gap:2px!important}body.overlay[data-mat] .world .layers button{flex:1 1 auto;min-width:auto;max-width:none;padding:0 2px!important;white-space:nowrap;font-weight:500;font-size:10px;letter-spacing:0}
+body.overlay[data-mat] .world .layers button.active{opacity:1;color:var(--macc);background:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5));box-shadow:inset 0 0 0 1px var(--macc),0 0 6px rgba(0,0,0,.6)}
+/* band card: four formation choices fit their row */
+#heroframe .hfrow>div[style*="--n:4"]{gap:2px}
+body.overlay[data-mat] #heroframe .hfrow>div[style*="--n:4"] button{padding:0!important;letter-spacing:-.01em}
+/* skill and weapon tiles: the name gets the room, the level sits tight on the right */
+#heroframe .hflv>div{gap:2px;padding:2px}
+#heroframe .hflv b{flex:none;min-width:12px;text-align:right}
+#heroframe .hflv span{letter-spacing:-.015em}
+/* weapons in 3 columns, not 4: in the game's WebKit at the 0.8 scale the names are set at 11.25 px and "Unarmed",
+   "Throwing" were cut at 4 across */
+#heroframe .hflv[style*="--c:4"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+/* the unit card is 16 px wider, so skill and weapon names ("Lock picking", "Throwing") show whole */
+body.overlay #heroframe{width:316px}
+/* the day report sits under the menu row and beside the minimap column, clear of both frames */
+body.overlay #daycard{top:92px;right:218px}
+body.overlay .world summary{cursor:default}
+/* Top and Iso, when on, light like every other pressed button (an old rule drew them dark text on flat gold) */
+body.overlay[data-mat] :is(#camTop,#camIso)[aria-pressed=true]{color:#fff;background:none;text-shadow:1px 1px 0 #000}
+/* the blood (vampire) accent #d63030 was 3.8:1 on its pane, under 4.5:1 for small accent text; a lighter blood red is 5:1 */
+body.overlay[data-mat=blood]{--macc:#e65248}
+/* colour-blind mode: its old rule's `background` shorthand (!important) cleared the bar's colour, leaving the health
+   fill pale. Health takes a reddish purple (Okabe-Ito, safe for every colour blindness): blue was Rest's colour too */
+body.overlay.cb[data-mat] #heroframe .bar.hp span{background-color:#b8558f!important}
+body.overlay.cb[data-mat] #roster .hpbar span{background:linear-gradient(#d47cb0,#8e3a6c)!important}
+body.overlay.cb #daycard .row.up>span:last-child{color:#56b4e9}body.overlay.cb #daycard .row.down>span:last-child{color:#e69f00}
+body.overlay.cb #vlogList .ventry.k-good{--k:#5aa6e8}body.overlay.cb #vlogList .ventry.k-fight{--k:#ffd166}
+/* Village → Lineage in the side panel: one column (houses, then connections), person cards two to a row, the focused
+   person full width (two columns left the connections 130 px wide and cut every name) */
+body.overlay #villageLineage .lin{grid-template-columns:minmax(0,1fr);gap:10px}
+body.overlay #villageLineage .pcard{width:calc(50% - 3px)}
+body.overlay #villageLineage .pcard.focus{width:100%}
+/* Village → Log: an entry with no place to go to is still news, not a disabled control (full strength, no hover);
+   a stripe per kind so fights, problems and deaths stand out when scanning */
+/* Bulletin board → Standing orders: the priority select fits "Normal" (it showed "Norm") */
+body.overlay .srow{grid-template-columns:48px 58px minmax(0,1fr) 86px 20px}
+body.overlay #vlogList .ventry:disabled{opacity:1!important;filter:none!important;cursor:default}
+/* task cards (Build → Construction, the bulletin board) in the side panel: the name and its tags on one line, the
+   actions on their own line under it (sharing one row broke "At 312, / 640" and "Go / to") */
+body.overlay .ocard .ohead{flex-wrap:wrap;row-gap:5px}
+body.overlay .ocard .ohead>span:first-child{flex:1 1 100%;min-width:0}
+body.overlay .ocard .tag{white-space:nowrap;display:inline-block;margin-top:2px}
+body.overlay .ocard .oact{margin-left:auto}
+body.overlay .ocard .oact :is(button,select){white-space:nowrap}
+/* the Log: fight lines stand out (a red stripe and a warmer text), as in the Village log */
+body.overlay #loghist .lg-row.k-fight{box-shadow:inset 3px 0 0 #d8503c;padding-left:6px}
+body.overlay #loghist .lg-row.k-fight span{color:color-mix(in srgb,#ff9a86 70%,var(--mink,#efe3c2))}
+body.overlay.cb #loghist .lg-row.k-fight{box-shadow:inset 3px 0 0 #ffd166}body.overlay.cb #loghist .lg-row.k-fight span{color:#ffe2a0}
+/* Village roster rows: "Go" sits on the name line as a small button instead of a full-width line of its own, so a
+   30-villager list is a fifth shorter */
+body.overlay #villageRows .vrow>button.vgo{order:1;flex:none;width:auto!important;min-height:0!important;padding:1px 10px!important;align-self:center}
+body.overlay #villageRows .vrow>button.vname{flex:1 1 calc(100% - 150px);min-width:0;width:auto!important}
+body.overlay #villageRows .vrow>:is(select,.vdoing,.vbars){order:2}
+/* the race pick: a rare people drawn for you stands out, like a rare drop (accent edge, a soft glow, the star lit) */
+body.overlay[data-mat] #askcard button.rare{position:relative}
+body.overlay[data-mat] #askcard button.rare::after{content:'';position:absolute;inset:-6px;border:1px solid var(--macc,#f2d27a);box-shadow:0 0 12px color-mix(in srgb,var(--macc,#f2d27a) 55%,transparent),inset 0 0 14px color-mix(in srgb,var(--macc,#f2d27a) 22%,transparent);pointer-events:none}
+body.overlay[data-mat] #askcard button.rare b{color:var(--macc,#f2d27a)}
+/* with nothing selected the card's More/Less fold had nothing to reveal (its rows need a selection, and with one the
+   card has tabs and hides it): no dead button */
+body.overlay #heroframe:not([data-tab]) .hfmore{display:none}
+/* the last labels on the old fixed gold and cream take the race's accent and ink (they showed gold on the elves' pale blue) */
+body.overlay[data-mat] :is(#villageRows .vname>b,#heroframe .hfweapon,#heroframe .hfrow>b,#heroframe .hfhouse>b,.autouse>b,.skills .skill>b,.subsk>b,.subsk .skill em){color:var(--macc)}
+body.overlay[data-mat] :is(#topbar #tbPos,#villageRows .vdoing,#roster .member .nm,#heroframe .hflv span,.statrow span,.skillbox h4 b){color:var(--mink)}
+body.overlay[data-mat] #goaltrack>span{color:color-mix(in srgb,var(--macc) 72%,transparent)}
+body.overlay[data-mat] :is(#askcard .ic-kind,#askcard .ic-name>b,#usecard .ic-name>b,#loghist .ic-name>b,#menu3d .ic-name>b,#daycard>b,#settings>b,#menu3d .ic-act:not(.primary)>i){color:var(--macc)}
+/* a page ends 16 px above the action bar's box, so their frames (6 px outside each) keep a 4 px gap where they overlap
+   sideways (at 16:10 sizes they did; the corners collided) */
+body.overlay main{bottom:102px!important}
+/* a drag across the HUD (box-selecting near a panel) doesn't paint its text blue; text fields and the logs stay selectable */
+body.overlay{-webkit-user-select:none;user-select:none}
+body.overlay img{-webkit-user-drag:none}
+/* the item being dragged: a slot in the material, lifted (shadow), like the bag slot it came from */
+body.overlay[data-mat] .bagghost{width:34px;height:34px;opacity:.95;background:rgba(0,0,0,.55);border:1px solid #000;border-radius:2px;box-shadow:inset 0 0 0 1px var(--macc,#f2d27a),0 6px 14px rgba(0,0,0,.6);transform:translate(-4px,-4px)}/* no ghost image when a portrait or item icon is dragged; the bag's own drag is unaffected */
+body.overlay :is(input,textarea,[contenteditable],#loghist .lg-list,#vlogList){-webkit-user-select:text;user-select:text}
+/* Settings never runs into the action bar as options are added (sound, controls): past that it scrolls inside */
+body.overlay #settings{max-height:calc(var(--sh,100vh) - 66px - 116px);overflow-y:auto;overscroll-behavior:contain}
+/* (10-24) Settings is now taller than its window at every size and scrolls: its Close button stays pinned along the
+   bottom, on the pane, so it can always be reached without scrolling */
+body.overlay #settings>#setClose{position:sticky;bottom:0;z-index:1;box-shadow:0 0 0 8px var(--mpane,#14110c),0 -10px 12px 2px var(--mpane,#14110c)}
+/* the centred windows (world map, Settings) cover the top-centre notices; the lock bar half-showed above the map's
+   frame, so while one is open the notices step aside entirely */
+body.overlay:has(#worldmap:not([hidden])) :is(#lockbar,#pausebanner,#warbar,#attack,#attackx,#foodalert),body.overlay:has(#settings:not([hidden])) :is(#lockbar,#pausebanner,#warbar,#attack,#attackx,#foodalert){visibility:hidden}
+/* cinematic shots (trailers): the pieces added after the original list step away too */
+body.overlay.cine :is(#goaltrack,#toasts,#warbar,#pausebanner,#useon3d,#hoverbar,#bagtip,#xpdrops,#nearcard,#usecard,#menu3d,#loghist,#settings,#worldmap){display:none!important}
+/* the old layout's "Show / hide log" at the foot of every page only opened the Log and closed the page (one window at a
+   time); the menu's Log button does that, so the overlay leaves it out */
+body.overlay main>.footer:has(>[data-hudlog]:only-child){display:none}
+body.overlay #vlogList .ventry{position:relative}body.overlay #vlogList .ventry::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--k,transparent);pointer-events:none}
+body.overlay #vlogList .ventry.k-fight{--k:#d8503c}body.overlay #vlogList .ventry.k-good{--k:#4cbf4a}body.overlay #vlogList .ventry.k-problem{--k:#e8a33a}body.overlay #vlogList .ventry.k-death{--k:#a8a29a}body.overlay #vlogList .ventry.k-birth{--k:#e48aa8}body.overlay #vlogList .ventry.k-skill{--k:#6aa0e0}body.overlay #vlogList .ventry.k-work{--k:color-mix(in srgb,var(--macc,#f2d27a) 45%,transparent)}
+/* the panel textures are 93 % opaque, so terrain showed faintly through every frame (a pebble under the minimap's
+   level plate, snow glare behind text); the material's solid pane goes underneath */
+body.overlay[data-mat] :is(header,nav,.world,.taskmode,#topbar,#roster,#heroframe,#menu3d,#nearcard,#usecard,#askcard,#loghist){background-color:var(--mpane,#14110c)}
+/* the page header sticks while the page scrolls under it: solid, or the scrolled text shows through */
+body.overlay[data-mat] :is(#panelhead,#roster>h4){background-color:var(--mpane,#14110c)}
+/* rts-feel's "Right-click again: …" hint in the menu: the material's muted ink, like other hints */
+body.overlay[data-mat] #menu3d .rf-again{color:color-mix(in srgb,var(--mink,#efe3c2) 62%,transparent)!important}
+body.overlay #buildItems .bvic{flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid #000;background:rgba(0,0,0,.35);box-shadow:inset 0 0 0 1px var(--mband,#5d4a2a)}
+body.overlay #buildItems .bvic::before{content:'';width:22px;height:22px;background:var(--hci-fill,var(--macc,#f2d27a));-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay #buildItems .bitem.active .bvic::before{background:#fff8e6}
+/* the same workshop icons on the Work page's "Place a workshop" grid */
+body.overlay #shopPicker button:has(.bvic){display:flex;align-items:center;gap:6px;text-align:left}
+body.overlay #shopPicker .bvic{flex:none;width:24px;height:24px;display:grid;place-items:center;border:1px solid #000;background:rgba(0,0,0,.35);box-shadow:inset 0 0 0 1px var(--mband,#5d4a2a)}
+body.overlay #shopPicker .bvic::before{content:'';width:16px;height:16px;background:var(--hci-fill,var(--macc,#f2d27a));-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay #shopPicker .spl{display:flex;flex-direction:column;min-width:0}
+body.overlay #shopPicker .spl small{display:block}
+/* sub-views inside a page (Village roster/lineage/board/log, Build catalog/construction) fade in like the tabs do */
+body.overlay :is(#villageRoster,#villageLineage,#villageBoard,#villageLog,#buildCatalogView,#buildTasksView):not([hidden]){animation:hcFade .12s ease-out}
+/* game messages (bottom right): the race material's pane, edge and ink like the tooltips, not a fixed brown that went olive over grass */
+body.overlay[data-mat] #toasts{background:color-mix(in srgb,var(--mpane,#14110c) 90%,transparent)!important;border:1px solid color-mix(in srgb,var(--macc,#b08a3e) 40%,#000)!important;border-radius:2px!important;box-shadow:0 0 0 1px #000,0 4px 14px rgba(0,0,0,.45)!important}
+body.overlay[data-mat] #toasts .toast{color:var(--mink,#efe3c2)}
+/* the race special recharging: a thin accent line along its button fills as the wait runs down */
+/* Skills tab: the Support group in two columns, so "Lock picking" shows whole at the smallest HUD scale (WebKit) */
+body.overlay #heroframe .hfpane[data-pane=skills] .hflv:not([style]) ~ .hfh + .hflv:not([style]){--c:2}
+/* at the smallest scales a four-button row (band formation) puts its label above and takes the card's full width */
+body.overlay.hc-small #topbar .res>small{display:none}/* icon and number only; the tooltip names them */
+body.overlay.hc-small #heroframe .hfrow:has(>div[style*="--n:4"]){flex-wrap:wrap;row-gap:3px}body.overlay.hc-small #heroframe .hfrow>div[style*="--n:4"]{flex:1 1 100%;width:100%}
+/* the unit's warnings under its bars: small amber chips, like debuffs on a unit frame */
+body.overlay #heroframe .hfwarn{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+body.overlay #heroframe .hftabs button.hcpip{position:relative}body.overlay #heroframe .hftabs button.hcpip::after{content:'';position:absolute;top:3px;right:4px;width:6px;height:6px;border-radius:50%;background:#e2553f;box-shadow:0 0 0 1px #000,0 0 4px rgba(226,85,63,.8);pointer-events:none}
+body.overlay.cb #heroframe .hftabs button.hcpip::after{background:#d55e00}
+body.overlay #heroframe[data-tab=health] .hfwarn{display:none}/* the Health tab lists its conditions itself */
+body.overlay #heroframe .hfwarn span{padding:1px 5px;font:600 10px/1.35 HudText,Georgia,serif;color:#ffd08a;background:rgba(0,0,0,.45);border:1px solid color-mix(in srgb,#e8a33a 60%,#000);border-radius:2px;white-space:nowrap}
+body.overlay.cb #heroframe .hfwarn span{color:#ffe2a0}
+/* colour-blind mode: the body doll and the parts list go from blue (fine) through yellow to vermilion, not green to red */
+body.cb #heroframe .hfdoll .s0{fill:#4f9fd8}body.cb #heroframe .hfdoll .s1{fill:#9cc3d8}body.cb #heroframe .hfdoll .s2{fill:#f0e442}body.cb #heroframe .hfdoll .s3{fill:#e69f00}body.cb #heroframe .hfdoll .s4{fill:#d55e00}
+body.overlay.cb[data-mat] #heroframe .bar.mood span{--bc:#4f9fd8}body.overlay.cb[data-mat] #heroframe .bar.mood[data-m=ok] span{--bc:#e6c229}body.overlay.cb[data-mat] #heroframe .bar.mood[data-m=bad] span{--bc:#d55e00}
+body.cb .ocard.st-working{border-left-color:#4f9fd8}body.cb .ocard:is(.st-waiting,.p1){border-left-color:#d55e00}
+body.cb #heroframe .hfparts b{color:#7fb8e0}body.cb #heroframe .hfparts .s1 b{color:#9cc3d8}body.cb #heroframe .hfparts .s2 b{color:#f0e442}body.cb #heroframe .hfparts .s3 b{color:#e69f00}body.cb #heroframe .hfparts .s4 b{color:#ff8a4a}
+/* band portraits: a 3 px health strip along the bottom, amber under half, red under a quarter (a party frame) */
+body.overlay #heroframe .group .gpick{position:relative;overflow:hidden}
+body.overlay #heroframe .group .gpick .ghp{position:absolute;left:1px;right:1px;bottom:1px;height:3px;background:rgba(0,0,0,.7);pointer-events:none}
+body.overlay #heroframe .group .gpick .ghp em{display:block;height:100%;width:100%;background:#4cbf4a}
+body.overlay #heroframe .group .gpick.hurt .ghp em{background:#e8a33a}body.overlay #heroframe .group .gpick.low .ghp em{background:#e2553f}
+body.overlay.cb #heroframe .group .gpick .ghp em{background:#56b4e9}body.overlay.cb #heroframe .group .gpick.hurt .ghp em{background:#f0e442}body.overlay.cb #heroframe .group .gpick.low .ghp em{background:#d55e00}
+body.overlay #heroframe :is(.spbtn,.hfab){position:relative;overflow:hidden}
+body.overlay #heroframe .spbtn b.hcg{color:var(--macc,#f2d27a);width:13px!important;height:13px!important}
+body.overlay[data-mat] #heroframe .spbtn[style*="--cd"]:disabled{opacity:.85;filter:none;color:color-mix(in srgb,var(--mink,#efe3c2) 60%,transparent)}
+body.overlay #heroframe :is(.spbtn,.hfab)[style*="--cd"]::after{content:'';position:absolute;left:0;bottom:0;height:2px;width:calc((1 - var(--cd)) * 100%);background:var(--macc,#f2d27a);box-shadow:0 0 4px var(--macc,#f2d27a);pointer-events:none}
+/* the Units page's skill grid: two columns, so skill names ("Woodcutting", "Metal crafting") show whole */
+body.overlay main .skills{grid-template-columns:repeat(auto-fill,minmax(136px,1fr))}
+body.overlay #daycard .row>span:last-child{font-variant-numeric:lining-nums tabular-nums}
+body.overlay #daycard .row.up>span:last-child{color:color-mix(in srgb,#4cbf4a 70%,var(--mink,#fff))}
+body.overlay #daycard .row.down>span:last-child{color:color-mix(in srgb,#e2553f 72%,var(--mink,#fff))}
+body.overlay #daycard .row.warn>span{color:color-mix(in srgb,#e8a33a 78%,var(--mink,#fff));font-weight:700}
+/* Settings: labels in one column, controls in the other */
+#settings{width:410px;max-width:calc(var(--sw,100vw) - 24px)}
+#settings label{display:grid!important;grid-template-columns:120px minmax(0,1fr);gap:8px;align-items:center}
+#settings label:has(input[type=checkbox]){grid-template-columns:18px minmax(0,1fr);gap:8px;line-height:1.35}
+#settings label input[type=checkbox]{justify-self:center;margin:0}
+#settings select{width:100%;min-width:0}
+/* a page opens 4 px under the menu row's frame instead of touching it */
+body.overlay main{top:92px!important}
+/* the Village search box gets the room; Sort is only as wide as its words */
+body.overlay .vtools select{flex:none;width:104px}
+/* an empty count badge draws nothing (it showed as an empty pill on the Build page) */
+body.overlay .sectionhead .badge:empty{display:none}
+/* tooltips: one look everywhere, the panel's dark plate in the race accent, the hotkey as a keycap, a 0.1 s fade */
+body.overlay #bagtip{padding:7px 10px 8px;background:linear-gradient(rgba(255,255,255,.04),transparent 40%),var(--mpane,#14110c);border:1px solid var(--macc,#b08a3e);border-radius:2px;box-shadow:0 0 0 1px #000,inset 0 0 0 1px rgba(0,0,0,.6),0 8px 18px rgba(0,0,0,.6);color:var(--mink,#efe3c2);font:12px/1.4 HudText,Georgia,serif;max-width:280px}
+/* the tip is measured where it last stood: near the right edge its width shrank to the space left there, so a short
+   name wrapped; it takes its own width (still at most 280 px) wherever it was */
+#bagtip{width:max-content}
+body.overlay #bagtip:not([hidden]){animation:hcTipIn .1s ease-out}
+/* a tip whose first line is a whole sentence reads in the body face, not the title face */
+body.overlay #bagtip b.long{font:600 12px/1.35 HudText,Georgia,serif!important;color:var(--mink,#efe3c2)!important;text-shadow:none!important}
+body.overlay #bagtip b{display:flex;align-items:center;gap:8px;justify-content:space-between;margin-bottom:2px;font:15px/1.2 var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a);text-shadow:1px 1px 0 #000}
+body.overlay #bagtip kbd{flex:none;min-width:20px;padding:1px 6px 2px;border:1px solid #000;border-radius:3px;background:linear-gradient(#4a4a52,#26252b);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 #000;font:700 11px/1.3 HudText,Georgia,serif;color:#f4efe2;text-align:center;text-shadow:0 -1px 0 #000;letter-spacing:0}
+body.overlay #bagtip small{margin-top:5px;padding-top:4px;border-top:1px solid rgba(255,255,255,.08);color:color-mix(in srgb,var(--mink,#efe3c2) 62%,transparent)}
+@keyframes hcTipIn{from{opacity:0;transform:translateY(2px)}to{opacity:1;transform:none}}
+/* a menu button is lit only while its window is open (a page stays the current tab after it closes) */
+body.overlay[data-mat]:not(.panel-open) nav button.active:not([aria-pressed=true]){border-image-source:var(--mb);color:var(--mink)}
+/* Build: category chips are as wide as their words (no "Worksh…"); a building with a floor plan takes the whole row */
+body.overlay #page-build .buildcats{display:flex!important;flex-wrap:wrap;gap:3px}
+body.overlay #page-build .buildcats button{flex:1 1 auto;min-width:48px;padding:1px 6px!important;overflow:visible;text-overflow:clip}
+#buildItems .bitem:has(.bplan){grid-column:1/-1}
+/* the minimap's date plate keeps "Fall · day 577 · night" on one line; the coordinates wrap under it if they must */
+body.overlay[data-mat] .world .worldline{flex-wrap:wrap;justify-content:center;row-gap:0;max-width:100%}
+body.overlay .world #season{white-space:nowrap}
+/* ...and always on two lines (date, then coordinates), so a longer date never grows the panel and moves the Company list */
+body.overlay[data-mat] .world .worldline #coords{flex-basis:100%;text-align:center;line-height:1.2;font-size:10px}
+/* top bar counts keep a two-digit slot, so the bar doesn't widen when idle goes from 9 to 10 */
+body.overlay #topbar .res b{display:inline-block;min-width:2ch;text-align:center}
+body.overlay #topbar #tbPos{display:inline-block;min-width:18.5ch;text-align:center}/* fits "1000, 1000 · Depths": no jump when the level changes */
+body.overlay #worldmap header b{white-space:nowrap}
+/* the world map's header is the window's own title row, not the overlay's pinned top-left header block */
+body.overlay #worldmap header{position:static!important;inset:auto!important;width:auto!important;padding:0 0 8px!important;margin:0 0 8px;border:0!important;border-image:none!important;border-bottom:1px solid color-mix(in srgb,var(--mband,#5d4a2a) 70%,transparent)!important;background:none!important}
+body.overlay #worldmap header b{font:20px var(--mfont,HudText,Georgia,serif);color:var(--macc,#f2d27a);text-shadow:1px 1px 0 #000}
+body.overlay #wmLayers button{min-height:24px!important;padding:0 9px!important;font-size:11px}
+body.overlay #worldmap .hint{margin:6px 0 0;text-align:center;font-size:11px}
+/* the world map's legend, drawn like its markers */
+body.overlay #worldmap .wmlegend{display:flex;justify-content:center;gap:16px;margin:4px 0 0;font-size:11px;color:color-mix(in srgb,var(--mink,#efe3c2) 70%,transparent)}
+body.overlay #worldmap .wmlegend span{display:inline-flex;align-items:center;gap:6px}
+body.overlay #worldmap .wmlegend i{display:inline-block;flex:none}
+body.overlay #worldmap .wmlegend .lg-u{width:7px;height:7px;border-radius:50%;background:#ffdf88}
+body.overlay #worldmap .wmlegend .lg-s{width:8px;height:8px;border:2px solid #f2d27a;box-sizing:border-box}
+body.overlay #worldmap .wmlegend .lg-c{width:13px;height:9px;border:1.5px solid #fff;box-sizing:border-box}
+/* ...and the window fits between the menu row and the action bar instead of running into their frames */
+body.overlay #worldmap canvas{height:min(calc(var(--sh,100vh) - 336px),calc(var(--sw,100vw) - 620px))!important;max-height:none}
+/* ...as wide as its square map (it was 86 % wide with empty sides that ran into the unit card), centred in the free
+   ground between the unit card (322 px) and the right column (202 px) */
+body.overlay #worldmap{width:fit-content;max-width:calc(var(--sw,100vw) - 556px);left:calc(50% + 60px)}
+/* top-centre notices: hcStackNotices() stacks them under the top bar; these are only the first-paint positions */
+body.overlay :is(#pausebanner,#warbar){top:60px}
+body.overlay.atwar #pausebanner{top:94px}
+body.overlay #pausebanner{padding:5px 22px 6px;border:0;background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.45)),var(--mpane,#181e30);box-shadow:0 0 0 1px #000,inset 0 0 0 1px var(--macc,#f2d27a),0 6px 14px rgba(0,0,0,.5)}
+body.overlay #lockbar{box-shadow:0 0 0 1px #000,0 6px 14px rgba(0,0,0,.5)}
+/* the war strip: a framed plate like the other top notices, still blood red */
+body.overlay #warbar{padding:4px 18px 5px;border:0;border-radius:2px;background:linear-gradient(rgba(255,255,255,.06),rgba(0,0,0,.35)),#5a0e0a;box-shadow:0 0 0 1px #000,inset 0 0 0 1px #d8503c,0 6px 14px rgba(0,0,0,.5)}
+body.overlay #warbar b.hcg{width:14px!important;height:14px!important;color:#ffb4a0}
+/* the food alert: the material's framed buttons with an amber warning edge and text, like the attack alert's plate */
+body.overlay[data-mat] #foodalert button{border:10px solid transparent;border-image:var(--mf) 8 / 16px / 6px round;border-radius:0;background:linear-gradient(rgba(232,163,58,.22),rgba(0,0,0,.25)),var(--mpane);background-clip:padding-box;color:#ffd08a;text-shadow:1px 1px 0 #000;box-shadow:0 0 0 1px #000,0 6px 14px rgba(0,0,0,.45);min-height:0}
+body.overlay[data-mat] #foodalertgo{padding:0 8px;font-weight:600}
+body.overlay[data-mat] #foodalert button+button{width:auto;padding:0 3px;font-size:14px}
+body.overlay[data-mat] #foodalert button:hover:not(:disabled){filter:brightness(1.18)}
+/* the camera-lock bar in the race material like the Paused banner; a green edge still says "locked", the unit's name in the accent */
+body.overlay[data-mat] #lockbar{border:0;border-radius:2px;background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.45)),var(--mpane,#181e30);box-shadow:0 0 0 1px #000,inset 0 0 0 1px color-mix(in srgb,#7fd08a 75%,var(--macc,#f2d27a)),0 6px 14px rgba(0,0,0,.5);color:var(--mink,#efe3c2);font:13px var(--mfont,HudText,Georgia,serif)}
+body.overlay[data-mat] #lockbar #lockname{color:var(--macc,#f2d27a)}
+/* transitions: a page slides in, a page or card tab fades in, floating cards fade in (all 0.14 s or less); live
+   updates never replay them, because panes and pages are only shown or hidden, not rebuilt */
+@keyframes hcFade{from{opacity:0}to{opacity:1}}
+@keyframes hcSlide{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+@keyframes hcRise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+body.overlay.panel-open main{animation:hcSlide .14s ease-out}
+body.overlay main .page:not([hidden]){animation:hcFade .12s ease-out}
+body.overlay #heroframe [data-pane]{animation:hcFade .12s ease-out}
+body.overlay #loghist:not([hidden]){animation:hcRise .14s ease-out}
+body.overlay :is(#settings,#daycard,#awaycard,#usecard,#askcard,#nearcard,#lockbar,#pausebanner,#goaltrack,#worldmap):not([hidden]){animation:hcFade .14s ease-out}
+/* closing: a page, the Log and Settings fade out over 0.12 s; display holds until the fade ends, then goes to none (from
+   2 s after load, hc-anim, so the overlay switching on at start runs no fade) */
+body.overlay.hc-anim :is(main,#loghist,#settings){transition:opacity .12s ease-in,display .12s allow-discrete}
+body.overlay:not(.panel-open) main,body.overlay :is(#loghist,#settings)[hidden]{opacity:0}
+/* the drawers (Controls, Build & abilities, Magic targets, Unit groups): a framed window in the race material with its
+   header inside it (the overlay's generic header rule used to pin the drawer's header to the top-left corner) */
+body.overlay[data-mat] dialog.controlsdrawer{border:10px solid transparent;border-image:var(--mf) 8 / 16px / 0 round;border-radius:0;background:var(--mt) 0 0/64px 64px,var(--mpane);background-clip:padding-box;color:var(--mink);box-shadow:0 14px 40px rgba(0,0,0,.7);width:min(560px,calc(var(--sw,100vw) - 40px))}
+body.overlay dialog.controlsdrawer[open]{animation:hcFade .14s ease-out}
+body.overlay dialog .drawerhead{position:static!important;inset:auto!important;width:auto!important;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 12px!important;border:0!important;border-image:none!important;border-bottom:2px solid #000!important;border-radius:0;background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.18))!important;box-shadow:inset 0 -1px 0 var(--mband)!important}
+body.overlay dialog .drawerhead h2{margin:0;font:20px var(--mfont,HudText,Georgia,serif);color:var(--macc)}
+body.overlay dialog .drawerhead button{min-height:30px!important;min-width:0;padding:0 14px!important}
+body.overlay dialog .drawerfilters{border-bottom:1px solid rgba(0,0,0,.6);box-shadow:0 1px 0 rgba(255,255,255,.04)}
+body.overlay dialog .controlsearch input{min-height:34px;padding:6px 10px;border:1px solid #000;border-radius:2px;background:rgba(0,0,0,.45);box-shadow:inset 0 0 0 1px var(--mband);color:var(--mink);font-size:13px}
+body.overlay dialog :is(.controlsearch button,#borderFilters button){min-height:30px!important}
+body.overlay dialog .bordercontrol{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+body.overlay dialog .bordercontrol img{background:#0e0d0f;border:2px solid #000;border-radius:0;box-shadow:inset 0 0 0 1px var(--mband)}
+body.overlay dialog .bordercontrol h4{font:15px var(--mfont,HudText,Georgia,serif)}
+body.overlay dialog .bordercontrol button{min-height:32px!important}
+body.overlay dialog .borderdisplay{display:none}
+/* the choice palettes (Build & abilities, Magic targets) are only as tall as their choices; a title focused for screen
+   readers on open shows no ring */
+body.overlay dialog.controlsdrawer.palette{height:fit-content}body.overlay dialog.controlsdrawer.palette .drawerbody{flex:0 1 auto}/* WebKit sizes a fit-content column from a 0 basis: the body collapsed to nothing */
+body.overlay dialog .drawerhead h2[tabindex="-1"]:focus{outline:none;box-shadow:none}
+/* unit card tabs: a short tab keeps some height (less jump when switching), and a lone note ("No health data.") sits
+   centred in it as a tidy empty state; inactive tabs read clearly instead of looking disabled */
+#heroframe .hfpane{min-height:118px}
+#heroframe .hfpane:has(>.hfnote:only-child){display:flex;align-items:center;justify-content:center;text-align:center}
+#heroframe .hfpane>.hfnote:only-child{margin:0;max-width:85%;font:italic 12px/1.4 HudText,Georgia,serif;opacity:.8}
+#heroframe .hftabs button:not([aria-selected=true]){opacity:.88}
+#heroframe .hftabs button:not([aria-selected=true]):hover{opacity:1}
+/* slim scrollbars in the race accent: the default bar looked foreign and took width from lists (statuses wrapped) */
+body.overlay ::-webkit-scrollbar{width:6px;height:6px}
+body.overlay ::-webkit-scrollbar-track{background:rgba(0,0,0,.35)}
+body.overlay ::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--macc,#b08a3e) 55%,#000);border-radius:3px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.5)}
+body.overlay ::-webkit-scrollbar-thumb:hover{background:var(--macc,#b08a3e)}
+body.overlay ::-webkit-scrollbar-corner{background:transparent}
+/* empty states (an empty Log, nothing under construction, no board orders, no units to order, no matching villagers):
+   one tidy note, centred in a faint dashed box */
+body.overlay :is(#loghist .lg-list>.hfnote:only-child,#buildEmpty,#boardEmpty,#ordersEmpty,#villageEmpty){margin:10px 0;padding:16px 12px;text-align:center;font:italic 12px/1.45 HudText,Georgia,serif;color:color-mix(in srgb,var(--mink,#e8dcb8) 72%,transparent);border:1px dashed color-mix(in srgb,var(--mband,#5d4a2a) 75%,transparent);background:rgba(0,0,0,.18)}
+/* Character page (Units): the selected card's name stays readable on its gold plate (it was gold on gold); the level
+   plate and the vitals match the unit card (same bar look; Health red, Fullness amber, Rest blue) */
+body.overlay[data-mat] #units .unitpick[aria-pressed=true] :is(.unitname,.unitmeta,.tick){color:#fff!important;text-shadow:1px 1px 0 #000}
+body.overlay[data-mat] .levelplate{border-radius:0;border:1px solid #000;background:linear-gradient(rgba(255,255,255,.05),rgba(0,0,0,.35)),var(--mpane);box-shadow:inset 0 0 0 1px var(--macc);color:var(--macc);font-weight:600;letter-spacing:.06em}
+body.overlay[data-mat] #units .vital .meter{height:10px;border-radius:0;border:1px solid #000;background:linear-gradient(#08080a,#1b191d);box-shadow:0 0 0 1px var(--mband);overflow:hidden}
+body.overlay[data-mat] #units .vital .meter .fill{border-radius:0;--bc:#c4382c;background-image:linear-gradient(180deg,rgba(255,255,255,.36),rgba(255,255,255,.08) 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.3))!important;background-color:var(--bc);box-shadow:inset 0 1px 0 rgba(255,255,255,.35);transition:width .15s ease-out}
+body.overlay[data-mat] #units .vital .fill.food{--bc:#d6962e}body.overlay[data-mat] #units .vital .fill.rest{--bc:#4678d2}body.overlay[data-mat] #units .vital .fill.carry{--bc:#8a6fc0}
+body.overlay.cb[data-mat] #units .vital .fill:not(.food,.rest,.carry){--bc:#b8558f}
+/* "Next idle · 0" stays on one line */
+body.overlay .selectiontools button{white-space:nowrap;font-size:11px}
+/* the Health tab's Blood bar wears the same bar look as Health / Food / Rest */
+body.overlay[data-mat] #heroframe .hfblood{height:14px;border:1px solid #000;background:linear-gradient(#08080a,#1b191d);box-shadow:0 0 0 1px var(--mband),inset 0 2px 3px rgba(0,0,0,.7)}
+body.overlay[data-mat] #heroframe .hfblood span{background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.06) 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.3)),#9a1f1a;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),1px 0 0 rgba(0,0,0,.6);transition:width .15s ease-out}
+body.overlay[data-mat] #heroframe .hfblood i{display:flex;align-items:center;justify-content:center;font:600 10px/1 HudText,Georgia,serif;letter-spacing:.03em;text-shadow:0 0 2px #000,0 1px 1px #000,1px 0 1px #000,-1px 0 1px #000}
+/* Bulletin board: the form and the order list stack in the side panel (side by side, "Work orders" got 85 px and its
+   note became a one-word column); the Village log's "Nothing yet." is an empty state like the others */
+body.overlay #villageBoard .bgrid{grid-template-columns:minmax(0,1fr);gap:8px}
+body.overlay :is(#vlogList,#zoneList)>.hint:only-child{margin:10px 0;padding:16px 12px;text-align:center;font:italic 12px/1.45 HudText,Georgia,serif;color:color-mix(in srgb,var(--mink,#e8dcb8) 72%,transparent);border:1px dashed color-mix(in srgb,var(--mband,#5d4a2a) 75%,transparent);background:rgba(0,0,0,.18)}
+/* the 3D hover tag and the "Placing …" banner sit on the race's pane colour like the rest of the HUD */
+body.overlay[data-mat] :is(#tag3d,#build3d){background:linear-gradient(rgba(255,255,255,.04),rgba(0,0,0,.25)),var(--mpane);border-color:var(--macc);box-shadow:0 0 0 1px #000,0 4px 12px rgba(0,0,0,.5)}
+/* the "Use … on" hint on the same pane; a green edge stays its "pick a target" cue, as on the camera-lock bar */
+body.overlay[data-mat] #useon3d{background:linear-gradient(rgba(255,255,255,.04),rgba(0,0,0,.25)),var(--mpane);border-color:color-mix(in srgb,#7fd08a 75%,var(--macc,#f2d27a));border-radius:2px;color:var(--mink,#efe3c2);box-shadow:0 0 0 1px #000,0 4px 12px rgba(0,0,0,.5)}
+/* the fight alert keeps its urgency: a red plate inside the frame, with a soft red glow */
+body.overlay[data-mat] :is(#attack,#attackx){background:linear-gradient(rgba(160,34,22,.92),rgba(84,14,9,.95)),var(--mt) 0 0/64px 64px;background-clip:padding-box;color:#fff;text-shadow:1px 1px 0 #000;box-shadow:0 0 14px rgba(255,60,40,.45),0 8px 18px rgba(0,0,0,.55)}
+body.overlay[data-mat] :is(#attack,#attackx):hover{filter:brightness(1.15)}
+/* the start card (no people yet) is a framed panel like the rest */
+body.overlay[data-mat] #startcard{border:10px solid transparent;border-image:var(--mf) 8 / 16px / 6px round;border-radius:0;background:var(--mt) 0 0/64px 64px,var(--mpane);background-clip:padding-box;box-shadow:0 14px 40px rgba(0,0,0,.65);color:var(--mink)}
+body.overlay[data-mat] #startcard h2{color:var(--macc)}
+body.overlay[data-mat] #startcard .sc-eyebrow{color:color-mix(in srgb,var(--macc) 70%,var(--mink))}
+/* the Next goal tracker wears the panels' plate and accent */
+body.overlay[data-mat] #goaltrack{background:linear-gradient(rgba(255,255,255,.04),rgba(0,0,0,.25)),var(--mpane)!important;border-color:#000!important;border-left-color:var(--macc)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--mband) 60%,transparent),0 6px 14px rgba(0,0,0,.5)!important;color:var(--mink)}
+body.overlay[data-mat] #goaltrack b{color:var(--macc);font-family:var(--mfont,HudText,Georgia,serif)}
+body.overlay[data-mat] #goaltrack:hover{filter:brightness(1.12)}
+/* type scale (layout px): 10 small caps and captions, 11 small text, 12 body, 13 strong numbers, 15 section heads and
+   names, 16 card titles, 22 page titles. Off-scale sizes brought onto it: */
+body.overlay .taskmode .quickdock button{flex:0 0 60px!important;width:60px;font-size:10px!important;white-space:nowrap}
+body.overlay .taskmode .quickdock button span{white-space:nowrap;letter-spacing:-.01em}
+body.overlay .taskmode .quickdock :is(#btnLethal,#btnGather) span{letter-spacing:-.045em}
+body.overlay #goaltrack span{font-size:10px}
+body.overlay #goaltrack small{font-size:11px}
+body.overlay main h3{font-size:15px}
+body.overlay :is(#settings>b,#askcard .ic-name b,#usecard .ic-name b,#loghist .ic-name b,#daycard>b,#awaycard>b,#goaltrack b){font-size:16px}
+/* text fields (Find boxes, Village search, board amount, house name): one dark inset field with the material's edge;
+   focus rings it in the accent */
+body.overlay[data-mat] :is(input[type=search],input[type=text],input[type=number],input:not([type])){border:1px solid #000!important;border-radius:2px!important;background:rgba(0,0,0,.45)!important;box-shadow:inset 0 0 0 1px var(--mband),inset 0 2px 3px rgba(0,0,0,.5)!important;color:var(--mink)!important}
+body.overlay[data-mat] :is(input[type=search],input[type=text],input[type=number],input:not([type]))::placeholder{color:color-mix(in srgb,var(--mink) 45%,transparent)}
+body.overlay[data-mat] :is(input[type=search],input[type=text],input[type=number],input:not([type])):hover:not(:focus):not(:disabled){box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--macc) 55%,var(--mband)),inset 0 2px 3px rgba(0,0,0,.5)!important}
+body.overlay[data-mat] :is(input[type=search],input[type=text],input[type=number],input:not([type])):focus{outline:none;box-shadow:inset 0 0 0 1px var(--macc),0 0 0 1px #000,0 0 6px color-mix(in srgb,var(--macc) 35%,transparent)!important}
+/* checkboxes: our own inset box with an accent fill and a dark tick, the same in WebKit and Chrome (WebKit drew the
+   macOS ring and a bare tick) */
+body.overlay[data-mat] input[type=checkbox]{-webkit-appearance:none;appearance:none;flex:none;width:15px!important;height:15px!important;min-width:15px!important;min-height:0!important;justify-self:center;margin:0;padding:0;border:1px solid color-mix(in srgb,var(--macc) 55%,#000);border-radius:2px;background:#07090d;box-shadow:inset 0 1px 3px rgba(0,0,0,.8);vertical-align:-3px;cursor:pointer;transition:background-color .08s ease-out,border-color .08s ease-out}
+body.overlay[data-mat] input[type=checkbox]:hover{border-color:var(--macc)}
+body.overlay[data-mat] input[type=checkbox]:checked{border-color:var(--macc);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.2 8.4l3 3 6.6-6.8' fill='none' stroke='%23120e06' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat,linear-gradient(color-mix(in srgb,var(--macc) 75%,#fff),var(--macc));box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 0 4px color-mix(in srgb,var(--macc) 45%,transparent)}
+body.overlay[data-mat] input[type=checkbox]:disabled{opacity:.45;cursor:default}
+/* the top bar sits 6 px down like the menu, so its frame meets the window's top edge instead of being cut by it; the
+   goal tracker moves down with it (the notice stack and the lock bar follow the bar by themselves) */
+body.overlay #topbar{top:6px}
+body.overlay #goaltrack{top:66px}
+/* control-group chips over the action bar (rts-feel): clear of the bar's frame, on the panel plate, the group's number in
+   the accent; the group just recalled is ringed in the accent */
+body.overlay #rfGroups{margin-bottom:12px!important}
+/* the near-creature card opens above the group chips, not on them */
+body.overlay #nearcard{bottom:140px;width:410px}
+body.overlay[data-mat] #rfGroups button{border:1px solid #000!important;border-radius:2px!important;background:linear-gradient(rgba(255,255,255,.05),rgba(0,0,0,.3)),var(--mpane)!important;box-shadow:inset 0 0 0 1px var(--mband),0 2px 6px rgba(0,0,0,.6)!important;padding:1px 7px 2px!important;font:600 11px/1.3 HudText,Georgia,serif!important;color:var(--mink)!important}
+body.overlay[data-mat] #rfGroups button b{color:var(--macc)!important}
+body.overlay[data-mat] #rfGroups button[style*="solid var(--gold"]{box-shadow:inset 0 0 0 1px var(--macc),0 0 8px color-mix(in srgb,var(--macc) 45%,transparent)!important}
+/* sliders (Settings → Sound): a dark inset track and a small gold thumb, instead of the browser's white knob */
+body.overlay #settings input[type=range]{-webkit-appearance:none;appearance:none;height:14px;margin:0;background:transparent;cursor:pointer}
+body.overlay #settings input[type=range]::-webkit-slider-runnable-track{height:6px;border:1px solid #000;border-radius:3px;background:linear-gradient(#08080a,#1d1b1f);box-shadow:0 0 0 1px var(--mband,#5d4a2a),inset 0 1px 2px rgba(0,0,0,.8)}
+body.overlay #settings input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:10px;height:16px;margin-top:-6px;border:1px solid #000;border-radius:2px;background:linear-gradient(color-mix(in srgb,var(--macc,#e0b85a) 45%,#fff),var(--macc,#e0b85a) 55%,color-mix(in srgb,var(--macc,#e0b85a) 65%,#000));box-shadow:0 1px 2px rgba(0,0,0,.6)}
+body.overlay #settings input[type=range]:hover::-webkit-slider-thumb{filter:brightness(1.15)}
+body.overlay #settings input[type=range]:focus-visible{outline:none;box-shadow:none}
+body.overlay #settings input[type=range]:focus-visible::-webkit-slider-thumb{outline:2px solid var(--macc,#f2d27a);outline-offset:1px}
+/* right-click card: an action's words wrap to a second line instead of ending "Capture (kno…" */
+#menu3d .ic-act span{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2}
+/* ...and its kind badge uses the icon family for people, foes, your own, workshops and items (red for foes, green for yours) */
+body.overlay #menu3d .ic-kind:is(.k-npc,.k-player,.k-mine,.k-station,.k-item,.k-animal,.k-body,.k-object,.k-tile){font-size:0!important;color:transparent}
+body.overlay #menu3d .ic-kind:is(.k-npc,.k-player,.k-mine,.k-station,.k-item,.k-animal,.k-body,.k-object,.k-tile)::before{content:"";width:20px;height:20px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+#menu3d .ic-kind.k-animal{--ico:var(--hci-paw)}#menu3d .ic-kind.k-body{--ico:var(--hci-skull)}#menu3d .ic-kind.k-object{--ico:var(--hci-interact)}#menu3d .ic-kind.k-tile{--ico:var(--hci-focus)}body.overlay #menu3d .ic-kind.k-animal::before{background:linear-gradient(#e4f8c8,#8cc860)}#menu3d .ic-kind.k-npc{--ico:var(--hci-attack)}#menu3d .ic-kind.k-player{--ico:var(--hci-people)}#menu3d .ic-kind.k-mine{--ico:var(--hci-selected)}#menu3d .ic-kind.k-station{--ico:var(--hci-build)}#menu3d .ic-kind.k-item{--ico:var(--hci-interact)}
+body.overlay #menu3d .ic-kind.k-npc::before{background:linear-gradient(#ffc4b8,#e0503c)}body.overlay #menu3d .ic-kind.k-mine::before{background:linear-gradient(#d8f8c8,#6cc060)}
+/* the Log and workshop cards' badges use the icon family instead of a text glyph */
+body.overlay :is(#loghist,#usecard) .ic-kind{font-size:0!important;color:transparent}
+body.overlay :is(#loghist,#usecard) .ic-kind::before{content:"";width:20px;height:20px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay #loghist .ic-kind{--ico:var(--hci-log)}body.overlay :is(#askcard,#menu3d) .ic-kind b.hcg{width:20px!important;height:20px!important}body.overlay #usecard .ic-kind{--ico:var(--hci-build)}
+/* the race · job plate under the name sits on the dark pane with the material's edge (on the pale bone material its white
+   words were nearly invisible on a pale plate) */
+body.overlay[data-mat] #heroframe .lv{background:linear-gradient(rgba(255,255,255,.04),rgba(0,0,0,.3)),var(--mpane);border:1px solid #000;box-shadow:inset 0 0 0 1px var(--mband);color:var(--mink)}
+/* pressed choices on the cards (Lethal, Accurate, Help nearby, formation) use the material's pressed text, white with a
+   shadow: the older dark text was meant for gold and was nearly unreadable on the blood material's red */
+body.overlay[data-mat] #heroframe :is(.hfrow,.groupctl,.cstyle) button[aria-pressed=true]{color:#fff;text-shadow:1px 1px 0 #000}
+/* ...except on the three pale materials (bone, moon, chitin), where a lit button is pale: dark words and dark icons there */
+body.overlay:is([data-mat=bone],[data-mat=moon],[data-mat=chitin]) :is(button[aria-pressed=true],button[aria-selected=true]):not(.layers button),body.overlay.panel-open:is([data-mat=bone],[data-mat=moon],[data-mat=chitin]) nav button.active{color:#1a1612!important;text-shadow:0 1px 0 rgba(255,255,255,.35)!important}
+body.overlay:is([data-mat=bone],[data-mat=moon],[data-mat=chitin]) :is(nav button[aria-pressed=true],.vsubtabs button[aria-selected=true],#topbar .speedctl button[aria-pressed=true])::before,body.overlay.panel-open:is([data-mat=bone],[data-mat=moon],[data-mat=chitin]) nav button.active::before{background:linear-gradient(#4a4034,#14110c)!important}
+/* a tabbed card hides "More", so the name gets that room back (long names were cut 44 px early) */
+body.overlay #heroframe[data-tab] .hn{padding-right:0}
+/* ...and a long name ends in "…" instead of widening the card's text column past the card */
+body.overlay[data-mat] #heroframe .hf{grid-template-columns:78px minmax(0,1fr)}
+/* the unit card's row labels ("Patrol", "Take:") share one quiet caption style */
+#heroframe :is(.groupctl,.bagstock)>span{color:var(--muted);opacity:1;font-size:11px}
+#heroframe .bagstock>span{margin:0 2px 0 4px}
+/* the action bar's hotkey letters (A, I, Z) are tiny keycaps, like the ones in the tooltips */
+body.overlay .taskmode .quickdock button[data-key]::before{top:1px!important;left:2px!important;min-width:11px;height:11px;padding:0 2px;box-sizing:border-box;border:1px solid #000;border-radius:2px;background:linear-gradient(#4a4a52,#26252b);box-shadow:inset 0 1px 0 rgba(255,255,255,.22);font:700 8px/9px HudText,Georgia,serif!important;color:#f4efe2!important;text-align:center;text-shadow:none!important}
+/* hover: the menu and action-bar buttons glow faintly in the accent, like an MMO bar */
+body.overlay[data-mat] :is(nav button,.taskmode .quickdock button):hover:not(:disabled){box-shadow:inset 0 0 10px color-mix(in srgb,var(--macc,#f2d27a) 40%,transparent)}
+/* health under a quarter: the unit card's Health bar pulses red (steady under reduced motion) */
+@keyframes hcLow{0%,100%{box-shadow:0 0 0 1px var(--mband),0 0 0 0 rgba(255,60,40,0)}50%{box-shadow:0 0 0 1px #ff5040,0 0 8px 1px rgba(255,60,40,.55)}}
+body.overlay[data-mat] #heroframe .bar.hp.low{animation:hcLow 1.1s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){body.overlay[data-mat] #heroframe .bar.hp.low{animation:none;box-shadow:0 0 0 1px #ff5040}}
+/* Company rows are all one height: the status stays on one line (the row's tip has it in full) */
+body.overlay #roster .member .st{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.overlay #roster .member{grid-template-columns:30px minmax(0,1fr)!important}body.overlay #roster .member>div{min-width:0}
+/* game messages read left to right like a chat log; a long line wraps under itself */
+body.overlay[data-mat] #toasts .toast{text-align:left!important;animation:hcFade .14s ease-out}
+@media(prefers-reduced-motion:reduce){body.overlay[data-mat] #toasts .toast{animation:none}}
+/* page header: the close button sits over the header's right end, so the header's rule runs the full width */
+body.overlay .panelclose{float:none!important;display:block!important;margin:12px 0 -42px auto!important}
+body.overlay dialog kbd,body.overlay #heroframe kbd{display:inline-block;min-width:18px;padding:0 5px 1px;border:1px solid #000;border-radius:3px;background:linear-gradient(#4a4a52,#26252b);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 #000;font:700 11px/1.35 HudText,Georgia,serif;color:#f4efe2;text-align:center;text-shadow:0 -1px 0 #000}
+@media(prefers-reduced-motion:reduce){body.overlay #xpdrops .xpd{animation:none!important}body.overlay :is(#villageRoster,#villageLineage,#villageBoard,#villageLog,#buildCatalogView,#buildTasksView),body.overlay :is(main,main .page,#heroframe [data-pane],#loghist,#settings,#daycard,#awaycard,#usecard,#askcard,#nearcard,#lockbar,#pausebanner,#goaltrack,#worldmap,#bagtip){animation:none!important}}
+/* HC-ICONS-BEGIN (generated by reports/polish-2026-10-22/hud-craft/icons.py; run it again to change an icon) */
+/* One icon family for the menu, the action bar, the top bar, page crests and the minimap date: vector silhouettes
+   used as masks, so they take the race accent and stay sharp at every HUD size. The original pixel icons are untouched. */

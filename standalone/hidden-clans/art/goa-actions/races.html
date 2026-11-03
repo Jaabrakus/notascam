@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>GOA moves, our races</title>
+<style>body{margin:0;padding:16px;background:#1e2026;color:#ddd;font:13px system-ui}nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;align-items:center}
+button,select{background:#2c3038;color:#ddd;border:1px solid #444a56;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer}button.on{background:#4a5a7a;border-color:#7a8ab0}
+table{border-collapse:separate;border-spacing:6px}td{padding:0;text-align:center;vertical-align:middle}th{font-weight:500;color:#aab;text-align:right;padding-right:8px;white-space:nowrap}
+canvas{image-rendering:pixelated;background:#464a54;display:block}.parts img{image-rendering:pixelated;max-width:100%;display:block;margin:8px 0}.parts{display:none}
+body.showparts .parts{display:block}body.showparts table{display:none}</style>
+<body><nav id="nav"></nav><table id="grid"></table><div class="parts" id="parts"></div>
+<script>
+/* GOA's moves with each race's own head, body pixels and build (heads.py), every facing, at GOA's timing: walk, punches
+   and kicks 2 ticks a frame, the run 1 (a tick = 0.1 s). Pick a race family: its men, women and hybrids. "What each pixel
+   is" shows GOA's part map per facing (partmap.py). */
+const ACTIONS=[['Walk','Walk',4,2],['Run','Run',4,1],['PunchA-1','Jab',2,2],['PunchA-2','Cross',2,2],['KickA-1','Kick 1',2,2],['KickA-2','Kick 2',2,2]],Z=2;
+let live=[],t0=performance.now(),fam={},family='Human',act=1;
+function load(u){const i=new Image();i.src=u;return i.decode().then(()=>i);}
+async function show(){document.body.classList.remove('showparts');const [id,,n,ticks]=ACTIONS[act];document.querySelectorAll('nav button[data-k]').forEach(b=>b.classList.toggle('on',+b.dataset.k===act));
+ const grid=document.getElementById('grid'),next=[];grid.replaceChildren();const head=grid.insertRow();head.insertCell().outerHTML='<th></th>';for(const d of 'SNEW')head.insertCell().textContent=d;
+ const rows=[['GOA updated','updated'],...fam[family].map(r=>[r,'races/'+r])];
+ for(const [name,dir] of rows){const tr=grid.insertRow(),th=document.createElement('th');th.textContent=name;tr.append(th);
+  for(const d of 'SNEW'){const c=document.createElement('canvas');c.width=c.height=64*Z;tr.insertCell().append(c);const frames=[];for(let f=0;f<n;f++)frames.push(await load(encodeURI(dir)+'/'+id+'-'+d+f+'.png'));next.push({c,frames,ticks});}}
+ live=next;t0=performance.now();}
+function parts(){document.body.classList.add('showparts');const p=document.getElementById('parts');if(!p.childElementCount)for(const d of 'SNEW'){const h=document.createElement('h3');h.textContent=d+': GOA | what each pixel is | overlay';const im=document.createElement('img');im.src='partmap/'+d+'-overlay.png';p.append(h,im);}}
+(async()=>{fam=await (await fetch('races/index.json')).json();const nav=document.getElementById('nav'),sel=document.createElement('select');
+ for(const k of Object.keys(fam)){const o=document.createElement('option');o.value=o.textContent=k;sel.append(o);}sel.value=family;sel.onchange=()=>{family=sel.value;show();};nav.append(sel);
+ ACTIONS.forEach(([,label],k)=>{const b=document.createElement('button');b.textContent=label;b.dataset.k=k;b.onclick=()=>{act=k;show();};nav.append(b);});
+ const pb=document.createElement('button');pb.textContent='What each pixel is';pb.onclick=parts;nav.append(pb);
+ const q=new URLSearchParams(location.search);if(q.get('f')&&fam[q.get('f')])family=sel.value=q.get('f');if(q.get('a'))act=+q.get('a');
+ await show();document.body.dataset.ready='1';})();
+(function tick(now){for(const L of live){const f=Math.floor((now-t0)/(100*L.ticks))%L.frames.length,x=L.c.getContext('2d');x.imageSmoothingEnabled=false;x.clearRect(0,0,L.c.width,L.c.height);x.drawImage(L.frames[f],0,0,L.c.width,L.c.height);}requestAnimationFrame(tick);})(t0);
+</script></body></html>
