@@ -1,0 +1,23 @@
+// TEST HOOK (formations real-input run, temporary copy only): on each "CKPROBE|serial|..." notice, report the slot
+// markers (fmStats) and where each of yours is; "CKPROBE|fmcam|x,y,dist" puts a wide camera over that spot first.
+const fmHookOrig=window.updateHUD;window.updateHUD=function(raw){fmHookOrig(raw);setTimeout(fmHookProbe,170)};
+function fmHookProbe(){try{const n=String(model&&model.notice||'');if(!n.startsWith('CKPROBE|')||n===window.fmHookLast)return;window.fmHookLast=n;const p=n.split('|');
+ if(p[1].startsWith('fmscroll')){const c0=document.querySelector('#armyFormEditor [data-fmc="0,0"]');if(c0)c0.scrollIntoView({block:'center',behavior:'instant'})}
+ if(p[1].startsWith('fmcam')){const T={};for(const x of (p[2]||'').split(';')){const [k,v]=x.split(':');if(v)T[k]=v.split(',').map(Number)}const c=T[p[1].slice(6)]||T.mid1;if(c){window.ckCam=1;if(typeof v3iso==='function')v3iso(false);V3.top=false;V3.turnTo=null;V3.yaw=0;V3.pitch=p[1]==='fmcam-mid2'?1.38:0.92;V3.dist=21;if(typeof RF!=='undefined')RF.zoomTo=21;V3.cx=V3.tcx=c[0];V3.cy=V3.tcy=c[1];V3.panAt=performance.now()}}
+ const out={serial:p[1],fm:typeof fmStats==='function'?fmStats():null,units:V3.things.filter(t=>t.kind==='mine').map(t=>[t.ref,t.x,t.y,!!t.selected]),cam:[+V3.tcx.toFixed(2),+V3.tcy.toFixed(2),+V3.dist.toFixed(1),+V3.pitch.toFixed(2)],boot:!!(document.getElementById('bootcover')&&!document.getElementById('bootcover').classList.contains('off')),notice:String(model.notice||'').slice(0,120),last:typeof RF!=='undefined'&&RF.last?{k:RF.last.k,x:RF.last.x,y:RF.last.y,drawn:RF.last.drawn,at:RF.last.at}:null,now:performance.now(),markAt:(window.fmMarkAt||[]).slice(-4),formation:model.formation,formationGroup:model.formationGroup||0,attackMode:!!model.attackMode,grid:model.formationGrid||null,formations:model.formations||null,btn:fmHookBtns(),groupNote:(document.querySelector('#heroframe [data-pane=orders] .hfnote')||{}).textContent||null};
+ send('fmprobe',JSON.stringify(out))}catch(e){send('fmprobe',JSON.stringify({error:String(e)}))}}
+// the first frame with a slot marker after each click, to time click -> markers
+window.fmMarkAt=[];if(typeof fmDraw==='function'){const d0=fmDraw;fmDraw=function(a){const n=a.length;d0(a);if(a.length>n&&typeof RF!=='undefined'&&RF.last&&(!window.fmMarkAt.length||window.fmMarkAt[window.fmMarkAt.length-1][0]!==RF.last.at))window.fmMarkAt.push([RF.last.at,performance.now()])}}
+// where the Army button, the layout editor's squares (a V of six), its Use button and the panel's close button are (the
+// click audit's ckVis way: the middle of the element's box, in the page's pixels)
+function fmHookBtns(){const at=sel=>{const e=document.querySelector(sel);if(!e)return null;const b=e.getBoundingClientRect();return b.width>2&&b.height>2?[Math.round(b.x+b.width/2),Math.round(b.y+b.height/2)]:null};
+ const o={army:at('nav [data-value=army]'),new:at('#armyFormEditor [data-fma=new]'),use:at('#armyFormEditor [data-fma=use]'),close:at('#panelClose'),brush:{},cells:{}};
+ for(const r of ['front','ranged','mage','any'])o.brush[r]=at('#armyFormEditor [data-fma=brush][data-r='+r+']');
+ for(const k of ['-1,1','0,1','1,1','-1,-1','1,-1','0,-1'])o.cells[k]=at('#armyFormEditor [data-fmc="'+k+'"]');
+ o.clear=at('#armyFormEditor [data-fma=clear]');o.orders=at('#heroframe [data-gftab=orders]');o.line=at('#heroframe [data-do=formation][data-value=line]');o.attack=at('#btnAttack');o.painted=[...document.querySelectorAll('#armyFormEditor [data-fmc].on')].map(e=>[e.dataset.fmc,e.dataset.r]);
+ const a=at('#armyFormEditor [data-fmc="0,0"]'),b=at('#armyFormEditor [data-fmc="1,-1"]');o.pitch=a&&b?[b[0]-a[0],b[1]-a[1]]:null;
+ const mid=e=>{const r=e.getBoundingClientRect();return r.width>2&&r.height>2?[Math.round(r.x+r.width/2),Math.round(r.y+r.height/2)]:null};
+ o.rows={};document.querySelectorAll('#roster .member[data-do=select]').forEach(e=>{const p=mid(e);if(p&&getComputedStyle(e).display!=='none')o.rows[e.dataset.value]=p});
+ o.cards={};document.querySelectorAll('#fmGroups [data-fmgs]').forEach(e=>{const p=mid(e);if(p)o.cards[e.dataset.fmgs]=p});
+ o.menu=[...document.querySelectorAll('#fmGroupMenu:not([hidden]) button')].map(e=>[e.textContent].concat(mid(e)||[]));
+ o.cardText=[...document.querySelectorAll('#fmGroups .fmg')].map(c=>c.textContent.replace(/\s+/g,' ').trim());o.quiver=[...document.querySelectorAll('.bagbar .fmarrowslot .bagcount')].map(c=>c.textContent);o.sup={};document.querySelectorAll('#fmSupplies [data-fmss]').forEach(e=>{const p=mid(e);if(p)o.sup[e.dataset.fmss]=p});o.supText=[...document.querySelectorAll('#fmSupplies .fms')].map(c=>c.textContent.replace(/\s+/g,' ').trim());o.supBag=document.querySelectorAll('#fmSupplies .fms-i').length;return o}

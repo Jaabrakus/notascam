@@ -1,0 +1,27 @@
+--- a/OpenDreamClient/Interface/Prompts/PromptWindow.cs
++++ b/OpenDreamClient/Interface/Prompts/PromptWindow.cs
+@@ -1,6 +1,7 @@
+ using System.ComponentModel;
+ using OpenDreamShared.Dream;
+ using Robust.Client.Graphics;
++using Robust.Shared.Maths;
+ using Robust.Client.UserInterface;
+ using Robust.Client.UserInterface.Controls;
+ 
+@@ -20,9 +21,13 @@
+ 
+         Title = !string.IsNullOrEmpty(title) ? title : "OpenDream";
+ 
+-        Label messageLabel = new Label();
+-        messageLabel.Margin = new Thickness(5);
+-        messageLabel.Text = message;
++        var messageLabel = new ScrollContainer {
++            Margin = new Thickness(5), MaxWidth = 480, MaxHeight = 360,
++            HScrollEnabled = false, VScrollEnabled = true, ReturnMeasure = true
++        };
++        var wrappedText = new RichTextLabel();
++        wrappedText.SetMessage(message, Color.Black);
++        messageLabel.AddChild(wrappedText);
+ 
+         _buttonPanel = new BoxContainer();
+         _buttonPanel.Margin = new Thickness(5);

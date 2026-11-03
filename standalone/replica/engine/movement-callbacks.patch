@@ -1,0 +1,70 @@
+--- DMStandard/Types/Atoms/Movable.dm
++++ DMStandard/Types/Atoms/Movable.dm
+@@ -1,4 +1,5 @@
+ /atom/movable
++	var/tmp/atom/__od_collision_target
+ 	var/screen_loc
+ 
+ 	var/animate_movement = FORWARD_STEPS as opendream_unimplemented
+@@ -18,7 +19,7 @@
+ 	proc/Bump(atom/Obstacle)
+ 
+ 	proc/Move(atom/NewLoc, Dir=0) as num
+-		if (isnull(NewLoc) || loc == NewLoc)
++		if (!NewLoc || loc == NewLoc)
+ 			return FALSE
+ 
+ 		if (Dir != 0)
+@@ -41,17 +42,25 @@
+ 					if (!exiting.Uncross(src))
+ 						return FALSE
+ 
++		__od_collision_target = NewLoc
+ 		var/loc_entered = NewLoc.Enter(src, loc)
+ 		var/area_entered = !consider_area || isnull(newarea) || newarea.Enter(src, loc)
+ 		if (!loc_entered || !area_entered)
+ 			if (!area_entered)
+ 				src.Bump(newarea)
+ 			if (!loc_entered)
+-				for (var/atom/content in NewLoc.contents)
+-					src.Bump(content)
++				var/atom/blocked_by = __od_collision_target
++				__od_collision_target = null
++				if (blocked_by == NewLoc && isturf(NewLoc) && !NewLoc.density)
++					for (var/atom/movable/content in NewLoc)
++						if (content.density)
++							blocked_by = content
++							break
++				src.Bump(blocked_by)
+ 					
+ 			return FALSE
+ 		else
++			__od_collision_target = null
+ 			var/atom/oldloc = loc
+ 			loc = NewLoc
+ 
+@@ -74,4 +83,4 @@
+ 			if (consider_area)
+ 				newarea?.Entered(src, oldloc)
+ 
+-			return TRUE
++			return (isturf(oldloc) && isturf(NewLoc) && get_dist(oldloc,NewLoc)==1) ? world.icon_size : TRUE
+--- DMStandard/Types/Atoms/Turf.dm
++++ DMStandard/Types/Atoms/Turf.dm
+@@ -6,13 +6,16 @@
+ 	Enter(atom/movable/O, atom/oldloc)
+ 		if (!..())
+ 			return FALSE
++		O.__od_collision_target = src
+ 		if (!src.Cross(O))
+ 			return FALSE
+ 		
+ 		for (var/atom/content in src.contents)
++			O.__od_collision_target = content
+ 			if (!content.Cross(O))
+ 				return FALSE
+ 
++		O.__od_collision_target = src
+ 		return TRUE
+ 
+ 	Exit(atom/movable/O, atom/newloc)

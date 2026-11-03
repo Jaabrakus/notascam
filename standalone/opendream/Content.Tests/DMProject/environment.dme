@@ -1,0 +1,11 @@
+#define FILE_DIR .
+#define DEBUG 
+
+#include "interface.dmf"
+
+/world/New()
+	spawn(300)
+		Del() // just in case
+
+	RunTest()
+	Del()

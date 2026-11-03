@@ -1,0 +1,13 @@
+--- OpenDreamClient/Interface/Prompts/InputWindow.cs
++++ OpenDreamClient/Interface/Prompts/InputWindow.cs
+@@
+     protected override void Shown() {
+         base.Shown();
+ 
+         _focusControl?.GrabKeyboardFocus();
++        // Dream Seeker opens input() dialogs with the default value selected.
++        if (_focusControl is LineEdit edit) {
++            edit.CursorPosition = edit.Text.Length;
++            edit.SelectionStart = 0;
++        }
+     }

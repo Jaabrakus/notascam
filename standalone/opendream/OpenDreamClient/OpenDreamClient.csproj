@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Work around https://github.com/dotnet/project-system/issues/4314 -->
+    <TargetFramework>$(TargetFramework)</TargetFramework>
+    <LangVersion>14</LangVersion>
+    <IsPackable>false</IsPackable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\bin\Content.Client\</OutputPath>
+    <OutputType Condition="'$(FullRelease)' != 'True'">Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <NoWarn>NU1507</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenDreamShared\OpenDreamShared.csproj" />
+    <PackageReference Include="SpaceWizards.Sodium" />
+    <PackageReference Include="SixLabors.ImageSharp" />
+  </ItemGroup>
+
+  <Import Project="..\RobustToolbox\Imports\Lidgren.props" />
+  <Import Project="..\RobustToolbox\Imports\Client.props" />
+  <Import Project="..\RobustToolbox\Imports\WebView.props" />
+  <Import Project="..\RobustToolbox\Imports\Shared.props" />
+
+  <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
+  <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
+</Project>

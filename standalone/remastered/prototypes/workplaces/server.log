@@ -1,0 +1,62 @@
+[INFO] root: Server -> Starting
+[INFO] cfg: Configuration loaded from file
+[DEBG] root: OS: macOS 26.3.1 Arm64
+[DEBG] root: .NET Runtime: .NET 10.0.13 osx-x64
+[DEBG] root: Server GC: False
+[DEBG] root: Processor: 10x VirtualApple @ 2.50GHz
+[DEBG] root: Available Memory: 16 GiB
+[DEBG] root: Architecture: X64
+[DEBG] root: Robust Version: 288.1.0.0
+[DEBG] root: Compile Options: FULL_RELEASE;RELEASE;EXCEPTION_TOLERANCE
+[DEBG] root: Intrinsics: X86Aes;Pclmulqdq;Popcnt;Sse;Sse2;Sse3;Ssse3;Sse41;Sse42;X86Base
+[INFO] srv: Timescale changed to: 1 on tick 1
+[INFO] srv: Name: MyServer
+[INFO] srv: TickRate: 30(33.33ms)
+[INFO] srv: Max players: 256
+[DEBG] srv: game.auto_pause_empty changed, unpausing
+[DEBG] auth: Public key is DJEZOkapnaATiJs/TcyUj2g4E3E4md19+Sii8/oBXyQ=
+[DEBG] res.mod: ENABLING assembly load context
+[DEBG] res.mod: DISABLING sandboxing
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamPackaging.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamRuntime.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamShared.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamServer.dll'
+[DEBG] res.mod: LOADING modules
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamPackaging.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamShared.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamServer.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamRuntime.dll'
+[DEBG] res.mod: DONE loading modules: 00:00:00.0684843
+[INFO] szr: Serializer Types Hash: 70436ADDC97851178A99D1E33D40AC87B2C5B4AC63E7408EF297495C15AF27DE
+[INFO] proto: Rebuilding entity prototype component cache took 6.46ms (1 unique component mappings)
+[DEBG] szr: Finalized string mapping of size 2208 in 11ms
+[DEBG] szr: Wrote string package in 6ms size 8.16 KiB
+[DEBG] szr: String hash is HhY5PboGUNLMVPBUwFoqpEg_nqNuPaN2I7y7kiamPio
+[DEBG] opendream: Binding World Topic at 127.0.0.1:25833
+[DEBG] opendream.res: Resource root path set to /var/folders/28/10z2rygn2rqd266txklmc3mw0000gn/T/dm-wp-udelkek4/arena
+[WARN] cfg: Unknown CVar found (typo in config?): "console.loginlocal"
+[INFO] root: Server Version 288.1.0.0 -> Ready
+[INFO] world.log: Biomes placed: 0
+[INFO] world.log: WP|+ Woodcutter's lodge puts the game's painting into lodge mode|1|Function=Piece:wp_woodlot
+[INFO] world.log: WP|dragging the yard plans the lodge, its banner and a bench|1|yard 45,37-48,40 banner planned=1 bench planned=1
+[INFO] world.log: Fishing spots placed: 0
+[INFO] world.log: WP|the builder puts up the banner and the bench|1|banner=1 benches=1 builder: Building lodge bench (1/1)
+[INFO] world.log: WP|using the banner opens the lodge's card|1|w1:121
+[INFO] world.log: WP|a zone to tend is dragged from the card|1|zones=1
+[INFO] world.log: WP|upgrades are planned for the builders|1|bench=1 shed=1 rack=1
+[INFO] world.log: Cave mouths placed: 0 (0 dragon lairs, 0 spider nests, 0 players' lairs)
+[INFO] world.log: WP|benches set the worker slots|1|benches=2
+[INFO] world.log: WP|the store shed and tool rack go up|1|shed=1 rack=1
+[INFO] world.log: WP|free workers fill its benches by themselves|1|on the lodge=2/2
+[INFO] world.log: WP|they work inside its zone only|1|working outside=0
+[INFO] world.log: WP|the tool rack makes them faster|1|boosted=2
+[INFO] world.log: WP|industry at work: Woodcutter's lodge|1|workers 2/2 Human, Human · stores 9/7 wood · brought in 6 · loose 4 · Clearing up: 4 things still lying in its zones
+[INFO] world.log: WP|they unload at the lodge's store shed|1|wood at the shed=6
+[INFO] world.log: WP|before standing down they clear the zone|1|phase=idle logs left in the zone=0
+[INFO] world.log: WP|what lies outside its zone is not theirs|1|logs outside=1
+[INFO] world.log: WP|with the stores full and the zone clear they stand down|1|on a job=0
+[INFO] world.log: WP|industry stood down: Woodcutter's lodge|1|workers 0/2  · stores 13/7 wood · brought in 10 · loose 0 · Idle: the stores have 13 wood (stop at 7)
+[INFO] world.log: WP|the stores bar lists the lodge's store shed|1|
+[INFO] world.log: WP|the HUD model has the stores and the lodge|1|
+[INFO] world.log: WP|Remove takes the lodge away|1|
+[INFO] world.log: WP|complete|1|

@@ -1,0 +1,18 @@
+--- DMStandard/_Standard.dm
++++ DMStandard/_Standard.dm
+@@ -190,12 +190,10 @@
+ 	CRASH("/walk_away() is not implemented")
+ 
+ proc/get_dist(atom/Loc1, atom/Loc2) as num
+-	if (!istype(Loc1) || !istype(Loc2)) return 127
+ 	if (Loc1 == Loc2) return -1
+-
+-	var/distX = Loc2.x - Loc1.x
+-	var/distY = Loc2.y - Loc1.y
+-	return round(sqrt(distX ** 2 + distY ** 2))
++	if (!istype(Loc1) || !istype(Loc2) || isarea(Loc1) || isarea(Loc2)) return 1.#INF
++	if (!Loc1.x || !Loc1.y || !Loc2.x || !Loc2.y) return 1.#INF
++	return max(abs(Loc2.x - Loc1.x), abs(Loc2.y - Loc1.y))
+ 
+ proc/get_step_towards(atom/movable/Ref, /atom/Trg)
+ 	var/dir = get_dir(Ref, Trg)

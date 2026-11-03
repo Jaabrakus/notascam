@@ -1,0 +1,578 @@
+import AppKit
+import WebKit
+import Darwin
+
+public typealias EventCallback = @convention(c) (Int64, Int32, Int64, UnsafePointer<CChar>?) -> Void
+private var callback: EventCallback?
+private var panels: [Int64: Panel] = [:]
+private var nextPanel: Int64 = 0
+private typealias GetWindow = @convention(c) (UInt32) -> UnsafeMutableRawPointer?
+private typealias GetProperties = @convention(c) (UnsafeMutableRawPointer?) -> UInt32
+private typealias GetPointer = @convention(c) (UInt32, UnsafePointer<CChar>?, UnsafeMutableRawPointer?) -> UnsafeMutableRawPointer?
+private var getWindow: GetWindow?
+private var getProperties: GetProperties?
+private var getPointer: GetPointer?
+private typealias WarpMouse = @convention(c) (UnsafeMutableRawPointer?, Float, Float) -> Void
+private var warpMouse: WarpMouse?
+
+private func emit(_ panel: Int64, _ kind: Int32, _ request: Int64, _ text: String) {
+    text.withCString { callback?(panel, kind, request, $0) }
+}
+private func originalURL(_ url: URL) -> String {
+    let value = url.absoluteString
+    return value.hasPrefix("dm-resource:") ? "http:" + value.dropFirst("dm-resource:".count) : value
+}
+private func browserURL(_ text: String) -> URL? {
+    let value = text.hasPrefix("http://127.0.0.1/") ? "dm-resource:" + text.dropFirst("http:".count) : text
+    return URL(string: value)
+}
+
+// A page may opt in to being a transparent HUD layered over the game by posting
+// its interactive regions (CSS pixels, top-left origin) to the "dmOverlay"
+// handler. Points outside those regions fall through to the game view below.
+// Pages that never post keep the normal opaque, fully interactive panel.
+private final class OverlayWebView: WKWebView {
+    var hitRegions: [NSRect]?
+    func captures(_ local: NSPoint) -> Bool {
+        guard let regions = hitRegions else { return bounds.contains(local) }
+        let y = isFlipped ? local.y : bounds.height - local.y
+        let point = NSPoint(x: local.x / max(pageZoom, 0.01), y: y / max(pageZoom, 0.01))
+        return regions.contains { $0.contains(point) }
+    }
+    override func hitTest(_ point: NSPoint) -> NSView? {
+        guard hitRegions != nil, !isHidden, let parent = superview else { return super.hitTest(point) }
+        return captures(convert(point, from: parent)) ? super.hitTest(point) : nil
+    }
+    // A game HUD should react to the first click even when the window is not
+    // in front (macOS otherwise spends that click on activating the window).
+    override func acceptsFirstMouse(for event: NSEvent?) -> Bool {
+        return hitRegions != nil ? true : super.acceptsFirstMouse(for: event)
+    }
+}
+
+private final class Panel: NSObject, WKNavigationDelegate, WKUIDelegate, WKURLSchemeHandler, WKScriptMessageHandler {
+    let id: Int64
+    var view: WKWebView!
+    var ownedWindow: NSWindow?
+    var tasks: [Int64: WKURLSchemeTask] = [:]
+    var taskSerial: Int64 = 0
+    var allowedURL: String?
+    var pendingURL: String?
+    var lastTitle = ""
+    var lastRect = NSRect.zero
+    var lastVisible = false
+    var lastFocused = false
+
+    init(_ id: Int64, _ width: Int32, _ height: Int32) {
+        self.id = id
+        super.init()
+        let config = WKWebViewConfiguration()
+        config.websiteDataStore = .nonPersistent()
+        config.setURLSchemeHandler(self, forURLScheme: "dm-resource")
+        config.preferences.javaScriptCanOpenWindowsAutomatically = true
+        config.userContentController.add(OverlayMessages(self), name: "dmOverlay")
+        view = OverlayWebView(frame: NSRect(x: 0, y: 0, width: Int(width), height: Int(height)), configuration: config)
+        // Recording a trailer: keep drawing while other windows cover the game, so a
+        // window-only capture never goes black (normal play keeps WebKit's power saving).
+        if ProcessInfo.processInfo.environment["DM_RECORDING"] == "1" {
+            let sel = Selector(("_setWindowOcclusionDetectionEnabled:"))
+            if view.responds(to: sel) { view.perform(sel, with: false) }
+            view.configuration.userContentController.addUserScript(WKUserScript(source: "window.dmRecording=true", injectionTime: .atDocumentStart, forMainFrameOnly: true))
+        }
+        // No background until the page says what it is: a HUD overlay must not flash a white panel over the
+        // game while its page loads. A page that turns out not to be an overlay gets its opaque panel back
+        // when it has loaded (didFinish below).
+        view.setValue(false, forKey: "drawsBackground")
+        view.navigationDelegate = self
+        view.uiDelegate = self
+        // The page's sound can mute while another app is in front (Settings: mute when the game is in the
+        // background): page visibility alone only changes when the window is hidden, minimized or covered.
+        for (name, active) in [(NSApplication.didResignActiveNotification, false), (NSApplication.didBecomeActiveNotification, true)] {
+            NotificationCenter.default.addObserver(forName: name, object: nil, queue: .main) { [weak self] _ in
+                self?.view.evaluateJavaScript("window.dmAppActive&&window.dmAppActive(\(active))", completionHandler: nil)
+            }
+        }
+        view.isHidden = true
+        if width > 0 && height > 0 {
+            let window = NSWindow(contentRect: view.frame, styleMask: [.titled, .closable, .resizable], backing: .buffered, defer: false)
+            window.title = "Browser"
+            window.isReleasedWhenClosed = false
+            window.contentView = view
+            view.isHidden = false
+            window.makeKeyAndOrderFront(nil)
+            ownedWindow = window
+        }
+    }
+
+    var overlay = false
+    func userContentController(_ controller: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard message.name == "dmOverlay" else { return }
+        // {"focus": "game"}: the page hands the keyboard back to the game view,
+        // as a click on the map does, so the game's key macros work (3D view).
+        if let request = message.body as? [String: Any], request["focus"] as? String == "game" {
+            guard let window = view.window, let content = window.contentView else { return }
+            let responder = window.firstResponder
+            let inPage = (responder as? NSView)?.isDescendant(of: view) ?? false
+            if inPage && !window.makeFirstResponder(content) { window.makeFirstResponder(nil) }
+            // The engine must drop the browser control's keyboard focus too, or it skips its key macros.
+            lastFocused = false
+            emit(id, 6, 0, "0")
+            emit(id, 5, 0, "focus game: was \(responder.map { String(describing: type(of: $0)) } ?? "none") inPage=\(inPage) now=\(window.firstResponder.map { String(describing: type(of: $0)) } ?? "none")")
+            return
+        }
+        // {"appActive": 1}: the page asks whether the app is in front (its sound mutes in the background); the answer
+        // comes the same way the changes do (window.dmAppActive, see init)
+        if let request = message.body as? [String: Any], request["appActive"] != nil {
+            view.evaluateJavaScript("window.dmAppActive&&window.dmAppActive(\(NSApp.isActive))", completionHandler: nil)
+            return
+        }
+        guard let list = message.body as? [[Double]], let web = view as? OverlayWebView else { return }
+        if !overlay {
+            overlay = true
+            web.setValue(false, forKey: "drawsBackground")
+            emit(id, 7, 0, "overlay")
+        }
+        web.hitRegions = list.compactMap { $0.count == 4 ? NSRect(x: $0[0], y: $0[1], width: $0[2], height: $0[3]) : nil }
+    }
+    func captures(_ contentPoint: NSPoint) -> Bool {
+        guard let web = view as? OverlayWebView, let parent = view.superview, view.frame.contains(contentPoint) else { return false }
+        return web.captures(view.convert(contentPoint, from: parent))
+    }
+
+    func load(_ value: String) {
+        guard let url = browserURL(value) else { return }
+        allowedURL = url.absoluteString
+        view.load(URLRequest(url: url))
+    }
+
+    func attach(_ windowID: UInt32, _ pixelWidth: Double, _ pixelHeight: Double, _ x: Double, _ y: Double, _ width: Double, _ height: Double, _ visible: Bool) {
+        guard ownedWindow == nil else { return }
+        // SDL window lookup and AppKit operations both stay on the main thread.
+        // Lookup by ID also protects against a window destroyed before this job.
+        guard let sdl = getWindow?(windowID), let properties = getProperties?(sdl),
+              let pointer = "SDL.window.cocoa.window".withCString({ getPointer?(properties, $0, nil) }),
+              pixelWidth > 0, pixelHeight > 0 else {
+            view.isHidden = true
+            return
+        }
+        let window = Unmanaged<NSWindow>.fromOpaque(pointer).takeUnretainedValue()
+        guard let parent = window.contentView else { return }
+        let sx = parent.bounds.width / pixelWidth
+        let sy = parent.bounds.height / pixelHeight
+        let frame = NSRect(x: x * sx, y: parent.bounds.height - (y + height) * sy,
+                           width: max(0, width * sx), height: max(0, height * sy))
+        if view.superview !== parent { view.removeFromSuperview(); parent.addSubview(view, positioned: .above, relativeTo: nil) }
+        if view.frame != frame { view.frame = frame }
+        view.isHidden = !visible || width <= 0 || height <= 0
+        if window.title != lastTitle || frame != lastRect || visible != lastVisible {
+            lastTitle = window.title; lastRect = frame; lastVisible = visible
+            emit(id, 5, 0, "attached title=\(window.title) frame=\(frame) parent=\(parent.bounds) visible=\(!view.isHidden)")
+        }
+        let focused = !view.isHidden && ((window.firstResponder as? NSView)?.isDescendant(of: view) ?? false)
+        if focused != lastFocused {
+            lastFocused = focused
+            emit(id, 6, 0, focused ? "1" : "0")
+        }
+    }
+
+    func webView(_ webView: WKWebView, start task: WKURLSchemeTask) {
+        guard let url = task.request.url else { return }
+        taskSerial += 1
+        tasks[taskSerial] = task
+        emit(id, 1, taskSerial, originalURL(url))
+    }
+    func webView(_ webView: WKWebView, stop task: WKURLSchemeTask) {
+        for (key, value) in tasks where value === task { tasks.removeValue(forKey: key) }
+    }
+    func webView(_ webView: WKWebView, decidePolicyFor action: WKNavigationAction,
+                 decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        guard let url = action.request.url else { decisionHandler(.cancel); return }
+        if url.absoluteString == allowedURL || url.absoluteString == "about:blank" {
+            allowedURL = nil
+            decisionHandler(.allow)
+        } else {
+            decisionHandler(.cancel)
+            emit(id, 2, 0, originalURL(url))
+        }
+    }
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration,
+                 for action: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if let url = action.request.url { emit(id, 2, 0, originalURL(url)) }
+        return nil
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        if !overlay { webView.setValue(true, forKey: "drawsBackground") }
+        webView.evaluateJavaScript("JSON.stringify({title:document.title,text:document.body?document.body.innerText:'',images:Array.from(document.images).map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0}))})") { result, error in
+            emit(self.id, 3, 0, (result as? String) ?? "")
+        }
+    }
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        emit(id, 4, 0, error.localizedDescription)
+    }
+}
+
+@_cdecl("dm_web_initialize")
+public func initialize(_ event: @escaping EventCallback, _ library: UnsafePointer<CChar>) {
+    callback = event
+    guard let handle = dlopen(library, RTLD_NOW),
+          let window = dlsym(handle, "SDL_GetWindowFromID"),
+          let properties = dlsym(handle, "SDL_GetWindowProperties"),
+          let pointer = dlsym(handle, "SDL_GetPointerProperty") else { return }
+    getWindow = unsafeBitCast(window, to: GetWindow.self)
+    getProperties = unsafeBitCast(properties, to: GetProperties.self)
+    getPointer = unsafeBitCast(pointer, to: GetPointer.self)
+    if let warp = dlsym(handle, "SDL_WarpMouseInWindow") { warpMouse = unsafeBitCast(warp, to: WarpMouse.self) }
+    DispatchQueue.main.async { installFocusReturn(); installPanDrag() }
+}
+
+// Dream Seeker takes the keyboard back from a browser control when the player
+// clicks the map or any other non-browser area. AppKit leaves the web view as
+// first responder, so keys kept going to the page (arrows scrolled it, typing
+// never reached the game). Return the responder to the game view on such clicks.
+private var focusMonitor: Any?
+private func installFocusReturn() {
+    guard focusMonitor == nil else { return }
+    focusMonitor = NSEvent.addLocalMonitorForEvents(matching: [.leftMouseDown, .rightMouseDown, .otherMouseDown]) { event in
+        guard let window = event.window, let content = window.contentView else { return event }
+        let point = content.convert(event.locationInWindow, from: nil)
+        let windowPanels = panels.values.filter { $0.view.window === window && !$0.view.isHidden }
+        if windowPanels.contains(where: { $0.captures(point) }) { return event }
+        guard let responder = window.firstResponder as? NSView,
+              windowPanels.contains(where: { responder.isDescendant(of: $0.view) }) else { return event }
+        if !window.makeFirstResponder(content) { window.makeFirstResponder(nil) }
+        for panel in windowPanels where panel.lastFocused {
+            panel.lastFocused = false
+            emit(panel.id, 6, 0, "0")
+        }
+        return event
+    }
+}
+
+// Right-drag on the map moves the camera. The engine sends the game no live drag
+// events (only one on release), so the app watches right-drags over the map (not
+// over HUD panels) and hands the movement to the HUD page, which sends it to the
+// game. A press that never moves past the threshold stays a normal right-click.
+private var panMonitor: Any?
+private var panStart: NSPoint?
+private var panLast = NSPoint.zero
+private var panning = false
+private func panReport(_ window: NSWindow, _ dx: CGFloat, _ dy: CGFloat, done: Bool) {
+    guard let size = window.contentView?.bounds.size else { return }
+    let js = "window.remasterPanPx&&remasterPanPx(\(Double(dx)),\(Double(dy)),\(Double(size.width)),\(Double(size.height)),\(done))"
+    for panel in panels.values where panel.view.window === window && !panel.view.isHidden {
+        panel.view.evaluateJavaScript(js, completionHandler: nil)
+    }
+}
+private func installPanDrag() {
+    guard panMonitor == nil else { return }
+    panMonitor = NSEvent.addLocalMonitorForEvents(matching: [.rightMouseDown, .rightMouseDragged, .rightMouseUp]) { event in
+        guard let window = event.window, let content = window.contentView else { return event }
+        let point = content.convert(event.locationInWindow, from: nil)
+        switch event.type {
+        case .rightMouseDown:
+            let windowPanels = panels.values.filter { $0.view.window === window && !$0.view.isHidden }
+            panStart = windowPanels.contains(where: { $0.captures(point) }) ? nil : point
+            panLast = point
+            panning = false
+        case .rightMouseDragged:
+            guard let start = panStart else { break }
+            if !panning && hypot(point.x - start.x, point.y - start.y) > 6 { panning = true; panLast = start }
+            if panning {
+                // The page and the game expect screen y down; an unflipped AppKit view runs up.
+                panReport(window, point.x - panLast.x, content.isFlipped ? point.y - panLast.y : panLast.y - point.y, done: false)
+                panLast = point
+            }
+        case .rightMouseUp:
+            if panning { panReport(window, point.x - panLast.x, content.isFlipped ? point.y - panLast.y : panLast.y - point.y, done: true) }
+            panStart = nil
+            panning = false
+        default: break
+        }
+        return event
+    }
+}
+
+@_cdecl("dm_web_create")
+public func create(_ width: Int32, _ height: Int32) -> Int64 {
+    nextPanel += 1
+    let id = nextPanel
+    DispatchQueue.main.async { panels[id] = Panel(id, width, height) }
+    return id
+}
+
+// Test-only resize of a real native window. Input tests use SDL's event queue.
+@_cdecl("dm_ui_test_focus")
+public func uiTestFocus(_ windowID: UInt32, _ x: Double, _ y: Double) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let sdl = getWindow?(windowID), let properties = getProperties?(sdl),
+              let pointer = "SDL.window.cocoa.window".withCString({ getPointer?(properties, $0, nil) }) else { return }
+        let window = Unmanaged<NSWindow>.fromOpaque(pointer).takeUnretainedValue()
+        window.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
+        if x >= 0, y >= 0, let view = window.contentView {
+            warpMouse?(sdl, Float(x * view.bounds.width), Float(y * view.bounds.height))
+        }
+    }
+}
+private func cocoaWindow(_ windowID: UInt32) -> NSWindow? {
+    guard let sdl = getWindow?(windowID), let properties = getProperties?(sdl),
+          let pointer = "SDL.window.cocoa.window".withCString({ getPointer?(properties, $0, nil) }) else { return nil }
+    return Unmanaged<NSWindow>.fromOpaque(pointer).takeUnretainedValue()
+}
+// Test-only: queue real AppKit events, so they take the same window/first-responder
+// route as a physical keyboard and mouse (SDL injection bypasses AppKit focus).
+@_cdecl("dm_ui_test_native_key")
+public func uiTestNativeKey(_ windowID: UInt32, _ keyCode: UInt16, _ text: UnsafePointer<CChar>, _ flags: UInt) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    let characters = String(cString: text)
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID) else { return }
+        for type in [NSEvent.EventType.keyDown, .keyUp] {
+            if let event = NSEvent.keyEvent(with: type, location: .zero, modifierFlags: NSEvent.ModifierFlags(rawValue: flags),
+                                            timestamp: ProcessInfo.processInfo.systemUptime, windowNumber: window.windowNumber,
+                                            context: nil, characters: characters, charactersIgnoringModifiers: characters,
+                                            isARepeat: false, keyCode: keyCode) {
+                NSApp.postEvent(event, atStart: false)
+            }
+        }
+    }
+}
+@_cdecl("dm_ui_test_native_click")
+public func uiTestNativeClick(_ windowID: UInt32, _ x: Double, _ y: Double) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID), let view = window.contentView else { return }
+        let point = view.convert(NSPoint(x: x * view.bounds.width, y: view.bounds.height - y * view.bounds.height), to: nil)
+        // A real click is preceded by pointer motion; without it the engine keeps the old pointer position.
+        for type in [NSEvent.EventType.mouseMoved, .leftMouseDown, .leftMouseUp] {
+            if let event = NSEvent.mouseEvent(with: type, location: point, modifierFlags: [], timestamp: ProcessInfo.processInfo.systemUptime,
+                                              windowNumber: window.windowNumber, context: nil, eventNumber: 0, clickCount: type == .mouseMoved ? 0 : 1,
+                                              pressure: type == .leftMouseDown ? 1 : 0) {
+                NSApp.postEvent(event, atStart: false)
+            }
+        }
+    }
+}
+// Test-only (Remastered): a real double-click (second press has clickCount 2).
+@_cdecl("dm_ui_test_native_double_click")
+public func uiTestNativeDoubleClick(_ windowID: UInt32, _ x: Double, _ y: Double) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID), let view = window.contentView else { return }
+        let point = view.convert(NSPoint(x: x * view.bounds.width, y: view.bounds.height - y * view.bounds.height), to: nil)
+        let steps: [(NSEvent.EventType, Int)] = [(.mouseMoved, 0), (.leftMouseDown, 1), (.leftMouseUp, 1), (.leftMouseDown, 2), (.leftMouseUp, 2)]
+        for (type, count) in steps {
+            if let event = NSEvent.mouseEvent(with: type, location: point, modifierFlags: [], timestamp: ProcessInfo.processInfo.systemUptime,
+                                              windowNumber: window.windowNumber, context: nil, eventNumber: 0, clickCount: count,
+                                              pressure: type == .leftMouseDown ? 1 : 0) {
+                NSApp.postEvent(event, atStart: false)
+            }
+        }
+    }
+}
+// Test-only (Remastered): a real scroll-wheel turn at (x,y); dy > 0 scrolls the content down.
+@_cdecl("dm_ui_test_native_scroll")
+public func uiTestNativeScroll(_ windowID: UInt32, _ x: Double, _ y: Double, _ dy: Double) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID), let view = window.contentView else { return }
+        let local = NSPoint(x: x * view.bounds.width, y: view.bounds.height - y * view.bounds.height)
+        let point = view.convert(local, to: nil)
+        if let move = NSEvent.mouseEvent(with: .mouseMoved, location: point, modifierFlags: [], timestamp: ProcessInfo.processInfo.systemUptime,
+                                         windowNumber: window.windowNumber, context: nil, eventNumber: 0, clickCount: 0, pressure: 0) {
+            NSApp.postEvent(move, atStart: false)
+        }
+        let screen = window.convertPoint(toScreen: point)
+        let flipped = CGPoint(x: screen.x, y: (NSScreen.screens.first?.frame.height ?? 0) - screen.y)
+        for _ in 0..<6 {
+            guard let cg = CGEvent(scrollWheelEvent2Source: nil, units: .pixel, wheelCount: 1, wheel1: Int32(-dy / 6), wheel2: 0, wheel3: 0) else { continue }
+            cg.location = flipped
+            if let e = NSEvent(cgEvent: cg), let target = view.hitTest(local) { target.scrollWheel(with: e) }
+        }
+    }
+}
+private var responderSnapshot = "unknown"
+// Test-only (Remastered): a real right-click, and a real left-button drag from
+// (x,y) to (x2,y2) with intermediate motion, both in window-relative fractions.
+@_cdecl("dm_ui_test_native_right_click")
+public func uiTestNativeRightClick(_ windowID: UInt32, _ x: Double, _ y: Double) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID), let view = window.contentView else { return }
+        let point = view.convert(NSPoint(x: x * view.bounds.width, y: view.bounds.height - y * view.bounds.height), to: nil)
+        for type in [NSEvent.EventType.mouseMoved, .rightMouseDown, .rightMouseUp] {
+            if let event = NSEvent.mouseEvent(with: type, location: point, modifierFlags: [], timestamp: ProcessInfo.processInfo.systemUptime,
+                                              windowNumber: window.windowNumber, context: nil, eventNumber: 0, clickCount: type == .mouseMoved ? 0 : 1,
+                                              pressure: type == .rightMouseDown ? 1 : 0) {
+                // AppKit's mouseEvent factory defaults buttonNumber to zero,
+                // even for rightMouseDown. SDL reads that number, not the type.
+                if type != .mouseMoved, let cgEvent = event.cgEvent {
+                    cgEvent.setIntegerValueField(.mouseEventButtonNumber, value: 1)
+                    if let rightEvent = NSEvent(cgEvent: cgEvent) {
+                        NSApp.postEvent(rightEvent, atStart: false)
+                    }
+                } else {
+                    NSApp.postEvent(event, atStart: false)
+                }
+            }
+        }
+    }
+}
+@_cdecl("dm_ui_test_native_drag")
+public func uiTestNativeDrag(_ windowID: UInt32, _ x: Double, _ y: Double, _ x2: Double, _ y2: Double, _ flags: UInt) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID), let view = window.contentView else { return }
+        func point(_ fx: Double, _ fy: Double) -> NSPoint {
+            view.convert(NSPoint(x: fx * view.bounds.width, y: view.bounds.height - fy * view.bounds.height), to: nil)
+        }
+        let mods = NSEvent.ModifierFlags(rawValue: flags)
+        var events: [(NSEvent.EventType, NSPoint)] = [(.mouseMoved, point(x, y)), (.leftMouseDown, point(x, y))]
+        for step in 1...20 { let t = Double(step) / 20; events.append((.leftMouseDragged, point(x + (x2 - x) * t, y + (y2 - y) * t))) }
+        events.append((.leftMouseUp, point(x2, y2)))
+        // Spread over ~0.3 s like a hand-made drag, so every step lands in its own frame.
+        for (index, (type, location)) in events.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.06) {
+                if let event = NSEvent.mouseEvent(with: type, location: location, modifierFlags: mods, timestamp: ProcessInfo.processInfo.systemUptime,
+                                                  windowNumber: window.windowNumber, context: nil, eventNumber: 0, clickCount: type == .mouseMoved || type == .leftMouseDragged ? 0 : 1,
+                                                  pressure: type == .leftMouseUp ? 0 : 1) {
+                    NSApp.postEvent(event, atStart: false)
+                }
+            }
+        }
+    }
+}
+// Test-only (Remastered): a real right- (button 1) or middle- (button 2) button
+// drag, built as CGEvents so the button number is right, posted through AppKit.
+@_cdecl("dm_ui_test_native_button_drag")
+public func uiTestNativeButtonDrag(_ windowID: UInt32, _ x: Double, _ y: Double, _ x2: Double, _ y2: Double, _ button: Int32) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID), let view = window.contentView else { return }
+        func point(_ fx: Double, _ fy: Double) -> NSPoint {
+            view.convert(NSPoint(x: fx * view.bounds.width, y: view.bounds.height - fy * view.bounds.height), to: nil)
+        }
+        let right = button == 1
+        let down: NSEvent.EventType = right ? .rightMouseDown : .otherMouseDown
+        let drag: NSEvent.EventType = right ? .rightMouseDragged : .otherMouseDragged
+        let up: NSEvent.EventType = right ? .rightMouseUp : .otherMouseUp
+        var events: [(NSEvent.EventType, NSPoint)] = [(.mouseMoved, point(x, y)), (down, point(x, y))]
+        for step in 1...20 { let t = Double(step) / 20; events.append((drag, point(x + (x2 - x) * t, y + (y2 - y) * t))) }
+        events.append((up, point(x2, y2)))
+        for (index, (type, location)) in events.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.06) {
+                guard let event = NSEvent.mouseEvent(with: type, location: location, modifierFlags: [], timestamp: ProcessInfo.processInfo.systemUptime,
+                                                     windowNumber: window.windowNumber, context: nil, eventNumber: 0, clickCount: type == down || type == up ? 1 : 0,
+                                                     pressure: type == up || type == .mouseMoved ? 0 : 1) else { return }
+                // Down/up carry the button number SDL and WebKit read; drags keep
+                // their exact window location.
+                if type == down || type == up, let cg = event.cgEvent {
+                    cg.setIntegerValueField(.mouseEventButtonNumber, value: Int64(button))
+                    if let e = NSEvent(cgEvent: cg) { NSApp.postEvent(e, atStart: false) }
+                } else {
+                    NSApp.postEvent(event, atStart: false)
+                }
+            }
+        }
+    }
+}
+@_cdecl("dm_ui_test_first_responder")
+public func uiTestFirstResponder(_ windowID: UInt32, _ out: UnsafeMutablePointer<CChar>, _ size: Int32) {
+    // The probe runs off the AppKit thread: report the last main-thread reading.
+    DispatchQueue.main.async {
+        guard let window = cocoaWindow(windowID) else { responderSnapshot = "none"; return }
+        let responder = window.firstResponder
+        var name = "app=" + String(describing: type(of: NSApp!)) + ":" + (window.isKeyWindow ? "key:" : "notkey:") + (responder.map { String(describing: type(of: $0)) } ?? "nil")
+        if let view = responder as? NSView, panels.values.contains(where: { view.isDescendant(of: $0.view) }) { name += ":webpanel" }
+        for (id, panel) in panels.sorted(by: { $0.key < $1.key }) where panel.view.window === window {
+            let f = panel.view.frame, h = panel.view.superview?.bounds.height ?? 0
+            name += "|panel\(id) hidden=\(panel.view.isHidden) top-left=(\(Int(f.minX)),\(Int(h - f.maxY))) size=\(Int(f.width))x\(Int(f.height))"
+        }
+        responderSnapshot = name
+    }
+    _ = responderSnapshot.withCString { strncpy(out, $0, Int(size) - 1) }
+    out[Int(size) - 1] = 0
+}
+@_cdecl("dm_ui_test_resize")
+public func uiTestResize(_ windowID: UInt32, _ width: Double, _ height: Double) {
+    guard ProcessInfo.processInfo.environment["DM_NATIVE_UI_PROBE"] != nil else { return }
+    DispatchQueue.main.async {
+        guard let sdl = getWindow?(windowID), let properties = getProperties?(sdl),
+              let pointer = "SDL.window.cocoa.window".withCString({ getPointer?(properties, $0, nil) }) else { return }
+        let window = Unmanaged<NSWindow>.fromOpaque(pointer).takeUnretainedValue()
+        window.setContentSize(NSSize(width: width, height: height))
+    }
+}
+@_cdecl("dm_web_load")
+public func load(_ id: Int64, _ url: UnsafePointer<CChar>) {
+    let value = String(cString: url)
+    DispatchQueue.main.async { panels[id]?.load(value) }
+}
+@_cdecl("dm_web_layout")
+public func layout(_ id: Int64, _ window: UInt32, _ pw: Double, _ ph: Double, _ x: Double, _ y: Double, _ w: Double, _ h: Double, _ visible: Int32) {
+    DispatchQueue.main.async { panels[id]?.attach(window, pw, ph, x, y, w, h, visible != 0) }
+}
+@_cdecl("dm_web_respond")
+public func respond(_ id: Int64, _ request: Int64, _ bytes: UnsafePointer<UInt8>?, _ length: Int32, _ mime: UnsafePointer<CChar>, _ status: Int32) {
+    let data = bytes == nil ? Data() : Data(bytes: bytes!, count: Int(length))
+    let contentType = String(cString: mime)
+    DispatchQueue.main.async {
+        guard let panel = panels[id], let task = panel.tasks.removeValue(forKey: request), let url = task.request.url else { return }
+        let response = HTTPURLResponse(url: url, statusCode: Int(status), httpVersion: "HTTP/1.1",
+                                       headerFields: ["Content-Type": contentType, "Content-Length": "\(data.count)"])!
+        task.didReceive(response)
+        task.didReceive(data)
+        task.didFinish()
+    }
+}
+@_cdecl("dm_web_script")
+public func script(_ id: Int64, _ code: UnsafePointer<CChar>) {
+    let value = String(cString: code)
+    DispatchQueue.main.async { panels[id]?.view.evaluateJavaScript(value, completionHandler: nil) }
+}
+@_cdecl("dm_web_history")
+public func history(_ id: Int64, _ action: Int32) {
+    DispatchQueue.main.async {
+        guard let panel = panels[id] else { return }
+        switch action {
+        case -1:
+            panel.allowedURL = panel.view.backForwardList.backItem?.url.absoluteString
+            panel.view.goBack()
+        case 1:
+            panel.allowedURL = panel.view.backForwardList.forwardItem?.url.absoluteString
+            panel.view.goForward()
+        case 2:
+            panel.allowedURL = panel.view.url?.absoluteString
+            panel.view.reload()
+        default: panel.view.stopLoading()
+        }
+    }
+}
+@_cdecl("dm_web_destroy")
+public func destroy(_ id: Int64) {
+    DispatchQueue.main.async {
+        guard let panel = panels.removeValue(forKey: id) else { return }
+        panel.view.stopLoading(); panel.view.removeFromSuperview(); panel.ownedWindow?.close()
+    }
+}
+@_cdecl("dm_web_snapshot")
+public func snapshot(_ id: Int64, _ path: UnsafePointer<CChar>) {
+    let filename = String(cString: path)
+    DispatchQueue.main.async {
+        panels[id]?.view.takeSnapshot(with: nil) { image, error in
+            guard let data = image?.tiffRepresentation, let bitmap = NSBitmapImageRep(data: data),
+                  let png = bitmap.representation(using: .png, properties: [:]) else { return }
+            try? png.write(to: URL(fileURLWithPath: filename))
+        }
+    }
+}
+
+// WKUserContentController retains its handlers; a weak relay avoids a cycle.
+private final class OverlayMessages: NSObject, WKScriptMessageHandler {
+    weak var panel: Panel?
+    init(_ panel: Panel) { self.panel = panel }
+    func userContentController(_ controller: WKUserContentController, didReceive message: WKScriptMessage) {
+        panel?.userContentController(controller, didReceive: message)
+    }
+}

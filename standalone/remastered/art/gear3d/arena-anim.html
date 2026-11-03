@@ -1,0 +1,254 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Animation arena</title>
+<style>
+:root{--bg:#16181d;--panel:#22252c;--text:#e8e2d0;--accent:#e6c46a;--muted:#9a9688;--line:#444a55}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.3 -apple-system,Helvetica,sans-serif;display:flex;flex-direction:column;height:100vh}
+.bar{display:flex;flex-wrap:wrap;gap:5px;align-items:center;padding:6px 10px;background:var(--panel)}
+.bar b{margin-right:4px;color:var(--muted);font-weight:600;min-width:62px}
+button{background:#2f333c;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:5px 9px;font:inherit;cursor:pointer}
+button.on{background:var(--accent);color:#1a1a1a;border-color:var(--accent)}
+button.go{border-color:#7c5a2a}
+#note{color:var(--muted);font-size:12px;padding:4px 10px;background:var(--panel);border-top:1px solid #2c3038}
+iframe{order:-1;flex:none;height:62vh;min-height:320px;border:0;width:100%}   /* the 3D view first, at a size to play in; the controls below it, scrolling */
+body{height:auto;min-height:100vh}
+</style></head><body>
+<div class="bar"><b>Deaths</b>
+ <button class="go" data-a="fall" title="Killed by a blow: knocked off its feet, away from the blow">Fall</button>
+ <button class="go" data-a="crumple" title="Bleeding out, starving, poisoned: the knees give">Crumple</button>
+ <button class="go" data-a="spin" title="An axe or a side cut: spun round as it drops">Spin and drop</button>
+ <button class="go" data-a="flying" title="A heavy blow: knocked back off its feet">Knocked back</button>
+ <button class="go" data-a="hammer" title="A big hammer skill: thrown a few tiles through the air">Hammer launch</button>
+ <button class="go" data-a="throw" title="A dragon throwing a unit: high and far">Dragon throw</button>
+ <button class="go" data-a="armoff" title="The killing blow takes an arm">Arm off</button>
+ <button class="go" data-a="legoff" title="The killing blow takes a leg">Leg off</button>
+ <button class="go" data-a="today" title="Today's death: the picture darkens, slumps and sinks">Today's death</button>
+</div>
+<div class="bar"><b>Work</b>
+ <button class="go" data-work="mine" title="Mining: the pick swung into a rock, chips and dust flying">Mine</button>
+ <button class="go" data-work="chop" title="Chopping: the axe driven into a trunk, wood chips flying">Chop</button>
+ <button class="go" data-work="smith" title="Smithing: the hammer on the anvil, sparks">Smith</button>
+ <button class="go" data-work="build" title="Building: knelt, hammering">Build</button>
+ <button class="go" data-work="fish" title="Fishing: the line cast, the float bobbing, a bite, the fish reeled in">Rod fishing</button>
+ <button class="go" data-work="spearfish" title="Spear fishing (the harpoon): driven down into the water, pulled up with the fish on it">Spear fishing</button>
+ <button class="go" data-work="netfish" title="Net fishing: the net thrown out to open over the water, left to sink, hauled in with the catch">Net fishing</button>
+ <b style="margin-left:10px">Forage</b>
+ <button class="go" data-work="pick" title="Picking from a plant: a hand in among the leaves, to the bag">Pick a bush</button>
+ <button class="go" data-work="gather" title="Picking from the ground (herbs, mushrooms), knelt">Pick the ground</button>
+ <button class="go" data-work="till" title="Tilling with the spade">Till</button>
+ <button class="go" data-work="plant" title="Planting seeds, knelt">Plant</button>
+ <button class="go" data-work="harvest" title="Harvesting a crop">Harvest</button>
+ <b style="margin-left:10px">Climb</b>
+ <button class="go" data-climb="up" title="Climbing gear: up a cliff face hand over hand on the rope, over the lip onto the top">Climb up</button>
+ <button class="go" data-climb="down" title="Climbing gear: down the face from the top">Climb down</button>
+ <b style="margin-left:10px">Carry</b>
+ <button class="go" data-carry="sack" title="Lifts a sack from in front of it and walks off with it">Sack</button>
+ <button class="go" data-carry="barrel" title="Lifts a barrel and walks off with it">Barrel</button>
+ <button class="go" data-carry="log" title="Lifts a log and walks off with it">Log</button>
+ <button class="go" data-carry="stone" title="Lifts a stone and walks off with it">Stone</button>
+ <button class="go" data-carry="ore" title="Lifts ore and walks off with it">Ore</button>
+ <button id="workstop" title="Every unit stops work and sets down what it carries">Stop work</button>
+ <span style="color:var(--muted);margin-left:6px">hit a carrier (Flinch, a skill) and it drops its load</span>
+</div>
+<div class="bar"><b>Dies of</b>
+ <button class="go" data-die="bleed" title="Bleeding to death: sways, sinks in its own blood">Bleeding</button>
+ <button class="go" data-die="poison" title="Poison, food poisoning: retches, drools green, crumples">Poison</button>
+ <button class="go" data-die="starve" title="Starvation, tiredness: sways and sinks">Starving</button>
+ <button class="go" data-die="cold" title="Coldness: shivers hugging itself, frosts over, topples stiff">Cold</button>
+ <button class="go" data-die="fever" title="Fever, overheating: hand to its brow, sweating, flushed">Fever</button>
+ <button class="go" data-die="burn" title="Burned to death: flails in flames, falls charred and smoking">Burning</button>
+ <button class="go" data-die="lightning" title="Lightning: arms thrown out, sparking, topples stiff and smoking">Lightning</button>
+ <button class="go" data-die="heart" title="Heart failure, a heart attack: clutches its chest">Heart</button>
+ <button class="go" data-die="choke" title="Vapours, lung failure: holds its throat, coughing">Choking</button>
+ <button class="go" data-die="brain" title="Brain damage: twitches and crumples">Brain</button>
+ <button class="go" data-die="goo" title="Melting into goo: sinks into a green puddle">Goo</button>
+ <button class="go" data-die="holy" title="Melted by holy energy: glows, rises in light, sinks away">Holy</button>
+ <button class="go" data-die="crumble" title="Crumbled into bonemeal: rattles, drops into a heap of bones">Bonemeal</button>
+ <button class="go" data-die="stone" title="Turned to stone (a guest who left): stiffens and greys where it stands, in stone dust">Stone</button>
+ <button class="go" data-die="oldage" title="Old age: sits down, lies down">Old age</button>
+</div>
+<div class="bar"><b>Alive</b>
+ <button class="go" data-a="ko" title="Out cold: falls, lies, gets back up">Knocked out</button>
+ <button class="go" data-a="flinch" title="Struck: a jolt">Flinch</button>
+ <button class="go" data-a="hammer" data-live="1" title="A hammer's blow that doesn't kill: thrown, lands, gets up where it came down, weapons in hand">Hammer launch, lives</button>
+ <button class="go" data-a="throw" data-live="1" title="Thrown by a dragon and living: high and far, then up again">Dragon throw, lives</button>
+ <button class="go" data-a="flying" data-live="1" title="Knocked back off its feet, then up again">Knocked back, lives</button>
+ <button class="go" data-a="armcut" title="An arm taken: it staggers and fights on without it, the stump bleeding">Arm cut, lives</button>
+ <button class="go" data-a="legcut" title="A leg taken: it goes down and lies wounded, bleeding">Leg cut, lives</button>
+ <button id="bandage" title="Every bleeding stump bandaged (unbandaged, a unit bleeds out in 15 s)">Bandage</button>
+ <b style="margin-left:10px">Archer</b>
+ <button class="go" id="shoot" title="The elf shoots the next unit: it flinches, the arrow stays in it">Shoot</button>
+ <button class="go" id="shootkill" title="The elf shoots and kills the next unit">Shoot to kill</button>
+</div>
+<div class="bar"><b>Weapon skills</b>
+ <button class="go" data-k="slash" title="Sword: a cut over the shoulder and down">Sword slash</button>
+ <button class="go" data-k="thrust" title="Sword: drawn back and driven in">Sword thrust</button>
+ <button class="go" data-k="chop" title="Axe: two hands, over the head and down">Axe chop</button>
+ <button class="go" data-k="smash" title="Mace: overhead, the ground shakes">Mace smash</button>
+ <button class="go" data-k="launch" title="A warhammer's big blow: the target is thrown off its feet">Hammer launch</button>
+ <button class="go" data-k="thrust" data-wp="spear:iron" title="Spear: both hands, driven in">Spear thrust</button>
+ <button class="go" data-k="sweep" title="Halberd: a wide sweep">Halberd sweep</button>
+ <button class="go" data-k="stab" title="Dagger: two quick stabs">Dagger stabs</button>
+ <button class="go" data-k="punch" title="Unarmed: a jab and a cross">Punch</button>
+ <button class="go" data-k="claw" title="Claws: a double rake">Claw</button>
+ <button class="go" data-k="bash" title="Shield: pulled back and driven into the foe">Shield bash</button>
+ <button class="go" data-k="throw" data-wp="spear:iron" title="Throwing: a spear">Throw spear</button>
+ <button class="go" data-k="throw" data-wp="hand axe:iron" title="Throwing: an axe, turning over">Throw axe</button>
+ <button class="go" data-k="throw" data-wp="dagger:iron" title="Throwing: a knife, turning over">Throw knife</button>
+</div>
+<div class="bar"><b>Weapon moves</b>
+ <button class="go" data-k="lunge" data-wp="longsword:iron" title="Sword, Lunge: a long step in, the point driven home (reaches two tiles)">Lunge</button>
+ <button class="go" data-k="heavyblow" data-wp="longsword:iron" title="Sword, Heavy blow: both hands, high over the head and down">Heavy blow</button>
+ <button class="go" data-k="riposte" data-wp="longsword:iron" title="Sword, Riposte: the guard up and held; blows at it are parried and struck back">Riposte</button>
+ <button class="go" data-k="cleave" data-wp="battle axe:iron" title="Axe, Cleave: a wide sweep through all round the foe">Cleave</button>
+ <button class="go" data-k="skullcracker" data-wp="mace:iron" title="Mace, Skullcracker: crouched, then up and over onto the head">Skullcracker</button>
+ <button class="go" data-k="skewer" data-wp="spear:iron" title="Spear, Skewer: driven through into the one behind">Skewer</button>
+ <button class="go" data-k="flurry" data-wp="dagger:iron" title="Dagger, Flurry: four quick stabs">Flurry</button>
+ <button class="go" data-k="runebolt" data-wp="rune sword" title="Rune sword, Rune bolt: raised, then pointed; the bolt leaves its point">Rune bolt</button>
+ <button class="go" data-k="firewave" data-wp="flame sword" title="Flame sword, Fire wave: a low wide sweep">Fire wave</button>
+ <button class="go" data-k="frozenhamstring" data-wp="frost axe" title="Frost axe, Frozen hamstring: down low at the legs">Frozen hamstring</button>
+ <button class="go" data-k="calllightning" data-wp="storm spear" title="Storm spear, Call lightning: held up to the sky, then down at the foe">Call lightning</button>
+ <button class="go" data-k="bonespear" data-wp="skull staff" title="Skull staff, Bone spear: thrown from the staff">Bone spear</button>
+ <button class="go" data-k="raiseskeleton" data-wp="skull staff" title="Skull staff, Raise Skeleton: both hands raise the staff">Raise Skeleton</button>
+</div>
+<div class="bar"><b>Spells</b>
+ <button class="go" data-k="cast" data-wp="crystal staff" title="Crystal staff: a cold crystal spark">Crystal</button>
+ <button class="go" data-k="cast" data-wp="orb staff" title="Orb staff: an orb of purple light">Orb</button>
+ <button class="go" data-k="cast" data-wp="skull staff" title="Skull staff: a green death wisp">Skull</button>
+ <button class="go" data-k="cast" data-wp="flame staff" title="Flame staff: a fire bolt">Flame</button>
+ <button class="go" data-k="cast" data-wp="nature staff" title="Nature staff: a swarm of fireflies">Nature</button>
+ <button class="go" data-k="cast" data-wp="dragon staff" title="Dragon staff: dragon fire that knocks back">Dragon</button>
+ <button class="go" data-k="cast" data-wp="spider staff" title="Spider staff: a venom spit">Spider</button>
+</div>
+<div class="bar"><b>Magic</b>
+ <button class="go" id="magic" title="Each unit takes a staff or an enchanted weapon (again: the next ones), with its effect">Hand out magic</button>
+ <button id="magicoff" title="Their own weapons back">Put away</button>
+ <span id="magicnote" style="color:var(--muted);margin-left:6px"></span>
+</div>
+<div class="bar"><b>Defender</b>
+ <button data-g="" class="on">Takes it</button><button data-g="block">Blocks</button><button data-g="parry">Parries</button><button data-g="dodge">Dodges</button><button data-g="armour">Armour turns it</button>
+ <b style="margin-left:10px">Blow</b>
+ <button data-x="0" class="on">Hurts</button><button data-x="1">Kills</button><button data-x="2" title="A cutting blow takes a limb; the target lives on without it, bleeding">Maims</button>
+</div>
+<div class="bar"><b>Lands on</b>
+ <button data-p="" class="on" title="Rolled as the game does: arrows a leg, an arm, the head, the chest or the belly; throws a leg, an arm or the chest">Rolled</button><button data-p="head">Head</button><button data-p="chest">Chest</button><button data-p="lower">Belly</button><button data-p="armR">Right arm</button><button data-p="armL">Left arm</button><button data-p="legR">Right leg</button><button data-p="legL">Left leg</button>
+ <span style="color:var(--muted);margin-left:6px">for shots and throws; the Defender buttons work on them too (Parries counts as taking it)</span>
+</div>
+<div class="bar"><b>Blow from</b>
+ <button data-f="front" class="on">Front</button><button data-f="back">Back</button><button data-f="left">Left</button><button data-f="right">Right</button>
+ <b style="margin-left:10px">Who</b>
+ <button data-w="next" class="on">Next unit</button><button data-w="all">All at once</button>
+ <b style="margin-left:10px">Speed</b>
+ <button data-s="1" class="on">Normal</button><button data-s="0.3">Slow</button>
+ <button id="reset" style="margin-left:10px">Reset</button>
+</div>
+<div class="bar"><b>World bosses</b>
+ <button class="go" data-boss="guardian" title="A mountain guardian: the mountains' own rock, moss and small pines on its shoulders, glowing crystals to strike (its crown, the core on its back, a band on its right forearm)">Mountain guardian</button>
+ <button class="go" data-boss="ent" title="A tree ent: bark, branch arms, root legs, a leaf crown; glowing sap knots to strike">Tree ent</button>
+ <button data-bmode="walk" title="It lumbers off, dust at each footfall">Walk</button>
+ <button data-bmode="idle" title="It stands and breathes">Stand</button>
+ <button data-bmode="shake" title="Slow heaves: each one tests a climber's Strength + Defence; fail and it is thrown off (lands alive)">Shake</button>
+ <button data-bmode="slam" title="Its attack: both fists raised overhead while the tiles they will strike glow red (time to run), brought down together: units on those tiles are thrown far (alive), those beside them knocked back. Then it stays bent over, fists on the ground, slow to rise">Slam</button>
+ <button data-bclimb="1" title="The nearest units climb its route (calf, thigh, back, core, shoulder, crown). Arena units' Strength + Defence by race: dwarves and orcs hold best, goblins and kobolds come off first">Climb on</button>
+ <button data-bhold="1" title="Its climbers grip the nearest handhold (the little rock knobs) and stay on: a gripping climber is not shaken off. Press again to climb on">Hold on</button>
+ <button data-bmode="fall" title="Its weak points struck: it falls, and a mountain of rock blocks rises where it lay, carrying whoever stands there up onto the tops">Fall</button>
+ <button data-bfeet="1" title="The tiles its feet hold (2 x 2 a foot), planted feet only: a lifted foot holds none">Feet</button>
+ <button data-bauto="1" title="On its own: it stands a while, walks a stretch, stands again (quick here; minutes in the game)">On its own</button>
+ <span style="color:var(--muted);margin-left:6px">they never attack: they walk and shake you off</span>
+</div>
+<div class="bar"><b>Pieces</b>
+ <button data-look="anim" title="Pictures of the 3D pieces from 16 sides, smooth-shaded (about 44 MB for every piece and tier)">Smooth pictures</button>
+ <button data-look="animpix" title="The same pictures made pixel art, the dragons' way (about 9 MB)">Pixel-art pictures</button>
+ <button data-look="animlive" title="The real 3D models, drawn live each frame, turning smoothly with the camera (no pictures to send; more work each frame)">Live 3D models</button>
+ <button data-look="animidx" class="on" title="The pixel-art pictures as palette pictures: one set for every tier, coloured on the page (about 1 MB), so players' own colours cost nothing to send">Palette pixel art</button>
+</div>
+<div class="bar"><b>World</b>
+ <button data-px="0" class="on" title="Drawn at the screen's own resolution">Smooth</button>
+ <button data-px="0.5" title="Drawn at half the screen's pixels and scaled up with hard edges">Pixel x2</button>
+ <button data-px="0.34" title="A third of the screen's pixels: a drawn pixel is 3 x 3 screen pixels">Pixel x3</button>
+ <button data-px="0.25" title="A quarter: very chunky">Pixel x4</button>
+ <span style="color:var(--muted);margin-left:6px">the whole 3D view drawn at fewer pixels, scaled up with hard edges</span>
+</div>
+<div class="bar"><b>Colours</b>
+ <button data-pal="" class="on" title="Each piece in its own tier's colours">Their own</button>
+ <button data-pal="metal=iron,trim=silver,paint=blue,paint2=white" title="Iron, silver trim, blue and white">Blue and silver</button>
+ <button data-pal="metal=black,trim=gold,paint=black,paint2=gold" title="Blackened steel, gold trim, black and gold">Black and gold</button>
+ <button data-pal="metal=silver,trim=gold,paint=green,paint2=white" title="Silver, gold trim, green and white">Green and white</button>
+ <button data-pal="metal=gold,trim=gold,paint=red,paint2=gold" title="All gold, red paint">All gold</button>
+ <button data-pal="random" title="Each unit its own house colours">House liveries</button>
+ <span style="color:var(--muted);margin-left:6px">players' own colours: in the Palette pixel art look</span>
+</div>
+<div class="bar"><b>Camera</b>
+ <button id="l">⟲ Turn</button><button id="r">Turn ⟳</button><button id="spin">Spin</button>
+ <button id="in">Zoom in</button><button id="out">Zoom out</button><button id="top">Higher</button><button id="low">Lower</button>
+</div>
+<div id="note">Ten units with their 3D pieces (smooth, 16 facings). Each animation goes to the next standing unit (or all of them); a skill is done at its nearest neighbour, which steps in for a blow. The elf is the archer.</div>
+<iframe id="f" src="animidx/replay.html?scene=g3anim&cx=40&cy=31&dist=6&pitch=0.62&yaw=0.785&dayp=0.4&clean=1"></iframe>
+<script>
+const f=document.getElementById('f');let from='front',who='next',spin=null;
+const W=()=>{try{return f.contentWindow}catch(e){return null}},E=s=>{const w=W();try{return w&&w.eval(s)}catch(e){console.log(e);return null}};
+const V=()=>E('typeof V3==="undefined"?null:V3');
+// the page zooms its interface to fit small windows; the bare view undoes it so it fills the frame
+setInterval(()=>{try{const d=f.contentDocument,w=f.contentWindow,c=d.getElementById('world3d');if(!c)return;if(!d.getElementById('arenaHide')){const st=d.createElement('style');st.id='arenaHide';st.textContent='body>*:not(canvas):not(#world3d):not(#food3d):not(#say3d):not(#marks3d):not(#dmgfloats):not(script):not(style){display:none!important}';d.head.appendChild(st)}   /* only the 3D view: the game's own interface stays out of the arena */const z=parseFloat(w.getComputedStyle(d.documentElement).zoom)||1,want=String(1/z);if(c.style.zoom!==want)c.style.zoom=want}catch(e){}},400);
+// world bosses (bosses.js): one at a time, behind the lineup, its back to the camera (the climbing routes face you)
+document.querySelectorAll('[data-boss]').forEach(b=>b.onclick=()=>{E(`(()=>{BS.list.length=0;const yaw=(V3.yaw||0)+Math.PI;window.__B=bsSpawn('${b.dataset.boss}',40-Math.sin(V3.yaw||0)*6,-31+Math.cos(V3.yaw||0)*-6,yaw)})()`);E('V3.dist=Math.max(V3.dist||0,22);V3.tdist=Math.max(V3.tdist||0,22)')});
+document.querySelectorAll('[data-bmode]').forEach(b=>b.onclick=()=>{const m=b.dataset.bmode;E(`(()=>{const B=window.__B;if(!B)return;if('${m}'==='walk')B.goal=[B.x+Math.sin(B.yaw)*12,B.z+Math.cos(B.yaw)*12];bsMode(B,'${m}')})()`)});
+document.querySelectorAll('[data-bhold]').forEach(b=>b.onclick=()=>{b.classList.toggle('on');E(`window.__B&&bsHoldOn(__B,${b.classList.contains('on')})`)});
+document.querySelectorAll('[data-bfeet]').forEach(b=>b.onclick=()=>{b.classList.toggle('on');E(`window.__B&&(__B.showFeet=${b.classList.contains('on')})`)});
+document.querySelectorAll('[data-bauto]').forEach(b=>b.onclick=()=>{b.classList.toggle('on');E(`window.__B&&(__B.auto=${b.classList.contains('on')},__B.next=null)`)});
+document.querySelectorAll('[data-bclimb]').forEach(b=>b.onclick=()=>E(`(()=>{const B=window.__B;if(!B)return;bsBones(B,performance.now()/1000);const K=bsKind(B.kind),ts=V3.things.filter(t=>t.g3&&!t.dead&&!t.g3doll).sort((p,q)=>Math.hypot(p.x-B.x,-p.y-B.z)-Math.hypot(q.x-B.x,-q.y-B.z)).slice(0,K.route.length);ts.forEach((t,i)=>bsRide(B,t,K.route[i%3],0.8+i*0.15))})()`));
+const pick=(sel,attr,set)=>document.querySelectorAll(sel).forEach(b=>b.onclick=()=>{document.querySelectorAll(sel).forEach(x=>x.classList.toggle('on',x===b));set(b.dataset[attr])});
+let guard='',kill=false,maim=false,part='';
+pick('[data-f]','f',v=>from=v);pick('[data-w]','w',v=>who=v);pick('[data-s]','s',v=>E('RD.slow='+v));pick('[data-g]','g',v=>guard=v);pick('[data-x]','x',v=>{kill=v==='1';maim=v==='2'});pick('[data-p]','p',v=>part=v);
+// a skill: the next unit at its nearest standing neighbour (all at once: each at its own neighbour)
+document.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>{const w=W(),S=standing();if(S.length<2)return;const A=who==='all'?S:[S[turnIx++%S.length]];
+ for(const a of A){const t=S.filter(u=>u!==a).sort((x,y)=>Math.hypot(x.x-a.x,x.y-a.y)-Math.hypot(y.x-a.x,y.y-a.y))[0];if(!t)continue;
+  w.skArgs=[a,b.dataset.k,t,{kill,maim,guard:guard||undefined,weapon:b.dataset.wp,part:part||undefined}];E('skAct(...window.skArgs)')}});
+// the standing units in lineup order, the archer (the elf, g34) kept for shooting
+const standing=()=>E('V3.things.filter(t=>t.g3&&t.ref!=="g34").sort((a,b)=>a.ref<b.ref?-1:1)')||[];
+let turnIx=0;const nextUnits=()=>{const S=standing();if(!S.length)return [];if(who==='all')return S;turnIx=turnIx%S.length;return [S[turnIx++]]};
+// the blow's way for a unit: from in front of it (toward it), behind, its left or right
+const blow=t=>{const d=t.dir||2,F=[((d&4)?1:0)-((d&8)?1:0),0,((d&2)?1:0)-((d&1)?1:0)],R=[-F[2],0,F[0]];const v=from==='front'?[-F[0],0,-F[2]]:from==='back'?F:from==='left'?R:[-R[0],0,-R[2]];return v};
+document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{const kind=b.dataset.a,w=W();for(const t of nextUnits()){
+ if(kind==='today'){E('V3.kills=V3.kills||new Map()');w.V3k=t;E('(t=>{V3.kills.set(t.x+","+t.y,performance.now());v3ghost(V3.disp.get(t.key));const i=V3.things.indexOf(t);if(i>=0)V3.things.splice(i,1)})(window.V3k)');continue}
+ w.rdArgs=[t,kind,blow(t),{live:b.dataset.live==='1'}];E('rdStart(...window.rdArgs)')}});
+// work: each job at a prop set down in front of the unit (east of it), the unit turned to it
+const PROP={mine:['rock',0.52,1],chop:['trunk',0.56,1.8],smith:['anvil',0.5,2.1],pick:['bush',0.34,1.1],gather:['mushrooms',0.26,1],harvest:['crop',0.32,1]};
+document.querySelectorAll('[data-work]').forEach(b=>b.onclick=()=>{const w=W(),job=b.dataset.work;for(const t of nextUnits()){const X=t.x+(PROP[job]?PROP[job][1]:0.6),Z=-t.y;
+ if(PROP[job]){w.wkP=[PROP[job][0],X,Z,0,PROP[job][2]];E('wkProp(...window.wkP)')}w.wkA=[t,job,[job==='fish'?t.x+2.2:job==='spearfish'?t.x+1:job==='netfish'?t.x+0.95:X,0,Z]];E('wkStart(...window.wkA)')}});
+document.querySelectorAll('[data-carry]').forEach(b=>b.onclick=()=>{const w=W();for(const t of nextUnits()){t.dir=4;w.wkA=[t,b.dataset.carry,2];E('wkCarry(...window.wkA)')}});
+document.querySelectorAll('[data-climb]').forEach(b=>b.onclick=()=>{const w=W(),sy=Math.sin(w.V3.yaw||0),cy=Math.cos(w.V3.yaw||0),al=f=>f[0]*-sy+f[1]*-cy,F=[[1,0],[-1,0],[0,1],[0,-1]].reduce((a,f)=>al(f)>al(a)?f:a);   /* the cliff on the far side from the eye: the climber shows its back */
+ for(const t of nextUnits()){const X=t.x+F[0],Z=-t.y+F[1];w.wkP=['cliff',X,Z,Math.atan2(-F[1],F[0]),1];E('wkProp(...window.wkP)');w.wkA=[t,[X,0,Z],1.85,4,b.dataset.climb==='up'];E('wkClimb(...window.wkA)')}});
+document.getElementById('workstop').onclick=()=>E('[...new Set(SK.acts.map(a=>a.t))].forEach(t=>wkStop(t));WK.props.length=0');
+document.querySelectorAll('[data-die]').forEach(b=>b.onclick=()=>{const w=W();for(const t of nextUnits()){w.dzArgs=[t,b.dataset.die];E('rdDie(...window.dzArgs)')}});
+document.getElementById('bandage').onclick=()=>E('V3.things.concat(RD.dolls.map(d=>d.t)).forEach(t=>rdBandage(t))');
+const shoot=kill=>{const w=W(),S=standing(),A=E('V3.things.find(t=>t.ref==="g34")');if(!A||!S.length)return;const T=who==='all'?S:[S[turnIx++%S.length]];
+ const res=guard==='block'?'block':guard==='armour'?'deflect':guard==='dodge'?'miss':'hit';
+ T.forEach((t,i)=>setTimeout(()=>{w.rdArgs=[A,t,kill,{res,dodge:guard==='dodge',part:part||undefined}];E('rdShoot(...window.rdArgs)')},i*1600))};
+document.getElementById('shoot').onclick=()=>shoot(false);document.getElementById('shootkill').onclick=()=>shoot(true);
+document.getElementById('reset').onclick=()=>{turnIx=0;f.src=f.src};
+// a pixel world: the view drawn at fewer pixels (preview.py's V3.pixScale)
+document.querySelectorAll('[data-px]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-px]').forEach(x=>x.classList.toggle('on',x===b));E('V3.pixScale='+(+b.dataset.px||0))});
+// players' own colours (the palette look colours its pictures on the page): metal, trim, paint, second paint
+const RAMPN=['iron','silver','gold','black','bronze','adamantium','red','blue','green','purple','white','plume'];
+document.querySelectorAll('[data-pal]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-pal]').forEach(x=>x.classList.toggle('on',x===b));const w=W(),v=b.dataset.pal;
+ const S=E('V3.things.filter(t=>t.g3)')||[];S.forEach(t=>{let pal=null;if(v==='random'){const pk=a=>a[Math.floor(Math.random()*a.length)];pal={metal:pk(['iron','silver','black','bronze']),trim:pk(['gold','silver','bronze']),paint:pk(['red','blue','green','purple','black','white']),paint2:pk(['white','gold','black','red'])}}
+  else if(v){pal={};for(const kv of v.split(',')){const [k,x]=kv.split('=');pal[k]=x}}
+  t.g3={...t.g3};if(pal)t.g3.pal=pal;else delete t.g3.pal;t.g3p=undefined;t.g3kk=undefined;w.V3k=t;E('(t=>{const kd=V3.disp.get(t.key);if(kd&&kd.rc)kd.rc.ep=null})(window.V3k)')})});
+// which pieces: the same scene staged three ways (preview.py: smooth pictures, pixel pictures, live models)
+document.querySelectorAll('[data-look]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-look]').forEach(x=>x.classList.toggle('on',x===b));turnIx=0;
+ const v=V(),q=new URL(f.src);if(v){q.searchParams.set('yaw',v.yaw.toFixed(3));q.searchParams.set('pitch',v.pitch.toFixed(3));q.searchParams.set('dist',v.dist.toFixed(2))}
+ q.pathname=q.pathname.replace(/\/(anim|animpix|animlive|animidx)\//,'/'+b.dataset.look+'/');f.src=q.toString()});
+// magic: the staffs and enchanted weapons (meshes.MAGIC), handed round the lineup in turn
+const MAGIC=['crystal staff','orb staff','skull staff','flame staff','nature staff','dragon staff','spider staff','rune sword','flame sword','frost axe','storm spear','void blade','holy mace','soul eater','bloodwhisker'];let magicIx=0;
+const giveAll=on=>{const w=W(),S=E('V3.things.filter(t=>t.g3).sort((a,b)=>a.ref<b.ref?-1:1)')||[];const got=[];
+ S.forEach((t,i)=>{if(on){if(t.g3own===undefined)t.g3own=t.g3.w||null;const m=MAGIC[(magicIx+i)%MAGIC.length];t.g3={...t.g3,w:m};got.push(m)}else if(t.g3own!==undefined){t.g3={...t.g3,w:t.g3own};if(!t.g3.w)delete t.g3.w;delete t.g3own}
+  t.g3p=undefined;t.g3kk=undefined;w.V3k=t;E('(t=>{const kd=V3.disp.get(t.key);if(kd&&kd.rc)kd.rc.ep=null})(window.V3k)')});
+ if(on)magicIx=(magicIx+S.length)%MAGIC.length;document.getElementById('magicnote').textContent=on?got.join(', '):''};
+document.getElementById('magic').onclick=()=>giveAll(true);document.getElementById('magicoff').onclick=()=>giveAll(false);
+const step=(k,d)=>{const v=V();if(v)v[k]+=d};
+document.getElementById('l').onclick=()=>step('yaw',-0.3);document.getElementById('r').onclick=()=>step('yaw',0.3);
+document.getElementById('in').onclick=()=>{const v=V();if(v)v.dist=Math.max(2,v.dist*0.8)};document.getElementById('out').onclick=()=>{const v=V();if(v)v.dist=Math.min(40,v.dist*1.25)};
+document.getElementById('top').onclick=()=>step('pitch',0.1);document.getElementById('low').onclick=()=>step('pitch',-0.1);
+document.getElementById('spin').onclick=e=>{if(spin){clearInterval(spin);spin=null;e.target.classList.remove('on')}else{spin=setInterval(()=>step('yaw',0.006),16);e.target.classList.add('on')}};
+// the ragdoll parts load once the page is up
+f.onload=()=>setTimeout(()=>E('typeof rdLoad==="function"&&rdLoad()'),800);
+</script></body></html>

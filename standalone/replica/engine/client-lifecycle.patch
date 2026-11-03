@@ -1,0 +1,13 @@
+--- OpenDreamClient/ClientVerbSystem.cs
++++ OpenDreamClient/ClientVerbSystem.cs
+@@
+     private void OnAllVerbsEvent(AllVerbsEvent e) {
++        _verbs.Clear();
+         _verbs.EnsureCapacity(e.Verbs.Count);
+--- OpenDreamClient/Interface/DreamInterfaceManager.cs
++++ OpenDreamClient/Interface/DreamInterfaceManager.cs
+@@
+         _inputManager.ResetAllBindings();
+         SetupBaseDreamBinds();
++        ClydeWindowIdToControl.Clear();
+     }

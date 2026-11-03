@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Work around https://github.com/dotnet/project-system/issues/4314 -->
+    <TargetFramework>$(TargetFramework)</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <IsPackable>false</IsPackable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\bin\Content.Tests\</OutputPath>
+    <Configurations>Debug;Release;Tools</Configurations>
+    <Platforms>AnyCPU</Platforms>
+    <Nullable>enable</Nullable>
+    <NoWarn>NU1507</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>Content.Tests</RootNamespace>
+    <AssemblyName>Content.Tests</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit.ConsoleRunner" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Serilog" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DMCompiler\DMCompiler.csproj" />
+    <ProjectReference Include="..\OpenDreamClient\OpenDreamClient.csproj" />
+    <ProjectReference Include="..\OpenDreamServer\OpenDreamServer.csproj" />
+    <ProjectReference Include="..\OpenDreamShared\OpenDreamShared.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\RobustToolbox\Imports\Client.props" />
+  <Import Project="..\RobustToolbox\Imports\Server.props" />
+  <Import Project="..\RobustToolbox\Imports\Shared.props" />
+  <Import Project="..\RobustToolbox\Imports\Testing.props" />
+
+  <ItemGroup>
+    <!-- Copy DMProject to output directory. -->
+    <Content Include="$(ProjectDir)\DMProject\**" CopyToOutputDirectory="PreserveNewest" LinkBase="DMProject\" />
+    <!-- Copy DMStandard to output directory. -->
+    <DMStandard Include="..\DMCompiler\DMStandard\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <!--
+    ImageSharp advisories that need to be suppressed pending a more permanent fix
+    -->
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-gwg2-r3hj-4w44" />
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-j3p4-wp97-rph4" />
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-j9gm-c75j-xc9q" />
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-jjfr-hcj7-qf5w" />
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-wmxv-xphr-5c9g" />
+  </ItemGroup>
+
+  <!-- Every .dm in the output is run as a test, so delete any whose source no longer exists -->
+  <Target Name="DeleteStaleDMProjectFiles" AfterTargets="CopyFilesToOutputDirectory">
+    <ItemGroup>
+      <DMProjectSource Include="$(ProjectDir)\DMProject\**" />
+      <StaleDMProjectFile Include="$(OutDir)\DMProject\**" Exclude="@(DMProjectSource->'$(OutDir)\DMProject\%(RecursiveDir)%(Filename)%(Extension)')" />
+    </ItemGroup>
+    <Delete Files="@(StaleDMProjectFile)" />
+  </Target>
+
+  <Target Name="CopyDMStandard" AfterTargets="AfterBuild">
+    <Copy SourceFiles="@(DMStandard)" DestinationFiles="@(DMStandard->'$(OutDir)\DMStandard\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="CopyDMStandardOnPublish" AfterTargets="Publish">
+    <Copy SourceFiles="@(DMStandard)" DestinationFiles="@(DMStandard->'$(PublishDir)\DMStandard\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
+</Project>

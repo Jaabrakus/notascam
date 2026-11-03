@@ -1,0 +1,36 @@
+--- a/OpenDreamRuntime/Resources/DMFResource.cs
++++ b/OpenDreamRuntime/Resources/DMFResource.cs
+@@ -5,6 +5,8 @@
+ namespace OpenDreamRuntime.Resources;
+ 
+ public sealed class DMFResource : DreamResource {
++    public string? DefaultBrowserId { get; private set; }
++    public string? DefaultBrowserOnShow { get; private set; }
+     public DMFResource(int id, byte[] data, ISerializationManager serializationManager) : base(id, data) {
+         ParseAndLoadResources(serializationManager);
+     }
+@@ -28,6 +30,10 @@
+ 
+         foreach (WindowDescriptor windowDescriptor in interfaceDescriptor.WindowDescriptors) {
+             foreach (ControlDescriptor controlDescriptor in windowDescriptor.ControlDescriptors) {
++                if (DefaultBrowserId == null && controlDescriptor is ControlDescriptorBrowser browser && browser.IsDefault.Value) {
++                    DefaultBrowserId = windowDescriptor.Id.Value + "." + browser.Id.Value;
++                    DefaultBrowserOnShow = browser.OnShowCommand.AsRaw();
++                }
+                 if (controlDescriptor is ControlDescriptorButton button) {
+                     if (!string.IsNullOrEmpty(button.Image.AsRaw())) {
+                         //we must queue these rather than load them directly, because otherwise IDs are wrong
+--- a/OpenDreamRuntime/DreamConnection.cs
++++ b/OpenDreamRuntime/DreamConnection.cs
+@@ -501,6 +501,11 @@
+                 }
+             }
+         }
++
++        var skin = _resourceManager.InterfaceFile;
++        window ??= skin?.DefaultBrowserId;
++        if (body != null && window == skin?.DefaultBrowserId && !string.IsNullOrWhiteSpace(skin?.DefaultBrowserOnShow))
++            WinSet(null, "command=" + HttpUtility.JavaScriptStringEncode(skin.DefaultBrowserOnShow, true));
+ 
+         var msg = new MsgBrowse() {
+             Size = size,

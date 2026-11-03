@@ -1,0 +1,102 @@
+using System.Runtime.InteropServices;
+using JetBrains.Annotations;
+using Api = OpenDreamRuntime.ByondApi.ByondApi;
+
+namespace OpenDreamRuntime.Procs;
+
+internal static partial class DMOpcodeHandlers {
+    private static ProcStatus CallExt(
+        DMProcState state,
+        DreamValue source,
+        DMProcState.DMStackArgumentInfo argumentsInfo) {
+        if(!source.TryGetValueAsString(out var dllName))
+            throw new DMException($"{source} is not a valid DLL");
+
+        using var popProc = state.Pop();
+        if(!popProc.TryGetValueAsString(out var procName)) {
+            throw new DMException($"{popProc} is not a valid proc name");
+        }
+
+        DreamProcArguments arguments = state.PopProcArguments(null, argumentsInfo);
+
+        // If we're on linux, we use a .so instead of a .dll
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux) && dllName.EndsWith(".dll")) {
+            dllName = dllName[..^"dll".Length] + "so";
+        }
+
+        if (procName.StartsWith("byond:")) {
+            return CallExtByond(state, dllName, procName, arguments);
+        } else {
+            return CallExtString(state, dllName, procName, arguments);
+        }
+    }
+
+    private static unsafe ProcStatus CallExtByond(
+        DMProcState state,
+        string dllName,
+        string procName,
+        [HandlesResourceDisposal] DreamProcArguments arguments) {
+        try {
+            // TODO: Don't allocate string copy
+            // TODO: Handle stdcall (do we care?)
+            var entryPoint = (delegate* unmanaged[Cdecl]<uint, ByondApi.CByondValue*, ByondApi.CByondValue>)
+                DllHelper.ResolveDllTarget(state.Proc.DreamResourceManager, dllName, procName["byond:".Length..]);
+
+            Span<ByondApi.CByondValue> args = stackalloc ByondApi.CByondValue[arguments.Count];
+            args.Clear();
+
+            for (var i = 0; i < args.Length; i++) {
+                var arg = arguments.GetArgument(i);
+                args[i] = Api.ValueToByondApi(arg);
+            }
+
+            using var result = Api.ValueFromDreamApi(Api.DoCall(entryPoint, args));
+            state.Push(result);
+            return ProcStatus.Continue;
+        } finally {
+            arguments.Dispose();
+        }
+    }
+
+    private static unsafe ProcStatus CallExtString(
+        DMProcState state,
+        string dllName,
+        string procName,
+        [HandlesResourceDisposal] DreamProcArguments arguments) {
+        Span<nint> argV = stackalloc nint[arguments.Count];
+        argV.Clear();
+        try {
+            var entryPoint = DllHelper.ResolveDllTarget(state.Proc.DreamResourceManager, dllName, procName);
+
+            for (var i = 0; i < argV.Length; i++) {
+                var arg = arguments.GetArgument(i).Stringify();
+
+                argV[i] = Marshal.StringToCoTaskMemUTF8(arg);
+            }
+
+            byte* ret;
+            if (arguments.Count > 0) {
+                fixed (nint* ptr = &argV[0]) {
+                    ret = entryPoint(arguments.Count, (byte**)ptr);
+                }
+            } else {
+                ret = entryPoint(0, (byte**)0);
+            }
+
+            if (ret == null) {
+                state.Push(DreamValue.Null);
+                return ProcStatus.Continue;
+            }
+
+            var retString = Marshal.PtrToStringUTF8((nint)ret);
+            state.Push(new DreamValue(retString));
+            return ProcStatus.Continue;
+        } finally {
+            arguments.Dispose();
+            foreach (var arg in argV) {
+                if (arg != 0)
+                    Marshal.ZeroFreeCoTaskMemUTF8(arg);
+            }
+        }
+    }
+}

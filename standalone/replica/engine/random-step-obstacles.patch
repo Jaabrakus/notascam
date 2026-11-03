@@ -1,0 +1,16 @@
+--- _Standard.dm
++++ _Standard.dm
+@@ -211,7 +211,12 @@
+ 	// BYOND's implementation seems to be heavily weighted in favor of Ref's dir.
+ 	var/dir = pick(NORTH, SOUTH, EAST, WEST, NORTHEAST, SOUTHEAST, SOUTHWEST, NORTHWEST)
+ 
+-	return get_step(Ref, dir)
++	var/turf/target = get_step(Ref, dir)
++	if (!target) return 0
++	if (Ref.density)
++		if (target.density) return 0
++		for (var/atom/A in target) if (A.density) return 0
++	return target
+ 
+ proc/step_towards(atom/movable/Ref as /atom/movable, /atom/Trg, Speed) as num
+ 	return Ref.Move(get_step_towards(Ref, Trg), get_dir(Ref, Trg))

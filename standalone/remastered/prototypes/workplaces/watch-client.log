@@ -1,0 +1,378 @@
+[DEBG] root: OS: macOS 26.3.1 Arm64
+[DEBG] root: .NET Runtime: .NET 10.0.13 osx-x64
+[DEBG] root: Server GC: False
+[DEBG] root: Processor: 10x VirtualApple @ 2.50GHz
+[DEBG] root: Available Memory: 16 GiB
+[DEBG] root: Architecture: X64
+[DEBG] root: Robust Version: 288.1.2.0
+[DEBG] root: Compile Options: FULL_RELEASE;RELEASE;EXCEPTION_TOLERANCE
+[DEBG] root: Intrinsics: X86Aes;Pclmulqdq;Popcnt;Sse;Sse2;Sse3;Ssse3;Sse41;Sse42;X86Base
+[INFO] res: Loading ContentPack: /Users/kiwimango/Downloads/Dungeon-Master-master/standalone/replica/runtime/macos-x64/server/Content.Client.zip...
+[INFO] clyde.win.sdl3: [system] App name: SDL Application
+[INFO] clyde.win.sdl3: [system] App version: <unspecified>
+[INFO] clyde.win.sdl3: [system] App ID: <unspecified>
+[INFO] clyde.win.sdl3: [system] SDL revision: SDL-3.4.8-release-3.4.8
+[DEBG] clyde.win.sdl3: [system] SDL chose video backend 'cocoa'
+[DEBG] clyde.win: SDL3 initialized, version: 3.4.8, video driver: "cocoa"
+[DEBG] clyde.ogl: OpenGL Vendor: Apple
+[DEBG] clyde.ogl: OpenGL Renderer: Apple M4
+[DEBG] clyde.ogl: OpenGL Version: 4.1 Metal - 90.5
+[DEBG] clyde.ogl: OpenGL Extensions: GL_ARB_blend_func_extended GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_ES2_compatibility GL_ARB_explicit_attrib_location GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader5 GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_occlusion_query2 GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shader_subroutine GL_ARB_shading_language_include GL_ARB_tessellation_shader GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_vertex_attrib_64bit GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_EXT_debug_label GL_EXT_debug_marker GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_sRGB_decode GL_APPLE_client_storage GL_APPLE_container_object_shareable GL_APPLE_flush_render GL_APPLE_rgb_422 GL_APPLE_row_bytes GL_APPLE_texture_range GL_NV_texture_barrier
+[DEBG] clyde.ogl: OpenGL capabilities:
+[DEBG] clyde.ogl:   khr_debug: False
+[DEBG] clyde.ogl:   sampler_objects: True
+[DEBG] clyde.ogl:   texture_swizzle: True
+[DEBG] clyde.ogl:   vertex_array_object: True
+[DEBG] clyde.ogl:   fence_sync: True
+[DEBG] clyde.ogl:   map_buffer: True
+[DEBG] clyde.ogl:   map_buffer_range: True
+[DEBG] clyde.ogl:   pixel_buffer_object: True
+[DEBG] clyde.ogl:   standard_derivatives: True
+[DEBG] clyde.ogl:   GLES: False
+[DEBG] clyde.ogl: Loading stock textures...
+[DEBG] clyde.ogl: Loading stock shaders...
+[DEBG] clyde.ogl: Creating various GL objects...
+[DEBG] clyde.ogl: Setting up RenderHandle...
+[DEBG] clyde.ogl: Setting viewport and rendering splash...
+[DEBG] clyde.oal: HRTF specifier count: 1
+[DEBG] clyde.oal: OpenAL Vendor: OpenAL Community
+[DEBG] clyde.oal: OpenAL Renderer: OpenAL Soft
+[DEBG] clyde.oal: OpenAL Version: 1.1 ALSOFT 1.24.3
+[DEBG] clyde.oal: HRTF status: Enabled
+[DEBG] font.system: Initializing system font manager implementation
+[DEBG] font.system: Done initializing system font manager in 00:00:00.0755299
+[DEBG] game: Loading Robust.Client.WebView
+[DEBG] robust.mod: Path for module "Robust.Client.WebView" is "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/engine/webview-webkit"
+[DEBG] robust.mod: Loading "Robust.Client.WebView, Culture=neutral, PublicKeyToken=null" from module "Robust.Client.WebView"
+[DEBG] game: Done pre-initializing Robust.Client.WebView
+[DEBG] res.mod: ENABLING assembly load context
+[DEBG] res.mod: ENABLING sandboxing
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamClient.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamShared.dll'
+[DEBG] res.mod: LOADING modules
+[DEBG] res.typecheck: Adding engine module directory: "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/engine/webview-webkit"
+[DEBG] res.typecheck: Checking assembly...
+[DEBG] res.typecheck: Checking assembly...
+[DEBG] res.typecheck: OpenDreamClient: Verifying IL...
+[DEBG] res.typecheck: OpenDreamShared: Verifying IL...
+[DEBG] res.typecheck: OpenDreamShared: Verified IL in 297.2046ms
+[DEBG] res.typecheck: OpenDreamClient: Verified IL in 367.842ms
+[DEBG] res.typecheck: References loaded... 617ms
+[DEBG] res.typecheck: References loaded... 616ms
+[DEBG] res.typecheck: Types... 619ms
+[DEBG] res.typecheck: Types... 619ms
+[DEBG] res.typecheck: Inheritance... 622ms
+[DEBG] res.typecheck: Inheritance... 623ms
+[DEBG] res.typecheck: Unmanaged methods... 623ms
+[DEBG] res.typecheck: Unmanaged methods... 623ms
+[DEBG] res.typecheck: Type abuse... 623ms
+[DEBG] res.typecheck: Type abuse... 624ms
+[DEBG] res.typecheck: Checked assembly in 639ms
+[DEBG] res.typecheck: Checked assembly in 639ms
+[DEBG] res.mod: Verified assemblies in 661ms
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamShared.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamClient.dll'
+[DEBG] res.mod: DONE loading modules: 00:00:00.7161785
+[DEBG] robust.mod: Resolved "Robust.Client.WebView, Version=288.1.0.0, Culture=neutral, PublicKeyToken=null" as assembly "Robust.Client.WebView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" from "Robust.Client.WebView"
+[INFO] mac.webview: Native WebKit renderer initialized
+[DEBG] res.preload: (Meta atlas 0) - cropped utilization: 1.30%, fill percentage: 0.52%
+[DEBG] res.preload: Preloaded 2 RSIs into 1 Atlas(es?) (0 not atlassed, 0 errored) in 00:00:00.0610319
+[DEBG] res.preload: Preloading textures...
+[DEBG] res.preload: Preloaded 13 textures (0 errored, 0 skipped) in 00:00:00.0046683
+[INFO] szr: Serializer Types Hash: 5524AD0491A975665135A4F47D381A0125D290F88F46A305B43DF83DFB8044FE
+[INFO] proto: Rebuilding entity prototype component cache took 6.32ms (3 unique component mappings)
+[INFO] client: Tickrate changed to: 30 on tick 1
+[INFO] client: Tickrate changed to: 1 on tick 1
+[DEBG] client: Runlevel changed to: Initialize
+[DEBG] root: Switching to state OpenDreamClient.States.MainMenu.MainMenuState
+[DEBG] client: Runlevel changed to: Connecting
+[DEBG] root: Switching to state OpenDreamClient.States.Connecting.ConnectingState
+[DEBG] net: Attempting to connect to 127.0.0.1 port 12391
+[DEBG] net: First attempt IP address is 127.0.0.1, second attempt 
+[DEBG] net: "127.0.0.1:12391": Status changed to InitiatedConnect, reason: "user called connect"
+[INFO] mac.webview: registered legacy keys CENTER, -, =, /
+[DEBG] net: "127.0.0.1:12391": Status changed to Connected, reason: "Connected to 76068412362166D3"
+[DEBG] net: Handshake completed, connection established.
+[INFO] net: Received message name string table.
+[INFO] net: Client completed serializer handshake.
+[INFO] net: Client completed transfer handshake.
+[INFO] cfg: Sending client info...
+[DEBG] client: Synchronized time base: 1: 00:00:00
+[INFO] client: Tickrate changed to: 30 on tick 0
+[INFO] client: Tickrate changed to: 1 on tick 0
+[INFO] player: Changing local session from null to localhost@Workplaces.
+[DEBG] clyde.win: Destroying window Window 2
+[DEBG] client: Runlevel changed to: Connected
+[DEBG] root: Switching to state OpenDreamClient.States.InGameState
+[INFO] clyde.oal: Set audio attenuation to LinearDistanceClamped
+[INFO] clyde.oal: Set doppler factor to 1.00
+[DEBG] opendream.view: Loading shaders...
+[DEBG] opendream.res: Cache directory is /OpenDream/Cache/127.0.0.1.12391
+[INFO] mac.webview: checking 6 interface windows for embedded layout
+[INFO] mac.webview: fitting embedded pane mapwindow
+[INFO] mac.webview: fitting embedded pane outputwindow
+[INFO] mac.webview: fitting embedded pane rpane
+[INFO] mac.webview: fitting embedded pane browserwindow
+[INFO] mac.webview: fitting embedded pane infowindow
+[INFO] state: Received Full GameState: to=276, sz=35634
+[INFO] state: Resetting all entity states to tick 276.
+[INFO] player: Attaching local player to Workplaces (5/n59, localhost@Workplaces).
+[DEBG] input.context: AttachedEnt has no InputComponent: entId=5, entProto=. Setting default "common" context...
+[DEBG] client: Runlevel changed to: InGame
+[INFO] mac.webview: panel=1 attached title=Land frame=(0.0, 720.0, 0.0, 0.0) parent=(0.0, 0.0, 1280.0, 720.0) visible=false
+[INFO] mac.webview: panel=1 attached title=Land frame=(0.0, 280.0, 640.0, 440.0) parent=(0.0, 0.0, 1280.0, 720.0) visible=true
+[INFO] mac.webview: panel=1 attached title=Land frame=(0.0, 0.0, 1280.0, 720.0) parent=(0.0, 0.0, 1280.0, 720.0) visible=true
+[INFO] mac.webview: resource http://127.0.0.1/browse_mapwindow.hud_2140539292.html status=200 bytes=1288986
+[INFO] mac.webview: overlay panel=1
+[INFO] mac.webview: loaded panel=1 url=http://127.0.0.1/browse_mapwindow.hud_2140539292.html
+[INFO] mac.webview: navigation byond://?rm=ready&value= handled=True
+[DEBG] opendream.res: Cache hit for remaster-unit-1.png but hashes did not match (hash: 71-24-28-24-39-4A-4C-C4-26-1A-61-4E-BE-0C-24-1E-73-05-93-95-A8-33-CD-F9-41-B2-3A-67-D6-29-74-E4). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-2.png but hashes did not match (hash: BE-92-DC-B9-90-F8-C7-28-8D-48-7B-6F-1F-37-6E-86-82-85-0B-6D-65-97-A1-DF-63-58-6B-7A-53-8C-59-27). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-3.png but hashes did not match (hash: 71-24-28-24-39-4A-4C-C4-26-1A-61-4E-BE-0C-24-1E-73-05-93-95-A8-33-CD-F9-41-B2-3A-67-D6-29-74-E4). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-4.png but hashes did not match (hash: 82-EC-41-B4-B8-86-C1-05-D1-0B-A0-56-12-87-39-6E-AF-9A-48-AE-88-8D-BA-02-BC-03-BD-5F-63-79-38-A6). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-area.png status=200 bytes=240
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-1.png?v=d965871d4245392a755c72475f9c9cbb status=200 bytes=1102
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-2.png?v=d965871d4245392a755c72475f9c9cbb status=200 bytes=1102
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-3.png?v=d965871d4245392a755c72475f9c9cbb status=200 bytes=1102
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-4.png?v=41e74d2dce3898488a9464855143df74 status=200 bytes=1060
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-daynight-sun.png status=200 bytes=242
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-interact.png status=200 bytes=195
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-all.png status=200 bytes=296
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-stop.png status=200 bytes=194
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-equip.png status=200 bytes=327
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-unequip.png status=200 bytes=383
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickwood.png status=200 bytes=285
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickstone.png status=200 bytes=422
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickfood.png status=200 bytes=572
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickores.png status=200 bytes=637
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickgems.png status=200 bytes=426
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickseeds.png status=200 bytes=242
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickingots.png status=200 bytes=538
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickbones.png status=200 bytes=454
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickskin.png status=200 bytes=277
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickarmour.png status=200 bytes=307
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pickarrows.png status=200 bytes=208
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropwood.png status=200 bytes=213
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropstone.png status=200 bytes=422
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropfood.png status=200 bytes=314
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropores.png status=200 bytes=376
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropgems.png status=200 bytes=393
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropbones.png status=200 bytes=386
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-dropingots.png status=200 bytes=438
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-droparmour.png status=200 bytes=358
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-tearskin.png status=200 bytes=257
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-tearmeat.png status=200 bytes=701
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-build.png status=200 bytes=216
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-digpaint.png status=200 bytes=228
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-digadd.png status=200 bytes=181
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-digremove.png status=200 bytes=170
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-autodig.png status=200 bytes=234
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-goto.png status=200 bytes=345
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-zup.png status=200 bytes=184
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-zdown.png status=200 bytes=187
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-waypoint.png status=200 bytes=268
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-warp.png status=200 bytes=207
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-coords.png status=200 bytes=209
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-pointer.png status=200 bytes=221
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-say.png status=200 bytes=224
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-msg.png status=200 bytes=234
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-who.png status=200 bytes=197
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-updates.png status=200 bytes=259
+[INFO] mac.webview: resource http://127.0.0.1/remaster-border-race.png status=200 bytes=194
+[INFO] mac.webview: navigation byond://?rm=view3dsize&value=15 handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3t-ground-grass.png status=200 bytes=284194
+[INFO] mac.webview: resource http://127.0.0.1/r3t-ground-earth.png status=200 bytes=254238
+[INFO] mac.webview: resource http://127.0.0.1/r3t-ground-stone.png status=200 bytes=266631
+[INFO] mac.webview: resource http://127.0.0.1/r3d-538de63d28ee0e6761dd061e0ae02b47.png status=200 bytes=512
+[INFO] mac.webview: resource http://127.0.0.1/r3u-e42020b70f081dc2d354373afb8393e6.png status=200 bytes=3782
+[INFO] mac.webview: resource http://127.0.0.1/r3u-c00ca77759867b4460794f5da69451e2.png status=200 bytes=3816
+[INFO] mac.webview: resource http://127.0.0.1/amb-forest.m4a status=200 bytes=944607
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.boom-0.m4a status=200 bytes=13580
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.boom-1.m4a status=200 bytes=14345
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.boom-2.m4a status=200 bytes=12301
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.boom-3.m4a status=200 bytes=12769
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.boom-4.m4a status=200 bytes=15345
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.boom-5.m4a status=200 bytes=12864
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.soft-0.m4a status=200 bytes=14086
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.soft-1.m4a status=200 bytes=15020
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.soft-2.m4a status=200 bytes=13202
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.roll-0.m4a status=200 bytes=33230
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.timp-0.m4a status=200 bytes=30650
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.timp-1.m4a status=200 bytes=29197
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.timp-2.m4a status=200 bytes=29444
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.timp-3.m4a status=200 bytes=24174
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.crash-0.m4a status=200 bytes=29587
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.hand-0.m4a status=200 bytes=12087
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.hand-1.m4a status=200 bytes=10464
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.hand-2.m4a status=200 bytes=14480
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.hand-3.m4a status=200 bytes=15097
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.hand-4.m4a status=200 bytes=11543
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.hand-5.m4a status=200 bytes=10483
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.low-0.m4a status=200 bytes=20516
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.low-1.m4a status=200 bytes=22088
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.low-2.m4a status=200 bytes=22866
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.low-3.m4a status=200 bytes=25694
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.gong-0.m4a status=200 bytes=53139
+[INFO] mac.webview: resource http://127.0.0.1/snd-wd.gong-1.m4a status=200 bytes=52217
+[INFO] mac.webview: navigation byond://?rm=hudprefs&value=%7B%22dm3dIso%22%3A%221%22%7D handled=True
+[DEBG] opendream.res: Cache miss for r3d-36ff0c4e1640150890ae8f2052597678.png, requesting from server.
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=boxrefs&value=ui-2-488792-0-4%2Cui-2-488792-0-3%2Cui-2-488792-0-2%2Cui-2-488792-0-1%7C0 handled=True
+[INFO] mac.webview: resource http://127.0.0.1/remaster-item-37386a4d2884789264b9bfed59a69aaf.png status=200 bytes=512
+[INFO] mac.webview: resource http://127.0.0.1/remaster-item-3cc61fde417400d4348b6f0eb74404cd.png status=200 bytes=512
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=33%7C22%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=35%7C16%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=26%7C36%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=tab&value=village handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=30%7C34%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=22%7C30%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wppaint&value=woodlot handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=33%7C23%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=view3dsize&value=27 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=35%7C22%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=view3dsize&value=28 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=44%7C20%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=paint3d&value=30%7C26%7C44%7C20 handled=True
+[DEBG] opendream.res: Cache miss for rmb-rm_rmbanner.png, requesting from server.
+[DEBG] opendream.res: Cache miss for rmb-rm_rmbench.png, requesting from server.
+[INFO] mac.webview: resource http://127.0.0.1/remaster-item-9ea8c0b7ad8173af88cdf0f26ff61409.png status=200 bytes=512
+[INFO] mac.webview: resource http://127.0.0.1/rmb-rm_rmbanner.png status=200 bytes=1618
+[INFO] mac.webview: resource http://127.0.0.1/rmb-rm_rmbench.png status=200 bytes=1618
+[INFO] mac.webview: resource http://127.0.0.1/r3u-89a9157568800523bd2ab7c0bc6349b6.png status=200 bytes=3576
+[INFO] mac.webview: resource http://127.0.0.1/r3u-75d065457c149477e73dd16bce475f1d.png status=200 bytes=3616
+[INFO] mac.webview: resource http://127.0.0.1/r3u-1f474d5d2e4a1f012adbb3780a9169e2.png status=200 bytes=4124
+[INFO] mac.webview: resource http://127.0.0.1/r3u-5dbb35b9a507a7174ed2b9ef87b71e77.png status=200 bytes=4110
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=27%7C19%7C handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-b4790aea6fd571fbb7c02714edc44c79.png status=200 bytes=4124
+[INFO] mac.webview: resource http://127.0.0.1/r3u-de26d10ce985175d72e61498f0bd6abf.png status=200 bytes=4092
+[DEBG] opendream.res: Cache miss for r3d-e6c88a0d51b44fb3502bd2e05022781e.png, requesting from server.
+[INFO] mac.webview: navigation byond://?rm=wp&value=w1%7Cupgrade%7Cbench handled=True
+[WARN] eng: MainLoop: Cannot keep up!
+[INFO] mac.webview: navigation byond://?rm=wp&value=w1%7Cupgrade%7Cshed handled=True
+[DEBG] opendream.res: Cache miss for rmb-rm_rmshed.png, requesting from server.
+[INFO] mac.webview: resource http://127.0.0.1/rmb-rm_rmshed.png status=200 bytes=1618
+[DEBG] opendream.res: Cache miss for r3d-21ef288de621648a15b98b563902def5.png, requesting from server.
+[INFO] mac.webview: navigation byond://?rm=wp&value=w1%7Cupgrade%7Ccartstop handled=True
+[DEBG] opendream.res: Cache miss for rmb-cartstop.png, requesting from server.
+[INFO] mac.webview: resource http://127.0.0.1/rmb-cartstop.png status=200 bytes=1618
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=29%7C22%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=28%7C19%7C handled=True
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=boxrefs&value=ui-2-488792-0-2%2Cui-2-488792-0-4%2Cui-2-488792-0-3%7C0 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=38%7C20%7C handled=True
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=click3d&value=38%7C20%7C%7C0%7C0 handled=True
+[DEBG] opendream.res: Cache hit for remaster-unit-2.png but hashes did not match (hash: 1A-38-AF-91-50-4A-C8-6C-76-2D-97-49-D7-DA-C3-27-79-B9-CE-D3-0C-19-91-6A-0F-39-A1-DA-34-D9-2C-90). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-3.png but hashes did not match (hash: 1A-38-AF-91-50-4A-C8-6C-76-2D-97-49-D7-DA-C3-27-79-B9-CE-D3-0C-19-91-6A-0F-39-A1-DA-34-D9-2C-90). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-4.png but hashes did not match (hash: B0-4C-9E-7D-53-C7-68-A4-85-12-97-9B-DC-04-61-9B-91-5D-3A-C8-0A-47-59-E1-08-EE-2C-29-35-E9-33-02). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-2.png?v=ae7922162035dff011a63eeeb9d60ec8 status=200 bytes=1224
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-3.png?v=ae7922162035dff011a63eeeb9d60ec8 status=200 bytes=1224
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-4.png?v=85d604c6781c18f6aa4b4d2a50174ddb status=200 bytes=1186
+[INFO] mac.webview: resource http://127.0.0.1/r3u-8e3cbac6dcbbef22aac481559044de84.png status=200 bytes=6898
+[INFO] mac.webview: resource http://127.0.0.1/r3u-20bd6984803efb1f78832354fee83bb3.png status=200 bytes=6834
+[INFO] mac.webview: resource http://127.0.0.1/r3u-dd6a0ab9539d1a2d7d5b5bf6a38f7c8d.png status=200 bytes=6634
+[INFO] mac.webview: resource http://127.0.0.1/r3u-0bb4818cdfeb4883ede248cf21a7cc53.png status=200 bytes=5790
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=31%7C20%7C%5B0x200003a%5D handled=True
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=click3d&value=31%7C21%7C%7C0%7C0 handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-ee07a6bb6cfbcfec2f597ec39c60230d.png status=200 bytes=5788
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=click3d&value=38%7C20%7C%7C0%7C0 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=38%7C20%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=14%7C34%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wppaint&value=woodlot handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=22%7C41%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=18%7C39%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=20%7C38%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=19%7C39%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wppaint&value=quarry handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=23%7C31%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=25%7C32%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=paint3d&value=23%7C31%7C25%7C32 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=19%7C39%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wppaint&value=quarry handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=28%7C19%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wp&value=w2%7Cremove handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=19%7C39%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wppaint&value=quarry handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=22%7C31%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=30%7C33%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=paint3d&value=22%7C31%7C30%7C33 handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-4f816b480b289f385bb540a0270eb721.png status=200 bytes=5574
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=26%7C22%7C handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-4150f9a4740eba47cfcc01b6489413fd.png status=200 bytes=5508
+[WARN] eng: MainLoop: Cannot keep up!
+[INFO] mac.webview: navigation byond://?rm=wp&value=w3%7Czone handled=True
+[INFO] mac.webview: navigation byond://?rm=wp&value=w3%7Czone handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=21%7C26%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wp&value=w3%7Czone handled=True
+[INFO] mac.webview: navigation byond://?rm=wp&value=w3%7Czone handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=32%7C31%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=20%7C34%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=paint3d&value=32%7C31%7C20%7C34 handled=True
+[DEBG] opendream.res: Cache hit for remaster-unit-1.png but hashes did not match (hash: 1A-38-AF-91-50-4A-C8-6C-76-2D-97-49-D7-DA-C3-27-79-B9-CE-D3-0C-19-91-6A-0F-39-A1-DA-34-D9-2C-90). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-1.png?v=1dc76a5374acf39732ab3145e31e8c15 status=200 bytes=1228
+[INFO] mac.webview: resource http://127.0.0.1/r3u-1429ee8bc18937c27570981879843797.png status=200 bytes=7434
+[INFO] mac.webview: resource http://127.0.0.1/r3u-ad441360e367561f9d774a33c2e9406d.png status=200 bytes=5526
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=27%7C21%7C handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-26f88dcb5e73832605915acf46ea9283.png status=200 bytes=512
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=16%7C37%7C handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-5288d76550d8892a092e390215d897d1.png status=200 bytes=7252
+[INFO] mac.webview: navigation byond://?rm=wppaint&value=woodlot handled=True
+[INFO] mac.webview: navigation byond://?rm=view3dsize&value=46 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=44%7C28%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=45%7C27%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=paint3d&value=38%7C20%7C45%7C27 handled=True
+[INFO] mac.webview: resource http://127.0.0.1/r3u-c6d6c2bdd24b2559edcb13cfec7ffcbc.png status=200 bytes=6650
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=15%7C27%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=wp&value=w4%7Czone handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=38%7C20%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=44%7C26%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=42%7C30%7C handled=True
+[INFO] mac.webview: navigation byond://?rm=paint3d&value=38%7C20%7C42%7C30 handled=True
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=click3d&value=42%7C30%7C%7C0%7C0 handled=True
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=29%7C31%7C handled=True
+[INFO] mac.webview: panel=1 focus game: was OverlayWebView inPage=true now=SDL3View
+[INFO] mac.webview: navigation byond://?rm=click3d&value=29%7C31%7C%7C0%7C0 handled=True
+[DEBG] opendream.res: Cache hit for remaster-unit-2.png but hashes did not match (hash: BE-92-DC-B9-90-F8-C7-28-8D-48-7B-6F-1F-37-6E-86-82-85-0B-6D-65-97-A1-DF-63-58-6B-7A-53-8C-59-27). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-3.png but hashes did not match (hash: BE-92-DC-B9-90-F8-C7-28-8D-48-7B-6F-1F-37-6E-86-82-85-0B-6D-65-97-A1-DF-63-58-6B-7A-53-8C-59-27). Re-requesting!
+[DEBG] opendream.res: Cache hit for remaster-unit-4.png but hashes did not match (hash: 71-24-28-24-39-4A-4C-C4-26-1A-61-4E-BE-0C-24-1E-73-05-93-95-A8-33-CD-F9-41-B2-3A-67-D6-29-74-E4). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-2.png?v=1dc76a5374acf39732ab3145e31e8c15 status=200 bytes=1228
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-3.png?v=1dc76a5374acf39732ab3145e31e8c15 status=200 bytes=1228
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-4.png?v=3dbc8c58b98257db7d08d87785cb45ac status=200 bytes=1196
+[INFO] mac.webview: resource http://127.0.0.1/r3u-f2e56b1b4558f6e37488fce3de6a9d50.png status=200 bytes=5492
+[INFO] mac.webview: resource http://127.0.0.1/r3u-f363f0b38843bb90b2c3cab3999820ae.png status=200 bytes=5686
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=27%7C16%7C handled=True
+[INFO] mac.webview: resource http://127.0.0.1/remaster-item-ca10a380734282898c82ecafc9f38394.png status=200 bytes=1094
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=43%7C-1%7C handled=True
+[DEBG] opendream.res: Cache miss for r3d-9ef1a4534fd5f41c9e9575423f75fea4.png, requesting from server.
+[DEBG] opendream.res: Cache miss for r3u-1a77cd60e02411d51b5bc31597f7e37a.png, requesting from server.
+[DEBG] opendream.res: Cache miss for r3u-41c659a9441c608948eddd71dc14166a.png, requesting from server.
+[DEBG] opendream.res: Cache miss for r3u-3683a819e52ca277fe51ecfbd1f370c4.png, requesting from server.
+[DEBG] opendream.res: Cache miss for r3u-0adabccb8d8168c41dafc97bb0625621.png, requesting from server.
+[INFO] mac.webview: resource http://127.0.0.1/r3u-1a77cd60e02411d51b5bc31597f7e37a.png status=200 bytes=512
+[INFO] mac.webview: resource http://127.0.0.1/r3u-68c2470d450dbfd658040ef832ad2a5c.png status=200 bytes=5682
+[INFO] mac.webview: resource http://127.0.0.1/r3u-75624e2ffcfc524255dc996ef6137220.png status=200 bytes=7238
+[INFO] mac.webview: resource http://127.0.0.1/r3u-78490ec4e4cc83db4ac9d7d2ba2561e5.png status=200 bytes=7342
+[DEBG] opendream.res: Cache hit for remaster-unit-1.png but hashes did not match (hash: 78-2A-39-89-56-B2-F7-F6-60-74-62-3C-C5-57-10-A0-C6-60-80-27-7D-18-A4-8A-37-A2-E7-12-B6-F0-5E-F9). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-1.png?v=ae7922162035dff011a63eeeb9d60ec8 status=200 bytes=1224
+[WARN] eng: MainLoop: Cannot keep up!
+[DEBG] opendream.res: Cache hit for remaster-unit-2.png but hashes did not match (hash: 78-2A-39-89-56-B2-F7-F6-60-74-62-3C-C5-57-10-A0-C6-60-80-27-7D-18-A4-8A-37-A2-E7-12-B6-F0-5E-F9). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-2.png?v=ae7922162035dff011a63eeeb9d60ec8 status=200 bytes=1224
+[INFO] mac.webview: resource http://127.0.0.1/remaster-item-9ea8c0b7ad8173af88cdf0f26ff61409.png status=200 bytes=512
+[DEBG] opendream.res: Cache hit for remaster-unit-3.png but hashes did not match (hash: 78-2A-39-89-56-B2-F7-F6-60-74-62-3C-C5-57-10-A0-C6-60-80-27-7D-18-A4-8A-37-A2-E7-12-B6-F0-5E-F9). Re-requesting!
+[INFO] mac.webview: resource http://127.0.0.1/remaster-unit-3.png?v=ae7922162035dff011a63eeeb9d60ec8 status=200 bytes=1224
+[WARN] eng: MainLoop: Cannot keep up!
+[INFO] mac.webview: navigation byond://?rm=hover3d&value=-26%7C24%7C handled=True
+[INFO] game: Shutting down! Reason: Main window closed
+[INFO] net: Resetting NetManager: Client shutting down
+[INFO] entity: Flushing entities. Entity count: 110
+[INFO] system.map: Grid grid (2/n2) changed parent. Old parent: Map Entity (1/n1). New parent: 0/n0D
+[INFO] player: Detaching local player from Workplaces (5/n59, localhost@Workplaces).
+[INFO] player: Local player is no longer attached to any entity.
+[INFO] system.map: Removing grid grid (2/n2)
+[INFO] system.map: Grid grid (4/n4) changed parent. Old parent: Map Entity (3/n3). New parent: 0/n0D
+[INFO] system.map: Removing grid grid (4/n4)
+[DEBG] clyde.win: Terminating SDL3
+[DEBG] game: Goodbye

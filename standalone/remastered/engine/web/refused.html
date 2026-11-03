@@ -1,0 +1,6 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Not signed in</title>
+<style>html,body{height:100%;margin:0;background:#141210;color:#e8dcc0;font:16px/1.4 Georgia,serif;display:flex;align-items:center;justify-content:center}
+main{max-width:420px;padding:0 16px;text-align:center}a{color:#d9b56a}</style></head>
+<body><main><p>This sign-in link can't be used: __WHY__.</p><p><a id="again" href="/">Sign in again</a></p></main>
+<script>document.getElementById('again').href='/'+location.search.replace(/([?&])token=[^&]*&?/,'$1').replace(/[?&]$/,'')</script></body></html>

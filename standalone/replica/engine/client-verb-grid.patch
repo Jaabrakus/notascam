@@ -1,0 +1,18 @@
+--- a/OpenDreamClient/Interface/Controls/UI/VerbPanelGrid.cs
++++ b/OpenDreamClient/Interface/Controls/UI/VerbPanelGrid.cs
+@@ -28,12 +28,13 @@
+         // Find the maximum amount of columns we can fit in the available space
+         if (float.IsPositiveInfinity(availableSize.X)) {
+             // Just go with 3 if we have infinite horizontal space
++            availableSize.X = largest.X * 3;
+             _columns = 3;
+         } else {
+-            _columns = Math.Min(
++            _columns = Math.Max(1, Math.Min(
+                 (int)(availableSize.X / largest.X),
+                 childCount
+-            );
++            ));
+         }
+ 
+         // The size of each cell with the given columns

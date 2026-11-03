@@ -1,0 +1,192 @@
+# NOTE:
+# Due to how this data is later serialized and accessed by the filter() native proc,
+# the ID of the shader must be the exact same as the BYOND string literal of the filter it correlates to.
+# i.e. filter(type="color"...) must correlate to a shader with id: color
+# This may later change (comment written Feb 13 '23) but, uh, watch out for that.
+
+#unimplemented shaders point to empty.swsl and do nothing
+
+- type: shader
+  id: outline
+  kind: source
+  path: "/Shaders/outline.swsl"
+  params:
+    color: "#FF000055"
+    size: 1
+
+- type: shader
+  id: greyscale
+  kind: source
+  path: "/Shaders/greyscale.swsl"
+
+- type: shader
+  id: blur
+  kind: source
+  path: "/Shaders/blur_horizontal.swsl"
+  params:
+    size: 1
+
+- type: shader
+  id: blur_vertical
+  kind: source
+  path: "/Shaders/blur_vertical.swsl"
+  params:
+    size: 1
+
+- type: shader
+  id: blockcolor
+  kind: source
+  path: "/Shaders/blockcolor.swsl"
+
+- type: shader
+  id: blend_overlay
+  kind: source
+  path: "/Shaders/blendoverlay.swsl"
+
+- type: shader
+  id: blend_add
+  kind: source
+  path: "/Shaders/blendadd.swsl"
+
+- type: shader
+  id: blend_subtract
+  kind: source
+  path: "/Shaders/blendsubtract.swsl"
+
+- type: shader
+  id: blend_multiply
+  kind: source
+  path: "/Shaders/blendmultiply.swsl"
+
+- type: shader
+  id: blend_inset_overlay
+  kind: source
+  path: "/Shaders/blendinsetoverlay.swsl"
+  
+- type: shader
+  id: color
+  kind: source
+  path: "/Shaders/colormatrix.swsl"
+  params:
+    colorMatrix: 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1
+    offsetVector: 0,0,0,0
+
+#unimplemented shaders point to empty.swsl and do nothing
+
+- type: shader
+  id: alpha
+  kind: source
+  path: "/Shaders/alpha.swsl"
+  params:
+    x: 0
+    y: 0
+    flags: 0  
+
+- type: shader
+  id: angular_blur
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0
+    size: 1   
+
+- type: shader
+  id: bloom
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    threshold: 0
+    size: 1    
+    offset: 0
+    alpha: 0
+
+- type: shader
+  id: displace
+  kind: source
+  path: "/Shaders/displacement.swsl"
+  params:
+    x: 0
+    y: 0
+    size: 0    
+
+- type: shader
+  id: drop_shadow
+  kind: source
+  path: "/Shaders/drop_shadow.swsl"
+  params:
+    x: 1
+    y: -1
+    size: 1
+    offset: 0
+    shadow_color: "#00000080"
+
+- type: shader
+  id: layer
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0   
+    icon: 0
+    render_source: 0
+    flags: 0
+    color: 0
+    transform: 0
+    blend_mode: 0
+
+- type: shader
+  id: motion_blur
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0
+
+- type: shader
+  id: radial_blur
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0
+    size: 0
+
+- type: shader
+  id: rays
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0   
+    size: 0
+    color: 0
+    offset: 0
+    density: 0
+    threshold: 0
+    factor: 0
+    flags: 0    
+
+- type: shader
+  id: ripple
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0   
+    size: 0
+    repeat: 0
+    radius: 0
+    falloff: 0
+    flags: 0 
+
+- type: shader
+  id: wave
+  kind: source
+  path: "/Shaders/empty.swsl"
+  params:
+    x: 0
+    y: 0   
+    size: 0
+    offset: 0
+    flags: 0 

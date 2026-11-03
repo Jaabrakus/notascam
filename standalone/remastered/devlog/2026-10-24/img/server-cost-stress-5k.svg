@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Server work per tick, stress arena (ms)">
+<style>
+.s{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.g{stroke:#e4e3df}.b1{fill:#2a78d6}.b2{fill:#eb6834}.lim{stroke:#e34948}
+@media (prefers-color-scheme: dark){.s{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.g{stroke:#3a3936}.b1{fill:#3987e5}.b2{fill:#d95926}.lim{stroke:#e66767}}
+text{font-family:-apple-system,Helvetica,Arial,sans-serif}
+</style>
+<rect class="s" width="760" height="330" rx="8"/>
+<text class="t1" x="20" y="30" font-size="17" font-weight="600">Server work per tick, stress arena (ms)</text>
+<text class="t2" x="20" y="52" font-size="12.5">tests/stress_check.dm, engine v5, no player windows; each tick has 100 ms. Lower is better.</text>
+<text class="t2" x="730" y="30" font-size="12.5" text-anchor="end">5,000 units</text>
+<rect class="b2" x="632.8" y="21" width="11" height="11" rx="2"/>
+<text class="t2" x="614.8" y="30" font-size="12.5" text-anchor="end">1,000 units</text>
+<rect class="b1" x="517.5999999999999" y="21" width="11" height="11" rx="2"/>
+<line class="g" x1="60" y1="280" x2="740" y2="280" stroke-width="1"/>
+<line class="lim" x1="60" y1="101.1" x2="740" y2="101.1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text class="t2" x="64" y="95.1" font-size="12">100 ms: the tick budget</text>
+<rect class="b1" x="126.3" y="261.6" width="46.0" height="18.4" rx="3"/>
+<text class="t2" x="149.3" y="255.6" font-size="12" text-anchor="middle">10.3</text>
+<rect class="b2" x="174.3" y="222.0" width="46.0" height="58.0" rx="3"/>
+<text class="t2" x="197.3" y="216.0" font-size="12" text-anchor="middle">32.4</text>
+<text class="t1" x="173.3" y="302" font-size="13" text-anchor="middle">standing</text>
+<rect class="b1" x="353.0" y="256.7" width="46.0" height="23.3" rx="3"/>
+<text class="t2" x="376.0" y="250.7" font-size="12" text-anchor="middle">13</text>
+<rect class="b2" x="401.0" y="203.6" width="46.0" height="76.4" rx="3"/>
+<text class="t2" x="424.0" y="197.6" font-size="12" text-anchor="middle">42.7</text>
+<text class="t1" x="400.0" y="302" font-size="13" text-anchor="middle">group moves</text>
+<rect class="b1" x="579.7" y="238.9" width="46.0" height="41.1" rx="3"/>
+<text class="t2" x="602.7" y="232.9" font-size="12" text-anchor="middle">23</text>
+<rect class="b2" x="627.7" y="80.0" width="46.0" height="200.0" rx="3"/>
+<text class="t2" x="650.7" y="74.0" font-size="12" text-anchor="middle">111.8</text>
+<text class="t1" x="626.7" y="302" font-size="13" text-anchor="middle">war (all marching)</text>
+</svg>

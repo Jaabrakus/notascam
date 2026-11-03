@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="202" viewBox="0 0 760 202" role="img" aria-label="Memory churned while the camera pans (MB a second)">
+<style>
+.s{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.g{stroke:#e4e3df}.b1{fill:#2a78d6}.b2{fill:#eb6834}.lim{stroke:#e34948}
+@media (prefers-color-scheme: dark){.s{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.g{stroke:#3a3936}.b1{fill:#3987e5}.b2{fill:#d95926}.lim{stroke:#e66767}}
+text{font-family:-apple-system,Helvetica,Arial,sans-serif}
+</style>
+<rect class="s" width="760" height="202" rx="8"/>
+<text class="t1" x="20" y="30" font-size="17" font-weight="600">Memory churned while the camera pans (MB a second)</text>
+<text class="t2" x="20" y="52" font-size="12.5">Real window, no input, camera panning 10 tiles a second, 2.5 min (tick_profile --pan 10 --metrics). Lower is better.</text>
+<text class="t1" x="220" y="89" font-size="13" text-anchor="end">old engine (v2)</text>
+<rect class="b1" x="230" y="75" width="410.0" height="20" rx="3"/>
+<text class="t2" x="648.0" y="89" font-size="12.5">83.2 MB/s (GC pause 15.7 ms/s)</text>
+<text class="t1" x="220" y="123" font-size="13" text-anchor="end">engine v5</text>
+<rect class="b1" x="230" y="109" width="358.8" height="20" rx="3"/>
+<text class="t2" x="596.8" y="123" font-size="12.5">72.8 MB/s (13.2 ms/s)</text>
+<text class="t1" x="220" y="157" font-size="13" text-anchor="end">v5, 2D layer hidden</text>
+<rect class="b1" x="230" y="143" width="175.4" height="20" rx="3"/>
+<text class="t2" x="413.4" y="157" font-size="12.5">35.6 MB/s (9.3 ms/s)</text>
+</svg>

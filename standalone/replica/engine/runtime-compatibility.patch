@@ -1,0 +1,1544 @@
+--- a/OpenDreamRuntime/AtomManager.cs
++++ b/OpenDreamRuntime/AtomManager.cs
+@@ -67,14 +67,17 @@
+         }
+     }
+ 
+-    public IEnumerable<DreamObjectAtom> EnumerateAtoms(TreeEntry? filterType = null) {
++    public IEnumerable<DreamObjectAtom> EnumerateAtoms(TreeEntry? filterType = null) =>
++        EnumerateAtoms(filterType, includeMobsForMovable: false);
++
++    public IEnumerable<DreamObjectAtom> EnumerateAtoms(TreeEntry? filterType, bool includeMobsForMovable) {
+         // Order of world.contents:
+         //  Mobs + Other Movables + Areas + Turfs
+ 
+         if (filterType == _objectTree.Atom) // Filtering by /atom is the same as no filter
+             filterType = null;
+ 
+-        if (filterType?.IsSubtypeOf(_objectTree.Mob) != false) {
++        if ((includeMobsForMovable && filterType == _objectTree.Movable) || filterType?.IsSubtypeOf(_objectTree.Mob) != false) {
+             foreach (var mob in _refManager.EnumerateType(RefType.DreamObjectMob)) {
+                 if (filterType == null || mob.IsSubtypeOf(filterType))
+                     yield return (DreamObjectMob)mob;
+--- a/OpenDreamRuntime/ByondRandom.cs
++++ b/OpenDreamRuntime/ByondRandom.cs
+@@ -0,0 +1,44 @@
++namespace OpenDreamRuntime;
++
++// MT19937 with the output projections measured against BYOND 516.1655.
++// rand/prob use the high 24 bits; pick uses the low 16 bits of each draw.
++public sealed class ByondRandom : Random {
++    private readonly uint[] _state = new uint[624];
++    private int _index = 624;
++
++    public ByondRandom() : this(Environment.TickCount) { }
++    public ByondRandom(int seed) {
++        _state[0] = unchecked((uint)seed);
++        for (var i = 1; i < _state.Length; i++)
++            _state[i] = unchecked(1812433253u * (_state[i-1] ^ (_state[i-1] >> 30)) + (uint)i);
++    }
++
++    private uint Draw() {
++        if (_index == 624) {
++            for (var i = 0; i < 624; i++) {
++                var joined = (_state[i] & 0x80000000u) | (_state[(i+1)%624] & 0x7fffffffu);
++                _state[i] = _state[(i+397)%624] ^ (joined >> 1) ^ ((joined & 1) == 0 ? 0u : 0x9908b0dfu);
++            }
++            _index = 0;
++        }
++        var value = _state[_index++];
++        value ^= value >> 11;
++        value ^= (value << 7) & 0x9d2c5680u;
++        value ^= (value << 15) & 0xefc60000u;
++        return value ^ (value >> 18);
++    }
++
++    public override float NextSingle() => (Draw() >> 8) / 16777216f;
++    public override double NextDouble() => NextSingle();
++    protected override double Sample() => NextDouble();
++    public override int Next() => Next(int.MaxValue);
++    public override int Next(int maxValue) => Next(0, maxValue);
++    public override int Next(int minValue, int maxValue) {
++        if (minValue > maxValue) throw new ArgumentOutOfRangeException(nameof(maxValue));
++        // DM performs this multiplication at single precision before truncating.
++        // A double intermediate differs at rare integer boundaries.
++        return minValue + (int)(NextSingle() * ((long)maxValue-minValue));
++    }
++    public double NextWeight() => (Draw() & 65535u) / 65536.0;
++    public int NextPick(int count) => (int)(NextWeight() * count);
++}
+--- a/OpenDreamRuntime/DreamConnection.cs
++++ b/OpenDreamRuntime/DreamConnection.cs
+@@ -302,6 +302,16 @@
+             return;
+         }
+ 
++        if (value.TryGetValueAsDreamResource(out var outputResource) && outputResource.ResourcePath is { } outputPath &&
++            (outputPath.EndsWith(".wav", StringComparison.OrdinalIgnoreCase) || outputPath.EndsWith(".ogg", StringComparison.OrdinalIgnoreCase))) {
++            Session?.Channel.SendMessage(new MsgSound {
++                ResourceId = outputResource.Id,
++                Format = outputPath.EndsWith(".ogg", StringComparison.OrdinalIgnoreCase) ? MsgSound.FormatType.Ogg : MsgSound.FormatType.Wav,
++                SoundData = new SoundData { Channel = 0, Volume = 100, Offset = 0, Repeat = 0, File = outputPath }
++            });
++            return;
++        }
++
+         // Prune any remaining formatting
+         var message = value.Stringify();
+         message = StringFormatDecoder.RemoveFormatting(message);
+@@ -501,6 +511,11 @@
+                 }
+             }
+         }
++
++        var skin = _resourceManager.InterfaceFile;
++        window ??= skin?.DefaultBrowserId;
++        if (body != null && window == skin?.DefaultBrowserId && !string.IsNullOrWhiteSpace(skin?.DefaultBrowserOnShow))
++            WinSet(null, "command=" + HttpUtility.JavaScriptStringEncode(skin.DefaultBrowserOnShow, true));
+ 
+         var msg = new MsgBrowse() {
+             Size = size,
+--- a/OpenDreamRuntime/DreamManager.LocalHosting.cs
++++ b/OpenDreamRuntime/DreamManager.LocalHosting.cs
+@@ -0,0 +1,31 @@
++using System.IO;
++using OpenDreamRuntime.Objects.Types;
++
++namespace OpenDreamRuntime;
++
++public sealed partial class DreamManager {
++    // Opt-in local host control. A packaged single-player session must save before
++    // its server exits; the original game's continuously running server autosaves.
++    // This calls the original procedure and does not change its serialization.
++    private readonly string? _localSaveRequest = Environment.GetEnvironmentVariable("DM_LOCAL_SAVE_REQUEST");
++
++    private void ProcessLocalSaveRequest() {
++        if (string.IsNullOrEmpty(_localSaveRequest) || !File.Exists(_localSaveRequest)) return;
++        var token = File.ReadAllText(_localSaveRequest);
++        File.Delete(_localSaveRequest);
++        try {
++            var previousError = LastDMException;
++            if (!TryGetGlobalProc("SaveUnits", out var save))
++                throw new InvalidOperationException("The local world has no SaveUnits procedure");
++            save.Spawn(null, new()).Dispose();
++            if (!ReferenceEquals(previousError, LastDMException))
++                throw new InvalidOperationException("The game's SaveUnits procedure reported an error", LastDMException);
++            DreamObjectSavefile.FlushAllUpdates();
++            File.WriteAllText(_localSaveRequest + ".ack", token);
++            _sawmill.Info("Local host saved units before shutdown");
++        } catch (Exception error) {
++            File.WriteAllText(_localSaveRequest + ".error", error.ToString());
++            _sawmill.Error("Local host save failed: " + error.Message);
++        }
++    }
++}
+--- a/OpenDreamRuntime/DreamManager.cs
++++ b/OpenDreamRuntime/DreamManager.cs
+@@ -30,7 +30,7 @@
+     public List<string> GlobalNames { get; private set; } = new();
+     public HashSet<DreamObject> Clients { get; } = new();
+ 
+-    public Random Random { get; set; } = new();
++    public ByondRandom Random { get; set; } = new();
+     public DreamProc ImageConstructor, ImageFactoryProc;
+     public int ListPoolThreshold, ListPoolSize;
+     public Dictionary<WarningCode, ErrorLevel> OptionalErrors { get; private set; } = new();
+@@ -104,6 +104,8 @@
+     public void Update() {
+         if (!Initialized)
+             return;
++
++        ProcessLocalSaveRequest();
+ 
+         using (Profiler.BeginZone("Tick", color: (uint)Color.OrangeRed.ToArgb())) {
+             CurrentTickStart = Environment.TickCount64;
+--- a/OpenDreamRuntime/DreamValue.cs
++++ b/OpenDreamRuntime/DreamValue.cs
+@@ -288,11 +288,11 @@
+ 
+     [MethodImpl(MethodImplOptions.AggressiveInlining)]
+     public bool IsDreamObject<T>() where T : DreamObject {
+-        return _refValue is T;
++        return _refValue is T obj && !obj.Deleted;
+     }
+ 
+     public readonly bool TryGetValueAsDreamObject<T>([NotNullWhen(true)] out T? dreamObject) where T : DreamObject {
+-        if (_refValue is T dreamObjectValue) {
++        if (_refValue is T dreamObjectValue && !dreamObjectValue.Deleted) {
+             dreamObject = dreamObjectValue;
+             return true;
+         }
+--- a/OpenDreamRuntime/Input/MouseInputSystem.cs
++++ b/OpenDreamRuntime/Input/MouseInputSystem.cs
+@@ -15,7 +15,8 @@
+     [Dependency] private IDreamMapManager _mapManager = default!;
+     [Dependency] private IGameTiming _timing = default!;
+ 
+-    private readonly TimeSpan _doubleClickDelay = TimeSpan.FromMilliseconds(250);
++    private readonly TimeSpan _doubleClickDelay = TimeSpan.FromMilliseconds(500);
++    private readonly Dictionary<DreamConnection, (DreamObjectAtom Atom, int Button, TimeSpan Time, bool Paired)> _lastClicks = new();
+ 
+     public override void Initialize() {
+         base.Initialize();
+@@ -130,7 +131,12 @@
+         var clickParams = ConstructClickParams(e.Params);
+ 
+         // Double click fires before the second Click() fires
+-        if (_timing.RealTime - connection.LastClickTime <= _doubleClickDelay) {
++        var button = e.Params.Right ? 2 : e.Params.Middle ? 3 : 1;
++        var now = _timing.RealTime;
++        var isDouble = _lastClicks.TryGetValue(connection, out var last) && !last.Paired &&
++                       last.Atom == atom && last.Button == button && now - last.Time <= _doubleClickDelay;
++        _lastClicks[connection] = (atom, button, now, isDouble);
++        if (isDouble) {
+             connection.Client?.SpawnProc("DblClick", usr: usr,
+                 new DreamValue(atom),
+                 DreamValue.Null,
+--- a/OpenDreamRuntime/Map/DreamMapManager.cs
++++ b/OpenDreamRuntime/Map/DreamMapManager.cs
+@@ -411,20 +411,9 @@
+                     foreach (MapObjectJson mapObject in cellDefinition.Objects) {
+                         var objDef = CreateMapObjectDefinition(mapObject);
+ 
+-                        // TODO: Use modified types during compile so this hack isn't necessary
+-                        DreamObject obj;
+-                        if (objDef.IsSubtypeOf(_objectTree.Mob)) {
+-                            obj = new DreamObjectMob(objDef);
+-                        } else if (objDef.IsSubtypeOf(_objectTree.Movable)) {
+-                            obj = new DreamObjectMovable(objDef);
+-                        } else if (objDef.IsSubtypeOf(_objectTree.Atom)) {
+-                            obj = new DreamObjectAtom(objDef);
+-                        } else {
+-                            obj = new DreamObject(objDef);
+-                        }
+-
+-                        obj.InitSpawn(new(new DreamValue(turf)));
+-                        obj.DecRef();
++                        var seed = new MapSeed(objDef, blockX, blockY, block.Z);
++                        _mapSeeds.Add(seed);
++                        CreateSeedInstance(seed, turf);
+                     }
+                 }
+ 
+--- a/OpenDreamRuntime/Map/MapRepopulation.cs
++++ b/OpenDreamRuntime/Map/MapRepopulation.cs
+@@ -0,0 +1,48 @@
++using OpenDreamRuntime.Objects;
++using OpenDreamRuntime.Objects.Types;
++
++namespace OpenDreamRuntime.Map;
++
++// Keep original map placements independently of later movement and variable
++// changes. Tracking does not add a DM reference or prevent normal deletion.
++public sealed partial class DreamMapManager {
++    private sealed class MapSeed(DreamObjectDefinition definition, int x, int y, int z) {
++        public readonly DreamObjectDefinition Definition = definition;
++        public readonly int X = x, Y = y, Z = z;
++        public DreamObject? Instance;
++    }
++
++    private readonly List<MapSeed> _mapSeeds = new();
++    private bool _repopulating;
++
++    private void CreateSeedInstance(MapSeed seed, DreamObjectTurf turf) {
++        var definition = seed.Definition;
++        DreamObject obj;
++        if (definition.IsSubtypeOf(_objectTree.Mob))
++            obj = new DreamObjectMob(definition);
++        else if (definition.IsSubtypeOf(_objectTree.Movable))
++            obj = new DreamObjectMovable(definition);
++        else if (definition.IsSubtypeOf(_objectTree.Atom))
++            obj = new DreamObjectAtom(definition);
++        else
++            obj = new DreamObject(definition);
++        // Publish before New(): constructors can themselves call Repop().
++        seed.Instance = obj;
++        obj.InitSpawn(new(new DreamValue(turf)));
++        obj.DecRef();
++    }
++
++    public void Repopulate() {
++        if (_repopulating) return;
++        _repopulating = true;
++        try {
++            foreach (var seed in _mapSeeds) {
++                if (seed.Instance is { Deleted: false }) continue;
++                if (TryGetTurfAt((seed.X, seed.Y), seed.Z, out var turf))
++                    CreateSeedInstance(seed, turf);
++            }
++        } finally {
++            _repopulating = false;
++        }
++    }
++}
+--- a/OpenDreamRuntime/Objects/DreamIcon.cs
++++ b/OpenDreamRuntime/Objects/DreamIcon.cs
+@@ -21,7 +21,7 @@
+     private static readonly PngEncoder PngEncoder = new() { TextCompressionThreshold = 0 }; // Always encode the description in a zTXt chunk
+ 
+     public int Width, Height;
+-    public readonly Dictionary<string, IconState> States = new();
++    public readonly Dictionary<(string Name, bool Movement), IconState> States = new();
+ 
+     private IconResource? _cachedDMI;
+ 
+@@ -37,10 +37,13 @@
+     /// </summary>
+     public sealed class IconState {
+         public int Frames;
++        public bool Movement;
++        public bool Rewind;
++        public TimeSpan? SingleFrameDelay;
+         public readonly Dictionary<AtomDirection, List<IconFrame>> Directions = new();
+ 
+         public IconState Copy() {
+-            var copy = new IconState { Frames = Frames };
++            var copy = new IconState { Frames = Frames, Movement = Movement, Rewind = Rewind, SingleFrameDelay = SingleFrameDelay };
+ 
+             copy.Directions.EnsureCapacity(Directions.Count);
+             foreach (var pair in Directions) {
+@@ -118,26 +121,26 @@
+ 
+         int span = frameWidth * Math.Max(frameCount, 1);
+         Rgba32[] pixels = PixelArrayPool.Rent(span * frameHeight);
++        Array.Clear(pixels, 0, span * frameHeight);
+ 
+         int currentFrame = 0;
+         foreach (var iconStatePair in States) {
+             var iconState = iconStatePair.Value;
+-            ParsedDMIState newState = new(iconStatePair.Key) { Loop = false, Rewind = false };
+-
+-            newDescription.States.Add(newState.Name, newState);
++            ParsedDMIState newState = new(iconStatePair.Key.Name) { Loop = false, Rewind = iconState.Rewind, Movement = iconState.Movement };
++
++            newDescription.RegisterState(newState);
+ 
+             int exportedDirectionCount = DMIParser.GetExportedDirectionCount(iconState.Directions);
+             for (int directionIndex = 0; directionIndex < exportedDirectionCount; directionIndex++) {
+                 AtomDirection direction = DMIParser.DMIFrameDirections[directionIndex];
+-                int firstFrame = currentFrame;
+-
+-                currentFrame += iconState.Frames;
++                int firstFrame = currentFrame + directionIndex;
+                 if (!iconState.Directions.TryGetValue(direction, out var frames))
+                     continue; // Blank frames
+ 
+-                var newFrames = DrawFrames(pixels, firstFrame, frames, direction);
++                var newFrames = DrawFrames(pixels, firstFrame, frames, direction, exportedDirectionCount, iconStatePair.Key.Name, iconState.Movement);
+                 newState.Directions.Add(direction, newFrames);
+             }
++            currentFrame += iconState.Frames * exportedDirectionCount;
+         }
+ 
+         Image<Rgba32> dmiImage = Image.LoadPixelData<Rgba32>(pixels, span, frameHeight);
+@@ -156,6 +159,18 @@
+         return _cachedDMI;
+     }
+ 
++    internal void MaterializeOperations() {
++        if (_operations.Count == 0)
++            return;
++        var originalDelays = States.ToDictionary(pair => pair.Key, pair => pair.Value.SingleFrameDelay);
++        var current = GenerateDMI();
++        _operations.Clear();
++        States.Clear();
++        InsertStates(current, DreamValue.Null, DreamValue.Null, DreamValue.Null);
++        foreach (var pair in States)
++            pair.Value.SingleFrameDelay = originalDelays.GetValueOrDefault(pair.Key);
++    }
++
+     public void ApplyOperation(IDreamIconOperation operation) {
+         operation.OnApply(this);
+ 
+@@ -165,69 +180,83 @@
+     }
+ 
+     public void InsertStates(IconResource icon, DreamValue state, DreamValue dir, DreamValue frame,
+-        bool isConstructor = false) {
++        DreamValue moving = default, bool isConstructor = false, bool insertion = false, DreamIcon? sourceIcon = null) {
++        // Optional internal copy callers omit this struct argument; default(T)
++        // is an uninitialized DreamValue, distinct from DM's explicit null.
++        if (moving.Type == 0) moving = DreamValue.Null;
+         bool copyingAllDirs = !dir.TryGetValueAsInteger(out var dirVal);
+         bool copyingAllStates = !state.TryGetValueAsString(out var copyingState);
+-        bool copyingAllFrames = !frame.TryGetValueAsInteger(out var copyingFrame);
+-        // TODO: Copy movement states?
+-
+-        AtomDirection copyingDirection = (AtomDirection) dirVal;
+-        if (!Enum.IsDefined(copyingDirection) || copyingDirection == AtomDirection.None) {
++        // Constructor zero/negative frame selectors retain the full animation.
++        bool copyingAllFrames = !frame.TryGetValueAsInteger(out var copyingFrame) ||
++            (isConstructor && copyingFrame <= 0);
++        AtomDirection copyingDirection = (AtomDirection)dirVal;
++        if (!Enum.IsDefined(copyingDirection) || copyingDirection == AtomDirection.None)
+             copyingAllDirs = true;
+-        }
+-
+-        // The size of every state will be resized to match the largest state
+         Width = Math.Max(Width, icon.DMI.Width);
+         Height = Math.Max(Height, icon.DMI.Height);
+-
+-        if (copyingAllStates) {
+-            foreach (var copyStateName in icon.DMI.States.Keys) {
+-                InsertState(icon, copyStateName, copyStateName,
+-                    copyingAllDirs ? null : copyingDirection, copyingAllFrames ? null : copyingFrame,
+-                    forceSouth: isConstructor);
+-            }
+-        } else {
+-            InsertState(icon, isConstructor ? string.Empty : copyingState!, copyingState!,
+-                copyingAllDirs ? null : copyingDirection, copyingAllFrames ? null : copyingFrame,
+-                forceSouth: isConstructor);
+-        }
+-    }
+-
+-    private void InsertState(IconResource icon, string stateName, string copyingState, AtomDirection? dir = null,
+-        int? frame = null, bool forceSouth = false) {
+-        ParsedDMIState? inserting = icon.DMI.GetStateOrDefault(copyingState);
+-        if (inserting == null)
++        var allStates = icon.DMI.GetAllStates().Values;
++        if (insertion) {
++            // Insert's state/moving arguments name and classify the destination;
++            // the first source state provides pixels, regardless of its flag.
++            var first = allStates.FirstOrDefault();
++            if (first != null)
++                InsertState(icon, copyingState ?? string.Empty, first, moving.IsTruthy(),
++                    copyingAllDirs ? null : copyingDirection, copyingAllFrames ? null : copyingFrame);
+             return;
+-
++        }
++        // An absent constructor state name copies the entire original resource,
++        // ignoring dir/frame/moving selectors. A present empty state is distinct.
++        if (isConstructor && !copyingAllStates &&
++            !allStates.Any(source => source.Name == copyingState)) {
++            copyingAllStates = true;
++            copyingAllDirs = true;
++            copyingAllFrames = true;
++            moving = DreamValue.Null;
++        }
++        var selectedName = copyingAllStates ? null : icon.DMI.GetStateOrDefault(copyingState)?.Name;
++        var seen = new HashSet<(string, bool)>();
++        foreach (var source in allStates) {
++            if ((!copyingAllStates && source.Name != selectedName) || !seen.Add((source.Name, source.Movement))) continue;
++            if (!moving.IsNull && source.Movement != moving.IsTruthy()) continue;
++            // A selected movement-only extraction becomes a regular animation;
++            // unspecified moving keeps both source flags (BYOND constructor).
++            var destinationMovement = moving.IsNull && source.Movement;
++            var originalDelay = sourceIcon?.States.GetValueOrDefault((source.Name, source.Movement))?.SingleFrameDelay;
++            InsertState(icon, isConstructor && !copyingAllStates ? string.Empty : source.Name,
++                source, destinationMovement, copyingAllDirs ? null : copyingDirection,
++                copyingAllFrames ? null : copyingFrame, forceSouth: isConstructor, singleFrameDelay: originalDelay);
++        }
++    }
++
++    private void InsertState(IconResource icon, string stateName, ParsedDMIState inserting,
++        bool movement, AtomDirection? dir = null, int? frame = null, bool forceSouth = false, TimeSpan? singleFrameDelay = null) {
+         var insertingDirections = inserting.GetFrames(dir, frame - 1, asSouth: forceSouth);
+-
+-        if (!States.TryGetValue(stateName, out var iconState)) {
+-            iconState = new IconState();
+-        }
+-
++        var key = (stateName, movement);
++        if (!States.TryGetValue(key, out var iconState)) iconState = new IconState();
++        iconState.SingleFrameDelay = singleFrameDelay;
++        iconState.Movement = movement;
++        iconState.Rewind = inserting.Rewind;
+         foreach (var insertingPair in insertingDirections) {
+-            if (insertingPair.Value.Length == 0)
+-                continue;
+-
++            if (insertingPair.Value.Length == 0) continue;
+             List<IconFrame> iconFrames = new(insertingPair.Value.Length);
+-
+             foreach (var dmiFrame in insertingPair.Value) {
+-                iconFrames.Add(new IconFrame(icon.Texture, dmiFrame, icon.DMI.Width, icon.DMI.Height));
+-            }
+-
++                if (insertingPair.Value.Length == 1 && forceSouth)
++                    iconState.SingleFrameDelay = singleFrameDelay ?? dmiFrame.Delay;
++                // Only explicit constructor frame extraction resets delay.
++                // Copy the metadata: source resources and icon aliases share it.
++                var selectedFrame = forceSouth && frame.HasValue
++                    ? new ParsedDMIFrame { X = dmiFrame.X, Y = dmiFrame.Y, Delay = TimeSpan.FromMilliseconds(100) }
++                    : dmiFrame;
++                iconFrames.Add(new IconFrame(icon.Texture, selectedFrame, icon.DMI.Width, icon.DMI.Height));
++            }
+             iconState.Directions[insertingPair.Key] = iconFrames;
+             iconState.Frames = Math.Max(iconState.Frames, iconFrames.Count);
+         }
+-
+-        // Only add the state if it contains any frames
+-        if (!States.ContainsKey(stateName) && iconState.Frames > 0) {
+-            States.Add(stateName, iconState);
+-        }
+-
++        if (!States.ContainsKey(key) && iconState.Frames > 0) States.Add(key, iconState);
+         _cachedDMI = null;
+     }
+ 
+-    private ParsedDMIFrame[] DrawFrames(Rgba32[] pixels, int firstFrameIndex, List<IconFrame> frames, AtomDirection dir) {
++    private ParsedDMIFrame[] DrawFrames(Rgba32[] pixels, int firstFrameIndex, List<IconFrame> frames, AtomDirection dir, int directionStride, string stateName, bool movement) {
+         ParsedDMIFrame[] newFrames = new ParsedDMIFrame[frames.Count];
+         int x = firstFrameIndex * Width;
+         int imageSpan = FrameCount * Width;
+@@ -270,14 +299,17 @@
+             }
+ 
+             foreach (var operation in _operations) {
+-                if (operation.AppliedFrames <= firstFrameIndex + frameIndex)
++                if (operation.AppliedFrames <= firstFrameIndex + frameIndex * directionStride)
+                     break; // operation.AppliedFrames should be in ascending order; we can quit now
+ 
+                 var bounds = UIBox2i.FromDimensions(x, 0, Width, Height);
+-                operation.Operation.ApplyToFrame(pixels, imageSpan, frameIndex, dir, bounds);
+-            }
+-
+-            x += Width;
++                if (operation.Operation is DreamIconOperationBlendImage imageBlend)
++                    imageBlend.ApplyToFrame(pixels, imageSpan, frameIndex, dir, bounds, stateName, movement);
++                else
++                    operation.Operation.ApplyToFrame(pixels, imageSpan, frameIndex, dir, bounds);
++            }
++
++            x += Width * directionStride;
+         }
+ 
+         return newFrames;
+@@ -399,6 +431,7 @@
+ public sealed class DreamIconOperationBlendImage : DreamIconOperationBlend {
+     private readonly Image<Rgba32> _blending;
+     private readonly ParsedDMIState? _blendingState;
++    private readonly ParsedDMIState[] _blendingStates;
+ 
+     public DreamIconOperationBlendImage(BlendType type, int xOffset, int yOffset, DreamValue blending) : base(type, xOffset, yOffset) {
+         //TODO: Find a way to get rid of this!
+@@ -410,22 +443,37 @@
+ 
+         _blending = blendingIcon.Texture;
+         _blendingState = blendingIcon.DMI.States.Values.FirstOrDefault();
++        _blendingStates = blendingIcon.DMI.GetAllStates().Values.ToArray();
+     }
+ 
+     public override void OnApply(DreamIcon icon) {
+         if (_blendingState == null)
+             return;
+ 
++        if (icon.States.Any(pair => {
++                var source = SelectBlendingState(pair.Key.Name, pair.Value.Movement);
++                return source != null && (source.FrameCount > pair.Value.Frames ||
++                    source.Directions.Keys.Any(dir => !pair.Value.Directions.ContainsKey(dir)));
++            }))
++            icon.MaterializeOperations();
++
+         // If any states in the icon have less directions than the one we're blending onto it,
+         // We give them the new directions.
+-        foreach (var state in icon.States.Values) {
+-            foreach (var dir in _blendingState.Directions.Keys) {
++        foreach (var pair in icon.States) {
++            var state = pair.Value;
++            var source = SelectBlendingState(pair.Key.Name, state.Movement);
++            if (source == null)
++                continue;
++            foreach (var dir in source.Directions.Keys) {
+                 if (!state.Directions.ContainsKey(dir)) { // Direction doesn't exist, add it
+                     var newFrames = new List<DreamIcon.IconFrame>(state.Frames);
+ 
+-                    // Create the empty frames
++                    // BYOND expands from SOUTH after all prior operations.
++                    state.Directions.TryGetValue(AtomDirection.South, out var southFrames);
+                     for (int i = 0; i < state.Frames; i++) {
+-                        newFrames.Add(new(null, new ParsedDMIFrame(), icon.Width, icon.Height));
++                        newFrames.Add(southFrames != null && i < southFrames.Count
++                            ? southFrames[i]
++                            : new(null, new ParsedDMIFrame(), icon.Width, icon.Height));
+                     }
+ 
+                     state.Directions.Add(dir, newFrames);
+@@ -433,16 +481,60 @@
+             }
+         }
+ 
+-        // TODO: We add frames too
++        foreach (var pair in icon.States) {
++            var state = pair.Value;
++            var source = SelectBlendingState(pair.Key.Name, state.Movement);
++            if (source == null)
++                continue;
++            if (source.FrameCount <= state.Frames)
++                continue;
++            if (state.Frames == 1)
++                state.Rewind = source.Rewind;
++            foreach (var direction in state.Directions.Keys.ToArray()) {
++                var previous = state.Directions[direction];
++                if (previous.Count == 0)
++                    continue;
++                var expanded = new List<DreamIcon.IconFrame>(source.FrameCount);
++                for (int i = 0; i < source.FrameCount; i++) {
++                    var original = previous[i % previous.Count];
++                    var metadata = new ParsedDMIFrame {
++                        X = original.DMIFrame.X,
++                        Y = original.DMIFrame.Y,
++                        Delay = state.SingleFrameDelay ?? original.DMIFrame.Delay
++                    };
++                    expanded.Add(new(original.Image, metadata, original.Width, original.Height));
++                }
++                state.Directions[direction] = expanded;
++            }
++            state.Frames = source.FrameCount;
++            state.SingleFrameDelay = null;
++        }
+     }
+ 
+     public override void ApplyToFrame(Rgba32[] pixels, int imageSpan, int frame, AtomDirection dir, UIBox2i bounds) {
+-        if (_blendingState?.Directions.TryGetValue(dir, out var blendingDirFrames) is not true)
++        ApplySelectedState(pixels, imageSpan, frame, dir, bounds, _blendingState);
++    }
++
++    public void ApplyToFrame(Rgba32[] pixels, int imageSpan, int frame, AtomDirection dir, UIBox2i bounds, string stateName, bool movement) {
++        ApplySelectedState(pixels, imageSpan, frame, dir, bounds, SelectBlendingState(stateName, movement));
++    }
++
++    private ParsedDMIState? SelectBlendingState(string name, bool movement) {
++        return _blendingStates.FirstOrDefault(state => state.Name == name && state.Movement == movement)
++            ?? _blendingStates.FirstOrDefault(state => state.Name == name)
++            ?? _blendingState;
++    }
++
++    private void ApplySelectedState(Rgba32[] pixels, int imageSpan, int frame, AtomDirection dir, UIBox2i bounds, ParsedDMIState? source) {
++        if (source == null)
+             return;
+-        if (blendingDirFrames.Length <= frame)
++        if (!source.Directions.TryGetValue(dir, out var blendingDirFrames) &&
++            !source.Directions.TryGetValue(AtomDirection.South, out blendingDirFrames))
+             return;
+-
+-        var blendingFrame = blendingDirFrames[frame];
++        if (blendingDirFrames.Length == 0)
++            return;
++
++        var blendingFrame = blendingDirFrames[frame % blendingDirFrames.Length];
+ 
+         // Use the smaller of the two sizes if they're different
+         // TODO: 1,1 should be bottom left, not top left
+@@ -706,7 +798,7 @@
+             for (int x = bounds.Left; x < bounds.Right; x++) {
+                 int dstPixelPosition = (y * imageSpan) + x;
+ 
+-                copy[y, x] = pixels[dstPixelPosition];
++                copy[y - bounds.Top, x - bounds.Left] = pixels[dstPixelPosition];
+             }
+         }
+ 
+@@ -716,10 +808,10 @@
+                 int dstPixelPosition = (y * imageSpan) + x;
+ 
+                 pixels[dstPixelPosition] = _degrees switch {
+-                    90 => copy[size - 1 - x, y],
+-                    180 => copy[size - 1 - y, size - 1 - x],
+-                    270 => copy[x, size - 1 - y],
+-                    _ => copy[y, x]
++                    90 => copy[size - 1 - (x - bounds.Left), y - bounds.Top],
++                    180 => copy[size - 1 - (y - bounds.Top), size - 1 - (x - bounds.Left)],
++                    270 => copy[x - bounds.Left, size - 1 - (y - bounds.Top)],
++                    _ => copy[y - bounds.Top, x - bounds.Left]
+                 };
+             }
+         }
+--- a/OpenDreamRuntime/Objects/DreamObject.cs
++++ b/OpenDreamRuntime/Objects/DreamObject.cs
+@@ -99,6 +99,8 @@
+     public DreamObject(DreamObjectDefinition objectDefinition) {
+         ObjectDefinition = objectDefinition;
+         RefId = DreamRefManager.GetRef(this);
++        if (objectDefinition.Variables.TryGetValue("tag", out var initialTag) && initialTag.TryGetValueAsString(out var tag))
++            Tag = tag;
+ 
+ #if TOOLS
+          //if it's not null, subclasses have done their own allocation
+@@ -180,6 +182,9 @@
+     #region Variables
+ 
+     public virtual bool IsSaved(string name) {
++        if (this is Types.DreamObjectMob && name == "client") return false;
++        if (this is Types.DreamObjectAtom && name == "appearance") return false;
++        if (this is Types.DreamObjectMovable && name == "locs") return false;
+         return ObjectDefinition.Variables.ContainsKey(name)
+                && !ObjectDefinition.GlobalVariables.ContainsKey(name)
+                && !(ObjectDefinition.ConstVariables is not null && ObjectDefinition.ConstVariables.Contains(name))
+--- a/OpenDreamRuntime/Objects/Types/DatumPersistence.cs
++++ b/OpenDreamRuntime/Objects/Types/DatumPersistence.cs
+@@ -0,0 +1,175 @@
++using System.IO;
++using System.Linq;
++using System.Text.Json.Serialization;
++using OpenDreamRuntime.Objects;
++using OpenDreamRuntime.Procs;
++using OpenDreamRuntime.Resources;
++using OpenDreamShared.Resources;
++using SixLabors.ImageSharp;
++using SixLabors.ImageSharp.PixelFormats;
++
++namespace OpenDreamRuntime.Objects.Types;
++
++// A graph is required: selected units, ownership, inventory and ordinary DM
++// lists may contain aliases and cycles. The upstream tree serializer loses both.
++public sealed partial class DreamObjectSavefile {
++    private WriteGraph? _writeGraph;
++    private ReadGraph? _readGraph;
++    private const string GraphKey = ".opendream_graph";
++
++    public sealed class SfGraphReference : SfDreamJsonValue {
++        public int Id { get; set; }
++    }
++    public sealed class SfGraphTable : SfDreamJsonValue {
++        public List<GraphNode> Objects { get; set; } = new();
++    }
++    public sealed class GraphNode {
++        public string? Type { get; set; }
++        public SfDreamDir Fields { get; set; } = new();
++        public List<SfDreamJsonValue> Values { get; set; } = new();
++        public List<SfDreamJsonValue?> Associated { get; set; } = new();
++        public SfDreamJsonValue? IconData { get; set; }
++    }
++    private sealed class WriteGraph {
++        public readonly SfGraphTable Table = new();
++        public readonly Dictionary<DreamObject, int> Ids = new();
++    }
++    private sealed class ReadGraph(SfGraphTable table) {
++        public readonly SfGraphTable Table = table;
++        // Keep DreamValues alive until the whole graph has been restored.
++        public readonly Dictionary<int, DreamValue> Values = new();
++    }
++
++    public void WriteDatum(DreamObject datum) {
++        var outer = _writeGraph == null;
++        if (outer) {
++            _writeGraph = new WriteGraph();
++            CurrentDir[GraphKey] = _writeGraph.Table;
++        }
++        try {
++            foreach (var key in datum.ObjectDefinition.Variables.Keys) {
++                if (!datum.IsSaved(key)) continue;
++                using var value = datum.GetVariable(key);
++                CurrentDir[key] = EncodeGraphValue(value);
++            }
++            SavefilesToFlush.Add(this);
++        } finally {
++            if (outer) _writeGraph = null;
++        }
++    }
++
++    public void ReadDatum(DreamObject datum) {
++        var outer = _readGraph == null;
++        if (outer && CurrentDir.TryGetValue(GraphKey, out var graph) && graph is SfGraphTable table)
++            _readGraph = new ReadGraph(table);
++        try {
++            foreach (var key in CurrentDir.Keys.ToArray()) {
++                if (!datum.IsSaved(key)) continue;
++                using var value = DecodeGraphValue(CurrentDir[key]);
++                if (key == "contents" && datum is DreamObjectMovable container && value.TryGetValueAsDreamList(out var contents)) {
++                    foreach (var item in contents.EnumerateValues())
++                        if (item.TryGetValueAsDreamObject<DreamObjectMovable>(out var child)) child.SetLoc(container);
++                } else datum.SetVariable(key, value);
++            }
++        } finally {
++            if (outer && _readGraph != null) {
++                foreach (var value in _readGraph.Values.Values) value.Dispose();
++                _readGraph = null;
++            }
++        }
++    }
++
++    private SfDreamJsonValue EncodeGraphValue(DreamValue value) {
++        if (value.IsNull) return new SfDreamPrimitive();
++        if (!value.TryGetValueAsDreamObject(out var obj) || obj == null)
++            return SerializeDreamValue(value);
++        if (obj is DreamObjectSavefile) return SerializeDreamValue(value);
++        var graph = _writeGraph!;
++        if (graph.Ids.TryGetValue(obj, out var existing)) return new SfGraphReference { Id = existing };
++        var id = graph.Table.Objects.Count;
++        graph.Ids.Add(obj, id);
++        var node = new GraphNode();
++        graph.Table.Objects.Add(node);
++        if (obj is DreamList list) {
++            foreach (var item in list.EnumerateValues()) {
++                node.Values.Add(EncodeGraphValue(item));
++                if (list.ContainsKey(item)) {
++                    using var associated = list.GetValue(item);
++                    node.Associated.Add(EncodeGraphValue(associated));
++                } else node.Associated.Add(null);
++            }
++        } else {
++            node.Type = obj.ObjectDefinition.Type;
++            if (obj is DreamObjectIcon && DreamResourceManager.TryLoadIcon(value, out var icon))
++                node.IconData = SerializeDreamValue(new DreamValue(icon));
++            var directory = CurrentDir;
++            try {
++                CurrentDir = node.Fields;
++                obj.SpawnProc("Write", null, new DreamValue(this)).Dispose();
++            } finally { CurrentDir = directory; }
++        }
++        return new SfGraphReference { Id = id };
++    }
++
++    private DreamValue DecodeGraphValue(SfDreamJsonValue encoded) {
++        if (encoded is not SfGraphReference reference) return DeserializeJsonValue(encoded);
++        var graph = _readGraph ?? throw new InvalidDataException("Save reference has no object table");
++        if (graph.Values.TryGetValue(reference.Id, out var existing)) {
++            existing.IncRef();
++            return existing;
++        }
++        if (reference.Id < 0 || reference.Id >= graph.Table.Objects.Count)
++            throw new InvalidDataException("Save reference is outside the object table");
++        var node = graph.Table.Objects[reference.Id];
++        if (node.Type == null) {
++            var list = ObjectTree.CreateList();
++            var result = new DreamValue(list);
++            result.IncRef();
++            graph.Values.Add(reference.Id, result);
++            for (var i = 0; i < node.Values.Count; i++) {
++                using var item = DecodeGraphValue(node.Values[i]);
++                if (node.Associated[i] is { } associated) {
++                    using var data = DecodeGraphValue(associated);
++                    list.SetValue(item, data);
++                } else list.AddValue(item);
++            }
++            return result;
++        }
++        if (!ObjectTree.TryGetTreeEntry(node.Type, out var type))
++            throw new InvalidDataException("Unknown saved type: " + node.Type);
++        var obj = ObjectTree.CreateObject(type);
++        var value = new DreamValue(obj);
++        value.IncRef();
++        graph.Values.Add(reference.Id, value);
++        // BYOND calls New with initial fields, followed by Read. Cache first so
++        // recursive ownership references resolve to this very same object.
++        if (node.IconData != null) {
++            using var icon = DecodeGraphValue(node.IconData);
++            obj.InitSpawn(new DreamProcArguments(icon));
++        } else obj.InitSpawn(new DreamProcArguments());
++        var directory = CurrentDir;
++        try {
++            CurrentDir = node.Fields;
++            obj.SpawnProc("Read", null, new DreamValue(this)).Dispose();
++        } finally { CurrentDir = directory; }
++        return value;
++    }
++
++    private DreamValue RestoreFileValue(SfDreamFileValue file) {
++        var data = Convert.FromBase64String(file.Data);
++        // Reuse an unchanged packaged asset, preserving its icon resource type
++        // and identity. Otherwise reconstruct a typed image from the saved bytes.
++        if (!string.IsNullOrEmpty(file.Name) && File.Exists(file.Name)) {
++            var original = DreamResourceManager.LoadResource(file.Name);
++            if (original.ResourceData is { } bytes && bytes.AsSpan().SequenceEqual(data))
++                return new DreamValue(original);
++        }
++        var extension = file.Ext?.TrimStart('.').ToLowerInvariant();
++        if (extension is "dmi" or "png" or "bmp") {
++            var texture = Image.Load<Rgba32>(data);
++            var description = DMIParser.ParseDMI(new MemoryStream(data));
++            return new DreamValue(DreamResourceManager.CreateIconResource(data, texture, description));
++        }
++        return new DreamValue(DreamResourceManager.CreateResource(data));
++    }
++}
+--- a/OpenDreamRuntime/Objects/Types/DreamList.cs
++++ b/OpenDreamRuntime/Objects/Types/DreamList.cs
+@@ -1590,25 +1590,12 @@
+     public override DreamValue GetValue(DreamValue key) {
+         if (!key.TryGetValueAsInteger(out var index))
+             throw new DMException($"Invalid index into movable contents list: {key}");
+-        if (index < 1 || index > transform.ChildCount)
++        if (index < 1 || index > owner.OrderedContents.Count)
+             throw new DMException($"Out of bounds index on movable contents list: {index}");
+ 
+-        using var childEnumerator = transform.ChildEnumerator;
+-        while (index >= 1) {
+-            childEnumerator.MoveNext(out EntityUid child);
+-
+-            if (index == 1) {
+-                if (AtomManager.TryGetMovableFromEntity(child, out var childObject)) {
+-                    childObject.IncRef();
+-                    return new DreamValue(childObject);
+-                } else
+-                    throw new DMException($"Invalid child in movable contents list: {child}");
+-            }
+-
+-            index--;
+-        }
+-
+-        throw new DMException($"Out of bounds index on movable contents list after iterating: {key}");
++        var child = owner.OrderedContents[index - 1];
++        child.IncRef();
++        return new DreamValue(child);
+     }
+ 
+     public override List<DreamValue> GetValues() {
+@@ -1616,32 +1603,14 @@
+     }
+ 
+     public override IEnumerable<DreamValue> EnumerateValues() {
+-        using var childEnumerator = transform.ChildEnumerator;
+-
+-        while (childEnumerator.MoveNext(out EntityUid child)) {
+-            if (!AtomManager.TryGetMovableFromEntity(child, out var childObject))
+-                continue;
+-
+-            yield return new DreamValue(childObject);
+-        }
++        foreach (var child in owner.OrderedContents)
++            yield return new DreamValue(child);
+     }
+ 
+     public override int FindValue(DreamValue value, int start = 1, int end = 0) {
+-        if (end == 0 || end > transform.ChildCount) end = transform.ChildCount;
+-
+-        using var childEnumerator = transform.ChildEnumerator;
+-
+-        int i = 0;
+-        while (childEnumerator.MoveNext(out EntityUid child)) {
+-            if (!AtomManager.TryGetMovableFromEntity(child, out var childObject))
+-                continue;
+-            i++;
+-            if (i >= start && new DreamValue(childObject).Equals(value))
+-                return i;
+-            if (i > end)
+-                return 0;
+-        }
+-
++        if (end == 0 || end > owner.OrderedContents.Count + 1) end = owner.OrderedContents.Count + 1;
++        for (int i = Math.Max(start, 1); i < end; i++)
++            if (new DreamValue(owner.OrderedContents[i-1]).Equals(value)) return i;
+         return 0;
+     }
+ 
+@@ -1677,7 +1646,7 @@
+     }
+ 
+     public override int GetLength() {
+-        return transform.ChildCount;
++        return owner.OrderedContents.Count;
+     }
+ }
+ 
+--- a/OpenDreamRuntime/Objects/Types/DreamObjectIcon.cs
++++ b/OpenDreamRuntime/Objects/Types/DreamObjectIcon.cs
+@@ -25,13 +25,13 @@
+                 if (state.IsNull && dir.IsNull && frame.IsNull && moving.IsNull) {
+                     Icon.CopyFrom(iconObj.Icon);
+                 } else {
+-                    Icon.InsertStates(iconObj.Icon.GenerateDMI(), state, dir, frame, isConstructor: true);
++                    Icon.InsertStates(iconObj.Icon.GenerateDMI(), state, dir, frame, moving, isConstructor: true, sourceIcon: iconObj.Icon);
+                 }
+             } else {
+                 if (!DreamResourceManager.TryLoadIcon(icon, out var iconRsc))
+                     throw new DMException($"Cannot create an icon from {icon}");
+ 
+-                Icon.InsertStates(iconRsc, state, dir, frame, isConstructor: true);
++                Icon.InsertStates(iconRsc, state, dir, frame, moving, isConstructor: true);
+             }
+         }
+     }
+--- a/OpenDreamRuntime/Objects/Types/DreamObjectMovable.cs
++++ b/OpenDreamRuntime/Objects/Types/DreamObjectMovable.cs
+@@ -10,6 +10,7 @@
+     public EntityUid Entity;
+     public readonly DMISpriteComponent SpriteComponent;
+     public DreamObjectAtom? Loc;
++    public readonly List<DreamObjectMovable> OrderedContents = new();
+ 
+     // TODO: Cache this shit. GetWorldPosition is slow.
+     public Vector2i Position => (Vector2i?)TransformSystem?.GetWorldPosition(_transformComponent) ?? (0, 0);
+@@ -71,6 +72,7 @@
+     }
+ 
+     protected override void HandleDeletion() {
++        foreach (var child in OrderedContents.ToArray()) child.Delete();
+         SetLoc(null);
+         WalkManager.StopWalks(this);
+         Particles = null;
+@@ -128,9 +130,9 @@
+             case "x":
+             case "y":
+             case "z": {
+-                int x = (varName == "x") ? value.MustGetValueAsInteger() : X;
+-                int y = (varName == "y") ? value.MustGetValueAsInteger() : Y;
+-                int z = (varName == "z") ? value.MustGetValueAsInteger() : Z;
++                int x = (varName == "x") ? value.MustGetValueAsInteger() : Math.Max(1, X);
++                int y = (varName == "y") ? value.MustGetValueAsInteger() : Math.Max(1, Y);
++                int z = (varName == "z") ? value.MustGetValueAsInteger() : Math.Max(1, Z);
+ 
+                 DreamMapManager.TryGetTurfAt((x, y), z, out var newLoc);
+                 SetLoc(newLoc);
+@@ -175,6 +177,8 @@
+ 
+     public void SetLoc(DreamObjectAtom? loc) {
+         var oldLoc = Loc;
++        if (oldLoc is DreamObjectMovable oldOwner) oldOwner.OrderedContents.Remove(this);
++        if (loc is DreamObjectMovable newOwner) InsertContent(newOwner.OrderedContents);
+ 
+         loc?.IncRef();
+         Loc?.DecRef();
+@@ -211,7 +215,7 @@
+                 TransformSystem.SetParent(Entity, DreamMapManager.GetZLevelEntity(turf.Z));
+                 TransformSystem.SetWorldPosition(Entity, new Vector2(turf.X, turf.Y));
+ 
+-                turf.Cell.Movables.Add(this);
++                InsertContent(turf.Cell.Movables);
+                 if (oldLoc is null)
+                     IncRef();
+                 break;
+@@ -231,6 +235,17 @@
+         }
+     }
+ 
++    private void InsertContent(List<DreamObjectMovable> contents) {
++        if (this is not DreamObjectMob) {
++            int firstMob = contents.FindIndex(static item => item is DreamObjectMob);
++            if (firstMob >= 0) {
++                contents.Insert(firstMob, this);
++                return;
++            }
++        }
++        contents.Add(this);
++    }
++
+     private void SetScreenLoc(string? screenLoc) {
+         _screenLoc = screenLoc;
+         AtomManager.SetMovableScreenLoc(this, !string.IsNullOrEmpty(screenLoc) ? new ScreenLocation(screenLoc) : new ScreenLocation(0, 0, 0, 0));
+--- a/OpenDreamRuntime/Objects/Types/DreamObjectSavefile.cs
++++ b/OpenDreamRuntime/Objects/Types/DreamObjectSavefile.cs
+@@ -10,7 +10,7 @@
+ 
+ namespace OpenDreamRuntime.Objects.Types;
+ 
+-public sealed class DreamObjectSavefile : DreamObject {
++public sealed partial class DreamObjectSavefile : DreamObject {
+     public override bool ShouldCallNew => false;
+ 
+     /// <summary>
+@@ -296,7 +296,12 @@
+             return DeserializeJsonValue(CurrentDir);
+         }
+ 
+-        return DeserializeJsonValue(SeekTo(index, true)); //should create the path if it doesn't exist
++        if (CurrentDir.TryGetValue(GraphKey, out var graph) && graph is SfGraphTable table && _readGraph == null) {
++            _readGraph = new ReadGraph(table);
++            try { return DecodeGraphValue(SeekTo(index, true)); }
++            finally { foreach (var v in _readGraph.Values.Values) v.Dispose(); _readGraph = null; }
++        }
++        return DecodeGraphValue(SeekTo(index, true)); //should create the path if it doesn't exist
+     }
+ 
+     public void RemoveSavefileValue(string index) {
+@@ -367,7 +372,7 @@
+     public DreamValue DeserializeJsonValue(SfDreamJsonValue value) {
+         switch (value) {
+             case SfDreamFileValue sfDreamFileValue:
+-                return new DreamValue(DreamResourceManager.CreateResource(Convert.FromBase64String(sfDreamFileValue.Data)));
++                return RestoreFileValue(sfDreamFileValue);
+             case SfDreamListValue sfDreamListValue:
+                 var l = ObjectTree.CreateList();
+                 for (int i=0; i < sfDreamListValue.AssocKeys.Count; i++) {
+@@ -440,7 +445,7 @@
+                 var dreamResource = val.MustGetValueAsDreamResource();
+                 return new SfDreamFileValue {
+                     Name = dreamResource.ResourcePath,
+-                    Ext = dreamResource.ResourcePath!.Split('.').Last(),
++                    Ext = dreamResource is IconResource ? "dmi" : Path.GetExtension(dreamResource.ResourcePath),
+                     Length = dreamResource.ResourceData!.Length,
+                     Crc32 = CalculateCrc32(dreamResource.ResourceData),
+                     Data = Convert.ToBase64String(dreamResource.ResourceData)
+@@ -578,6 +583,8 @@
+     /// Dumb structs for savefile
+     /// </summary>
+     [JsonPolymorphic]
++    [JsonDerivedType(typeof(SfGraphReference), typeDiscriminator: "graphref")]
++    [JsonDerivedType(typeof(SfGraphTable), typeDiscriminator: "graphtable")]
+     [JsonDerivedType(typeof(SfDreamDir),  typeDiscriminator: "dir")]
+     [JsonDerivedType(typeof(SfDreamPrimitive), typeDiscriminator: "primitive")]
+     [JsonDerivedType(typeof(SfDreamType), typeDiscriminator: "typepath")]
+--- a/OpenDreamRuntime/Procs/DMOpcodeHandlers.cs
++++ b/OpenDreamRuntime/Procs/DMOpcodeHandlers.cs
+@@ -1662,6 +1662,8 @@
+                 case DMReference.Type.Self: {
+                     instance = state.Instance;
+                     proc = state.Proc;
++                    if (argumentInfo.Type == DMCallArgumentsType.None)
++                        argumentInfo = new(DMCallArgumentsType.FromProcArguments, 0);
+                     break;
+                 }
+                 case DMReference.Type.SuperProc: {
+@@ -2461,9 +2463,10 @@
+                 values[i] = (value, totalWeight);
+             }
+ 
+-            double pick = state.DreamManager.Random.NextDouble() * totalWeight;
+-            for (int i = 0; i < values.Length; i++) {
+-                if (pick < values[i].CumulativeWeight) {
++            double pick = state.DreamManager.Random.NextWeight() * totalWeight;
++            for (int i = values.Length - 1; i >= 0; i--) {
++                pick -= values[i].CumulativeWeight - (i == 0 ? 0 : values[i-1].CumulativeWeight);
++                if (pick < 0) {
+                     state.Push(values[i].Value);
+                     break;
+                 }
+@@ -2489,9 +2492,9 @@
+                 if (values.Count == 0)
+                     throw new DMException("pick() from empty list");
+ 
+-                state.Push(values[state.DreamManager.Random.Next(0, values.Count)]);
++                state.Push(values[state.DreamManager.Random.NextPick(values.Count)]);
+             } else {
+-                int pickedIndex = state.DreamManager.Random.Next(0, count);
++                int pickedIndex = state.DreamManager.Random.NextPick(count);
+                 var possibleValues = state.PopCount(count);
+ 
+                 // the way we're going about this is very important
+@@ -2571,7 +2574,7 @@
+                     return;
+ 
+                 dreamObject.OperatorOutput(b);
+-            } else if (a.TryGetValueAsFloatCoerceNull(out _)) { // no-op
++            } else if (a.TryGetValueAsFloatCoerceNull(out _) || a.TryGetValueAsString(out _)) { // no-op
+                 // TODO: When we have runtime pragmas we should probably emit a no-op runtime. They probably meant to do <<= not <<
+             } else {
+                 throw new NotImplementedException($"Unimplemented output operation between {a} and {b}");
+--- a/OpenDreamRuntime/Procs/DreamEnumerators.cs
++++ b/OpenDreamRuntime/Procs/DreamEnumerators.cs
+@@ -136,7 +136,7 @@
+ /// <code>for (var/obj/item/I in world)</code>
+ /// </summary>
+ internal sealed class WorldContentsEnumerator(AtomManager atomManager, TreeEntry? filterType) : IDreamValueEnumerator {
+-    private readonly IEnumerator<DreamObjectAtom> _enumerator = atomManager.EnumerateAtoms(filterType).GetEnumerator();
++    private readonly IEnumerator<DreamObjectAtom> _enumerator = atomManager.EnumerateAtoms(filterType, includeMobsForMovable: true).GetEnumerator();
+ 
+     public bool Enumerate(DMProcState state, DreamReference reference, DreamReference assocReference) {
+         bool success = _enumerator.MoveNext();
+--- a/OpenDreamRuntime/Procs/InitDreamObject.cs
++++ b/OpenDreamRuntime/Procs/InitDreamObject.cs
+@@ -1,6 +1,7 @@
+ using System.Text;
+ using JetBrains.Annotations;
+ using OpenDreamRuntime.Objects;
++using OpenDreamRuntime.Objects.Types;
+ 
+ namespace OpenDreamRuntime.Procs;
+ 
+@@ -111,7 +112,7 @@
+                         goto switch_start;
+ 
+                     var args = _arguments.AsSpan(0, _argumentCount);
+-                    var newProcState = newProc.CreateState(Thread, src, _usr, new DreamProcArguments(args));
++                    var newProcState = newProc.CreateState(Thread, src, src is DreamObjectMob ? src : _usr, new DreamProcArguments(args));
+                     Thread.PushProcState(newProcState);
+                     return ProcStatus.Called;
+                 }
+--- a/OpenDreamRuntime/Procs/Native/DreamProcNative.cs
++++ b/OpenDreamRuntime/Procs/Native/DreamProcNative.cs
+@@ -38,6 +38,7 @@
+         objectTree.SetGlobalNativeProc(DreamProcNativeRoot.NativeProc_fract);
+         objectTree.SetGlobalNativeProc(DreamProcNativeRoot.NativeProc_ftime);
+         objectTree.SetGlobalNativeProc(DreamProcNativeRoot.NativeProc_generator);
++        objectTree.SetGlobalNativeProc(DreamProcNativeWander.NativeProc_get_step_rand);
+         objectTree.SetGlobalNativeProc(DreamProcNativeRoot.NativeProc_get_step_to);
+         objectTree.SetGlobalNativeProc(DreamProcNativeRoot.NativeProc_get_steps_to);
+         objectTree.SetGlobalNativeProc(DreamProcNativeRoot.NativeProc_hascall);
+@@ -186,6 +187,16 @@
+         objectTree.SetNativeProc(objectTree.Icon, DreamProcNativeIcon.NativeProc_SwapColor);
+         objectTree.SetNativeProc(objectTree.Icon, DreamProcNativeIcon.NativeProc_Turn);
+ 
++        var oldRead = objectTree.Datum.ObjectDefinition.GetProc("Read");
++        var oldWrite = objectTree.Datum.ObjectDefinition.GetProc("Write");
++        objectTree.SetNativeProc(objectTree.Datum, DreamProcNativeDatum.NativeProc_Read);
++        objectTree.SetNativeProc(objectTree.Datum, DreamProcNativeDatum.NativeProc_Write);
++        var newRead = objectTree.Datum.ObjectDefinition.GetProc("Read");
++        var newWrite = objectTree.Datum.ObjectDefinition.GetProc("Write");
++        foreach (var proc in objectTree.Procs) {
++            if (proc != newRead && proc.SuperProc == oldRead) proc.SuperProc = newRead;
++            if (proc != newWrite && proc.SuperProc == oldWrite) proc.SuperProc = newWrite;
++        }
+         objectTree.SetNativeProc(objectTree.Savefile, DreamProcNativeSavefile.NativeProc_ExportText);
+         objectTree.SetNativeProc(objectTree.Savefile, DreamProcNativeSavefile.NativeProc_Flush);
+ 
+@@ -217,6 +228,7 @@
+ 
+         SetOverridableNativeProc(objectTree, objectTree.World, DreamProcNativeWorld.NativeProc_Error);
+         SetOverridableNativeProc(objectTree, objectTree.World, DreamProcNativeWorld.NativeProc_Reboot);
++        SetOverridableNativeProc(objectTree, objectTree.World, DreamProcNativeWorld.NativeProc_Repop);
+     }
+ 
+     /// <summary>
+--- a/OpenDreamRuntime/Procs/Native/DreamProcNativeDatum.cs
++++ b/OpenDreamRuntime/Procs/Native/DreamProcNativeDatum.cs
+@@ -0,0 +1,23 @@
++using OpenDreamRuntime.Objects;
++using OpenDreamRuntime.Objects.Types;
++using DreamValueTypeFlag = OpenDreamRuntime.DreamValue.DreamValueTypeFlag;
++
++namespace OpenDreamRuntime.Procs.Native;
++
++internal static class DreamProcNativeDatum {
++    [DreamProc("Write")]
++    [DreamProcParameter("F", Type = DreamValueTypeFlag.DreamObject)]
++    public static DreamValue NativeProc_Write(NativeProc.Bundle bundle, DreamObject? src, DreamObject? usr) {
++        if (bundle.GetArgument(0, "F").TryGetValueAsDreamObject<DreamObjectSavefile>(out var file))
++            file.WriteDatum(src!);
++        return DreamValue.Null;
++    }
++
++    [DreamProc("Read")]
++    [DreamProcParameter("F", Type = DreamValueTypeFlag.DreamObject)]
++    public static DreamValue NativeProc_Read(NativeProc.Bundle bundle, DreamObject? src, DreamObject? usr) {
++        if (bundle.GetArgument(0, "F").TryGetValueAsDreamObject<DreamObjectSavefile>(out var file))
++            file.ReadDatum(src!);
++        return DreamValue.Null;
++    }
++}
+--- a/OpenDreamRuntime/Procs/Native/DreamProcNativeIcon.cs
++++ b/OpenDreamRuntime/Procs/Native/DreamProcNativeIcon.cs
+@@ -42,7 +42,7 @@
+             if (!resourceManager.TryLoadIcon(newIcon, out var iconRsc))
+                 throw new DMException($"Cannot insert {newIcon}");
+ 
+-            ((DreamObjectIcon)src!).Icon.InsertStates(iconRsc, iconState, dir, frame); // TODO: moving & delay
++            ((DreamObjectIcon)src!).Icon.InsertStates(iconRsc, iconState, dir, frame, moving, insertion: true); // TODO: moving & delay
+             return DreamValue.Null;
+         }
+ 
+--- a/OpenDreamRuntime/Procs/Native/DreamProcNativeRoot.cs
++++ b/OpenDreamRuntime/Procs/Native/DreamProcNativeRoot.cs
+@@ -473,11 +473,12 @@
+ 
+         if (file.TryGetValueAsString(out var rscPath)) {
+             resource = bundle.ResourceManager.LoadResource(rscPath);
++            resource.ReloadFromDisk();
+         } else if (!file.TryGetValueAsDreamResource(out resource)) {
+             return DreamValue.Null;
+         }
+ 
+-        string? text = resource.ReadAsString();
++        string? text = resource.ResourceData == null ? null : System.Text.Encoding.UTF8.GetString(resource.ResourceData);
+         return (text != null) ? new DreamValue(text) : DreamValue.Null;
+     }
+ 
+@@ -958,7 +959,7 @@
+ 
+         if (arg.TryGetValueAsDreamObject<DreamObjectIcon>(out var iconObj)) {
+             // Fast path for /icon, we don't need to generate the entire DMI
+-            return new DreamValue(bundle.ObjectTree.CreateList(iconObj.Icon.States.Keys.ToArray()));
++            return new DreamValue(bundle.ObjectTree.CreateList(iconObj.Icon.States.Keys.Select(key => key.Name).Distinct().ToArray()));
+         } else if (bundle.ResourceManager.TryLoadIcon(arg, out var iconRsc)) {
+             return new DreamValue(bundle.ObjectTree.CreateList(iconRsc.DMI.States.Keys.ToArray()));
+         } else if (arg.IsNull) {
+@@ -1945,7 +1946,7 @@
+         } else if (bundle.Arguments.Length == 1) {
+             bundle.GetArgument(0, "L").TryGetValueAsInteger(out var high);
+ 
+-            return new DreamValue(bundle.DreamManager.Random.Next(high+1)); // rand() is inclusive on both ends
++            return new DreamValue((int)(bundle.DreamManager.Random.NextSingle() * (high + 1))); // rand() is inclusive on both ends
+         } else {
+             bundle.GetArgument(0, "L").TryGetValueAsInteger(out var low);
+             bundle.GetArgument(1, "H").TryGetValueAsInteger(out var high);
+@@ -1959,7 +1960,7 @@
+     public static DreamValue NativeProc_rand_seed(NativeProc.Bundle bundle, DreamObject? src, DreamObject? usr) {
+         bundle.GetArgument(0, "Seed").TryGetValueAsInteger(out var seed);
+ 
+-        bundle.DreamManager.Random = new Random(seed);
++        bundle.DreamManager.Random = new ByondRandom(seed);
+         return DreamValue.Null;
+     }
+ 
+@@ -2564,16 +2565,24 @@
+     }
+ 
+     private static void OutputToStatPanel(DreamRefManager refManager, DreamConnection connection, DreamValue name, DreamValue value) {
++        if (value.IsNull && (name.TryGetValueAsDreamList(out _) || name.TryGetValueAsDreamObject<DreamObjectAtom>(out _))) {
++            value = name;
++            name = DreamValue.Null;
++        }
+         if (name.IsNull && value.TryGetValueAsDreamList(out var list)) {
+             foreach (var item in list.EnumerateValues())
+                 OutputToStatPanel(refManager, connection, name, item);
+         } else {
+             string nameStr = name.Stringify();
++            string valueStr = value.Stringify();
+             string? atomRef = null;
+-            if (value.TryGetValueAsDreamObject<DreamObjectAtom>(out _)) // Atoms are clickable
++            if (value.TryGetValueAsDreamObject<DreamObjectAtom>(out var statAtom)) { // Atoms are clickable
+                 atomRef = refManager.GetRefString(value);
+-
+-            connection.AddStatPanelLine(nameStr, value.Stringify(), atomRef);
++                if (statAtom.GetVariable("suffix").TryGetValueAsString(out var suffix) && !string.IsNullOrEmpty(suffix))
++                    valueStr += " " + suffix;
++            }
++
++            connection.AddStatPanelLine(nameStr, valueStr, atomRef);
+         }
+     }
+ 
+@@ -2810,10 +2819,11 @@
+         DreamValue dirArg = bundle.GetArgument(0, "dir");
+         DreamValue angleArg = bundle.GetArgument(1, "angle");
+ 
+-        if (dirArg.TryGetValueAsDreamObject<DreamObjectIcon>(out var icon)) {
+-            DreamObjectIcon clonedIcon = icon.Clone();
+-
+-            icon.Turn(angleArg);
++        if (dirArg.TryGetValueAsDreamObject<DreamObjectIcon>(out _) ||
++            bundle.ResourceManager.TryLoadIcon(dirArg, out _)) {
++            var clonedIcon = new DreamObjectIcon(bundle.ObjectTree.Icon.ObjectDefinition);
++            clonedIcon.Initialize(new DreamProcArguments(new[] { dirArg }));
++            clonedIcon.Turn(angleArg);
+             return new(clonedIcon);
+         }
+ 
+@@ -2908,14 +2918,16 @@
+ 
+                     type = typeObj.ObjectDefinition.TreeEntry;
+                 } else if (typeValue.TryGetValueAsString(out var typeString)) {
+-                    if (typeString.EndsWith("/proc")) {
+-                        type = bundle.ObjectTree.GetTreeEntry(typeString.Substring(0, typeString.Length - 5));
+-                        addingProcs = type.ObjectDefinition.Procs.Values;
+-                    } else if (typeString.EndsWith("/verb")) {
+-                        type = bundle.ObjectTree.GetTreeEntry(typeString.Substring(0, typeString.Length - 5));
+-                        addingProcs = type.ObjectDefinition.Verbs?.Values ?? Enumerable.Empty<int>();
+-                    } else {
+-                        type = bundle.ObjectTree.GetTreeEntry(typeString);
++                    if (typeString.Length > 1) typeString = typeString.TrimEnd('/');
++                    if (typeString.EndsWith("/proc") || typeString.EndsWith("/verb")) {
++                        if (!bundle.ObjectTree.TryGetTreeEntry(typeString[..^5], out type))
++                            continue;
++                        var wantVerbs = typeString.EndsWith("/verb");
++                        var procDefinitions = bundle.ObjectTree.Procs;
++                        addingProcs = type.ObjectDefinition.Procs.Values.Where(id =>
++                            procDefinitions[id].IsVerb == wantVerbs);
++                    } else if (!bundle.ObjectTree.TryGetTreeEntry(typeString, out type)) {
++                        continue;
+                     }
+                 } else {
+                     continue;
+--- a/OpenDreamRuntime/Procs/Native/DreamProcNativeWander.cs
++++ b/OpenDreamRuntime/Procs/Native/DreamProcNativeWander.cs
+@@ -0,0 +1,41 @@
++using System.Linq;
++using OpenDreamRuntime.Objects;
++using OpenDreamRuntime.Objects.Types;
++using OpenDreamShared.Dream;
++using DreamValueTypeFlag = OpenDreamRuntime.DreamValue.DreamValueTypeFlag;
++
++namespace OpenDreamRuntime.Procs.Native;
++
++// Independently randomized wandering must never advance rand()/prob()/pick().
++// The unobstructed forward bias is measured against BYOND 516.1655. Its 5x5
++// edge-following rule is still an explicitly open compatibility difference.
++internal static class DreamProcNativeWander {
++    private static readonly Random Random = new();
++    private static readonly int[] Directions = [1, 5, 4, 6, 2, 10, 8, 9];
++
++    [DreamProc("get_step_rand")]
++    [DreamProcParameter("Ref", Type = DreamValueTypeFlag.DreamObject)]
++    public static DreamValue NativeProc_get_step_rand(NativeProc.Bundle bundle, DreamObject? src, DreamObject? usr) {
++        if (!bundle.GetArgument(0, "Ref").TryGetValueAsDreamObject<DreamObjectAtom>(out var atom))
++            return new(0);
++        atom.GetVariable("dir").TryGetValueAsInteger(out var facing);
++        var start = Array.IndexOf(Directions, facing);
++        if (start < 0) start = 0;
++        var side = Random.Next(2) == 0 ? 1 : -1;
++        Span<int> offsets = stackalloc int[] { 0, side, -side, 2*side, -2*side, 3*side, -3*side, 4 };
++        var dense = atom.GetVariable("density").IsTruthy();
++        foreach (var offset in offsets) {
++            var direction = (AtomDirection)Directions[(start + offset + 8) % 8];
++            var target = DreamProcNativeHelpers.GetStep(bundle.AtomManager, bundle.MapManager, atom, direction);
++            if (target == null) continue;
++            if (dense && (target.IsDense || target.Contents.GetValues().Any(value =>
++                    value.TryGetValueAsDreamObject<DreamObjectAtom>(out var other) && other != atom &&
++                    other.GetVariable("density").IsTruthy()))) continue;
++            if (Random.Next(8) == 0) continue;
++            if (offset == 4 && Random.Next(4) != 0) continue;
++            target.IncRef();
++            return new(target);
++        }
++        return new(0);
++    }
++}
+--- a/OpenDreamRuntime/Procs/Native/DreamProcNativeWorld.cs
++++ b/OpenDreamRuntime/Procs/Native/DreamProcNativeWorld.cs
+@@ -161,12 +161,22 @@
+         }
+     }
+ 
++    [DreamProc("Repop")]
++    public static DreamValue NativeProc_Repop(NativeProc.Bundle bundle, DreamObject? src, DreamObject? usr) {
++        ((OpenDreamRuntime.Map.DreamMapManager)bundle.MapManager).Repopulate();
++        return DreamValue.Null;
++    }
++
+     [DreamProc("Reboot")]
+     [DreamProcParameter("reason", Type = DreamValue.DreamValueTypeFlag.Float)]
+     public static DreamValue NativeProc_Reboot(NativeProc.Bundle bundle, DreamObject? src, DreamObject? usr) {
+         var server = IoCManager.Resolve<IBaseServer>();
+ 
+-        server.Shutdown("/world.Reboot() was called but restarting is very broken");
++        var request = Environment.GetEnvironmentVariable("DM_REBOOT_REQUEST");
++        if (string.IsNullOrEmpty(request))
++            throw new InvalidOperationException("World reboot requires the local server supervisor");
++        File.WriteAllText(request, "reboot");
++        server.Shutdown("World reboot requested");
+         return DreamValue.Null;
+     }
+ 
+--- a/OpenDreamRuntime/Procs/ProcScheduler.Delays.cs
++++ b/OpenDreamRuntime/Procs/ProcScheduler.Delays.cs
+@@ -8,7 +8,8 @@
+ public sealed partial class ProcScheduler {
+     [Dependency] private IGameTiming _gameTiming = default!;
+ 
+-    private PriorityQueue<DelayTicker, uint> _tickers = new();
++    private PriorityQueue<DelayTicker, (uint Tick, ulong Order)> _tickers = new();
++    private ulong _delayOrder;
+ 
+     // This is for deferred tasks that need to fire in the current tick.
+     private readonly Queue<TaskCompletionSource> _deferredTasks = new();
+@@ -63,7 +64,7 @@
+     /// </summary>
+     /// <param name="ticker"></param>
+     private void InsertTask(DelayTicker ticker) {
+-        _tickers.Enqueue(ticker, ticker.TicksAt);
++        _tickers.Enqueue(ticker, (ticker.TicksAt, _delayOrder++));
+     }
+ 
+     private void UpdateDelays() {
+--- a/OpenDreamRuntime/Resources/DMFResource.cs
++++ b/OpenDreamRuntime/Resources/DMFResource.cs
+@@ -5,6 +5,8 @@
+ namespace OpenDreamRuntime.Resources;
+ 
+ public sealed class DMFResource : DreamResource {
++    public string? DefaultBrowserId { get; private set; }
++    public string? DefaultBrowserOnShow { get; private set; }
+     public DMFResource(int id, byte[] data, ISerializationManager serializationManager) : base(id, data) {
+         ParseAndLoadResources(serializationManager);
+     }
+@@ -28,6 +30,10 @@
+ 
+         foreach (WindowDescriptor windowDescriptor in interfaceDescriptor.WindowDescriptors) {
+             foreach (ControlDescriptor controlDescriptor in windowDescriptor.ControlDescriptors) {
++                if (DefaultBrowserId == null && controlDescriptor is ControlDescriptorBrowser browser && browser.IsDefault.Value) {
++                    DefaultBrowserId = windowDescriptor.Id.Value + "." + browser.Id.Value;
++                    DefaultBrowserOnShow = browser.OnShowCommand.AsRaw();
++                }
+                 if (controlDescriptor is ControlDescriptorButton button) {
+                     if (!string.IsNullOrEmpty(button.Image.AsRaw())) {
+                         //we must queue these rather than load them directly, because otherwise IDs are wrong
+--- a/OpenDreamRuntime/Resources/DreamResourceManager.cs
++++ b/OpenDreamRuntime/Resources/DreamResourceManager.cs
+@@ -262,7 +262,8 @@
+     public bool SaveTextToFile(string filePath, string text) {
+         try {
+             Directory.GetParent(filePath)?.Create();
+-            File.WriteAllText(filePath, text);
++            File.AppendAllText(filePath, text.Replace("\r\n", "\n").Replace("\n", "\r\n") + "\r\n");
++            if (TryLoadResource(filePath, out var cached)) cached.ReloadFromDisk();
+         } catch (Exception) {
+             return false;
+         }
+--- a/OpenDreamRuntime/ServerVerbSystem.cs
++++ b/OpenDreamRuntime/ServerVerbSystem.cs
+@@ -20,6 +20,7 @@
+     private readonly List<VerbInfo> _verbs = new();
+     private readonly Dictionary<int, DreamProc> _verbIdToProc = new();
+     private readonly Dictionary<DreamConnection, List<(int, ClientObjectReference) /* verbId */>> _repeatingVerbs = new();
++    private readonly HashSet<(DreamConnection, int)> _repeatPressedThisTick = new();
+ 
+     private readonly ISawmill _sawmill = Logger.GetSawmill("opendream.verbs");
+ 
+@@ -39,6 +40,10 @@
+         if (verb.VerbId != null) // Verb has already been registered
+             return;
+ 
++        var meta = verb;
++        while (!meta.IsVerb && meta.SuperProc != null)
++            meta = meta.SuperProc;
++
+         var verbArguments = Array.Empty<VerbArg>();
+         if (verb.ArgumentTypes != null) {
+             verbArguments = new VerbArg[verb.ArgumentTypes.Count];
+@@ -51,7 +56,7 @@
+             }
+         }
+ 
+-        VerbAccessibility? verbAccessibility = verb.VerbSrc switch {
++        VerbAccessibility? verbAccessibility = meta.VerbSrc switch {
+             VerbSrc.View => VerbAccessibility.View, // TODO: Ranges on the view()/range() types
+             VerbSrc.InView => VerbAccessibility.InView,
+             VerbSrc.OView => VerbAccessibility.OView,
+@@ -85,19 +90,19 @@
+         }
+ 
+         var verbInfo = new VerbInfo {
+-            Name = verb.VerbName,
++            Name = meta.VerbName,
+ 
+             // TODO: default_verb_category
+             // Explicitly null category is hidden from verb panels, "" category becomes the default_verb_category
+             // But if default_verb_category is null, we hide it from the verb panel
+-            Category = verb.VerbCategory ?? string.Empty,
+-
+-            Invisibility = verb.Invisibility,
+-            HiddenAttribute = (verb.Attributes & ProcAttributes.Hidden) == ProcAttributes.Hidden,
+-            ShowInPopupAttribute = (verb.Attributes & ProcAttributes.HidePopupMenu) == 0,
++            Category = meta.VerbCategory ?? string.Empty,
++
++            Invisibility = meta.Invisibility,
++            HiddenAttribute = (meta.Attributes & ProcAttributes.Hidden) == ProcAttributes.Hidden,
++            ShowInPopupAttribute = (meta.Attributes & ProcAttributes.HidePopupMenu) == 0,
+             Accessibility = verbAccessibility.Value,
+             Arguments = verbArguments,
+-            Range = verb.VerbRange ?? 0
++            Range = meta.VerbRange ?? 0
+         };
+ 
+         verb.VerbId = _verbs.Count;
+@@ -139,18 +144,21 @@
+ 
+     public void RunRepeatingVerbs() {
+         using (Profiler.BeginZone("Repeating Verbs", color: (uint)Color.OrangeRed.ToArgb())) {
+-            foreach (var repeatingVerb in _repeatingVerbs) {
++            foreach (var repeatingVerb in _repeatingVerbs.ToArray()) {
+                 if (repeatingVerb.Value.Count == 0)
+-                    return;
++                    continue;
+                 var client = repeatingVerb.Key;
+                 var (verbId, srcRef) = repeatingVerb.Value.Last();
+ 
+                 var src = _dreamManager.GetFromClientReference(client, srcRef);
++                if (_repeatPressedThisTick.Contains((client, verbId)))
++                    continue; // already ran on key down
+                 if (src == null || !_verbIdToProc.TryGetValue(verbId, out var verb) || !CanExecute(client, src, verb))
+-                    return;
++                    continue;
+ 
+                 RunVerb(verb, $"repeating verb {verbId}", src, client);
+             }
++            _repeatPressedThisTick.Clear();
+         }
+     }
+ 
+@@ -167,8 +175,14 @@
+             _repeatingVerbs.Add(conn, list);
+         }
+ 
+-        if (list.All(tuple => tuple.Item1 != msg.VerbId))
++        if (list.All(tuple => tuple.Item1 != msg.VerbId)) {
+             list.Add((msg.VerbId, msg.Src));
++            var pressed = _dreamManager.GetFromClientReference(conn, msg.Src);
++            if (pressed != null && _verbIdToProc.TryGetValue(msg.VerbId, out var pressedVerb) && CanExecute(conn, pressed, pressedVerb)) {
++                _repeatPressedThisTick.Add((conn, msg.VerbId));
++                RunVerb(pressedVerb, $"repeating verb {msg.VerbId}", pressed, conn);
++            }
++        }
+     }
+ 
+     private void OnRepeatVerbStop(UnregisterRepeatVerbEvent msg, EntitySessionEventArgs args) {

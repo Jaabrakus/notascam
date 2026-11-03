@@ -1,0 +1,62 @@
+// The unit card's Health tab (remastered.html heroPanes): every body part the original tracks
+// (its state word, its health and whether it is still there) and the unit's conditions.
+// Read-only: the original's own variables, nothing changes here.
+
+proc/RemasterBodyPart(label, zone, has, state, hp, mx)
+	return list(list("n"=label, "z"=zone, "has"=has ? 1 : 0, "st"=(state && state != "N/A") ? "[state]" : "", "na"=(state == "N/A"), "hp"=round(hp), "max"=max(1, round(mx), round(hp))))
+
+// Limb maximums are declared only by the races that set them (dwarf.dm, goblin.dm ...).
+mob/Monsters/proc/RemasterRaceVar(name)
+	return (name in vars) && isnum(vars[name]) ? vars[name] : 0
+
+mob/Monsters/proc/RemasterHealthData()
+	var/list/P = list()
+	var/organ = max(1, OrganMaxHP)
+	P += RemasterBodyPart("Head", "head", HasHead, Head, HeadHP, organ)
+	P += RemasterBodyPart("Brain", "head", HasBrain, Brain, BrainHP, organ)
+	P += RemasterBodyPart("Left eye", "head", HasLeftEye, LeftEye, LeftEyeHP, organ)
+	P += RemasterBodyPart("Right eye", "head", HasRightEye, RightEye, RightEyeHP, organ)
+	P += RemasterBodyPart("Left ear", "head", HasLeftEar, LeftEar, LeftEarHP, organ)
+	P += RemasterBodyPart("Right ear", "head", HasRightEar, RightEar, RightEarHP, organ)
+	P += RemasterBodyPart("Nose", "head", HasNose, Nose, NoseHP, organ)
+	P += RemasterBodyPart("Teeth", "head", HasTeeth, Teeth, TeethHP, max(TeethHPMax, organ))
+	P += RemasterBodyPart("Throat", "head", HasThroat, Throat, ThroatHP, organ)
+	P += RemasterBodyPart("Heart", "torso", HasHeart, Heart, HeartHP, organ)
+	P += RemasterBodyPart("Left lung", "torso", HasLeftLung, null, LeftLungHP, organ)
+	P += RemasterBodyPart("Right lung", "torso", HasRightLung, null, RightLungHP, organ)
+	P += RemasterBodyPart("Stomach", "torso", HasStomach, null, StomachHP, organ)
+	P += RemasterBodyPart("Guts", "torso", HasGuts, null, GutsHP, organ)
+	P += RemasterBodyPart("Liver", "torso", HasLiver, null, LiverHP, organ)
+	P += RemasterBodyPart("Spleen", "torso", HasSpleen, null, SpleenHP, organ)
+	P += RemasterBodyPart("Left kidney", "torso", HasLeftKidney, null, LeftKidneyHP, organ)
+	P += RemasterBodyPart("Right kidney", "torso", HasRightKidney, null, RightKidneyHP, organ)
+	if(HasWings) P += RemasterBodyPart("Wings", "wings", HasWings, null, WingsHP, organ)
+	P += RemasterBodyPart("Left arm", "larm", HasLeftArm, LeftArm, LeftArmHP, max(RemasterRaceVar("LeftArmMaxHP"), organ))
+	P += RemasterBodyPart("Right arm", "rarm", HasRightArm, RightArm, RightArmHP, max(RemasterRaceVar("RightArmMaxHP"), organ))
+	P += RemasterBodyPart("Left leg", "lleg", HasLeftLeg, LeftLeg, LeftLegHP, max(RemasterRaceVar("LeftLegMaxHP"), organ))
+	P += RemasterBodyPart("Right leg", "rleg", HasRightLeg, RightLeg, RightLegHP, max(RemasterRaceVar("RightLegMaxHP"), organ))
+	// conditions: [text, severity 0 (fine) .. 5 (gravest)]
+	var/list/C = list()
+	if(BleedType) C += list(list("Bleeding [lowertext(BleedType == "Extremly" ? "extremely" : BleedType)]", (BleedType in list("Very Mildly", "Mildly")) ? 2 : 4))   // "in" binds after ?: here: unbracketed it was always 0
+	if(OnFire) C += list(list("On fire", 5))
+	if(RemasterKnockedOut()) C += list(list("Knocked out ([max(1, round((remaster_ko_until - world.time) / 10))] s)", 3))
+	else if(Fainted) C += list(list("Unconscious", 4))
+	if(Stunned) C += list(list("Stunned", 3))
+	if(!CanSee) C += list(list("Blind", 4))
+	if(!CanWalk) C += list(list("Can't walk", 4))
+	if(HasLeftArm && !CanUseLeftArm) C += list(list("Left arm useless", 3))
+	if(HasRightArm && !CanUseRightArm) C += list(list("Right arm useless", 3))
+	if(InHole) C += list(list("Stuck in a pit", 3))
+	if(remaster_root_until > world.time) C += list(list("Held fast", 3))
+	else if(remaster_slow_until > world.time) C += list(list("Slowed", 2))
+	if(Coldness >= 40) C += list(list("Freezing", 4))
+	else if(Coldness > 0) C += list(list("Cold", 2))
+	if(Hunger <= 0) C += list(list("Starving", 4))
+	else if(Hunger <= 20) C += list(list("Hungry", 2))
+	if(Tiredness <= 20) C += list(list("Exhausted", 2))
+	if(Sleeping) C += list(list("Asleep", 0))
+	if(rm_cap_state) C += list(list(rm_cap_state == "slave" ? "Slave (hobbled)" : "Bound captive", 1))   // Captives.dm
+	if(Undead) C += list(list("Undead", 0))
+	if(Werepowers) C += list(list("Werewolf", 0))
+	C += RemasterAilmentConds()   // poison, fever, food poisoning, drink (Ailments.dm)
+	return list("parts"=P, "conds"=C, "blood"=round(BloodContent), "bloodmax"=MaxBloodContent, "age"=Age)

@@ -1,0 +1,13 @@
+--- World.dm
++++ World.dm
+@@ -76,10 +76,8 @@
+ 	proc/Error(exception)
+ 
+ 	proc/Reboot()
+-		set opendream_unimplemented = TRUE
+ 
+ 	proc/Repop()
+-		set opendream_unimplemented = TRUE
+ 
+ 	proc/Export(Addr, File, Persist, Clients)
+ 	proc/Import()

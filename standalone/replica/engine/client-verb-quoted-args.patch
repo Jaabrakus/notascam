@@ -1,0 +1,16 @@
+--- OpenDreamClient/Interface/DreamInterfaceManager.cs
++++ OpenDreamClient/Interface/DreamInterfaceManager.cs
+@@
+                         if (argumentType is DreamValueType.Text or DreamValueType.Message or DreamValueType.CommandText) {
+-                            arguments[i] = args[i];
++                            arguments[i] = UnquoteVerbArgument(args[i]);
+                         } else if (argumentType == DreamValueType.Num) {
+@@
++    // BYOND strips the quotes around a quoted command argument (an unterminated
++    // leading quote, as in a `say "` input prefix, keeps the rest as text).
++    private static string UnquoteVerbArgument(string argument) {
++        if (string.IsNullOrEmpty(argument) || argument[0] != '"') return argument;
++        argument = argument.Substring(1);
++        if (argument.Length == 0 || argument[^1] != '"') return argument;
++        return argument.Substring(0, argument.Length - 1);
++    }

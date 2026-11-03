@@ -1,0 +1,7 @@
+--- OpenDreamClient/Audio/DreamSoundEngine.cs
++++ OpenDreamClient/Audio/DreamSoundEngine.cs
+@@
+     public void StopChannel(int channel) {
++        // BYOND: sound(null) on channel 0 stops all channels.
++        if (channel == 0) { StopAllChannels(); return; }
+         ref DreamSoundChannel? ch = ref _channels[channel - 1];

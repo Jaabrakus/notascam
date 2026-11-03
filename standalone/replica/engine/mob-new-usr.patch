@@ -1,0 +1,19 @@
+--- a/OpenDreamRuntime/Procs/InitDreamObject.cs
++++ b/OpenDreamRuntime/Procs/InitDreamObject.cs
+@@ -1,6 +1,7 @@
+ using System.Text;
+ using JetBrains.Annotations;
+ using OpenDreamRuntime.Objects;
++using OpenDreamRuntime.Objects.Types;
+ 
+ namespace OpenDreamRuntime.Procs;
+ 
+@@ -111,7 +112,7 @@
+                         goto switch_start;
+ 
+                     var args = _arguments.AsSpan(0, _argumentCount);
+-                    var newProcState = newProc.CreateState(Thread, src, _usr, new DreamProcArguments(args));
++                    var newProcState = newProc.CreateState(Thread, src, src is DreamObjectMob ? src : _usr, new DreamProcArguments(args));
+                     Thread.PushProcState(newProcState);
+                     return ProcStatus.Called;
+                 }

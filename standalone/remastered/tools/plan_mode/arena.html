@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Plan mode arena</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- A test arena for Plan mode (ramps-gather, 2026-10-25): one level at a time, a block cursor moved by the mouse or
+     WASD, Dig / Build / Ramp / Erase marks, a plan card, queued tasks that miners and builders work block by block.
+     Standalone (three.js r128 from cdnjs); the game itself is not touched. -->
+<style>
+:root{--pane:#141d2c;--pane2:#1b2639;--acc:#d9b45f;--ink:#ece3cc;--dim:#a8a08c;--band:#33445c;--dig:#eba53c;--build:#5ea9ea;--ramp:#5bd09e;--bad:#e2685a}
+html,body{margin:0;height:100%;overflow:hidden;background:#a7bfd2;font:12px/1.4 -apple-system,"Helvetica Neue",Helvetica,sans-serif;color:var(--ink);user-select:none}
+canvas{display:block}
+.panel{position:absolute;background:linear-gradient(#18233a,#111926);border:1px solid #06090f;border-radius:6px;box-shadow:inset 0 0 0 1px #d9b45f40,inset 0 1px 0 #ffffff14,0 3px 10px #0007}
+.title{font-family:Luminari,Herculanum,Georgia,serif;color:var(--acc);font-size:15px;margin:0;letter-spacing:.02em}
+.sub{color:var(--dim);font-size:11px;margin:2px 0 0}
+button{font:inherit;color:var(--ink);background:linear-gradient(#22304a,#18223a);border:1px solid #3a4c68;border-radius:4px;padding:4px 9px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:5px;transition:filter .08s}
+button:hover{filter:brightness(1.2)}button:active{transform:translateY(1px)}
+button.on{border-color:var(--acc);color:#fff;background:linear-gradient(#34476a,#263552);box-shadow:inset 0 0 0 1px #d9b45f66}
+button:disabled{filter:saturate(.3) brightness(.75);cursor:default}
+button.gold{background:linear-gradient(#e6c779,#b98f3c);color:#1a1408;border-color:#7a5c22;font-weight:600}
+svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+kbd{font:10px/1 Menlo,monospace;border:1px solid #3a4c68;border-bottom-width:2px;border-radius:3px;padding:1px 4px;color:var(--acc);background:#0b111b}
+#bar{top:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px;align-items:center;padding:6px 8px}
+#bar .sep{width:1px;height:24px;background:#3a4c68;margin:0 3px}
+#bar [data-tool=dig].on{border-color:var(--dig);color:#ffe2b0}#bar [data-tool=build].on{border-color:var(--build);color:#d2e9ff}#bar [data-tool=ramp].on{border-color:var(--ramp);color:#d4f7e7}#bar [data-tool=erase].on{border-color:var(--bad);color:#ffd2cb}#bar [data-tool=clear].on{border-color:var(--dig);color:#ffe2b0}
+#ruler button.rng{border-color:var(--dig);color:#ffe2b0}
+#bar [data-shape]{padding:4px 6px}
+#lvl{min-width:62px;text-align:center;font-variant-numeric:tabular-nums;color:#fff;font-weight:500}
+#card{right:8px;top:62px;width:236px;padding:10px 12px}
+#card .row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-top:1px solid #ffffff12}
+#card .row span:first-child{color:var(--dim)}
+#card .acts{display:flex;gap:6px;margin-top:9px}#card .acts button{flex:1;justify-content:center}
+#tasks{left:8px;top:62px;width:256px;padding:10px 12px;max-height:56vh;overflow:auto}
+.task{border-top:1px solid #ffffff12;padding:7px 4px 6px;margin:0 -4px;border-radius:3px;transition:background .3s}.task:hover{background:#ffffff08}
+.task.done{background:#5bd09e22}.task.done .st{color:var(--ramp)}
+.task .nm{display:flex;justify-content:space-between;gap:6px;align-items:center}.task .nm a{color:var(--ink);cursor:pointer}.task .nm a:hover{color:#fff;text-decoration:underline}
+.task .st{color:var(--dim);font-size:11px}
+.trk{height:6px;background:#0a0f18;border:1px solid #34465f;border-radius:3px;margin:5px 0 4px;overflow:hidden}.trk i{display:block;height:100%;background:linear-gradient(#f2d27f,#c3923a);transition:width .35s ease-out}
+.task.done .trk i{background:linear-gradient(#8ff0c3,#3fae7c)}
+.task .bt{display:flex;gap:4px}.task .bt button{padding:2px 6px;font-size:11px}
+#keys{left:50%;bottom:8px;transform:translateX(-50%);padding:6px 11px;display:flex;gap:13px;color:var(--dim);font-size:11px;white-space:nowrap}
+#keys b{color:var(--ink);font-weight:500}
+#dock{left:50%;bottom:48px;transform:translateX(-50%);padding:6px;display:flex;gap:6px}
+#ruler{right:8px;bottom:48px;padding:6px 5px;display:flex;flex-direction:column;gap:2px;align-items:stretch}
+#ruler button{padding:1px 6px;font-size:11px;justify-content:space-between;min-width:52px;font-variant-numeric:tabular-nums}
+#ruler i{font-style:normal;color:var(--dig);font-size:10px}
+#tag{position:absolute;pointer-events:none;background:#0b111bee;border:1px solid #3a4c68;border-radius:4px;padding:3px 8px;font-size:11px;white-space:nowrap;transform:translate(-50%,-150%);box-shadow:0 2px 6px #0006}
+#tag.bad{border-color:var(--bad);color:#f6c8c0}#tag.shake{animation:shake .3s}
+@keyframes shake{0%,100%{margin-left:0}20%{margin-left:-7px}40%{margin-left:6px}60%{margin-left:-4px}80%{margin-left:2px}}
+#hud{left:8px;top:8px;padding:6px 11px;display:flex;gap:13px;align-items:center}
+#hud b{display:inline-block;color:#fff;font-weight:500;font-variant-numeric:tabular-nums}#hud b.bump{animation:bump .4s ease-out}
+@keyframes bump{0%{transform:scale(1.6);color:#ffe08a}100%{transform:scale(1)}}
+#help{left:8px;bottom:8px;padding:9px 11px;width:262px;color:var(--dim);font-size:11px}
+#help p{margin:3px 0}#help b{color:var(--ink);font-weight:500}
+.utag{position:absolute;pointer-events:none;font-size:11px;white-space:nowrap;transform:translate(-50%,-100%);padding:1px 6px;border-radius:3px;background:#0b111bcc;color:var(--ink);border:1px solid #2c3a50}
+.utag.sel{border-color:var(--acc)}.utag em{font-style:normal;color:var(--dim)}
+.floater{position:absolute;pointer-events:none;font-weight:600;font-size:13px;color:#ffe6a6;text-shadow:0 1px 2px #000,0 0 8px #000a;transform:translate(-50%,-50%);white-space:nowrap}
+.floater.cool{color:#cfe6ff}.floater.ore{color:#ffb98a}
+.hide{display:none!important}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <symbol id="i-dig" viewBox="0 0 24 24"><path d="M5 20 14.5 10.5"/><path d="M8.5 5.5c4-2.6 8.6-1.8 11.3 1.5-3.6-.6-6.9.2-9.4 2.6z"/></symbol>
+ <symbol id="i-build" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 12h18M9 5v7M15 12v7"/></symbol>
+ <symbol id="i-ramp" viewBox="0 0 24 24"><path d="M3 19h18V6z"/><path d="M12 15l3-3 3 3"/></symbol>
+ <symbol id="i-erase" viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H6l-3-3z"/><path d="M9 9l6 6M11 19h9"/></symbol>
+ <symbol id="i-single" viewBox="0 0 24 24"><rect x="8" y="8" width="8" height="8"/></symbol>
+ <symbol id="i-line" viewBox="0 0 24 24"><rect x="2" y="9" width="6" height="6"/><rect x="9" y="9" width="6" height="6"/><rect x="16" y="9" width="6" height="6"/></symbol>
+ <symbol id="i-box" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" fill="currentColor" fill-opacity=".35"/></symbol>
+ <symbol id="i-outline" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><rect x="8" y="8" width="8" height="8" stroke-dasharray="2 2"/></symbol>
+ <symbol id="i-room" viewBox="0 0 24 24"><path d="M10 20H4V4h16v16h-6"/><path d="M4 9h16"/></symbol>
+ <symbol id="i-clear" viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 16V5h12v11"/><path d="M12 7v6M9.5 10.5 12 13l2.5-2.5"/></symbol>
+ <symbol id="i-plan" viewBox="0 0 24 24"><path d="M4 7l8-4 8 4-8 4z"/><path d="M4 12l8 4 8-4M4 17l8 4 8-4"/></symbol>
+</defs></svg>
+<div id="hud" class="panel"><span class="title" style="font-size:13px">Plan mode arena</span><span>Stone <b id="stone">0</b></span><span>Iron <b id="iron">0</b></span></div>
+<div id="bar" class="panel hide">
+ <button data-tool="dig" title="Dig (1): mark blocks for miners to dig out"><svg class="i"><use href="#i-dig"/></svg>Dig<kbd>1</kbd></button>
+ <button data-tool="build" title="Build stone (2): mark open cells for builders to fill, a stone each"><svg class="i"><use href="#i-build"/></svg>Build<kbd>2</kbd></button>
+ <button data-tool="ramp" title="Ramp (3): carve a block with room over it into a ramp, rising away from you"><svg class="i"><use href="#i-ramp"/></svg>Ramp<kbd>3</kbd></button>
+ <button data-tool="clear" title="Clear (5): dig out everything from this level up inside the shape, leaving a clean floor here"><svg class="i"><use href="#i-clear"/></svg>Clear<kbd>5</kbd></button>
+ <button data-tool="erase" title="Erase (4): take marks away"><svg class="i"><use href="#i-erase"/></svg>Erase<kbd>4</kbd></button>
+ <span class="sep"></span>
+ <button data-shape="single" title="Single: one block a click"><svg class="i"><use href="#i-single"/></svg></button>
+ <button data-shape="line" title="Line: a straight row"><svg class="i"><use href="#i-line"/></svg></button>
+ <button data-shape="box" title="Box: a filled rectangle (press R or F while dragging to take more levels)"><svg class="i"><use href="#i-box"/></svg></button>
+ <button data-shape="outline" title="Outline: a rectangle's edge (walls)"><svg class="i"><use href="#i-outline"/></svg></button>
+ <button data-shape="room" title="Room: two blocks high. Build: walls with a door gap on your side. Dig: a room dug out"><svg class="i"><use href="#i-room"/></svg></button>
+ <span class="sep"></span>
+ <button id="lvldn" title="Level down (F)">&#9660;</button><span id="lvl">Level 3</span><button id="lvlup" title="Level up (R)">&#9650;</button>
+ <span class="sep"></span>
+ <button id="exit" title="Leave Plan mode (Esc)">Done<kbd>Esc</kbd></button>
+</div>
+<div id="card" class="panel hide">
+ <p class="title" id="ctitle">Plan</p><p class="sub" id="csub">Mark blocks on this level</p>
+ <div id="crows" style="margin-top:6px"></div>
+ <div class="acts"><button id="queue" class="gold">Queue it<kbd>Enter</kbd></button><button id="clear" title="Clear the marks not queued yet (Backspace)">Clear</button></div>
+</div>
+<div id="tasks" class="panel hide"><p class="title">Tasks</p><div id="tlist"></div></div>
+<div id="ruler" class="panel hide"></div>
+<div id="dock" class="panel"><button id="planbtn" title="Plan mode (P): dig and build block by block"><svg class="i"><use href="#i-plan"/></svg>Plan<kbd>P</kbd></button></div>
+<div id="keys" class="panel hide"><span><b>WASD</b>: move</span><span><b>R</b>/<b>F</b>: level</span><span><b>Space</b>: mark</span><span><b>Drag</b>: shape (<b>R</b>/<b>F</b> for more levels)</span><span><b>Right-click</b>: unmark</span><span><b>⌘C</b>/<b>⌘V</b>: copy, paste (<b>T</b> turns)</span><span><b>⌘Z</b>: undo</span><span><b>Q</b>/<b>E</b>: turn</span><span><b>Esc</b>: done</span></div>
+<div id="help" class="panel"><p><b>Try it:</b> press P or Plan. Edven stands in a corridor inside the mountain, on level 3.</p><p>Right-drag turns the camera, the wheel zooms toward the pointer, WASD pans. Click a unit to select it.</p><p>Miners dig, the builder builds and carves ramps, a selected unit does either. Up a block only by a ramp, down one free.</p></div>
+<div id="tag" class="hide"></div>
+<div id="utags"></div>
+<script>
+'use strict';
+// ---------- the world: a block grid, like the game's mountains (block k of a tile spans height k..k+1) ----------
+const W=30,H=26,MAXK=10;
+const SLAB=0.4;   // Plan mode draws the level's own blocks this high: a floor plan you look down into, floors never hidden
+const solid=new Uint8Array(W*H*MAXK);   // 0 open, 1 rock, 2 iron ore, 3 built stone
+const rampDir=new Uint8Array(W*H*MAXK); // 0 none, 1..4 the way it rises (+z, +x, -z, -x)
+const DIRS=[null,[0,1],[1,0],[0,-1],[-1,0]];
+const id=(x,y,k)=>(k*H+y)*W+x;
+const inB=(x,y,k)=>x>=0&&y>=0&&x<W&&y<H&&k>=0&&k<MAXK;
+const S=(x,y,k)=>inB(x,y,k)?solid[id(x,y,k)]:0;
+const hash=(a,b,c)=>{let v=Math.sin(a*127.1+b*311.7+c*74.7)*43758.5453;return v-Math.floor(v)};
+const ease=q=>1-Math.pow(1-Math.max(0,Math.min(1,q)),3);
+const easeBack=q=>{q=Math.max(0,Math.min(1,q));const c=1.9;return 1+(c+1)*Math.pow(q-1,3)+c*Math.pow(q-1,2)};
+const easeInOut=q=>{q=Math.max(0,Math.min(1,q));return q<0.5?4*q*q*q:1-Math.pow(-2*q+2,3)/2};
+(function build(){const x0=6,x1=24,y0=5,y1=20;
+ for(let y=y0;y<=y1;y++)for(let x=x0;x<=x1;x++){const d=Math.min(x-x0,x1-x,y-y0,y1-y)+1;let h=Math.min(8,2+d)+Math.round(hash(x,y,9)*2-1);h=Math.max(3,Math.min(8,h));
+  for(let k=0;k<h;k++)solid[id(x,y,k)]=(k<5&&hash(x,y,k+3)<0.07)?2:1}
+ for(let x=10;x<=19;x++)solid[id(x,12,3)]=0;           // a corridor dug at level 3
+ solid[id(19,13,3)]=0;solid[id(19,14,3)]=0;             // and a short side passage
+})();
+let stone=6,iron=0;
+
+// ---------- units ----------
+const units=[{name:'Edven',role:'any',x:10,y:12,f:3,sel:true},{name:'Robertson',role:'miner',x:3,y:12,f:0},{name:'Corrwyn',role:'miner',x:3,y:15,f:0},{name:'Thowynley',role:'builder',x:4,y:18,f:0}];
+for(const u of units){u.px=u.x;u.py=u.y;u.pf=u.f;u.path=[];u.job=null;u.work=0;u.wait=0;u.task=null;u.walkPh=0;u.face=0}
+
+// ---------- the scene: sun and sky light, cast shadows ----------
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(2,devicePixelRatio));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;document.body.appendChild(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xa7bfd2);scene.fog=new THREE.Fog(0xa7bfd2,45,100);
+const camera=new THREE.PerspectiveCamera(42,1,0.1,300);
+scene.add(new THREE.HemisphereLight(0xe2ebf4,0x51473a,0.62));
+const sun=new THREE.DirectionalLight(0xfff0d2,0.95);sun.position.set(W/2-16,34,H/2+12);sun.target.position.set(W/2,0,H/2);scene.add(sun,sun.target);
+sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-24,right:24,top:24,bottom:-24,near:1,far:90});sun.shadow.bias=-0.0006;sun.shadow.normalBias=0.03;
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(W+50,H+50),new THREE.MeshLambertMaterial({color:0x6d8e4c}));ground.rotation.x=-Math.PI/2;ground.position.set(W/2,0,H/2);ground.receiveShadow=true;scene.add(ground);
+const core=new THREE.Mesh(new THREE.PlaneGeometry(19,16),new THREE.MeshLambertMaterial({color:0x2d2a27}));core.rotation.x=-Math.PI/2;core.position.set(15.5,0.004,13);scene.add(core);   // dark under the mountain: no grass through the seams
+// natural rock: four faceted block shapes (softly rounded corners, chipped edges, faces a little proud or sunk)
+function rockGeo(seed){const g=new THREE.BoxGeometry(1,1,1,2,2,2).toNonIndexed(),p=g.attributes.position,v=new THREE.Vector3();
+ for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i);const n=(Math.abs(v.x)>0.49)+(Math.abs(v.y)>0.49)+(Math.abs(v.z)>0.49),h=hash(Math.round(v.x*4)+seed*7,Math.round(v.y*4)+seed*13,Math.round(v.z*4)+seed*3);
+  v.multiplyScalar(n===3?0.945+h*0.03:n===2?0.975+h*0.02:0.985+h*0.045);p.setXYZ(i,v.x*0.995,v.y*0.995,v.z*0.995)}
+ g.computeVertexNormals();return g}
+const rockMat=new THREE.MeshLambertMaterial({color:0xffffff});
+const blockSets=[0,1,2,3].map(s=>{const m=new THREE.InstancedMesh(rockGeo(s+1),rockMat,W*H*MAXK);m.castShadow=true;m.receiveShadow=true;m.setColorAt(0,new THREE.Color(1,1,1));scene.add(m);return m});
+const wedge=(()=>{const g=new THREE.BufferGeometry(),P=(x,y,z)=>[x-0.5,y-0.5,z-0.5],q=[];const tri=(a,b,c)=>q.push(...a,...b,...c);
+ const a=P(0,0,0),b=P(1,0,0),c=P(1,0,1),d=P(0,0,1),e=P(0,1,1),f=P(1,1,1);
+ tri(a,c,b);tri(a,d,c);tri(d,f,c);tri(d,e,f);tri(a,b,f);tri(a,f,e);tri(a,e,d);tri(b,c,f);
+ g.setAttribute('position',new THREE.Float32BufferAttribute(q,3));g.computeVertexNormals();g.scale(0.99,0.99,0.99);return g})();
+const ramps=new THREE.InstancedMesh(wedge,new THREE.MeshLambertMaterial({color:0xffffff,side:THREE.DoubleSide}),400);ramps.castShadow=ramps.receiveShadow=true;scene.add(ramps);
+const marksMesh=new THREE.InstancedMesh(new THREE.BoxGeometry(1.03,1.03,1.03),new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:0.7,depthWrite:false}),3000);marksMesh.renderOrder=2;scene.add(marksMesh);
+const flashMesh=new THREE.InstancedMesh(new THREE.BoxGeometry(1.06,1.06,1.06),new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}),600);flashMesh.renderOrder=4;flashMesh.count=0;scene.add(flashMesh);
+for(const m of [ramps,marksMesh,flashMesh])m.setColorAt(0,new THREE.Color(1,1,1));   // the colour buffer before the first frame (made later, the shader never reads it)
+const lineMat=(c,o)=>new THREE.LineBasicMaterial({color:c,transparent:true,opacity:o,depthWrite:false});
+const levelLines=new THREE.LineSegments(new THREE.BufferGeometry(),lineMat(0xd9b45f,0.5));scene.add(levelLines);
+const markLines=new THREE.LineSegments(new THREE.BufferGeometry(),new THREE.LineBasicMaterial({vertexColors:true,transparent:true,opacity:0.95,depthWrite:false}));markLines.renderOrder=3;scene.add(markLines);
+const crackLines=new THREE.LineSegments(new THREE.BufferGeometry(),new THREE.LineBasicMaterial({color:0x17120d,transparent:true,opacity:0.9}));crackLines.renderOrder=3;scene.add(crackLines);
+const floors=new THREE.InstancedMesh(new THREE.PlaneGeometry(0.9,0.9),new THREE.MeshBasicMaterial({color:0xf3dfa2,transparent:true,opacity:0.5,depthWrite:false}),900);floors.renderOrder=1;scene.add(floors);
+const floorLines=new THREE.LineSegments(new THREE.BufferGeometry(),lineMat(0xfff0c4,0.85));floorLines.renderOrder=2;scene.add(floorLines);
+// the cursor: a glowing box on one block of the level, a soft glow under it, an arrow for the way a ramp would rise
+function glowTex(){const c=document.createElement('canvas');c.width=c.height=64;const g=c.getContext('2d'),r=g.createRadialGradient(32,32,2,32,32,31);r.addColorStop(0,'rgba(255,255,255,0.9)');r.addColorStop(0.45,'rgba(255,255,255,0.35)');r.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=r;g.fillRect(0,0,64,64);return new THREE.CanvasTexture(c)}
+const cursor=new THREE.Group(),curMats=[];
+for(const s of [1.04,1.075]){const m=new THREE.LineBasicMaterial({color:0xfff3c4,depthTest:false,transparent:true});curMats.push(m);cursor.add(new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(s,s,s)),m))}
+const cursorFill=new THREE.Mesh(new THREE.BoxGeometry(1.02,1.02,1.02),new THREE.MeshBasicMaterial({color:0xfff3c4,transparent:true,opacity:0.18,depthWrite:false}));cursor.add(cursorFill);
+cursor.renderOrder=5;cursor.visible=false;scene.add(cursor);
+const glow=new THREE.Mesh(new THREE.PlaneGeometry(2.2,2.2),new THREE.MeshBasicMaterial({map:glowTex(),color:0xfff3c4,transparent:true,opacity:0.5,blending:THREE.AdditiveBlending,depthWrite:false}));glow.rotation.x=-Math.PI/2;glow.renderOrder=4;scene.add(glow);
+const arrowGeo=new THREE.BufferGeometry();arrowGeo.setAttribute('position',new THREE.Float32BufferAttribute([-0.22,0,-0.12, 0.22,0,-0.12, 0,0,0.3],3));
+const cursorArrow=new THREE.Mesh(arrowGeo,new THREE.MeshBasicMaterial({color:0x5bd09e,side:THREE.DoubleSide,depthTest:false,transparent:true,opacity:0.95}));cursorArrow.renderOrder=6;scene.add(cursorArrow);
+const curPos=new THREE.Vector3(10.5,3.5,12.5),curVel=new THREE.Vector3();
+// units: jointed figures (legs and arms swing, a pick or a hammer in the right hand), a ring under the selected one,
+// a ring over the block being worked that fills as the work goes
+function $(s){return document.querySelector(s)}
+function figure(u){const g=new THREE.Group(),M=c=>new THREE.MeshLambertMaterial({color:c}),col={any:0xd9b45f,miner:0xd9823a,builder:0x5aa7e8}[u.role];
+ const torso=new THREE.Mesh(new THREE.BoxGeometry(0.26,0.3,0.16),M(col));torso.position.y=0.52;torso.castShadow=true;
+ const belt=new THREE.Mesh(new THREE.BoxGeometry(0.27,0.05,0.17),M(0x3b2d22));belt.position.y=0.39;
+ const head=new THREE.Mesh(new THREE.SphereGeometry(0.11,12,10),M(0xe9c9a4));head.position.y=0.78;head.castShadow=true;
+ const limb=(px,py,w,h,c)=>{const p=new THREE.Group();p.position.set(px,py,0);const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,w),M(c));m.position.y=-h/2;m.castShadow=true;p.add(m);return p};
+ const lh=limb(-0.07,0.37,0.09,0.36,0x4a3a2c),rh=limb(0.07,0.37,0.09,0.36,0x4a3a2c),la=limb(-0.17,0.65,0.07,0.28,col),ra=limb(0.17,0.65,0.07,0.28,col);
+ const tool=new THREE.Group();tool.position.set(0,-0.27,0);const handle=new THREE.Mesh(new THREE.CylinderGeometry(0.014,0.014,0.38,6),M(0x7a5a3a));handle.rotation.x=Math.PI/2;handle.position.z=0.17;
+ const th=u.role==='builder'?new THREE.Mesh(new THREE.BoxGeometry(0.1,0.08,0.08),M(0x8a8f98)):new THREE.Mesh(new THREE.BoxGeometry(0.3,0.035,0.035),M(0x8a8f98));th.position.z=0.35;tool.add(handle,th);ra.add(tool);
+ const ring=new THREE.Mesh(new THREE.RingGeometry(0.3,0.38,28),new THREE.MeshBasicMaterial({color:0xfff3c4,side:THREE.DoubleSide,transparent:true,depthTest:false}));ring.rotation.x=-Math.PI/2;ring.position.y=0.03;ring.renderOrder=6;
+ const pick=new THREE.Mesh(new THREE.BoxGeometry(0.5,0.9,0.5),new THREE.MeshBasicMaterial({visible:false}));pick.position.y=0.45;pick.userData.unit=u;
+ const body=new THREE.Group();body.add(torso,belt,head,lh,rh,la,ra);g.add(body,ring,pick);scene.add(g);
+ const prog=new THREE.Mesh(new THREE.RingGeometry(0.2,0.28,24),new THREE.MeshBasicMaterial({color:0xffffff,side:THREE.DoubleSide,transparent:true,depthTest:false}));prog.renderOrder=7;prog.visible=false;scene.add(prog);u.prog=prog;
+ const tag=document.createElement('div');tag.className='utag';$('#utags').appendChild(tag);u.tag=tag;
+ return {g,body,lh,rh,la,ra,ring,pick}}
+const figs=units.map(figure);
+// chips (a blow, a finished block) and chunks (a block breaking up), thrown and falling
+const chipMax=220,chipMesh=new THREE.InstancedMesh(new THREE.BoxGeometry(0.08,0.08,0.08),new THREE.MeshLambertMaterial({color:0xffffff}),chipMax);chipMesh.setColorAt(0,new THREE.Color(1,1,1));chipMesh.count=0;scene.add(chipMesh);
+const chunkMax=80,chunkMesh=new THREE.InstancedMesh(rockGeo(9),new THREE.MeshLambertMaterial({color:0xffffff}),chunkMax);chunkMesh.setColorAt(0,new THREE.Color(1,1,1));chunkMesh.count=0;chunkMesh.castShadow=true;scene.add(chunkMesh);
+const chips=[],chunks=[];
+function rockRGB(s){return s===2?[0.6,0.4,0.3]:s===3?[0.7,0.66,0.57]:[0.5,0.47,0.44]}
+function chipsAt(p,n,s,up){const c=rockRGB(s);for(let i=0;i<n&&chips.length<chipMax;i++)chips.push({p:p.slice(),v:[(Math.random()-0.5)*2.6,(up||1.2)+Math.random()*1.8,(Math.random()-0.5)*2.6],life:0.5+Math.random()*0.35,c,floor:p[1]-0.6})}
+function breakUp(x,y,k,s){const c=rockRGB(s);for(let i=0;i<8&&chunks.length<chunkMax;i++){const sz=0.18+Math.random()*0.16;chunks.push({p:[x+0.25+Math.random()*0.5,k+0.25+Math.random()*0.5,y+0.25+Math.random()*0.5],v:[(Math.random()-0.5)*3,1.5+Math.random()*2.2,(Math.random()-0.5)*3],ax:new THREE.Vector3(Math.random()-0.5,Math.random()-0.5,Math.random()-0.5).normalize(),ang:0,spin:4+Math.random()*8,sz,life:1.3+Math.random()*0.4,c,floor:k})}chipsAt([x+0.5,k+0.6,y+0.5],14,s,2)}
+// words that float up from a block: +1 stone, -1 stone, +1 iron
+const floaters=[];
+function floatText(t,x,y,k,cls){const el=document.createElement('div');el.className='floater'+(cls?' '+cls:'');el.textContent=t;document.body.appendChild(el);floaters.push({el,p:[x+0.5,k+1,y+0.5],t0:clock})}
+function setCount(elId,v){const el=$('#'+elId);if(el.textContent===String(v))return;el.textContent=v;el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump')}
+
+// ---------- plan state ----------
+const P={on:false,level:3,cx:10,cy:12,tool:'dig',shape:'box',drag:null,prio:1,hoverTask:null,clip:null,paste:null,shakeAt:-1e9};
+const marks=new Map();   // "x,y,k" -> {tool, task (null: not queued yet), dir, born}
+const tasks=[];let taskSerial=0;
+const undo=[];           // what each marking did to the marks not queued yet: {add:[kk], del:[[kk,m]]}
+const flashes=[];        // {x,y,k,t0,c}: a block that just came out or went in, a finished task's wave
+const risers=new Map();  // a built block rising into place: "x,y,k" -> start time
+const key=(x,y,k)=>x+','+y+','+k;
+const PRIO=['Low','Normal','High'];
+const VERB={dig:'dig',build:'build',ramp:'carve',erase:'unmark',clear:'clear'};
+const LV={from:3,fromOn:false,t0:-1e9,dur:340};   // the level slice moving: from where, since when
+
+// what a tool can do with block (x,y,k)
+function canMark(tool,x,y,k){if(!inB(x,y,k))return false;const s=S(x,y,k);
+ if(tool==='dig'||tool==='clear')return !!s;
+ if(tool==='build')return !s&&(k===0||!!S(x,y,k-1)||[[1,0],[-1,0],[0,1],[0,-1]].some(([a,b])=>S(x+a,y+b,k))||marks.has(key(x,y,k-1))&&marks.get(key(x,y,k-1)).tool==='build');   // or on a block planned under it
+ if(tool==='ramp')return !!s&&!S(x,y,k+1)&&!rampDir[id(x,y,k)];
+ if(tool==='erase')return marks.has(key(x,y,k));return false}
+function why(tool,x,y,k){const s=S(x,y,k);if(tool==='dig')return 'Nothing to dig here';if(tool==='build')return s?'A block is already here':'Nothing to build it on';if(tool==='ramp')return !s?'No block to carve':S(x,y,k+1)?'A ramp needs room over it':'It is a ramp already';return 'No mark here'}
+// the way up a ramp carved now: rising away from the camera
+function camForward(){const fx=-Math.sin(V.yaw),fz=-Math.cos(V.yaw);return Math.abs(fx)>Math.abs(fz)?[Math.sign(fx),0]:[0,Math.sign(fz)]}
+function dirIndex(f){for(let i=1;i<=4;i++)if(DIRS[i][0]===f[0]&&DIRS[i][1]===f[1])return i;return 1}
+// the cells a shape covers, [x, y, level]: from drag corner a to b, over the levels lo..hi (R / F while dragging);
+// a room is two levels high, and built as walls with a door gap in the middle of the side nearest you
+function shapeCells(a,b,lo,hi,shape,tool){const out=[];if(!a)return out;b=b||a;
+ if(tool==='clear'){for(const [x,y] of shapeCells(a,b,lo,lo,shape==='room'?'box':shape,'dig'))for(let k=lo;k<MAXK;k++)if(S(x,y,k))out.push([x,y,k]);return out}   // the columns over the shape, from this level up
+ const x0=Math.min(a[0],b[0]),x1=Math.max(a[0],b[0]),y0=Math.min(a[1],b[1]),y1=Math.max(a[1],b[1]);
+ if(shape==='room'){hi=Math.max(hi,lo+1);const f=camForward(),door=f[1]<0?[Math.round((x0+x1)/2),y1]:f[1]>0?[Math.round((x0+x1)/2),y0]:f[0]<0?[x1,Math.round((y0+y1)/2)]:[x0,Math.round((y0+y1)/2)];
+  for(let k=lo;k<=hi;k++)for(let y=y0;y<=y1;y++)for(let x=x0;x<=x1;x++){const edge=x===x0||x===x1||y===y0||y===y1;
+   if(tool==='build'){if(!edge||x===door[0]&&y===door[1]&&k<lo+2)continue}else if(tool==='ramp'&&k>lo)continue;out.push([x,y,k])}return out}
+ for(let k=lo;k<=hi;k++){
+  if(shape==='single'){out.push([b[0],b[1],k]);continue}
+  if(shape==='line'){if(x1-x0>=y1-y0){for(let x=x0;x<=x1;x++)out.push([x,a[1],k])}else for(let y=y0;y<=y1;y++)out.push([a[0],y,k]);continue}
+  for(let y=y0;y<=y1;y++)for(let x=x0;x<=x1;x++){if(shape==='outline'&&x>x0&&x<x1&&y>y0&&y<y1)continue;out.push([x,y,k])}}
+ return out}
+function markable(tool,x,y,k){return tool==='erase'?marks.has(key(x,y,k)):canMark(tool,x,y,k)&&!marks.has(key(x,y,k))}
+// the cells of a shape that can be marked, counting the shape's own lower rows as something to build on (a wall two high)
+function plannable(cells,toolOf){const ok=[],plan=new Set();for(const c of cells.slice().sort((p,q)=>p[2]-q[2])){const [x,y,k]=c,tool=toolOf(c);
+  const fine=markable(tool,x,y,k)||tool==='build'&&k>0&&plan.has(key(x,y,k-1))&&!S(x,y,k)&&!marks.has(key(x,y,k));if(fine){ok.push(c);if(tool==='build')plan.add(key(x,y,k))}}return ok}
+function applyCells(cells,tool){let n=0;const dir=dirIndex(camForward()),act={add:[],del:[]};
+ // lower levels first, so a wall built two high finds its first row planned under the second
+ for(const c of cells.slice().sort((p,q)=>(p[2]??P.level)-(q[2]??P.level))){const [x,y]=c,k=c[2]??P.level,kk=key(x,y,k),m=marks.get(kk);
+  if(tool==='erase'){if(m){if(m.task==null)act.del.push([kk,m]);unmark(kk);n++}continue}
+  if(m)continue;if(!canMark(tool,x,y,k))continue;marks.set(kk,{tool:tool==='clear'?'dig':tool,task:null,dir,born:clock});act.add.push(kk);n++}
+ if(act.add.length||act.del.length)undo.push(act);if(undo.length>60)undo.shift();dirty.marks=true;if(!n)shake();return n}
+function toggleAt(x,y){const kk=key(x,y,P.level),m=marks.get(kk);if(m&&m.task==null){marks.delete(kk);undo.push({add:[],del:[[kk,m]]});dirty.marks=true;return}if(m&&P.tool==='erase'){unmark(kk);return}
+ applyCells(P.tool==='clear'?shapeCells([x,y],[x,y],P.level,P.level,'single','clear'):[[x,y,P.level]],P.tool)}
+function undoLast(){const a=undo.pop();if(!a){shake();return}for(const kk of a.add){const m=marks.get(kk);if(m&&m.task==null)marks.delete(kk)}for(const [kk,m] of a.del)if(!marks.has(kk))marks.set(kk,Object.assign(m,{born:clock}));dirty.marks=true;updateTag()}
+function unmark(kk){const m=marks.get(kk);if(!m)return;if(m.task!=null){const T=tasks.find(t=>t.id===m.task);if(T){T.jobs=T.jobs.filter(j=>j!==kk);T.total=Math.max(T.done,T.total-1)}for(const u of units)if(u.job===kk){u.job=null;u.path=[];u.work=0}}marks.delete(kk);dirty.marks=true}
+function pending(){return [...marks.entries()].filter(([,m])=>m.task==null)}
+function queuePlan(){const pend=pending();if(!pend.length){shake();return}const tid=++taskSerial,counts={dig:0,build:0,ramp:0};for(const [,m] of pend){m.task=tid;counts[m.tool]++}
+ const parts=Object.entries(counts).filter(([,n])=>n).map(([t,n])=>t+' '+n);
+ const lv=[...new Set(pend.map(([kk])=>+kk.split(',')[2]))].sort((a,b)=>a-b);
+ tasks.push({id:tid,name:'Plan '+tid+': '+parts.join(', '),levels:lv,jobs:pend.map(([kk])=>kk),cells:pend.map(([kk])=>kk),done:0,total:pend.length,prio:P.prio,paused:false,status:'Waiting for workers'});
+ for(const u of units)if(u.sel)u.task=tid;undo.length=0;dirty.marks=true;drawTasks();updateTag()}
+function shake(){P.shakeAt=clock;const t=$('#tag');t.classList.remove('shake');void t.offsetWidth;t.classList.add('shake')}
+// copy the marks not queued yet (relative to the cursor), paste them where the cursor is, T turns them a quarter
+function copyPlan(){const pend=pending();if(!pend.length){shake();flashTag('Nothing to copy: mark something first');return}P.clip=pend.map(([kk,m])=>{const [x,y,k]=kk.split(',').map(Number);return [x-P.cx,y-P.cy,k-P.level,m.tool]});flashTag('Copied '+P.clip.length+' marks · ⌘V to paste')}
+function pasteCells(){if(!P.clip)return [];const r=P.paste?P.paste.rot:0;return P.clip.map(([dx,dy,dk,tool])=>{let a=dx,b=dy;for(let i=0;i<r;i++)[a,b]=[-b,a];return [P.cx+a,P.cy+b,P.level+dk,tool]})}
+function placePaste(){const cells=pasteCells();let n=0;const act={add:[],del:[]},dir=dirIndex(camForward());
+ for(const [x,y,k,tool] of cells.sort((p,q)=>p[2]-q[2])){if(!markable(tool,x,y,k)||tool==='erase')continue;marks.set(key(x,y,k),{tool,task:null,dir,born:clock});act.add.push(key(x,y,k));n++}
+ if(n)undo.push(act);else shake();P.paste=null;dirty.marks=true;updateTag()}
+let tagNote=null;
+function flashTag(t){tagNote={t,until:clock+1600};updateTag()}
+
+// ---------- the camera: free, turned with the right mouse (it carries on a little) or Q / E, zoomed toward the pointer ----------
+const V={tx:12,ty:12,th:2,yaw:0.62,pitch:0.86,dist:22,zoom:22,turn:null,follow:false,fly:null,yawVel:0};
+function placeCamera(){const cp=Math.cos(V.pitch);camera.position.set(V.tx+Math.sin(V.yaw)*cp*V.dist,V.th+Math.sin(V.pitch)*V.dist,V.ty+Math.cos(V.yaw)*cp*V.dist);camera.lookAt(V.tx,V.th,V.ty)}
+function flyTo(x,y){V.fly={from:[V.tx,V.ty],to:[x,y],t0:clock,dur:Math.min(900,350+Math.hypot(x-V.tx,y-V.ty)*35)}}
+function resize(){renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix()}addEventListener('resize',resize);resize();
+
+// ---------- drawing the blocks, the level slice (it moves: blocks rise and settle), marks and floors ----------
+const dirty={world:true,marks:true};
+const tmpM=new THREE.Matrix4(),tmpC=new THREE.Color(),tmpQ=new THREE.Quaternion(),tmpS=new THREE.Vector3(1,1,1),tmpP=new THREE.Vector3(),Y_AX=new THREE.Vector3(0,1,0);
+function rockColor(x,y,k,s){const v=0.95+hash(x,y,k+40)*0.1,w=0.97+hash(x>>1,y>>1,5)*0.06;if(s===2)return tmpC.setRGB(0.58*v,0.38*v,0.27*v);if(s===3)return tmpC.setRGB(0.68*v,0.64*v,0.55*v);const b=k%2?0.97:1.02;return tmpC.setRGB(0.47*v*b*w,0.44*v*b,0.41*v*b/w)}
+function sliceH(k,on,L){return !on?1:k<L?1:k===L?SLAB:0}
+function levelAnim(){return clock-LV.t0<LV.dur}
+function levelHeights(){const e=ease((clock-LV.t0)/LV.dur),out=[];for(let k=0;k<MAXK;k++){const a=sliceH(k,LV.fromOn,LV.from),b=sliceH(k,P.on,P.level);out.push(a+(b-a)*e)}return out}
+function rebuildWorld(){const cnt=[0,0,0,0];let r=0;const LH=levelHeights(),anim=levelAnim();
+ for(let k=0;k<MAXK;k++){const hk=LH[k];if(hk<0.01)continue;
+  for(let y=0;y<H;y++)for(let x=0;x<W;x++){const s=solid[id(x,y,k)];if(!s)continue;
+   if(hk>0.999&&LH[k+1]>0.999&&S(x+1,y,k)&&S(x-1,y,k)&&S(x,y+1,k)&&S(x,y-1,k)&&S(x,y,k+1)&&(k===0||S(x,y,k-1)))continue;   // buried: never seen
+   const kk=key(x,y,k),rs=risers.get(kk),grow=rs!=null?easeBack((clock-rs)/380):1,h=Math.max(0.01,hk*grow);
+   const rd=rampDir[id(x,y,k)];
+   if(rd){tmpQ.setFromAxisAngle(Y_AX,Math.atan2(DIRS[rd][0],DIRS[rd][1]));tmpM.compose(tmpP.set(x+0.5,k+h/2,y+0.5),tmpQ,tmpS.set(1,h,1));ramps.setMatrixAt(r,tmpM);ramps.setColorAt(r,rockColor(x,y,k,s));r++;continue}
+   const v=Math.floor(hash(x,y,k+11)*4),rot=Math.floor(hash(x,y,k+12)*4)*Math.PI/2,m=blockSets[v];tmpQ.setFromAxisAngle(Y_AX,rot);
+   tmpM.compose(tmpP.set(x+0.5,k+h/2,y+0.5),tmpQ,tmpS.set(1,h,1));m.setMatrixAt(cnt[v],tmpM);
+   const rc=rockColor(x,y,k,s);if(P.on&&k===P.level)rc.multiplyScalar(anim?1-0.26*ease((clock-LV.t0)/LV.dur):0.74);m.setColorAt(cnt[v],rc);cnt[v]++}}   // the level's walls a shade darker than its lit floors
+ blockSets.forEach((m,i)=>{m.count=cnt[i];m.instanceMatrix.needsUpdate=true;if(m.instanceColor)m.instanceColor.needsUpdate=true});
+ ramps.count=r;ramps.instanceMatrix.needsUpdate=true;if(ramps.instanceColor)ramps.instanceColor.needsUpdate=true;
+ // the level's blocks outlined on their tops, and its floors lit (walkable cells: open, with a block under), once the slice has settled
+ const L=[],FL=[];let fl=0;
+ if(P.on&&!anim){const k=P.level,y1=k+SLAB+0.008;for(let y=0;y<H;y++)for(let x=0;x<W;x++){if(S(x,y,k)){if(!rampDir[id(x,y,k)])L.push(x,y1,y,x+1,y1,y,x+1,y1,y,x+1,y1,y+1,x+1,y1,y+1,x,y1,y+1,x,y1,y+1,x,y1,y)}
+  else if((k===0?nearRock(x,y):!!S(x,y,k-1))&&fl<900){tmpM.makeRotationX(-Math.PI/2);const fy=k+(k>0&&rampDir[id(x,y,k-1)]?-0.45:0)+0.016;tmpM.setPosition(x+0.5,fy,y+0.5);floors.setMatrixAt(fl++,tmpM);const a=x+0.07,b=x+0.93,c=y+0.07,d=y+0.93,h=fy+0.004;FL.push(a,h,c,b,h,c,b,h,c,b,h,d,b,h,d,a,h,d,a,h,d,a,h,c)}}}
+ floors.count=fl;floors.instanceMatrix.needsUpdate=true;
+ setLines(levelLines,L);setLines(floorLines,FL);dirty.world=false;drawRuler()}
+function setLines(o,L,C){o.geometry.dispose();o.geometry=new THREE.BufferGeometry();o.geometry.setAttribute('position',new THREE.Float32BufferAttribute(L,3));if(C)o.geometry.setAttribute('color',new THREE.Float32BufferAttribute(C,3))}
+function nearRock(x,y){for(let dy=-2;dy<=2;dy++)for(let dx=-2;dx<=2;dx++)if(S(x+dx,y+dy,0))return true;return false}
+function boxEdges(L,x,k,y,i,top){const a=x+i,b=x+1-i,c=k+i,d=k+(top||1)-i,e=y+i,f=y+1-i;
+ const E=[[a,c,e,b,c,e],[b,c,e,b,c,f],[b,c,f,a,c,f],[a,c,f,a,c,e],[a,d,e,b,d,e],[b,d,e,b,d,f],[b,d,f,a,d,f],[a,d,f,a,d,e],[a,c,e,a,d,e],[b,c,e,b,d,e],[b,c,f,b,d,f],[a,c,f,a,d,f]];for(const s of E)L.push(...s)}
+const COL={clear:new THREE.Color(0xeba53c),dig:new THREE.Color(0xeba53c),build:new THREE.Color(0x5ea9ea),ramp:new THREE.Color(0x5bd09e),erase:new THREE.Color(0xe2685a)},WHITE=new THREE.Color(1,1,1),BAD=new THREE.Color(0xe2685a),GOLD=new THREE.Color(0xf2d27f);
+function rebuildMarks(){let n=0;const L=[],C=[];const lim=P.on?P.level:MAXK,pulse=0.5+0.5*Math.sin(clock/160);
+ const add=(x,y,k,tool,queued,preview,hot,born)=>{if(n>=3000)return;const c=COL[tool].clone();
+  if(k>lim){c.multiplyScalar(0.55);const s=L.length;boxEdges(L,x,k,y,0.04);for(let i=s;i<L.length;i+=3)C.push(c.r,c.g,c.b);return}   // over the level looked at: its outline only
+  const pop=born!=null?easeBack((clock-born)/240):1,sl=P.on&&k===P.level,h=sl?SLAB+0.05:1.03;
+  tmpQ.identity();tmpM.compose(tmpP.set(x+0.5,k+(sl?h/2:0.5),y+0.5),tmpQ,tmpS.set(pop,pop*(sl?h/1.03:1),pop));marksMesh.setMatrixAt(n,tmpM);
+  if(queued)c.multiplyScalar(0.62+0.22*Math.sin(clock/380-(x+y)*0.8));   // queued: a slow wave runs over them, waiting for workers
+  if(preview)c.lerp(WHITE,0.3);if(hot)c.lerp(WHITE,0.25+0.35*pulse);marksMesh.setColorAt(n,c);n++;
+  const s=L.length;boxEdges(L,x,k,y,-0.02);for(let i=s;i<L.length;i+=3)C.push(c.r,c.g,c.b)};
+ for(const [kk,m] of marks){const [x,y,k]=kk.split(',').map(Number);add(x,y,k,m.tool,m.task!=null,false,P.hoverTask!=null&&m.task===P.hoverTask,m.born)}
+ if(P.drag&&P.drag.moved)for(const [x,y,k] of dragCells())add(x,y,k,P.tool,false,true,false,null);
+ if(P.paste)for(const [x,y,k,tool] of plannable(pasteCells(),c=>c[3]))add(x,y,k,tool,false,true,false,null);
+ marksMesh.count=n;marksMesh.instanceMatrix.needsUpdate=true;if(marksMesh.instanceColor)marksMesh.instanceColor.needsUpdate=true;
+ setLines(markLines,L,C);dirty.marks=false;drawCard();drawRuler()}
+function marksMoving(){if(P.hoverTask!=null||P.drag||P.paste)return true;for(const m of marks.values())if(m.task!=null||clock-m.born<260)return true;return false}
+// the cells a drag would mark (or unmark) now, over the levels from where it began to the level looked at
+function dragCells(){const lo=Math.min(P.drag.k0,P.level),hi=Math.max(P.drag.k0,P.level);return plannable(shapeCells(P.drag.a,[P.cx,P.cy],lo,hi,P.shape,P.tool),()=>P.tool)}
+
+// ---------- the HUD ----------
+function setTool(t){P.tool=t;document.querySelectorAll('#bar [data-tool]').forEach(b=>b.classList.toggle('on',b.dataset.tool===t));dirty.marks=true;updateTag()}
+function setShape(s){P.shape=s;document.querySelectorAll('#bar [data-shape]').forEach(b=>b.classList.toggle('on',b.dataset.shape===s));updateTag()}
+function setLevel(l){l=Math.max(0,Math.min(MAXK-1,l));if(l===P.level)return;LV.from=P.level;LV.fromOn=P.on;LV.t0=clock;P.level=l;$('#lvl').textContent='Level '+P.level;dirty.world=true;dirty.marks=true;updateTag()}
+function setPlan(on){if(on===P.on)return;LV.from=P.level;LV.fromOn=P.on;LV.t0=clock;P.on=on;['#bar','#card','#tasks','#keys','#ruler'].forEach(s=>$(s).classList.toggle('hide',!on));$('#help').classList.toggle('hide',on);$('#planbtn').classList.toggle('on',on);cursor.visible=on;$('#tag').classList.toggle('hide',!on);
+ if(on){const s=units.find(u=>u.sel);if(s){P.cx=s.x;P.cy=s.y;P.level=s.f;LV.from=s.f;$('#lvl').textContent='Level '+P.level;flyTo(s.x+0.5,s.y+0.5)}V.zoom=Math.min(V.zoom,17);curPos.set(P.cx+0.5,P.level+0.5,P.cy+0.5);curVel.set(0,0,0)}   /* centred once on the selected unit */
+ P.drag=null;P.paste=null;dirty.world=true;dirty.marks=true;drawTasks();updateTag()}
+document.querySelectorAll('#bar [data-tool]').forEach(b=>b.onclick=()=>setTool(b.dataset.tool));
+document.querySelectorAll('#bar [data-shape]').forEach(b=>b.onclick=()=>setShape(b.dataset.shape));
+$('#lvlup').onclick=()=>setLevel(P.level+1);$('#lvldn').onclick=()=>setLevel(P.level-1);$('#exit').onclick=()=>setPlan(false);$('#planbtn').onclick=()=>setPlan(!P.on);
+$('#queue').onclick=queuePlan;$('#clear').onclick=clearPending;
+function clearPending(){const del=pending();if(!del.length){shake();return}for(const [kk] of del)marks.delete(kk);undo.push({add:[],del});dirty.marks=true;updateTag()}
+function drawCard(){const pend=pending(),c={dig:0,build:0,ramp:0};let ore=0;for(const [kk,m] of pend){c[m.tool]++;if(m.tool==='dig'){const [x,y,k]=kk.split(',').map(Number);if(S(x,y,k)===2)ore++}}
+ const total=c.dig+c.build+c.ramp,sel=units.filter(u=>u.sel).map(u=>u.name),lv=[...new Set(pend.map(([kk])=>+kk.split(',')[2]))].sort((a,b)=>a-b);
+ $('#ctitle').textContent=total?(c.build&&!c.dig&&!c.ramp?'Build plan':c.dig&&!c.build&&!c.ramp?'Dig plan':c.ramp&&!c.dig&&!c.build?'Ramp plan':'Plan'):'Plan';
+ $('#csub').textContent=total?total+' block'+(total>1?'s':'')+' marked on level'+(lv.length>1?'s ':' ')+lv.join(', ')+', not queued yet':'Mark blocks on level '+P.level+' to '+VERB[P.tool];
+ const free=r=>units.filter(u=>(u.role===r||u.role==='any')&&!u.job&&!u.path.length).length+' of '+units.filter(u=>u.role===r||u.role==='any').length;
+ const rows=[];if(c.dig)rows.push(['To dig',c.dig+' block'+(c.dig>1?'s':'')],['Comes out','about '+Math.round((c.dig-ore)*0.7)+' stone'+(ore?', '+ore+' iron':'')]);
+ if(c.build)rows.push(['To build',c.build+' block'+(c.build>1?'s':'')],['Stone needed',c.build+' <span style="color:'+(stone>=c.build?'var(--dim)':'var(--bad)')+'">(have '+stone+')</span>']);if(c.ramp)rows.push(['Ramps',String(c.ramp)]);
+ rows.push(['Miners free',free('miner')],['Builders free',free('builder')],['Selected',sel.join(', ')||'nobody'],['Priority','<button id="prio" style="padding:1px 8px" title="Priority of the next task (click to change)">'+PRIO[P.prio]+'</button>']);
+ const html=rows.map(([a,b])=>'<div class="row"><span>'+a+'</span><span>'+b+'</span></div>').join('');if($('#crows').innerHTML!==html){$('#crows').innerHTML=html;const pb=$('#prio');if(pb)pb.onclick=()=>{P.prio=(P.prio+1)%3;drawCard()}}
+ $('#queue').disabled=!total;$('#clear').disabled=!total}
+function drawTasks(){const L=$('#tlist');if(!tasks.length){if(!L.querySelector('.sub'))L.innerHTML='<p class="sub">Nothing queued yet. Mark blocks, then Queue it.</p>';L.dataset.html='';return}
+ const html=tasks.map(t=>'<div class="task'+(t.status==='Done'?' done':'')+'" data-th="'+t.id+'"><div class="nm"><a data-tf="'+t.id+'" title="Go to it">'+(t.status==='Done'?'&#10003; ':'')+t.name+'</a><span class="sub">'+t.done+'/'+t.total+'</span></div><div class="trk"><i style="width:'+Math.round(100*t.done/Math.max(1,t.total))+'%"></i></div><div class="nm"><span class="st">Level '+t.levels.join(', ')+' · '+PRIO[t.prio]+' · '+(t.paused?'Paused':t.status)+'</span><span class="bt"><button data-tp="'+t.id+'" title="'+(t.paused?'Go on with it':'Pause it')+'">'+(t.paused?'&#9654;':'&#10074;&#10074;')+'</button><button data-tu="'+t.id+'" title="Priority up">&#9650;</button><button data-tx="'+t.id+'" title="Remove the task">&#10005;</button></span></div></div>').join('');
+ if(L.dataset.html===html)return;L.dataset.html=html;const empty=L.querySelector('p.sub');if(empty)empty.remove();
+ // update the rows in place (the progress bars then slide instead of jumping)
+ const tmp=document.createElement('div');tmp.innerHTML=html;const want=[...tmp.children];[...L.children].forEach(c=>{if(!want.some(w=>w.dataset.th===c.dataset.th))c.remove()});
+ want.forEach((w,i)=>{const cur=L.querySelector('[data-th="'+w.dataset.th+'"]');if(!cur){L.insertBefore(w,L.children[i]||null);hook(w);return}cur.className=w.className;cur.querySelector('.nm a').innerHTML=w.querySelector('.nm a').innerHTML;cur.querySelector('.nm .sub').textContent=w.querySelector('.nm .sub').textContent;cur.querySelector('.trk i').style.width=w.querySelector('.trk i').style.width;cur.querySelector('.st').textContent=w.querySelector('.st').textContent;cur.querySelector('[data-tp]').innerHTML=w.querySelector('[data-tp]').innerHTML});
+ function hook(d){d.onmouseenter=()=>{P.hoverTask=+d.dataset.th;dirty.marks=true};d.onmouseleave=()=>{P.hoverTask=null;dirty.marks=true};
+  d.querySelector('[data-tf]').onclick=()=>focusTask(+d.dataset.th);
+  d.querySelector('[data-tp]').onclick=()=>{const t=tasks.find(q=>q.id==d.dataset.th);if(t){t.paused=!t.paused;drawTasks()}};
+  d.querySelector('[data-tu]').onclick=()=>{const t=tasks.find(q=>q.id==d.dataset.th);if(t){t.prio=(t.prio+1)%3;drawTasks()}};
+  d.querySelector('[data-tx]').onclick=()=>{const t=tasks.find(q=>q.id==d.dataset.th);if(!t)return;for(const kk of t.jobs.slice())unmark(kk);tasks.splice(tasks.indexOf(t),1);P.hoverTask=null;drawTasks()}}}
+// a click on a task: the camera flies to its blocks, on the lowest level it has left
+function focusTask(tid){const t=tasks.find(q=>q.id===tid);const list=t&&(t.jobs.length?t.jobs:t.cells);if(!list||!list.length)return;let sx=0,sy=0,lo=99;for(const kk of list){const [x,y,k]=kk.split(',').map(Number);sx+=x;sy+=y;lo=Math.min(lo,k)}
+ flyTo(sx/list.length+0.5,sy/list.length+0.5);setLevel(lo)}
+// the level ruler: every level, the one looked at lit, a dot where there are marks
+function drawRuler(){const R=$('#ruler');if(!P.on)return;const per={};for(const [kk] of marks){const k=+kk.split(',')[2];per[k]=(per[k]||0)+1}
+ const lo=P.drag?Math.min(P.drag.k0,P.level):-1,hi=P.drag?Math.max(P.drag.k0,P.level):-1;
+ let html='';for(let k=MAXK-1;k>=0;k--)html+='<button data-lv="'+k+'" class="'+(k===P.level?'on':k>=lo&&k<=hi?'rng':'')+'" title="Level '+k+(per[k]?': '+per[k]+' marked':'')+'"><span>'+k+'</span><i>'+(per[k]?'&#9679; '+per[k]:'')+'</i></button>';
+ if(R.dataset.html!==html){R.dataset.html=html;R.innerHTML=html;R.querySelectorAll('[data-lv]').forEach(b=>b.onclick=()=>setLevel(+b.dataset.lv))}}
+function cellWhat(x,y,k){const s=S(x,y,k);return s===2?'iron ore':s===3?'built stone':s?(rampDir[id(x,y,k)]?'ramp':'stone'):(k===0||S(x,y,k-1)?'open floor':'open air')}
+function updateTag(){const tag=$('#tag');if(!P.on){tag.classList.add('hide');return}const x=P.cx,y=P.cy,k=P.level,m=marks.get(key(x,y,k));let txt,bad=false;
+ if(tagNote&&clock<tagNote.until)txt=tagNote.t;
+ else if(P.paste){const n=plannable(pasteCells(),c=>c[3]).length;txt='Paste '+n+' of '+P.clip.length+' · click or Space: place · T: turn · Esc: cancel';bad=!n}
+ else if(P.drag&&P.drag.moved){const a=P.drag.a,w=Math.abs(P.cx-a[0])+1,h=Math.abs(P.cy-a[1])+1,lv=Math.abs(P.level-P.drag.k0)+1,n=dragCells().length,name={single:'Single',line:'Line',box:'Box',outline:'Outline',room:'Room'}[P.shape];
+  txt=P.tool==='clear'?'Clear '+w+' × '+h+' · level '+Math.min(P.level,P.drag.k0)+' and up · '+n+' blocks to dig':
+   name+' '+(P.shape==='line'?Math.max(w,h):w+' × '+h)+(P.shape==='room'?' · 2 high'+(P.tool==='build'?', door on your side':''):lv>1?' × '+lv+' levels':' · wheel or R/F: more levels')+' · '+n+' to '+VERB[P.tool];bad=!n}
+ else{let act;if(m)act=m.task!=null?(m.access?'the way there: queued to ':'queued to ')+VERB[m.tool]+' (right-click: unmark)':'marked to '+VERB[m.tool]+' (Space: unmark)';else if(canMark(P.tool,x,y,k))act='Space: '+({dig:'mark to dig',build:'mark to build',ramp:'mark a ramp',erase:'unmark',clear:'clear this column from here up'})[P.tool];else{act=why(P.tool,x,y,k);bad=true}
+  txt='Level '+k+' · '+cellWhat(x,y,k)+' · '+act}
+ if(tag.textContent!==txt)tag.textContent=txt;tag.classList.toggle('bad',bad);tag.classList.remove('hide');P.bad=bad&&!m}
+function placeTag(){if(!P.on)return;tmpP.set(curPos.x,P.level+1.05,curPos.z).project(camera);const t=$('#tag');t.style.left=((tmpP.x+1)/2*innerWidth)+'px';t.style.top=((1-tmpP.y)/2*innerHeight)+'px'}
+
+// ---------- input ----------
+const ray=new THREE.Raycaster(),ndc=new THREE.Vector2(),hit=new THREE.Vector3();
+function pickLevel(mx,my){ndc.set(mx/innerWidth*2-1,1-my/innerHeight*2);ray.setFromCamera(ndc,camera);const k=P.level;
+ // the top of the level's blocks (slabs) first; where that is open, the floor under it (one level only: nothing in front steals it)
+ if(ray.ray.intersectPlane(new THREE.Plane(Y_AX,-(k+SLAB)),hit)){const x=Math.floor(hit.x),y=Math.floor(hit.z);if(S(x,y,k))return [x,y]}
+ if(ray.ray.intersectPlane(new THREE.Plane(Y_AX,-k),hit)){const x=Math.floor(hit.x),y=Math.floor(hit.z);if(x>=0&&y>=0&&x<W&&y<H)return [x,y]}return null}
+function moveCursor(x,y){x=Math.max(0,Math.min(W-1,x));y=Math.max(0,Math.min(H-1,y));if(x===P.cx&&y===P.cy)return;P.cx=x;P.cy=y;if(P.drag){P.drag.moved=true;dirty.marks=true}if(P.paste)dirty.marks=true;updateTag()}
+let rdrag=null;
+renderer.domElement.addEventListener('contextmenu',e=>e.preventDefault());
+renderer.domElement.addEventListener('mousedown',e=>{if(e.button===2){rdrag={x:e.clientX,y:e.clientY,moved:false,t:performance.now()};V.yawVel=0;return}
+ if(e.button!==0)return;if(P.on){const c=pickLevel(e.clientX,e.clientY);if(c)moveCursor(c[0],c[1]);if(P.paste){placePaste();return}P.drag={a:[P.cx,P.cy],k0:P.level,moved:false};dirty.marks=true;return}
+ ndc.set(e.clientX/innerWidth*2-1,1-e.clientY/innerHeight*2);ray.setFromCamera(ndc,camera);const h=ray.intersectObjects(figs.map(f=>f.pick));for(const u of units)u.sel=false;if(h.length)h[0].object.userData.unit.sel=true;drawCard()});
+addEventListener('mousemove',e=>{if(rdrag){const dx=e.clientX-rdrag.x,dy=e.clientY-rdrag.y,now=performance.now();if(Math.abs(dx)+Math.abs(dy)>3)rdrag.moved=true;
+  if(rdrag.moved){V.yaw-=dx*0.008;V.pitch=Math.max(0.3,Math.min(1.45,V.pitch+dy*0.006));V.turn=null;V.yawVel=Math.max(-6,Math.min(6,-dx*0.008/Math.max(0.008,(now-rdrag.t)/1000)));rdrag.x=e.clientX;rdrag.y=e.clientY;rdrag.t=now}return}
+ if(P.on&&e.target===renderer.domElement){const c=pickLevel(e.clientX,e.clientY);if(c)moveCursor(c[0],c[1])}});
+addEventListener('mouseup',e=>{if(e.button===2&&rdrag){if(!rdrag.moved&&P.on){V.yawVel=0;const c=pickLevel(e.clientX,e.clientY);if(c){moveCursor(c[0],c[1]);const kk=key(c[0],c[1],P.level),m=marks.get(kk);if(!m)shake();else{if(m.task==null)undo.push({add:[],del:[[kk,m]]});unmark(kk)}drawTasks();updateTag()}}
+  else if(performance.now()-rdrag.t>80)V.yawVel=0;rdrag=null;return}
+ if(e.button===0&&P.drag){if(P.drag.moved)applyCells(dragCells(),P.tool);else toggleAt(P.cx,P.cy);P.drag=null;dirty.marks=true;drawTasks();updateTag()}});
+addEventListener('blur',()=>{P.drag=null;rdrag=null;dirty.marks=true});
+renderer.domElement.addEventListener('wheel',e=>{e.preventDefault();if(P.on&&P.drag){if(clock-(P.wheelAt||0)>90){P.wheelAt=clock;setLevel(P.level+(e.deltaY<0?1:-1))}return}   // mid-drag: the wheel takes more levels
+ const old=V.zoom;V.zoom=Math.max(7,Math.min(60,V.zoom*(1+Math.sign(e.deltaY)*0.1)));
+ // toward the pointer: the point under it stays about where it was
+ ndc.set(e.clientX/innerWidth*2-1,1-e.clientY/innerHeight*2);ray.setFromCamera(ndc,camera);if(ray.ray.intersectPlane(new THREE.Plane(Y_AX,-(P.on?P.level:V.th)),hit)){const f=(1-V.zoom/old)*0.7;V.fly=null;V.tx+=(hit.x-V.tx)*f;V.ty+=(hit.z-V.ty)*f}},{passive:false});
+addEventListener('keydown',e=>{const k=e.key.toLowerCase();
+ if(e.metaKey||e.ctrlKey){if(!P.on)return;if(k==='z'){undoLast();e.preventDefault()}else if(k==='c'){copyPlan();e.preventDefault()}else if(k==='v'){if(P.clip){P.paste={rot:0};dirty.marks=true;updateTag()}else{shake();flashTag('Nothing copied yet: ⌘C copies the marks not queued yet')}e.preventDefault()}return}
+ if(e.altKey)return;
+ if(k==='p'){setPlan(!P.on);e.preventDefault();return}
+ if(k==='q'||k==='e'){V.yawVel=0;V.turn=(V.turn??V.yaw)+(k==='q'?-Math.PI/2:Math.PI/2);e.preventDefault();return}
+ const mv={w:[1,0],arrowup:[1,0],s:[-1,0],arrowdown:[-1,0],a:[0,-1],arrowleft:[0,-1],d:[0,1],arrowright:[0,1]}[k];
+ if(mv){const f=camForward(),r=[-f[1],f[0]],dx=f[0]*mv[0]+r[0]*mv[1],dy=f[1]*mv[0]+r[1]*mv[1];
+  if(P.on){moveCursor(P.cx+dx,P.cy+dy);V.follow=true}else{V.fly=null;V.tx+=dx;V.ty+=dy}e.preventDefault();return}
+ if(!P.on)return;
+ if(k==='escape'){if(P.paste){P.paste=null;dirty.marks=true;updateTag()}else if(P.drag){P.drag=null;dirty.marks=true;updateTag()}else setPlan(false);e.preventDefault();return}
+ if(k==='r'){setLevel(P.level+1);e.preventDefault();return}if(k==='f'){setLevel(P.level-1);e.preventDefault();return}
+ if(k==='t'&&P.paste){P.paste.rot=(P.paste.rot+1)%4;dirty.marks=true;updateTag();e.preventDefault();return}
+ if(k.length===1&&'12345'.includes(k)){setTool(['dig','build','ramp','erase','clear'][+k-1]);e.preventDefault();return}
+ if(k===' '){if(P.paste)placePaste();else{toggleAt(P.cx,P.cy);drawTasks();updateTag()}e.preventDefault();return}
+ if(k==='enter'){queuePlan();e.preventDefault();return}
+ if(k==='backspace'||k==='delete'){clearPending();e.preventDefault()}});
+
+// ---------- the workers: miners dig, builders build and carve ramps, a selected unit does any; one block at a time ----------
+// Standing at (x,y,f): that cell open, a block under it (or the ground). A step: same height free, down one with room,
+// up one only onto a ramp or off one (Gather.dm's rule). Reach: the cells beside it, from two under its feet to two over.
+function standable(x,y,f){return inB(x,y,f)&&!S(x,y,f)&&(f===0||!!S(x,y,f-1))}
+function steps(x,y,f){const out=[];for(const [a,b] of [[1,0],[-1,0],[0,1],[0,-1]]){const nx=x+a,ny=y+b;
+  if(standable(nx,ny,f))out.push([nx,ny,f]);
+  if(f>0&&standable(nx,ny,f-1)&&!S(nx,ny,f))out.push([nx,ny,f-1]);
+  if(standable(nx,ny,f+1)&&!S(x,y,f+1)&&(rampDir[id(nx,ny,f)]||f>0&&rampDir[id(x,y,f-1)]))out.push([nx,ny,f+1])}return out}
+function bfs(u){const D=new Map(),prev=new Map(),q=[[u.x,u.y,u.f]],k0=key(u.x,u.y,u.f);D.set(k0,0);for(let i=0;i<q.length&&i<6000;i++){const [x,y,f]=q[i],kk=key(x,y,f);for(const n of steps(x,y,f)){const nk=key(...n);if(D.has(nk))continue;D.set(nk,D.get(kk)+1);prev.set(nk,kk);q.push(n)}}return {D,prev}}
+function canDo(u,m){return u.role==='any'||(m.tool==='dig'?u.role==='miner':m.tool==='ramp'?u.role!=='none':u.role==='builder')}   // miners and builders both carve ramps
+function pickJob(u){const open=tasks.filter(t=>!t.paused&&t.jobs.length).sort((a,b)=>b.prio-a.prio||a.id-b.id);if(!open.length)return false;
+ const mine=u.task&&open.find(t=>t.id===u.task),order=mine?[mine,...open.filter(t=>t!==mine)]:open;const {D,prev}=bfs(u);
+ for(const t of order){let best=null,bd=1e9;
+  for(const kk of t.jobs){const m=marks.get(kk);if(!m||!canDo(u,m)||units.some(o=>o!==u&&o.job===kk))continue;if(m.tool==='build'&&stone<1){t.status='Waiting for stone';continue}
+   const [x,y,k]=kk.split(',').map(Number);if(m.tool==='build'&&k>0&&!S(x,y,k-1)&&![[1,0],[-1,0],[0,1],[0,-1]].some(([a,b])=>S(x+a,y+b,k)))continue;   // its block under it first
+   if(m.tool==='dig'&&units.some(o=>o.x===x&&o.y===y&&o.f===k+1))continue;   // never the block someone stands on
+   if(m.tool==='ramp'&&S(x,y,k+1))continue;                                   // a ramp once there is room over it
+   // from beside it (never on top of it: nobody digs out the block under their own feet), within reach; the higher
+   // blocks first, so a face comes down from the top and nothing is left hanging over a worker
+   for(const [a,b] of [[1,0],[-1,0],[0,1],[0,-1]])for(let f=k-2;f<=k+2;f++){const sk=key(x+a,y+b,f);if(!D.has(sk))continue;const d=D.get(sk)-(m.tool==='dig'?k*0.6:0)+(m.tool==='build'?k*0.01:0)-(m.access?3:0);if(d<bd){bd=d;best={kk,sk}}}}
+  if(best){const path=[];let c=best.sk;while(c&&c!==key(u.x,u.y,u.f)){path.unshift(c.split(',').map(Number));c=prev.get(c)}u.job=best.kk;u.path=path;u.work=0;t.status='Working';t.workedAt=clock;return true}
+  // nobody has reached it for a while: the workers work out a way there themselves (planAccess); only if there is none,
+  // the task says so
+  if(t.jobs.some(kk=>{const m=marks.get(kk);return m&&canDo(u,m)})&&t.status!=='Waiting for stone'&&!units.some(o=>o.job&&t.jobs.includes(o.job))&&clock-(t.workedAt||-1e9)>2500&&clock-(t.accessAt||-1e9)>4000){
+   t.accessAt=clock;const n=planAccess(t);t.status=n?'Cutting a way there: '+n+' block'+(n>1?'s':''):'No way there: nobody can get up to it'}}
+ return false}
+// A way to a task nobody can reach: from where its workers stand, the cheapest route to a place in reach of one of its
+// blocks, walking where they can, tunnelling (digging the block ahead at their height) and cutting steps (dig the room
+// over the block ahead, carve it into a ramp, step up it). The digging and carving go on the task as its own blocks.
+function heapPush(h,v){h.push(v);let i=h.length-1;while(i>0){const p=(i-1)>>1;if(h[p][0]<=h[i][0])break;[h[p],h[i]]=[h[i],h[p]];i=p}}
+function heapPop(h){const top=h[0],last=h.pop();if(h.length){h[0]=last;let i=0;for(;;){const l=i*2+1,r=l+1;let m=i;if(l<h.length&&h[l][0]<h[m][0])m=l;if(r<h.length&&h[r][0]<h[m][0])m=r;if(m===i)break;[h[m],h[i]]=[h[i],h[m]];i=m}}return top}
+function planAccess(t){const rem=t.jobs.filter(kk=>{const m=marks.get(kk);return m&&!m.access});if(!rem.length)return 0;
+ const goal=new Set();for(const kk of rem){const [x,y,k]=kk.split(',').map(Number);for(const [a,b] of [[1,0],[-1,0],[0,1],[0,-1]])for(let f=Math.max(0,k-2);f<=k+2;f++)goal.add(key(x+a,y+b,f))}
+ const dist=new Map(),prev=new Map(),h=[];const go=(kk,d,p,how)=>{if(dist.has(kk)&&dist.get(kk)<=d)return;dist.set(kk,d);prev.set(kk,{p,how});heapPush(h,[d,kk])};
+ for(const u of units)if(rem.some(kk=>canDo(u,marks.get(kk))))go(key(u.x,u.y,u.f),0,null,null);
+ const free=(x,y,k)=>!marks.has(key(x,y,k))||marks.get(key(x,y,k)).task===t.id&&marks.get(key(x,y,k)).tool==='dig';   // cut through rock nobody planned anything else for
+ let found=null;
+ for(let it=0;it<12000&&h.length;it++){const [d,ck]=heapPop(h);if(d>dist.get(ck))continue;if(goal.has(ck)&&d>0){found=ck;break}if(goal.has(ck))break;
+  const [x,y,f]=ck.split(',').map(Number);
+  for(const n of steps(x,y,f))go(key(...n),d+1,ck,null);
+  for(const [a,b] of [[1,0],[-1,0],[0,1],[0,-1]]){const nx=x+a,ny=y+b;if(!inB(nx,ny,f))continue;const base=f===0||!!S(nx,ny,f-1);
+   if(S(nx,ny,f)&&base&&!rampDir[id(nx,ny,f)]&&free(nx,ny,f))go(key(nx,ny,f),d+3,ck,{dig:[[nx,ny,f]]});   // tunnel ahead
+   if(f+1<MAXK&&S(nx,ny,f)&&base&&!marks.has(key(nx,ny,f))&&(!S(x,y,f+1)||free(x,y,f+1))&&(!S(nx,ny,f+1)||free(nx,ny,f+1))){   // a step up
+    const dg=[];if(S(x,y,f+1))dg.push([x,y,f+1]);if(S(nx,ny,f+1))dg.push([nx,ny,f+1]);go(key(nx,ny,f+1),d+5+dg.length*2,ck,{dig:dg,ramp:[nx,ny,f,a,b]})}}}
+ if(!found)return 0;
+ const work=[];for(let c=found;c;){const pr=prev.get(c);if(!pr)break;if(pr.how)work.unshift(pr.how);c=pr.p}
+ let n=0;const add=(x,y,k,tool,dir)=>{const kk=key(x,y,k);if(marks.has(kk))return;marks.set(kk,{tool,task:t.id,dir:dir||1,born:clock,access:true});t.jobs.push(kk);t.total++;n++};
+ for(const w of work){for(const [x,y,k] of w.dig)if(S(x,y,k))add(x,y,k,'dig');if(w.ramp){const [x,y,k,a,b]=w.ramp;if(!rampDir[id(x,y,k)])add(x,y,k,'ramp',dirIndex([a,b]))}}
+ dirty.marks=true;return n}
+function finish(u){const kk=u.job;const m=marks.get(kk);u.job=null;if(!m)return;const [x,y,k]=kk.split(',').map(Number);const T=tasks.find(t=>t.id===m.task);
+ if(m.tool==='dig'&&S(x,y,k)){const s=S(x,y,k);breakUp(x,y,k,s);solid[id(x,y,k)]=0;rampDir[id(x,y,k)]=0;if(s===2){iron++;floatText('+1 iron',x,y,k,'ore')}else if(hash(x,y,k+77)<0.7){stone++;floatText('+1 stone',x,y,k)}}
+ else if(m.tool==='build'){if(stone<1||units.some(o=>o.x===x&&o.y===y&&o.f===k)){if(T)T.status='Waiting for stone';return}solid[id(x,y,k)]=3;stone--;risers.set(kk,clock);chipsAt([x+0.5,k+0.1,y+0.5],10,3,1);floatText('-1 stone',x,y,k,'cool')}
+ else if(m.tool==='ramp'&&S(x,y,k)&&!S(x,y,k+1)){rampDir[id(x,y,k)]=m.dir||1;chipsAt([x+0.5,k+0.8,y+0.5],12,S(x,y,k),1.5)}
+ flashes.push({x,y,k,t0:clock,c:COL[m.tool]});
+ marks.delete(kk);if(T){T.jobs=T.jobs.filter(j=>j!==kk);T.done++;if(!T.jobs.length){T.status='Done';T.doneAt=clock;
+   // the whole task lights up once, in a wave from where it began
+   const [x0,y0]=T.cells[0].split(',').map(Number);for(const ck of T.cells){const [cx,cy,ckk]=ck.split(',').map(Number);flashes.push({x:cx,y:cy,k:ckk,t0:clock+Math.hypot(cx-x0,cy-y0)*45,c:GOLD})}
+   setTimeout(()=>{const i=tasks.indexOf(T);if(i>=0)tasks.splice(i,1);drawTasks()},3000)}}
+ for(const o of units){while(o.f>0&&!S(o.x,o.y,o.f-1))o.f--;while(S(o.x,o.y,o.f))o.f++}
+ dirty.world=true;dirty.marks=true;drawTasks();setCount('stone',stone);setCount('iron',iron)}
+function workTime(m){return m.tool==='build'?1.6:m.tool==='ramp'?1.8:1.5}
+const BLOW=0.5;   // a swing every half second
+let uiT=0;
+function sim(dt){for(const u of units){
+  if(u.path.length){u.walk=(u.walk||0)+dt*3.2;if(u.walk>=1){u.walk=0;const n=u.path.shift();if(standable(...n)){u.x=n[0];u.y=n[1];u.f=n[2]}else{u.path=[];u.job=null}}continue}
+  if(u.job){if(!marks.has(u.job)){u.job=null;continue}const before=Math.floor((u.work+0.19)/BLOW);u.work+=dt;const after=Math.floor((u.work+0.19)/BLOW);
+   if(after>before){const [x,y,k]=u.job.split(',').map(Number),m=marks.get(u.job),fx=u.x-x,fy=u.y-y;   // the blow lands: chips off the face toward it
+    chipsAt([x+0.5+fx*0.5,k+(m.tool==='build'?0.2:0.55),y+0.5+fy*0.5],m.tool==='build'?3:5,m.tool==='build'?3:S(x,y,k),1)}
+   if(u.work>=workTime(marks.get(u.job)))finish(u);continue}
+  u.wait-=dt;if(u.wait<=0){u.wait=0.6;pickJob(u)}}
+ for(let i=chips.length-1;i>=0;i--){const c=chips[i];c.life-=dt;if(c.life<=0){chips.splice(i,1);continue}c.v[1]-=9.8*dt;for(let a=0;a<3;a++)c.p[a]+=c.v[a]*dt;if(c.p[1]<c.floor){c.p[1]=c.floor;c.v[1]*=-0.25;c.v[0]*=0.5;c.v[2]*=0.5}}
+ for(let i=chunks.length-1;i>=0;i--){const c=chunks[i];c.life-=dt;if(c.life<=0){chunks.splice(i,1);continue}c.v[1]-=9.8*dt;for(let a=0;a<3;a++)c.p[a]+=c.v[a]*dt;c.ang+=c.spin*dt;
+  if(c.p[1]<c.floor+c.sz/2){c.p[1]=c.floor+c.sz/2;c.v[1]*=-0.3;c.v[0]*=0.55;c.v[2]*=0.55;c.spin*=0.6}}
+ uiT+=dt;if(uiT>0.5){uiT=0;drawTasks();drawCard()}}
+function unitState(u){if(u.path.length)return 'walking';if(u.job){const m=marks.get(u.job);return m?({dig:'digging',build:'building',ramp:'carving a ramp'})[m.tool]:'working'}return 'idle'}
+// a crack pattern over a block's top and the face toward the worker, more of it the further the work has gone
+function crackLinesFor(L,x,y,k,top,p,fx,fy){const segs=Math.floor(p*16);if(!segs)return;let n=0;
+ const walk=(seed,plane)=>{let a=0.5,b=0.5,dir=hash(x,y,seed)*6.283;for(let i=0;i<6&&n<segs;i++,n++){const len=0.09+hash(x+i,y,seed+i)*0.12;dir+=(hash(x,y+i,seed*3+i)-0.5)*1.6;const a2=Math.max(0.04,Math.min(0.96,a+Math.cos(dir)*len)),b2=Math.max(0.04,Math.min(0.96,b+Math.sin(dir)*len));plane(L,a,b,a2,b2);a=a2;b=b2}};
+ const topP=(L,a,b,a2,b2)=>L.push(x+a,top+0.006,y+b,x+a2,top+0.006,y+b2);
+ const sideP=(L,a,b,a2,b2)=>{const yy=v=>k+v*(top-k);if(fx)L.push(x+(fx>0?1.006:-0.006),yy(b),y+a,x+(fx>0?1.006:-0.006),yy(b2),y+a2);else L.push(x+a,yy(b),y+(fy>0?1.006:-0.006),x+a2,yy(b2),y+(fy>0?1.006:-0.006))};
+ for(let s=0;s<3;s++){walk(k*7+s*3+1,topP);if(fx||fy)walk(k*5+s*11+2,sideP)}}
+
+// ---------- the frame ----------
+let last=performance.now(),clock=0,wasAnim=false;
+function frame(t){const dt=Math.min(0.1,(t-last)/1000);last=t;step(dt);requestAnimationFrame(frame)}
+function step(dt){clock+=dt*1000;const t=clock,e=k=>Math.min(1,dt*k);
+ if(V.turn!=null){const d=V.turn-V.yaw;V.yaw+=d*e(9);if(Math.abs(d)<0.002){V.yaw=V.turn;V.turn=null}}
+ if(!rdrag&&Math.abs(V.yawVel)>0.005){V.yaw+=V.yawVel*dt;V.yawVel*=Math.pow(0.03,dt)}else if(!rdrag)V.yawVel=0;   // a turn carries on a little and slows
+ V.dist+=(V.zoom-V.dist)*e(10);
+ // the map never moves with the mouse; a cursor moved by keys near the screen's edge pans it (edge scrolling); a task
+ // clicked in the list, or Plan mode opening on a unit, flies it there; the view eases to the level looked at
+ if(V.fly){const q=easeInOut((clock-V.fly.t0)/V.fly.dur);V.tx=V.fly.from[0]+(V.fly.to[0]-V.fly.from[0])*q;V.ty=V.fly.from[1]+(V.fly.to[1]-V.fly.from[1])*q;if(q>=1)V.fly=null}
+ if(P.on){V.th+=(P.level+0.5-V.th)*e(4);if(V.follow){tmpP.set(P.cx+0.5,P.level+0.5,P.cy+0.5).project(camera);const out=Math.abs(tmpP.x)>0.6||Math.abs(tmpP.y)>0.55;
+  if(out){V.tx+=(P.cx+0.5-V.tx)*e(2.5);V.ty+=(P.cy+0.5-V.ty)*e(2.5)}else V.follow=false}}else V.th+=(2-V.th)*e(2);
+ placeCamera();sim(dt);
+ for(const [kk,t0] of risers)if(clock-t0>420)risers.delete(kk);
+ const anim=levelAnim();if(dirty.world||anim||risers.size||wasAnim)rebuildWorld();wasAnim=anim||risers.size>0;
+ if(dirty.marks||marksMoving()||anim)rebuildMarks();
+ levelLines.visible=floors.visible=floorLines.visible=P.on;
+ // the cursor springs to its block (a touch of overshoot), red where the tool can't do anything, a short shake when
+ // something isn't allowed; a ramp's arrow shows which way it would rise
+ const tgt=new THREE.Vector3(P.cx+0.5,P.level+0.5,P.cy+0.5);for(let i=0;i<2;i++){const h=dt/2;curVel.addScaledVector(tgt.clone().sub(curPos),340*h).multiplyScalar(Math.max(0,1-h*24));curPos.addScaledVector(curVel,h)}
+ const sa=clock-P.shakeAt,sh=sa<300?Math.sin(sa/22)*0.09*(1-sa/300):0;cursor.position.set(curPos.x+sh,curPos.y,curPos.z);
+ const red=P.bad||sa<300,tc=red?BAD:COL[P.tool];curMats[0].color.copy(tc).lerp(WHITE,red?0.15:0.55);curMats[1].color.copy(tc).lerp(WHITE,0.3);cursorFill.material.color.copy(tc).lerp(WHITE,0.5);cursorFill.material.opacity=0.12+0.08*Math.sin(t/180);
+ glow.visible=P.on&&!anim;glow.position.set(curPos.x+sh,(S(P.cx,P.cy,P.level)?P.level+SLAB:P.level)+0.03,curPos.z);glow.material.color.copy(tc).lerp(WHITE,0.4);glow.material.opacity=0.42+0.1*Math.sin(t/220);
+ cursorArrow.visible=P.on&&P.tool==='ramp'&&!P.bad&&!P.paste;if(cursorArrow.visible){const f=camForward();cursorArrow.position.set(curPos.x,P.level+SLAB+0.06,curPos.z);cursorArrow.rotation.set(0,Math.atan2(f[0],f[1]),0)}
+ // flashes: a block that just came out or went in, a finished task's wave
+ let fn=0;for(let i=flashes.length-1;i>=0;i--){const f=flashes[i],a=(clock-f.t0)/450;if(a>1){flashes.splice(i,1);continue}if(a<0||fn>=600||P.on&&f.k>P.level)continue;const s=1+a*0.12,sl=P.on&&f.k===P.level;
+  tmpM.compose(tmpP.set(f.x+0.5,f.k+(sl?SLAB/2:0.5),f.y+0.5),tmpQ.identity(),tmpS.set(s,sl?SLAB*s:s,s));flashMesh.setMatrixAt(fn,tmpM);flashMesh.setColorAt(fn,tmpC.copy(f.c).multiplyScalar(0.9*(1-a)));fn++}
+ flashMesh.count=fn;flashMesh.instanceMatrix.needsUpdate=true;if(flashMesh.instanceColor)flashMesh.instanceColor.needsUpdate=true;
+ // chips and chunks
+ chipMesh.count=chips.length;chips.forEach((c,i)=>{const s=Math.max(0.1,Math.min(1,c.life*2));tmpM.compose(tmpP.set(...c.p),tmpQ.identity(),tmpS.set(s,s,s));chipMesh.setMatrixAt(i,tmpM);chipMesh.setColorAt(i,tmpC.setRGB(...c.c))});chipMesh.instanceMatrix.needsUpdate=true;if(chipMesh.instanceColor)chipMesh.instanceColor.needsUpdate=true;
+ chunkMesh.count=chunks.length;chunks.forEach((c,i)=>{const s=c.sz*Math.min(1,c.life/0.4);tmpQ.setFromAxisAngle(c.ax,c.ang);tmpM.compose(tmpP.set(...c.p),tmpQ,tmpS.set(s,s,s));chunkMesh.setMatrixAt(i,tmpM);chunkMesh.setColorAt(i,tmpC.setRGB(...c.c))});chunkMesh.instanceMatrix.needsUpdate=true;if(chunkMesh.instanceColor)chunkMesh.instanceColor.needsUpdate=true;
+ // the units: walking legs and arms, a swing a blow, the ring of work over the block, the cracks on it
+ const CL=[];
+ units.forEach((u,i)=>{const F=figs[i];const ox=u.px,oy=u.py;u.px+=(u.x-u.px)*e(9);u.py+=(u.y-u.py)*e(9);const onR=u.f>0&&rampDir[id(u.x,u.y,u.f-1)]?-0.5:0;u.pf+=(u.f+onR-u.pf)*e(9);
+  const vis=!P.on||u.f<=P.level+1,moving=Math.hypot(u.px-ox,u.py-oy)>0.002||u.path.length>0;F.g.position.set(u.px+0.5,u.pf,u.py+0.5);F.ring.visible=!!u.sel;F.g.visible=vis;
+  const working=!!u.job&&!u.path.length&&marks.has(u.job);
+  if(moving){const dx=u.x-ox,dy=u.y-oy;if(Math.abs(dx)+Math.abs(dy)>0.001)u.face=Math.atan2(dx,dy);u.walkPh+=dt*11}
+  if(working){const [x,y]=u.job.split(',').map(Number);if(x!==u.x||y!==u.y)u.face=Math.atan2(x-u.x,y-u.y)}
+  let d=u.face-F.g.rotation.y;d=Math.atan2(Math.sin(d),Math.cos(d));F.g.rotation.y+=d*e(12);
+  const sw=moving?Math.sin(u.walkPh):0;F.lh.rotation.x=sw*0.7;F.rh.rotation.x=-sw*0.7;F.la.rotation.x=-sw*0.5;
+  if(working){const ph=((u.work+0.19)%BLOW)/BLOW,arm=ph<0.55?-0.3-2.0*ease(ph/0.55):ph<0.68?-2.3+2.7*((ph-0.55)/0.13):0.4-0.7*((ph-0.68)/0.32);F.ra.rotation.x=arm;F.body.rotation.x=ph>0.55&&ph<0.75?0.12:0}
+  else{F.ra.rotation.x=sw*0.5;F.body.rotation.x=0}
+  F.body.position.y=moving?Math.abs(Math.sin(u.walkPh))*0.03:Math.sin(t/600+i)*0.006;
+  if(working){const [x,y,k]=u.job.split(',').map(Number),m=marks.get(u.job),p=Math.min(1,u.work/workTime(m)),sl=P.on&&k===P.level,top=sl?k+SLAB:k+1;
+   u.prog.geometry.dispose();u.prog.geometry=new THREE.RingGeometry(0.2,0.28,28,1,Math.PI/2,-p*Math.PI*2);u.prog.material.color.copy(COL[m.tool]).lerp(WHITE,0.2);
+   u.prog.position.set(x+0.5,top+0.35,y+0.5);u.prog.lookAt(camera.position);u.prog.visible=!P.on||k<=P.level;
+   if(m.tool!=='build'&&(!P.on||k<=P.level))crackLinesFor(CL,x,y,k,top,p,Math.sign(u.x-x),Math.sign(u.y-y))}else u.prog.visible=false;
+  // its name and what it's doing, over its head
+  tmpP.set(u.px+0.5,u.pf+1.02,u.py+0.5).project(camera);const on=vis&&tmpP.z<1&&Math.abs(tmpP.x)<1.1&&Math.abs(tmpP.y)<1.1;u.tag.classList.toggle('hide',!on);
+  if(on){u.tag.style.left=((tmpP.x+1)/2*innerWidth)+'px';u.tag.style.top=((1-tmpP.y)/2*innerHeight)+'px';const h=u.name+' <em>· '+unitState(u)+'</em>';if(u.tag.innerHTML!==h)u.tag.innerHTML=h;u.tag.classList.toggle('sel',!!u.sel)}});
+ setLines(crackLines,CL);
+ // the floating words
+ for(let i=floaters.length-1;i>=0;i--){const f=floaters[i],a=(clock-f.t0)/1100;if(a>1){f.el.remove();floaters.splice(i,1);continue}tmpP.set(f.p[0],f.p[1]+ease(a)*0.9,f.p[2]).project(camera);f.el.style.left=((tmpP.x+1)/2*innerWidth)+'px';f.el.style.top=((1-tmpP.y)/2*innerHeight)+'px';f.el.style.opacity=a<0.6?1:1-(a-0.6)/0.4}
+ if(tagNote&&clock>=tagNote.until){tagNote=null;updateTag()}
+ placeTag();renderer.render(scene,camera)}
+setTool('dig');setShape('box');drawTasks();drawCard();setCount('stone',stone);setCount('iron',iron);requestAnimationFrame(frame);
+window.arena={tick:(n=1,dt=1/30)=>{for(let i=0;i<n;i++)step(dt)},screen:(x,y,k)=>{const v=new THREE.Vector3(x+0.5,k+(P.on&&k===P.level?SLAB:1),y+0.5).project(camera);return [Math.round((v.x+1)/2*innerWidth),Math.round((1-v.y)/2*innerHeight)]},P,V,LV,units,marks,tasks,undo,S,setPlan,setLevel,setTool,setShape,applyCells,toggleAt,undoLast,queuePlan,focusTask,copyPlan,placePaste,pasteCells,dragCells,shapeCells,key,moveCursor,levelHeights,stone:()=>stone,chips:()=>chips.length,chunks:()=>chunks.length,flashes:()=>flashes.length,floaters:()=>floaters.length};   // for checks
+</script>
+</body></html>

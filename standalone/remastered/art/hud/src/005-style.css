@@ -1,0 +1,94 @@
+body.overlay{--hci-fill:var(--macc,#e0b85a);--hci-fill:linear-gradient(180deg,color-mix(in srgb,var(--macc,#e0b85a) 45%,#fff) 0%,var(--macc,#e0b85a) 52%,color-mix(in srgb,var(--macc,#e0b85a) 68%,#000) 100%)}
+.hci{content:"";display:block;flex:none;width:22px;height:22px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay nav button>:is(img.ic,.gear){display:none!important}
+body.overlay nav button::before{content:"";display:block;flex:none;width:22px;height:22px;margin-bottom:1px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat;transition:transform .08s ease-out}
+body.overlay nav button:hover:not(:disabled)::before{transform:translateY(-1px) scale(1.06)}
+body.overlay.panel-open nav button.active::before,body.overlay nav button[aria-pressed=true]::before{background:linear-gradient(#fff,#f6e9c8)}
+nav [data-value=units]{--ico:var(--hci-people)}nav [data-value=village]{--ico:var(--hci-village)}nav [data-value=orders]{--ico:var(--hci-orders)}nav [data-value=work]{--ico:var(--hci-work)}nav [data-value=build]{--ico:var(--hci-build)}nav [data-value=realm]{--ico:var(--hci-realm)}nav [data-value=guide]{--ico:var(--hci-guide)}#btnMap{--ico:var(--hci-map)}nav [data-value=army]{--ico:var(--hci-army)}nav [data-value=quests]{--ico:var(--hci-board)}nav [data-value=admin]{--ico:var(--hci-lock)}#btnSettings{--ico:var(--hci-settings)}
+body.overlay .taskmode .quickdock button>:is(img.ic,.gear){display:none!important}
+body.overlay .taskmode .quickdock button::after{content:"";order:-1;display:block;flex:none;width:24px;height:24px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat;transition:transform .08s ease-out}
+body.overlay .taskmode .quickdock button:hover:not(:disabled)::after{transform:translateY(-1px) scale(1.06)}
+body.overlay .taskmode .quickdock button:disabled::after{background:#8d8a84;opacity:.55}
+.quickdock [data-value=stop]{--ico:var(--hci-stop)}#btnAttack{--ico:var(--hci-attack)}#btnLethal{--ico:var(--hci-lethal)}#btnLethal[aria-pressed=true]{--ico:var(--hci-fist)}#btnGather{--ico:var(--hci-work)}.quickdock [data-value=interact]{--ico:var(--hci-interact)}.quickdock [data-value=goto]{--ico:var(--hci-focus)}.quickdock [data-ui=controls-open]{--ico:var(--hci-controls)}
+body.overlay .taskmode .quickdock button:is([aria-pressed=true],.active)::after{background:linear-gradient(#fff,#f6e9c8)}
+body.overlay .taskmode .quickdock #btnLethal[aria-pressed=true]::after{background:linear-gradient(#efe8ff,#b7a4f0)}
+body.overlay #topbar .res>img.ic{display:none!important}
+body.overlay #topbar .res:is(:has(#tbUnits),:has(#tbIdle),:has(#tbSel))::before{content:"";display:block;flex:none;width:18px;height:18px;margin-right:2px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+#topbar .res:has(#tbUnits){--ico:var(--hci-people)}#topbar .res:has(#tbIdle){--ico:var(--hci-idle)}#topbar .res:has(#tbSel){--ico:var(--hci-selected)}
+#tbOnlineRes::before{content:"";display:block;flex:none;width:8px;height:8px;margin:0 3px 0 2px;border-radius:50%;background:#6fdc6f;box-shadow:0 0 0 1px #10240f,0 0 5px rgba(111,220,111,.7)}
+body.overlay #panelhead .crest img{display:none}
+body.overlay #panelhead .crest::before{content:"";display:block;width:22px;height:22px;margin-top:-6px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+main:has(#page-units:not([hidden])) #panelhead{--ico:var(--hci-people)}main:has(#page-village:not([hidden])) #panelhead{--ico:var(--hci-village)}main:has(#page-orders:not([hidden])) #panelhead{--ico:var(--hci-orders)}main:has(#page-work:not([hidden])) #panelhead{--ico:var(--hci-work)}main:has(#page-build:not([hidden])) #panelhead{--ico:var(--hci-build)}main:has(#page-realm:not([hidden])) #panelhead{--ico:var(--hci-realm)}main:has(#page-guide:not([hidden])) #panelhead{--ico:var(--hci-guide)}main:has(#page-army:not([hidden])) #panelhead{--ico:var(--hci-army)}
+body.overlay .worldseason{display:inline-flex;align-items:center;gap:5px}
+body.overlay #worldDayIcon{display:none!important}
+body.overlay .worldseason:has(#worldDayIcon:not([hidden]))::before{content:"";display:block;flex:none;width:15px;height:15px;--ico:var(--hci-sun);background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay .worldseason:has(#worldDayIcon[src*=moon]:not([hidden]))::before{--ico:var(--hci-moon);background:linear-gradient(#f4f1ff,#b9c2e0)}
+body.overlay .vsubtabs button>img.ic{display:none!important}
+body.overlay .vsubtabs button::before{content:"";display:block;flex:none;width:22px;height:22px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay #page-build .vsubtabs button::before{width:18px;height:18px}
+body.overlay .vsubtabs button[aria-selected=true]::before{background:linear-gradient(#fff,#f6e9c8)}
+.vsubtabs [data-value=roster]{--ico:var(--hci-people)}.vsubtabs [data-value=lineage]{--ico:var(--hci-lineage)}.vsubtabs [data-value=board]{--ico:var(--hci-board)}.vsubtabs [data-value=log]{--ico:var(--hci-log)}.vsubtabs [data-buildview=catalog]{--ico:var(--hci-build)}.vsubtabs [data-buildview=tasks]{--ico:var(--hci-tasks)}.vsubtabs [data-armyview=formations]{--ico:var(--hci-formation)}.vsubtabs [data-armyview=captives]{--ico:var(--hci-chain)}.vsubtabs [data-questview=taken]{--ico:var(--hci-tasks)}.vsubtabs [data-questview=ours]{--ico:var(--hci-board)}.vsubtabs [data-admview=quests]{--ico:var(--hci-board)}.vsubtabs [data-admview=players]{--ico:var(--hci-people)}.vsubtabs [data-admview=reports]{--ico:var(--hci-frown)}.vsubtabs [data-admview=log]{--ico:var(--hci-log)}
+body.overlay #topbar .speedctl button{font-size:0!important;color:transparent!important;display:inline-flex;align-items:center;justify-content:center}
+body.overlay #topbar .speedctl button::before{content:"";width:18px;height:14px;background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+body.overlay #topbar .speedctl button:is(.active,[aria-pressed=true])::before{background:linear-gradient(#fff,#f6e9c8)}
+#topbar .speedctl [data-value="0"]{--ico:var(--hci-pause)}#topbar .speedctl [data-value="1"]{--ico:var(--hci-play)}#topbar .speedctl [data-value="2"]{--ico:var(--hci-fast)}#topbar .speedctl [data-value="3"]{--ico:var(--hci-faster)}
+body.overlay #topbar #tbRank{display:inline-flex;align-items:center;gap:4px}
+body.overlay #topbar #tbRank::before{content:"";width:13px;height:13px;flex:none;--ico:var(--hci-realm);background:var(--hci-fill);-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+b.hcg{display:inline-block!important;overflow:hidden;width:12px!important;height:12px!important;margin:0 0 0 1px!important;padding:0!important;vertical-align:-2px;font-size:0!important;line-height:0!important;background:currentColor;-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+.hcg-sword{--ico:var(--hci-lethal)}.hcg-fist{--ico:var(--hci-fist)}.hcg-hand{--ico:var(--hci-interact)}.hcg-gear{--ico:var(--hci-settings)}.hcg-pick{--ico:var(--hci-work)}.hcg-chain{--ico:var(--hci-chain)}.hcg-lock{--ico:var(--hci-lock)}.hcg-heart{--ico:var(--hci-heart)}.hcg-cross{--ico:var(--hci-cross)}.hcg-plus{--ico:var(--hci-plus)}.hcg-carry{--ico:var(--hci-carry)}.hcg-flask{--ico:var(--hci-flask)}.hcg-bowl{--ico:var(--hci-bowl)}.hcg-bone{--ico:var(--hci-bone)}.hcg-fish{--ico:var(--hci-fish)}.hcg-stairs{--ico:var(--hci-stairs)}.hcg-spark{--ico:var(--hci-spark)}.hcg-sparkle{--ico:var(--hci-sparkle)}.hcg-arrow{--ico:var(--hci-arrow)}.hcg-people{--ico:var(--hci-people)}.hcg-selected{--ico:var(--hci-selected)}.hcg-crown{--ico:var(--hci-realm)}.hcg-frown{--ico:var(--hci-frown)}
+#menu3d .ic-act i b.hcg{width:15px!important;height:15px!important;vertical-align:-3px}
+body.overlay #menu3d .ic-act.primary i b.hcg{background:#fff}
+/* HC-ICONS-END */
+/* ===== hud-craft (09:0x): one log, and the Army page in the Log button's place =====
+   Village › Log › Messages: this session's messages and fight lines (the old Log card's list), striped like the log. */
+body.overlay #vlogList .ventry.k-note{--k:color-mix(in srgb,var(--macc,#f2d27a) 70%,transparent)}
+/* a line with no spaces (coordinates, a run-together name) wraps inside its row instead of pushing the time out */
+body.overlay #vlogList .ventry>span{min-width:0;overflow-wrap:anywhere}
+/* Army: sub-tabs like the Village's; the Captives tab carries a count */
+body.overlay #page-army .vsubtabs button{position:relative}
+body.overlay .vsubtabs .armyn{position:absolute;top:4px;right:6px;min-width:18px;padding:0 4px;border-radius:9px;font:700 10px/16px HudText,Georgia,serif;font-variant-numeric:lining-nums tabular-nums;text-align:center;color:var(--macc,#e0b85a);background:var(--mpane,#14110c);border:1px solid color-mix(in srgb,var(--macc,#e0b85a) 70%,transparent)}
+body.overlay .vsubtabs .armyn:empty{display:none}
+body.overlay #page-army :is(#armyFormations,#armyCaptives):not([hidden]){animation:hcFade .12s ease-out}
+/* Formations: four shapes, each with a diagram of six (the arrow is the way the group marches) */
+body.overlay .armyshapes{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:10px 0 12px}
+body.overlay .armyshape{display:grid!important;grid-template-columns:44px minmax(0,1fr);grid-template-rows:auto auto;column-gap:10px;row-gap:1px;align-items:center;justify-items:start;text-align:left;padding:8px 10px!important;min-height:62px}
+body.overlay .armyshape svg{grid-row:1/3;width:44px;height:44px;fill:var(--macc,#e0b85a)}
+body.overlay .armyshape svg .as-dir{opacity:.55}
+body.overlay .armyshape svg .as-empty{fill:none;stroke:var(--macc,#e0b85a);stroke-width:1.2;stroke-dasharray:3 3;opacity:.6}
+body.overlay .armyshape.mine{grid-column:1/-1}
+body.overlay .armyshape.mine svg rect[class^=r-]{stroke:rgba(0,0,0,.55);stroke-width:.8}
+body.overlay .armyshape.mine svg .r-front{fill:#d9a441}body.overlay .armyshape.mine svg .r-ranged{fill:#79b85a}body.overlay .armyshape.mine svg .r-mage{fill:#a884e0}body.overlay .armyshape.mine svg .r-any{fill:#9aa4ae}
+body.overlay.cb .armyshape.mine svg .r-front{fill:#e69f00}body.overlay.cb .armyshape.mine svg .r-ranged{fill:#56b4e9}body.overlay.cb .armyshape.mine svg .r-mage{fill:#cc79a7}body.overlay.cb .armyshape.mine svg .r-any{fill:#a8a29a}
+/* the unit card never climbs past the Next goal card: a tall tab (Combat with all its rows, a long Health list at
+   1024x640, where WebKit's 9 px floor makes text larger) scrolls inside the card instead (sized from the measured card:
+   header, tabs and frames take ~245 px; the goal card ends ~140 px down) */
+body.overlay #heroframe .hfpane{max-height:calc(var(--sh) - 410px);overflow-y:auto;overscroll-behavior:contain}
+body.overlay .armyshape b{align-self:end;font:15px/1.1 var(--mfont,Georgia),HudText,Georgia,serif;color:var(--macc,#e0b85a)}
+body.overlay .armyshape small{align-self:start;font-size:11px;line-height:1.3;white-space:normal;color:color-mix(in srgb,var(--mink,#e8dcb8) 82%,transparent)}
+body.overlay .armyshape[aria-pressed=true] svg{fill:#fff}
+body.overlay .armyshape[aria-pressed=true] :is(b,small){color:#fff}
+/* Captives: one card each; the left edge says the state (bound amber, being won over the accent, slave grey, broke
+   free red), two bars (loyalty, the chance to break free at the next try), then the actions on their own line */
+body.overlay #armyCapList>.hint:first-child{margin:10px 0;padding:16px 12px;text-align:center;font:italic 12px/1.45 HudText,Georgia,serif;color:color-mix(in srgb,var(--mink,#e8dcb8) 72%,transparent);border:1px dashed color-mix(in srgb,var(--mband,#5d4a2a) 75%,transparent);background:rgba(0,0,0,.18)}
+body.overlay .armyropes{margin:4px 0 8px;font-size:11px;text-align:center;color:color-mix(in srgb,var(--mink,#e8dcb8) 78%,transparent)}
+body.overlay .capt{position:relative;margin:0 0 8px;padding:8px 10px 8px 13px;background:rgba(0,0,0,.22);border:1px solid color-mix(in srgb,var(--mband,#5d4a2a) 80%,transparent);border-radius:3px;--k:#e8a33a}
+body.overlay .capt::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--k)}
+body.overlay .capt.st-winning{--k:var(--macc,#e0b85a)}body.overlay .capt.st-slave{--k:#a8a29a}body.overlay .capt.st-loose{--k:#d8503c}
+body.overlay .capt-h{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;align-items:center}
+body.overlay .capt-h b{grid-column:1;font:15px/1.2 var(--mfont,Georgia),HudText,Georgia,serif;color:var(--macc,#e0b85a);overflow-wrap:anywhere}
+body.overlay .capt-h small{grid-column:1;font-size:11px;line-height:1.3;color:color-mix(in srgb,var(--mink,#e8dcb8) 80%,transparent)}
+body.overlay .capt-h .capt-go{grid-column:2;grid-row:1/3;min-height:22px!important;padding:0 9px!important;font-size:11px}
+body.overlay .capt-rope{margin:3px 0 5px;font-size:11px;color:var(--mink,#e8dcb8)}body.overlay .capt-rope.none{color:#f0b060}
+body.overlay .capt-bars{display:grid;grid-template-columns:auto minmax(0,1fr) 36px;align-items:center;gap:3px 8px}
+body.overlay .capt-bars span{font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:color-mix(in srgb,var(--mink,#e8dcb8) 70%,transparent)}
+body.overlay .capt-bars>b{font:700 11px HudText,Georgia,serif;font-variant-numeric:lining-nums tabular-nums;text-align:right;color:var(--mink,#e8dcb8)}
+body.overlay .capt-bar{display:block;height:8px;border-radius:2px;background:rgba(0,0,0,.55);box-shadow:inset 0 1px 2px rgba(0,0,0,.6),0 0 0 1px color-mix(in srgb,var(--mband,#5d4a2a) 70%,transparent);overflow:hidden}
+body.overlay .capt-bar em{display:block;height:100%;background:linear-gradient(rgba(255,255,255,.28),rgba(255,255,255,0) 55%),var(--f,var(--macc,#e0b85a))}
+body.overlay .capt-bar.risk.lo{--f:#8c9aae}body.overlay .capt-bar.risk.mid{--f:#e8a33a}body.overlay .capt-bar.risk.hi{--f:#d8503c}
+body.overlay .capt-next{display:block;margin-top:4px;font-size:10px;color:color-mix(in srgb,var(--mink,#e8dcb8) 65%,transparent)}
+body.overlay .capt-acts{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;margin-top:7px}
+body.overlay .capt-acts button{min-height:24px!important;padding:0 10px!important;font-size:11px}
+body.overlay .capt-acts.hand{margin-top:5px}
+body.overlay.cb .capt{--k:#e6c229}body.overlay.cb .capt.st-loose{--k:#d55e00}body.overlay.cb .capt.st-winning{--k:var(--macc,#e0b85a)}body.overlay.cb .capt.st-slave{--k:#a8a29a}
+body.overlay.cb .capt-bar.risk.lo{--f:#56b4e9}body.overlay.cb .capt-bar.risk.mid{--f:#e6c229}body.overlay.cb .capt-bar.risk.hi{--f:#d55e00}body.overlay.cb .capt-rope.none{color:#f0e442}
+@media(prefers-reduced-motion:reduce){body.overlay #page-army :is(#armyFormations,#armyCaptives){animation:none!important}}

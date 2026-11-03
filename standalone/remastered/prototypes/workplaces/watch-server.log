@@ -1,0 +1,55 @@
+[INFO] root: Server -> Starting
+[INFO] cfg: Configuration loaded from file
+[DEBG] root: OS: macOS 26.3.1 Arm64
+[DEBG] root: .NET Runtime: .NET 10.0.13 osx-x64
+[DEBG] root: Server GC: False
+[DEBG] root: Processor: 10x VirtualApple @ 2.50GHz
+[DEBG] root: Available Memory: 16 GiB
+[DEBG] root: Architecture: X64
+[DEBG] root: Robust Version: 288.1.0.0
+[DEBG] root: Compile Options: FULL_RELEASE;RELEASE;EXCEPTION_TOLERANCE
+[DEBG] root: Intrinsics: X86Aes;Pclmulqdq;Popcnt;Sse;Sse2;Sse3;Ssse3;Sse41;Sse42;X86Base
+[INFO] srv: Timescale changed to: 1 on tick 1
+[INFO] srv: Name: MyServer
+[INFO] srv: TickRate: 30(33.33ms)
+[INFO] srv: Max players: 256
+[DEBG] srv: game.auto_pause_empty changed, unpausing
+[DEBG] auth: Public key is 0TV+ozvFDJtU+Tn1z8Kn4VNT/PrH1R1daS/xnP9aXmE=
+[DEBG] res.mod: ENABLING assembly load context
+[DEBG] res.mod: DISABLING sandboxing
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamPackaging.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamRuntime.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamShared.dll'
+[DEBG] res.mod: Found module '/Assemblies/OpenDreamServer.dll'
+[DEBG] res.mod: LOADING modules
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamPackaging.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamShared.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamServer.dll'
+[DEBG] res.mod: Loading module: '/Assemblies/OpenDreamRuntime.dll'
+[DEBG] res.mod: DONE loading modules: 00:00:00.0840377
+[INFO] szr: Serializer Types Hash: 70436ADDC97851178A99D1E33D40AC87B2C5B4AC63E7408EF297495C15AF27DE
+[INFO] proto: Rebuilding entity prototype component cache took 5.20ms (1 unique component mappings)
+[DEBG] szr: Finalized string mapping of size 2208 in 12ms
+[DEBG] szr: Wrote string package in 16ms size 8.16 KiB
+[DEBG] szr: String hash is HhY5PboGUNLMVPBUwFoqpEg_nqNuPaN2I7y7kiamPio
+[DEBG] opendream: Binding World Topic at 127.0.0.1:25891
+[DEBG] opendream.res: Resource root path set to /var/folders/28/10z2rygn2rqd266txklmc3mw0000gn/T/dm-wp-watch-oxqujbi3/world
+[WARN] cfg: Unknown CVar found (typo in config?): "console.loginlocal"
+[INFO] root: Server Version 288.1.0.0 -> Ready
+[DEBG] net: "127.0.0.1:63839": Status changed to RespondedAwaitingApproval, reason: "Awaiting approval"
+[DEBG] net: "127.0.0.1:63839": Status changed to RespondedConnect, reason: "Remotely requested connect"
+[DEBG] net: "127.0.0.1:63839": Status changed to Connected, reason: "Connected to B972185A11075765"
+[INFO] net: Approved "127.0.0.1:63839" with username "localhost@Workplaces" user ID "ac992913-ccd9-42d2-8815-6c0e26127654" into the server
+[INFO] net: Sending message name string table to 127.0.0.1.
+[DEBG] szr: Received handshake from localhost@Workplaces.
+[DEBG] szr: Completing handshake with localhost@Workplaces.
+[INFO] net: "127.0.0.1:63839": Connected
+[INFO] cfg: 7302313091911938745/ac992913-ccd9-42d2-8815-6c0e26127654: Sending server info...
+[INFO] toolshed: Initialized new toolshed context in 00:00:00.1005468
+[DEBG] appearance: Sending 4 appearances to new player localhost@Workplaces
+[WARN] eng: MainLoop: Cannot keep up!
+[WARN] eng: MainLoop: Cannot keep up!
+[WARN] eng: MainLoop: Cannot keep up!
+[DEBG] net: "127.0.0.1:63839": Status changed to Disconnected, reason: "Client shutting down"
+[INFO] net: "127.0.0.1:63839": Disconnected ("Client shutting down")
+[DEBG] net.transfer: Cleaning up connection for channel "7302313091911938745/ac992913-ccd9-42d2-8815-6c0e26127654" that disconnected

@@ -1,0 +1,40 @@
+--- DreamObjectMovable.cs
++++ DreamObjectMovable.cs
+@@ -10,6 +10,7 @@
+     public EntityUid Entity;
+     public readonly DMISpriteComponent SpriteComponent;
+     public DreamObjectAtom? Loc;
++    public readonly List<DreamObjectMovable> OrderedContents = new();
+ 
+     // TODO: Cache this shit. GetWorldPosition is slow.
+     public Vector2i Position => (Vector2i?)TransformSystem?.GetWorldPosition(_transformComponent) ?? (0, 0);
+@@ -71,6 +72,7 @@
+     }
+ 
+     protected override void HandleDeletion() {
++        foreach (var child in OrderedContents.ToArray()) child.Delete();
+         SetLoc(null);
+         WalkManager.StopWalks(this);
+         Particles = null;
+@@ -128,9 +130,9 @@
+             case "x":
+             case "y":
+             case "z": {
+-                int x = (varName == "x") ? value.MustGetValueAsInteger() : X;
+-                int y = (varName == "y") ? value.MustGetValueAsInteger() : Y;
+-                int z = (varName == "z") ? value.MustGetValueAsInteger() : Z;
++                int x = (varName == "x") ? value.MustGetValueAsInteger() : Math.Max(1, X);
++                int y = (varName == "y") ? value.MustGetValueAsInteger() : Math.Max(1, Y);
++                int z = (varName == "z") ? value.MustGetValueAsInteger() : Math.Max(1, Z);
+ 
+                 DreamMapManager.TryGetTurfAt((x, y), z, out var newLoc);
+                 SetLoc(newLoc);
+@@ -175,6 +177,8 @@
+ 
+     public void SetLoc(DreamObjectAtom? loc) {
+         var oldLoc = Loc;
++        if (oldLoc is DreamObjectMovable oldOwner) oldOwner.OrderedContents.Remove(this);
++        if (loc is DreamObjectMovable newOwner) newOwner.OrderedContents.Add(this);
+ 
+         loc?.IncRef();
+         Loc?.DecRef();

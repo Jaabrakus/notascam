@@ -1,0 +1,97 @@
+﻿using OpenDreamRuntime.Objects.Types;
+using OpenDreamRuntime.Procs.DebugAdapter;
+using OpenDreamShared;
+using Robust.Shared;
+using Robust.Shared.Configuration;
+using Robust.Shared.ContentPack;
+using Robust.Shared.Timing;
+using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
+using System.IO;
+using System.Linq;
+
+[module: System.Runtime.CompilerServices.SkipLocalsInit]
+
+namespace OpenDreamRuntime {
+    public sealed partial class EntryPoint : GameServer {
+        [Dependency] private IEntitySystemManager _entitySystemManager = default!;
+        [Dependency] private DreamManager _dreamManager = default!;
+        [Dependency] private IConfigurationManager _configManager = default!;
+        [Dependency] private IPrototypeManager _prototypeManager = default!;
+        [Dependency] private IDreamDebugManager _debugManager = default!;
+        [Dependency] private ServerInfoManager _serverInfoManager = default!;
+
+        private ServerVerbSystem? _serverVerbSystem;
+
+        public override void Init() {
+            IComponentFactory componentFactory = IoCManager.Resolve<IComponentFactory>();
+            componentFactory.DoAutoRegistrations();
+
+            ServerContentIoC.Register();
+
+            // This needs to happen after all IoC registrations, but before IoC.BuildGraph();
+            foreach (var callback in TestingCallbacks) {
+                var cast = (ServerModuleTestingCallbacks) callback;
+                cast.ServerBeforeIoC?.Invoke();
+            }
+
+            IoCManager.BuildGraph();
+            IoCManager.InjectDependencies(this);
+            componentFactory.GenerateNetIds();
+
+            _configManager.OverrideDefault(CVars.NetLogLateMsg, false); // Disable since disabling prediction causes timing errors otherwise.
+            _configManager.OverrideDefault(CVars.GameAutoPauseEmpty, false); // DreamObjectWorld sets this appropriately but we need to keep it disabled til then or it won't be reached
+            _configManager.OverrideDefault(CVars.DiscordRichPresenceSecondIconId, "opendream");
+            _configManager.SetCVar(CVars.GridSplitting, false); // Grid splitting should never be used
+            if(string.IsNullOrEmpty(_configManager.GetCVar(OpenDreamCVars.JsonPath))) //if you haven't set the jsonpath cvar, set it to the first valid file path passed as an arg
+                foreach (string arg in Environment.GetCommandLineArgs().Skip(1)) //skip the first element, because it's just the server's exe path
+                    if(File.Exists(arg)){
+                        _configManager.SetCVar(OpenDreamCVars.JsonPath, arg);
+                        break;
+                    }
+
+            if(_configManager.GetCVar(OpenDreamCVars.TracyEnable))
+                Profiler.Activate();
+
+            _prototypeManager.LoadDirectory(new ResPath("/Resources/Prototypes"));
+
+            _serverInfoManager.Initialize();
+        }
+
+        public override void PostInit() {
+            _serverVerbSystem = _entitySystemManager.GetEntitySystem<ServerVerbSystem>();
+
+            int debugAdapterPort = _configManager.GetCVar(OpenDreamCVars.DebugAdapterLaunched);
+            if (debugAdapterPort == 0) {
+                _dreamManager.PreInitialize(_configManager.GetCVar(OpenDreamCVars.JsonPath));
+                _dreamManager.StartWorld();
+            } else {
+                // The debug manager is responsible for running _dreamManager.PreInitialize() and .StartWorld()
+                _debugManager.Initialize(debugAdapterPort);
+            }
+        }
+
+        protected override void Dispose(bool disposing) {
+            // Write every savefile to disk
+            foreach (var savefile in DreamObjectSavefile.Savefiles.ToArray()) { //ToArray() to avoid modifying the collection while iterating over it
+                try {
+                    savefile.Close();
+                } catch (Exception e) {
+                    Logger.GetSawmill("opendream").Error($"Exception while flushing savefile '{savefile.Resource.ResourcePath}', data has been lost. {e}");
+                }
+            }
+
+            _dreamManager.Shutdown();
+            _debugManager.Shutdown();
+            ByondApi.ByondApi.Shutdown();
+        }
+
+        public override void Update(ModUpdateLevel level, FrameEventArgs frameEventArgs) {
+            if (level == ModUpdateLevel.PostEngine) {
+                _serverVerbSystem?.RunRepeatingVerbs();
+                _dreamManager.Update();
+                _debugManager.Update();
+            }
+        }
+    }
+}

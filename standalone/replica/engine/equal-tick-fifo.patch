@@ -1,0 +1,21 @@
+--- a/OpenDreamRuntime/Procs/ProcScheduler.Delays.cs
++++ b/OpenDreamRuntime/Procs/ProcScheduler.Delays.cs
+@@ -8,7 +8,8 @@
+ public sealed partial class ProcScheduler {
+     [Dependency] private IGameTiming _gameTiming = default!;
+ 
+-    private PriorityQueue<DelayTicker, uint> _tickers = new();
++    private PriorityQueue<DelayTicker, (uint Tick, ulong Order)> _tickers = new();
++    private ulong _delayOrder;
+ 
+     // This is for deferred tasks that need to fire in the current tick.
+     private readonly Queue<TaskCompletionSource> _deferredTasks = new();
+@@ -63,7 +64,7 @@
+     /// </summary>
+     /// <param name="ticker"></param>
+     private void InsertTask(DelayTicker ticker) {
+-        _tickers.Enqueue(ticker, ticker.TicksAt);
++        _tickers.Enqueue(ticker, (ticker.TicksAt, _delayOrder++));
+     }
+ 
+     private void UpdateDelays() {
