@@ -1,0 +1,89 @@
+{
+  "id": "d_clutch",
+  "label": "D Clutch",
+  "category": "Reactions",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.15,
+      {
+        "Rhx": -2,
+        "Rhy": -6,
+        "lean": 0.1,
+        "shake": 0.05
+      }
+    ],
+    [
+      0.5,
+      {
+        "Rhx": -2,
+        "Rhy": -6,
+        "Lhx": 6,
+        "Lhy": -6,
+        "lean": 0.25,
+        "crouch": 0.15,
+        "lunge": 0.15,
+        "shake": 0.02
+      }
+    ],
+    [
+      1,
+      {
+        "Rhx": -2,
+        "Rhy": -7,
+        "Lhx": 3,
+        "Lhy": -12,
+        "lean": 0.35,
+        "crouch": 0.4,
+        "lunge": 0.1
+      }
+    ]
+  ],
+  "duration": 1.25,
+  "events": {},
+  "source": "art/gear3d/deaths.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.15,
+        {
+          "Rhx": -2,
+          "Rhy": -6,
+          "lean": 0.1,
+          "shake": 0.05
+        }
+      ],
+      [
+        0.5,
+        {
+          "Rhx": -2,
+          "Rhy": -6,
+          "Lhx": 6,
+          "Lhy": -6,
+          "lean": 0.25,
+          "crouch": 0.15,
+          "lunge": 0.15,
+          "shake": 0.02
+        }
+      ],
+      [
+        1,
+        {
+          "Rhx": -2,
+          "Rhy": -7,
+          "Lhx": 3,
+          "Lhy": -12,
+          "lean": 0.35,
+          "crouch": 0.4,
+          "lunge": 0.1
+        }
+      ]
+    ]
+  },
+  "status": "source-keyed clip; mapping preview"
+}

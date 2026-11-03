@@ -1,0 +1,196 @@
+{
+  "format": "dungeon-master.sprite-redraw",
+  "version": 1,
+  "name": "FrogMan \u00b7 original for redraw",
+  "kind": "character",
+  "source": {
+    "filename": "FrogMan.dmi",
+    "frameWidth": 64,
+    "frameHeight": 64,
+    "state": "",
+    "movement": 1,
+    "delays": [
+      2,
+      2,
+      2
+    ],
+    "cells": [
+      {
+        "column": 0,
+        "row": 0,
+        "direction": "South",
+        "frame": 0,
+        "sourceCell": 0,
+        "sourceRect": [
+          0,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 1,
+        "row": 0,
+        "direction": "North",
+        "frame": 0,
+        "sourceCell": 1,
+        "sourceRect": [
+          64,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 2,
+        "row": 0,
+        "direction": "East",
+        "frame": 0,
+        "sourceCell": 2,
+        "sourceRect": [
+          128,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 3,
+        "row": 0,
+        "direction": "West",
+        "frame": 0,
+        "sourceCell": 3,
+        "sourceRect": [
+          192,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 0,
+        "row": 1,
+        "direction": "South",
+        "frame": 1,
+        "sourceCell": 4,
+        "sourceRect": [
+          256,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 1,
+        "row": 1,
+        "direction": "North",
+        "frame": 1,
+        "sourceCell": 5,
+        "sourceRect": [
+          320,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 2,
+        "row": 1,
+        "direction": "East",
+        "frame": 1,
+        "sourceCell": 6,
+        "sourceRect": [
+          384,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 3,
+        "row": 1,
+        "direction": "West",
+        "frame": 1,
+        "sourceCell": 7,
+        "sourceRect": [
+          448,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 0,
+        "row": 2,
+        "direction": "South",
+        "frame": 2,
+        "sourceCell": 8,
+        "sourceRect": [
+          512,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 1,
+        "row": 2,
+        "direction": "North",
+        "frame": 2,
+        "sourceCell": 9,
+        "sourceRect": [
+          576,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 2,
+        "row": 2,
+        "direction": "East",
+        "frame": 2,
+        "sourceCell": 10,
+        "sourceRect": [
+          640,
+          0,
+          64,
+          64
+        ]
+      },
+      {
+        "column": 3,
+        "row": 2,
+        "direction": "West",
+        "frame": 2,
+        "sourceCell": 11,
+        "sourceRect": [
+          0,
+          64,
+          64,
+          64
+        ]
+      }
+    ]
+  },
+  "output": {
+    "columns": 4,
+    "rows": 3,
+    "frameWidth": 64,
+    "frameHeight": 64,
+    "directionOrder": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "transparent": true,
+    "preserveCellPlacement": true
+  },
+  "style": {
+    "reference": "style-reference.png",
+    "name": "Approved GOA / LOTR race bodies"
+  },
+  "notes": "Preserve this race\u2019s own anatomy, distinctive features and colors. Adapt its art style to the approved GOA reference. Keep every supplied pose and direction; preserve wings for flying forms.",
+  "instructions": "Use case: style-transfer. Input 1 (input-sheet.png) is the edit target. Input 2 (style-reference.png) is the approved style reference only.\n\nRedraw the character or creature with the reference\u2019s compact GOA body proportions, large readable head, chunky hands and feet, dark outlines, and clustered pixel shading. Preserve its race, anatomy, skin colors, hair, distinctive features, clothing and equipment identities.\n\nRedraw exactly 4 columns by 3 rows. Each cell must correspond to the same cell in input-sheet.png. Columns: South, North, East, West. Rows are consecutive animation frames.\n\nPreserve each source pose, facing, animation phase and identity. Do not replace different poses with repeated standing poses. Do not invent additional frames, directions, equipment or subjects.\n\nUse a truly transparent background. No checkerboard, floor, shadows outside the sprite, borders, labels or text. Keep each complete sprite within its cell, with consistent scale, margins and attachment alignment across frames.\n\nFinal packed target: 64 \u00d7 64 pixels per cell. The redraw may be larger, but its equal cell grid must remain exact so the converter can pack it. Keep pixel edges crisp rather than smooth painted rendering.\n\nAdditional user requirements: Preserve this race\u2019s own anatomy, distinctive features and colors. Adapt its art style to the approved GOA reference. Keep every supplied pose and direction; preserve wings for flying forms."
+}

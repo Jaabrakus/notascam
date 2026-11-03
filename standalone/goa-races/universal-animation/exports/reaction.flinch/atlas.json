@@ -1,0 +1,50 @@
+{
+  "clip": "reaction.flinch",
+  "clipData": {
+    "id": "reaction.flinch",
+    "label": "Flinch",
+    "category": "Physics reactions",
+    "duration": 0.7,
+    "physics": "flinch",
+    "keys": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "source": "art/gear3d/ragdoll.js#rdKind",
+    "status": "deterministic sprite-preview adaptation; live physics retained separately"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 10,
+  "times": [
+    0.0,
+    0.07777777777777778,
+    0.15555555555555556,
+    0.23333333333333328,
+    0.3111111111111111,
+    0.3888888888888889,
+    0.46666666666666656,
+    0.5444444444444444,
+    0.6222222222222222,
+    0.7
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}

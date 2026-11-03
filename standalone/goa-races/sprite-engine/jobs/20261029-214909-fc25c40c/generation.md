@@ -1,0 +1,5 @@
+Built-in image generation tool.
+
+Use case: style-transfer. Redraw input image 1, the Gargoyle sprite animation sheet, in the approved GOA pixel-art style of input image 2 (style reference ONLY). Preserve the Gargoyle's own colors and distinctive features; charcoal grey stone skin, pointed bat ears, pale eyes. This is a ground form. NO WINGS in ANY cell. Preserve the three different input walking phases. Output EXACTLY FOUR columns by 3 rows on a transparent background, evenly spaced equal cells. Columns SOUTH/front, NORTH/back, EAST/right, WEST/left. Row-for-row and cell-for-cell match the source facing, pose, arm swing, leg step and wing phase. Use the style reference's compact large-head GOA proportions, stout readable hands and feet, dark strong outlines and chunky rich pixel shading. Keep sprites complete and inside each cell, constant character size and aligned foot baselines. No extra rows or characters, no text, no background, no checkerboard, no floor shadows. Crisp pixel art, not smooth painting. Canvas ideally 1536x1152. Nonsexual game doll bodies with simple dark shorts.
+
+Animation draft; review alignment and gait before integration.

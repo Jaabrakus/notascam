@@ -1,0 +1,1 @@
+User approval: first Vampire sheet, original bottom four winged sprites, is the canonical Vampire flying appearance. Ground uses the same sheet with accidental bottom-row wings removed. Do not substitute the separately generated VampireFly design. Source: exec-ae2e0797-1b48-4b2d-a2cc-b8064d058b83.png.

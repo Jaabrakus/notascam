@@ -1,0 +1,1 @@
+Superseded visual experiment. The user clarified that only the sword/shield pose should be copied onto the existing sprites. Active work uses the original Human pixels and universal guard-profile rig, not this fully armored redraw.

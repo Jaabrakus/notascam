@@ -1,0 +1,33 @@
+{
+  "id": "HumanBlack/Female/Marked",
+  "race": "HumanBlack",
+  "appearance": "Marked",
+  "folder": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/all/HumanBlack/Marked",
+  "category": "legs",
+  "row": 1,
+  "view": "North",
+  "targetHeight": 56,
+  "reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/all/HumanBlack/Marked/reference.png",
+  "column": 0,
+  "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/pose-repair-group-03-corrected.png",
+  "sourceRect": [
+    0,
+    0,
+    531,
+    725
+  ],
+  "segmentation": {
+    "method": "alpha128 projection bands and midpoint separators",
+    "rowBands": [
+      [
+        104,
+        615
+      ]
+    ],
+    "equalCellsAssumed": false
+  },
+  "prompt": "Edit this approved adult female pixel-art character reference. Output exactly ONE ROW of 4 complete sprites in exactly the supplied left-to-right identity order, retaining EACH character's own identity, hair, clothes, horns, tail, skin and markings. All characters remain BACK-facing, facing away from camera; NO face visible just as supplied. Each has ONE leg missing: remove the entire SCREEN-RIGHT LEG including foot on every character. Retain the whole SCREEN-LEFT leg and foot on every character. Use SCREEN coordinates literally. Both complete arms remain, only one leg remains. Add a tiny compact red pixel cap to the cut; no realistic detail. Remove all ghost pixels of the absent limb. Every genuine tail and hair lock stays connected and otherwise unchanged. Do not mirror the characters. No palette transfer, no body warping, no extra accessories, no detached pieces. Keep original coarse pixel-art shading. Generous transparent gutters, transparent background, no text, labels, floor or shadows. Output 4 sprites total, ONE row.",
+  "method": "native corrective complete pose; layout extraction only",
+  "visualReview": "accepted",
+  "reviewNote": "Native complete pose visually checked for intended missing side, intact other limbs and identity; attached tail retained."
+}

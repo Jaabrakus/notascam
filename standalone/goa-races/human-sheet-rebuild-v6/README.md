@@ -1,0 +1,5 @@
+Full-frame Human sheet rebuild
+
+The prior v5 candidate sheets contained small patches over old frames. This build replaces entire east/west cells with saved native redraws. All six side-view cells are rebuilt for Human/HumanBlack base and Possessed1; the remaining 12 appearances receive their complete redrawn side-idle frames and retain the existing walking frames. Source front/back art stays unchanged. Low-alpha background halo is removed when packing the registered pixel-art cells. Verification records every source and the normalized complete PNG frame.
+
+Use python3 standalone/goa-races/rebuild_human_sheets.py --publish to rebuild and publish together. It refreshes canonical sheets, native movement sources, frame overrides, DMI replay sheets, armory bindings, viewers, equipped exports, sample folders and ZIPs. This avoids copying historical patch-only candidate sheets back over the rebuild. Local Chrome is required for the equipped export step. The direct preview is Dungeon Master Sample/Human Sprites/index.html.

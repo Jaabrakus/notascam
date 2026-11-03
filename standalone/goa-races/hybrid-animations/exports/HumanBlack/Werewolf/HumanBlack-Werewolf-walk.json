@@ -1,0 +1,45 @@
+{
+  "format": "goa-human-rebuilt-sheet",
+  "race": "HumanBlack",
+  "sex": "male",
+  "appearance": "Werewolf",
+  "image": "HumanBlack-Werewolf-walk-64.png",
+  "revision": "v6-full-redrawn-frames",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "assembly": "Full registered redraw cells replace previous side-view frames; no arm/nose patch compositing.",
+  "redrawnFrames": [
+    {
+      "view": 2,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/HumanBlack/Werewolf/east-registered.png",
+      "sourceSha256": "8ee726c27e2c8132a5c84803ad4d474cdcd99806592e3f8a1e1b2f15b2fe1b3d",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/HumanBlack/Werewolf/2-0-full-frame.png",
+      "packedSha256": "321ec079d080025f07475582170585a7ec328f00868bd58a860bb4b27903be6f"
+    },
+    {
+      "view": 3,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/HumanBlack/Werewolf/west-registered.png",
+      "sourceSha256": "2beaab446bb54bb6ba5f5ec87a03ad64dc830cc051fd844cb4572b6a9dd1d2a5",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/HumanBlack/Werewolf/3-0-full-frame.png",
+      "packedSha256": "66eb6dfd41a62c4a19ce136caf1903fd029c7bb20d8dd9d45e69a6323642eb03"
+    }
+  ]
+}

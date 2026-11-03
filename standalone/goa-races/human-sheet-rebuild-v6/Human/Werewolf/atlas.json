@@ -1,0 +1,45 @@
+{
+  "format": "goa-human-rebuilt-sheet",
+  "race": "Human",
+  "sex": "male",
+  "appearance": "Werewolf",
+  "image": "sprites.png",
+  "revision": "v6-full-redrawn-frames",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "assembly": "Full registered redraw cells replace previous side-view frames; no arm/nose patch compositing.",
+  "redrawnFrames": [
+    {
+      "view": 2,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Werewolf/east-registered.png",
+      "sourceSha256": "d2838f535b7a93b824e86266ae488aae9040d3c36f4dd13fcd157a144ef40580",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Werewolf/2-0-full-frame.png",
+      "packedSha256": "1dead6f8f294872a9acfc577e82d96d816e6bf093dcd001c6a63557d6a369f1a"
+    },
+    {
+      "view": 3,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Werewolf/west-registered.png",
+      "sourceSha256": "0037c13a93973ef4c6121c75f062ade43fa86c0332bf0726d68b0947cfe33a19",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Werewolf/3-0-full-frame.png",
+      "packedSha256": "6017f751e03dcc6f1ffddfe935ff5e0e6fb6c8905dfbbb30b64b5b36c0d58c2d"
+    }
+  ]
+}

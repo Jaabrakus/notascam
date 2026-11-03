@@ -1,0 +1,225 @@
+{
+  "schema": "universal-carry-template-v1",
+  "id": "goa-carry-v1",
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "coordinateSpace": "64px reference body",
+  "armOrder": [
+    "shoulder",
+    "elbow",
+    "wrist"
+  ],
+  "anatomicalWeaponHand": "R",
+  "anatomicalShieldHand": "L",
+  "views": [
+    {
+      "joints": {
+        "R": [
+          [
+            23,
+            32
+          ],
+          [
+            22,
+            39
+          ],
+          [
+            20,
+            36.5
+          ]
+        ],
+        "L": [
+          [
+            40,
+            32
+          ],
+          [
+            42,
+            40
+          ],
+          [
+            39.5,
+            37.5
+          ]
+        ]
+      },
+      "shieldAngle": 135,
+      "shieldBias": [
+        0,
+        1
+      ]
+    },
+    {
+      "joints": {
+        "R": [
+          [
+            41,
+            32
+          ],
+          [
+            44,
+            39
+          ],
+          [
+            46,
+            36.5
+          ]
+        ],
+        "L": [
+          [
+            23,
+            32
+          ],
+          [
+            21,
+            38
+          ],
+          [
+            22,
+            39
+          ]
+        ]
+      },
+      "shieldAngle": 315,
+      "shieldBias": [
+        -3,
+        1
+      ]
+    },
+    {
+      "joints": {
+        "R": [
+          [
+            27,
+            32
+          ],
+          [
+            29,
+            39
+          ],
+          [
+            45,
+            37.5
+          ]
+        ],
+        "L": [
+          [
+            32,
+            32
+          ],
+          [
+            27,
+            39
+          ],
+          [
+            28,
+            40
+          ]
+        ]
+      },
+      "shieldAngle": 225,
+      "shieldBias": [
+        -3,
+        1
+      ]
+    },
+    {
+      "joints": {
+        "R": [
+          [
+            32,
+            32
+          ],
+          [
+            29,
+            40
+          ],
+          [
+            20.5,
+            37
+          ]
+        ],
+        "L": [
+          [
+            37,
+            32
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            33.5,
+            37.5
+          ]
+        ]
+      },
+      "shieldAngle": 135,
+      "shieldBias": [
+        6,
+        1
+      ]
+    }
+  ],
+  "weaponDirections": {
+    "default": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0.08,
+        -1
+      ],
+      [
+        -0.08,
+        -1
+      ]
+    ],
+    "weapon.spear": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "weapon.crystal staff": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "notes": "Carrying is upright. Attack clips retain their own weapon directions, including the approved low spear jab. The reference establishes poses; each race/sex/appearance supplies limb pixels and a calibration map."
+}

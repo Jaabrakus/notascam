@@ -1,0 +1,213 @@
+{
+  "frameSize": [
+    96,
+    96
+  ],
+  "bodyOrigin": [
+    16,
+    16
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "rows": [
+    "ready",
+    "windup",
+    "strike"
+  ],
+  "phases": [
+    {
+      "row": 0,
+      "ms": 400,
+      "label": "Ready"
+    },
+    {
+      "row": 1,
+      "ms": 240,
+      "label": "Windup"
+    },
+    {
+      "row": 2,
+      "ms": 120,
+      "label": "Strike"
+    },
+    {
+      "row": 2,
+      "ms": 120,
+      "label": "Follow-through"
+    },
+    {
+      "row": 0,
+      "ms": 260,
+      "label": "Return to ready"
+    }
+  ],
+  "grips": [
+    [
+      {
+        "weapon": [
+          23,
+          40
+        ],
+        "shield": [
+          41,
+          39
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          39
+        ],
+        "shield": [
+          22,
+          39
+        ]
+      },
+      {
+        "weapon": [
+          32,
+          42
+        ],
+        "shield": [
+          44,
+          39
+        ]
+      },
+      {
+        "weapon": [
+          24,
+          38
+        ],
+        "shield": [
+          33,
+          41
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          19,
+          18
+        ],
+        "shield": [
+          41,
+          40
+        ]
+      },
+      {
+        "weapon": [
+          46,
+          14
+        ],
+        "shield": [
+          20,
+          40
+        ]
+      },
+      {
+        "weapon": [
+          19,
+          17
+        ],
+        "shield": [
+          44,
+          40
+        ]
+      },
+      {
+        "weapon": [
+          45,
+          17
+        ],
+        "shield": [
+          21,
+          40
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          16,
+          44
+        ],
+        "shield": [
+          43,
+          37
+        ]
+      },
+      {
+        "weapon": [
+          50,
+          43
+        ],
+        "shield": [
+          16,
+          37
+        ]
+      },
+      {
+        "weapon": [
+          50,
+          46
+        ],
+        "shield": [
+          39,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          14,
+          46
+        ],
+        "shield": [
+          24,
+          36
+        ]
+      }
+    ]
+  ],
+  "rotations": [
+    [
+      -12,
+      12,
+      15,
+      -15
+    ],
+    [
+      -55,
+      55,
+      -60,
+      60
+    ],
+    [
+      -115,
+      115,
+      100,
+      -100
+    ]
+  ],
+  "shieldFacingOffset": 135,
+  "shieldForearmOffset": [
+    -2,
+    2,
+    -2,
+    2
+  ],
+  "loadout": {
+    "weapon": {
+      "id": "weapon.arming sword",
+      "material": "iron"
+    },
+    "shield": {
+      "id": "shield.round",
+      "material": "iron"
+    }
+  }
+}

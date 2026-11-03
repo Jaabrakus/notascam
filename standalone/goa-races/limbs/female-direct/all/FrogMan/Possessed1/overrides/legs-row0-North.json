@@ -1,0 +1,33 @@
+{
+  "id": "FrogMan/Female/Possessed1",
+  "race": "FrogMan",
+  "appearance": "Possessed1",
+  "folder": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/all/FrogMan/Possessed1",
+  "category": "legs",
+  "row": 0,
+  "view": "North",
+  "targetHeight": 54,
+  "reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/all/FrogMan/Possessed1/reference.png",
+  "column": 2,
+  "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/review-03-group-08-corrected.png",
+  "sourceRect": [
+    1117,
+    0,
+    510,
+    725
+  ],
+  "segmentation": {
+    "method": "alpha128 projection bands and midpoint separators",
+    "rowBands": [
+      [
+        130,
+        639
+      ]
+    ],
+    "equalCellsAssumed": false
+  },
+  "prompt": "Precise direct edit of these 4 approved ADULT FEMALE pixel-art characters. Output ONE ROW of exactly 4 complete character sprites, identical left-to-right identity order. Reference is authority for EACH character's skin, eyes, species face, ears, hair/fur/scales, horns, markings, clothing, proportions, genuine attached tail. Keep each exact identity without palette transfer or male-body substitution. Keep BACK-facing view, looking away from camera with no faces visible throughout.\nOn EVERY sprite REMOVE the ENTIRE SCREEN-LEFT LEG at hip, including foot. Leave the SCREEN-RIGHT leg AND foot fully intact. Screen coordinates are literal: absent on image left, present on image right. Do not mirror or reverse directions.\nKeep both complete arms and hands. ONLY ONE LEG absent. Remaining leg must be visible and attached. Keep a small RED pixel cut cap on the removed side. No ghost limb strips, hand/foot fragments, splatter or realistic injury detail. Do not mistake any tail or long hair for a limb; retain it completely. Do not add new markings on legs, clothing or torso to replace markings removed with the limb. Preserve original dark fitted top/shorts and chunky pixel shading. Full remaining bodies, generous transparent gutters, no clipping. Transparent alpha with NO glow, haze, floor, shadows, labels, text or detached pieces. ONE row, 4 sprites total.",
+  "method": "native corrective complete pose; layout extraction only",
+  "visualReview": "accepted",
+  "reviewNote": "Native complete corrective pose visually checked for specified screen-side absence, intact other limbs and attached features."
+}

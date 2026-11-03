@@ -1,0 +1,1 @@
+Only North changed. Other three RGBA views preserved exactly. One approved appearance per direction; complete flying animation pending.

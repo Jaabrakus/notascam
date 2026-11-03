@@ -1,0 +1,33 @@
+{
+  "id": "Dwarves/Female/Possessed2",
+  "race": "Dwarves",
+  "appearance": "Possessed2",
+  "folder": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/all/Dwarves/Possessed2",
+  "category": "arms",
+  "row": 1,
+  "view": "North",
+  "targetHeight": 46,
+  "reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/all/Dwarves/Possessed2/reference.png",
+  "column": 0,
+  "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/female-direct/pose-repair-group-02-corrected.png",
+  "sourceRect": [
+    0,
+    0,
+    874,
+    887
+  ],
+  "segmentation": {
+    "method": "alpha128 projection bands and midpoint separators",
+    "rowBands": [
+      [
+        221,
+        852
+      ]
+    ],
+    "equalCellsAssumed": false
+  },
+  "prompt": "Edit this approved adult female pixel-art character reference. Output exactly ONE ROW of 2 complete sprites in exactly the supplied left-to-right identity order, retaining EACH character's own identity, hair, clothes, horns, tail, skin and markings. All characters remain BACK-facing, facing away from camera; NO face visible just as supplied. Each has ONE arm missing: remove the entire SCREEN-RIGHT ARM including hand on every character. Retain the whole SCREEN-LEFT arm and hand on every character. Use SCREEN coordinates literally. Both complete legs remain, only one arm remains. Add a tiny compact red pixel cap to the cut; no realistic detail. Remove all ghost pixels of the absent limb. Every genuine tail and hair lock stays connected and otherwise unchanged. Do not mirror the characters. No palette transfer, no body warping, no extra accessories, no detached pieces. Keep original coarse pixel-art shading. Generous transparent gutters, transparent background, no text, labels, floor or shadows. Output 2 sprites total, ONE row.",
+  "method": "native corrective complete pose; layout extraction only",
+  "visualReview": "accepted",
+  "reviewNote": "Native complete pose visually checked: screen-right limb absent, screen-left limb present, identity and attached features retained."
+}

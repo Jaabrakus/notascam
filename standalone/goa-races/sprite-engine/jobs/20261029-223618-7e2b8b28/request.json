@@ -1,0 +1,89 @@
+{
+  "format": "dungeon-master.sprite-redraw",
+  "version": 1,
+  "name": "VampireFly \u00b7 approved design \u00b7 north wings corrected",
+  "kind": "character",
+  "source": {
+    "filename": "Vampire-approved-flight.png",
+    "frameWidth": 362,
+    "frameHeight": 362,
+    "state": "Fly appearance",
+    "movement": 0,
+    "delays": [
+      2
+    ],
+    "cells": [
+      {
+        "column": 0,
+        "row": 0,
+        "direction": "South",
+        "frame": 0,
+        "sourceCell": 0,
+        "sourceRect": [
+          0,
+          0,
+          362,
+          362
+        ]
+      },
+      {
+        "column": 1,
+        "row": 0,
+        "direction": "North",
+        "frame": 0,
+        "sourceCell": 1,
+        "sourceRect": [
+          362,
+          0,
+          362,
+          362
+        ]
+      },
+      {
+        "column": 2,
+        "row": 0,
+        "direction": "East",
+        "frame": 0,
+        "sourceCell": 2,
+        "sourceRect": [
+          724,
+          0,
+          362,
+          362
+        ]
+      },
+      {
+        "column": 3,
+        "row": 0,
+        "direction": "West",
+        "frame": 0,
+        "sourceCell": 3,
+        "sourceRect": [
+          1086,
+          0,
+          362,
+          362
+        ]
+      }
+    ]
+  },
+  "output": {
+    "columns": 4,
+    "rows": 1,
+    "frameWidth": 64,
+    "frameHeight": 64,
+    "directionOrder": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "transparent": true
+  },
+  "style": {
+    "reference": "style-reference.png",
+    "name": "User-approved first Vampire design"
+  },
+  "notes": "Only North changed. Other three RGBA views preserved exactly. One approved appearance per direction; complete flying animation pending.",
+  "instructions": "Use the approved first Vampire flying row. Edit only North wing layering; preserve other views. Do not replace the character design."
+}

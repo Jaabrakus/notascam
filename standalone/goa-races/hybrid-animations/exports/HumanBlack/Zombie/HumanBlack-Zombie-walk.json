@@ -1,0 +1,45 @@
+{
+  "format": "goa-human-rebuilt-sheet",
+  "race": "HumanBlack",
+  "sex": "male",
+  "appearance": "Zombie",
+  "image": "HumanBlack-Zombie-walk-64.png",
+  "revision": "v6-full-redrawn-frames",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "assembly": "Full registered redraw cells replace previous side-view frames; no arm/nose patch compositing.",
+  "redrawnFrames": [
+    {
+      "view": 2,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/HumanBlack/Zombie/east-registered.png",
+      "sourceSha256": "68b843f5e5035d864fd4e664d72305cf23807390af68e81fd4330d4a60f437ef",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/HumanBlack/Zombie/2-0-full-frame.png",
+      "packedSha256": "7ba903a53439edadd6b1cce0a3d81dcb3d298dfc570a20b94071869404e319de"
+    },
+    {
+      "view": 3,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/HumanBlack/Zombie/west-registered.png",
+      "sourceSha256": "5add7aeab3f9d200e7f7761926af5ba4ce56228a4b5c25f90bccc72a6a5e1240",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/HumanBlack/Zombie/3-0-full-frame.png",
+      "packedSha256": "1e69370ffa5466fad7f0b71695ed913ff55d4389fb4020f35923c94844f98b50"
+    }
+  ]
+}

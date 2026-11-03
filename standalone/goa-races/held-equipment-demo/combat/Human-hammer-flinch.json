@@ -1,0 +1,363 @@
+{
+  "family": "one-hand-sweep",
+  "weapon": "weapon.warhammer",
+  "frameSize": [
+    128,
+    128
+  ],
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "action": "flinch",
+  "bodySource": "combat/universal-flinch/body.png",
+  "rows": [
+    "Hit",
+    "Recoil",
+    "Recover"
+  ],
+  "phases": [
+    {
+      "row": 0,
+      "ms": 80,
+      "label": "Hit"
+    },
+    {
+      "row": 1,
+      "ms": 100,
+      "label": "Recoil"
+    },
+    {
+      "row": 2,
+      "ms": 180,
+      "label": "Recover"
+    }
+  ],
+  "rootMotion": {
+    "enabled": false,
+    "forwardProjection": [
+      [
+        0,
+        0.45
+      ],
+      [
+        0,
+        -0.45
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "positionCurve": "smoothstep",
+    "heightCurve": "lift*sin(pi*u)",
+    "sharedBodyAndEquipment": true
+  },
+  "grips": [
+    [
+      {
+        "weapon": [
+          22,
+          42
+        ],
+        "shield": [
+          40,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          42
+        ],
+        "shield": [
+          22,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          31,
+          43
+        ],
+        "shield": [
+          41,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          36,
+          40
+        ],
+        "shield": [
+          25,
+          34
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          22,
+          43
+        ],
+        "shield": [
+          40,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          40
+        ],
+        "shield": [
+          22,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          30,
+          44
+        ],
+        "shield": [
+          40,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          36,
+          42
+        ],
+        "shield": [
+          26,
+          35
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          22,
+          42
+        ],
+        "shield": [
+          40,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          41
+        ],
+        "shield": [
+          22,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          31,
+          43
+        ],
+        "shield": [
+          41,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          36,
+          40
+        ],
+        "shield": [
+          25,
+          34
+        ]
+      }
+    ]
+  ],
+  "weaponHands": 1,
+  "jabProfile": null,
+  "sweepVectors": [
+    [
+      [
+        -0.7,
+        -1
+      ],
+      [
+        0.7,
+        -1
+      ],
+      [
+        1,
+        -0.5
+      ],
+      [
+        0.4,
+        -1
+      ]
+    ],
+    [
+      [
+        -0.7,
+        -1
+      ],
+      [
+        0.7,
+        -1
+      ],
+      [
+        -0.5,
+        -1
+      ],
+      [
+        0.5,
+        -1
+      ]
+    ],
+    [
+      [
+        1,
+        0.2
+      ],
+      [
+        -1,
+        0.2
+      ],
+      [
+        0.6,
+        0.8
+      ],
+      [
+        -0.6,
+        0.8
+      ]
+    ],
+    [
+      [
+        1,
+        0.7
+      ],
+      [
+        -1,
+        0.7
+      ],
+      [
+        0.3,
+        1
+      ],
+      [
+        -0.3,
+        1
+      ]
+    ]
+  ],
+  "rotations": [
+    [
+      -12,
+      12,
+      15,
+      -15
+    ],
+    [
+      -55,
+      55,
+      -60,
+      60
+    ],
+    [
+      -115,
+      115,
+      100,
+      -100
+    ]
+  ],
+  "bladeDirections": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -0.6
+      ],
+      [
+        -1,
+        -0.6
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -0.6,
+        -1
+      ],
+      [
+        0.6,
+        -1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0.4
+      ],
+      [
+        -1,
+        0.4
+      ]
+    ]
+  ],
+  "shieldFacingOffset": 135,
+  "shieldForearmOffset": [
+    -2,
+    2,
+    -2,
+    2
+  ],
+  "loadout": {
+    "weapon": {
+      "id": "weapon.warhammer",
+      "material": "iron"
+    },
+    "shield": {
+      "id": null,
+      "material": "iron"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Human profiles and possessed idle arms v5
+
+Focused revision of normal and Possessed1 male Human/HumanBlack bodies. Each native image is an independent built-in image_gen redraw, with its exact prompt and provenance saved in the corresponding race/appearance directory. Noses are shortened and rounded in all three east/west pose rows; idle arms are redrawn as a continuous upper-arm/elbow/wrist/fist silhouette. Registration and masked application preserve all pixels outside the facial-profile and idle-arm regions. Both walk poses retain their original limb pixels. Frame overrides, native base preview sheets, movement DMI, gallery, and exports are refreshed. Other Human appearances retain v4.

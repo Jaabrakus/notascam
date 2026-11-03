@@ -1,0 +1,1 @@
+Superseded experiment. User chose to keep the saved Human sprites and fix only the east-facing idle right hand. These redraw files are not active character art or integrated into the game. The carry preview builder remains an unfinished experiment.

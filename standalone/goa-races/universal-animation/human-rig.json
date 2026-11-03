@@ -1,0 +1,659 @@
+{
+  "id": "human-calibration",
+  "race": "Human",
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "image": "assets/human-parts.png",
+  "cellSize": 64,
+  "parts": [
+    "head",
+    "torso",
+    "armRu",
+    "armRl",
+    "armLu",
+    "armLl",
+    "legRu",
+    "legRl",
+    "legLu",
+    "legLl"
+  ],
+  "views": [
+    {
+      "head": {
+        "root": [
+          32,
+          32
+        ],
+        "tip": [
+          32,
+          17
+        ]
+      },
+      "torso": {
+        "root": [
+          32,
+          52
+        ],
+        "tip": [
+          32,
+          33
+        ]
+      },
+      "armRu": {
+        "root": [
+          22,
+          34
+        ],
+        "tip": [
+          21,
+          40
+        ]
+      },
+      "armRl": {
+        "root": [
+          21,
+          40
+        ],
+        "tip": [
+          20,
+          46
+        ],
+        "parent": "armRu"
+      },
+      "armLu": {
+        "root": [
+          42,
+          34
+        ],
+        "tip": [
+          43,
+          40
+        ]
+      },
+      "armLl": {
+        "root": [
+          43,
+          40
+        ],
+        "tip": [
+          44,
+          46
+        ],
+        "parent": "armLu"
+      },
+      "legRu": {
+        "root": [
+          27,
+          52
+        ],
+        "tip": [
+          25,
+          56
+        ]
+      },
+      "legRl": {
+        "root": [
+          25,
+          56
+        ],
+        "tip": [
+          24,
+          60
+        ],
+        "parent": "legRu"
+      },
+      "legLu": {
+        "root": [
+          37,
+          52
+        ],
+        "tip": [
+          39,
+          56
+        ]
+      },
+      "legLl": {
+        "root": [
+          39,
+          56
+        ],
+        "tip": [
+          40,
+          60
+        ],
+        "parent": "legLu"
+      }
+    },
+    {
+      "head": {
+        "root": [
+          32,
+          32
+        ],
+        "tip": [
+          32,
+          17
+        ]
+      },
+      "torso": {
+        "root": [
+          32,
+          52
+        ],
+        "tip": [
+          32,
+          33
+        ]
+      },
+      "armRu": {
+        "root": [
+          42,
+          34
+        ],
+        "tip": [
+          43,
+          40
+        ]
+      },
+      "armRl": {
+        "root": [
+          43,
+          40
+        ],
+        "tip": [
+          44,
+          46
+        ],
+        "parent": "armRu"
+      },
+      "armLu": {
+        "root": [
+          22,
+          34
+        ],
+        "tip": [
+          21,
+          40
+        ]
+      },
+      "armLl": {
+        "root": [
+          21,
+          40
+        ],
+        "tip": [
+          20,
+          46
+        ],
+        "parent": "armLu"
+      },
+      "legRu": {
+        "root": [
+          37,
+          52
+        ],
+        "tip": [
+          39,
+          56
+        ]
+      },
+      "legRl": {
+        "root": [
+          39,
+          56
+        ],
+        "tip": [
+          40,
+          60
+        ],
+        "parent": "legRu"
+      },
+      "legLu": {
+        "root": [
+          27,
+          52
+        ],
+        "tip": [
+          25,
+          56
+        ]
+      },
+      "legLl": {
+        "root": [
+          25,
+          56
+        ],
+        "tip": [
+          24,
+          60
+        ],
+        "parent": "legLu"
+      }
+    },
+    {
+      "head": {
+        "root": [
+          32,
+          32
+        ],
+        "tip": [
+          32,
+          17
+        ]
+      },
+      "torso": {
+        "root": [
+          32,
+          52
+        ],
+        "tip": [
+          32,
+          33
+        ]
+      },
+      "armRu": {
+        "root": [
+          24,
+          35
+        ],
+        "tip": [
+          24,
+          41
+        ]
+      },
+      "armRl": {
+        "root": [
+          24,
+          41
+        ],
+        "tip": [
+          26,
+          47
+        ],
+        "parent": "armRu"
+      },
+      "armLu": {
+        "root": [
+          35,
+          35
+        ],
+        "tip": [
+          35,
+          41
+        ]
+      },
+      "armLl": {
+        "root": [
+          35,
+          41
+        ],
+        "tip": [
+          36,
+          46
+        ],
+        "parent": "armLu"
+      },
+      "legRu": {
+        "root": [
+          29,
+          52
+        ],
+        "tip": [
+          28,
+          56
+        ]
+      },
+      "legRl": {
+        "root": [
+          28,
+          56
+        ],
+        "tip": [
+          27,
+          60
+        ],
+        "parent": "legRu"
+      },
+      "legLu": {
+        "root": [
+          37,
+          52
+        ],
+        "tip": [
+          36,
+          56
+        ]
+      },
+      "legLl": {
+        "root": [
+          36,
+          56
+        ],
+        "tip": [
+          36,
+          60
+        ],
+        "parent": "legLu"
+      }
+    },
+    {
+      "head": {
+        "root": [
+          32,
+          32
+        ],
+        "tip": [
+          32,
+          17
+        ]
+      },
+      "torso": {
+        "root": [
+          32,
+          52
+        ],
+        "tip": [
+          32,
+          33
+        ]
+      },
+      "armRu": {
+        "root": [
+          29,
+          35
+        ],
+        "tip": [
+          29,
+          41
+        ]
+      },
+      "armRl": {
+        "root": [
+          29,
+          41
+        ],
+        "tip": [
+          28,
+          46
+        ],
+        "parent": "armRu"
+      },
+      "armLu": {
+        "root": [
+          40,
+          35
+        ],
+        "tip": [
+          40,
+          41
+        ]
+      },
+      "armLl": {
+        "root": [
+          40,
+          41
+        ],
+        "tip": [
+          38,
+          47
+        ],
+        "parent": "armLu"
+      },
+      "legRu": {
+        "root": [
+          27,
+          52
+        ],
+        "tip": [
+          28,
+          56
+        ]
+      },
+      "legRl": {
+        "root": [
+          28,
+          56
+        ],
+        "tip": [
+          28,
+          60
+        ],
+        "parent": "legRu"
+      },
+      "legLu": {
+        "root": [
+          35,
+          52
+        ],
+        "tip": [
+          36,
+          56
+        ]
+      },
+      "legLl": {
+        "root": [
+          36,
+          56
+        ],
+        "tip": [
+          37,
+          60
+        ],
+        "parent": "legLu"
+      }
+    }
+  ],
+  "status": "Mapping calibration draft; far-side hidden limb pixels are absent, not invented.",
+  "sourceHashes": {
+    "core.png": "fef544c993c193e50d6e31bb6ccf658a0b47344833d6dea6387a3080ec7e0597",
+    "parts.png": "8289d5f15200da963e742b924b3f4b466b8eeffff9cef9cfc62f8721de10acc8"
+  },
+  "holdProfiles": {
+    "reference_guard": {
+      "id": "reference_guard",
+      "description": "Pose-only adaptation of the user's sword-and-shield guard on the existing Human sprite pixels.",
+      "views": [
+        {
+          "R": [
+            22,
+            42
+          ],
+          "L": [
+            41,
+            40
+          ],
+          "bendR": 1,
+          "bendL": -1
+        },
+        {
+          "R": [
+            42,
+            42
+          ],
+          "L": [
+            23,
+            40
+          ],
+          "bendR": -1,
+          "bendL": 1
+        },
+        {
+          "R": [
+            38,
+            41
+          ],
+          "L": [
+            35,
+            40
+          ],
+          "bendR": 1,
+          "bendL": -1
+        },
+        {
+          "R": [
+            24,
+            42
+          ],
+          "L": [
+            33,
+            40
+          ],
+          "bendR": -1,
+          "bendL": -1
+        }
+      ],
+      "rigOverrides": {
+        "2": {
+          "armLu": {
+            "root": [
+              35,
+              35
+            ],
+            "tip": [
+              35,
+              41
+            ]
+          },
+          "armLl": {
+            "root": [
+              35,
+              41
+            ],
+            "tip": [
+              37,
+              47
+            ],
+            "parent": "armLu"
+          }
+        },
+        "3": {
+          "armRu": {
+            "root": [
+              29,
+              35
+            ],
+            "tip": [
+              29,
+              41
+            ]
+          },
+          "armRl": {
+            "root": [
+              29,
+              41
+            ],
+            "tip": [
+              27,
+              47
+            ],
+            "parent": "armRu"
+          }
+        }
+      },
+      "weaponDirections": {
+        "default": [
+          [
+            -0.14,
+            -1
+          ],
+          [
+            0.14,
+            -1
+          ],
+          [
+            0.35,
+            -1
+          ],
+          [
+            -0.35,
+            -1
+          ]
+        ],
+        "weapon.spear": [
+          [
+            0.12,
+            1
+          ],
+          [
+            -0.12,
+            0.45
+          ],
+          [
+            1,
+            -0.35
+          ],
+          [
+            -1,
+            -0.35
+          ]
+        ],
+        "weapon.bow": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "weapon.crystal staff": [
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            -0.35,
+            -1
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      },
+      "skin": "armedSkin",
+      "sourcePixelPolicy": "Original Human skin pixels; hidden arms reuse near-arm pixels translated to independent anatomical bone slots. No mirrored character views or new armor.",
+      "shieldAngles": [
+        135,
+        315,
+        225,
+        135
+      ],
+      "shieldBias": [
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    }
+  }
+}

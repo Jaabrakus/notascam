@@ -1,0 +1,8231 @@
+{
+  "schema": "universal-humanoid-clips-v1",
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "clips": {
+    "slash": {
+      "id": "slash",
+      "label": "Slash",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.16,
+          {
+            "Ru": 2,
+            "Rl": 2.5,
+            "W": 2.5,
+            "Lu": -0.9,
+            "Ll": -0.3,
+            "lean": -0.1,
+            "back": 0.15,
+            "crouch": 0.08
+          }
+        ],
+        [
+          0.3,
+          {
+            "Ru": 0.35,
+            "Rl": 0.15,
+            "W": 0.1,
+            "Lu": -1.1,
+            "Ll": -0.6,
+            "lean": 0.18,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.1,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.42,
+          {
+            "Ru": -0.25,
+            "Rl": -0.4,
+            "W": -0.35,
+            "lean": 0.12,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.1,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.72
+        ]
+      ],
+      "duration": 0.97,
+      "events": {
+        "hit": [
+          0.3
+        ],
+        "trail": [
+          0.18,
+          0.42
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.16,
+            {
+              "Ru": 2,
+              "Rl": 2.5,
+              "W": 2.5,
+              "Lu": -0.9,
+              "Ll": -0.3,
+              "lean": -0.1,
+              "back": 0.15,
+              "crouch": 0.08
+            }
+          ],
+          [
+            0.3,
+            {
+              "Ru": 0.35,
+              "Rl": 0.15,
+              "W": 0.1,
+              "Lu": -1.1,
+              "Ll": -0.6,
+              "lean": 0.18,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.1,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.42,
+            {
+              "Ru": -0.25,
+              "Rl": -0.4,
+              "W": -0.35,
+              "lean": 0.12,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.1,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.72
+          ]
+        ],
+        "hit": [
+          0.3
+        ],
+        "trail": [
+          0.18,
+          0.42
+        ],
+        "death": "fall",
+        "maim": "armcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "thrust": {
+      "id": "thrust",
+      "label": "Thrust",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.18,
+          {
+            "Ru": -2.5,
+            "Rl": 0,
+            "W": 0.06,
+            "Lu": -0.6,
+            "Ll": -0.2,
+            "lean": -0.08,
+            "back": 0.25,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.3,
+          {
+            "Ru": -0.1,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.15,
+            "lunge": 0.5,
+            "step": 0.85,
+            "back": 0.2,
+            "crouch": 0.26
+          }
+        ],
+        [
+          0.46,
+          {
+            "Ru": -0.55,
+            "Rl": -0.3,
+            "W": 0.1,
+            "lean": 0.08,
+            "lunge": 0.4,
+            "step": 0.85,
+            "back": 0.2,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.74
+        ]
+      ],
+      "duration": 0.99,
+      "events": {
+        "hit": [
+          0.3
+        ],
+        "trail": [
+          0.2,
+          0.34
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.18,
+            {
+              "Ru": -2.5,
+              "Rl": 0,
+              "W": 0.06,
+              "Lu": -0.6,
+              "Ll": -0.2,
+              "lean": -0.08,
+              "back": 0.25,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.3,
+            {
+              "Ru": -0.1,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.15,
+              "lunge": 0.5,
+              "step": 0.85,
+              "back": 0.2,
+              "crouch": 0.26
+            }
+          ],
+          [
+            0.46,
+            {
+              "Ru": -0.55,
+              "Rl": -0.3,
+              "W": 0.1,
+              "lean": 0.08,
+              "lunge": 0.4,
+              "step": 0.85,
+              "back": 0.2,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.74
+          ]
+        ],
+        "hit": [
+          0.3
+        ],
+        "trail": [
+          0.2,
+          0.34
+        ],
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "chop": {
+      "id": "chop",
+      "label": "Chop",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.26,
+          {
+            "Ru": 2.6,
+            "Rl": 2.9,
+            "W": 2.4,
+            "lean": -0.16,
+            "back": 0.2,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.4,
+          {
+            "Ru": -0.4,
+            "Rl": -0.7,
+            "W": -0.9,
+            "lean": 0.3,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.32
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": -0.5,
+            "Rl": -0.8,
+            "W": -1,
+            "lean": 0.25,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.26
+          }
+        ],
+        [
+          0.92
+        ]
+      ],
+      "duration": 1.17,
+      "events": {
+        "hit": [
+          0.4
+        ],
+        "trail": [
+          0.28,
+          0.44
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.26,
+            {
+              "Ru": 2.6,
+              "Rl": 2.9,
+              "W": 2.4,
+              "lean": -0.16,
+              "back": 0.2,
+              "crouch": 0.06
+            }
+          ],
+          [
+            0.4,
+            {
+              "Ru": -0.4,
+              "Rl": -0.7,
+              "W": -0.9,
+              "lean": 0.3,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.15,
+              "crouch": 0.32
+            }
+          ],
+          [
+            0.62,
+            {
+              "Ru": -0.5,
+              "Rl": -0.8,
+              "W": -1,
+              "lean": 0.25,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.15,
+              "crouch": 0.26
+            }
+          ],
+          [
+            0.92
+          ]
+        ],
+        "hit": [
+          0.4
+        ],
+        "trail": [
+          0.28,
+          0.44
+        ],
+        "two": true,
+        "death": "armoff",
+        "deaths": [
+          "armoff",
+          "armoff",
+          "fall"
+        ],
+        "maim": "armcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "smash": {
+      "id": "smash",
+      "label": "Smash",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.24,
+          {
+            "Ru": 2.4,
+            "Rl": 2.7,
+            "W": 2,
+            "lean": -0.14,
+            "back": 0.2,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.38,
+          {
+            "Ru": -0.3,
+            "Rl": -0.6,
+            "W": -1.2,
+            "lean": 0.3,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.34
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": -0.4,
+            "Rl": -0.7,
+            "W": -1.25,
+            "lean": 0.24,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.28
+          }
+        ],
+        [
+          0.9
+        ]
+      ],
+      "duration": 1.15,
+      "events": {
+        "hit": [
+          0.38
+        ],
+        "trail": [
+          0.26,
+          0.42
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.24,
+            {
+              "Ru": 2.4,
+              "Rl": 2.7,
+              "W": 2,
+              "lean": -0.14,
+              "back": 0.2,
+              "crouch": 0.06
+            }
+          ],
+          [
+            0.38,
+            {
+              "Ru": -0.3,
+              "Rl": -0.6,
+              "W": -1.2,
+              "lean": 0.3,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.15,
+              "crouch": 0.34
+            }
+          ],
+          [
+            0.62,
+            {
+              "Ru": -0.4,
+              "Rl": -0.7,
+              "W": -1.25,
+              "lean": 0.24,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.15,
+              "crouch": 0.28
+            }
+          ],
+          [
+            0.9
+          ]
+        ],
+        "hit": [
+          0.38
+        ],
+        "trail": [
+          0.26,
+          0.42
+        ],
+        "dust": true,
+        "death": "flying"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "launch": {
+      "id": "launch",
+      "label": "Launch",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.34,
+          {
+            "Ru": 2.7,
+            "Rl": 3,
+            "W": 2.5,
+            "lean": -0.22,
+            "back": 0.3,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.5,
+          {
+            "Ru": -0.2,
+            "Rl": -0.5,
+            "W": -1.15,
+            "lean": 0.36,
+            "lunge": 0.45,
+            "step": 0.75,
+            "back": 0.25,
+            "crouch": 0.4
+          }
+        ],
+        [
+          0.78,
+          {
+            "Ru": -0.3,
+            "Rl": -0.6,
+            "W": -1.2,
+            "lean": 0.3,
+            "lunge": 0.45,
+            "step": 0.75,
+            "back": 0.25,
+            "crouch": 0.34
+          }
+        ],
+        [
+          1.1
+        ]
+      ],
+      "duration": 1.35,
+      "events": {
+        "hit": [
+          0.5
+        ],
+        "trail": [
+          0.36,
+          0.54
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.34,
+            {
+              "Ru": 2.7,
+              "Rl": 3,
+              "W": 2.5,
+              "lean": -0.22,
+              "back": 0.3,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.5,
+            {
+              "Ru": -0.2,
+              "Rl": -0.5,
+              "W": -1.15,
+              "lean": 0.36,
+              "lunge": 0.45,
+              "step": 0.75,
+              "back": 0.25,
+              "crouch": 0.4
+            }
+          ],
+          [
+            0.78,
+            {
+              "Ru": -0.3,
+              "Rl": -0.6,
+              "W": -1.2,
+              "lean": 0.3,
+              "lunge": 0.45,
+              "step": 0.75,
+              "back": 0.25,
+              "crouch": 0.34
+            }
+          ],
+          [
+            1.1
+          ]
+        ],
+        "hit": [
+          0.5
+        ],
+        "trail": [
+          0.36,
+          0.54
+        ],
+        "two": true,
+        "dust": true,
+        "death": "hammer",
+        "always": "hammer"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "sweep": {
+      "id": "sweep",
+      "label": "Sweep",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.24,
+          {
+            "Ru": 1.4,
+            "Rl": 2.2,
+            "W": 2.6,
+            "lean": -0.12,
+            "back": 0.15,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.4,
+          {
+            "Ru": -0.6,
+            "Rl": -0.4,
+            "W": -0.5,
+            "lean": 0.24,
+            "lunge": 0.3,
+            "step": 0.55,
+            "back": 0.15,
+            "crouch": 0.28
+          }
+        ],
+        [
+          0.6,
+          {
+            "Ru": -0.9,
+            "Rl": -0.8,
+            "W": -0.9,
+            "lean": 0.18,
+            "lunge": 0.3,
+            "step": 0.55,
+            "back": 0.15,
+            "crouch": 0.24
+          }
+        ],
+        [
+          0.9
+        ]
+      ],
+      "duration": 1.15,
+      "events": {
+        "hit": [
+          0.4
+        ],
+        "trail": [
+          0.26,
+          0.44
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.24,
+            {
+              "Ru": 1.4,
+              "Rl": 2.2,
+              "W": 2.6,
+              "lean": -0.12,
+              "back": 0.15,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.4,
+            {
+              "Ru": -0.6,
+              "Rl": -0.4,
+              "W": -0.5,
+              "lean": 0.24,
+              "lunge": 0.3,
+              "step": 0.55,
+              "back": 0.15,
+              "crouch": 0.28
+            }
+          ],
+          [
+            0.6,
+            {
+              "Ru": -0.9,
+              "Rl": -0.8,
+              "W": -0.9,
+              "lean": 0.18,
+              "lunge": 0.3,
+              "step": 0.55,
+              "back": 0.15,
+              "crouch": 0.24
+            }
+          ],
+          [
+            0.9
+          ]
+        ],
+        "hit": [
+          0.4
+        ],
+        "trail": [
+          0.26,
+          0.44
+        ],
+        "two": true,
+        "death": "spin",
+        "deaths": [
+          "spin",
+          "legoff"
+        ],
+        "maim": "legcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "stab": {
+      "id": "stab",
+      "label": "Stab",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.07,
+          {
+            "Ru": -2.4,
+            "Rl": 0.1,
+            "W": 0,
+            "back": 0.1,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.14,
+          {
+            "Ru": -0.2,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.12,
+            "lunge": 0.25,
+            "step": 0.45,
+            "back": 0.1,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.22,
+          {
+            "Ru": -2.4,
+            "Rl": 0.1,
+            "W": 0,
+            "lunge": 0.12,
+            "step": 0.45,
+            "back": 0.1,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.3,
+          {
+            "Ru": -0.15,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.14,
+            "lunge": 0.3,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.5
+        ]
+      ],
+      "duration": 0.75,
+      "events": {
+        "hit": [
+          0.14,
+          0.3
+        ],
+        "trail": [
+          0.08,
+          0.32
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.07,
+            {
+              "Ru": -2.4,
+              "Rl": 0.1,
+              "W": 0,
+              "back": 0.1,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.14,
+            {
+              "Ru": -0.2,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.12,
+              "lunge": 0.25,
+              "step": 0.45,
+              "back": 0.1,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.22,
+            {
+              "Ru": -2.4,
+              "Rl": 0.1,
+              "W": 0,
+              "lunge": 0.12,
+              "step": 0.45,
+              "back": 0.1,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.3,
+            {
+              "Ru": -0.15,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.14,
+              "lunge": 0.3,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.5
+          ]
+        ],
+        "hit": [
+          0.14,
+          0.3
+        ],
+        "trail": [
+          0.08,
+          0.32
+        ],
+        "death": "crumple"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "punch": {
+      "id": "punch",
+      "label": "Punch",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.08,
+          {
+            "Lu": -0.15,
+            "Ll": 0,
+            "lean": 0.08,
+            "lunge": 0.2,
+            "step": 0.4,
+            "back": 0.1,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.16,
+          {
+            "Lu": -1.2,
+            "Ll": -0.5,
+            "lunge": 0.1,
+            "step": 0.4,
+            "back": 0.1,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.25,
+          {
+            "Ru": -0.1,
+            "Rl": 0,
+            "lean": 0.16,
+            "lunge": 0.35,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.37,
+          {
+            "Ru": -1.2,
+            "Rl": -0.6,
+            "lunge": 0.2,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.56
+        ]
+      ],
+      "duration": 0.81,
+      "events": {
+        "hit": [
+          0.08,
+          0.25
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.08,
+            {
+              "Lu": -0.15,
+              "Ll": 0,
+              "lean": 0.08,
+              "lunge": 0.2,
+              "step": 0.4,
+              "back": 0.1,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.16,
+            {
+              "Lu": -1.2,
+              "Ll": -0.5,
+              "lunge": 0.1,
+              "step": 0.4,
+              "back": 0.1,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.25,
+            {
+              "Ru": -0.1,
+              "Rl": 0,
+              "lean": 0.16,
+              "lunge": 0.35,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.37,
+            {
+              "Ru": -1.2,
+              "Rl": -0.6,
+              "lunge": 0.2,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.56
+          ]
+        ],
+        "hit": [
+          0.08,
+          0.25
+        ],
+        "bare": true,
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "claw": {
+      "id": "claw",
+      "label": "Claw",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.15,
+          {
+            "Ru": 1.8,
+            "Rl": 2.4,
+            "Lu": 1.7,
+            "Ll": 2.3,
+            "lean": -0.1,
+            "back": 0.15,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.3,
+          {
+            "Ru": -0.7,
+            "Rl": -1.1,
+            "Lu": -0.6,
+            "Ll": -1,
+            "lean": 0.22,
+            "lunge": 0.4,
+            "step": 0.65,
+            "back": 0.15,
+            "crouch": 0.3
+          }
+        ],
+        [
+          0.6
+        ]
+      ],
+      "duration": 0.85,
+      "events": {
+        "hit": [
+          0.3
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.15,
+            {
+              "Ru": 1.8,
+              "Rl": 2.4,
+              "Lu": 1.7,
+              "Ll": 2.3,
+              "lean": -0.1,
+              "back": 0.15,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.3,
+            {
+              "Ru": -0.7,
+              "Rl": -1.1,
+              "Lu": -0.6,
+              "Ll": -1,
+              "lean": 0.22,
+              "lunge": 0.4,
+              "step": 0.65,
+              "back": 0.15,
+              "crouch": 0.3
+            }
+          ],
+          [
+            0.6
+          ]
+        ],
+        "hit": [
+          0.3
+        ],
+        "bare": true,
+        "claw": true,
+        "death": "spin",
+        "maim": "armcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "bash": {
+      "id": "bash",
+      "label": "Bash",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.15,
+          {
+            "Lu": -2.4,
+            "Ll": 0.3,
+            "lean": -0.08,
+            "back": 0.2,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.27,
+          {
+            "Lu": 0,
+            "Ll": 0,
+            "lean": 0.22,
+            "lunge": 0.55,
+            "step": 0.85,
+            "back": 0.15,
+            "crouch": 0.24
+          }
+        ],
+        [
+          0.55
+        ]
+      ],
+      "duration": 0.8,
+      "events": {
+        "hit": [
+          0.27
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.15,
+            {
+              "Lu": -2.4,
+              "Ll": 0.3,
+              "lean": -0.08,
+              "back": 0.2,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.27,
+            {
+              "Lu": 0,
+              "Ll": 0,
+              "lean": 0.22,
+              "lunge": 0.55,
+              "step": 0.85,
+              "back": 0.15,
+              "crouch": 0.24
+            }
+          ],
+          [
+            0.55
+          ]
+        ],
+        "hit": [
+          0.27
+        ],
+        "shield": true,
+        "death": "flying",
+        "knock": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "throw": {
+      "id": "throw",
+      "label": "Throw",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.26,
+          {
+            "Ru": 2.3,
+            "Rl": 2.7,
+            "W": 2.6,
+            "Lu": 0.3,
+            "Ll": 0.3,
+            "lean": -0.16,
+            "back": 0.35,
+            "crouch": 0.14
+          }
+        ],
+        [
+          0.38,
+          {
+            "Ru": 0.5,
+            "Rl": 0.3,
+            "W": 0.3,
+            "Lu": -0.6,
+            "Ll": -0.4,
+            "lean": 0.2,
+            "lunge": 0.3,
+            "step": 0.55,
+            "back": 0.3,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.52,
+          {
+            "Ru": -0.4,
+            "Rl": -0.6,
+            "lean": 0.1,
+            "lunge": 0.25,
+            "step": 0.55,
+            "back": 0.3,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.75
+        ]
+      ],
+      "duration": 1.0,
+      "events": {
+        "release": 0.38
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.26,
+            {
+              "Ru": 2.3,
+              "Rl": 2.7,
+              "W": 2.6,
+              "Lu": 0.3,
+              "Ll": 0.3,
+              "lean": -0.16,
+              "back": 0.35,
+              "crouch": 0.14
+            }
+          ],
+          [
+            0.38,
+            {
+              "Ru": 0.5,
+              "Rl": 0.3,
+              "W": 0.3,
+              "Lu": -0.6,
+              "Ll": -0.4,
+              "lean": 0.2,
+              "lunge": 0.3,
+              "step": 0.55,
+              "back": 0.3,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.52,
+            {
+              "Ru": -0.4,
+              "Rl": -0.6,
+              "lean": 0.1,
+              "lunge": 0.25,
+              "step": 0.55,
+              "back": 0.3,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.75
+          ]
+        ],
+        "release": 0.38,
+        "ranged": true,
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "cast": {
+      "id": "cast",
+      "label": "Cast",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.24,
+          {
+            "Ru": 1.9,
+            "Rl": 2.4,
+            "W": 1.65,
+            "Lu": 0.8,
+            "Ll": 1.3,
+            "lean": -0.12,
+            "back": 0.2,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.42,
+          {
+            "Ru": 0.35,
+            "Rl": 0.25,
+            "W": 0.45,
+            "Lu": 0.15,
+            "Ll": 0.05,
+            "lean": 0.15,
+            "lunge": 0.2,
+            "step": 0.4,
+            "back": 0.15,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": 0.4,
+            "Rl": 0.3,
+            "W": 0.5,
+            "Lu": 0.2,
+            "Ll": 0.1,
+            "lean": 0.1,
+            "lunge": 0.18,
+            "step": 0.4,
+            "back": 0.15,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.95
+        ]
+      ],
+      "duration": 1.2,
+      "events": {
+        "release": 0.42
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.24,
+            {
+              "Ru": 1.9,
+              "Rl": 2.4,
+              "W": 1.65,
+              "Lu": 0.8,
+              "Ll": 1.3,
+              "lean": -0.12,
+              "back": 0.2,
+              "crouch": 0.06
+            }
+          ],
+          [
+            0.42,
+            {
+              "Ru": 0.35,
+              "Rl": 0.25,
+              "W": 0.45,
+              "Lu": 0.15,
+              "Ll": 0.05,
+              "lean": 0.15,
+              "lunge": 0.2,
+              "step": 0.4,
+              "back": 0.15,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.62,
+            {
+              "Ru": 0.4,
+              "Rl": 0.3,
+              "W": 0.5,
+              "Lu": 0.2,
+              "Ll": 0.1,
+              "lean": 0.1,
+              "lunge": 0.18,
+              "step": 0.4,
+              "back": 0.15,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.95
+          ]
+        ],
+        "release": 0.42,
+        "ranged": true,
+        "spell": true,
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "lunge": {
+      "id": "lunge",
+      "label": "Lunge",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.22,
+          {
+            "Ru": -2.6,
+            "Rl": 0,
+            "W": 0.06,
+            "Lu": -0.4,
+            "Ll": -0.1,
+            "lean": -0.12,
+            "back": 0.3,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.36,
+          {
+            "Ru": -0.05,
+            "Rl": 0,
+            "W": 0,
+            "Lu": -1.3,
+            "Ll": -0.5,
+            "lean": 0.3,
+            "lunge": 1,
+            "step": 1.35,
+            "back": 0.25,
+            "crouch": 0.4
+          }
+        ],
+        [
+          0.6,
+          {
+            "Ru": -0.3,
+            "Rl": -0.15,
+            "W": 0.05,
+            "lean": 0.22,
+            "lunge": 0.9,
+            "step": 1.35,
+            "back": 0.25,
+            "crouch": 0.34
+          }
+        ],
+        [
+          0.95
+        ]
+      ],
+      "duration": 1.2,
+      "events": {
+        "hit": [
+          0.36
+        ],
+        "trail": [
+          0.24,
+          0.4
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.22,
+            {
+              "Ru": -2.6,
+              "Rl": 0,
+              "W": 0.06,
+              "Lu": -0.4,
+              "Ll": -0.1,
+              "lean": -0.12,
+              "back": 0.3,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.36,
+            {
+              "Ru": -0.05,
+              "Rl": 0,
+              "W": 0,
+              "Lu": -1.3,
+              "Ll": -0.5,
+              "lean": 0.3,
+              "lunge": 1,
+              "step": 1.35,
+              "back": 0.25,
+              "crouch": 0.4
+            }
+          ],
+          [
+            0.6,
+            {
+              "Ru": -0.3,
+              "Rl": -0.15,
+              "W": 0.05,
+              "lean": 0.22,
+              "lunge": 0.9,
+              "step": 1.35,
+              "back": 0.25,
+              "crouch": 0.34
+            }
+          ],
+          [
+            0.95
+          ]
+        ],
+        "hit": [
+          0.36
+        ],
+        "trail": [
+          0.24,
+          0.4
+        ],
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "heavyblow": {
+      "id": "heavyblow",
+      "label": "Heavyblow",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.32,
+          {
+            "Ru": 2.8,
+            "Rl": 3,
+            "W": 2.7,
+            "Lu": 2.6,
+            "Ll": 2.9,
+            "lean": -0.2,
+            "back": 0.25,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.46,
+          {
+            "Ru": -0.35,
+            "Rl": -0.6,
+            "W": -0.8,
+            "Lu": -0.3,
+            "Ll": -0.5,
+            "lean": 0.34,
+            "lunge": 0.4,
+            "step": 0.7,
+            "back": 0.2,
+            "crouch": 0.36
+          }
+        ],
+        [
+          0.75,
+          {
+            "Ru": -0.45,
+            "Rl": -0.7,
+            "W": -0.95,
+            "lean": 0.28,
+            "lunge": 0.4,
+            "step": 0.7,
+            "back": 0.2,
+            "crouch": 0.3
+          }
+        ],
+        [
+          1.05
+        ]
+      ],
+      "duration": 1.3,
+      "events": {
+        "hit": [
+          0.46
+        ],
+        "trail": [
+          0.34,
+          0.5
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.32,
+            {
+              "Ru": 2.8,
+              "Rl": 3,
+              "W": 2.7,
+              "Lu": 2.6,
+              "Ll": 2.9,
+              "lean": -0.2,
+              "back": 0.25,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.46,
+            {
+              "Ru": -0.35,
+              "Rl": -0.6,
+              "W": -0.8,
+              "Lu": -0.3,
+              "Ll": -0.5,
+              "lean": 0.34,
+              "lunge": 0.4,
+              "step": 0.7,
+              "back": 0.2,
+              "crouch": 0.36
+            }
+          ],
+          [
+            0.75,
+            {
+              "Ru": -0.45,
+              "Rl": -0.7,
+              "W": -0.95,
+              "lean": 0.28,
+              "lunge": 0.4,
+              "step": 0.7,
+              "back": 0.2,
+              "crouch": 0.3
+            }
+          ],
+          [
+            1.05
+          ]
+        ],
+        "hit": [
+          0.46
+        ],
+        "trail": [
+          0.34,
+          0.5
+        ],
+        "two": true,
+        "dust": true,
+        "death": "flying",
+        "maim": "armcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "riposte": {
+      "id": "riposte",
+      "label": "Riposte",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.1,
+          {
+            "Ru": 0.4,
+            "Rl": 1.5,
+            "W": 1.75,
+            "back": 0.25,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.9,
+          {
+            "Ru": 0.5,
+            "Rl": 1.6,
+            "W": 1.8,
+            "lean": -0.04,
+            "back": 0.28,
+            "crouch": 0.2
+          }
+        ],
+        [
+          1.15
+        ]
+      ],
+      "duration": 1.4,
+      "events": {},
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.1,
+            {
+              "Ru": 0.4,
+              "Rl": 1.5,
+              "W": 1.75,
+              "back": 0.25,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.9,
+            {
+              "Ru": 0.5,
+              "Rl": 1.6,
+              "W": 1.8,
+              "lean": -0.04,
+              "back": 0.28,
+              "crouch": 0.2
+            }
+          ],
+          [
+            1.15
+          ]
+        ],
+        "self": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "cleave": {
+      "id": "cleave",
+      "label": "Cleave",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.28,
+          {
+            "Ru": 1.2,
+            "Rl": 1.9,
+            "W": 2.4,
+            "Lu": 1,
+            "Ll": 1.6,
+            "lean": -0.18,
+            "back": 0.2,
+            "crouch": 0.14
+          }
+        ],
+        [
+          0.44,
+          {
+            "Ru": -0.5,
+            "Rl": -0.3,
+            "W": -0.3,
+            "Lu": -0.6,
+            "Ll": -0.4,
+            "lean": 0.3,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.32
+          }
+        ],
+        [
+          0.66,
+          {
+            "Ru": -1.1,
+            "Rl": -0.9,
+            "W": -1,
+            "Lu": -1,
+            "Ll": -0.8,
+            "lean": 0.2,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.26
+          }
+        ],
+        [
+          1
+        ]
+      ],
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.44
+        ],
+        "trail": [
+          0.3,
+          0.66
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.28,
+            {
+              "Ru": 1.2,
+              "Rl": 1.9,
+              "W": 2.4,
+              "Lu": 1,
+              "Ll": 1.6,
+              "lean": -0.18,
+              "back": 0.2,
+              "crouch": 0.14
+            }
+          ],
+          [
+            0.44,
+            {
+              "Ru": -0.5,
+              "Rl": -0.3,
+              "W": -0.3,
+              "Lu": -0.6,
+              "Ll": -0.4,
+              "lean": 0.3,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.15,
+              "crouch": 0.32
+            }
+          ],
+          [
+            0.66,
+            {
+              "Ru": -1.1,
+              "Rl": -0.9,
+              "W": -1,
+              "Lu": -1,
+              "Ll": -0.8,
+              "lean": 0.2,
+              "lunge": 0.35,
+              "step": 0.6,
+              "back": 0.15,
+              "crouch": 0.26
+            }
+          ],
+          [
+            1
+          ]
+        ],
+        "hit": [
+          0.44
+        ],
+        "trail": [
+          0.3,
+          0.66
+        ],
+        "two": true,
+        "death": "spin",
+        "deaths": [
+          "spin",
+          "armoff"
+        ],
+        "maim": "armcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "skullcracker": {
+      "id": "skullcracker",
+      "label": "Skullcracker",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Ru": 2.9,
+            "Rl": 3.1,
+            "W": 2.6,
+            "Lu": 1.2,
+            "Ll": 1.6,
+            "lean": -0.24,
+            "back": 0.3,
+            "crouch": 0.3
+          }
+        ],
+        [
+          0.44,
+          {
+            "Ru": -0.2,
+            "Rl": -0.55,
+            "W": -1.3,
+            "Lu": -0.7,
+            "Ll": -0.4,
+            "lean": 0.4,
+            "lunge": 0.4,
+            "step": 0.7,
+            "back": 0.2,
+            "crouch": 0.42
+          }
+        ],
+        [
+          0.7,
+          {
+            "Ru": -0.3,
+            "Rl": -0.65,
+            "W": -1.3,
+            "lean": 0.32,
+            "lunge": 0.4,
+            "step": 0.7,
+            "back": 0.2,
+            "crouch": 0.36
+          }
+        ],
+        [
+          1
+        ]
+      ],
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.44
+        ],
+        "trail": [
+          0.32,
+          0.48
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Ru": 2.9,
+              "Rl": 3.1,
+              "W": 2.6,
+              "Lu": 1.2,
+              "Ll": 1.6,
+              "lean": -0.24,
+              "back": 0.3,
+              "crouch": 0.3
+            }
+          ],
+          [
+            0.44,
+            {
+              "Ru": -0.2,
+              "Rl": -0.55,
+              "W": -1.3,
+              "Lu": -0.7,
+              "Ll": -0.4,
+              "lean": 0.4,
+              "lunge": 0.4,
+              "step": 0.7,
+              "back": 0.2,
+              "crouch": 0.42
+            }
+          ],
+          [
+            0.7,
+            {
+              "Ru": -0.3,
+              "Rl": -0.65,
+              "W": -1.3,
+              "lean": 0.32,
+              "lunge": 0.4,
+              "step": 0.7,
+              "back": 0.2,
+              "crouch": 0.36
+            }
+          ],
+          [
+            1
+          ]
+        ],
+        "hit": [
+          0.44
+        ],
+        "trail": [
+          0.32,
+          0.48
+        ],
+        "dust": true,
+        "death": "crumple"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "skewer": {
+      "id": "skewer",
+      "label": "Skewer",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.24,
+          {
+            "Ru": -2.7,
+            "Rl": 0,
+            "W": 0.05,
+            "Lu": -1.6,
+            "Ll": -0.6,
+            "lean": -0.14,
+            "back": 0.35,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.38,
+          {
+            "Ru": -0.05,
+            "Rl": 0,
+            "W": 0,
+            "Lu": -0.5,
+            "Ll": -0.2,
+            "lean": 0.28,
+            "lunge": 0.8,
+            "step": 1.1,
+            "back": 0.3,
+            "crouch": 0.34
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": -0.15,
+            "Rl": 0,
+            "W": 0.02,
+            "lean": 0.24,
+            "lunge": 0.75,
+            "step": 1.1,
+            "back": 0.3,
+            "crouch": 0.3
+          }
+        ],
+        [
+          0.95
+        ]
+      ],
+      "duration": 1.2,
+      "events": {
+        "hit": [
+          0.38
+        ],
+        "trail": [
+          0.26,
+          0.42
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.24,
+            {
+              "Ru": -2.7,
+              "Rl": 0,
+              "W": 0.05,
+              "Lu": -1.6,
+              "Ll": -0.6,
+              "lean": -0.14,
+              "back": 0.35,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.38,
+            {
+              "Ru": -0.05,
+              "Rl": 0,
+              "W": 0,
+              "Lu": -0.5,
+              "Ll": -0.2,
+              "lean": 0.28,
+              "lunge": 0.8,
+              "step": 1.1,
+              "back": 0.3,
+              "crouch": 0.34
+            }
+          ],
+          [
+            0.62,
+            {
+              "Ru": -0.15,
+              "Rl": 0,
+              "W": 0.02,
+              "lean": 0.24,
+              "lunge": 0.75,
+              "step": 1.1,
+              "back": 0.3,
+              "crouch": 0.3
+            }
+          ],
+          [
+            0.95
+          ]
+        ],
+        "hit": [
+          0.38
+        ],
+        "trail": [
+          0.26,
+          0.42
+        ],
+        "two": true,
+        "death": "flying"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "flurry": {
+      "id": "flurry",
+      "label": "Flurry",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.06,
+          {
+            "Ru": -2.4,
+            "Rl": 0.1,
+            "W": 0,
+            "back": 0.1,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.12,
+          {
+            "Ru": -0.2,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.14,
+            "lunge": 0.25,
+            "step": 0.45,
+            "back": 0.1,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.18,
+          {
+            "Ru": -2.3,
+            "Rl": 0.1,
+            "W": 0,
+            "lunge": 0.15,
+            "step": 0.45,
+            "back": 0.1,
+            "crouch": 0.14
+          }
+        ],
+        [
+          0.24,
+          {
+            "Ru": 0.1,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.16,
+            "lunge": 0.3,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.3,
+          {
+            "Ru": -2.4,
+            "Rl": 0.1,
+            "W": 0,
+            "lunge": 0.18,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.15
+          }
+        ],
+        [
+          0.36,
+          {
+            "Ru": -0.35,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.16,
+            "lunge": 0.32,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.42,
+          {
+            "Ru": -2.3,
+            "Rl": 0.1,
+            "W": 0,
+            "lunge": 0.2,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.15
+          }
+        ],
+        [
+          0.48,
+          {
+            "Ru": -0.1,
+            "Rl": 0,
+            "W": 0,
+            "lean": 0.18,
+            "lunge": 0.35,
+            "step": 0.5,
+            "back": 0.1,
+            "crouch": 0.22
+          }
+        ],
+        [
+          0.7
+        ]
+      ],
+      "duration": 0.95,
+      "events": {
+        "hit": [
+          0.12,
+          0.24,
+          0.36,
+          0.48
+        ],
+        "trail": [
+          0.06,
+          0.5
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.06,
+            {
+              "Ru": -2.4,
+              "Rl": 0.1,
+              "W": 0,
+              "back": 0.1,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.12,
+            {
+              "Ru": -0.2,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.14,
+              "lunge": 0.25,
+              "step": 0.45,
+              "back": 0.1,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.18,
+            {
+              "Ru": -2.3,
+              "Rl": 0.1,
+              "W": 0,
+              "lunge": 0.15,
+              "step": 0.45,
+              "back": 0.1,
+              "crouch": 0.14
+            }
+          ],
+          [
+            0.24,
+            {
+              "Ru": 0.1,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.16,
+              "lunge": 0.3,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.3,
+            {
+              "Ru": -2.4,
+              "Rl": 0.1,
+              "W": 0,
+              "lunge": 0.18,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.15
+            }
+          ],
+          [
+            0.36,
+            {
+              "Ru": -0.35,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.16,
+              "lunge": 0.32,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.42,
+            {
+              "Ru": -2.3,
+              "Rl": 0.1,
+              "W": 0,
+              "lunge": 0.2,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.15
+            }
+          ],
+          [
+            0.48,
+            {
+              "Ru": -0.1,
+              "Rl": 0,
+              "W": 0,
+              "lean": 0.18,
+              "lunge": 0.35,
+              "step": 0.5,
+              "back": 0.1,
+              "crouch": 0.22
+            }
+          ],
+          [
+            0.7
+          ]
+        ],
+        "hit": [
+          0.12,
+          0.24,
+          0.36,
+          0.48
+        ],
+        "trail": [
+          0.06,
+          0.5
+        ],
+        "death": "crumple"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "runebolt": {
+      "id": "runebolt",
+      "label": "Runebolt",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.26,
+          {
+            "Ru": 1.6,
+            "Rl": 2.2,
+            "W": 2.2,
+            "Lu": 0.6,
+            "Ll": 1,
+            "lean": -0.1,
+            "back": 0.2,
+            "crouch": 0.08
+          }
+        ],
+        [
+          0.44,
+          {
+            "Ru": 0.1,
+            "Rl": 0.05,
+            "W": 0.05,
+            "Lu": -0.4,
+            "Ll": -0.2,
+            "lean": 0.14,
+            "lunge": 0.25,
+            "step": 0.45,
+            "back": 0.15,
+            "crouch": 0.14
+          }
+        ],
+        [
+          0.7,
+          {
+            "Ru": 0.1,
+            "Rl": 0.05,
+            "W": 0.05,
+            "lean": 0.1,
+            "lunge": 0.2,
+            "step": 0.45,
+            "back": 0.15,
+            "crouch": 0.12
+          }
+        ],
+        [
+          1
+        ]
+      ],
+      "duration": 1.25,
+      "events": {
+        "release": 0.44
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.26,
+            {
+              "Ru": 1.6,
+              "Rl": 2.2,
+              "W": 2.2,
+              "Lu": 0.6,
+              "Ll": 1,
+              "lean": -0.1,
+              "back": 0.2,
+              "crouch": 0.08
+            }
+          ],
+          [
+            0.44,
+            {
+              "Ru": 0.1,
+              "Rl": 0.05,
+              "W": 0.05,
+              "Lu": -0.4,
+              "Ll": -0.2,
+              "lean": 0.14,
+              "lunge": 0.25,
+              "step": 0.45,
+              "back": 0.15,
+              "crouch": 0.14
+            }
+          ],
+          [
+            0.7,
+            {
+              "Ru": 0.1,
+              "Rl": 0.05,
+              "W": 0.05,
+              "lean": 0.1,
+              "lunge": 0.2,
+              "step": 0.45,
+              "back": 0.15,
+              "crouch": 0.12
+            }
+          ],
+          [
+            1
+          ]
+        ],
+        "release": 0.44,
+        "ranged": true,
+        "spell": true,
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "firewave": {
+      "id": "firewave",
+      "label": "Firewave",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.26,
+          {
+            "Ru": 1.3,
+            "Rl": 2,
+            "W": 2.5,
+            "lean": -0.14,
+            "back": 0.2,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.42,
+          {
+            "Ru": -0.9,
+            "Rl": -0.6,
+            "W": -0.8,
+            "lean": 0.3,
+            "lunge": 0.3,
+            "step": 0.6,
+            "back": 0.2,
+            "crouch": 0.42
+          }
+        ],
+        [
+          0.66,
+          {
+            "Ru": -1.2,
+            "Rl": -1,
+            "W": -1.1,
+            "lean": 0.24,
+            "lunge": 0.3,
+            "step": 0.6,
+            "back": 0.2,
+            "crouch": 0.36
+          }
+        ],
+        [
+          1
+        ]
+      ],
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.42
+        ],
+        "trail": [
+          0.28,
+          0.66
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.26,
+            {
+              "Ru": 1.3,
+              "Rl": 2,
+              "W": 2.5,
+              "lean": -0.14,
+              "back": 0.2,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.42,
+            {
+              "Ru": -0.9,
+              "Rl": -0.6,
+              "W": -0.8,
+              "lean": 0.3,
+              "lunge": 0.3,
+              "step": 0.6,
+              "back": 0.2,
+              "crouch": 0.42
+            }
+          ],
+          [
+            0.66,
+            {
+              "Ru": -1.2,
+              "Rl": -1,
+              "W": -1.1,
+              "lean": 0.24,
+              "lunge": 0.3,
+              "step": 0.6,
+              "back": 0.2,
+              "crouch": 0.36
+            }
+          ],
+          [
+            1
+          ]
+        ],
+        "hit": [
+          0.42
+        ],
+        "trail": [
+          0.28,
+          0.66
+        ],
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "frozenhamstring": {
+      "id": "frozenhamstring",
+      "label": "Frozenhamstring",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.26,
+          {
+            "Ru": 2.2,
+            "Rl": 2.6,
+            "W": 2.2,
+            "lean": -0.12,
+            "back": 0.2,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.42,
+          {
+            "Ru": -1,
+            "Rl": -1.2,
+            "W": -1.4,
+            "lean": 0.4,
+            "lunge": 0.35,
+            "step": 0.65,
+            "back": 0.18,
+            "crouch": 0.48
+          }
+        ],
+        [
+          0.68,
+          {
+            "Ru": -1.1,
+            "Rl": -1.3,
+            "W": -1.5,
+            "lean": 0.32,
+            "lunge": 0.35,
+            "step": 0.65,
+            "back": 0.18,
+            "crouch": 0.42
+          }
+        ],
+        [
+          1
+        ]
+      ],
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.42
+        ],
+        "trail": [
+          0.3,
+          0.5
+        ]
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.26,
+            {
+              "Ru": 2.2,
+              "Rl": 2.6,
+              "W": 2.2,
+              "lean": -0.12,
+              "back": 0.2,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.42,
+            {
+              "Ru": -1,
+              "Rl": -1.2,
+              "W": -1.4,
+              "lean": 0.4,
+              "lunge": 0.35,
+              "step": 0.65,
+              "back": 0.18,
+              "crouch": 0.48
+            }
+          ],
+          [
+            0.68,
+            {
+              "Ru": -1.1,
+              "Rl": -1.3,
+              "W": -1.5,
+              "lean": 0.32,
+              "lunge": 0.35,
+              "step": 0.65,
+              "back": 0.18,
+              "crouch": 0.42
+            }
+          ],
+          [
+            1
+          ]
+        ],
+        "hit": [
+          0.42
+        ],
+        "trail": [
+          0.3,
+          0.5
+        ],
+        "two": true,
+        "death": "fall",
+        "deaths": [
+          "legoff",
+          "fall"
+        ],
+        "maim": "legcut"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "calllightning": {
+      "id": "calllightning",
+      "label": "Calllightning",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Ru": 2.9,
+            "Rl": 3,
+            "W": 1.6,
+            "Lu": 1,
+            "Ll": 1.4,
+            "lean": -0.18,
+            "back": 0.15,
+            "crouch": 0.04
+          }
+        ],
+        [
+          0.7,
+          {
+            "Ru": 3,
+            "Rl": 3.05,
+            "W": 1.6,
+            "Lu": 1.1,
+            "Ll": 1.5,
+            "lean": -0.2,
+            "back": 0.15,
+            "crouch": 0.04
+          }
+        ],
+        [
+          0.86,
+          {
+            "Ru": 0.2,
+            "Rl": 0.1,
+            "W": 0.1,
+            "Lu": -0.4,
+            "Ll": -0.2,
+            "lean": 0.16,
+            "lunge": 0.25,
+            "step": 0.45,
+            "back": 0.15,
+            "crouch": 0.14
+          }
+        ],
+        [
+          1.2
+        ]
+      ],
+      "duration": 1.45,
+      "events": {
+        "release": 0.86
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Ru": 2.9,
+              "Rl": 3,
+              "W": 1.6,
+              "Lu": 1,
+              "Ll": 1.4,
+              "lean": -0.18,
+              "back": 0.15,
+              "crouch": 0.04
+            }
+          ],
+          [
+            0.7,
+            {
+              "Ru": 3,
+              "Rl": 3.05,
+              "W": 1.6,
+              "Lu": 1.1,
+              "Ll": 1.5,
+              "lean": -0.2,
+              "back": 0.15,
+              "crouch": 0.04
+            }
+          ],
+          [
+            0.86,
+            {
+              "Ru": 0.2,
+              "Rl": 0.1,
+              "W": 0.1,
+              "Lu": -0.4,
+              "Ll": -0.2,
+              "lean": 0.16,
+              "lunge": 0.25,
+              "step": 0.45,
+              "back": 0.15,
+              "crouch": 0.14
+            }
+          ],
+          [
+            1.2
+          ]
+        ],
+        "release": 0.86,
+        "ranged": true,
+        "spell": true,
+        "death": "stiff"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "bonespear": {
+      "id": "bonespear",
+      "label": "Bonespear",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.28,
+          {
+            "Ru": 2.3,
+            "Rl": 2.7,
+            "W": 2,
+            "Lu": 0.4,
+            "Ll": 0.5,
+            "lean": -0.18,
+            "back": 0.3,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.44,
+          {
+            "Ru": 0.4,
+            "Rl": 0.2,
+            "W": 0.4,
+            "Lu": -0.6,
+            "Ll": -0.4,
+            "lean": 0.22,
+            "lunge": 0.3,
+            "step": 0.55,
+            "back": 0.25,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.7,
+          {
+            "Ru": 0.3,
+            "Rl": 0.2,
+            "W": 0.35,
+            "lean": 0.12,
+            "lunge": 0.25,
+            "step": 0.55,
+            "back": 0.25,
+            "crouch": 0.14
+          }
+        ],
+        [
+          1
+        ]
+      ],
+      "duration": 1.25,
+      "events": {
+        "release": 0.44
+      },
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.28,
+            {
+              "Ru": 2.3,
+              "Rl": 2.7,
+              "W": 2,
+              "Lu": 0.4,
+              "Ll": 0.5,
+              "lean": -0.18,
+              "back": 0.3,
+              "crouch": 0.12
+            }
+          ],
+          [
+            0.44,
+            {
+              "Ru": 0.4,
+              "Rl": 0.2,
+              "W": 0.4,
+              "Lu": -0.6,
+              "Ll": -0.4,
+              "lean": 0.22,
+              "lunge": 0.3,
+              "step": 0.55,
+              "back": 0.25,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.7,
+            {
+              "Ru": 0.3,
+              "Rl": 0.2,
+              "W": 0.35,
+              "lean": 0.12,
+              "lunge": 0.25,
+              "step": 0.55,
+              "back": 0.25,
+              "crouch": 0.14
+            }
+          ],
+          [
+            1
+          ]
+        ],
+        "release": 0.44,
+        "ranged": true,
+        "spell": true,
+        "death": "fall"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "raiseskeleton": {
+      "id": "raiseskeleton",
+      "label": "Raiseskeleton",
+      "category": "Combat",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.4,
+          {
+            "Ru": 2.9,
+            "Rl": 3,
+            "W": 1.6,
+            "Lu": 2.6,
+            "Ll": 2.9,
+            "lean": -0.12,
+            "crouch": 0.05
+          }
+        ],
+        [
+          1.2,
+          {
+            "Ru": 2.95,
+            "Rl": 3.05,
+            "W": 1.6,
+            "Lu": 2.7,
+            "Ll": 3,
+            "lean": -0.14,
+            "crouch": 0.05
+          }
+        ],
+        [
+          1.6
+        ]
+      ],
+      "duration": 1.85,
+      "events": {},
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.4,
+            {
+              "Ru": 2.9,
+              "Rl": 3,
+              "W": 1.6,
+              "Lu": 2.6,
+              "Ll": 2.9,
+              "lean": -0.12,
+              "crouch": 0.05
+            }
+          ],
+          [
+            1.2,
+            {
+              "Ru": 2.95,
+              "Rl": 3.05,
+              "W": 1.6,
+              "Lu": 2.7,
+              "Ll": 3,
+              "lean": -0.14,
+              "crouch": 0.05
+            }
+          ],
+          [
+            1.6
+          ]
+        ],
+        "self": true,
+        "spell": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "getup": {
+      "id": "getup",
+      "label": "Getup",
+      "category": "Reactions",
+      "keys": [
+        [
+          0,
+          {
+            "tilt": 1,
+            "crouch": 0.1,
+            "Ru": -1.3,
+            "Rl": -1.3,
+            "Lu": -1.4,
+            "Ll": -1.4
+          }
+        ],
+        [
+          0.35,
+          {
+            "tilt": 0.6,
+            "crouch": 0.55,
+            "Ru": -2.1,
+            "Rl": -1.9,
+            "Lu": -0.8,
+            "Ll": -0.3,
+            "lean": 0.3,
+            "back": 0.1
+          }
+        ],
+        [
+          0.8,
+          {
+            "tilt": 0.2,
+            "crouch": 0.5,
+            "Ru": -1.7,
+            "Rl": -1.6,
+            "Lu": -0.6,
+            "Ll": -0.2,
+            "lean": 0.15,
+            "step": 0.35,
+            "back": 0.1
+          }
+        ],
+        [
+          1.25,
+          {
+            "tilt": 0,
+            "crouch": 0.06,
+            "lean": 0.02
+          }
+        ],
+        [
+          1.5
+        ]
+      ],
+      "duration": 1.75,
+      "events": {},
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "tilt": 1,
+              "crouch": 0.1,
+              "Ru": -1.3,
+              "Rl": -1.3,
+              "Lu": -1.4,
+              "Ll": -1.4
+            }
+          ],
+          [
+            0.35,
+            {
+              "tilt": 0.6,
+              "crouch": 0.55,
+              "Ru": -2.1,
+              "Rl": -1.9,
+              "Lu": -0.8,
+              "Ll": -0.3,
+              "lean": 0.3,
+              "back": 0.1
+            }
+          ],
+          [
+            0.8,
+            {
+              "tilt": 0.2,
+              "crouch": 0.5,
+              "Ru": -1.7,
+              "Rl": -1.6,
+              "Lu": -0.6,
+              "Ll": -0.2,
+              "lean": 0.15,
+              "step": 0.35,
+              "back": 0.1
+            }
+          ],
+          [
+            1.25,
+            {
+              "tilt": 0,
+              "crouch": 0.06,
+              "lean": 0.02
+            }
+          ],
+          [
+            1.5
+          ]
+        ],
+        "tilt": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "block": {
+      "id": "block",
+      "label": "Block",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.12,
+          {
+            "Lu": 0.15,
+            "Ll": 1.1,
+            "lean": -0.05,
+            "step": 0,
+            "back": 0.35,
+            "crouch": 0.24
+          }
+        ],
+        [
+          0.55,
+          {
+            "Lu": 0.15,
+            "Ll": 1.1,
+            "lean": -0.08,
+            "step": 0,
+            "back": 0.35,
+            "crouch": 0.24
+          }
+        ],
+        [
+          0.8
+        ]
+      ],
+      "duration": 1.05,
+      "events": {},
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.12,
+            {
+              "Lu": 0.15,
+              "Ll": 1.1,
+              "lean": -0.05,
+              "step": 0,
+              "back": 0.35,
+              "crouch": 0.24
+            }
+          ],
+          [
+            0.55,
+            {
+              "Lu": 0.15,
+              "Ll": 1.1,
+              "lean": -0.08,
+              "step": 0,
+              "back": 0.35,
+              "crouch": 0.24
+            }
+          ],
+          [
+            0.8
+          ]
+        ],
+        "shield": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "parry": {
+      "id": "parry",
+      "label": "Parry",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.12,
+          {
+            "Ru": 0.4,
+            "Rl": 1.5,
+            "W": 1.75,
+            "step": 0,
+            "back": 0.25,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.45,
+          {
+            "Ru": 0.5,
+            "Rl": 1.6,
+            "W": 1.8,
+            "step": 0,
+            "back": 0.25,
+            "crouch": 0.16
+          }
+        ],
+        [
+          0.7
+        ]
+      ],
+      "duration": 0.95,
+      "events": {},
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.12,
+            {
+              "Ru": 0.4,
+              "Rl": 1.5,
+              "W": 1.75,
+              "step": 0,
+              "back": 0.25,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.45,
+            {
+              "Ru": 0.5,
+              "Rl": 1.6,
+              "W": 1.8,
+              "step": 0,
+              "back": 0.25,
+              "crouch": 0.16
+            }
+          ],
+          [
+            0.7
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "dodge": {
+      "id": "dodge",
+      "label": "Dodge",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.14,
+          {
+            "lean": -0.4,
+            "lunge": -0.6,
+            "Ru": -1,
+            "Lu": -1,
+            "step": -0.15,
+            "back": 0.9,
+            "crouch": 0.2
+          }
+        ],
+        [
+          0.42,
+          {
+            "lean": -0.3,
+            "lunge": -0.55,
+            "step": -0.15,
+            "back": 0.9,
+            "crouch": 0.14
+          }
+        ],
+        [
+          0.7
+        ]
+      ],
+      "duration": 0.95,
+      "events": {},
+      "source": "art/gear3d/skills.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.14,
+            {
+              "lean": -0.4,
+              "lunge": -0.6,
+              "Ru": -1,
+              "Lu": -1,
+              "step": -0.15,
+              "back": 0.9,
+              "crouch": 0.2
+            }
+          ],
+          [
+            0.42,
+            {
+              "lean": -0.3,
+              "lunge": -0.55,
+              "step": -0.15,
+              "back": 0.9,
+              "crouch": 0.14
+            }
+          ],
+          [
+            0.7
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "mine": {
+      "id": "mine",
+      "label": "Mine",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.35,
+          {
+            "Ru": 2.5,
+            "Rl": 2.8,
+            "W": 2.3,
+            "lean": -0.15,
+            "back": 0.15,
+            "crouch": 0.05
+          }
+        ],
+        [
+          0.55,
+          {
+            "Ru": -0.45,
+            "Rl": -0.7,
+            "W": -0.95,
+            "lean": 0.35,
+            "crouch": 0.22,
+            "lunge": 0.15,
+            "step": 0.35,
+            "back": 0.15
+          }
+        ],
+        [
+          0.8,
+          {
+            "Ru": -0.55,
+            "Rl": -0.8,
+            "W": -1,
+            "lean": 0.3,
+            "crouch": 0.2,
+            "lunge": 0.15,
+            "step": 0.35,
+            "back": 0.15
+          }
+        ],
+        [
+          1.15
+        ]
+      ],
+      "duration": 1.4,
+      "events": {
+        "hit": [
+          0.55
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.35,
+            {
+              "Ru": 2.5,
+              "Rl": 2.8,
+              "W": 2.3,
+              "lean": -0.15,
+              "back": 0.15,
+              "crouch": 0.05
+            }
+          ],
+          [
+            0.55,
+            {
+              "Ru": -0.45,
+              "Rl": -0.7,
+              "W": -0.95,
+              "lean": 0.35,
+              "crouch": 0.22,
+              "lunge": 0.15,
+              "step": 0.35,
+              "back": 0.15
+            }
+          ],
+          [
+            0.8,
+            {
+              "Ru": -0.55,
+              "Rl": -0.8,
+              "W": -1,
+              "lean": 0.3,
+              "crouch": 0.2,
+              "lunge": 0.15,
+              "step": 0.35,
+              "back": 0.15
+            }
+          ],
+          [
+            1.15
+          ]
+        ],
+        "hit": [
+          0.55
+        ],
+        "two": true,
+        "work": "mine"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "woodchop": {
+      "id": "woodchop",
+      "label": "Woodchop",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Ru": 1.2,
+            "Rl": 1.8,
+            "W": 2.6,
+            "lean": -0.12,
+            "back": 0.15
+          }
+        ],
+        [
+          0.5,
+          {
+            "Ru": -0.1,
+            "Rl": 0.1,
+            "W": 0.05,
+            "lean": 0.25,
+            "lunge": 0.08,
+            "step": 0.25,
+            "back": 0.15,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.75,
+          {
+            "Ru": -0.3,
+            "Rl": -0.2,
+            "W": -0.3,
+            "lean": 0.2,
+            "crouch": 0.1,
+            "step": 0.25,
+            "back": 0.15
+          }
+        ],
+        [
+          1.05
+        ]
+      ],
+      "duration": 1.3,
+      "events": {
+        "hit": [
+          0.5
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Ru": 1.2,
+              "Rl": 1.8,
+              "W": 2.6,
+              "lean": -0.12,
+              "back": 0.15
+            }
+          ],
+          [
+            0.5,
+            {
+              "Ru": -0.1,
+              "Rl": 0.1,
+              "W": 0.05,
+              "lean": 0.25,
+              "lunge": 0.08,
+              "step": 0.25,
+              "back": 0.15,
+              "crouch": 0.1
+            }
+          ],
+          [
+            0.75,
+            {
+              "Ru": -0.3,
+              "Rl": -0.2,
+              "W": -0.3,
+              "lean": 0.2,
+              "crouch": 0.1,
+              "step": 0.25,
+              "back": 0.15
+            }
+          ],
+          [
+            1.05
+          ]
+        ],
+        "hit": [
+          0.5
+        ],
+        "two": true,
+        "work": "chop"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "smith": {
+      "id": "smith",
+      "label": "Smith",
+      "category": "Work",
+      "keys": [
+        [
+          0,
+          {
+            "Lu": -0.5,
+            "Ll": -0.1
+          }
+        ],
+        [
+          0.25,
+          {
+            "Ru": 1.4,
+            "Rl": 2.3,
+            "W": 2,
+            "Lu": -0.5,
+            "Ll": -0.1,
+            "lean": -0.05
+          }
+        ],
+        [
+          0.4,
+          {
+            "Ru": -0.4,
+            "Rl": -0.5,
+            "W": -0.9,
+            "Lu": -0.5,
+            "Ll": -0.1,
+            "lean": 0.12,
+            "crouch": 0.05
+          }
+        ],
+        [
+          0.6,
+          {
+            "Ru": -0.3,
+            "Rl": -0.4,
+            "W": -0.8,
+            "Lu": -0.5,
+            "Ll": -0.1
+          }
+        ],
+        [
+          0.7
+        ]
+      ],
+      "duration": 0.95,
+      "events": {
+        "hit": [
+          0.4
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "Lu": -0.5,
+              "Ll": -0.1
+            }
+          ],
+          [
+            0.25,
+            {
+              "Ru": 1.4,
+              "Rl": 2.3,
+              "W": 2,
+              "Lu": -0.5,
+              "Ll": -0.1,
+              "lean": -0.05
+            }
+          ],
+          [
+            0.4,
+            {
+              "Ru": -0.4,
+              "Rl": -0.5,
+              "W": -0.9,
+              "Lu": -0.5,
+              "Ll": -0.1,
+              "lean": 0.12,
+              "crouch": 0.05
+            }
+          ],
+          [
+            0.6,
+            {
+              "Ru": -0.3,
+              "Rl": -0.4,
+              "W": -0.8,
+              "Lu": -0.5,
+              "Ll": -0.1
+            }
+          ],
+          [
+            0.7
+          ]
+        ],
+        "hit": [
+          0.4
+        ],
+        "work": "smith"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "build": {
+      "id": "build",
+      "label": "Build",
+      "category": "Work",
+      "keys": [
+        [
+          0,
+          {
+            "crouch": 0.45,
+            "lean": 0.3,
+            "Lu": -0.9,
+            "Ll": -0.9
+          }
+        ],
+        [
+          0.2,
+          {
+            "Ru": 0.8,
+            "Rl": 1.6,
+            "W": 1.4,
+            "crouch": 0.45,
+            "lean": 0.3,
+            "Lu": -0.9,
+            "Ll": -0.9
+          }
+        ],
+        [
+          0.35,
+          {
+            "Ru": -0.9,
+            "Rl": -1.1,
+            "W": -1.4,
+            "crouch": 0.48,
+            "lean": 0.4,
+            "Lu": -0.9,
+            "Ll": -0.9
+          }
+        ],
+        [
+          0.55,
+          {
+            "Ru": -0.8,
+            "Rl": -1,
+            "W": -1.3,
+            "crouch": 0.45,
+            "lean": 0.35,
+            "Lu": -0.9,
+            "Ll": -0.9
+          }
+        ],
+        [
+          0.65,
+          {
+            "crouch": 0.45,
+            "lean": 0.3,
+            "Lu": -0.9,
+            "Ll": -0.9
+          }
+        ]
+      ],
+      "duration": 0.9,
+      "events": {
+        "hit": [
+          0.35
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "crouch": 0.45,
+              "lean": 0.3,
+              "Lu": -0.9,
+              "Ll": -0.9
+            }
+          ],
+          [
+            0.2,
+            {
+              "Ru": 0.8,
+              "Rl": 1.6,
+              "W": 1.4,
+              "crouch": 0.45,
+              "lean": 0.3,
+              "Lu": -0.9,
+              "Ll": -0.9
+            }
+          ],
+          [
+            0.35,
+            {
+              "Ru": -0.9,
+              "Rl": -1.1,
+              "W": -1.4,
+              "crouch": 0.48,
+              "lean": 0.4,
+              "Lu": -0.9,
+              "Ll": -0.9
+            }
+          ],
+          [
+            0.55,
+            {
+              "Ru": -0.8,
+              "Rl": -1,
+              "W": -1.3,
+              "crouch": 0.45,
+              "lean": 0.35,
+              "Lu": -0.9,
+              "Ll": -0.9
+            }
+          ],
+          [
+            0.65,
+            {
+              "crouch": 0.45,
+              "lean": 0.3,
+              "Lu": -0.9,
+              "Ll": -0.9
+            }
+          ]
+        ],
+        "hit": [
+          0.35
+        ],
+        "work": "build"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "fish": {
+      "id": "fish",
+      "label": "Fish",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.4,
+          {
+            "Ru": 2.2,
+            "Rl": 2.6,
+            "W": 2.4,
+            "lean": -0.1,
+            "back": 0.1
+          }
+        ],
+        [
+          0.6,
+          {
+            "Ru": 0.4,
+            "Rl": 0.3,
+            "W": 0.5,
+            "lean": 0.12,
+            "step": 0.2,
+            "back": 0.1
+          }
+        ],
+        [
+          2.6,
+          {
+            "Ru": 0.3,
+            "Rl": 0.2,
+            "W": 0.45,
+            "lean": 0.08,
+            "step": 0.2,
+            "back": 0.1
+          }
+        ],
+        [
+          2.8,
+          {
+            "Ru": 0.25,
+            "Rl": 0.15,
+            "W": 0.35,
+            "lean": 0.1,
+            "step": 0.2,
+            "back": 0.1
+          }
+        ],
+        [
+          3.1,
+          {
+            "Ru": 1.3,
+            "Rl": 1.8,
+            "W": 1.6,
+            "lean": -0.12,
+            "back": 0.1
+          }
+        ],
+        [
+          3.6,
+          {
+            "Ru": 0.6,
+            "Rl": 1,
+            "W": 1.2,
+            "back": 0.05
+          }
+        ],
+        [
+          4.1
+        ]
+      ],
+      "duration": 4.35,
+      "events": {
+        "release": 0.6
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.4,
+            {
+              "Ru": 2.2,
+              "Rl": 2.6,
+              "W": 2.4,
+              "lean": -0.1,
+              "back": 0.1
+            }
+          ],
+          [
+            0.6,
+            {
+              "Ru": 0.4,
+              "Rl": 0.3,
+              "W": 0.5,
+              "lean": 0.12,
+              "step": 0.2,
+              "back": 0.1
+            }
+          ],
+          [
+            2.6,
+            {
+              "Ru": 0.3,
+              "Rl": 0.2,
+              "W": 0.45,
+              "lean": 0.08,
+              "step": 0.2,
+              "back": 0.1
+            }
+          ],
+          [
+            2.8,
+            {
+              "Ru": 0.25,
+              "Rl": 0.15,
+              "W": 0.35,
+              "lean": 0.1,
+              "step": 0.2,
+              "back": 0.1
+            }
+          ],
+          [
+            3.1,
+            {
+              "Ru": 1.3,
+              "Rl": 1.8,
+              "W": 1.6,
+              "lean": -0.12,
+              "back": 0.1
+            }
+          ],
+          [
+            3.6,
+            {
+              "Ru": 0.6,
+              "Rl": 1,
+              "W": 1.2,
+              "back": 0.05
+            }
+          ],
+          [
+            4.1
+          ]
+        ],
+        "release": 0.6,
+        "work": "fish"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "spearfish": {
+      "id": "spearfish",
+      "label": "Spearfish",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.4,
+          {
+            "Ru": 1.5,
+            "Rl": 2,
+            "W": -1.3,
+            "lean": -0.05,
+            "back": 0.1
+          }
+        ],
+        [
+          0.58,
+          {
+            "Ru": -0.75,
+            "Rl": -0.95,
+            "W": -1.3,
+            "lean": 0.4,
+            "crouch": 0.22,
+            "lunge": 0.1,
+            "step": 0.35,
+            "back": 0.15
+          }
+        ],
+        [
+          0.95,
+          {
+            "Ru": -0.75,
+            "Rl": -0.95,
+            "W": -1.3,
+            "lean": 0.38,
+            "crouch": 0.22,
+            "lunge": 0.1,
+            "step": 0.35,
+            "back": 0.15
+          }
+        ],
+        [
+          1.35,
+          {
+            "Ru": 0.7,
+            "Rl": 1.2,
+            "W": 1.1,
+            "lean": -0.08,
+            "back": 0.1
+          }
+        ],
+        [
+          2,
+          {
+            "Ru": 0.7,
+            "Rl": 1.2,
+            "W": 1.1,
+            "back": 0.1
+          }
+        ],
+        [
+          2.3
+        ]
+      ],
+      "duration": 2.55,
+      "events": {
+        "hit": [
+          0.58
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.4,
+            {
+              "Ru": 1.5,
+              "Rl": 2,
+              "W": -1.3,
+              "lean": -0.05,
+              "back": 0.1
+            }
+          ],
+          [
+            0.58,
+            {
+              "Ru": -0.75,
+              "Rl": -0.95,
+              "W": -1.3,
+              "lean": 0.4,
+              "crouch": 0.22,
+              "lunge": 0.1,
+              "step": 0.35,
+              "back": 0.15
+            }
+          ],
+          [
+            0.95,
+            {
+              "Ru": -0.75,
+              "Rl": -0.95,
+              "W": -1.3,
+              "lean": 0.38,
+              "crouch": 0.22,
+              "lunge": 0.1,
+              "step": 0.35,
+              "back": 0.15
+            }
+          ],
+          [
+            1.35,
+            {
+              "Ru": 0.7,
+              "Rl": 1.2,
+              "W": 1.1,
+              "lean": -0.08,
+              "back": 0.1
+            }
+          ],
+          [
+            2,
+            {
+              "Ru": 0.7,
+              "Rl": 1.2,
+              "W": 1.1,
+              "back": 0.1
+            }
+          ],
+          [
+            2.3
+          ]
+        ],
+        "hit": [
+          0.58
+        ],
+        "two": true,
+        "work": "spearfish"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "netfish": {
+      "id": "netfish",
+      "label": "Netfish",
+      "category": "Work",
+      "keys": [
+        [
+          0,
+          {
+            "Rhx": -1,
+            "Rhy": -11,
+            "Lhx": -1,
+            "Lhy": -11
+          }
+        ],
+        [
+          0.25,
+          {
+            "Ru": -1.9,
+            "Rl": -1.6,
+            "Lu": -1.8,
+            "Ll": -1.5,
+            "lean": 0.35,
+            "crouch": 0.35,
+            "back": 0.35
+          }
+        ],
+        [
+          0.45,
+          {
+            "Ru": 2.3,
+            "Rl": 2.6,
+            "Lu": 2.2,
+            "Ll": 2.5,
+            "lean": -0.3,
+            "crouch": 0.15,
+            "back": 0.3
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": 0.2,
+            "Rl": 0.1,
+            "Lu": 0.15,
+            "Ll": 0.05,
+            "lean": 0.45,
+            "crouch": 0.25,
+            "lunge": 0.25,
+            "step": 0.55,
+            "back": 0.2
+          }
+        ],
+        [
+          2.3,
+          {
+            "Ru": -0.3,
+            "Rl": -0.1,
+            "Lu": -0.35,
+            "Ll": -0.15,
+            "lean": 0.15,
+            "step": 0.3,
+            "back": 0.15
+          }
+        ],
+        [
+          2.6,
+          {
+            "Ru": 0.4,
+            "Rl": 1.4,
+            "Lu": -0.4,
+            "Ll": -0.2,
+            "lean": -0.15,
+            "back": 0.25,
+            "step": 0.1
+          }
+        ],
+        [
+          2.9,
+          {
+            "Ru": -0.4,
+            "Rl": -0.2,
+            "Lu": 0.4,
+            "Ll": 1.4,
+            "lean": -0.18,
+            "back": 0.25,
+            "step": 0.1
+          }
+        ],
+        [
+          3.2,
+          {
+            "Ru": 0.4,
+            "Rl": 1.4,
+            "Lu": -0.4,
+            "Ll": -0.2,
+            "lean": -0.15,
+            "back": 0.25,
+            "step": 0.1
+          }
+        ],
+        [
+          3.5,
+          {
+            "Ru": -0.4,
+            "Rl": -0.2,
+            "Lu": 0.4,
+            "Ll": 1.4,
+            "lean": -0.15,
+            "back": 0.2
+          }
+        ],
+        [
+          3.9,
+          {
+            "Rhx": -1,
+            "Rhy": -12,
+            "Lhx": -1,
+            "Lhy": -12
+          }
+        ],
+        [
+          4.3
+        ]
+      ],
+      "duration": 4.55,
+      "events": {
+        "release": 0.62
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "Rhx": -1,
+              "Rhy": -11,
+              "Lhx": -1,
+              "Lhy": -11
+            }
+          ],
+          [
+            0.25,
+            {
+              "Ru": -1.9,
+              "Rl": -1.6,
+              "Lu": -1.8,
+              "Ll": -1.5,
+              "lean": 0.35,
+              "crouch": 0.35,
+              "back": 0.35
+            }
+          ],
+          [
+            0.45,
+            {
+              "Ru": 2.3,
+              "Rl": 2.6,
+              "Lu": 2.2,
+              "Ll": 2.5,
+              "lean": -0.3,
+              "crouch": 0.15,
+              "back": 0.3
+            }
+          ],
+          [
+            0.62,
+            {
+              "Ru": 0.2,
+              "Rl": 0.1,
+              "Lu": 0.15,
+              "Ll": 0.05,
+              "lean": 0.45,
+              "crouch": 0.25,
+              "lunge": 0.25,
+              "step": 0.55,
+              "back": 0.2
+            }
+          ],
+          [
+            2.3,
+            {
+              "Ru": -0.3,
+              "Rl": -0.1,
+              "Lu": -0.35,
+              "Ll": -0.15,
+              "lean": 0.15,
+              "step": 0.3,
+              "back": 0.15
+            }
+          ],
+          [
+            2.6,
+            {
+              "Ru": 0.4,
+              "Rl": 1.4,
+              "Lu": -0.4,
+              "Ll": -0.2,
+              "lean": -0.15,
+              "back": 0.25,
+              "step": 0.1
+            }
+          ],
+          [
+            2.9,
+            {
+              "Ru": -0.4,
+              "Rl": -0.2,
+              "Lu": 0.4,
+              "Ll": 1.4,
+              "lean": -0.18,
+              "back": 0.25,
+              "step": 0.1
+            }
+          ],
+          [
+            3.2,
+            {
+              "Ru": 0.4,
+              "Rl": 1.4,
+              "Lu": -0.4,
+              "Ll": -0.2,
+              "lean": -0.15,
+              "back": 0.25,
+              "step": 0.1
+            }
+          ],
+          [
+            3.5,
+            {
+              "Ru": -0.4,
+              "Rl": -0.2,
+              "Lu": 0.4,
+              "Ll": 1.4,
+              "lean": -0.15,
+              "back": 0.2
+            }
+          ],
+          [
+            3.9,
+            {
+              "Rhx": -1,
+              "Rhy": -12,
+              "Lhx": -1,
+              "Lhy": -12
+            }
+          ],
+          [
+            4.3
+          ]
+        ],
+        "release": 0.62,
+        "bare": true,
+        "stowShield": true,
+        "work": "netfish"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "pick": {
+      "id": "pick",
+      "label": "Pick",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.35,
+          {
+            "Rfx": 13,
+            "Rfy": -9,
+            "Lfx": 5,
+            "Lfy": -12,
+            "lean": 0.25,
+            "step": 0.35,
+            "back": 0.05,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.55,
+          {
+            "Rfx": 14,
+            "Rfy": -8,
+            "Lfx": 5,
+            "Lfy": -12,
+            "lean": 0.28,
+            "step": 0.35,
+            "back": 0.05,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.75,
+          {
+            "Rfx": 13,
+            "Rfy": -10,
+            "Lfx": 5,
+            "Lfy": -12,
+            "lean": 0.25,
+            "step": 0.35,
+            "back": 0.05,
+            "crouch": 0.06
+          }
+        ],
+        [
+          1.1,
+          {
+            "Rfx": -2,
+            "Rfy": -16,
+            "lean": 0,
+            "crouch": 0.02
+          }
+        ],
+        [
+          1.35
+        ]
+      ],
+      "duration": 1.6,
+      "events": {
+        "hit": [
+          0.6
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.35,
+            {
+              "Rfx": 13,
+              "Rfy": -9,
+              "Lfx": 5,
+              "Lfy": -12,
+              "lean": 0.25,
+              "step": 0.35,
+              "back": 0.05,
+              "crouch": 0.06
+            }
+          ],
+          [
+            0.55,
+            {
+              "Rfx": 14,
+              "Rfy": -8,
+              "Lfx": 5,
+              "Lfy": -12,
+              "lean": 0.28,
+              "step": 0.35,
+              "back": 0.05,
+              "crouch": 0.06
+            }
+          ],
+          [
+            0.75,
+            {
+              "Rfx": 13,
+              "Rfy": -10,
+              "Lfx": 5,
+              "Lfy": -12,
+              "lean": 0.25,
+              "step": 0.35,
+              "back": 0.05,
+              "crouch": 0.06
+            }
+          ],
+          [
+            1.1,
+            {
+              "Rfx": -2,
+              "Rfy": -16,
+              "lean": 0,
+              "crouch": 0.02
+            }
+          ],
+          [
+            1.35
+          ]
+        ],
+        "hit": [
+          0.6
+        ],
+        "bare": true,
+        "work": "pick"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "gather": {
+      "id": "gather",
+      "label": "Gather",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.45,
+          {
+            "Rfx": 9,
+            "Rfy": -27,
+            "Lfx": 4,
+            "Lfy": -20,
+            "lean": 0.6,
+            "crouch": 0.55,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          0.7,
+          {
+            "Rfx": 10,
+            "Rfy": -28,
+            "Lfx": 4,
+            "Lfy": -20,
+            "lean": 0.6,
+            "crouch": 0.55,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          0.95,
+          {
+            "Rfx": 9,
+            "Rfy": -26,
+            "Lfx": 4,
+            "Lfy": -20,
+            "lean": 0.6,
+            "crouch": 0.55,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          1.3,
+          {
+            "Rfx": -2,
+            "Rfy": -17,
+            "lean": 0.15,
+            "crouch": 0.2
+          }
+        ],
+        [
+          1.6
+        ]
+      ],
+      "duration": 1.85,
+      "events": {
+        "hit": [
+          0.75
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.45,
+            {
+              "Rfx": 9,
+              "Rfy": -27,
+              "Lfx": 4,
+              "Lfy": -20,
+              "lean": 0.6,
+              "crouch": 0.55,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            0.7,
+            {
+              "Rfx": 10,
+              "Rfy": -28,
+              "Lfx": 4,
+              "Lfy": -20,
+              "lean": 0.6,
+              "crouch": 0.55,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            0.95,
+            {
+              "Rfx": 9,
+              "Rfy": -26,
+              "Lfx": 4,
+              "Lfy": -20,
+              "lean": 0.6,
+              "crouch": 0.55,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            1.3,
+            {
+              "Rfx": -2,
+              "Rfy": -17,
+              "lean": 0.15,
+              "crouch": 0.2
+            }
+          ],
+          [
+            1.6
+          ]
+        ],
+        "hit": [
+          0.75
+        ],
+        "bare": true,
+        "stowShield": true,
+        "work": "gather"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "till": {
+      "id": "till",
+      "label": "Till",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Ru": -0.6,
+            "Rl": -0.9,
+            "W": -1.45,
+            "Lu": -0.2,
+            "Ll": 0.4,
+            "lean": 0.1,
+            "step": 0.3,
+            "back": 0.1,
+            "crouch": 0.05
+          }
+        ],
+        [
+          0.5,
+          {
+            "Ru": -0.9,
+            "Rl": -1,
+            "W": -1.5,
+            "Lu": -0.5,
+            "Ll": 0.1,
+            "lean": 0.25,
+            "step": 0.3,
+            "back": 0.1,
+            "crouch": 0.18
+          }
+        ],
+        [
+          0.85,
+          {
+            "Ru": -0.2,
+            "Rl": 0.3,
+            "W": -0.9,
+            "Lu": 0.1,
+            "Ll": 0.8,
+            "lean": -0.15,
+            "step": 0.3,
+            "back": 0.15,
+            "crouch": 0.1
+          }
+        ],
+        [
+          1.05,
+          {
+            "Ru": 0.4,
+            "Rl": 0.8,
+            "W": -0.4,
+            "Lu": 0.4,
+            "Ll": 1,
+            "lean": 0.1,
+            "step": 0.25,
+            "back": 0.1
+          }
+        ],
+        [
+          1.35
+        ]
+      ],
+      "duration": 1.6,
+      "events": {
+        "hit": [
+          0.5,
+          0.95
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Ru": -0.6,
+              "Rl": -0.9,
+              "W": -1.45,
+              "Lu": -0.2,
+              "Ll": 0.4,
+              "lean": 0.1,
+              "step": 0.3,
+              "back": 0.1,
+              "crouch": 0.05
+            }
+          ],
+          [
+            0.5,
+            {
+              "Ru": -0.9,
+              "Rl": -1,
+              "W": -1.5,
+              "Lu": -0.5,
+              "Ll": 0.1,
+              "lean": 0.25,
+              "step": 0.3,
+              "back": 0.1,
+              "crouch": 0.18
+            }
+          ],
+          [
+            0.85,
+            {
+              "Ru": -0.2,
+              "Rl": 0.3,
+              "W": -0.9,
+              "Lu": 0.1,
+              "Ll": 0.8,
+              "lean": -0.15,
+              "step": 0.3,
+              "back": 0.15,
+              "crouch": 0.1
+            }
+          ],
+          [
+            1.05,
+            {
+              "Ru": 0.4,
+              "Rl": 0.8,
+              "W": -0.4,
+              "Lu": 0.4,
+              "Ll": 1,
+              "lean": 0.1,
+              "step": 0.25,
+              "back": 0.1
+            }
+          ],
+          [
+            1.35
+          ]
+        ],
+        "hit": [
+          0.5,
+          0.95
+        ],
+        "two": true,
+        "work": "till"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "plant": {
+      "id": "plant",
+      "label": "Plant",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.4,
+          {
+            "Rfx": 8,
+            "Rfy": -27,
+            "Lfx": 3,
+            "Lfy": -18,
+            "lean": 0.55,
+            "crouch": 0.6,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          0.6,
+          {
+            "Rfx": 8,
+            "Rfy": -29,
+            "Lfx": 3,
+            "Lfy": -18,
+            "lean": 0.6,
+            "crouch": 0.6,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          0.85,
+          {
+            "Rfx": 8,
+            "Rfy": -27,
+            "Lfx": 9,
+            "Lfy": -27,
+            "lean": 0.6,
+            "crouch": 0.6,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          1.05,
+          {
+            "Rfx": 8,
+            "Rfy": -29,
+            "Lfx": 9,
+            "Lfy": -29,
+            "lean": 0.6,
+            "crouch": 0.6,
+            "step": 0.3,
+            "back": 0.25
+          }
+        ],
+        [
+          1.4,
+          {
+            "crouch": 0.1
+          }
+        ],
+        [
+          1.7
+        ]
+      ],
+      "duration": 1.95,
+      "events": {
+        "hit": [
+          0.6,
+          1.05
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.4,
+            {
+              "Rfx": 8,
+              "Rfy": -27,
+              "Lfx": 3,
+              "Lfy": -18,
+              "lean": 0.55,
+              "crouch": 0.6,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            0.6,
+            {
+              "Rfx": 8,
+              "Rfy": -29,
+              "Lfx": 3,
+              "Lfy": -18,
+              "lean": 0.6,
+              "crouch": 0.6,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            0.85,
+            {
+              "Rfx": 8,
+              "Rfy": -27,
+              "Lfx": 9,
+              "Lfy": -27,
+              "lean": 0.6,
+              "crouch": 0.6,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            1.05,
+            {
+              "Rfx": 8,
+              "Rfy": -29,
+              "Lfx": 9,
+              "Lfy": -29,
+              "lean": 0.6,
+              "crouch": 0.6,
+              "step": 0.3,
+              "back": 0.25
+            }
+          ],
+          [
+            1.4,
+            {
+              "crouch": 0.1
+            }
+          ],
+          [
+            1.7
+          ]
+        ],
+        "hit": [
+          0.6,
+          1.05
+        ],
+        "bare": true,
+        "stowShield": true,
+        "work": "plant"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "harvest": {
+      "id": "harvest",
+      "label": "Harvest",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.35,
+          {
+            "Rfx": 11,
+            "Rfy": -14,
+            "Lfx": 10,
+            "Lfy": -16,
+            "lean": 0.45,
+            "crouch": 0.35,
+            "step": 0.35,
+            "back": 0.2
+          }
+        ],
+        [
+          0.55,
+          {
+            "Rfx": 11,
+            "Rfy": -15,
+            "Lfx": 5,
+            "Lfy": -12,
+            "lean": 0.48,
+            "crouch": 0.37,
+            "step": 0.35,
+            "back": 0.2
+          }
+        ],
+        [
+          0.75,
+          {
+            "Rfx": 11,
+            "Rfy": -14,
+            "Lfx": 11,
+            "Lfy": -15,
+            "lean": 0.45,
+            "crouch": 0.35,
+            "step": 0.35,
+            "back": 0.2
+          }
+        ],
+        [
+          1.1,
+          {
+            "Rfx": 3,
+            "Rfy": -10,
+            "Lfx": 3,
+            "Lfy": -10,
+            "lean": 0.05,
+            "crouch": 0.05
+          }
+        ],
+        [
+          1.4
+        ]
+      ],
+      "duration": 1.65,
+      "events": {
+        "hit": [
+          0.55
+        ]
+      },
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.35,
+            {
+              "Rfx": 11,
+              "Rfy": -14,
+              "Lfx": 10,
+              "Lfy": -16,
+              "lean": 0.45,
+              "crouch": 0.35,
+              "step": 0.35,
+              "back": 0.2
+            }
+          ],
+          [
+            0.55,
+            {
+              "Rfx": 11,
+              "Rfy": -15,
+              "Lfx": 5,
+              "Lfy": -12,
+              "lean": 0.48,
+              "crouch": 0.37,
+              "step": 0.35,
+              "back": 0.2
+            }
+          ],
+          [
+            0.75,
+            {
+              "Rfx": 11,
+              "Rfy": -14,
+              "Lfx": 11,
+              "Lfy": -15,
+              "lean": 0.45,
+              "crouch": 0.35,
+              "step": 0.35,
+              "back": 0.2
+            }
+          ],
+          [
+            1.1,
+            {
+              "Rfx": 3,
+              "Rfy": -10,
+              "Lfx": 3,
+              "Lfy": -10,
+              "lean": 0.05,
+              "crouch": 0.05
+            }
+          ],
+          [
+            1.4
+          ]
+        ],
+        "hit": [
+          0.55
+        ],
+        "bare": true,
+        "stowShield": true,
+        "work": "harvest"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "climb": {
+      "id": "climb",
+      "label": "Climb",
+      "category": "Work",
+      "keys": [
+        [
+          0,
+          {
+            "Rhx": 1,
+            "Rhy": 8,
+            "Lhx": 2,
+            "Lhy": -4,
+            "crouch": 0.16,
+            "step": 0.22,
+            "back": -0.12
+          }
+        ],
+        [
+          0.35,
+          {
+            "Rhx": 2,
+            "Rhy": -4,
+            "Lhx": 1,
+            "Lhy": 8,
+            "crouch": 0.04,
+            "step": -0.08,
+            "back": 0.16
+          }
+        ],
+        [
+          0.7,
+          {
+            "Rhx": 1,
+            "Rhy": 8,
+            "Lhx": 2,
+            "Lhy": -4,
+            "crouch": 0.16,
+            "step": 0.22,
+            "back": -0.12
+          }
+        ]
+      ],
+      "duration": 0.95,
+      "events": {},
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "Rhx": 1,
+              "Rhy": 8,
+              "Lhx": 2,
+              "Lhy": -4,
+              "crouch": 0.16,
+              "step": 0.22,
+              "back": -0.12
+            }
+          ],
+          [
+            0.35,
+            {
+              "Rhx": 2,
+              "Rhy": -4,
+              "Lhx": 1,
+              "Lhy": 8,
+              "crouch": 0.04,
+              "step": -0.08,
+              "back": 0.16
+            }
+          ],
+          [
+            0.7,
+            {
+              "Rhx": 1,
+              "Rhy": 8,
+              "Lhx": 2,
+              "Lhy": -4,
+              "crouch": 0.16,
+              "step": 0.22,
+              "back": -0.12
+            }
+          ]
+        ],
+        "bare": true,
+        "stowShield": true,
+        "work": "climb"
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "lift": {
+      "id": "lift",
+      "label": "Lift",
+      "category": "Work",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Rhx": 1,
+            "Rhy": -22,
+            "Lhx": 1,
+            "Lhy": -22,
+            "lean": 0.6,
+            "crouch": 0.45
+          }
+        ],
+        [
+          0.55,
+          {
+            "Rhx": 0,
+            "Rhy": -20,
+            "Lhx": 0,
+            "Lhy": -20,
+            "lean": 0.55,
+            "crouch": 0.45
+          }
+        ],
+        [
+          0.9,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "lean": 0.05,
+            "crouch": 0.05
+          }
+        ],
+        [
+          1,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9
+          }
+        ]
+      ],
+      "duration": 1.25,
+      "events": {},
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Rhx": 1,
+              "Rhy": -22,
+              "Lhx": 1,
+              "Lhy": -22,
+              "lean": 0.6,
+              "crouch": 0.45
+            }
+          ],
+          [
+            0.55,
+            {
+              "Rhx": 0,
+              "Rhy": -20,
+              "Lhx": 0,
+              "Lhy": -20,
+              "lean": 0.55,
+              "crouch": 0.45
+            }
+          ],
+          [
+            0.9,
+            {
+              "Rhx": -1,
+              "Rhy": -9,
+              "Lhx": -1,
+              "Lhy": -9,
+              "lean": 0.05,
+              "crouch": 0.05
+            }
+          ],
+          [
+            1,
+            {
+              "Rhx": -1,
+              "Rhy": -9,
+              "Lhx": -1,
+              "Lhy": -9
+            }
+          ]
+        ],
+        "bare": true,
+        "stowShield": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "carry": {
+      "id": "carry",
+      "label": "Carry",
+      "category": "Work",
+      "keys": [
+        [
+          0,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "step": 0.25,
+            "back": 0.1,
+            "crouch": 0.04
+          }
+        ],
+        [
+          0.3,
+          {
+            "Rhx": -1,
+            "Rhy": -9.5,
+            "Lhx": -1,
+            "Lhy": -9.5,
+            "step": -0.1,
+            "back": -0.25,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.6,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "step": 0.25,
+            "back": 0.1,
+            "crouch": 0.04
+          }
+        ]
+      ],
+      "duration": 0.85,
+      "events": {},
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "Rhx": -1,
+              "Rhy": -9,
+              "Lhx": -1,
+              "Lhy": -9,
+              "step": 0.25,
+              "back": 0.1,
+              "crouch": 0.04
+            }
+          ],
+          [
+            0.3,
+            {
+              "Rhx": -1,
+              "Rhy": -9.5,
+              "Lhx": -1,
+              "Lhy": -9.5,
+              "step": -0.1,
+              "back": -0.25,
+              "crouch": 0.06
+            }
+          ],
+          [
+            0.6,
+            {
+              "Rhx": -1,
+              "Rhy": -9,
+              "Lhx": -1,
+              "Lhy": -9,
+              "step": 0.25,
+              "back": 0.1,
+              "crouch": 0.04
+            }
+          ]
+        ],
+        "bare": true,
+        "stowShield": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "hold": {
+      "id": "hold",
+      "label": "Hold",
+      "category": "Work",
+      "keys": [
+        [
+          0,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "crouch": 0.03
+          }
+        ],
+        [
+          0.8,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "crouch": 0.03
+          }
+        ]
+      ],
+      "duration": 1.05,
+      "events": {},
+      "source": "art/gear3d/work.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0,
+            {
+              "Rhx": -1,
+              "Rhy": -9,
+              "Lhx": -1,
+              "Lhy": -9,
+              "crouch": 0.03
+            }
+          ],
+          [
+            0.8,
+            {
+              "Rhx": -1,
+              "Rhy": -9,
+              "Lhx": -1,
+              "Lhy": -9,
+              "crouch": 0.03
+            }
+          ]
+        ],
+        "bare": true,
+        "stowShield": true
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_sway": {
+      "id": "d_sway",
+      "label": "D Sway",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.5,
+          {
+            "lean": 0.12,
+            "crouch": 0.1
+          }
+        ],
+        [
+          1,
+          {
+            "lean": -0.1,
+            "crouch": 0.2
+          }
+        ],
+        [
+          1.5,
+          {
+            "lean": 0.15,
+            "crouch": 0.35
+          }
+        ],
+        [
+          1.9,
+          {
+            "lean": 0.08,
+            "crouch": 0.45
+          }
+        ]
+      ],
+      "duration": 2.15,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.5,
+            {
+              "lean": 0.12,
+              "crouch": 0.1
+            }
+          ],
+          [
+            1,
+            {
+              "lean": -0.1,
+              "crouch": 0.2
+            }
+          ],
+          [
+            1.5,
+            {
+              "lean": 0.15,
+              "crouch": 0.35
+            }
+          ],
+          [
+            1.9,
+            {
+              "lean": 0.08,
+              "crouch": 0.45
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_retch": {
+      "id": "d_retch",
+      "label": "D Retch",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Rhx": -1,
+            "Rhy": -10,
+            "lean": 0.3,
+            "crouch": 0.12,
+            "shake": 0.03
+          }
+        ],
+        [
+          0.7,
+          {
+            "Rhx": -1,
+            "Rhy": -10,
+            "Lhx": -2,
+            "Lhy": 2,
+            "lean": 0.45,
+            "crouch": 0.2,
+            "shake": 0.05
+          }
+        ],
+        [
+          1.1,
+          {
+            "Rhx": -1,
+            "Rhy": -11,
+            "Lhx": -1,
+            "Lhy": 2,
+            "lean": 0.5,
+            "crouch": 0.3,
+            "shake": 0.07
+          }
+        ],
+        [
+          1.6,
+          {
+            "Rhx": -1,
+            "Rhy": -11,
+            "lean": 0.45,
+            "crouch": 0.35,
+            "shake": 0.08
+          }
+        ]
+      ],
+      "duration": 1.85,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Rhx": -1,
+              "Rhy": -10,
+              "lean": 0.3,
+              "crouch": 0.12,
+              "shake": 0.03
+            }
+          ],
+          [
+            0.7,
+            {
+              "Rhx": -1,
+              "Rhy": -10,
+              "Lhx": -2,
+              "Lhy": 2,
+              "lean": 0.45,
+              "crouch": 0.2,
+              "shake": 0.05
+            }
+          ],
+          [
+            1.1,
+            {
+              "Rhx": -1,
+              "Rhy": -11,
+              "Lhx": -1,
+              "Lhy": 2,
+              "lean": 0.5,
+              "crouch": 0.3,
+              "shake": 0.07
+            }
+          ],
+          [
+            1.6,
+            {
+              "Rhx": -1,
+              "Rhy": -11,
+              "lean": 0.45,
+              "crouch": 0.35,
+              "shake": 0.08
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_choke": {
+      "id": "d_choke",
+      "label": "D Choke",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.25,
+          {
+            "Rhx": -1,
+            "Rhy": -1.5,
+            "Lhx": -1,
+            "Lhy": -1.5,
+            "lean": -0.12,
+            "shake": 0.04
+          }
+        ],
+        [
+          0.9,
+          {
+            "Rhx": -0.5,
+            "Rhy": -1,
+            "Lhx": -0.5,
+            "Lhy": -1,
+            "lean": 0.2,
+            "crouch": 0.15,
+            "shake": 0.07
+          }
+        ],
+        [
+          1.5,
+          {
+            "Rhx": -0.5,
+            "Rhy": -1.5,
+            "Lhx": -0.5,
+            "Lhy": -1.5,
+            "lean": 0.3,
+            "crouch": 0.3,
+            "shake": 0.05
+          }
+        ]
+      ],
+      "duration": 1.75,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.25,
+            {
+              "Rhx": -1,
+              "Rhy": -1.5,
+              "Lhx": -1,
+              "Lhy": -1.5,
+              "lean": -0.12,
+              "shake": 0.04
+            }
+          ],
+          [
+            0.9,
+            {
+              "Rhx": -0.5,
+              "Rhy": -1,
+              "Lhx": -0.5,
+              "Lhy": -1,
+              "lean": 0.2,
+              "crouch": 0.15,
+              "shake": 0.07
+            }
+          ],
+          [
+            1.5,
+            {
+              "Rhx": -0.5,
+              "Rhy": -1.5,
+              "Lhx": -0.5,
+              "Lhy": -1.5,
+              "lean": 0.3,
+              "crouch": 0.3,
+              "shake": 0.05
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_clutch": {
+      "id": "d_clutch",
+      "label": "D Clutch",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.15,
+          {
+            "Rhx": -2,
+            "Rhy": -6,
+            "lean": 0.1,
+            "shake": 0.05
+          }
+        ],
+        [
+          0.5,
+          {
+            "Rhx": -2,
+            "Rhy": -6,
+            "Lhx": 6,
+            "Lhy": -6,
+            "lean": 0.25,
+            "crouch": 0.15,
+            "lunge": 0.15,
+            "shake": 0.02
+          }
+        ],
+        [
+          1,
+          {
+            "Rhx": -2,
+            "Rhy": -7,
+            "Lhx": 3,
+            "Lhy": -12,
+            "lean": 0.35,
+            "crouch": 0.4,
+            "lunge": 0.1
+          }
+        ]
+      ],
+      "duration": 1.25,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.15,
+            {
+              "Rhx": -2,
+              "Rhy": -6,
+              "lean": 0.1,
+              "shake": 0.05
+            }
+          ],
+          [
+            0.5,
+            {
+              "Rhx": -2,
+              "Rhy": -6,
+              "Lhx": 6,
+              "Lhy": -6,
+              "lean": 0.25,
+              "crouch": 0.15,
+              "lunge": 0.15,
+              "shake": 0.02
+            }
+          ],
+          [
+            1,
+            {
+              "Rhx": -2,
+              "Rhy": -7,
+              "Lhx": 3,
+              "Lhy": -12,
+              "lean": 0.35,
+              "crouch": 0.4,
+              "lunge": 0.1
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_shiver": {
+      "id": "d_shiver",
+      "label": "D Shiver",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Rhx": -3,
+            "Rhy": -6,
+            "Lhx": -3,
+            "Lhy": -6.5,
+            "crouch": 0.1,
+            "shake": 0.03
+          }
+        ],
+        [
+          1.4,
+          {
+            "Rhx": -3.5,
+            "Rhy": -6,
+            "Lhx": -3.5,
+            "Lhy": -6.5,
+            "crouch": 0.18,
+            "shake": 0.045
+          }
+        ],
+        [
+          1.9,
+          {
+            "Rhx": -3.5,
+            "Rhy": -6,
+            "Lhx": -3.5,
+            "Lhy": -6.5,
+            "crouch": 0.18,
+            "shake": 0
+          }
+        ]
+      ],
+      "duration": 2.15,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Rhx": -3,
+              "Rhy": -6,
+              "Lhx": -3,
+              "Lhy": -6.5,
+              "crouch": 0.1,
+              "shake": 0.03
+            }
+          ],
+          [
+            1.4,
+            {
+              "Rhx": -3.5,
+              "Rhy": -6,
+              "Lhx": -3.5,
+              "Lhy": -6.5,
+              "crouch": 0.18,
+              "shake": 0.045
+            }
+          ],
+          [
+            1.9,
+            {
+              "Rhx": -3.5,
+              "Rhy": -6,
+              "Lhx": -3.5,
+              "Lhy": -6.5,
+              "crouch": 0.18,
+              "shake": 0
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_fever": {
+      "id": "d_fever",
+      "label": "D Fever",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.3,
+          {
+            "Rhx": -1,
+            "Rhy": 7,
+            "lean": -0.05,
+            "crouch": 0.05
+          }
+        ],
+        [
+          0.9,
+          {
+            "Rhx": -1,
+            "Rhy": 7,
+            "lean": 0.12,
+            "crouch": 0.15
+          }
+        ],
+        [
+          1.4,
+          {
+            "Rhx": 0,
+            "Rhy": 4,
+            "lean": -0.12,
+            "crouch": 0.3
+          }
+        ],
+        [
+          1.8,
+          {
+            "lean": 0.1,
+            "crouch": 0.4
+          }
+        ]
+      ],
+      "duration": 2.05,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.3,
+            {
+              "Rhx": -1,
+              "Rhy": 7,
+              "lean": -0.05,
+              "crouch": 0.05
+            }
+          ],
+          [
+            0.9,
+            {
+              "Rhx": -1,
+              "Rhy": 7,
+              "lean": 0.12,
+              "crouch": 0.15
+            }
+          ],
+          [
+            1.4,
+            {
+              "Rhx": 0,
+              "Rhy": 4,
+              "lean": -0.12,
+              "crouch": 0.3
+            }
+          ],
+          [
+            1.8,
+            {
+              "lean": 0.1,
+              "crouch": 0.4
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_flail": {
+      "id": "d_flail",
+      "label": "D Flail",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.15,
+          {
+            "Rhx": 5,
+            "Rhy": 8,
+            "Lhx": 7,
+            "Lhy": -2,
+            "lean": -0.2,
+            "lunge": 0.1,
+            "shake": 0.04
+          }
+        ],
+        [
+          0.3,
+          {
+            "Rhx": 7,
+            "Rhy": -2,
+            "Lhx": 5,
+            "Lhy": 8,
+            "lean": 0.15,
+            "lunge": -0.08,
+            "shake": 0.04
+          }
+        ],
+        [
+          0.45,
+          {
+            "Rhx": 5,
+            "Rhy": 8,
+            "Lhx": 7,
+            "Lhy": -2,
+            "lean": -0.15,
+            "lunge": 0.12,
+            "shake": 0.04
+          }
+        ],
+        [
+          0.6,
+          {
+            "Rhx": 7,
+            "Rhy": -2,
+            "Lhx": 5,
+            "Lhy": 8,
+            "lean": 0.2,
+            "lunge": -0.05,
+            "shake": 0.04
+          }
+        ],
+        [
+          0.75,
+          {
+            "Rhx": 5,
+            "Rhy": 8,
+            "Lhx": 7,
+            "Lhy": -2,
+            "lean": -0.1,
+            "lunge": 0.15,
+            "shake": 0.04
+          }
+        ],
+        [
+          0.9,
+          {
+            "Rhx": 7,
+            "Rhy": -2,
+            "Lhx": 5,
+            "Lhy": 8,
+            "lean": 0.2,
+            "lunge": 0,
+            "shake": 0.04
+          }
+        ],
+        [
+          1.05,
+          {
+            "Rhx": 5,
+            "Rhy": 8,
+            "Lhx": 7,
+            "Lhy": -2,
+            "lean": -0.15,
+            "lunge": 0.12,
+            "shake": 0.04
+          }
+        ],
+        [
+          1.2,
+          {
+            "Rhx": 7,
+            "Rhy": -2,
+            "Lhx": 5,
+            "Lhy": 8,
+            "lean": 0.25,
+            "lunge": 0.05,
+            "crouch": 0.15,
+            "shake": 0.04
+          }
+        ],
+        [
+          1.5,
+          {
+            "Rhx": 6,
+            "Rhy": 2,
+            "Lhx": 6,
+            "Lhy": 2,
+            "lean": 0.3,
+            "crouch": 0.3,
+            "shake": 0.06
+          }
+        ]
+      ],
+      "duration": 1.75,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.15,
+            {
+              "Rhx": 5,
+              "Rhy": 8,
+              "Lhx": 7,
+              "Lhy": -2,
+              "lean": -0.2,
+              "lunge": 0.1,
+              "shake": 0.04
+            }
+          ],
+          [
+            0.3,
+            {
+              "Rhx": 7,
+              "Rhy": -2,
+              "Lhx": 5,
+              "Lhy": 8,
+              "lean": 0.15,
+              "lunge": -0.08,
+              "shake": 0.04
+            }
+          ],
+          [
+            0.45,
+            {
+              "Rhx": 5,
+              "Rhy": 8,
+              "Lhx": 7,
+              "Lhy": -2,
+              "lean": -0.15,
+              "lunge": 0.12,
+              "shake": 0.04
+            }
+          ],
+          [
+            0.6,
+            {
+              "Rhx": 7,
+              "Rhy": -2,
+              "Lhx": 5,
+              "Lhy": 8,
+              "lean": 0.2,
+              "lunge": -0.05,
+              "shake": 0.04
+            }
+          ],
+          [
+            0.75,
+            {
+              "Rhx": 5,
+              "Rhy": 8,
+              "Lhx": 7,
+              "Lhy": -2,
+              "lean": -0.1,
+              "lunge": 0.15,
+              "shake": 0.04
+            }
+          ],
+          [
+            0.9,
+            {
+              "Rhx": 7,
+              "Rhy": -2,
+              "Lhx": 5,
+              "Lhy": 8,
+              "lean": 0.2,
+              "lunge": 0,
+              "shake": 0.04
+            }
+          ],
+          [
+            1.05,
+            {
+              "Rhx": 5,
+              "Rhy": 8,
+              "Lhx": 7,
+              "Lhy": -2,
+              "lean": -0.15,
+              "lunge": 0.12,
+              "shake": 0.04
+            }
+          ],
+          [
+            1.2,
+            {
+              "Rhx": 7,
+              "Rhy": -2,
+              "Lhx": 5,
+              "Lhy": 8,
+              "lean": 0.25,
+              "lunge": 0.05,
+              "crouch": 0.15,
+              "shake": 0.04
+            }
+          ],
+          [
+            1.5,
+            {
+              "Rhx": 6,
+              "Rhy": 2,
+              "Lhx": 6,
+              "Lhy": 2,
+              "lean": 0.3,
+              "crouch": 0.3,
+              "shake": 0.06
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_jolt": {
+      "id": "d_jolt",
+      "label": "D Jolt",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.05,
+          {
+            "Rhx": 8,
+            "Rhy": 2,
+            "Lhx": 8,
+            "Lhy": 2,
+            "shake": 0.12,
+            "lean": -0.12
+          }
+        ],
+        [
+          0.55,
+          {
+            "Rhx": 8,
+            "Rhy": 3,
+            "Lhx": 8,
+            "Lhy": 3,
+            "shake": 0.12,
+            "lean": -0.12
+          }
+        ],
+        [
+          0.7,
+          {
+            "Rhx": 7,
+            "Rhy": 1,
+            "Lhx": 7,
+            "Lhy": 1,
+            "lean": -0.08
+          }
+        ]
+      ],
+      "duration": 0.95,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.05,
+            {
+              "Rhx": 8,
+              "Rhy": 2,
+              "Lhx": 8,
+              "Lhy": 2,
+              "shake": 0.12,
+              "lean": -0.12
+            }
+          ],
+          [
+            0.55,
+            {
+              "Rhx": 8,
+              "Rhy": 3,
+              "Lhx": 8,
+              "Lhy": 3,
+              "shake": 0.12,
+              "lean": -0.12
+            }
+          ],
+          [
+            0.7,
+            {
+              "Rhx": 7,
+              "Rhy": 1,
+              "Lhx": 7,
+              "Lhy": 1,
+              "lean": -0.08
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_twitch": {
+      "id": "d_twitch",
+      "label": "D Twitch",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.2,
+          {
+            "shake": 0.06,
+            "lean": 0.05
+          }
+        ],
+        [
+          0.7,
+          {
+            "shake": 0.09,
+            "crouch": 0.15
+          }
+        ],
+        [
+          1,
+          {
+            "shake": 0.04,
+            "crouch": 0.25
+          }
+        ]
+      ],
+      "duration": 1.25,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.2,
+            {
+              "shake": 0.06,
+              "lean": 0.05
+            }
+          ],
+          [
+            0.7,
+            {
+              "shake": 0.09,
+              "crouch": 0.15
+            }
+          ],
+          [
+            1,
+            {
+              "shake": 0.04,
+              "crouch": 0.25
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_rattle": {
+      "id": "d_rattle",
+      "label": "D Rattle",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.2,
+          {
+            "shake": 0.08,
+            "crouch": 0.05
+          }
+        ],
+        [
+          0.8,
+          {
+            "shake": 0.1,
+            "crouch": 0.1
+          }
+        ]
+      ],
+      "duration": 1.05,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.2,
+            {
+              "shake": 0.08,
+              "crouch": 0.05
+            }
+          ],
+          [
+            0.8,
+            {
+              "shake": 0.1,
+              "crouch": 0.1
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_melt": {
+      "id": "d_melt",
+      "label": "D Melt",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.4,
+          {
+            "Rhx": 4,
+            "Rhy": -2,
+            "Lhx": 4,
+            "Lhy": -2,
+            "shake": 0.03,
+            "crouch": 0.1
+          }
+        ],
+        [
+          1,
+          {
+            "Rhx": 5,
+            "Rhy": 0,
+            "Lhx": 5,
+            "Lhy": 0,
+            "shake": 0.04,
+            "crouch": 0.2
+          }
+        ]
+      ],
+      "duration": 1.25,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.4,
+            {
+              "Rhx": 4,
+              "Rhy": -2,
+              "Lhx": 4,
+              "Lhy": -2,
+              "shake": 0.03,
+              "crouch": 0.1
+            }
+          ],
+          [
+            1,
+            {
+              "Rhx": 5,
+              "Rhy": 0,
+              "Lhx": 5,
+              "Lhy": 0,
+              "shake": 0.04,
+              "crouch": 0.2
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "d_sit": {
+      "id": "d_sit",
+      "label": "D Sit",
+      "category": "Reactions",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.8,
+          {
+            "crouch": 0.35,
+            "lean": 0.1,
+            "Rhx": 1,
+            "Rhy": -12,
+            "Lhx": 1,
+            "Lhy": -12
+          }
+        ],
+        [
+          1.6,
+          {
+            "crouch": 0.55,
+            "lean": 0.15,
+            "Rhx": 1,
+            "Rhy": -14,
+            "Lhx": 1,
+            "Lhy": -14
+          }
+        ]
+      ],
+      "duration": 1.85,
+      "events": {},
+      "source": "art/gear3d/deaths.js",
+      "sourceDefinition": {
+        "keys": [
+          [
+            0
+          ],
+          [
+            0.8,
+            {
+              "crouch": 0.35,
+              "lean": 0.1,
+              "Rhx": 1,
+              "Rhy": -12,
+              "Lhx": 1,
+              "Lhy": -12
+            }
+          ],
+          [
+            1.6,
+            {
+              "crouch": 0.55,
+              "lean": 0.15,
+              "Rhx": 1,
+              "Rhy": -14,
+              "Lhx": 1,
+              "Lhy": -14
+            }
+          ]
+        ]
+      },
+      "status": "source-keyed clip; mapping preview"
+    },
+    "reaction.fall": {
+      "id": "reaction.fall",
+      "label": "Fall",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "fall",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.crumple": {
+      "id": "reaction.crumple",
+      "label": "Crumple",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "crumple",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.spin": {
+      "id": "reaction.spin",
+      "label": "Spin",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "spin",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.shot": {
+      "id": "reaction.shot",
+      "label": "Shot",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "shot",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.flying": {
+      "id": "reaction.flying",
+      "label": "Flying",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "flying",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.hammer": {
+      "id": "reaction.hammer",
+      "label": "Hammer",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "hammer",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.throw": {
+      "id": "reaction.throw",
+      "label": "Throw",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "throw",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.stiff": {
+      "id": "reaction.stiff",
+      "label": "Stiff",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "stiff",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.liedown": {
+      "id": "reaction.liedown",
+      "label": "Liedown",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "liedown",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.melt": {
+      "id": "reaction.melt",
+      "label": "Melt",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "melt",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.heap": {
+      "id": "reaction.heap",
+      "label": "Heap",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "heap",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.ko": {
+      "id": "reaction.ko",
+      "label": "Ko",
+      "category": "Physics reactions",
+      "duration": 3.5,
+      "physics": "ko",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.flinch": {
+      "id": "reaction.flinch",
+      "label": "Flinch",
+      "category": "Physics reactions",
+      "duration": 0.7,
+      "physics": "flinch",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.armoff": {
+      "id": "reaction.armoff",
+      "label": "Armoff",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "armoff",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.legoff": {
+      "id": "reaction.legoff",
+      "label": "Legoff",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "legoff",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.armcut": {
+      "id": "reaction.armcut",
+      "label": "Armcut",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "armcut",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "reaction.legcut": {
+      "id": "reaction.legcut",
+      "label": "Legcut",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "physics": "legcut",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "source": "art/gear3d/ragdoll.js#rdKind",
+      "status": "deterministic sprite-preview adaptation; live physics retained separately"
+    },
+    "death.bleed": {
+      "id": "death.bleed",
+      "label": "Bleed death",
+      "category": "Death sequences",
+      "duration": 3.45,
+      "sequence": [
+        "d_sway",
+        "reaction.crumple"
+      ],
+      "tint": [
+        0.92,
+        0.86,
+        0.86
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.45
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.poison": {
+      "id": "death.poison",
+      "label": "Poison death",
+      "category": "Death sequences",
+      "duration": 3.1500000000000004,
+      "sequence": [
+        "d_retch",
+        "reaction.crumple"
+      ],
+      "tint": [
+        0.8,
+        1,
+        0.72
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.1500000000000004
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.starve": {
+      "id": "death.starve",
+      "label": "Starve death",
+      "category": "Death sequences",
+      "duration": 3.45,
+      "sequence": [
+        "d_sway",
+        "reaction.crumple"
+      ],
+      "tint": [
+        0.9,
+        0.88,
+        0.84
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.45
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.cold": {
+      "id": "death.cold",
+      "label": "Cold death",
+      "category": "Death sequences",
+      "duration": 3.45,
+      "sequence": [
+        "d_shiver",
+        "reaction.stiff"
+      ],
+      "tint": [
+        0.72,
+        0.86,
+        1.22
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.45
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.fever": {
+      "id": "death.fever",
+      "label": "Fever death",
+      "category": "Death sequences",
+      "duration": 3.3499999999999996,
+      "sequence": [
+        "d_fever",
+        "reaction.crumple"
+      ],
+      "tint": [
+        1.1,
+        0.84,
+        0.8
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.3499999999999996
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.burn": {
+      "id": "death.burn",
+      "label": "Burn death",
+      "category": "Death sequences",
+      "duration": 3.05,
+      "sequence": [
+        "d_flail",
+        "reaction.fall"
+      ],
+      "tint": [
+        0.3,
+        0.25,
+        0.22
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.05
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.lightning": {
+      "id": "death.lightning",
+      "label": "Lightning death",
+      "category": "Death sequences",
+      "duration": 2.25,
+      "sequence": [
+        "d_jolt",
+        "reaction.stiff"
+      ],
+      "tint": [
+        0.36,
+        0.33,
+        0.33
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          2.25
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.heart": {
+      "id": "death.heart",
+      "label": "Heart death",
+      "category": "Death sequences",
+      "duration": 2.55,
+      "sequence": [
+        "d_clutch",
+        "reaction.fall"
+      ],
+      "tint": null,
+      "keys": [
+        [
+          0
+        ],
+        [
+          2.55
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.choke": {
+      "id": "death.choke",
+      "label": "Choke death",
+      "category": "Death sequences",
+      "duration": 3.05,
+      "sequence": [
+        "d_choke",
+        "reaction.crumple"
+      ],
+      "tint": [
+        0.86,
+        0.86,
+        0.94
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.05
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.brain": {
+      "id": "death.brain",
+      "label": "Brain death",
+      "category": "Death sequences",
+      "duration": 2.55,
+      "sequence": [
+        "d_twitch",
+        "reaction.crumple"
+      ],
+      "tint": null,
+      "keys": [
+        [
+          0
+        ],
+        [
+          2.55
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.goo": {
+      "id": "death.goo",
+      "label": "Goo death",
+      "category": "Death sequences",
+      "duration": 2.55,
+      "sequence": [
+        "d_melt",
+        "reaction.melt"
+      ],
+      "tint": [
+        0.72,
+        1.05,
+        0.58
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          2.55
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.holy": {
+      "id": "death.holy",
+      "label": "Holy death",
+      "category": "Death sequences",
+      "duration": 2.55,
+      "sequence": [
+        "d_melt",
+        "reaction.melt"
+      ],
+      "tint": [
+        1.45,
+        1.35,
+        1.1
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          2.55
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.crumble": {
+      "id": "death.crumble",
+      "label": "Crumble death",
+      "category": "Death sequences",
+      "duration": 2.35,
+      "sequence": [
+        "d_rattle",
+        "reaction.heap"
+      ],
+      "tint": [
+        0.95,
+        0.93,
+        0.86
+      ],
+      "keys": [
+        [
+          0
+        ],
+        [
+          2.35
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "death.oldage": {
+      "id": "death.oldage",
+      "label": "Oldage death",
+      "category": "Death sequences",
+      "duration": 3.1500000000000004,
+      "sequence": [
+        "d_sit",
+        "reaction.liedown"
+      ],
+      "tint": null,
+      "keys": [
+        [
+          0
+        ],
+        [
+          3.1500000000000004
+        ]
+      ],
+      "source": "art/gear3d/deaths.js#DZDEF",
+      "effects": "Live particles/tints remain external to body clips",
+      "status": "source-defined sequence; external effects not baked"
+    },
+    "idle": {
+      "id": "idle",
+      "label": "Idle",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 1.2,
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.6,
+          {
+            "crouch": 0.025
+          }
+        ],
+        [
+          1.2
+        ]
+      ]
+    },
+    "walk": {
+      "id": "walk",
+      "label": "Walk",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 0.8,
+      "procedural": "walk",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.8
+        ]
+      ]
+    },
+    "walk_armed": {
+      "id": "walk_armed",
+      "label": "Walk Armed",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 0.9,
+      "procedural": "walk",
+      "holdProfile": "reference_guard",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.9
+        ]
+      ]
+    },
+    "idle_armed": {
+      "id": "idle_armed",
+      "label": "Idle Armed",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 1.6,
+      "holdProfile": "reference_guard",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.8,
+          {
+            "crouch": 0.025
+          }
+        ],
+        [
+          1.6
+        ]
+      ]
+    },
+    "run": {
+      "id": "run",
+      "label": "Run",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 0.55,
+      "procedural": "run",
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.55
+        ]
+      ]
+    },
+    "sleep": {
+      "id": "sleep",
+      "label": "Sleep",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 1.6,
+      "physics": "liedown",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1.6
+        ]
+      ]
+    },
+    "bow_shot": {
+      "id": "bow_shot",
+      "label": "Bow Shot",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 1.2,
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.25,
+          {
+            "Lfx": 13,
+            "Lfy": -4,
+            "Rhx": 3,
+            "Rhy": -4
+          }
+        ],
+        [
+          0.65,
+          {
+            "Lfx": 15,
+            "Lfy": -3,
+            "Rhx": 3,
+            "Rhy": 3
+          }
+        ],
+        [
+          0.8,
+          {
+            "Lfx": 15,
+            "Lfy": -3,
+            "Rhx": 7,
+            "Rhy": 4
+          }
+        ],
+        [
+          1.2
+        ]
+      ],
+      "events": {
+        "release": 0.8
+      }
+    },
+    "spear_short_jab": {
+      "id": "spear_short_jab",
+      "label": "Spear Short Jab",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 1.2,
+      "weaponViewDirections": [
+        null,
+        null,
+        [
+          1,
+          -0.35
+        ],
+        [
+          -1,
+          -0.35
+        ]
+      ],
+      "keys": [
+        [
+          0,
+          {
+            "Rfx": 4,
+            "Rfy": -10,
+            "W": -0.4
+          }
+        ],
+        [
+          0.25,
+          {
+            "Rfx": 2,
+            "Rfy": -10,
+            "W": -0.4
+          }
+        ],
+        [
+          0.45,
+          {
+            "Rfx": 8,
+            "Rfy": -11,
+            "W": -0.4
+          }
+        ],
+        [
+          0.75,
+          {
+            "Rfx": 5,
+            "Rfy": -10,
+            "W": -0.4
+          }
+        ],
+        [
+          1.2
+        ]
+      ],
+      "events": {
+        "hit": [
+          0.45
+        ]
+      },
+      "oneHanded": true
+    },
+    "anticipation_hop": {
+      "id": "anticipation_hop",
+      "label": "Anticipation Hop",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 0.7,
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.17,
+          {
+            "rootForward": -0.15,
+            "hop": 0.22
+          }
+        ],
+        [
+          0.34,
+          {
+            "rootForward": 0.15,
+            "hop": 0.22
+          }
+        ],
+        [
+          0.5,
+          {
+            "rootForward": 0.1
+          }
+        ],
+        [
+          0.7
+        ]
+      ],
+      "oneHanded": true
+    },
+    "universal_flinch": {
+      "id": "universal_flinch",
+      "label": "Universal Flinch",
+      "category": "New and locomotion",
+      "source": "Universal authoring additions",
+      "status": "authored universal clip draft",
+      "duration": 0.42,
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.07,
+          {
+            "lean": -0.14,
+            "crouch": 0.06,
+            "rootForward": -0.1
+          }
+        ],
+        [
+          0.16,
+          {
+            "lean": -0.18,
+            "crouch": 0.09,
+            "rootForward": -0.12
+          }
+        ],
+        [
+          0.42
+        ]
+      ],
+      "retainEquipment": true
+    },
+    "reaction.today": {
+      "id": "reaction.today",
+      "label": "Today's death",
+      "category": "Physics reactions",
+      "duration": 1.2,
+      "physics": "crumple",
+      "keys": [
+        [
+          0
+        ],
+        [
+          1.2
+        ]
+      ],
+      "source": "Legacy standing death presentation",
+      "status": "deterministic sprite-preview adaptation"
+    }
+  },
+  "arenaAliases": [
+    {
+      "label": "Fall",
+      "clip": "reaction.fall",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Crumple",
+      "clip": "reaction.crumple",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Spin and drop",
+      "clip": "reaction.spin",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Knocked back",
+      "clip": "reaction.flying",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Hammer launch",
+      "clip": "reaction.hammer",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Dragon throw",
+      "clip": "reaction.throw",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Arm off",
+      "clip": "reaction.armoff",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Leg off",
+      "clip": "reaction.legoff",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Today's death",
+      "clip": "reaction.today",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Mine",
+      "clip": "mine",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Chop",
+      "clip": "woodchop",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Smith",
+      "clip": "smith",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Build",
+      "clip": "build",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Rod fishing",
+      "clip": "fish",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Spear fishing",
+      "clip": "spearfish",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Net fishing",
+      "clip": "netfish",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Pick a bush",
+      "clip": "pick",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Pick the ground",
+      "clip": "gather",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Till",
+      "clip": "till",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Plant",
+      "clip": "plant",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Harvest",
+      "clip": "harvest",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-work",
+      "resolved": true
+    },
+    {
+      "label": "Climb up",
+      "clip": "climb",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-climb",
+      "resolved": true
+    },
+    {
+      "label": "Climb down",
+      "clip": "climb",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-climb",
+      "resolved": true
+    },
+    {
+      "label": "Sack",
+      "clip": "carry",
+      "weapon": null,
+      "load": "sack",
+      "live": false,
+      "source": "data-carry",
+      "resolved": true
+    },
+    {
+      "label": "Barrel",
+      "clip": "carry",
+      "weapon": null,
+      "load": "barrel",
+      "live": false,
+      "source": "data-carry",
+      "resolved": true
+    },
+    {
+      "label": "Log",
+      "clip": "carry",
+      "weapon": null,
+      "load": "log",
+      "live": false,
+      "source": "data-carry",
+      "resolved": true
+    },
+    {
+      "label": "Stone",
+      "clip": "carry",
+      "weapon": null,
+      "load": "stone",
+      "live": false,
+      "source": "data-carry",
+      "resolved": true
+    },
+    {
+      "label": "Ore",
+      "clip": "carry",
+      "weapon": null,
+      "load": "ore",
+      "live": false,
+      "source": "data-carry",
+      "resolved": true
+    },
+    {
+      "label": "Bleeding",
+      "clip": "death.bleed",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Poison",
+      "clip": "death.poison",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Starving",
+      "clip": "death.starve",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Cold",
+      "clip": "death.cold",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Fever",
+      "clip": "death.fever",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Burning",
+      "clip": "death.burn",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Lightning",
+      "clip": "death.lightning",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Heart",
+      "clip": "death.heart",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Choking",
+      "clip": "death.choke",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Brain",
+      "clip": "death.brain",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Goo",
+      "clip": "death.goo",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Holy",
+      "clip": "death.holy",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Bonemeal",
+      "clip": "death.crumble",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Old age",
+      "clip": "death.oldage",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-die",
+      "resolved": true
+    },
+    {
+      "label": "Knocked out",
+      "clip": "reaction.ko",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Flinch",
+      "clip": "reaction.flinch",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Hammer launch, lives",
+      "clip": "reaction.hammer",
+      "weapon": null,
+      "load": null,
+      "live": true,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Dragon throw, lives",
+      "clip": "reaction.throw",
+      "weapon": null,
+      "load": null,
+      "live": true,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Knocked back, lives",
+      "clip": "reaction.flying",
+      "weapon": null,
+      "load": null,
+      "live": true,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Arm cut, lives",
+      "clip": "reaction.armcut",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Leg cut, lives",
+      "clip": "reaction.legcut",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-a",
+      "resolved": true
+    },
+    {
+      "label": "Sword slash",
+      "clip": "slash",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Sword thrust",
+      "clip": "thrust",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Axe chop",
+      "clip": "chop",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Mace smash",
+      "clip": "smash",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Hammer launch",
+      "clip": "launch",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Spear thrust",
+      "clip": "thrust",
+      "weapon": "spear:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Halberd sweep",
+      "clip": "sweep",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Dagger stabs",
+      "clip": "stab",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Punch",
+      "clip": "punch",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Claw",
+      "clip": "claw",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Shield bash",
+      "clip": "bash",
+      "weapon": null,
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Throw spear",
+      "clip": "throw",
+      "weapon": "spear:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Throw axe",
+      "clip": "throw",
+      "weapon": "hand axe:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Throw knife",
+      "clip": "throw",
+      "weapon": "dagger:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Lunge",
+      "clip": "lunge",
+      "weapon": "longsword:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Heavy blow",
+      "clip": "heavyblow",
+      "weapon": "longsword:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Riposte",
+      "clip": "riposte",
+      "weapon": "longsword:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Cleave",
+      "clip": "cleave",
+      "weapon": "battle axe:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Skullcracker",
+      "clip": "skullcracker",
+      "weapon": "mace:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Skewer",
+      "clip": "skewer",
+      "weapon": "spear:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Flurry",
+      "clip": "flurry",
+      "weapon": "dagger:iron",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Rune bolt",
+      "clip": "runebolt",
+      "weapon": "rune sword",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Fire wave",
+      "clip": "firewave",
+      "weapon": "flame sword",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Frozen hamstring",
+      "clip": "frozenhamstring",
+      "weapon": "frost axe",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Call lightning",
+      "clip": "calllightning",
+      "weapon": "storm spear",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Bone spear",
+      "clip": "bonespear",
+      "weapon": "skull staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Raise Skeleton",
+      "clip": "raiseskeleton",
+      "weapon": "skull staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Crystal",
+      "clip": "cast",
+      "weapon": "crystal staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Orb",
+      "clip": "cast",
+      "weapon": "orb staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Skull",
+      "clip": "cast",
+      "weapon": "skull staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Flame",
+      "clip": "cast",
+      "weapon": "flame staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Nature",
+      "clip": "cast",
+      "weapon": "nature staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Dragon",
+      "clip": "cast",
+      "weapon": "dragon staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    },
+    {
+      "label": "Spider",
+      "clip": "cast",
+      "weapon": "spider staff",
+      "load": null,
+      "live": false,
+      "source": "data-k",
+      "resolved": true
+    }
+  ]
+}

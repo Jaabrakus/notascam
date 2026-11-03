@@ -1,0 +1,28 @@
+{
+  "id": "Orc-arms",
+  "race": "Orc",
+  "category": "injury",
+  "label": "Orc \u00b7 arms",
+  "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/rejected/agent-dwarf-orc-generation/Orc-arms.png",
+  "columns": 4,
+  "rows": 3,
+  "rowLabels": [
+    "NoLeftArm",
+    "NoRightArm",
+    "NoArms"
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "status": "rejected",
+  "prompt": "Use case: identity-preserve / game-sprite asset generation. Race: Orc. Input1 is the UPDATED APPROVED body to match. Input2 is an OLD source guide for injury/limb details only; input3 when present is the old blood/stone pixel reference.\nCreate INJURED BODY sprites. Preserve image1\u2019s EXACT UPDATED approved race identity, head, ears, hair, proportions, skin, black shorts and pixel shading. Image2 supplies ONLY missing-limb poses, laterality and tiny stump/blood pixels; never copy its obsolete thin body shape. Each row corresponds to the following exact state: ROW1: NoLeftArm; ROW2: NoRightArm; ROW3: NoArms. Remove ONLY the limb or limbs named by that state. Any unlisted limb MUST stay intact. For NoArms remove both arms including hands, keep both legs. For NoLegs remove both legs including feet, keep both arms. Missing limbs must actually be ABSENT; do not merely paint blood over an intact limb, hide it behind the torso, keep a ghost hand, or regrow it. Small cut surfaces sit at the correct shoulder/thigh boundary. Preserve each original source facing and standing pose. Keep source body registration so the injured torso/head occupies the same relative cell space as the intact body. No head loss and no new poses.\nAnatomical left/right belongs to the CHARACTER: South/front left is viewer-right; North/back left is viewer-left. Facing East, RIGHT arm and leg are near/visible and LEFT are far/mostly hidden. Facing West, LEFT are near and RIGHT are far. Preserve original far-side occlusion; do not erase a near limb just because the hidden far limb is absent.\nKeep wound ends tiny and pixel-clustered like the old game: dark burgundy #64212a and #832b37, muted red #9d3d33, sparse bright red #bd0000/#ff0000 accent pixels. Keep the dark outline around the cut. No oversized red circles or painterly pink ends. This is small stylized game injury art, not realistic gore or an anatomical illustration.\nOutput EXACTLY FOUR COLUMNS by 3 ROWS, 12 distinct cells, direction order SOUTH, NORTH, EAST, WEST in every row. Equal cell grid with complete sprites and transparent separator margins; constant race scale across all rows, no touching adjacent cells. Crisp clustered PIXEL ART, match the input1 pixel cluster size and chunky dark outline; no smooth vector shapes or blurred miniature painting. Real transparent background. No labels, letters, frame borders, grid lines, scenery or cast shadows. No color-key background. Do not add normal/intact reference rows or extra subjects. This is a static pose/asset sheet, not a walk animation.",
+  "references": [
+    "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Orc-approved-body.png",
+    "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Orc-arms-source.png"
+  ],
+  "reason": "User requested actual approved sprite pixel cuts instead of newly generated anatomy. These images must not be published.",
+  "generatedSource": "/Users/kiwimango/.codex/generated_images/01a189c8-b7a5-7923-9d83-5f98cefbba2e/exec-012ad31d-98dc-4a7f-b6ad-852136ed0b3f.png"
+}

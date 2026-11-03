@@ -1,0 +1,202 @@
+{
+  "id": "reference_guard",
+  "description": "Pose-only adaptation of the user's sword-and-shield guard on the existing Human sprite pixels.",
+  "views": [
+    {
+      "R": [
+        22,
+        42
+      ],
+      "L": [
+        41,
+        40
+      ],
+      "bendR": 1,
+      "bendL": -1
+    },
+    {
+      "R": [
+        42,
+        42
+      ],
+      "L": [
+        23,
+        40
+      ],
+      "bendR": -1,
+      "bendL": 1
+    },
+    {
+      "R": [
+        38,
+        41
+      ],
+      "L": [
+        35,
+        40
+      ],
+      "bendR": 1,
+      "bendL": -1
+    },
+    {
+      "R": [
+        24,
+        42
+      ],
+      "L": [
+        33,
+        40
+      ],
+      "bendR": -1,
+      "bendL": -1
+    }
+  ],
+  "rigOverrides": {
+    "2": {
+      "armLu": {
+        "root": [
+          35,
+          35
+        ],
+        "tip": [
+          35,
+          41
+        ]
+      },
+      "armLl": {
+        "root": [
+          35,
+          41
+        ],
+        "tip": [
+          37,
+          47
+        ],
+        "parent": "armLu"
+      }
+    },
+    "3": {
+      "armRu": {
+        "root": [
+          29,
+          35
+        ],
+        "tip": [
+          29,
+          41
+        ]
+      },
+      "armRl": {
+        "root": [
+          29,
+          41
+        ],
+        "tip": [
+          27,
+          47
+        ],
+        "parent": "armRu"
+      }
+    }
+  },
+  "weaponDirections": {
+    "default": [
+      [
+        -0.14,
+        -1
+      ],
+      [
+        0.14,
+        -1
+      ],
+      [
+        0.35,
+        -1
+      ],
+      [
+        -0.35,
+        -1
+      ]
+    ],
+    "weapon.spear": [
+      [
+        0.12,
+        1
+      ],
+      [
+        -0.12,
+        0.45
+      ],
+      [
+        1,
+        -0.35
+      ],
+      [
+        -1,
+        -0.35
+      ]
+    ],
+    "weapon.bow": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "weapon.crystal staff": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -0.35,
+        -1
+      ],
+      [
+        0,
+        -1
+      ]
+    ]
+  },
+  "skin": "armedSkin",
+  "sourcePixelPolicy": "Original Human skin pixels; hidden arms reuse near-arm pixels translated to independent anatomical bone slots. No mirrored character views or new armor.",
+  "shieldAngles": [
+    135,
+    315,
+    225,
+    135
+  ],
+  "shieldBias": [
+    [
+      -1,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      5,
+      1
+    ]
+  ]
+}

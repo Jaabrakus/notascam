@@ -1,0 +1,194 @@
+{
+  "family": "bow",
+  "weapon": "weapon.bow",
+  "frameSize": [
+    128,
+    128
+  ],
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "action": "hold",
+  "bodySource": null,
+  "rows": [
+    "Idle hold"
+  ],
+  "phases": [
+    {
+      "row": 0,
+      "ms": 1200,
+      "label": "Idle hold"
+    }
+  ],
+  "rootMotion": {
+    "enabled": false,
+    "forwardProjection": [
+      [
+        0,
+        0.45
+      ],
+      [
+        0,
+        -0.45
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "positionCurve": "smoothstep",
+    "heightCurve": "lift*sin(pi*u)",
+    "sharedBodyAndEquipment": true
+  },
+  "grips": [
+    [
+      {
+        "weapon": [
+          39,
+          36
+        ],
+        "support": [
+          25,
+          32
+        ]
+      },
+      {
+        "weapon": [
+          30,
+          34
+        ],
+        "support": [
+          35,
+          27
+        ]
+      },
+      {
+        "weapon": [
+          48,
+          34
+        ],
+        "support": [
+          29,
+          38
+        ]
+      },
+      {
+        "weapon": [
+          16,
+          34
+        ],
+        "support": [
+          35,
+          38
+        ]
+      }
+    ]
+  ],
+  "weaponHands": null,
+  "jabProfile": null,
+  "sweepVectors": null,
+  "rotations": [
+    [
+      -12,
+      12,
+      15,
+      -15
+    ],
+    [
+      -55,
+      55,
+      -60,
+      60
+    ],
+    [
+      -115,
+      115,
+      100,
+      -100
+    ]
+  ],
+  "bladeDirections": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -0.6
+      ],
+      [
+        -1,
+        -0.6
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -0.6,
+        -1
+      ],
+      [
+        0.6,
+        -1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0.4
+      ],
+      [
+        -1,
+        0.4
+      ]
+    ]
+  ],
+  "shieldFacingOffset": 135,
+  "shieldForearmOffset": [
+    -2,
+    2,
+    -2,
+    2
+  ],
+  "loadout": {
+    "weapon": {
+      "id": "weapon.bow",
+      "material": "iron"
+    },
+    "shield": {
+      "id": null,
+      "material": "iron"
+    }
+  }
+}

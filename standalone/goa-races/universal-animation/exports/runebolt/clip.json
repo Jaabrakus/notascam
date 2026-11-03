@@ -1,0 +1,115 @@
+{
+  "id": "runebolt",
+  "label": "Runebolt",
+  "category": "Combat",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.26,
+      {
+        "Ru": 1.6,
+        "Rl": 2.2,
+        "W": 2.2,
+        "Lu": 0.6,
+        "Ll": 1,
+        "lean": -0.1,
+        "back": 0.2,
+        "crouch": 0.08
+      }
+    ],
+    [
+      0.44,
+      {
+        "Ru": 0.1,
+        "Rl": 0.05,
+        "W": 0.05,
+        "Lu": -0.4,
+        "Ll": -0.2,
+        "lean": 0.14,
+        "lunge": 0.25,
+        "step": 0.45,
+        "back": 0.15,
+        "crouch": 0.14
+      }
+    ],
+    [
+      0.7,
+      {
+        "Ru": 0.1,
+        "Rl": 0.05,
+        "W": 0.05,
+        "lean": 0.1,
+        "lunge": 0.2,
+        "step": 0.45,
+        "back": 0.15,
+        "crouch": 0.12
+      }
+    ],
+    [
+      1
+    ]
+  ],
+  "duration": 1.25,
+  "events": {
+    "release": 0.44
+  },
+  "source": "art/gear3d/skills.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.26,
+        {
+          "Ru": 1.6,
+          "Rl": 2.2,
+          "W": 2.2,
+          "Lu": 0.6,
+          "Ll": 1,
+          "lean": -0.1,
+          "back": 0.2,
+          "crouch": 0.08
+        }
+      ],
+      [
+        0.44,
+        {
+          "Ru": 0.1,
+          "Rl": 0.05,
+          "W": 0.05,
+          "Lu": -0.4,
+          "Ll": -0.2,
+          "lean": 0.14,
+          "lunge": 0.25,
+          "step": 0.45,
+          "back": 0.15,
+          "crouch": 0.14
+        }
+      ],
+      [
+        0.7,
+        {
+          "Ru": 0.1,
+          "Rl": 0.05,
+          "W": 0.05,
+          "lean": 0.1,
+          "lunge": 0.2,
+          "step": 0.45,
+          "back": 0.15,
+          "crouch": 0.12
+        }
+      ],
+      [
+        1
+      ]
+    ],
+    "release": 0.44,
+    "ranged": true,
+    "spell": true,
+    "death": "fall"
+  },
+  "status": "source-keyed clip; mapping preview"
+}

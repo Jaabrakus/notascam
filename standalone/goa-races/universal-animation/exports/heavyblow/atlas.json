@@ -1,0 +1,168 @@
+{
+  "clip": "heavyblow",
+  "clipData": {
+    "id": "heavyblow",
+    "label": "Heavyblow",
+    "category": "Combat",
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.32,
+        {
+          "Ru": 2.8,
+          "Rl": 3,
+          "W": 2.7,
+          "Lu": 2.6,
+          "Ll": 2.9,
+          "lean": -0.2,
+          "back": 0.25,
+          "crouch": 0.1
+        }
+      ],
+      [
+        0.46,
+        {
+          "Ru": -0.35,
+          "Rl": -0.6,
+          "W": -0.8,
+          "Lu": -0.3,
+          "Ll": -0.5,
+          "lean": 0.34,
+          "lunge": 0.4,
+          "step": 0.7,
+          "back": 0.2,
+          "crouch": 0.36
+        }
+      ],
+      [
+        0.75,
+        {
+          "Ru": -0.45,
+          "Rl": -0.7,
+          "W": -0.95,
+          "lean": 0.28,
+          "lunge": 0.4,
+          "step": 0.7,
+          "back": 0.2,
+          "crouch": 0.3
+        }
+      ],
+      [
+        1.05
+      ]
+    ],
+    "duration": 1.3,
+    "events": {
+      "hit": [
+        0.46
+      ],
+      "trail": [
+        0.34,
+        0.5
+      ]
+    },
+    "source": "art/gear3d/skills.js",
+    "sourceDefinition": {
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.32,
+          {
+            "Ru": 2.8,
+            "Rl": 3,
+            "W": 2.7,
+            "Lu": 2.6,
+            "Ll": 2.9,
+            "lean": -0.2,
+            "back": 0.25,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.46,
+          {
+            "Ru": -0.35,
+            "Rl": -0.6,
+            "W": -0.8,
+            "Lu": -0.3,
+            "Ll": -0.5,
+            "lean": 0.34,
+            "lunge": 0.4,
+            "step": 0.7,
+            "back": 0.2,
+            "crouch": 0.36
+          }
+        ],
+        [
+          0.75,
+          {
+            "Ru": -0.45,
+            "Rl": -0.7,
+            "W": -0.95,
+            "lean": 0.28,
+            "lunge": 0.4,
+            "step": 0.7,
+            "back": 0.2,
+            "crouch": 0.3
+          }
+        ],
+        [
+          1.05
+        ]
+      ],
+      "hit": [
+        0.46
+      ],
+      "trail": [
+        0.34,
+        0.5
+      ],
+      "two": true,
+      "dust": true,
+      "death": "flying",
+      "maim": "armcut"
+    },
+    "status": "source-keyed clip; mapping preview"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 17,
+  "times": [
+    0.0,
+    0.08125,
+    0.1625,
+    0.24375000000000002,
+    0.325,
+    0.40625,
+    0.48750000000000004,
+    0.56875,
+    0.65,
+    0.7312500000000001,
+    0.8125,
+    0.89375,
+    0.9750000000000001,
+    1.0562500000000001,
+    1.1375,
+    1.21875,
+    1.3
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}

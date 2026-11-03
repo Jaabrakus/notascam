@@ -1,0 +1,1 @@
+REJECTED ART — do not publish or use. The user requires detached limbs to be actual pixels cut from approved sprites, not newly generated anatomy. Five already-returned images were retained for provenance. The sixth pending generation was interrupted. No new generations were started after the user correction.

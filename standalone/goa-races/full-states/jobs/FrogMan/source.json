@@ -1,0 +1,248 @@
+{
+  "name": "FrogMan",
+  "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/FrogMan.dmi",
+  "width": 64,
+  "height": 64,
+  "columns": 11,
+  "rows": 10,
+  "imageSize": [
+    704,
+    640
+  ],
+  "cellCount": 108,
+  "states": [
+    {
+      "name": "",
+      "occurrence": 0,
+      "offset": 0,
+      "dirs": 4,
+      "frames": 3,
+      "delays": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "movement": 1,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLeftArm",
+      "occurrence": 0,
+      "offset": 12,
+      "dirs": 4,
+      "frames": 3,
+      "delays": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "movement": 1,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoRightArm",
+      "occurrence": 0,
+      "offset": 24,
+      "dirs": 4,
+      "frames": 3,
+      "delays": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "movement": 1,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoArms",
+      "occurrence": 0,
+      "offset": 36,
+      "dirs": 4,
+      "frames": 3,
+      "delays": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "movement": 1,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLeftLeg",
+      "occurrence": 0,
+      "offset": 48,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoRightLeg",
+      "occurrence": 0,
+      "offset": 52,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLegs",
+      "occurrence": 0,
+      "offset": 56,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "None",
+      "occurrence": 0,
+      "offset": 60,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoRightLegNoLeftArm",
+      "occurrence": 0,
+      "offset": 64,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLeftLegNoRightArm",
+      "occurrence": 0,
+      "offset": 68,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLeftArmNoLeftLeg",
+      "occurrence": 0,
+      "offset": 72,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoRightArmNoRightLeg",
+      "occurrence": 0,
+      "offset": 76,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLegsNoLeftArm",
+      "occurrence": 0,
+      "offset": 80,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoLegsNoRightArm",
+      "occurrence": 0,
+      "offset": 84,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoArmsNoLeftLeg",
+      "occurrence": 0,
+      "offset": 88,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "NoArmsNoRightLeg",
+      "occurrence": 0,
+      "offset": 92,
+      "dirs": 4,
+      "frames": 1,
+      "delays": [
+        1
+      ],
+      "movement": 0,
+      "rewind": 0,
+      "loop": 0
+    },
+    {
+      "name": "Armed",
+      "occurrence": 0,
+      "offset": 96,
+      "dirs": 4,
+      "frames": 3,
+      "delays": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "movement": 1,
+      "rewind": 0,
+      "loop": 0
+    }
+  ],
+  "description": "# BEGIN DMI\nversion = 4.0\n\twidth = 64\n\theight = 64\nstate = \"\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoLeftArm\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoRightArm\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoArms\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoLeftLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoRightLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLegs\"\n\tdirs = 4\n\tframes = 1\nstate = \"None\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoRightLegNoLeftArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLeftLegNoRightArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLeftArmNoLeftLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoRightArmNoRightLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLegsNoLeftArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLegsNoRightArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoArmsNoLeftLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoArmsNoRightLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"Armed\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\n# END DMI\n",
+  "duplicateStates": []
+}

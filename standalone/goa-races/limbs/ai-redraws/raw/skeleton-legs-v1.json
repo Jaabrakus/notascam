@@ -1,0 +1,26 @@
+{
+  "bodyId": "skeleton",
+  "race": "Skeleton",
+  "label": "Skeleton",
+  "variant": "Base",
+  "status": "AI draft; state and alignment review pending",
+  "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214910-6ffbadc3/result.png",
+  "reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/references/skeleton-body.png",
+  "template": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/references/skeleton-edit-template.png",
+  "injuryStates": [
+    "NoLeftArm",
+    "NoRightArm",
+    "NoArms",
+    "NoLeftLeg",
+    "NoRightLeg",
+    "NoLegs"
+  ],
+  "detachedPiecesRequested": false,
+  "stage": "generated",
+  "threeRowTemplate": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/references/skeleton-three-row-template.png",
+  "category": "legs",
+  "prompt": "Create a transparent-background PIXEL ART sprite sheet of the EXACT character in the reference. Preserve its head, ears, face, hair, colors, proportions, black shorts and blocky pixel shading. No character redesign.\nFOUR columns, THREE rows, exactly TWELVE full-character sprites.\nEvery row columns are FRONT, BACK, facing RIGHT, facing LEFT.\nTOP ROW: missing LEFT LEG below shorts, right leg and BOTH arms intact.\nMIDDLE ROW: missing RIGHT LEG below shorts, left leg and BOTH arms intact.\nBOTTOM ROW: missing BOTH LEGS below shorts, BOTH arms intact.\nAnatomical left appears on viewer-right in front, viewer-left in back. Do not remove arms. Empty space replaces the missing leg; do not bend, shorten or hide a remaining leg. Small white bone end at visible cut ends. No internal anatomy. Same head/torso position and scale in all cells. Genuine transparent alpha, no background, glow, text, grid or shadows. Simple coarse chunky pixels and dark outlines, matching the reference. All 12 sprites completely within separate equally spaced cells.\nApproved appearance: Skeleton. Keep all its unique facial, ear, horn, fur and skin features. Do not add individual detached pieces.\nNo red blood. Broken stone or bone only.",
+  "path": "/Users/kiwimango/.codex/generated_images/01a189c6-d8e3-71e1-9b56-db2607cc0c29/exec-55cef68d-0bc2-4eaa-891a-fa41db27a4a7.png",
+  "savedPath": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/raw/skeleton-legs-v1.png",
+  "generator": "built-in image_gen"
+}

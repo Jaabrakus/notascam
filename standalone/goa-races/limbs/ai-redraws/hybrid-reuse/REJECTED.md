@@ -1,0 +1,1 @@
+This reuse batch was rejected by the user. It changes silhouettes, creates seams and does not reliably remove all unwanted limb pixels. Do not integrate or treat these files as finished sprites. Approved source art and native AI outputs remain separate and unchanged.

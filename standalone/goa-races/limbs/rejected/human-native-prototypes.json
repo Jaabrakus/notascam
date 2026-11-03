@@ -1,0 +1,92 @@
+[
+  {
+    "id": "Human-arms",
+    "race": "Human",
+    "category": "injury",
+    "label": "Human · arms",
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/generated/Human-arms-v1.png",
+    "columns": 4,
+    "rows": 3,
+    "rowLabels": [
+      "NoLeftArm",
+      "NoRightArm",
+      "NoArms"
+    ],
+    "directionOrder": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "status": "draft",
+    "prompt": "Use case: identity-preserve / game-sprite asset generation. Race: Human. Input1 is the UPDATED APPROVED body to match. Input2 is an OLD source guide for injury/limb details only; input3 when present is the old blood/stone pixel reference.\nCreate INJURED BODY sprites. Preserve image1’s EXACT UPDATED approved race identity, head, ears, hair, proportions, skin, black shorts and pixel shading. Image2 supplies ONLY missing-limb poses, laterality and tiny stump/blood pixels; never copy its obsolete thin body shape. Each row corresponds to the following exact state: ROW1: NoLeftArm; ROW2: NoRightArm; ROW3: NoArms. Remove ONLY the limb or limbs named by that state. Any unlisted limb MUST stay intact. For NoArms remove both arms including hands, keep both legs. For NoLegs remove both legs including feet, keep both arms. None means all FOUR limbs absent: head and torso with shorts remain. Missing limbs must actually be ABSENT; do not merely paint blood over an intact limb, hide it behind the torso, keep a ghost hand, or regrow it. Small cut surfaces sit at the correct shoulder/thigh boundary. Preserve each original source facing and standing pose. Keep source body registration so the injured torso/head occupies the same relative cell space as the intact body. No head loss and no new poses.\nAnatomical left/right belongs to the CHARACTER: South/front left is viewer-right; North/back left is viewer-left. Facing East, RIGHT arm and leg are near/visible and LEFT are far/mostly hidden. Facing West, LEFT are near and RIGHT are far. Preserve original far-side occlusion; do not erase a near limb just because the hidden far limb is absent.\nKeep wound ends tiny and pixel-clustered like the old game: dark burgundy #64212a and #832b37, muted red #9d3d33, sparse bright red #bd0000/#ff0000 accent pixels. Keep the dark outline around the cut. No oversized red circles or painterly pink ends. This is small stylized game injury art, not realistic gore or an anatomical illustration.\nOutput EXACTLY FOUR COLUMNS by 3 ROWS, 12 distinct cells, direction order SOUTH, NORTH, EAST, WEST in every row. Equal cell grid with complete sprites and transparent separator margins; constant race scale across all rows, no touching adjacent cells. Crisp clustered PIXEL ART, match the input1 pixel cluster size and chunky dark outline; no smooth vector shapes or blurred miniature painting. Real transparent background. No labels, letters, frame borders, grid lines, scenery or cast shadows. No color-key background. Do not add normal/intact reference rows or extra subjects. This is a static pose/asset sheet, not a walk animation.",
+    "references": [
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Human-approved-body.png",
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Human-arms-source.png"
+    ],
+    "generatedPath": "/Users/kiwimango/.codex/generated_images/01a189c6-d8e3-71e1-9b56-db2607cc0c29/exec-fce1ace5-5d15-4374-b807-450f4b37bbe0.png",
+    "rejected": true,
+    "reason": "User requested literal pixel cutouts from approved bodies, not new anatomy/redrawn limbs."
+  },
+  {
+    "id": "Human-legs",
+    "race": "Human",
+    "category": "injury",
+    "label": "Human · legs",
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/generated/Human-legs-v1.png",
+    "columns": 4,
+    "rows": 4,
+    "rowLabels": [
+      "NoLeftLeg",
+      "NoRightLeg",
+      "NoLegs",
+      "None"
+    ],
+    "directionOrder": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "status": "draft",
+    "prompt": "Use case: identity-preserve / game-sprite asset generation. Race: Human. Input1 is the UPDATED APPROVED body to match. Input2 is an OLD source guide for injury/limb details only; input3 when present is the old blood/stone pixel reference.\nCreate INJURED BODY sprites. Preserve image1’s EXACT UPDATED approved race identity, head, ears, hair, proportions, skin, black shorts and pixel shading. Image2 supplies ONLY missing-limb poses, laterality and tiny stump/blood pixels; never copy its obsolete thin body shape. Each row corresponds to the following exact state: ROW1: NoLeftLeg; ROW2: NoRightLeg; ROW3: NoLegs; ROW4: None. Remove ONLY the limb or limbs named by that state. Any unlisted limb MUST stay intact. For NoArms remove both arms including hands, keep both legs. For NoLegs remove both legs including feet, keep both arms. None means all FOUR limbs absent: head and torso with shorts remain. Missing limbs must actually be ABSENT; do not merely paint blood over an intact limb, hide it behind the torso, keep a ghost hand, or regrow it. Small cut surfaces sit at the correct shoulder/thigh boundary. Preserve each original source facing and standing pose. Keep source body registration so the injured torso/head occupies the same relative cell space as the intact body. No head loss and no new poses.\nAnatomical left/right belongs to the CHARACTER: South/front left is viewer-right; North/back left is viewer-left. Facing East, RIGHT arm and leg are near/visible and LEFT are far/mostly hidden. Facing West, LEFT are near and RIGHT are far. Preserve original far-side occlusion; do not erase a near limb just because the hidden far limb is absent.\nKeep wound ends tiny and pixel-clustered like the old game: dark burgundy #64212a and #832b37, muted red #9d3d33, sparse bright red #bd0000/#ff0000 accent pixels. Keep the dark outline around the cut. No oversized red circles or painterly pink ends. This is small stylized game injury art, not realistic gore or an anatomical illustration.\nOutput EXACTLY FOUR COLUMNS by 4 ROWS, 16 distinct cells, direction order SOUTH, NORTH, EAST, WEST in every row. Equal cell grid with complete sprites and transparent separator margins; constant race scale across all rows, no touching adjacent cells. Crisp clustered PIXEL ART, match the input1 pixel cluster size and chunky dark outline; no smooth vector shapes or blurred miniature painting. Real transparent background. No labels, letters, frame borders, grid lines, scenery or cast shadows. No color-key background. Do not add normal/intact reference rows or extra subjects. This is a static pose/asset sheet, not a walk animation.",
+    "references": [
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Human-approved-body.png",
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Human-legs-source.png"
+    ],
+    "generatedPath": "/Users/kiwimango/.codex/generated_images/01a189c6-d8e3-71e1-9b56-db2607cc0c29/exec-ebd316d4-c41e-4ecf-b029-a807d4a33954.png",
+    "rejected": true,
+    "reason": "User requested literal pixel cutouts from approved bodies, not new anatomy/redrawn limbs."
+  },
+  {
+    "id": "Human-detached",
+    "race": "Human",
+    "category": "detached",
+    "label": "Human · detached",
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/generated/Human-detached-v1.png",
+    "columns": 4,
+    "rows": 4,
+    "rowLabels": [
+      "LeftArm",
+      "RightArm",
+      "LeftLeg",
+      "RightLeg"
+    ],
+    "directionOrder": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "status": "draft",
+    "prompt": "Use case: identity-preserve / game-sprite asset generation. Race: Human. Input1 is the UPDATED APPROVED body to match. Input2 is an OLD source guide for injury/limb details only; input3 when present is the old blood/stone pixel reference.\nCreate matching DETACHED LIMB ITEM assets: only the separate severed limb in each cell, no whole character and no body stump. Row1 LEFT arm with hand; row2 RIGHT arm with hand; row3 LEFT leg with foot; row4 RIGHT leg with foot. Columns show the piece as viewed from South/front, North/back, East/right and West/left. Keep the same limb length, muscle/build, toes/fingers, skin/fur/scales/bone/stone palette, dark outlines and pixel size as the approved body. Each part has a small cut end at the shoulder/upper thigh, with the old game blood pixel language. Keep forearms and upper arms connected; never replace an entire arm with just a hand. No attached torso, no head, no shoulder pad, no weapons, no extra detached parts or blood pool. Center each isolated object in its own equal64-pixel logical cell without enlarging it to the size of a whole body. These are ground item pieces, not graft/prosthetic overlays; do not add stitches or metal.\nAnatomical left/right belongs to the CHARACTER: South/front left is viewer-right; North/back left is viewer-left. Facing East, RIGHT arm and leg are near/visible and LEFT are far/mostly hidden. Facing West, LEFT are near and RIGHT are far. Preserve original far-side occlusion; do not erase a near limb just because the hidden far limb is absent.\nKeep wound ends tiny and pixel-clustered like the old game: dark burgundy #64212a and #832b37, muted red #9d3d33, sparse bright red #bd0000/#ff0000 accent pixels. Keep the dark outline around the cut. No oversized red circles or painterly pink ends. This is small stylized game injury art, not realistic gore or an anatomical illustration.\nOutput EXACTLY FOUR COLUMNS by 4 ROWS, 16 distinct cells, direction order SOUTH, NORTH, EAST, WEST in every row. Equal cell grid with complete sprites and transparent separator margins; constant race scale across all rows, no touching adjacent cells. Crisp clustered PIXEL ART, match the input1 pixel cluster size and chunky dark outline; no smooth vector shapes or blurred miniature painting. Real transparent background. No labels, letters, frame borders, grid lines, scenery or cast shadows. No color-key background. Do not add normal/intact reference rows or extra subjects. This is a static pose/asset sheet, not a walk animation.",
+    "references": [
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Human-approved-body.png",
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/Human-self-graft-source.png",
+      "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/references/blood-and-stone-source.png"
+    ],
+    "generatedPath": "/Users/kiwimango/.codex/generated_images/01a189c6-d8e3-71e1-9b56-db2607cc0c29/exec-8f691d19-9f8c-46c3-b6a6-ea7c5bd2a04e.png",
+    "rejected": true,
+    "reason": "User requested literal pixel cutouts from approved bodies, not new anatomy/redrawn limbs."
+  }
+]

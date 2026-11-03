@@ -1,0 +1,26 @@
+{
+  "id": "death.burn",
+  "label": "Burn death",
+  "category": "Death sequences",
+  "duration": 3.05,
+  "sequence": [
+    "d_flail",
+    "reaction.fall"
+  ],
+  "tint": [
+    0.3,
+    0.25,
+    0.22
+  ],
+  "keys": [
+    [
+      0
+    ],
+    [
+      3.05
+    ]
+  ],
+  "source": "art/gear3d/deaths.js#DZDEF",
+  "effects": "Live particles/tints remain external to body clips",
+  "status": "source-defined sequence; external effects not baked"
+}

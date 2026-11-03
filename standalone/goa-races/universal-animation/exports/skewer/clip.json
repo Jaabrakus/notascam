@@ -1,0 +1,126 @@
+{
+  "id": "skewer",
+  "label": "Skewer",
+  "category": "Combat",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.24,
+      {
+        "Ru": -2.7,
+        "Rl": 0,
+        "W": 0.05,
+        "Lu": -1.6,
+        "Ll": -0.6,
+        "lean": -0.14,
+        "back": 0.35,
+        "crouch": 0.18
+      }
+    ],
+    [
+      0.38,
+      {
+        "Ru": -0.05,
+        "Rl": 0,
+        "W": 0,
+        "Lu": -0.5,
+        "Ll": -0.2,
+        "lean": 0.28,
+        "lunge": 0.8,
+        "step": 1.1,
+        "back": 0.3,
+        "crouch": 0.34
+      }
+    ],
+    [
+      0.62,
+      {
+        "Ru": -0.15,
+        "Rl": 0,
+        "W": 0.02,
+        "lean": 0.24,
+        "lunge": 0.75,
+        "step": 1.1,
+        "back": 0.3,
+        "crouch": 0.3
+      }
+    ],
+    [
+      0.95
+    ]
+  ],
+  "duration": 1.2,
+  "events": {
+    "hit": [
+      0.38
+    ],
+    "trail": [
+      0.26,
+      0.42
+    ]
+  },
+  "source": "art/gear3d/skills.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.24,
+        {
+          "Ru": -2.7,
+          "Rl": 0,
+          "W": 0.05,
+          "Lu": -1.6,
+          "Ll": -0.6,
+          "lean": -0.14,
+          "back": 0.35,
+          "crouch": 0.18
+        }
+      ],
+      [
+        0.38,
+        {
+          "Ru": -0.05,
+          "Rl": 0,
+          "W": 0,
+          "Lu": -0.5,
+          "Ll": -0.2,
+          "lean": 0.28,
+          "lunge": 0.8,
+          "step": 1.1,
+          "back": 0.3,
+          "crouch": 0.34
+        }
+      ],
+      [
+        0.62,
+        {
+          "Ru": -0.15,
+          "Rl": 0,
+          "W": 0.02,
+          "lean": 0.24,
+          "lunge": 0.75,
+          "step": 1.1,
+          "back": 0.3,
+          "crouch": 0.3
+        }
+      ],
+      [
+        0.95
+      ]
+    ],
+    "hit": [
+      0.38
+    ],
+    "trail": [
+      0.26,
+      0.42
+    ],
+    "two": true,
+    "death": "flying"
+  },
+  "status": "source-keyed clip; mapping preview"
+}

@@ -1,0 +1,45 @@
+{
+  "format": "goa-human-rebuilt-sheet",
+  "race": "Human",
+  "sex": "male",
+  "appearance": "Ashen",
+  "image": "sprites.png",
+  "revision": "v6-full-redrawn-frames",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "assembly": "Full registered redraw cells replace previous side-view frames; no arm/nose patch compositing.",
+  "redrawnFrames": [
+    {
+      "view": 2,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Ashen/east-registered.png",
+      "sourceSha256": "976290b284797fe66cf707a65e4b311272dbe388f0af633f6d58f639a2ef5e9c",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Ashen/2-0-full-frame.png",
+      "packedSha256": "0a0738b84ba9802f0a908c6d355ab893d40d75b2930674aaa78fccdd26a7def7"
+    },
+    {
+      "view": 3,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Ashen/west-registered.png",
+      "sourceSha256": "dd836085ba0dfb2c1e4e8a0a7766f499e99e0a1fda1e2427e49fa8a801075513",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Ashen/3-0-full-frame.png",
+      "packedSha256": "e0734b87a0ba63dff72c5c90270ea99324f6daaf865eac1f2252dcf0f1449dad"
+    }
+  ]
+}

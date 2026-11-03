@@ -1,0 +1,42 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orc base animations</title>
+<style>
+body{background:#272c35;color:#edf1f7;font:16px system-ui;margin:20px}h1{font-size:26px}
+p{max-width:850px;line-height:1.5}label,button{display:inline-block;margin:8px 12px 8px 0}
+select{max-width:90vw}a{color:#bbd9ff}.views{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;max-width:1100px}
+article{background:#444952;padding:12px;min-width:0}h2{font-size:18px;margin:0}
+canvas{width:100%;max-width:512px;height:auto;image-rendering:pixelated}input{width:min(480px,85vw)}
+#error{color:#ffb6b6}
+</style>
+<h1>Orc base animation sheets</h1>
+<p>Original Orc artwork, body-only poses. These assembled animation sheets are ready for visual review.</p>
+<label>Action <select id="action"></select></label><button id="play">Pause</button>
+<label>Speed <select id="speed"><option value=".25">¼×</option><option value=".5">½×</option><option value="1" selected>1×</option></select></label>
+<label>View <select id="direction"><option value="all">All directions</option><option value="0">South / front</option><option value="1">North / back</option><option value="2">East / right-facing</option><option value="3">West / left-facing</option></select></label>
+<div class="views" id="views"></div><input id="time" type="range" min="0" step=".001"><span id="clock"></span>
+<p id="error"></p><p><a id="png">Sprite sheet</a> · <a id="json">Timing and hand sockets</a> · <a href="weapons/">Weapon and shield sprites</a></p>
+<p>Weapons, shields and effects are separate. Some extreme poses and body seams still need cleanup.</p>
+<script>
+const CATALOG=/*CATALOG*/,$=id=>document.getElementById(id),canvases=[];
+let current=CATALOG.find(c=>c.id==='idle'),sprite=null,playing=true,time=0,last=performance.now(),request=0;
+for(const category of [...new Set(CATALOG.map(c=>c.category))]){const group=document.createElement('optgroup');group.label=category;
+for(const c of CATALOG.filter(c=>c.category===category)){const o=document.createElement('option');o.value=c.id;o.textContent=c.label;group.append(o);}$('action').append(group);}
+for(const name of ['South · front','North · back','East · right-facing','West · left-facing']){
+const a=document.createElement('article'),h=document.createElement('h2'),c=document.createElement('canvas');h.textContent=name;c.width=c.height=128;
+a.append(h,c);$('views').append(a);canvases.push(c);}
+function draw(){if(!sprite)return;let row=0;while(row+1<current.times.length&&current.times[row+1]<=time)row++;
+const crop=current.previewCrop||192,offset=(192-crop)/2;
+canvases.forEach((c,d)=>{c.parentNode.hidden=$('direction').value!=='all'&&+$('direction').value!==d;
+if(c.width!==crop)c.width=c.height=crop;const ctx=c.getContext('2d');ctx.clearRect(0,0,crop,crop);ctx.imageSmoothingEnabled=false;ctx.drawImage(sprite,d*192+offset,row*192+offset,crop,crop,0,0,crop,crop);});
+$('time').value=time;$('clock').textContent=' '+time.toFixed(2)+' / '+current.duration.toFixed(2)+'s';}
+async function load(){const id=$('action').value,token=++request,image=new Image();sprite=null;
+image.src='sheets/'+id+'.png';try{await image.decode();if(token!==request)return;current=CATALOG.find(c=>c.id===id);sprite=image;
+time=0;last=performance.now();$('time').max=current.duration;$('png').href=image.src;$('json').href='sheets/'+id+'.json';
+draw();document.body.dataset.loaded=id;document.body.dataset.ready='true';}catch(e){$('error').textContent='Could not load this sheet.';}}
+$('action').onchange=load;$('direction').onchange=draw;
+$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Pause':'Play';last=performance.now();};
+$('time').oninput=()=>{time=+$('time').value;playing=false;$('play').textContent='Play';draw();};
+const params=new URLSearchParams(location.search);$('action').value=CATALOG.some(c=>c.id===params.get('action'))?params.get('action'):'ki_punch';
+if(['all','0','1','2','3'].includes(params.get('direction')))$('direction').value=params.get('direction');
+load();requestAnimationFrame(function tick(now){if(playing&&sprite){time=(time+(now-last)/1000*+$('speed').value)%current.duration;draw();}last=now;requestAnimationFrame(tick);});
+</script>

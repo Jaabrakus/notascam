@@ -1,0 +1,26 @@
+{
+  "id": "death.holy",
+  "label": "Holy death",
+  "category": "Death sequences",
+  "duration": 2.55,
+  "sequence": [
+    "d_melt",
+    "reaction.melt"
+  ],
+  "tint": [
+    1.45,
+    1.35,
+    1.1
+  ],
+  "keys": [
+    [
+      0
+    ],
+    [
+      2.55
+    ]
+  ],
+  "source": "art/gear3d/deaths.js#DZDEF",
+  "effects": "Live particles/tints remain external to body clips",
+  "status": "source-defined sequence; external effects not baked"
+}

@@ -1,0 +1,865 @@
+{
+  "name": "Deepguard iron",
+  "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armor-designs/deepguard-iron/pixel-fit-v2/deepguard-pixel-v2.png",
+  "method": "visible-pixel partition; no AI redraw or painted replacement pixels",
+  "sourceSize": [
+    2160,
+    728
+  ],
+  "sourceBodyBounds": [
+    [
+      112,
+      102,
+      430,
+      659
+    ],
+    [
+      649,
+      102,
+      970,
+      659
+    ],
+    [
+      1237,
+      109,
+      1457,
+      659
+    ],
+    [
+      1779,
+      109,
+      2002,
+      659
+    ]
+  ],
+  "bodySpace64": true,
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "feet": [
+    32,
+    61
+  ],
+  "referenceHeight": 557,
+  "sourceScale": 0.10053859964093358,
+  "parts": [
+    {
+      "id": "body-reference",
+      "file64": "body-reference.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "visible body reference only",
+      "occludedViews": []
+    },
+    {
+      "id": "helmet",
+      "file64": "helmet.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "chest",
+      "file64": "chest.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "shoulder-left",
+      "file64": "shoulder-left.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": [
+        "East"
+      ]
+    },
+    {
+      "id": "shoulder-right",
+      "file64": "shoulder-right.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": [
+        "West"
+      ]
+    },
+    {
+      "id": "bracer-left",
+      "file64": "bracer-left.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": [
+        "East"
+      ]
+    },
+    {
+      "id": "bracer-right",
+      "file64": "bracer-right.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": [
+        "West"
+      ]
+    },
+    {
+      "id": "belt",
+      "file64": "belt.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "waist-mail-cloth",
+      "file64": "waist-mail-cloth.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "greave-left",
+      "file64": "greave-left.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "greave-right",
+      "file64": "greave-right.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "boot-left",
+      "file64": "boot-left.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    },
+    {
+      "id": "boot-right",
+      "file64": "boot-right.png",
+      "coordinateSpace": 64,
+      "frames": [
+        {
+          "direction": "South",
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "North",
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "East",
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        },
+        {
+          "direction": "West",
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "origin": [
+            0,
+            0
+          ]
+        }
+      ],
+      "type": "equipment layer",
+      "occludedViews": []
+    }
+  ],
+  "verification": {
+    "visiblePixelDifferences": 0,
+    "sourcePreserved": true
+  },
+  "limits": [
+    "Only visible surfaces can be extracted. Hidden surfaces need separate authored artwork before posing.",
+    "Standing four-view layers only; walking/attacks and race-specific fitting remain to be built.",
+    "Full-resolution layers retain original pixels. 64px versions use a shared nearest-neighbor transform."
+  ],
+  "status": "standing-only visible-surface draft"
+}

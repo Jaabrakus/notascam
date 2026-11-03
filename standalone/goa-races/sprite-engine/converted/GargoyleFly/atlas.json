@@ -1,0 +1,107 @@
+{
+  "format": "dungeon-master.sprite-atlas",
+  "version": 1,
+  "image": "sprites.png",
+  "size": [
+    256,
+    128
+  ],
+  "frameSize": [
+    64,
+    64
+  ],
+  "state": "",
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "delays": [
+    4,
+    4
+  ],
+  "provenance": "AI style redraw; review animation and overlay registration before game integration",
+  "frames": [
+    {
+      "direction": "South",
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "North",
+      "frame": 0,
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "East",
+      "frame": 0,
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "West",
+      "frame": 0,
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "South",
+      "frame": 1,
+      "rect": [
+        0,
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "North",
+      "frame": 1,
+      "rect": [
+        64,
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "East",
+      "frame": 1,
+      "rect": [
+        128,
+        64,
+        64,
+        64
+      ]
+    },
+    {
+      "direction": "West",
+      "frame": 1,
+      "rect": [
+        192,
+        64,
+        64,
+        64
+      ]
+    }
+  ]
+}

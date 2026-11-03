@@ -1,0 +1,234 @@
+{
+  "format": "goa-hybrid-walk",
+  "race": "Human",
+  "appearance": "Zombie",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "status": "generated walk draft",
+  "image": "sprites.png",
+  "footBaseline": 62,
+  "uniformScale": 0.16666666666666666,
+  "rects": [
+    {
+      "column": 0,
+      "row": 0,
+      "source": [
+        82,
+        69,
+        210,
+        322
+      ],
+      "destination": [
+        15,
+        8,
+        35,
+        54
+      ]
+    },
+    {
+      "column": 1,
+      "row": 0,
+      "source": [
+        442,
+        69,
+        200,
+        323
+      ],
+      "destination": [
+        80,
+        8,
+        33,
+        54
+      ]
+    },
+    {
+      "column": 2,
+      "row": 0,
+      "source": [
+        829,
+        69,
+        157,
+        324
+      ],
+      "destination": [
+        147,
+        8,
+        26,
+        54
+      ]
+    },
+    {
+      "column": 3,
+      "row": 0,
+      "source": [
+        1186,
+        69,
+        157,
+        324
+      ],
+      "destination": [
+        211,
+        8,
+        26,
+        54
+      ]
+    },
+    {
+      "column": 0,
+      "row": 1,
+      "source": [
+        91,
+        431,
+        194,
+        308
+      ],
+      "destination": [
+        16,
+        75,
+        32,
+        51
+      ]
+    },
+    {
+      "column": 1,
+      "row": 1,
+      "source": [
+        442,
+        431,
+        204,
+        308
+      ],
+      "destination": [
+        79,
+        75,
+        34,
+        51
+      ]
+    },
+    {
+      "column": 2,
+      "row": 1,
+      "source": [
+        829,
+        431,
+        159,
+        308
+      ],
+      "destination": [
+        147,
+        75,
+        26,
+        51
+      ]
+    },
+    {
+      "column": 3,
+      "row": 1,
+      "source": [
+        1184,
+        431,
+        160,
+        308
+      ],
+      "destination": [
+        211,
+        75,
+        27,
+        51
+      ]
+    },
+    {
+      "column": 0,
+      "row": 2,
+      "source": [
+        94,
+        760,
+        186,
+        300
+      ],
+      "destination": [
+        17,
+        140,
+        31,
+        50
+      ]
+    },
+    {
+      "column": 1,
+      "row": 2,
+      "source": [
+        447,
+        760,
+        191,
+        300
+      ],
+      "destination": [
+        80,
+        140,
+        32,
+        50
+      ]
+    },
+    {
+      "column": 2,
+      "row": 2,
+      "source": [
+        824,
+        760,
+        165,
+        300
+      ],
+      "destination": [
+        146,
+        140,
+        28,
+        50
+      ]
+    },
+    {
+      "column": 3,
+      "row": 2,
+      "source": [
+        1183,
+        760,
+        164,
+        300
+      ],
+      "destination": [
+        211,
+        140,
+        27,
+        50
+      ]
+    }
+  ],
+  "frameOverrides": [
+    {
+      "column": 2,
+      "row": 0,
+      "reason": "Independently redrawn elbow, wrist and fist"
+    },
+    {
+      "column": 3,
+      "row": 0,
+      "reason": "Independently redrawn elbow, wrist and fist"
+    }
+  ],
+  "revision": "v4-idle-arm-redraw"
+}

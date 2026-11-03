@@ -1,0 +1,254 @@
+{
+  "format": "goa-hybrid-walk",
+  "race": "Human",
+  "appearance": "Possessed1",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "status": "generated walk draft",
+  "image": "sprites.png",
+  "footBaseline": 62,
+  "uniformScale": 0.18006430868167203,
+  "rects": [
+    {
+      "column": 0,
+      "row": 0,
+      "source": [
+        88,
+        89,
+        185,
+        310
+      ],
+      "destination": [
+        16,
+        6,
+        33,
+        56
+      ]
+    },
+    {
+      "column": 1,
+      "row": 0,
+      "source": [
+        456,
+        89,
+        179,
+        310
+      ],
+      "destination": [
+        80,
+        6,
+        32,
+        56
+      ]
+    },
+    {
+      "column": 2,
+      "row": 0,
+      "source": [
+        839,
+        89,
+        140,
+        311
+      ],
+      "destination": [
+        148,
+        6,
+        25,
+        56
+      ]
+    },
+    {
+      "column": 3,
+      "row": 0,
+      "source": [
+        1199,
+        89,
+        135,
+        311
+      ],
+      "destination": [
+        212,
+        6,
+        24,
+        56
+      ]
+    },
+    {
+      "column": 0,
+      "row": 1,
+      "source": [
+        94,
+        436,
+        171,
+        300
+      ],
+      "destination": [
+        17,
+        72,
+        31,
+        54
+      ]
+    },
+    {
+      "column": 1,
+      "row": 1,
+      "source": [
+        457,
+        436,
+        174,
+        300
+      ],
+      "destination": [
+        81,
+        72,
+        31,
+        54
+      ]
+    },
+    {
+      "column": 2,
+      "row": 1,
+      "source": [
+        823,
+        436,
+        161,
+        300
+      ],
+      "destination": [
+        146,
+        72,
+        29,
+        54
+      ]
+    },
+    {
+      "column": 3,
+      "row": 1,
+      "source": [
+        1190,
+        436,
+        161,
+        300
+      ],
+      "destination": [
+        210,
+        72,
+        29,
+        54
+      ]
+    },
+    {
+      "column": 0,
+      "row": 2,
+      "source": [
+        95,
+        760,
+        173,
+        295
+      ],
+      "destination": [
+        17,
+        137,
+        31,
+        53
+      ]
+    },
+    {
+      "column": 1,
+      "row": 2,
+      "source": [
+        458,
+        762,
+        173,
+        293
+      ],
+      "destination": [
+        81,
+        137,
+        31,
+        53
+      ]
+    },
+    {
+      "column": 2,
+      "row": 2,
+      "source": [
+        824,
+        759,
+        169,
+        297
+      ],
+      "destination": [
+        145,
+        137,
+        30,
+        53
+      ]
+    },
+    {
+      "column": 3,
+      "row": 2,
+      "source": [
+        1181,
+        760,
+        164,
+        296
+      ],
+      "destination": [
+        209,
+        137,
+        30,
+        53
+      ]
+    }
+  ],
+  "frameOverrides": [
+    {
+      "column": 2,
+      "row": 0,
+      "reason": "Rounded Human nose and corrected idle arm"
+    },
+    {
+      "column": 3,
+      "row": 0,
+      "reason": "Rounded Human nose and corrected idle arm"
+    },
+    {
+      "column": 2,
+      "row": 1,
+      "reason": "Rounded Human nose and corrected idle arm"
+    },
+    {
+      "column": 3,
+      "row": 1,
+      "reason": "Rounded Human nose and corrected idle arm"
+    },
+    {
+      "column": 2,
+      "row": 2,
+      "reason": "Rounded Human nose and corrected idle arm"
+    },
+    {
+      "column": 3,
+      "row": 2,
+      "reason": "Rounded Human nose and corrected idle arm"
+    }
+  ],
+  "revision": "v5-rounded-profile-and-idle-arms"
+}

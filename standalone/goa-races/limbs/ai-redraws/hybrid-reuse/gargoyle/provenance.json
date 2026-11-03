@@ -1,0 +1,49 @@
+{
+  "id": "gargoyle",
+  "race": "Gargoyle",
+  "label": "Gargoyle",
+  "variant": "Base",
+  "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/hybrid-reuse/gargoyle/injuries.png",
+  "dmi": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/hybrid-reuse/gargoyle/injuries.dmi",
+  "appearanceSource": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214909-fc25c40c/result.png",
+  "injurySources": [
+    "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/raw/gargoyle-arms-v1.png",
+    "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/limbs/ai-redraws/raw/gargoyle-legs-v1.png"
+  ],
+  "method": "actual AI-drawn injured-body art, reused palette and approved identity layers; mixed states assembled at shorts",
+  "newlyAIGenerated": true,
+  "detachedPiecesGenerated": false,
+  "columns": 4,
+  "rows": 16,
+  "frameSize": [
+    64,
+    64
+  ],
+  "rowLabels": [
+    "Normal",
+    "NoLeftArm",
+    "NoRightArm",
+    "NoLeftLeg",
+    "NoRightLeg",
+    "NoArms",
+    "NoLegs",
+    "NoRightLegNoLeftArm",
+    "NoLeftLegNoRightArm",
+    "NoRightArmNoRightLeg",
+    "NoLeftArmNoLeftLeg",
+    "NoLegsNoRightArm",
+    "NoLegsNoLeftArm",
+    "NoArmsNoRightLeg",
+    "NoArmsNoLeftLeg",
+    "None"
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "animation": "standing pose only",
+  "pixelCleanup": "8-connected body only; isolated fragments removed; zero RGBA outside silhouette; binary alpha",
+  "status": "reuse draft; neck/shorts seams, profile laterality and tail attachment need visual review"
+}

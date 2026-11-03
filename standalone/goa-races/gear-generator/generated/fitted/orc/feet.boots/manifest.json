@@ -1,0 +1,252 @@
+{
+  "bodyId": "orc",
+  "bodyStatus": "walk",
+  "id": "feet.boots",
+  "material": "original",
+  "frames": [
+    {
+      "direction": "South",
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31.5,
+        58
+      ]
+    },
+    {
+      "direction": "North",
+      "frame": 0,
+      "rect": [
+        192,
+        0,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31.5,
+        58
+      ]
+    },
+    {
+      "direction": "East",
+      "frame": 0,
+      "rect": [
+        384,
+        0,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        30.5,
+        58
+      ]
+    },
+    {
+      "direction": "West",
+      "frame": 0,
+      "rect": [
+        576,
+        0,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        33,
+        58
+      ]
+    },
+    {
+      "direction": "South",
+      "frame": 1,
+      "rect": [
+        0,
+        192,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31.5,
+        58
+      ]
+    },
+    {
+      "direction": "North",
+      "frame": 1,
+      "rect": [
+        192,
+        192,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31.5,
+        58
+      ]
+    },
+    {
+      "direction": "East",
+      "frame": 1,
+      "rect": [
+        384,
+        192,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        32,
+        58
+      ]
+    },
+    {
+      "direction": "West",
+      "frame": 1,
+      "rect": [
+        576,
+        192,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31,
+        58
+      ]
+    },
+    {
+      "direction": "South",
+      "frame": 2,
+      "rect": [
+        0,
+        384,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31.5,
+        58
+      ]
+    },
+    {
+      "direction": "North",
+      "frame": 2,
+      "rect": [
+        192,
+        384,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31.5,
+        58
+      ]
+    },
+    {
+      "direction": "East",
+      "frame": 2,
+      "rect": [
+        384,
+        384,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        31,
+        58
+      ]
+    },
+    {
+      "direction": "West",
+      "frame": 2,
+      "rect": [
+        576,
+        384,
+        192,
+        192
+      ],
+      "bodyOrigin": [
+        64,
+        64
+      ],
+      "socket": [
+        32.5,
+        58
+      ]
+    }
+  ],
+  "animation": {
+    "kind": "walk",
+    "sequence": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "delaysMs": [
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodySpace": [
+    64,
+    64
+  ],
+  "notes": [
+    "Only existing body animation frames are used.",
+    "Layer-only output is drawn with the indicated near/far depth when composed."
+  ],
+  "buildKey": "95d412057250977d4df4ee2e585c6dce423ce380e2a0db9a46c3c45f2169736e"
+}

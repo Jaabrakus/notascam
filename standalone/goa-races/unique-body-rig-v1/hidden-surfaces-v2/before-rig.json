@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "actor": "Original Elf \u00b7 male",
+  "frameSize": 64,
+  "canvasSize": 128,
+  "directions": [
+    {
+      "name": "South",
+      "frames": [
+        {
+          "head": "south/0-head.png",
+          "torso": "south/0-torso.png",
+          "right-upper": "south/0-right-upper.png",
+          "right-lower": "south/0-right-lower.png",
+          "left-upper": "south/0-left-upper.png",
+          "left-lower": "south/0-left-lower.png",
+          "right-upper-rig": "south/right-upper-overlap.png",
+          "right-lower-rig": "south/right-lower-overlap.png",
+          "left-upper-rig": "south/left-upper-overlap.png",
+          "left-lower-rig": "south/left-lower-overlap.png",
+          "equipped-torso": "south/0-equipped-torso.png"
+        },
+        {
+          "head": "south/1-head.png",
+          "torso": "south/1-torso.png",
+          "right-upper": "south/1-right-upper.png",
+          "right-lower": "south/1-right-lower.png",
+          "left-upper": "south/1-left-upper.png",
+          "left-lower": "south/1-left-lower.png",
+          "equipped-torso": "south/1-equipped-torso.png"
+        },
+        {
+          "head": "south/2-head.png",
+          "torso": "south/2-torso.png",
+          "right-upper": "south/2-right-upper.png",
+          "right-lower": "south/2-right-lower.png",
+          "left-upper": "south/2-left-upper.png",
+          "left-lower": "south/2-left-lower.png",
+          "equipped-torso": "south/2-equipped-torso.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            23,
+            29
+          ],
+          [
+            21,
+            37
+          ],
+          [
+            20,
+            44
+          ]
+        ],
+        "left": [
+          [
+            40,
+            29
+          ],
+          [
+            43,
+            37
+          ],
+          [
+            43,
+            44
+          ]
+        ]
+      },
+      "chest": {
+        "image": "south/deepguard-chest.png",
+        "origin": [
+          23,
+          28
+        ]
+      },
+      "shield": {
+        "image": "south/round-shield.png",
+        "grip": [
+          10,
+          10
+        ]
+      },
+      "nearArm": "right"
+    },
+    {
+      "name": "North",
+      "frames": [
+        {
+          "head": "north/0-head.png",
+          "torso": "north/0-torso.png",
+          "right-upper": "north/0-right-upper.png",
+          "right-lower": "north/0-right-lower.png",
+          "left-upper": "north/0-left-upper.png",
+          "left-lower": "north/0-left-lower.png",
+          "right-upper-rig": "north/right-upper-overlap.png",
+          "right-lower-rig": "north/right-lower-overlap.png",
+          "left-upper-rig": "north/left-upper-overlap.png",
+          "left-lower-rig": "north/left-lower-overlap.png",
+          "equipped-torso": "north/0-equipped-torso.png"
+        },
+        {
+          "head": "north/1-head.png",
+          "torso": "north/1-torso.png",
+          "right-upper": "north/1-right-upper.png",
+          "right-lower": "north/1-right-lower.png",
+          "left-upper": "north/1-left-upper.png",
+          "left-lower": "north/1-left-lower.png",
+          "equipped-torso": "north/1-equipped-torso.png"
+        },
+        {
+          "head": "north/2-head.png",
+          "torso": "north/2-torso.png",
+          "right-upper": "north/2-right-upper.png",
+          "right-lower": "north/2-right-lower.png",
+          "left-upper": "north/2-left-upper.png",
+          "left-lower": "north/2-left-lower.png",
+          "equipped-torso": "north/2-equipped-torso.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            41,
+            29
+          ],
+          [
+            43,
+            37
+          ],
+          [
+            43,
+            44
+          ]
+        ],
+        "left": [
+          [
+            23,
+            29
+          ],
+          [
+            21,
+            37
+          ],
+          [
+            21,
+            44
+          ]
+        ]
+      },
+      "chest": {
+        "image": "north/deepguard-chest.png",
+        "origin": [
+          23,
+          29
+        ]
+      },
+      "shield": {
+        "image": "north/round-shield.png",
+        "grip": [
+          10,
+          10
+        ]
+      },
+      "nearArm": "right"
+    },
+    {
+      "name": "East",
+      "frames": [
+        {
+          "head": "east/0-head.png",
+          "torso": "east/0-torso.png",
+          "right-upper": "east/0-right-upper.png",
+          "right-lower": "east/0-right-lower.png",
+          "left-upper": "east/0-left-upper.png",
+          "left-lower": "east/0-left-lower.png",
+          "right-upper-rig": "east/right-upper-overlap.png",
+          "right-lower-rig": "east/right-lower-overlap.png",
+          "left-upper-rig": "east/left-upper-overlap.png",
+          "left-lower-rig": "east/left-lower-overlap.png",
+          "equipped-torso": "east/0-equipped-torso.png"
+        },
+        {
+          "head": "east/1-head.png",
+          "torso": "east/1-torso.png",
+          "right-upper": "east/1-right-upper.png",
+          "right-lower": "east/1-right-lower.png",
+          "left-upper": "east/1-left-upper.png",
+          "left-lower": "east/1-left-lower.png",
+          "equipped-torso": "east/1-equipped-torso.png"
+        },
+        {
+          "head": "east/2-head.png",
+          "torso": "east/2-torso.png",
+          "right-upper": "east/2-right-upper.png",
+          "right-lower": "east/2-right-lower.png",
+          "left-upper": "east/2-left-upper.png",
+          "left-lower": "east/2-left-lower.png",
+          "equipped-torso": "east/2-equipped-torso.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            37
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "left": [
+          [
+            36,
+            30
+          ],
+          [
+            38,
+            34
+          ],
+          [
+            38,
+            39
+          ]
+        ]
+      },
+      "chest": {
+        "image": "east/deepguard-chest.png",
+        "origin": [
+          31,
+          28
+        ]
+      },
+      "shield": {
+        "image": "east/round-shield.png",
+        "grip": [
+          3,
+          10
+        ]
+      },
+      "nearArm": "right"
+    },
+    {
+      "name": "West",
+      "frames": [
+        {
+          "head": "west/0-head.png",
+          "torso": "west/0-torso.png",
+          "right-upper": "west/0-right-upper.png",
+          "right-lower": "west/0-right-lower.png",
+          "left-upper": "west/0-left-upper.png",
+          "left-lower": "west/0-left-lower.png",
+          "right-upper-rig": "west/right-upper-overlap.png",
+          "right-lower-rig": "west/right-lower-overlap.png",
+          "left-upper-rig": "west/left-upper-overlap.png",
+          "left-lower-rig": "west/left-lower-overlap.png",
+          "equipped-torso": "west/0-equipped-torso.png"
+        },
+        {
+          "head": "west/1-head.png",
+          "torso": "west/1-torso.png",
+          "right-upper": "west/1-right-upper.png",
+          "right-lower": "west/1-right-lower.png",
+          "left-upper": "west/1-left-upper.png",
+          "left-lower": "west/1-left-lower.png",
+          "equipped-torso": "west/1-equipped-torso.png"
+        },
+        {
+          "head": "west/2-head.png",
+          "torso": "west/2-torso.png",
+          "right-upper": "west/2-right-upper.png",
+          "right-lower": "west/2-right-lower.png",
+          "left-upper": "west/2-left-upper.png",
+          "left-lower": "west/2-left-lower.png",
+          "equipped-torso": "west/2-equipped-torso.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            26,
+            30
+          ],
+          [
+            24,
+            34
+          ],
+          [
+            24,
+            39
+          ]
+        ],
+        "left": [
+          [
+            34,
+            29
+          ],
+          [
+            34,
+            37
+          ],
+          [
+            34,
+            44
+          ]
+        ]
+      },
+      "chest": {
+        "image": "west/deepguard-chest.png",
+        "origin": [
+          23,
+          28
+        ]
+      },
+      "shield": {
+        "image": "west/round-shield.png",
+        "grip": [
+          10,
+          10
+        ]
+      },
+      "nearArm": "left"
+    }
+  ],
+  "spear": {
+    "image": "spear.png",
+    "grip": [
+      4,
+      42
+    ]
+  },
+  "sources": {
+    "standalone/goa-races/shared-body-rigs-v1/references/Elf_male_User_Approved.png": "51e044dede01931c200c846ccd79c4b97abdcd881f95118f743365709a8aa663",
+    "Dungeon Master Sample/Shared Body Rigs/Body Templates/standard-male/Source_Heads_64px.png": "f43daedb6b8582e0c346f05ba14049f5426afaf8423d29215cce6c47463c5bee",
+    "standalone/goa-races/armor-designs/deepguard-iron/pixel-fit-v2/pieces/64px/chest.png": "ad61a11927306dd44656d4a5f653d32d29f1b4e799077adcaa11c325004c6688",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/polearms-tools/weapon.spear/South.png": "7a1b9ceb7c675e310d1811f839f6ea44bc47c74c5a4d0d48f8cfc66b5292c64b",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/custom-shields/shield.round/South.png": "dc02fff0e154bf60ad29406800875a0a6631968cc206623d77654efa8f15546c",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/custom-shields/shield.round/North.png": "90f0889b19ed026f092bf82565010fe4648a452309ce8bfc71f4d5789164f838"
+  },
+  "skeleton": {
+    "root": null,
+    "torso": "root",
+    "head": "torso",
+    "rightUpperArm": "torso",
+    "rightForearm": "rightUpperArm",
+    "rightHand": "rightForearm",
+    "leftUpperArm": "torso",
+    "leftForearm": "leftUpperArm",
+    "leftHand": "leftForearm"
+  },
+  "slots": {
+    "chest": "torso",
+    "mainHand": "rightHand",
+    "offHand": "leftHand"
+  },
+  "limitations": [
+    "Equipment/arm rig proof: legs use original walk frames, not skeletal animation.",
+    "Four authored facings; no synthesized 16-direction art.",
+    "Existing visible arm fragments have no newly drawn hidden surfaces; extreme poses need additional art.",
+    "Chest fitting and arm partitions are authored for this Elf only. Other races keep original bodies and need fit profiles."
+  ]
+}

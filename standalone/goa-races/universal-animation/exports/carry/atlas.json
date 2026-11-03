@@ -1,0 +1,124 @@
+{
+  "clip": "carry",
+  "clipData": {
+    "id": "carry",
+    "label": "Carry",
+    "category": "Work",
+    "keys": [
+      [
+        0,
+        {
+          "Rhx": -1,
+          "Rhy": -9,
+          "Lhx": -1,
+          "Lhy": -9,
+          "step": 0.25,
+          "back": 0.1,
+          "crouch": 0.04
+        }
+      ],
+      [
+        0.3,
+        {
+          "Rhx": -1,
+          "Rhy": -9.5,
+          "Lhx": -1,
+          "Lhy": -9.5,
+          "step": -0.1,
+          "back": -0.25,
+          "crouch": 0.06
+        }
+      ],
+      [
+        0.6,
+        {
+          "Rhx": -1,
+          "Rhy": -9,
+          "Lhx": -1,
+          "Lhy": -9,
+          "step": 0.25,
+          "back": 0.1,
+          "crouch": 0.04
+        }
+      ]
+    ],
+    "duration": 0.85,
+    "events": {},
+    "source": "art/gear3d/work.js",
+    "sourceDefinition": {
+      "keys": [
+        [
+          0,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "step": 0.25,
+            "back": 0.1,
+            "crouch": 0.04
+          }
+        ],
+        [
+          0.3,
+          {
+            "Rhx": -1,
+            "Rhy": -9.5,
+            "Lhx": -1,
+            "Lhy": -9.5,
+            "step": -0.1,
+            "back": -0.25,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.6,
+          {
+            "Rhx": -1,
+            "Rhy": -9,
+            "Lhx": -1,
+            "Lhy": -9,
+            "step": 0.25,
+            "back": 0.1,
+            "crouch": 0.04
+          }
+        ]
+      ],
+      "bare": true,
+      "stowShield": true
+    },
+    "status": "source-keyed clip; mapping preview"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 12,
+  "times": [
+    0.0,
+    0.07727272727272727,
+    0.15454545454545454,
+    0.2318181818181818,
+    0.3090909090909091,
+    0.38636363636363635,
+    0.4636363636363636,
+    0.5409090909090909,
+    0.6181818181818182,
+    0.6954545454545454,
+    0.7727272727272727,
+    0.85
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}

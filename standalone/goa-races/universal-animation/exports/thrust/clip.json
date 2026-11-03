@@ -1,0 +1,121 @@
+{
+  "id": "thrust",
+  "label": "Thrust",
+  "category": "Combat",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.18,
+      {
+        "Ru": -2.5,
+        "Rl": 0,
+        "W": 0.06,
+        "Lu": -0.6,
+        "Ll": -0.2,
+        "lean": -0.08,
+        "back": 0.25,
+        "crouch": 0.12
+      }
+    ],
+    [
+      0.3,
+      {
+        "Ru": -0.1,
+        "Rl": 0,
+        "W": 0,
+        "lean": 0.15,
+        "lunge": 0.5,
+        "step": 0.85,
+        "back": 0.2,
+        "crouch": 0.26
+      }
+    ],
+    [
+      0.46,
+      {
+        "Ru": -0.55,
+        "Rl": -0.3,
+        "W": 0.1,
+        "lean": 0.08,
+        "lunge": 0.4,
+        "step": 0.85,
+        "back": 0.2,
+        "crouch": 0.2
+      }
+    ],
+    [
+      0.74
+    ]
+  ],
+  "duration": 0.99,
+  "events": {
+    "hit": [
+      0.3
+    ],
+    "trail": [
+      0.2,
+      0.34
+    ]
+  },
+  "source": "art/gear3d/skills.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.18,
+        {
+          "Ru": -2.5,
+          "Rl": 0,
+          "W": 0.06,
+          "Lu": -0.6,
+          "Ll": -0.2,
+          "lean": -0.08,
+          "back": 0.25,
+          "crouch": 0.12
+        }
+      ],
+      [
+        0.3,
+        {
+          "Ru": -0.1,
+          "Rl": 0,
+          "W": 0,
+          "lean": 0.15,
+          "lunge": 0.5,
+          "step": 0.85,
+          "back": 0.2,
+          "crouch": 0.26
+        }
+      ],
+      [
+        0.46,
+        {
+          "Ru": -0.55,
+          "Rl": -0.3,
+          "W": 0.1,
+          "lean": 0.08,
+          "lunge": 0.4,
+          "step": 0.85,
+          "back": 0.2,
+          "crouch": 0.2
+        }
+      ],
+      [
+        0.74
+      ]
+    ],
+    "hit": [
+      0.3
+    ],
+    "trail": [
+      0.2,
+      0.34
+    ],
+    "death": "fall"
+  },
+  "status": "source-keyed clip; mapping preview"
+}

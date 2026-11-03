@@ -1,0 +1,229 @@
+{
+  "format": "goa-existing-game-limb-assets",
+  "version": 1,
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "slots": {
+    "LeftArm": {
+      "event": "Left Arm",
+      "g3Parts": [
+        "armLu",
+        "armLl"
+      ],
+      "lostBit": 2
+    },
+    "RightArm": {
+      "event": "Right Arm",
+      "g3Parts": [
+        "armRu",
+        "armRl"
+      ],
+      "lostBit": 1
+    },
+    "LeftLeg": {
+      "event": "Left Leg",
+      "g3Parts": [
+        "legLu",
+        "legLl"
+      ],
+      "lostBit": 8
+    },
+    "RightLeg": {
+      "event": "Right Leg",
+      "g3Parts": [
+        "legRu",
+        "legRl"
+      ],
+      "lostBit": 4
+    }
+  },
+  "existingGame": {
+    "server": "standalone/remastered/game/Code/Creatures/Combats.dm:LimbFling",
+    "event": "standalone/remastered/game/Code/Remastered/Gear3D.dm:RmG3Limb",
+    "client": "standalone/remastered/art/gear3d/game.js:g3hit(limb)",
+    "physics": "standalone/remastered/art/gear3d/ragdoll.js:rdStart(armcut/legcut)",
+    "bodyStates": "standalone/remastered/game/Code/Remastered/Surgery.dm:rm_limb_states",
+    "blood": "standalone/remastered/game/Icons/Blood.dmi (existing pixels and effects retained)"
+  },
+  "registrationStatus": "asset package only; existing runtime still needs updated body/part-map registration",
+  "missingLimbBitOrders": {
+    "surgery": [
+      "LeftArm",
+      "RightArm",
+      "LeftLeg",
+      "RightLeg"
+    ],
+    "g3Lost": [
+      "RightArm",
+      "LeftArm",
+      "RightLeg",
+      "LeftLeg"
+    ]
+  },
+  "bodies": [
+    {
+      "id": "human",
+      "raceKey": "Human",
+      "variant": "Base",
+      "parts": "human/parts.dmi",
+      "injured": "human/injuries-with-blood.dmi",
+      "pureInjury": "human/injuries.dmi",
+      "sourceReference": "human/normal.png",
+      "metadata": "human/metadata.json"
+    },
+    {
+      "id": "human-dark",
+      "raceKey": "HumanBlack",
+      "variant": "Base",
+      "parts": "human-dark/parts.dmi",
+      "injured": "human-dark/injuries-with-blood.dmi",
+      "pureInjury": "human-dark/injuries.dmi",
+      "sourceReference": "human-dark/normal.png",
+      "metadata": "human-dark/metadata.json"
+    },
+    {
+      "id": "dwarf",
+      "raceKey": "Dwarves",
+      "variant": "Base",
+      "parts": "dwarf/parts.dmi",
+      "injured": "dwarf/injuries-with-blood.dmi",
+      "pureInjury": "dwarf/injuries.dmi",
+      "sourceReference": "dwarf/normal.png",
+      "metadata": "dwarf/metadata.json"
+    },
+    {
+      "id": "elf",
+      "raceKey": "Elf",
+      "variant": "Base",
+      "parts": "elf/parts.dmi",
+      "injured": "elf/injuries-with-blood.dmi",
+      "pureInjury": "elf/injuries.dmi",
+      "sourceReference": "elf/normal.png",
+      "metadata": "elf/metadata.json"
+    },
+    {
+      "id": "dark-elf",
+      "raceKey": "Night Elf",
+      "variant": "Base",
+      "parts": "dark-elf/parts.dmi",
+      "injured": "dark-elf/injuries-with-blood.dmi",
+      "pureInjury": "dark-elf/injuries.dmi",
+      "sourceReference": "dark-elf/normal.png",
+      "metadata": "dark-elf/metadata.json"
+    },
+    {
+      "id": "orc",
+      "raceKey": "Orc",
+      "variant": "Base",
+      "parts": "orc/parts.dmi",
+      "injured": "orc/injuries-with-blood.dmi",
+      "pureInjury": "orc/injuries.dmi",
+      "sourceReference": "orc/normal.png",
+      "metadata": "orc/metadata.json"
+    },
+    {
+      "id": "goblin",
+      "raceKey": "Goblins",
+      "variant": "Base",
+      "parts": "goblin/parts.dmi",
+      "injured": "goblin/injuries-with-blood.dmi",
+      "pureInjury": "goblin/injuries.dmi",
+      "sourceReference": "goblin/normal.png",
+      "metadata": "goblin/metadata.json"
+    },
+    {
+      "id": "kobold",
+      "raceKey": "Kobold",
+      "variant": "Base",
+      "parts": "kobold/parts.dmi",
+      "injured": "kobold/injuries-with-blood.dmi",
+      "pureInjury": "kobold/injuries.dmi",
+      "sourceReference": "kobold/normal.png",
+      "metadata": "kobold/metadata.json"
+    },
+    {
+      "id": "vampire",
+      "raceKey": "Vampire",
+      "variant": "Base",
+      "parts": "vampire/parts.dmi",
+      "injured": "vampire/injuries-with-blood.dmi",
+      "pureInjury": "vampire/injuries.dmi",
+      "sourceReference": "vampire/normal.png",
+      "metadata": "vampire/metadata.json"
+    },
+    {
+      "id": "demon",
+      "raceKey": "Demon",
+      "variant": "Base",
+      "parts": "demon/parts.dmi",
+      "injured": "demon/injuries-with-blood.dmi",
+      "pureInjury": "demon/injuries.dmi",
+      "sourceReference": "demon/normal.png",
+      "metadata": "demon/metadata.json"
+    },
+    {
+      "id": "gargoyle",
+      "raceKey": "Gargoyle",
+      "variant": "Base",
+      "parts": "gargoyle/parts.dmi",
+      "injured": "gargoyle/injuries-with-blood.dmi",
+      "pureInjury": "gargoyle/injuries.dmi",
+      "sourceReference": "gargoyle/normal.png",
+      "metadata": "gargoyle/metadata.json"
+    },
+    {
+      "id": "frogman",
+      "raceKey": "FrogMan",
+      "variant": "Base",
+      "parts": "frogman/parts.dmi",
+      "injured": "frogman/injuries-with-blood.dmi",
+      "pureInjury": "frogman/injuries.dmi",
+      "sourceReference": "frogman/normal.png",
+      "metadata": "frogman/metadata.json"
+    },
+    {
+      "id": "lizardman",
+      "raceKey": "LizardMan",
+      "variant": "Base",
+      "parts": "lizardman/parts.dmi",
+      "injured": "lizardman/injuries-with-blood.dmi",
+      "pureInjury": "lizardman/injuries.dmi",
+      "sourceReference": "lizardman/normal.png",
+      "metadata": "lizardman/metadata.json"
+    },
+    {
+      "id": "devourer-zombie",
+      "raceKey": "DevourerZombie",
+      "variant": "Base",
+      "parts": "devourer-zombie/parts.dmi",
+      "injured": "devourer-zombie/injuries-with-blood.dmi",
+      "pureInjury": "devourer-zombie/injuries.dmi",
+      "sourceReference": "devourer-zombie/normal.png",
+      "metadata": "devourer-zombie/metadata.json"
+    },
+    {
+      "id": "skeleton",
+      "raceKey": "Skeleton",
+      "variant": "Base",
+      "parts": "skeleton/parts.dmi",
+      "injured": "skeleton/injuries-with-blood.dmi",
+      "pureInjury": "skeleton/injuries.dmi",
+      "sourceReference": "skeleton/normal.png",
+      "metadata": "skeleton/metadata.json"
+    }
+  ],
+  "limitations": [
+    "Shared cut geometry is a conservative calibration draft; visual review is separate from exact pixel-preservation checks.",
+    "Hidden limbs stay empty: the script does not invent unseen artwork.",
+    "Cross-race graft attachment/material binding and flight/variant calibration are separate work.",
+    "No live game assets or physics code are replaced."
+  ]
+}

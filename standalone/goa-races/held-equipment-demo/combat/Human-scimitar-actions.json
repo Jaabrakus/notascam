@@ -1,0 +1,431 @@
+{
+  "family": "one-hand-sweep",
+  "weapon": "weapon.scimitar",
+  "frameSize": [
+    128,
+    128
+  ],
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "action": "attack",
+  "bodySource": null,
+  "rows": [
+    "Guard",
+    "Windup",
+    "Sweep",
+    "Recovery"
+  ],
+  "phases": [
+    {
+      "row": 0,
+      "ms": 360,
+      "label": "Ready",
+      "rootFrom": 0,
+      "rootTo": 0,
+      "lift": 0
+    },
+    {
+      "row": 1,
+      "ms": 170,
+      "label": "Hop back",
+      "rootFrom": 0,
+      "rootTo": -1.5,
+      "lift": 2
+    },
+    {
+      "row": 1,
+      "ms": 150,
+      "label": "Hop forward",
+      "rootFrom": -1.5,
+      "rootTo": 1.5,
+      "lift": 2.2
+    },
+    {
+      "row": 2,
+      "ms": 140,
+      "label": "Sweep",
+      "rootFrom": 1.5,
+      "rootTo": 1,
+      "lift": 0
+    },
+    {
+      "row": 3,
+      "ms": 240,
+      "label": "Settle",
+      "rootFrom": 1,
+      "rootTo": 0,
+      "lift": 0.4
+    }
+  ],
+  "rootMotion": {
+    "enabled": true,
+    "forwardProjection": [
+      [
+        0,
+        0.45
+      ],
+      [
+        0,
+        -0.45
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "positionCurve": "smoothstep",
+    "heightCurve": "lift*sin(pi*u)",
+    "sharedBodyAndEquipment": true
+  },
+  "grips": [
+    [
+      {
+        "weapon": [
+          22,
+          43
+        ],
+        "shield": [
+          40,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          42
+        ],
+        "shield": [
+          22,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          27,
+          43
+        ],
+        "shield": [
+          41,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          42
+        ],
+        "shield": [
+          27,
+          35
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          20,
+          25
+        ],
+        "shield": [
+          41,
+          40
+        ]
+      },
+      {
+        "weapon": [
+          45,
+          24
+        ],
+        "shield": [
+          22,
+          41
+        ]
+      },
+      {
+        "weapon": [
+          24,
+          25
+        ],
+        "shield": [
+          42,
+          40
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          24
+        ],
+        "shield": [
+          27,
+          40
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          36,
+          46
+        ],
+        "shield": [
+          40,
+          37
+        ]
+      },
+      {
+        "weapon": [
+          46,
+          45
+        ],
+        "shield": [
+          22,
+          37
+        ]
+      },
+      {
+        "weapon": [
+          46,
+          39
+        ],
+        "shield": [
+          36,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          22,
+          39
+        ],
+        "shield": [
+          31,
+          35
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          23,
+          45
+        ],
+        "shield": [
+          40,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          43,
+          44
+        ],
+        "shield": [
+          22,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          39,
+          45
+        ],
+        "shield": [
+          40,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          27,
+          45
+        ],
+        "shield": [
+          29,
+          35
+        ]
+      }
+    ]
+  ],
+  "weaponHands": 1,
+  "jabProfile": null,
+  "sweepVectors": [
+    [
+      [
+        -0.7,
+        -1
+      ],
+      [
+        0.7,
+        -1
+      ],
+      [
+        1,
+        -0.5
+      ],
+      [
+        0.4,
+        -1
+      ]
+    ],
+    [
+      [
+        -0.7,
+        -1
+      ],
+      [
+        0.7,
+        -1
+      ],
+      [
+        -0.5,
+        -1
+      ],
+      [
+        0.5,
+        -1
+      ]
+    ],
+    [
+      [
+        1,
+        0.2
+      ],
+      [
+        -1,
+        0.2
+      ],
+      [
+        0.6,
+        0.8
+      ],
+      [
+        -0.6,
+        0.8
+      ]
+    ],
+    [
+      [
+        1,
+        0.7
+      ],
+      [
+        -1,
+        0.7
+      ],
+      [
+        0.3,
+        1
+      ],
+      [
+        -0.3,
+        1
+      ]
+    ]
+  ],
+  "rotations": [
+    [
+      -12,
+      12,
+      15,
+      -15
+    ],
+    [
+      -55,
+      55,
+      -60,
+      60
+    ],
+    [
+      -115,
+      115,
+      100,
+      -100
+    ]
+  ],
+  "bladeDirections": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -0.6
+      ],
+      [
+        -1,
+        -0.6
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -0.6,
+        -1
+      ],
+      [
+        0.6,
+        -1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0.4
+      ],
+      [
+        -1,
+        0.4
+      ]
+    ]
+  ],
+  "shieldFacingOffset": 135,
+  "shieldForearmOffset": [
+    -2,
+    2,
+    -2,
+    2
+  ],
+  "loadout": {
+    "weapon": {
+      "id": "weapon.scimitar",
+      "material": "iron"
+    },
+    "shield": {
+      "id": null,
+      "material": "iron"
+    }
+  }
+}

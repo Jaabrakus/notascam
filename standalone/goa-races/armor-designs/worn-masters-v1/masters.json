@@ -1,0 +1,772 @@
+{
+  "masters": [
+    {
+      "id": "deepguard-iron",
+      "race": "human",
+      "label": "Deepguard Iron \u2014 approved reference",
+      "source": "../deepguard-iron/pixel-fit-v2/deepguard-pixel-v2.png",
+      "status": "approved reference",
+      "frameSize": 64,
+      "bodySpace": 64,
+      "spriteFile": "sprites64/deepguard-iron.png",
+      "sourceSize": [
+        2160,
+        728
+      ],
+      "sourceSha256": "75ea689b31aad25e74caf43fe7fe752b2fa3c92fb889cb65565e3701002dd91b",
+      "scale": 0.10053859964093358,
+      "frames": [
+        {
+          "direction": "South",
+          "sourceBounds": [
+            112,
+            102,
+            430,
+            659
+          ],
+          "sourceFeet": [
+            272.0,
+            659
+          ],
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "North",
+          "sourceBounds": [
+            649,
+            102,
+            970,
+            659
+          ],
+          "sourceFeet": [
+            810.0,
+            659
+          ],
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "East",
+          "sourceBounds": [
+            1237,
+            109,
+            1457,
+            659
+          ],
+          "sourceFeet": [
+            1351.0,
+            659
+          ],
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "West",
+          "sourceBounds": [
+            1779,
+            109,
+            2002,
+            659
+          ],
+          "sourceFeet": [
+            1886.0,
+            659
+          ],
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        }
+      ],
+      "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+    },
+    {
+      "id": "deepguard-iron-armed",
+      "race": "human",
+      "label": "Deepguard Iron \u2014 sword and shield",
+      "source": "deepguard-iron-armed.png",
+      "status": "new worn master",
+      "frameSize": 64,
+      "bodySpace": 64,
+      "spriteFile": "sprites64/deepguard-iron-armed.png",
+      "sourceSize": [
+        2160,
+        728
+      ],
+      "sourceSha256": "1f4e3b2baa7898e9c5d47673c624976b279b6dbd71b9a9f4ae7217634b441c23",
+      "scale": 0.10144927536231885,
+      "frames": [
+        {
+          "direction": "South",
+          "sourceBounds": [
+            65,
+            101,
+            506,
+            653
+          ],
+          "sourceFeet": [
+            269.0,
+            653
+          ],
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "North",
+          "sourceBounds": [
+            591,
+            101,
+            1013,
+            653
+          ],
+          "sourceFeet": [
+            805.0,
+            653
+          ],
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "East",
+          "sourceBounds": [
+            1204,
+            108,
+            1520,
+            654
+          ],
+          "sourceFeet": [
+            1347.0,
+            654
+          ],
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "West",
+          "sourceBounds": [
+            1695,
+            108,
+            2058,
+            654
+          ],
+          "sourceFeet": [
+            1868.0,
+            654
+          ],
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        }
+      ],
+      "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+    },
+    {
+      "id": "deepguard-iron-spear-shield-idle",
+      "race": "human",
+      "label": "Deepguard Iron \u2014 spear and shield idle",
+      "source": "deepguard-iron-spear-shield-idle-v2.png",
+      "status": "revised side grips and shield",
+      "frameSize": 128,
+      "pose": "idle",
+      "holdingHand": "right",
+      "offhand": "shield",
+      "bodySpace": 64,
+      "spriteFile": "sprites128/deepguard-iron-spear-shield-idle.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "sourceSha256": "e18443fa5a78182a35171a4afafa708cf1d77bdf434ce7bc84580d865d71b0c0",
+      "scale": 0.10916179337231968,
+      "frames": [
+        {
+          "direction": "South",
+          "sourceBounds": [
+            161,
+            37,
+            530,
+            659
+          ],
+          "sourceFeet": [
+            305.0,
+            659
+          ],
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        },
+        {
+          "direction": "North",
+          "sourceBounds": [
+            645,
+            34,
+            1021,
+            659
+          ],
+          "sourceFeet": [
+            865.0,
+            659
+          ],
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        },
+        {
+          "direction": "East",
+          "sourceBounds": [
+            1202,
+            34,
+            1480,
+            659
+          ],
+          "sourceFeet": [
+            1355.0,
+            659
+          ],
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        },
+        {
+          "direction": "West",
+          "sourceBounds": [
+            1760,
+            34,
+            2069,
+            659
+          ],
+          "sourceFeet": [
+            1886.0,
+            659
+          ],
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        }
+      ],
+      "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+    },
+    {
+      "id": "deepguard-iron-staff-idle",
+      "race": "human",
+      "label": "Deepguard Iron \u2014 staff idle",
+      "source": "deepguard-iron-staff-idle-v2.png",
+      "status": "revised right-hand side grips",
+      "frameSize": 128,
+      "pose": "idle",
+      "holdingHand": "right",
+      "offhand": "empty",
+      "bodySpace": 64,
+      "spriteFile": "sprites128/deepguard-iron-staff-idle.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "sourceSha256": "fce2c422ec7921731b362039c43374b5f94529cab0abe8f5f3a657582d781449",
+      "scale": 0.10218978102189781,
+      "frames": [
+        {
+          "direction": "South",
+          "sourceBounds": [
+            125,
+            42,
+            450,
+            659
+          ],
+          "sourceFeet": [
+            282.0,
+            659
+          ],
+          "rect": [
+            0,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        },
+        {
+          "direction": "North",
+          "sourceBounds": [
+            644,
+            42,
+            1019,
+            659
+          ],
+          "sourceFeet": [
+            832.0,
+            659
+          ],
+          "rect": [
+            128,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        },
+        {
+          "direction": "East",
+          "sourceBounds": [
+            1238,
+            42,
+            1546,
+            659
+          ],
+          "sourceFeet": [
+            1385.0,
+            659
+          ],
+          "rect": [
+            256,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        },
+        {
+          "direction": "West",
+          "sourceBounds": [
+            1689,
+            42,
+            1998,
+            659
+          ],
+          "sourceFeet": [
+            1847.5,
+            659
+          ],
+          "rect": [
+            384,
+            0,
+            128,
+            128
+          ],
+          "bodyOrigin": [
+            32,
+            32
+          ],
+          "feet": [
+            64,
+            93
+          ]
+        }
+      ],
+      "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+    },
+    {
+      "id": "human-leather",
+      "race": "human",
+      "label": "Human Leather",
+      "source": "human-leather.png",
+      "status": "new worn master",
+      "frameSize": 64,
+      "bodySpace": 64,
+      "spriteFile": "sprites64/human-leather.png",
+      "sourceSize": [
+        2160,
+        728
+      ],
+      "sourceSha256": "3a427d26afcfd3c6086e0a6a51c6afd0e20c11829b4288d15f6c04cb75a973c2",
+      "scale": 0.0945945945945946,
+      "frames": [
+        {
+          "direction": "South",
+          "sourceBounds": [
+            94,
+            73,
+            436,
+            664
+          ],
+          "sourceFeet": [
+            265.5,
+            664
+          ],
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "North",
+          "sourceBounds": [
+            635,
+            72,
+            980,
+            664
+          ],
+          "sourceFeet": [
+            809.0,
+            664
+          ],
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "East",
+          "sourceBounds": [
+            1240,
+            83,
+            1481,
+            664
+          ],
+          "sourceFeet": [
+            1360.5,
+            664
+          ],
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "West",
+          "sourceBounds": [
+            1759,
+            83,
+            2002,
+            664
+          ],
+          "sourceFeet": [
+            1880.0,
+            664
+          ],
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        }
+      ],
+      "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+    },
+    {
+      "id": "dwarf-gold",
+      "race": "dwarf",
+      "label": "Dwarf Gold",
+      "source": "dwarf-gold.png",
+      "status": "new worn master",
+      "frameSize": 64,
+      "bodySpace": 64,
+      "spriteFile": "sprites64/dwarf-gold.png",
+      "sourceSize": [
+        2172,
+        724
+      ],
+      "sourceSha256": "22f63a8c8f7cae2781bef88eae9f545b84f19ef2ef94e35efab33c104f10e9da",
+      "scale": 0.08303249097472924,
+      "frames": [
+        {
+          "direction": "South",
+          "sourceBounds": [
+            105,
+            107,
+            451,
+            661
+          ],
+          "sourceFeet": [
+            279.0,
+            661
+          ],
+          "rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "North",
+          "sourceBounds": [
+            660,
+            107,
+            1014,
+            661
+          ],
+          "sourceFeet": [
+            832.5,
+            661
+          ],
+          "rect": [
+            64,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "East",
+          "sourceBounds": [
+            1224,
+            109,
+            1464,
+            661
+          ],
+          "sourceFeet": [
+            1351.5,
+            661
+          ],
+          "rect": [
+            128,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        },
+        {
+          "direction": "West",
+          "sourceBounds": [
+            1795,
+            109,
+            2011,
+            661
+          ],
+          "sourceFeet": [
+            1907.0,
+            661
+          ],
+          "rect": [
+            192,
+            0,
+            64,
+            64
+          ],
+          "bodyOrigin": [
+            0,
+            0
+          ],
+          "feet": [
+            32,
+            61
+          ]
+        }
+      ],
+      "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+    }
+  ]
+}

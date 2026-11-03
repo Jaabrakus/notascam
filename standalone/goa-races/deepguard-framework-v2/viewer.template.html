@@ -1,0 +1,104 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deepguard Armor Framework</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui;background:#12191e;color:#e2ecef}*{box-sizing:border-box}body{max-width:1440px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 8px}h2{font-size:20px;margin:0 0 16px}p{color:#b1c4cd;line-height:1.5}button,select,input{font:inherit;background:#22333e;border:1px solid #456071;color:inherit;border-radius:6px;padding:8px}button{cursor:pointer}button:hover{border-color:#8dcdb7}button:disabled{opacity:.45;cursor:default}a{color:#9adecb}.filters,.bar,.editrow{display:flex;gap:12px;flex-wrap:wrap;align-items:end}label{display:grid;gap:5px}section,aside{background:#1a252e;border:1px solid #344a58;border-radius:10px;padding:18px}.filters{margin:20px 0}#body{max-width:420px}.workspace{display:grid;grid-template-columns:210px 1fr;gap:18px}aside label{display:flex;gap:8px;align-items:center;padding:7px 0}input[type=checkbox]{accent-color:#83d7b9}.views{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}figure{margin:0;text-align:center}canvas,img{image-rendering:pixelated}figure canvas{width:100%;display:block;background:repeating-conic-gradient(#121a20 0% 25%,#18232b 0% 50%) 50%/16px 16px}figcaption{padding:8px}.bar{margin:16px 0}.editor{border-top:1px solid #3b515f;padding-top:16px}.editor input[type=number]{width:72px}.nudges{display:flex;gap:5px}#message{min-height:24px;color:#a0ddc5;margin-top:12px}.minor{font-size:13px;color:#a7bdc8}.catalog{margin-top:20px}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.card{padding:10px;background:#152028;border:1px solid #354c5b;border-radius:8px;text-align:left;cursor:pointer}.card.selected{border-color:#a2e1c7}.card img{width:100%;display:block;background:#10171d}.card p{margin:6px 0 0;font-size:13px}.badge{font-size:12px;color:#86d3b4}.reference{width:100%;background:#10171c}details{margin-top:20px}input[type=range]{width:150px}#search{width:190px}@media(max-width:800px){body{padding:12px}.workspace{grid-template-columns:1fr}.views{grid-template-columns:repeat(2,1fr)}aside{display:flex;flex-wrap:wrap;gap:12px}aside h2{width:100%}}
+</style>
+<h1>Deepguard armor fitting</h1>
+<p id="summary"></p>
+<div class="filters"><label>Search<input id="search" type="search" placeholder="Race or variant"></label><label>Race<select id="race"></select></label><label>Body<select id="sex"><option value="all">Male and female</option><option value="male">Male</option><option value="female">Female</option></select></label><label>Forms<select id="forms"><option value="base">Base bodies</option><option value="all">All variants</option><option value="variants">Hybrids and variants</option></select></label></div>
+<div class="bar"><label>Character<select id="body"></select></label><label>Display<select id="display"><option value="equipped">Armor equipped</option><option value="bare">Base body</option><option value="armor">Armor layers only</option></select></label><button id="all">Wear all</button><button id="none">Remove all</button></div>
+<div class="workspace"><aside><h2>Equipment layers</h2><div id="slots"></div></aside><section>
+<h2 id="name"></h2><div class="views" id="views"></div>
+<div class="bar"><button id="play">Play walk</button><label>Pose frame<input id="frame" type="range" min="0" max="2" value="0"></label><span id="motion"></span><label style="display:flex;gap:6px"><input id="joints" type="checkbox">Show attachment points</label></div>
+<div class="editor"><strong>Adjust fitting · negative Y moves upward</strong><div class="editrow" style="margin-top:10px">
+<label>Move<select id="piece"><option value="whole">Whole armor</option></select></label><label>Facing<select id="facing"></select></label><label>Apply to<select id="scope"><option value="body">This body</option><option value="parent">Related variants</option></select></label><label>Frames<select id="frameScope"><option value="all">All supplied frames</option><option value="one">Selected frame</option></select></label><label>X<input id="dx" type="number" min="-16" max="16" value="0"></label><label>Y<input id="dy" type="number" min="-16" max="16" value="0"></label>
+<div class="nudges"><button id="left" aria-label="Move left one pixel">←</button><button id="up" aria-label="Move up one pixel">↑</button><button id="down" aria-label="Move down one pixel">↓</button><button id="right" aria-label="Move right one pixel">→</button></div>
+</div><div class="bar"><button id="reset">Reset this body</button><button id="resetParent">Reset related-variant fit</button><button id="exportPNG">Save equipped atlas</button><button id="exportFit">Save fitting recipe</button><label>Load recipe<input id="importFit" type="file" accept=".json,application/json"></label></div></div>
+<div id="message" aria-live="polite"></div><p class="minor" id="review"></p>
+</section></div>
+<section class="catalog"><h2 id="catalogTitle">Bodies</h2><div class="cards" id="cards"></div></section>
+<details><summary>Approved Deepguard reference and fit notes</summary><img id="reference" class="reference" alt="Approved Deepguard reference"><p class="minor">These are fitting drafts using existing source poses. Head, torso, arms and legs have separate attachments. Bodies with one supplied frame remain standing-only. Complex horns, wings and moving armor need visual review. Female source bodies currently cover ten races. Attacks, injury-aware equipment and sixteen facings remain separate work.</p><a href="manifest.json">Body and equipment manifest</a></details>
+<script>
+const DATA=/*DATA*/null, $=id=>document.getElementById(id);
+const names={whole:'Whole armor',helmet:'Helmet',chest:'Chest',shoulders:'Shoulders',bracers:'Bracers',belt:'Belt',waist:'Mail and cloth',greaves:'Greaves',boots:'Boots'};
+const enabled=new Set(DATA.slots),cache=new Map(),fits={};let current=DATA.profiles.find(p=>p.id==='human'),frame=0,playing=false,tick=0,token=0,ready=false;
+const STORAGE='deepguard-framework-v2-user-fits';
+$('summary').textContent=DATA.summary.bodies+' available bodies · '+DATA.summary.female+' female variants · '+DATA.summary.walking+' walking sets · '+DATA.summary.standingOnly+' standing-only sets. East and West armor default to 2 pixels upward.';
+const races=[...new Set(DATA.profiles.map(p=>p.race))].sort();
+$('race').replaceChildren(Object.assign(document.createElement('option'),{value:'all',textContent:'All races'}),...races.map(r=>Object.assign(document.createElement('option'),{value:r,textContent:r.replaceAll('-',' ')})));
+$('piece').append(...DATA.slots.map(s=>Object.assign(document.createElement('option'),{value:s,textContent:names[s]})));
+$('facing').replaceChildren(...DATA.directionOrder.map((d,v)=>Object.assign(document.createElement('option'),{value:v,textContent:d})));$('facing').value='2';
+const canvases=DATA.directionOrder.map(d=>{const fig=document.createElement('figure'),c=document.createElement('canvas'),cap=document.createElement('figcaption');c.width=c.height=64;cap.textContent=d;fig.append(c,cap);$('views').append(fig);return c;});
+$('slots').replaceChildren(...DATA.slots.map(s=>{const label=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.checked=true;input.dataset.slot=s;input.onchange=()=>{input.checked?enabled.add(s):enabled.delete(s);render();};label.append(input,document.createTextNode(names[s]));return label;}));
+function image(path){if(cache.has(path))return cache.get(path);const promise=new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(Error('Could not load '+path));im.src=DATA.images[path];});cache.set(path,promise);return promise;}
+async function ensure(p){const paths=[p.base,...Object.values(p.layers),...Object.values(p.coverage)];const values=await Promise.all(paths.map(image));return Object.fromEntries(paths.map((path,i)=>[path,values[i]]));}
+let loaded={};
+function getFit(p,slot,f,v){const base=slot==='whole'?p.fitDefaults[v]:{x:0,y:0};const parent=fits['family:'+p.fitParent];return {...base,...parent?.all?.[v]?.[slot],...parent?.[f]?.[v]?.[slot],...fits[p.id]?.all?.[v]?.[slot],...fits[p.id]?.[f]?.[v]?.[slot]};}
+function draw(ctx,p,v,f,mode='equipped',joints=false){
+ ctx.clearRect(0,0,64,64);ctx.imageSmoothingEnabled=false;
+ const whole=getFit(p,'whole',f,v);
+ if(mode!=='armor')ctx.drawImage(loaded[p.base],v*64,f*64,64,64,0,0,64,64);
+ if(mode!=='bare'){
+  if(mode!=='armor'){ctx.globalCompositeOperation='destination-out';for(const [slot,path] of Object.entries(p.coverage))if(enabled.has(slot))ctx.drawImage(loaded[path],v*64,f*64,64,64,0,0,64,64);ctx.globalCompositeOperation='source-over';}
+  for(const slot of p.layerOrder)if(enabled.has(slot)){const o=getFit(p,slot,f,v);ctx.drawImage(loaded[p.layers[slot]],v*64,f*64,64,64,whole.x+o.x,whole.y+o.y,64,64);}
+ }
+ if(joints){const rig=p.rigs[f][v];ctx.fillStyle='#69efce';for(const a of [...Object.values(rig.shoulders),...Object.values(rig.hands),...Object.values(rig.feet)])ctx.fillRect(Math.round(a[0])-1,Math.round(a[1])-1,2,2);}
+}
+function updateControls(){const o=getFit(current,$('piece').value,frame,+$('facing').value);$('dx').value=o.x;$('dy').value=o.y;}
+function render(){if(!ready)return;canvases.forEach((c,v)=>draw(c.getContext('2d'),current,v,frame,$('display').value,$('joints').checked));$('frame').value=frame;updateControls();}
+async function select(id){
+ const mine=++token;playing=false;current=DATA.profiles.find(p=>p.id===id);frame=0;ready=false;
+ $('body').value=id;$('name').textContent=current.label;$('message').textContent='Loading layers…';
+ const result=await ensure(current);if(mine!==token)return;loaded=result;ready=true;
+ $('frame').max=current.frames-1;$('frame').disabled=current.frames===1;$('play').disabled=current.frames===1;
+ $('play').textContent=current.motion==='flight'?'Play flight':'Play walk';
+ $('motion').textContent=current.frames===1?'Standing only · 1 source pose':current.frames+' source poses · '+current.motion;
+ $('review').textContent=current.review.frameEdgeExceptions.length?'Draft fit · '+current.review.frameEdgeExceptions.length+' frame-edge adjustments need review.':'Draft fit · '+current.family+' body fit · four directions.';
+ $('message').textContent='';document.body.dataset.ready='true';
+ render();document.querySelectorAll('.card').forEach(c=>c.classList.toggle('selected',c.dataset.id===id));
+}
+function filtered(){const q=$('search').value.toLowerCase();return DATA.profiles.filter(p=>($('race').value==='all'||p.race===$('race').value)&&($('sex').value==='all'||p.sex===$('sex').value)&&($('forms').value==='all'||($('forms').value==='base')===(p.appearance.toLowerCase()==='base'))&&p.label.toLowerCase().includes(q));}
+function filter(){
+ const list=filtered();$('body').replaceChildren(...list.map(p=>Object.assign(document.createElement('option'),{value:p.id,textContent:p.label})));
+ $('catalogTitle').textContent=list.length+' matching bodies';
+ $('cards').replaceChildren(...list.map(p=>{const card=document.createElement('button');card.className='card';card.dataset.id=p.id;const img=new Image();img.src=DATA.thumbs[p.id];img.alt=p.label;img.loading='lazy';const label=document.createElement('p');label.textContent=p.label;const badge=document.createElement('p');badge.className='badge';badge.textContent=p.frames===1?'Standing only':p.motion+' · '+p.frames+' poses';card.append(img,label,badge);card.onclick=()=>{select(p.id).catch(fail);window.scrollTo({top:0,behavior:'smooth'});};return card;}));
+ if(!list.length){$('body').disabled=true;return;}$('body').disabled=false;
+ select(list.some(p=>p.id===current.id)?current.id:list[0].id).catch(fail);
+}
+function fail(e){$('message').textContent=e.message;document.body.dataset.error=e.message;}
+for(const id of ['race','sex','forms'])$(id).onchange=filter;$('search').oninput=filter;$('body').onchange=()=>select($('body').value).catch(fail);
+$('display').onchange=render;$('joints').onchange=render;
+$('all').onclick=()=>{DATA.slots.forEach(s=>enabled.add(s));document.querySelectorAll('[data-slot]').forEach(c=>c.checked=true);render();};
+$('none').onclick=()=>{enabled.clear();document.querySelectorAll('[data-slot]').forEach(c=>c.checked=false);render();};
+$('play').onclick=()=>{playing=!playing;tick=0;$('play').textContent=playing?'Pause':current.motion==='flight'?'Play flight':'Play walk';};
+$('frame').oninput=()=>{playing=false;frame=+$('frame').value;$('play').textContent=current.motion==='flight'?'Play flight':'Play walk';render();};
+let previous=0;function animate(time){if(playing&&ready&&time-previous>=200){previous=time;tick=(tick+1)%current.sequence.length;frame=current.sequence[tick];render();}requestAnimationFrame(animate);}requestAnimationFrame(animate);
+for(const id of ['piece','facing','scope','frameScope'])$(id).onchange=updateControls;
+function setFit(x,y){
+ if(!Number.isInteger(x)||!Number.isInteger(y)||Math.abs(x)>16||Math.abs(y)>16)return;
+ playing=false;
+ const key=$('scope').value==='parent'?'family:'+current.fitParent:current.id, f=$('frameScope').value==='all'?'all':String(frame),v=$('facing').value,s=$('piece').value;
+ fits[key]??={};fits[key][f]??={};fits[key][f][v]??={};fits[key][f][v][s]={x,y};
+ if(f==='all')for(let i=0;i<current.frames;i++)if(fits[key][i]?.[v])delete fits[key][i][v][s];
+ persist();render();
+}
+for(const id of ['dx','dy'])$(id).oninput=()=>setFit(Number($('dx').value),Number($('dy').value));
+for(const [id,x,y] of [['left',-1,0],['right',1,0],['up',0,-1],['down',0,1]])$(id).onclick=()=>setFit(Number($('dx').value)+x,Number($('dy').value)+y);
+$('reset').onclick=()=>{delete fits[current.id];persist();render();};
+$('resetParent').onclick=()=>{delete fits['family:'+current.fitParent];persist();render();};
+function recipe(){return {version:2,armor:'deepguard-iron',frameSize:64,directionOrder:DATA.directionOrder,fits};}
+function applyRecipe(value){
+ if(value.version!==2||value.armor!=='deepguard-iron'||!value.fits||typeof value.fits!=='object')throw Error('Use a Deepguard framework fitting recipe.');
+ const ids=new Set(DATA.profiles.flatMap(p=>[p.id,'family:'+p.fitParent]));
+ for(const [id,frames] of Object.entries(value.fits)){if(!ids.has(id))throw Error('Unknown body: '+id);for(const [f,views] of Object.entries(frames)){if(!['all','0','1','2'].includes(f))throw Error('Unknown source frame');for(const [v,slots] of Object.entries(views)){if(!['0','1','2','3'].includes(v))throw Error('Unknown direction');for(const [s,off] of Object.entries(slots)){if(!['whole',...DATA.slots].includes(s)||!Number.isInteger(off.x)||!Number.isInteger(off.y)||Math.abs(off.x)>16||Math.abs(off.y)>16)throw Error('Invalid pixel adjustment');}}}}
+ for(const id of Object.keys(fits))delete fits[id];Object.assign(fits,value.fits);
+}
+function persist(){try{localStorage.setItem(STORAGE,JSON.stringify(recipe()));}catch{}}
+function download(url,name){const a=document.createElement('a');a.href=url;a.download=name;a.click();}
+$('exportPNG').onclick=()=>{if(!ready)return;const atlas=document.createElement('canvas');atlas.width=256;atlas.height=current.frames*64;const ctx=atlas.getContext('2d');for(let f=0;f<current.frames;f++)for(let v=0;v<4;v++){const c=document.createElement('canvas');c.width=c.height=64;draw(c.getContext('2d'),current,v,f,'equipped');ctx.drawImage(c,v*64,f*64);}download(atlas.toDataURL('image/png'),'Deepguard_'+current.id+'_Atlas_64px.png');$('message').textContent='Saved all supplied poses and directions.';};
+$('exportFit').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(recipe(),null,2)],{type:'application/json'}));download(url,'Deepguard_Framework_Fit.json');setTimeout(()=>URL.revokeObjectURL(url),1000);};
+$('importFit').onchange=async()=>{try{const file=$('importFit').files[0];if(!file)return;applyRecipe(JSON.parse(await file.text()));persist();render();$('message').textContent='Fitting recipe loaded.';}catch(e){fail(e);}};
+try{const saved=JSON.parse(localStorage.getItem(STORAGE));if(saved)applyRecipe(saved);}catch{}
+$('reference').src=DATA.reference;window.deepguard={data:DATA,recipe,draw,getFit,select};filter();
+</script>
+

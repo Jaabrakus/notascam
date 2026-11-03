@@ -1,0 +1,45 @@
+{
+  "format": "goa-human-rebuilt-sheet",
+  "race": "Human",
+  "sex": "male",
+  "appearance": "Possessed2",
+  "image": "Human-Possessed2-walk-64.png",
+  "revision": "v6-full-redrawn-frames",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "assembly": "Full registered redraw cells replace previous side-view frames; no arm/nose patch compositing.",
+  "redrawnFrames": [
+    {
+      "view": 2,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Possessed2/east-registered.png",
+      "sourceSha256": "32f002406417de2537c66b64323931a1bcfebc8729f836a1062493ff21a8f76d",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Possessed2/2-0-full-frame.png",
+      "packedSha256": "106fbd1ec18a846ee437373f35324f0c4d60897bfc6ec62c53693e7d0e0c68f3"
+    },
+    {
+      "view": 3,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Possessed2/west-registered.png",
+      "sourceSha256": "88062e5d5940ddf29c6390979d8d901620f0af05d93bf5937c94f0dcb779ba46",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Possessed2/3-0-full-frame.png",
+      "packedSha256": "8dfb6fbe8eabad01ec0ab971628aecd66b62854c93d89cab1a02827c3aa6ee01"
+    }
+  ]
+}

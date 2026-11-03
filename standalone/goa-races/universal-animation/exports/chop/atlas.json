@@ -1,0 +1,163 @@
+{
+  "clip": "chop",
+  "clipData": {
+    "id": "chop",
+    "label": "Chop",
+    "category": "Combat",
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.26,
+        {
+          "Ru": 2.6,
+          "Rl": 2.9,
+          "W": 2.4,
+          "lean": -0.16,
+          "back": 0.2,
+          "crouch": 0.06
+        }
+      ],
+      [
+        0.4,
+        {
+          "Ru": -0.4,
+          "Rl": -0.7,
+          "W": -0.9,
+          "lean": 0.3,
+          "lunge": 0.35,
+          "step": 0.6,
+          "back": 0.15,
+          "crouch": 0.32
+        }
+      ],
+      [
+        0.62,
+        {
+          "Ru": -0.5,
+          "Rl": -0.8,
+          "W": -1,
+          "lean": 0.25,
+          "lunge": 0.35,
+          "step": 0.6,
+          "back": 0.15,
+          "crouch": 0.26
+        }
+      ],
+      [
+        0.92
+      ]
+    ],
+    "duration": 1.17,
+    "events": {
+      "hit": [
+        0.4
+      ],
+      "trail": [
+        0.28,
+        0.44
+      ]
+    },
+    "source": "art/gear3d/skills.js",
+    "sourceDefinition": {
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.26,
+          {
+            "Ru": 2.6,
+            "Rl": 2.9,
+            "W": 2.4,
+            "lean": -0.16,
+            "back": 0.2,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.4,
+          {
+            "Ru": -0.4,
+            "Rl": -0.7,
+            "W": -0.9,
+            "lean": 0.3,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.32
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": -0.5,
+            "Rl": -0.8,
+            "W": -1,
+            "lean": 0.25,
+            "lunge": 0.35,
+            "step": 0.6,
+            "back": 0.15,
+            "crouch": 0.26
+          }
+        ],
+        [
+          0.92
+        ]
+      ],
+      "hit": [
+        0.4
+      ],
+      "trail": [
+        0.28,
+        0.44
+      ],
+      "two": true,
+      "death": "armoff",
+      "deaths": [
+        "armoff",
+        "armoff",
+        "fall"
+      ],
+      "maim": "armcut"
+    },
+    "status": "source-keyed clip; mapping preview"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 16,
+  "times": [
+    0.0,
+    0.078,
+    0.156,
+    0.23399999999999999,
+    0.312,
+    0.38999999999999996,
+    0.46799999999999997,
+    0.5459999999999999,
+    0.624,
+    0.702,
+    0.7799999999999999,
+    0.858,
+    0.9359999999999999,
+    1.014,
+    1.0919999999999999,
+    1.1699999999999997
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}
