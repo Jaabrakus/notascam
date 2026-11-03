@@ -1,0 +1,26 @@
+{
+  "id": "death.bleed",
+  "label": "Bleed death",
+  "category": "Death sequences",
+  "duration": 3.45,
+  "sequence": [
+    "d_sway",
+    "reaction.crumple"
+  ],
+  "tint": [
+    0.92,
+    0.86,
+    0.86
+  ],
+  "keys": [
+    [
+      0
+    ],
+    [
+      3.45
+    ]
+  ],
+  "source": "art/gear3d/deaths.js#DZDEF",
+  "effects": "Live particles/tints remain external to body clips",
+  "status": "source-defined sequence; external effects not baked"
+}

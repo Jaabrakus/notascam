@@ -1,0 +1,376 @@
+{
+  "id": "goblin-female-hellblooded",
+  "label": "Goblin \u00b7 Female \u00b7 Hellblooded",
+  "race": "goblin",
+  "sex": "female",
+  "appearance": "Hellblooded",
+  "template": "small-female",
+  "build": "small",
+  "displayScale": 1.0,
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameSize": 128,
+  "bodySpace": 64,
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "feet": [
+    64,
+    93
+  ],
+  "body": "Characters/goblin-female-hellblooded/Shared_Body_64px.png",
+  "head": "Characters/goblin-female-hellblooded/Original_Head_Layer_128px.png",
+  "features": "Characters/goblin-female-hellblooded/Features_Behind_Body_128px.png",
+  "composite": "Characters/goblin-female-hellblooded/Standardized_Character_128px.png",
+  "markings": "Characters/goblin-female-hellblooded/Hybrid_Identity_Marks_64px.png",
+  "placements": [
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          0,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            30,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            177,
+            24,
+            20
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 543
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            32,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            179,
+            24,
+            20
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 774
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          0,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            34,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            184,
+            26,
+            21
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 455
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 36,
+          "neck": [
+            30,
+            35
+          ],
+          "extractionCenter": [
+            32,
+            35
+          ],
+          "skin": [
+            180,
+            26,
+            22
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 486
+      }
+    ],
+    [
+      {
+        "sourceFrame": 1,
+        "direction": "South",
+        "offset": [
+          -1,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            31,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            183,
+            27,
+            22
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 563
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "North",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            32,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            188,
+            29,
+            24
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 737
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "East",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            34,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            191,
+            27,
+            23
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 516
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "West",
+        "offset": [
+          0,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            30,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            192,
+            30,
+            24
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 526
+      }
+    ],
+    [
+      {
+        "sourceFrame": 2,
+        "direction": "South",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            31,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            167,
+            20,
+            16
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 562
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "North",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            32,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            184,
+            26,
+            21
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 741
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "East",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            34,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            182,
+            24,
+            20
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 471
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "West",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 35,
+          "neck": [
+            30,
+            34
+          ],
+          "extractionCenter": [
+            32,
+            34
+          ],
+          "skin": [
+            190,
+            28,
+            22
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 507
+      }
+    ]
+  ],
+  "donor": "Characters/goblin-female-hellblooded/Original_Donor_Atlas.png",
+  "donorSha256": "accc2b756e0eb1073221c0a712c3963335ca2504fe189f3aeeb60bfa7d04108c",
+  "headMethod": "Exact extracted RGBA pixels, integer translation only. Head size, color and features are unchanged.",
+  "bodyPalette": {
+    "mid": [
+      178,
+      29,
+      24
+    ],
+    "method": "One stable body palette from donor torso, hands and feet; identity markings excluded.",
+    "sampleCount": 90
+  },
+  "hybridDetails": {
+    "appearance": "Hellblooded",
+    "markPixels": 0,
+    "method": "Original donor identity markings attached by body segment and clipped to the fixed skin mask."
+  },
+  "status": "Standardized body / original-head assembly draft"
+}

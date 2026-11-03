@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orc thrust foundation</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:24px auto;max-width:1200px;padding:0 20px;background:#262a2e;color:#ecf0e9;font:15px system-ui}h1{font-size:26px;margin-bottom:8px}p{line-height:1.5;color:#cbd2c6;max-width:850px}a{color:#c5e8a7}nav,.controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px}.controls{position:sticky;top:0;background:#262a2ef5;padding:14px 0;z-index:2;margin:20px 0}button,select{font:inherit;background:#3b4248;color:white;border:1px solid #64725c;border-radius:5px;padding:8px 12px}button{cursor:pointer}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card{background:#444951;border:1px solid #60686d;border-radius:8px;text-align:center;padding:10px}canvas{display:block;width:100%;height:auto;image-rendering:pixelated}.heading{font-weight:600}section{margin-bottom:28px}h2{font-size:18px}#phase{min-width:180px;color:#d7edc1}#error{color:#ffb4a5}input[type=range]{width:120px}@media(max-width:700px){body{padding:0 10px}.grid{gap:4px}.card{padding:3px;font-size:12px}.controls{gap:8px}}
+</style>
+<h1>One thrust · three equipment views</h1>
+<p>The same compact body motion in every column. The head and short legs stay fixed; the sword and spear follow the same gripping hand. Pause or step through to compare the elbow, grip and recovery.</p>
+<nav><a href="../special-moves-v1/">Special moves</a><a href="../curated-attacks-v1/">Approved attacks</a><a href="comparison.png">Strike comparison</a><a href="README.md">Files and build notes</a></nav>
+<div class="controls"><button id="play" aria-pressed="true">Pause</button><button id="step">Next phase</button><label>Speed <select id="speed"><option value=".5">Half</option><option value="1" selected>Normal</option></select></label><label><input type="checkbox" id="shield" checked> Shield</label><label><input type="checkbox" id="grips"> Grip points</label><input id="scrub" type="range" min="0" max="3" value="0" aria-label="Animation phase"><span id="phase"></span></div>
+<p id="error" hidden></p><main id="list"></main>
+<p>Pose review: one-handed thrust only. Equipment layers are separate; gameplay timing and hit detection are not connected.</p>
+<script src="catalog.js?v=foundation-v1"></script>
+<script>
+const catalog=window.THRUST_FOUNDATION,images={},views=[];
+let playing=true,phase=0,elapsed=0,last=0;
+const fail=message=>{const e=document.querySelector('#error');e.hidden=false;e.textContent=message;};
+if(!catalog)fail('The sprite catalog did not load. Refresh this page.');
+else{
+ for(const [name,src] of Object.entries(catalog.sheets)){const img=new Image();img.src=src+'?v=foundation-v1';img.onerror=()=>fail('Could not load '+src);images[name]=img;}
+ catalog.directions.forEach((direction,d)=>{
+  const section=document.createElement('section'),title=document.createElement('h2'),grid=document.createElement('div');
+  title.textContent=['South / front','North / back','East / right','West / left'][d];grid.className='grid';section.append(title,grid);
+  for(const [kind,label] of [['body','Empty-handed'],['sword','Sword'],['spear','Spear']]){
+   const card=document.createElement('div'),heading=document.createElement('div'),canvas=document.createElement('canvas');
+   card.className='card';heading.className='heading';heading.textContent=label;canvas.width=384;canvas.height=384;
+   canvas.setAttribute('aria-label',label+' thrust facing '+direction);card.append(heading,canvas);grid.append(card);views.push({kind,d,canvas});
+  }
+  document.querySelector('#list').append(section);
+ });
+}
+function layer(ctx,name,d){const im=images[name];if(im&&im.complete&&im.naturalWidth)ctx.drawImage(im,d*128,phase*128,128,128,0,0,128,128);}
+function draw(){
+ if(!catalog)return;
+ for(const v of views){const ctx=v.canvas.getContext('2d');ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,384,384);ctx.imageSmoothingEnabled=false;ctx.scale(3,3);
+  const equipped=v.kind!=='body',shield=equipped&&document.querySelector('#shield').checked;
+  if(shield)layer(ctx,'shield-rear',v.d);
+  if(equipped)layer(ctx,v.kind+'-rear',v.d);
+  layer(ctx,'body',v.d);
+  if(equipped)layer(ctx,v.kind+'-front',v.d);
+  if(shield)layer(ctx,'shield-front',v.d);
+  if(document.querySelector('#grips').checked){const f=catalog.frames.find(f=>f.phase===phase&&f.direction===catalog.directions[v.d]);ctx.fillStyle='#68eaff';ctx.fillRect(f.grip[0],f.grip[1],1,1);}
+ }
+ document.querySelector('#phase').textContent=(phase+1)+' / 4 · '+catalog.labels[phase];document.querySelector('#scrub').value=phase;
+}
+function setPlaying(value){playing=value;const b=document.querySelector('#play');b.textContent=playing?'Pause':'Play';b.setAttribute('aria-pressed',String(playing));}
+document.querySelector('#play').onclick=()=>setPlaying(!playing);
+document.querySelector('#step').onclick=()=>{setPlaying(false);phase=(phase+1)%4;elapsed=0;draw();};
+document.querySelector('#scrub').oninput=e=>{setPlaying(false);phase=Number(e.target.value);elapsed=0;draw();};
+document.querySelector('#shield').onchange=draw;document.querySelector('#grips').onchange=draw;
+function tick(now){const dt=last?Math.min(now-last,100):0;last=now;if(catalog&&playing){elapsed+=dt*Number(document.querySelector('#speed').value);if(elapsed>=catalog.durations[phase]){elapsed-=catalog.durations[phase];phase=(phase+1)%4;}}draw();requestAnimationFrame(tick);}requestAnimationFrame(tick);
+</script></html>

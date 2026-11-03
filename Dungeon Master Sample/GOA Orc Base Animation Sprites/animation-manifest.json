@@ -1,0 +1,1569 @@
+{
+  "character": "Male Orc base",
+  "status": "original_master_selected_new_drawn_attacks_in_progress",
+  "bodyOnly": true,
+  "equipmentSeparate": true,
+  "pixelCopyRequired": true,
+  "smoothing": false,
+  "appearanceVariantsPaused": true,
+  "masters": {
+    "original": {
+      "path": "references/original-game-orc.png",
+      "nativeCellSize": 64,
+      "sha256": "d8773134ed383455f087c722b3907d238259a8f449b329fd69edf5aa2cdd61aa"
+    },
+    "drawn": {
+      "path": "references/drawn-orc-draft.png",
+      "nativeCellSize": null,
+      "status": "generated_draft_not_registered",
+      "sha256": "f13b05fac1456adbc4a7306b1c2af95d024d86b15ff9b54b11c1e3d09cdebbca"
+    }
+  },
+  "actions": [
+    {
+      "id": "slash",
+      "name": "Slash",
+      "category": "Combat",
+      "duration": 0.97,
+      "events": {
+        "hit": [
+          0.3
+        ],
+        "trail": [
+          0.18,
+          0.42
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "thrust",
+      "name": "Thrust",
+      "category": "Combat",
+      "duration": 0.99,
+      "events": {
+        "hit": [
+          0.3
+        ],
+        "trail": [
+          0.2,
+          0.34
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "spear",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "chop",
+      "name": "Chop",
+      "category": "Combat",
+      "duration": 1.17,
+      "events": {
+        "hit": [
+          0.4
+        ],
+        "trail": [
+          0.28,
+          0.44
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "battle_axe",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "smash",
+      "name": "Smash",
+      "category": "Combat",
+      "duration": 1.15,
+      "events": {
+        "hit": [
+          0.38
+        ],
+        "trail": [
+          0.26,
+          0.42
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "mace",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "launch",
+      "name": "Launch",
+      "category": "Combat",
+      "duration": 1.35,
+      "events": {
+        "hit": [
+          0.5
+        ],
+        "trail": [
+          0.36,
+          0.54
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "warhammer",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "sweep",
+      "name": "Sweep",
+      "category": "Combat",
+      "duration": 1.15,
+      "events": {
+        "hit": [
+          0.4
+        ],
+        "trail": [
+          0.26,
+          0.44
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "halberd",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "stab",
+      "name": "Stab",
+      "category": "Combat",
+      "duration": 0.75,
+      "events": {
+        "hit": [
+          0.14,
+          0.3
+        ],
+        "trail": [
+          0.08,
+          0.32
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "dagger",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "punch",
+      "name": "Punch",
+      "category": "Combat",
+      "duration": 0.81,
+      "events": {
+        "hit": [
+          0.08,
+          0.25
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "claw",
+      "name": "Claw",
+      "category": "Combat",
+      "duration": 0.85,
+      "events": {
+        "hit": [
+          0.3
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "category": "Combat",
+      "duration": 0.8,
+      "events": {
+        "hit": [
+          0.27
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "throw",
+      "name": "Spear throw",
+      "category": "Ranged",
+      "duration": 1.0,
+      "events": {
+        "release": 0.38
+      },
+      "equipmentPoseReference": {
+        "weapon": "spear",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "cast",
+      "name": "Cast",
+      "category": "Combat",
+      "duration": 1.2,
+      "events": {
+        "release": 0.42
+      },
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "lunge",
+      "name": "Lunge",
+      "category": "Combat",
+      "duration": 1.2,
+      "events": {
+        "hit": [
+          0.36
+        ],
+        "trail": [
+          0.24,
+          0.4
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "heavyblow",
+      "name": "Heavyblow",
+      "category": "Combat",
+      "duration": 1.3,
+      "events": {
+        "hit": [
+          0.46
+        ],
+        "trail": [
+          0.34,
+          0.5
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "battle_axe",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "riposte",
+      "name": "Riposte",
+      "category": "Defense",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "cleave",
+      "name": "Cleave",
+      "category": "Combat",
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.44
+        ],
+        "trail": [
+          0.3,
+          0.66
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "battle_axe",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "skullcracker",
+      "name": "Skullcracker",
+      "category": "Combat",
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.44
+        ],
+        "trail": [
+          0.32,
+          0.48
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "mace",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "skewer",
+      "name": "Skewer",
+      "category": "Combat",
+      "duration": 1.2,
+      "events": {
+        "hit": [
+          0.38
+        ],
+        "trail": [
+          0.26,
+          0.42
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "spear",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "flurry",
+      "name": "Flurry",
+      "category": "Combat",
+      "duration": 0.95,
+      "events": {
+        "hit": [
+          0.12,
+          0.24,
+          0.36,
+          0.48
+        ],
+        "trail": [
+          0.06,
+          0.5
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "dagger",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "runebolt",
+      "name": "Runebolt",
+      "category": "Combat",
+      "duration": 1.25,
+      "events": {
+        "release": 0.44
+      },
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "firewave",
+      "name": "Firewave",
+      "category": "Combat",
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.42
+        ],
+        "trail": [
+          0.28,
+          0.66
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "frozenhamstring",
+      "name": "Frozenhamstring",
+      "category": "Combat",
+      "duration": 1.25,
+      "events": {
+        "hit": [
+          0.42
+        ],
+        "trail": [
+          0.3,
+          0.5
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "calllightning",
+      "name": "Calllightning",
+      "category": "Combat",
+      "duration": 1.45,
+      "events": {
+        "release": 0.86
+      },
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "bonespear",
+      "name": "Bonespear",
+      "category": "Combat",
+      "duration": 1.25,
+      "events": {
+        "release": 0.44
+      },
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "raiseskeleton",
+      "name": "Raiseskeleton",
+      "category": "Combat",
+      "duration": 1.85,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "staff",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "getup",
+      "name": "Getup",
+      "category": "Defense",
+      "duration": 1.75,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "block",
+      "name": "Block",
+      "category": "Defense",
+      "duration": 1.05,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "parry",
+      "name": "Parry",
+      "category": "Defense",
+      "duration": 0.95,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "dodge",
+      "name": "Dodge",
+      "category": "Defense",
+      "duration": 0.95,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_sway",
+      "name": "D Sway",
+      "category": "Death gestures",
+      "duration": 2.15,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_retch",
+      "name": "D Retch",
+      "category": "Death gestures",
+      "duration": 1.85,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_choke",
+      "name": "D Choke",
+      "category": "Death gestures",
+      "duration": 1.75,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_clutch",
+      "name": "D Clutch",
+      "category": "Death gestures",
+      "duration": 1.25,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_shiver",
+      "name": "D Shiver",
+      "category": "Death gestures",
+      "duration": 2.15,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_fever",
+      "name": "D Fever",
+      "category": "Death gestures",
+      "duration": 2.05,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_flail",
+      "name": "D Flail",
+      "category": "Death gestures",
+      "duration": 1.75,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_jolt",
+      "name": "D Jolt",
+      "category": "Death gestures",
+      "duration": 0.95,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_twitch",
+      "name": "D Twitch",
+      "category": "Death gestures",
+      "duration": 1.25,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_rattle",
+      "name": "D Rattle",
+      "category": "Death gestures",
+      "duration": 1.05,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_melt",
+      "name": "D Melt",
+      "category": "Death gestures",
+      "duration": 1.25,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "d_sit",
+      "name": "D Sit",
+      "category": "Death gestures",
+      "duration": 1.85,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "mine",
+      "name": "Mine",
+      "category": "Work",
+      "duration": 0.9,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "pickaxe",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "woodchop",
+      "name": "Woodchop",
+      "category": "Work",
+      "duration": 0.9,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "battle_axe",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "smith",
+      "name": "Smith",
+      "category": "Work",
+      "duration": 0.95,
+      "events": {
+        "hit": [
+          0.4
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "hammer",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "build",
+      "name": "Build",
+      "category": "Work",
+      "duration": 0.9,
+      "events": {
+        "hit": [
+          0.35
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "hammer",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "category": "Work",
+      "duration": 4.35,
+      "events": {
+        "release": 0.6
+      },
+      "equipmentPoseReference": {
+        "weapon": "fishing_rod",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "spearfish",
+      "name": "Spearfish",
+      "category": "Work",
+      "duration": 2.55,
+      "events": {
+        "hit": [
+          0.58
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "harpoon",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "netfish",
+      "name": "Netfish",
+      "category": "Work",
+      "duration": 4.55,
+      "events": {
+        "release": 0.62
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "pick",
+      "name": "Pick",
+      "category": "Work",
+      "duration": 1.6,
+      "events": {
+        "hit": [
+          0.6
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "gather",
+      "name": "Gather",
+      "category": "Work",
+      "duration": 1.85,
+      "events": {
+        "hit": [
+          0.75
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "till",
+      "name": "Till",
+      "category": "Work",
+      "duration": 1.6,
+      "events": {
+        "hit": [
+          0.5,
+          0.95
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "spade",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "plant",
+      "name": "Plant",
+      "category": "Work",
+      "duration": 1.95,
+      "events": {
+        "hit": [
+          0.6,
+          1.05
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "harvest",
+      "name": "Harvest",
+      "category": "Work",
+      "duration": 1.65,
+      "events": {
+        "hit": [
+          0.55
+        ]
+      },
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "climb",
+      "name": "Climb",
+      "category": "Work",
+      "duration": 0.95,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "lift",
+      "name": "Lift",
+      "category": "Work",
+      "duration": 1.25,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "carry",
+      "name": "Carry",
+      "category": "Work",
+      "duration": 0.85,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "hold",
+      "name": "Hold",
+      "category": "Work",
+      "duration": 1.05,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.fall",
+      "name": "Fall",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.crumple",
+      "name": "Crumple",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.spin",
+      "name": "Spin",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.shot",
+      "name": "Shot",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.flying",
+      "name": "Flying",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.hammer",
+      "name": "Hammer",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.throw",
+      "name": "Throw",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.stiff",
+      "name": "Stiff",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.liedown",
+      "name": "Liedown",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.melt",
+      "name": "Melt",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.heap",
+      "name": "Heap",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.ko",
+      "name": "Ko",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.flinch",
+      "name": "Flinch",
+      "category": "Physics reactions",
+      "duration": 0.7,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.armoff",
+      "name": "Armoff",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.legoff",
+      "name": "Legoff",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.armcut",
+      "name": "Armcut",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "reaction.legcut",
+      "name": "Legcut",
+      "category": "Physics reactions",
+      "duration": 1.4,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.bleed",
+      "name": "Bleed death",
+      "category": "Death sequences",
+      "duration": 3.55,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_sway",
+        "reaction.crumple"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.poison",
+      "name": "Poison death",
+      "category": "Death sequences",
+      "duration": 3.25,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_retch",
+        "reaction.crumple"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.starve",
+      "name": "Starve death",
+      "category": "Death sequences",
+      "duration": 3.55,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_sway",
+        "reaction.crumple"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.cold",
+      "name": "Cold death",
+      "category": "Death sequences",
+      "duration": 3.55,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_shiver",
+        "reaction.stiff"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.fever",
+      "name": "Fever death",
+      "category": "Death sequences",
+      "duration": 3.4499999999999997,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_fever",
+        "reaction.crumple"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.burn",
+      "name": "Burn death",
+      "category": "Death sequences",
+      "duration": 3.15,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_flail",
+        "reaction.fall"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.lightning",
+      "name": "Lightning death",
+      "category": "Death sequences",
+      "duration": 2.3499999999999996,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_jolt",
+        "reaction.stiff"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.heart",
+      "name": "Heart death",
+      "category": "Death sequences",
+      "duration": 2.65,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_clutch",
+        "reaction.fall"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.choke",
+      "name": "Choke death",
+      "category": "Death sequences",
+      "duration": 3.15,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_choke",
+        "reaction.crumple"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.brain",
+      "name": "Brain death",
+      "category": "Death sequences",
+      "duration": 2.65,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_twitch",
+        "reaction.crumple"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.goo",
+      "name": "Goo death",
+      "category": "Death sequences",
+      "duration": 2.65,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_melt",
+        "reaction.melt"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.holy",
+      "name": "Holy death",
+      "category": "Death sequences",
+      "duration": 2.65,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_melt",
+        "reaction.melt"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.crumble",
+      "name": "Crumble death",
+      "category": "Death sequences",
+      "duration": 2.45,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_rattle",
+        "reaction.heap"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "death.oldage",
+      "name": "Oldage death",
+      "category": "Death sequences",
+      "duration": 3.25,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": [
+        "d_sit",
+        "reaction.liedown"
+      ],
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "idle",
+      "name": "Idle",
+      "category": "Sprite movement",
+      "duration": 1.2,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "source_frames_available"
+    },
+    {
+      "id": "walk",
+      "name": "Walk",
+      "category": "Sprite movement",
+      "duration": 0.8,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "none",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "source_frames_available"
+    },
+    {
+      "id": "idle_armed",
+      "name": "Idle Armed",
+      "category": "Sprite movement",
+      "duration": 1.2,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "walk_armed",
+      "name": "Walk Armed",
+      "category": "Sprite movement",
+      "duration": 0.8,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": true
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "sprite_attack",
+      "name": "Sprite Attack",
+      "category": "Sprite movement",
+      "duration": 0.9,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "sword",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "bow_ready",
+      "name": "Bow ready",
+      "category": "Ranged",
+      "duration": 1.75,
+      "events": {},
+      "equipmentPoseReference": {
+        "weapon": "bow",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "bow_shot",
+      "name": "Bow draw and release",
+      "category": "Ranged",
+      "duration": 1.75,
+      "events": {
+        "release": 0.9
+      },
+      "equipmentPoseReference": {
+        "weapon": "bow",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "throw_axe",
+      "name": "Axe throw",
+      "category": "Ranged",
+      "duration": 1.0,
+      "events": {
+        "release": 0.38
+      },
+      "equipmentPoseReference": {
+        "weapon": "hand_axe",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    },
+    {
+      "id": "throw_dagger",
+      "name": "Dagger throw",
+      "category": "Ranged",
+      "duration": 1.0,
+      "events": {
+        "release": 0.38
+      },
+      "equipmentPoseReference": {
+        "weapon": "dagger",
+        "shield": false
+      },
+      "sequence": null,
+      "status": "body_frame_art_pending"
+    }
+  ],
+  "kiExtension": {
+    "status": "art_review_available_not_integrated",
+    "path": "ki-movement-v1/index.html",
+    "manifest": "ki-movement-v1/manifest.json",
+    "reusedPoseRecipes": 5,
+    "newBodyCells": 80,
+    "separateEffectCells": 12,
+    "original64FramesUnchanged": true
+  },
+  "selectedMaster": "original",
+  "drawnAttackReview": {
+    "path": "new-drawn-attacks/",
+    "status": "draft_anatomy_and_native_pixel_cleanup_pending",
+    "frontKickReference": "new-drawn-attacks/references/user-approved-front-kick.png",
+    "requiredActions": [
+      "punch_left",
+      "punch_right",
+      "kick_left",
+      "kick_right"
+    ],
+    "sideNaming": "anatomical character side, not screen side",
+    "assembledLibraryStatus": "rejected_as_final_art"
+  },
+  "curatedAttackSet": {
+    "path": "curated-attacks-v1/index.html",
+    "atlas": "curated-attacks-v1/orc-attacks.png",
+    "manifest": "curated-attacks-v1/manifest.json",
+    "status": "review_not_integrated",
+    "actions": [
+      "punch_right",
+      "punch_left",
+      "kick_right",
+      "kick_left"
+    ],
+    "frameCells": 64
+  },
+  "artDirection": "2D pixel sprites; 3D experiment declined",
+  "specialMovesExtension": {
+    "status": "2d_drawing_review_not_game_integrated",
+    "path": "special-moves-v1/index.html",
+    "manifest": "special-moves-v1/manifest.json",
+    "actions": [
+      "overhead_cast",
+      "ground_slam",
+      "dash_strike",
+      "stagger"
+    ],
+    "frameCells": 64,
+    "original64FramesUnchanged": true,
+    "overheadCastRevision": "original four-phase cast fully restored; both redraw attempts rejected"
+  }
+}

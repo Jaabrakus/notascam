@@ -1,0 +1,307 @@
+{
+ "sheet": "Orc",
+ "zones": [
+  "none",
+  "skull",
+  "face",
+  "ears",
+  "horns",
+  "hair",
+  "neck",
+  "chest",
+  "belly",
+  "hips",
+  "shoulder R",
+  "upper arm R",
+  "forearm R",
+  "hand R",
+  "shoulder L",
+  "upper arm L",
+  "forearm L",
+  "hand L",
+  "thigh R",
+  "shin R",
+  "foot R",
+  "thigh L",
+  "shin L",
+  "foot L",
+  "tail",
+  "wings"
+ ],
+ "colours": [
+  [
+   0,
+   0,
+   0
+  ],
+  [
+   214,
+   214,
+   214
+  ],
+  [
+   255,
+   190,
+   150
+  ],
+  [
+   250,
+   120,
+   200
+  ],
+  [
+   170,
+   90,
+   40
+  ],
+  [
+   250,
+   230,
+   90
+  ],
+  [
+   150,
+   150,
+   255
+  ],
+  [
+   90,
+   200,
+   255
+  ],
+  [
+   40,
+   140,
+   220
+  ],
+  [
+   30,
+   70,
+   160
+  ],
+  [
+   255,
+   120,
+   60
+  ],
+  [
+   240,
+   60,
+   60
+  ],
+  [
+   190,
+   20,
+   40
+  ],
+  [
+   120,
+   0,
+   30
+  ],
+  [
+   120,
+   255,
+   120
+  ],
+  [
+   40,
+   210,
+   90
+  ],
+  [
+   20,
+   150,
+   60
+  ],
+  [
+   0,
+   90,
+   40
+  ],
+  [
+   255,
+   230,
+   0
+  ],
+  [
+   255,
+   170,
+   0
+  ],
+  [
+   200,
+   110,
+   0
+  ],
+  [
+   200,
+   140,
+   255
+  ],
+  [
+   150,
+   80,
+   230
+  ],
+  [
+   90,
+   30,
+   160
+  ],
+  [
+   0,
+   230,
+   210
+  ],
+  [
+   255,
+   255,
+   255
+  ]
+ ],
+ "layout": "indexed 256x192: columns S,N,E,W; rows = walk frames 0,1,2; 64 px cells",
+ "cells": {
+  "S0": {
+   "neck": 25,
+   "brow": 14,
+   "skull_top": 8,
+   "chest_end": 38,
+   "waist": 46,
+   "crotch": 49,
+   "notes": []
+  },
+  "S1": {
+   "neck": 24,
+   "brow": 13,
+   "skull_top": 7,
+   "chest_end": 36,
+   "waist": 44,
+   "crotch": 47,
+   "notes": [
+    "island: 1 px of chest inside shoulder R -> shoulder R"
+   ]
+  },
+  "S2": {
+   "neck": 26,
+   "brow": 16,
+   "skull_top": 9,
+   "chest_end": 38,
+   "waist": 45,
+   "crotch": 47,
+   "notes": [
+    "island: 2 px of belly inside forearm L -> forearm L"
+   ]
+  },
+  "N0": {
+   "neck": 25,
+   "brow": 14,
+   "skull_top": 8,
+   "chest_end": 38,
+   "waist": 46,
+   "crotch": 49,
+   "notes": []
+  },
+  "N1": {
+   "neck": 24,
+   "brow": 13,
+   "skull_top": 7,
+   "chest_end": 36,
+   "waist": 44,
+   "crotch": 47,
+   "notes": []
+  },
+  "N2": {
+   "neck": 26,
+   "brow": 15,
+   "skull_top": 9,
+   "chest_end": 38,
+   "waist": 45,
+   "crotch": 46,
+   "notes": []
+  },
+  "E0": {
+   "neck": 25,
+   "brow": 11,
+   "skull_top": 8,
+   "chest_end": 38,
+   "waist": 46,
+   "crotch": 46,
+   "notes": [
+    "legs swapped: near leg (front leg) is R",
+    "near leg: front leg",
+    "arm R vs torso re-traced: 10 px back to the torso, 0 px to the arm"
+   ]
+  },
+  "E1": {
+   "neck": 25,
+   "brow": 12,
+   "skull_top": 8,
+   "chest_end": 37,
+   "waist": 45,
+   "crotch": 49,
+   "notes": [
+    "near leg: front leg",
+    "arm R vs torso re-traced: 4 px back to the torso, 9 px to the arm",
+    "arm L vs torso re-traced: 1 px back to the torso, 11 px to the arm"
+   ]
+  },
+  "E2": {
+   "neck": 26,
+   "brow": 17,
+   "skull_top": 9,
+   "chest_end": 38,
+   "waist": 46,
+   "crotch": 47,
+   "notes": [
+    "legs swapped: near leg (front leg) is R",
+    "near leg: front leg",
+    "arm R vs torso re-traced: 9 px back to the torso, 9 px to the arm",
+    "arm L vs torso re-traced: 7 px back to the torso, 3 px to the arm",
+    "arm R: hand seed re-found at [44, 45]",
+    "arm L: hand seed re-found at [20, 49]"
+   ]
+  },
+  "W0": {
+   "neck": 25,
+   "brow": 11,
+   "skull_top": 8,
+   "chest_end": 38,
+   "waist": 46,
+   "crotch": 48,
+   "notes": [
+    "legs swapped: near leg (front leg) is L",
+    "near leg: front leg",
+    "arm L vs torso re-traced: 14 px back to the torso, 0 px to the arm"
+   ]
+  },
+  "W1": {
+   "neck": 25,
+   "brow": 16,
+   "skull_top": 8,
+   "chest_end": 37,
+   "waist": 45,
+   "crotch": 47,
+   "notes": [
+    "torso island 1 px -> limb zone 2",
+    "near leg: front leg",
+    "arm R vs torso re-traced: 7 px back to the torso, 7 px to the arm",
+    "arm L vs torso re-traced: 6 px back to the torso, 15 px to the arm"
+   ]
+  },
+  "W2": {
+   "neck": 26,
+   "brow": 17,
+   "skull_top": 9,
+   "chest_end": 38,
+   "waist": 46,
+   "crotch": 47,
+   "notes": [
+    "legs swapped: near leg (front leg) is L",
+    "near leg: front leg",
+    "arm R vs torso re-traced: 7 px back to the torso, 1 px to the arm",
+    "arm L vs torso re-traced: 8 px back to the torso, 8 px to the arm"
+   ]
+  }
+ }
+}

@@ -1,0 +1,376 @@
+{
+  "id": "elf",
+  "label": "Elf \u00b7 Male",
+  "race": "elf",
+  "sex": "male",
+  "appearance": "Base",
+  "template": "standard-male",
+  "build": "standard",
+  "displayScale": 1.0,
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameSize": 128,
+  "bodySpace": 64,
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "feet": [
+    64,
+    93
+  ],
+  "body": "Characters/elf/Shared_Body_64px.png",
+  "head": "Characters/elf/Original_Head_Layer_128px.png",
+  "features": "Characters/elf/Features_Behind_Body_128px.png",
+  "composite": "Characters/elf/Standardized_Character_128px.png",
+  "markings": "Characters/elf/Hybrid_Identity_Marks_64px.png",
+  "placements": [
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            32,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            246,
+            185,
+            143
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 716
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            30,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            248,
+            187,
+            146
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 806
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            30,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            244,
+            173,
+            132
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 665
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            34,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            244,
+            172,
+            127
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 656
+      }
+    ],
+    [
+      {
+        "sourceFrame": 1,
+        "direction": "South",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            31,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            241,
+            165,
+            123
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 672
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "North",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            30,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            242,
+            170,
+            126
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 740
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "East",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            34,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            241,
+            166,
+            124
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 652
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "West",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            30,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            241,
+            169,
+            128
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 654
+      }
+    ],
+    [
+      {
+        "sourceFrame": 2,
+        "direction": "South",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            31,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            239,
+            166,
+            126
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 690
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "North",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            30,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            243,
+            173,
+            132
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 761
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "East",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            34,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            241,
+            168,
+            126
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 658
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "West",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            33,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            240,
+            168,
+            128
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 657
+      }
+    ]
+  ],
+  "donor": "Characters/elf/Original_Donor_Atlas.png",
+  "donorSha256": "3029889927d648ea09511c4a146469117c635dd5c5e7e40a4584eca2f79b1b7d",
+  "headMethod": "Exact extracted RGBA pixels, integer translation only. Head size, color and features are unchanged.",
+  "bodyPalette": {
+    "mid": [
+      252,
+      192,
+      149
+    ],
+    "method": "One stable body palette from donor torso, hands and feet; identity markings excluded.",
+    "sampleCount": 573
+  },
+  "hybridDetails": {
+    "appearance": "Base",
+    "markPixels": 0,
+    "method": "Original donor identity markings attached by body segment and clipped to the fixed skin mask."
+  },
+  "status": "Standardized body / original-head assembly draft"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "bash",
+  "label": "Bash",
+  "category": "Combat",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.15,
+      {
+        "Lu": -2.4,
+        "Ll": 0.3,
+        "lean": -0.08,
+        "back": 0.2,
+        "crouch": 0.18
+      }
+    ],
+    [
+      0.27,
+      {
+        "Lu": 0,
+        "Ll": 0,
+        "lean": 0.22,
+        "lunge": 0.55,
+        "step": 0.85,
+        "back": 0.15,
+        "crouch": 0.24
+      }
+    ],
+    [
+      0.55
+    ]
+  ],
+  "duration": 0.8,
+  "events": {
+    "hit": [
+      0.27
+    ]
+  },
+  "source": "art/gear3d/skills.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.15,
+        {
+          "Lu": -2.4,
+          "Ll": 0.3,
+          "lean": -0.08,
+          "back": 0.2,
+          "crouch": 0.18
+        }
+      ],
+      [
+        0.27,
+        {
+          "Lu": 0,
+          "Ll": 0,
+          "lean": 0.22,
+          "lunge": 0.55,
+          "step": 0.85,
+          "back": 0.15,
+          "crouch": 0.24
+        }
+      ],
+      [
+        0.55
+      ]
+    ],
+    "hit": [
+      0.27
+    ],
+    "shield": true,
+    "death": "flying",
+    "knock": true
+  },
+  "status": "source-keyed clip; mapping preview"
+}

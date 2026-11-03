@@ -1,0 +1,3335 @@
+{
+  "schemaVersion": 1,
+  "summary": {
+    "families": 29,
+    "appearances": 175,
+    "approvedBaselines": 2,
+    "existingReviewRigs": 1,
+    "verifiedHybridInheritance": 0
+  },
+  "families": [
+    {
+      "id": "Male/Demon",
+      "sex": "Male",
+      "race": "Demon",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Demon/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Demon/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Demon/base/sprites.png",
+          "sha256": "c67579b4baf306c8d89bdcf7235dd923037c56d45019a9b5aa2dd601336fc5ea",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/DemonFly",
+      "sex": "Male",
+      "race": "DemonFly",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/DemonFly/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/DemonFly/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/DemonFly/base/sprites.png",
+          "sha256": "c8d28bbeaa75603da59a00b09b049fad6100e485a65e4b31b04ae0250ed4d5d2",
+          "size": [
+            256,
+            128
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/DevourerZombie",
+      "sex": "Male",
+      "race": "DevourerZombie",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/DevourerZombie/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/DevourerZombie/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/DevourerZombie/base/sprites.png",
+          "sha256": "e802f48312ec80be9c2fdc475b85fb16460d9c4f3eac3097f53a5d51b226166b",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Dwarves",
+      "sex": "Male",
+      "race": "Dwarves",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/Dwarves.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Dwarves/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Dwarves/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Dwarves/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Ashen/sprites.png",
+          "sha256": "c795b202b86cf96e1590a410e7f06c62c923f2be59871d9c67fb98d5706991a1",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 1957,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Hellblooded/sprites.png",
+          "sha256": "37f9c150d35d66ba6782edc4b83bb2d9dd594acf35a46c554f7a7551e9b9454b",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 3173,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Marked/sprites.png",
+          "sha256": "450dcafd4ffeef3d1f28c975bd70b5380b0a97de4d49ad4efa775fc5dc034e34",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 2021,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Possessed1/sprites.png",
+          "sha256": "034b9ddab014152f0d5574f36bf98506bbd99ee64e88225d233456394cf874b0",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 1568,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Possessed2/sprites.png",
+          "sha256": "69236675815b9a31af50aec1b4568c28d8f14cc74b062ee0c269b9bd4f235842",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 1785,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Werewolf/sprites.png",
+          "sha256": "92e29a5ad515f520862e76cf1cecaa3977c6fdd1fc73c799c9e34e60802e9e06",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 4212,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/Zombie/sprites.png",
+          "sha256": "d8185a0f7836b40ec7fd5e19ccd6bad28fe13745778fb582d239e6764f93a04b",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 2456,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Dwarves/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Dwarves/base/sprites.png",
+          "sha256": "901322a72fde12837f720499ba686b3c370558e8e0488d1a3c016cc3eeb6f016",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Elf",
+      "sex": "Male",
+      "race": "Elf",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+      "rig": {
+        "package": "Dungeon Master Sample/GOA Reusable Animation Rig v1",
+        "status": "approved_baseline",
+        "statusEvidence": "Dungeon Master Sample/GOA Reusable Animation Rig v1/README.md",
+        "approvalScope": "Saved visual baseline; not approval of every clip or live integration.",
+        "profile": "Dungeon Master Sample/GOA Reusable Animation Rig v1/profiles/elf-male.json",
+        "viewOrder": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "partCounts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "missingFiles": [],
+        "hashes": {
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/profiles/elf-male.json": "ab9c3e5535540fdaa7e40133f4ebe4bfe038cf496f1a990748f998ce289a67e4",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/source/engine.js": "e12653fa850e74d5f872809095afb965042924d6fe692845d2b7f170023b4fc2",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/README.md": "0f14e439e65a67a6bc2e9aeae981211e599e2aedf246ab1210afa3f67ea25e17",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-head.png": "a517e8d21b5c81b1c207cce798a379ff0c6312da6eba06480a0517e5febf27ea",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-leftFoot.png": "e2ec20a5c8880328f975ea192641633becfdfc9cb8e9295580d2b9c8b00a6319",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-leftForearm.png": "4efec56f543d489ebddda8f9690a17fc3881d253dde028bb1cd640605ef1b7d1",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-leftHand.png": "ca1e44e4e996310b774b4f79d9b1e73443df615b18e457bebc1b874459637e5a",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-leftShin.png": "f6e8f884619b79f7904394801568e0f5635990114be00793fcd6104b4a5e44de",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-leftThigh.png": "37ce004f98da3df392199d58a3c1a8938c63512c932f318e4522b0deed950436",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-leftUpperArm.png": "67c6115e22444465f19855f1040faf3587b60ffa86cbbd5d84b2d8f4944c255e",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-pelvis.png": "d3b46801b39834e945565a51a403a80a64f4c13bf7f7f509505e0b7066fdc93f",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-rightFoot.png": "cdbaf877c800a281956059a60fbcd3d752310056635b900e6b41145aeacd3471",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-rightForearm.png": "8afb608b463b4170a8e7f78cf43ba0dc5fc8d1ae3486424727626ae335fce6d0",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-rightHand.png": "b37bcd232591d19d18840c385298a3e2c6bf22a92a10ca34e817093d48b38c92",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-rightShin.png": "247415de371356ac226a4cdebda574d6eb855411140ea5731b84f0c76602d549",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-rightThigh.png": "f26bdc559464a8f3c9a65af62753f7c902ecbe967cb991184ab597eb7b251caa",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-rightUpperArm.png": "38414bb09fc888a2d3aa7d2b5e31c40bfdab36d4d9cfea66ebb2119f80c82a2b",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-torso.png": "ddc720aed08f0b7b194900af5f24454d1e51eea70d2390caff4d55fdfdb3b5f9",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-walk-0-refined-torso.png": "50f72bf3842a009eec66e4f368d0d170a1305bfdfd1d8c7dfd621e760852cfb7",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-walk-0-render-head.png": "a517e8d21b5c81b1c207cce798a379ff0c6312da6eba06480a0517e5febf27ea",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-walk-1-refined-torso.png": "0f8ac4b6c4a466350f819510439778d46654504ec6f7e3b2355a6f6224541d5f",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-walk-1-render-head.png": "400d1961b0516fd174d1c919acb6ca4cbfb8dd123b079d8b5241b272f6bf2b7f",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-walk-2-refined-torso.png": "b753e30858991fb5801d251bb59811fa367ae807da22ca8626af474aeda3a810",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/0-walk-2-render-head.png": "0e563173b3cbd0a990842ad3ec1e2adb70a9143b8da9acecf3f841b1e051d667",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-head.png": "3e7ae3a25bfb3b2ddf7287ab7613885ad560cfb581d5687aa9f7e7d9e97a5e10",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-leftFoot.png": "13c4248db6c5cd27d489bb0bfe68b33443e47e423350149c8e868cb3e9dc8931",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-leftForearm.png": "7d1c6596232ef1ddbae6967e18f264c13928cee67f94fb6800b86671446f838e",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-leftHand.png": "7f44925adb82d39b680e97670182c0dd353e9930268709a839a477aa577d8119",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-leftShin.png": "cfaa0f87a31ae93d8451f98381d84fd4ed63d564eb7d4f85f494871a5fb1a26d",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-leftThigh.png": "8ace1b4e5098bde8fdf13b37475f7b2d9de165ba9ee1535faabeaeaac67d37b6",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-leftUpperArm.png": "ee2f284354d932f4e4cfc3d54c1f7ae55a1bdd1f1698424e44a6de31a3fe1bcc",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-pelvis.png": "222cd19b92cf80b7b4b1fa628afe0d9436f31b5f2485b96b0dc5c255100bd749",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-rightFoot.png": "48ea3a01526dd4a2d940747f00b473ae7d84aa3103d40ec5fb093c92a11b5ab6",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-rightForearm.png": "9239f9d81ad848f88169a59eb899da076e9caa36ab5b8fba4c29f257fb8a058c",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-rightHand.png": "cb6e293a17534076bfde548511cf13215ba653c2a67c807f20d66ab76d8e0508",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-rightShin.png": "f5454454c600ac9aaacd26dac0eefb55adfe4df78cb384d99828f61a19a3ebfc",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-rightThigh.png": "72f07d7afb489d20937683a3a13a0b4a24a465a542c356c7e9c0ba0cebb5b5d5",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-rightUpperArm.png": "62a5f2300fe8265585daf6578b231e5d4937d46197674e407758063a4360d277",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-torso.png": "55f9b1f93b11d43319efdb22bb68f596b38f6cba01be03280f16caed9f2079db",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-walk-0-refined-torso.png": "40b25ffcd053faf00e5fcc70142b35abf50d63f2d14bf023aecf15530b4d9da8",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-walk-0-render-head.png": "3e7ae3a25bfb3b2ddf7287ab7613885ad560cfb581d5687aa9f7e7d9e97a5e10",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-walk-1-refined-torso.png": "e8fe9c985bf9723311ba36924073e757b83003c9b91ddfccc2b5f3cd8f5378df",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-walk-1-render-head.png": "cac8d591fa5d039eaf82c94e628361c5522a830781bd79bd891f7e6635be34b7",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-walk-2-refined-torso.png": "fa6943a1f0cacbc700b57abfd68a34d49d3ab792cb21c13853aff0c609481399",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/1-walk-2-render-head.png": "0d5d2245c9961705fe05df86d02b94c8492187af7c9b6d47a93b3211a238c444",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-head.png": "a2d8fe8fb58ce9c17c63cf02f3387426fb590354dd362bfcd1945b44026479d4",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-leftFoot.png": "6d67cdc936308581c8adc4113cda04e9374dad2fb5ef50060f35511b59f061a0",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-leftForearm.png": "aee899c2f0e74d7734d5649fd1ee98f0332e348825ef6146cbd225e52ce88a8b",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-leftHand.png": "0d2437c4bbbab4feb6bf1ca765454e88eeba14c442cedeafcd96c35362bb41f9",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-leftShin.png": "24cd5e5d25b9b562e12ede3ed23a274a475c64dec31b3c6811a330d7caa809ee",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-leftThigh.png": "ceb1cfa13393c644bcce474adb32eec1eeb9f58e6f38f7632419e576ad750569",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-leftUpperArm.png": "a1a4e2218c538570dccd9c286190e83d25c23fe92694544be8dd2fc4af02d122",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-pelvis.png": "2c4164b26be05f36eb2b79cb60188fa1cad36a2d32e0d6720a1d3c8a3a55815e",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-rightFoot.png": "7bb5a41625b06f25e6e76f643896eee36981a83a641194a0945ef364445ae902",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-rightForearm.png": "7aefd692bb0d23de0845c2cfbc166fbbb64ef0a02b1b4f4a648922a9e0bac5d9",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-rightHand.png": "5a3e87075c0605aad2f5bc06a07cc527d059e3e98d192994ff0276af27f09c2b",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-rightShin.png": "7087aed69393a1dcfd01ce2f34d5b17cd06004f9b41830a1f555825213812c6a",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-rightThigh.png": "b6a691d1635ee38a2d093fcab1f596f27b0ac05b7b7d7d4d46e3b25f49b80392",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-rightUpperArm.png": "1e2deb406418ab45c8273b092b5774c45626bebf01d2b5c16420156ebca28c65",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-torso.png": "43b634d6f34a572787eae778cfb2c4ffc8145e744e1ace28ea4790d4f71f334e",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-walk-0-refined-torso.png": "031af775c5b50802fd91e8f98a533676ab6ea60d93558e40c51021761eb608e4",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-walk-0-render-head.png": "a2d8fe8fb58ce9c17c63cf02f3387426fb590354dd362bfcd1945b44026479d4",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-walk-1-refined-torso.png": "66fc02d0e4c150412e896913954891b9983339967c11386d587c6f243b182e22",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-walk-1-render-head.png": "4e8c7e6327f683585a13e5ece0a64b51dff4bf3c1e972b0b1351bf87a411f903",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-walk-2-refined-torso.png": "56163620d0cff241262424ba2be4a544415e11f887c3bab422d4dbbe9703f3ba",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/2-walk-2-render-head.png": "b3233265ef37eea0a2b80e051329dff595c0e77d46981156c77eacfe1af01a32",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-head.png": "ed85f6599ac536ce8ea3fbdde68834dc8a1cbe50eab47531469e911aef01b0ca",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-leftFoot.png": "b14412230f9a1e47711e601f0e252353c60b4be130a4fe313efa4193a3922930",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-leftForearm.png": "4e73d621e536be4b6c442944a251061ccfc134f314e21afbf67c4de0aff71c94",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-leftHand.png": "66e7c1de5f13a35a6dd1d53117eeed06ea622d290268f980c13890a760369799",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-leftShin.png": "b335cd29b8281c34ad9496a7532209422422167dab219809bbecd95c28880399",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-leftThigh.png": "280740c6e95bd454ff272cf624391a3ecb12dd036790ade209c6199c2e4f9e01",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-leftUpperArm.png": "b1440cedee6f6c619cc6bf1469d371e5ca88530a64c5e6a4e2f1811d3a8dc1ee",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-pelvis.png": "3e39f9b9515fd12806d61e8b7c5ae93f5b296a37ef76222ce7ab9d141fbeabef",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-rightFoot.png": "716975eddb4e0fb06588d5ac1d35b6d36a3cf3b0a249f685ce7c72bd9ad66c06",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-rightForearm.png": "fa9fe8949c75993ad6b62db2972a85298951f6e2f728e38da990ef52426a59fb",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-rightHand.png": "9a41a418269c9f57524b36c2bff7c4f6805308219135b38eb61570a63516636e",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-rightShin.png": "a26d8897f3d88e8599051216c62617501a4213fbe6959c30350e64ac8bbb48df",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-rightThigh.png": "641a99d245eedf5b4955b04884cb3cd4dfc728de4f4eb07b700f11dd3cbd84fb",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-rightUpperArm.png": "c3b492b94a339a04896d7d1996c6f1344251a9bf56630fbc6ded9c06316f7a98",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-torso.png": "d85aca8a57a362d06f6895f094acc3e90792cb3db1a31c31d41072ceae7c5fb6",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-walk-0-refined-torso.png": "4e8832d31b7131377f439244d527d6fd5569845041eff437893cc34ab5e99abb",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-walk-0-render-head.png": "ed85f6599ac536ce8ea3fbdde68834dc8a1cbe50eab47531469e911aef01b0ca",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-walk-1-refined-torso.png": "eb764c4c77c4e7c40e92d7b717f834c68fe7b5fe7357fda0584093a18df216a7",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-walk-1-render-head.png": "5bc2bfbfbb556c11725f1979f99405d3b6285d942f9e25781beaf3494e1ceee9",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-walk-2-refined-torso.png": "e17dbd5e1820a61356eb2ee93bf9921060f2250f13fcc4a4bb986d709d08a38c",
+          "Dungeon Master Sample/GOA Reusable Animation Rig v1/preview/assets/3-walk-2-render-head.png": "97af7f371547e317b8d85cf2b1a33046b2d92c50e7a61f36b0d292339d432ffd"
+        }
+      },
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Elf/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Ashen/sprites.png",
+          "sha256": "0c32b4984bbcb150f7cc36a67369a9398b4d108846b62136a5a7c08d09ad94a2",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 2811,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Hellblooded/sprites.png",
+          "sha256": "ab40acecb4458bf04761973c2bab7b1a60ca09200a5a6e01b7b8cd50d2dcfa29",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 6788,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Marked/sprites.png",
+          "sha256": "61f2d7a5e742923b30c6ff00e1c8d27daba87cabf7b03bd31ac16fa09c3e8a41",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 2162,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Possessed1/sprites.png",
+          "sha256": "294a8b509f314f5f5f1fd469367e0f815bbfa672d4110de6c1207ee5bc60ab57",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 2599,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Possessed2/sprites.png",
+          "sha256": "a1b2e63d5fc44987e1337f845b8afb0b01adb52eb9c2970b1adb97ce5757de17",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 1979,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Werewolf/sprites.png",
+          "sha256": "b0305d34d27c73656114e912e29f7ad09cbbbbf8a0fb40220174da2ab0d20a50",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 6547,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/Zombie/sprites.png",
+          "sha256": "6798f90a532c56e6000add101afc19af0de49c4aba5b5d31ecff84491e1f21ea",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+            "differingVisiblePixels": 1949,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Elf/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Elf/base/sprites.png",
+          "sha256": "58ecb37b8fbdb5966b0cfe4b35b91ab6e146ba6c42b3da09f3d6b678defe7e5f",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/FrogMan",
+      "sex": "Male",
+      "race": "FrogMan",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/FrogMan.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/FrogMan/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/FrogMan/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/FrogMan/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Ashen/sprites.png",
+          "sha256": "58e5fdaf3f253eca3e8c1f6449d6d689b4427201829a1c35af1f5c7031776c59",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 2995,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Hellblooded/sprites.png",
+          "sha256": "5db62a3cebf9c89129e9832a2ba251f33c4d60502872d64ebcf24859e853616c",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 6698,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Marked/sprites.png",
+          "sha256": "bfdc20d266c1e7259167fe4867b351cc79418ab402d63f0a5b3cf1a890852f3f",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 2994,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Possessed1/sprites.png",
+          "sha256": "24b2742b48598eab688fc59b528cf4f2d5ced8805b53024f5c47047bdbfebc8e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 1958,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Possessed2/sprites.png",
+          "sha256": "0dbe7db2390a4e6092908ba18e7b35f04c34180e5a17b1d4ca797e9517935adc",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 2326,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Werewolf/sprites.png",
+          "sha256": "9121512eda9c7aa83326e3507dfb17cb0edc137a9bd6c0621a5a1255454f9536",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 6342,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/Zombie/sprites.png",
+          "sha256": "5e119c5b17672dc676026967257e2abf43e8dd536f7d27db476e6944dbfad400",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 2687,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/FrogMan/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/FrogMan/base/sprites.png",
+          "sha256": "7ed545829dabe9c5d1ba85404f3212914225d8eafe6b8dc8a4c322871cf27ac0",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Gargoyle",
+      "sex": "Male",
+      "race": "Gargoyle",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Gargoyle/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Gargoyle/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle/base/sprites.png",
+          "sha256": "cfedfb0000048e8c7975b1de04796b841c149387c2adaf0e7c2b84101e03e3d5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Gargoyle variants",
+      "sex": "Male",
+      "race": "Gargoyle variants",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Gargoyle variants/Amber flying",
+          "appearance": "Amber flying",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/Amber flying/sprites.png",
+          "sha256": "2e34326721c70981528e9c4bf6392924ea66376fb6cbeae6c53ec7eb855875b3",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+            "differingVisiblePixels": 4982,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Gargoyle variants/Amber ground",
+          "appearance": "Amber ground",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/Amber ground/sprites.png",
+          "sha256": "2ee6d5b9ef7502a73288767e43df6eb281f37cf7a529f81f2dea6b03cb312458",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+            "differingVisiblePixels": 286,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Gargoyle variants/Ice flying",
+          "appearance": "Ice flying",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/Ice flying/sprites.png",
+          "sha256": "64f865b6fa406ebccf99d6f9d80a83cdef62eb88aadc538d346418ef4b2aee35",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+            "differingVisiblePixels": 5117,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Gargoyle variants/Ice ground",
+          "appearance": "Ice ground",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/Ice ground/sprites.png",
+          "sha256": "561079eed225400b1c88114b94424cb57f15f8543a8881a01f92a8a7cd1aa8e8",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+            "differingVisiblePixels": 331,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Gargoyle variants/Red flying",
+          "appearance": "Red flying",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/Red flying/sprites.png",
+          "sha256": "60e060e1992c4aeae76e12f71f13996477917dca3346889cfcda7e176350ce77",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+            "differingVisiblePixels": 4454,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Gargoyle variants/Red ground",
+          "appearance": "Red ground",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/Red ground/sprites.png",
+          "sha256": "19e9a2d370fede9d029168f07aa95522994654f699d3b16b8629507898f43493",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+            "differingVisiblePixels": 361,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Gargoyle variants/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Gargoyle variants/base/sprites.png",
+          "sha256": "bcc31bb0626f216398eb40e0a14e7b984af5767f7be3df3e1a207dd1a166f3ea",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/GargoyleFly",
+      "sex": "Male",
+      "race": "GargoyleFly",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/GargoyleFly/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/GargoyleFly/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/GargoyleFly/base/sprites.png",
+          "sha256": "2f01b28f1e6e3dfa387e88d652475e05099b455a6a8b4047f811470973cd2257",
+          "size": [
+            256,
+            128
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Goblins",
+      "sex": "Male",
+      "race": "Goblins",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/Goblins.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Goblins/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Goblins/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Goblins/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Ashen/sprites.png",
+          "sha256": "043b1d9dc542c7af4efb5376509e8f641a160043a227c6feb2997a5afe4f7c5e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 2293,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Hellblooded/sprites.png",
+          "sha256": "db688d7fba8e9c66401a4ceb23140e500fe68cf82e72d609a20d8999c59d710e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 3189,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Marked/sprites.png",
+          "sha256": "347dd1423669c0038e279edb20bc5d532c6530646d21d67d38bff66bdf6c2aba",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 2222,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Possessed1/sprites.png",
+          "sha256": "ab19eec8270b74963c365bf9e701d8ec40ee1bade5c1e6ad5beaee4fe350f3db",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 1357,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Possessed2/sprites.png",
+          "sha256": "4ca561cf704ea8ea1f1da344b954a541a574d9e3560dd900feac81a8051005b4",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 1421,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Werewolf/sprites.png",
+          "sha256": "1f0c6faee382fca164bbb22e1f901a8f7d9aeaabf10660d1d319b0cca00a4db8",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 3465,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/Zombie/sprites.png",
+          "sha256": "fed1c4c095970f99d26a9b2791a15a81c9f0329042a37555daf177e85a33b25f",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+            "differingVisiblePixels": 1699,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Goblins/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Goblins/base/sprites.png",
+          "sha256": "59b57151d4587cb593c31319477c41ca180e0faf9ab00af03ba30917b3e6f2ff",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Human",
+      "sex": "Male",
+      "race": "Human",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+      "rig": {
+        "package": "Dungeon Master Sample/GOA Retarget Review - Human Male",
+        "status": "approved_baseline",
+        "statusEvidence": "Dungeon Master Sample/GOA Retarget Review - Human Male/README-CLAUDE.md",
+        "approvalScope": "Saved visual baseline; not approval of every clip or live integration.",
+        "profile": "Dungeon Master Sample/GOA Retarget Review - Human Male/profiles/character.json",
+        "viewOrder": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "partCounts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "missingFiles": [],
+        "hashes": {
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/profiles/character.json": "ff900853d3a67382bb7c03167bf491ef9408b0c08cceaef4518ce203bfff3ce0",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/source/engine.js": "34a36aadc84e2567c4ca7c0bc199aa80df16a6634352da0473d1a7c512ddd15c",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/README-CLAUDE.md": "5ccbf0ff1ec5d31461626d83f1637871aae4b40f28cebcb7d2e5cd1cbfeb2ecf",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-0-leftForearm.png": "4cae44b007f231b2ce80c8139ce198d6c682108b636559ace1f95fb48908d6f5",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-0-leftHand.png": "904b14b2dc12d15002afd8522b41722a5f26a4926ecbca7078e4f5329cfdd4f3",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-0-leftUpperArm.png": "c1c1d9000735580c39eac3ae3d89975e11ff06c2a886dc71c59213294e0c2ff8",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-0-rightForearm.png": "5942eef3911c48f4436f4237250c713e34643a2d8b03bfeb585a5d73dccd9cba",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-0-rightHand.png": "23de03884176bb706b30ff45c17b1636705b0358c0cdc3eb001058b8539698af",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-0-rightUpperArm.png": "7fbefdc7df09c89b780a9aaf7ca14b4dc86ba13826cae233d537b0d15117dd41",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-1-leftForearm.png": "83fbe8a5ad654cd209eff7fd6fc9c65dc38e6bbe6dcebb6c7dc08fc610e64afa",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-1-leftHand.png": "f8b2060ad4284990d61c8b1a62b382c792160631c41300791105c7de2b059313",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-1-leftUpperArm.png": "05ac5843db75f1ecf1dbd5caa4d3b98126f87011070d17c54627f85e28134885",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-1-rightForearm.png": "e884c451e30df77ac6a7cc2cfce64b079c5e3f41506c02cfbdf75f82835e7e2d",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-1-rightHand.png": "38009daf44e36ea515c8313bd384bf2d964c3ed707e1cdb9b1a37a6b7fae0d70",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/arm-clean-1-rightUpperArm.png": "c5bc19ffd36af7809ab411488dd0f0a17252ddd4ddd6f7769b496fb6cbc8141c",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-000.png": "cd0ca3f9200c8b610fbcd95e9f16bc21523679061b4f36d059a410ac8fc247fe",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-001.png": "9f8db5f3ccdc606d0dc46f2e99d6a6022fa0d64ea45dd67befaf287ae977d1d9",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-004.png": "8a9a9eb0574ce6084e944dd1f5e049e3eafc22af3be8ca025a2fda213d9f4371",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-005.png": "e37695353d193f87bc6406b388f26373b27d85c15a775183138520856b550955",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-007.png": "73a66655303834a90dac4a6a94a273c00478efa2aae57dc91d77a3b72355b593",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-008.png": "626751df975d05adad275d836239dc0c0c3e3840d0050a2052144e099cebd8d0",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-011.png": "555bcbd3902d2c6b5c89899262389c9bc9a62dc1c9ff90e2b8f5a251ecf6c6f6",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-012.png": "4d89f385290e7730deec7d2c3261f85d8ef6d70aa8d9a8a19bb8cf64c194e160",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-014.png": "7b71de71d5d4530b73dc6f598156e7c32295c43030be640ed7c1d8f61101fbf1",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-015.png": "f021affdd7c6e7915e92ded3789b13ae3849cb0f1b245618ed921d5d6a9ace99",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-016.png": "cd0ca3f9200c8b610fbcd95e9f16bc21523679061b4f36d059a410ac8fc247fe",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-017.png": "e43dfafcd5bb5b0b617e475102f9c3281180a44973a13fd0430700d544c35cfb",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-018.png": "3e06c094d5ad00ae78a830e9a394e3da76ddc0836ddc28ee94e93da14b5772e5",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-019.png": "b899e101726b28fe1722ec62aec61cf273ebdbf356b4885b4dff84b79e69fda4",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-020.png": "3bcd59ac72417502050c778088b41cdb25944fe09bfad67df3c7e2e4f00b70df",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-021.png": "f21ee6d9a3e175c38d9e8ba5ab4d5424b7b5afc6fbce0989f61bef510120706a",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-022.png": "c8c700c90c265c05eba82a23f39f954edf69d3a0bcd9269aa835d5fc6f6ac691",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-025.png": "17776c408decffa07fbc34304d0bc907340498d56a7a6683e9cbf256033950dc",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-026.png": "636ca4113a5f56c9128ba6fa6b87f857b4008c214f66f5b98feef044d1bacdcb",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-028.png": "5635af6519931b7233e815453ad36b5099f378da5a62d26bccca590d5a4f8976",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-029.png": "9dc0804c8dde34daee5a44dabf06afefe861ff2fab12a91371b000eb30e1010c",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-032.png": "32f3a779355241207e02696bf01d821811762f7b9bcb3d22394e8d0e3524e278",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-033.png": "15a1f7fa627401045363667c066e77095e9424ea99c4e13d3e295dd629fff1b4",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-035.png": "210a5ae217f88f073bfba6c074d8406603f247fab7ec922feb38f36ee4ca4702",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-036.png": "023b4174e0877d06c2df92b94a4f2bde194347fcdc93f2790f1e399fbabc325c",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-037.png": "f21ee6d9a3e175c38d9e8ba5ab4d5424b7b5afc6fbce0989f61bef510120706a",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-038.png": "f8ff5aed348189c575141088d1cf59d18c80e9ad61215c606cc88e353a55747d",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-039.png": "e6794c7c8bbd0acab1dc0c4e1d83ee9f14273e485271fe1b92943a79d1c1c7ce",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-040.png": "12d0ecaf64fb9c2a12f0e2404b602276408d6e78adb91c507a8db63e08971ddd",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-041.png": "d99804ef56b3e49883f2bbfc8342bb846a0a4ce5d72f762044eb34e24157c42a",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-042.png": "ae3e9ffc5b139da72db539879043fb9f8f6b25244e36ac70b47d4119142c2139",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-044.png": "ac73790ebfc2e2959d1060cfb98f0ff53041a188a1bf56b5d9085db4f0fff76f",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-045.png": "36b75217439abcaf28069f13a981339f6aa7d012f23cdeaea71fa96ad51e1a62",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-047.png": "0f1e19b7b15be7be364d993139833b8c7820c9c3063db76d4a46534b3c9e61de",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-048.png": "db56a93611029ce36668c533c4fc88f288070629ecc499279a6f24f9e98efefa",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-049.png": "b477965bda874c01eb175693156be455b529294ae472b967f370c0ba8e2e97c4",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-051.png": "13ab98c95270a865f14e17d8fad000a83bf101d225fad2be65412b54cee67c6f",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-052.png": "5171f387bcc10d6d89b7c93f9b000aad9bf80a872de7d5faf4192825d2e1d39a",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-055.png": "40df34deaeedd56ceae4d33eb8fdbb8f8eac7ffb886539df2cbeea40bce93345",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-056.png": "de4886528da95245874f8e8a5eb9c0571f06e46f3d21c3ee4d99d965e2f9d4c1",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-057.png": "9b907add99b05c4cbce06e58436fbc7aa21d846c5e9d0d3e1ac8da75ba9b3e08",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-058.png": "ae3e9ffc5b139da72db539879043fb9f8f6b25244e36ac70b47d4119142c2139",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-059.png": "080fada3bbcb35ae8609658d3ebb1565f655a67bc51e3391ffeb5e68dc13debf",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-060.png": "df28154cbc35e25c8083ddfac6501fbef8b88aa1a688456439074a0a167e647c",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-061.png": "90e3311dfa9587fbaea6f86dc4b83effc3d5ad3e642e278138c80009606c7244",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-062.png": "021fcfff8e29142aa907c570b47b2fbfbdb90d79dafb7cd56cbc82050d67bbd8",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-063.png": "bcb7c06e9d08f7910543e776db4573f45341dcbdcb8e2fb96b4a446433b87ee3",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-065.png": "c71277f2473e47f3b03efdf35dba930465f6d37956bcb97a5c964445f934253e",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-066.png": "22bf4be2b09d6c1a8af3eafefe6a1eb85a00912009f4fe58a2c027ba93d848c0",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-069.png": "5576c87a563dee008244dddc12c84ead456cfbb6ed7d5d5771e1d6e222ec7961",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-070.png": "e56cf8db82bea1aecd03c587565e9329ad1fced59df8aa835648740d18093e38",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-072.png": "ce620301339de258df8b29b7fb848c3fb54ca85c144c5b08e64d2c4a2e6b2473",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-073.png": "102e29fb58beb3835b39d9a37b1f4af7d8e9a956ee74a2179ce5e6c2e452c218",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-075.png": "e0069590194dba811827dcfd4a2a432aab40fe6cad9404c36f13b165491cb9a4",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-076.png": "2b4a99b12d0a32b602a5ffab5ec8a371253ae2dd8fda28b8b611c1dd8d45f036",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-077.png": "48d8c47ac6f9f7a4dfa73648b6d9b0c180f7ff1c318814e1980985c9b66ac5b6",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-078.png": "c535500182862397a8a01d62d4b978e2794a3e838102f758aaee175f6d6765a2",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-079.png": "bcb7c06e9d08f7910543e776db4573f45341dcbdcb8e2fb96b4a446433b87ee3",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-080.png": "42cc49d17e877f71d14cb31d3f91e5b76cefc04ba5690ce538767dcf671cf190",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-081.png": "5606f35bd631842e0a201a8e6a3989936cd6840829684be49787d8898f8e39f7",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-082.png": "6372bf0aeba551341843a667022e84d3c3290068b032c9f0e7555e78ced04ed7",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/character-083.png": "1481bedd566466f99b2345f0d3779a2b972c745d9c176ec211863fea81012f70",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/side-foot-clean-2-left.png": "cfef828791d523a4307c1bc8c5934b54f2b4635979791ac4929b36181a17fd83",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/side-foot-clean-3-left.png": "6999695f4bf0198ed34e4b46df4d06c9a9ee235bd1a27a22c4f788e9f6aaeddb",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/side-foot-clean-3-right.png": "9de4e387c23ad74ee38657c18356a20295f438c9862fa1d46e5c9142a0275da3",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/side-shin-clean-2-left.png": "3516992d43c3ebdafba4a30edd4c72129834c22de2cd0885df1f50926b42ea82",
+          "Dungeon Master Sample/GOA Retarget Review - Human Male/preview/assets/side-shin-clean-3-right.png": "23a090ceb7aff798a06a2592d4c88b6cc2ba141d1dcb3e803d0215d48be039f4"
+        }
+      },
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/Human.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Human/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Human/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Human/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Ashen/sprites.png",
+          "sha256": "7f74562353330cdaa5ff81804317923fb2d9821fe6e3945aef1087348cae52ec",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 2592,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Hellblooded/sprites.png",
+          "sha256": "183f851f4695c1a34af376c691252ecd1d1b9fac823c3090a7b1d075a9ba5207",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 6956,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Marked/sprites.png",
+          "sha256": "838d4a3d8b5dfcac2352801779ac4bfa423742aa33d402ae05e693bd4bcda6f6",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 2037,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Possessed1/sprites.png",
+          "sha256": "7e9f4a9fbba13a25b086c1cddd47865f3904d64c4854a9bcb32d1634bfaccec5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 1443,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Possessed2/sprites.png",
+          "sha256": "19cf1219f070c731b08832879f4b55d959f77bd78ec416aad80b4139ac13f478",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 1677,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Werewolf/sprites.png",
+          "sha256": "f5cdd6b0d17182f3e4be56081d88e6ab5419e19565b3d5ac60bf75f2b272a018",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 4698,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/Zombie/sprites.png",
+          "sha256": "e68e174421e71c152e5ec5d1802772a9d24e432f8e5dacfe43f5793f3418a825",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+            "differingVisiblePixels": 2722,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Human/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Human/base/sprites.png",
+          "sha256": "0b6c47412642c51646aa2fb8df19aa1da322f2eccec7ff23dd9b97d815c12359",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/HumanBlack",
+      "sex": "Male",
+      "race": "HumanBlack",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/HumanBlack/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Ashen/sprites.png",
+          "sha256": "872915dc5fc9494704e0b0c1a68288ad94f55f5e7a5e6d9bb4088404e795b73d",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 4273,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Hellblooded/sprites.png",
+          "sha256": "2c31cf27fc666ba7df6b89fed93c39b759c3b60ecfcbfc05b16a2a3ba1c64c8d",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 6118,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Marked/sprites.png",
+          "sha256": "6e2a8ef278cc5631d4d8bc212fe704b2912f0bc236afca97f6b2f8959f0cc164",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 3113,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Possessed1/sprites.png",
+          "sha256": "a1bb0a14f2dcf06f31bd867ef5f38691345dc6e04aa71a741adc3e81eefa6a98",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 2217,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Possessed2/sprites.png",
+          "sha256": "dd2f994008e379d073acf2472f35f75a58f7fc031c5ce18ebc3da9f46376a017",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 2464,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Werewolf/sprites.png",
+          "sha256": "0516c440942fbd77abe1e0801199e0b59787de5e5954633df5966295990c6ed5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 4612,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/Zombie/sprites.png",
+          "sha256": "69ac8c6a44608eeaffdc4ed4ae335ad509b5943361fe36ac53e5902e6324a476",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 2935,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/HumanBlack/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/HumanBlack/base/sprites.png",
+          "sha256": "db75b050208215e7d6d94f6e4d7ebc9dba3764943c9b00d2e09feedb525a9f30",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Kobold",
+      "sex": "Male",
+      "race": "Kobold",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/Kobold.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Kobold/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Kobold/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Kobold/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Ashen/sprites.png",
+          "sha256": "45a21a8e1cf9c134056f9fcca0b193f68bda3bfb044d7928ce91e36a82f809e4",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 2107,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Hellblooded/sprites.png",
+          "sha256": "c156fd293424ea46fe5e82f94a4c3fa88ec9a6659274f2247f690600b8cfbda5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 3776,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Marked/sprites.png",
+          "sha256": "f5121d12acc895ea8b8572d2baaa9680cd263eb590fcc90c5e39f3f6047989fc",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 2509,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Possessed1/sprites.png",
+          "sha256": "f3f3e9e403c15f4fa59a9eb7c8274cadb7f955541e427dec84f623c8fbd8dc61",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 1417,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Possessed2/sprites.png",
+          "sha256": "00c5099f03fb584a60ce16e7244142d9c9358146801c5b7e88b09517872598ce",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 1969,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Werewolf/sprites.png",
+          "sha256": "dc145e995aac37ab813167d7da9bcac8f38b868bb659efc800e19e327e357f4d",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 6153,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/Zombie/sprites.png",
+          "sha256": "fb7a6b35c57e869b28085b34b1869323a0c87c9209aa5d1f72a7b4d805769066",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+            "differingVisiblePixels": 2948,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Kobold/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Kobold/base/sprites.png",
+          "sha256": "ce775be695a2200e4e0878c1d7dabd25885e848148f682f8c7946a8e9d18d9a8",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/LizardMan",
+      "sex": "Male",
+      "race": "LizardMan",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/LizardMan.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/LizardMan/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/LizardMan/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/LizardMan/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Ashen/sprites.png",
+          "sha256": "3fe9fe3c4167528f2e2eca70e10a31ea6f655d9185aec5940f9e2418549a72c5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 2482,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Hellblooded/sprites.png",
+          "sha256": "16f0645e7f9d8246b60f4f051e96dbdc6653866d0fb998e7ddc7db5319ddae91",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 4310,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Marked/sprites.png",
+          "sha256": "0013a00b618d26e008921eb9459685c81b1d9f1c60e22f28513f3626c905eccb",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 2458,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Possessed1/sprites.png",
+          "sha256": "15bf349d4e49a3eaf663ae6164c18a20f65d7b9751e53c0a887d5ecf2f9daf18",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 2163,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Possessed2/sprites.png",
+          "sha256": "e89c3b635bf233e0d0fda96d03c7e2a824ef5bee95c3bc58306c7c5be62a16d6",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 1941,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Werewolf/sprites.png",
+          "sha256": "e4e45a6eee937e1311a06b1ab67c83466fb414926a4ce7d04139c12202be6996",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 4353,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/Zombie/sprites.png",
+          "sha256": "c6b639cbb384b9a727dec394c3db0751ae89c378aebf2ec8878ddd0f970072fc",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 2219,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/LizardMan/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/LizardMan/base/sprites.png",
+          "sha256": "0944ea317e6b04f8365a0adc3a939d5959c5f04827b05bcfebedc11eedcec7cb",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Night Elf",
+      "sex": "Male",
+      "race": "Night Elf",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/Night Elf.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Night Elf/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Night Elf/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Night Elf/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Ashen/sprites.png",
+          "sha256": "1e2ca101f388579fc604a1b475ce3d258eaaedb59f5b7169129790fd5bbe54b5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 2719,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Hellblooded/sprites.png",
+          "sha256": "314bc9de2eadbe7aa4af977b6bccadd3ae26b4f2d609538152b6b75ddf08e1f8",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 5863,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Marked/sprites.png",
+          "sha256": "5753cc382a5436eae30248eee12d1e1149485c3b0c465cfeb804c61ce0d20e18",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 2758,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Possessed1/sprites.png",
+          "sha256": "e39e8ab57ce0b74ce4e21e04a3db6324aac75338009522110da1f661fda8bd8d",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 2969,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Possessed2/sprites.png",
+          "sha256": "12198842e344cf1562ec79bf4492a7991486fc8368cb84b83bd2ef7176900b9a",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 2861,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Werewolf/sprites.png",
+          "sha256": "1a7c6c84eeb24cce8c43618dc69d17671f9846b289f93bfd4358864f6e9c0324",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 5471,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/Zombie/sprites.png",
+          "sha256": "e74b6aa3b5a2cdc3966c6cf1d4952d32c4c0148404f61f3d68b5544b6d0c8459",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 2361,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Night Elf/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Night Elf/base/sprites.png",
+          "sha256": "6256f353f16c8953ad618c28e062f9970cf9eb1a7cd28f46e7745a6727d3ff7d",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Orc",
+      "sex": "Male",
+      "race": "Orc",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+      "rig": {
+        "package": "Dungeon Master Sample/GOA Retarget Review - Orc Male",
+        "status": "needs_visual_review",
+        "statusEvidence": "Dungeon Master Sample/GOA Retarget Review - Orc Male/README-CLAUDE.md",
+        "approvalScope": "Saved visual baseline; not approval of every clip or live integration.",
+        "profile": "Dungeon Master Sample/GOA Retarget Review - Orc Male/profiles/character.json",
+        "viewOrder": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "partCounts": [
+          15,
+          15,
+          15,
+          15
+        ],
+        "missingFiles": [],
+        "hashes": {
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/profiles/character.json": "62a75098005ab8453fcdb2a7859001b3d28dd243c5ef923db88780f00e711a28",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/source/engine.js": "bacea8b6ec27658fbf0ef2218db9d704f403e20e9a5e12f2529f8365d8ac1c7a",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/README-CLAUDE.md": "52bfd3c663bbff91fc51c3b4e8223dc902ab0a6e3ae5c1eeeadadfc75e5ebd4a",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-head.png": "10503ad94c25ca17e570dc597bab8311de13b79630476fb01d89c35a99627fc0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-leftFoot.png": "5cb622dc59375b55114ea1725211eeb725180b5c51a013ddc5186329204db7c9",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-leftForearm.png": "a5b84873507a8240585b1736239c09b2d609d2045bbbcd6df961e27112848471",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-leftHand.png": "5c07ff673bbadeb1f3e091fda935b7e8be5a7fd8e5b5a8f708567e04fc58412f",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-leftShin.png": "06dd96c0248ab87c4bdc1d31c18b9257642ed11341353c92ddfdc6b663c2f7fb",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-leftThigh.png": "0ded896118554799a36fc5ae3f5597e39a70e1acc72ff40f03ae5acbfd99cf78",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-leftUpperArm.png": "eef385cfc717757f19a79fbf3aab4a4a24c995a0ebff63eb6faaa21c8e08658d",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-pelvis.png": "3d34148eb5dbd119b01ce42184e054f726d5071a5e8ff70344d76909c4017c55",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-rightFoot.png": "eaad8c17a98310550d067d1f030f90d05929137986f8a12473d5698fd75072e3",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-rightForearm.png": "51cd6185e6c9e0deced5b12b32cf2094826d6193bbfd12b4adde935769034ec1",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-rightHand.png": "e198af5b15eb57f0bc9759dd18baa150a48ec34ea0630e140a16aab1f58408c4",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-rightShin.png": "ba89e45bd1446b919540713d169ea29d75e073551961e252def8abef30ba3cf2",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-rightThigh.png": "34a21ba556c8088c22afdc8fccdabfaf8a214554ba3e15c1f70d8ed829e73d5a",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-rightUpperArm.png": "551dbfa68a1603b599667c63485c8250c145fb65c16b9346bf15fb3ecfca5dd4",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-torso.png": "c0393a2a0563ab60f324a294deac4aa9191d6f8028c685bf25a648430fab09f2",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-walk-0-body.png": "ed2dab5bd4b146d1e326e2fc11b73a0522148ff1a8789bd798cdd1f8c16bf741",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-walk-0-head.png": "10503ad94c25ca17e570dc597bab8311de13b79630476fb01d89c35a99627fc0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-walk-1-body.png": "f74383fa43abe48acd035a044caf43c4ff37440479a93cf99828ee8b2e97c499",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-walk-1-head.png": "9ceb37792f753e93cb26240b3a343b5a8a07ce94637efc10d1316ee85d1594b3",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-walk-2-body.png": "ab4fda75906168d1f305f10ecf198a9a460b2744396a60e7adb84d3889dd88c3",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-0-walk-2-head.png": "ab1cac01cf21f0aac96a862182f10a7bd63b945c10f99f42ecd6355777ee12b5",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-head.png": "4a3e9b41563614d054a92642197ba661f66b4786fbb866aac9db975078884ad7",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-leftFoot.png": "926f89724e3d1f24bc81eb6648677579d58dbb53a8ac9a1919fcdcb18356aa97",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-leftForearm.png": "74f188a3e2b41382233ef5f4d2befa90032f4291857f2bd880e1b2c3bff962b0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-leftHand.png": "11063c23317993afdad6561e460846ce4553b4d29808fc5ce7e1a64b32d8ee24",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-leftShin.png": "1ec7a8e75ce465de5babb6ef09f99c583ca6a95b00eeb1c36e0e4f787b56055c",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-leftThigh.png": "83a8bfe41c312bafeab6e1795b731f40553b7bb7a9ba86d9889ea646f9c1b646",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-leftUpperArm.png": "c28bb119c61aa25bcedb1aaefcf83d45b9f4e1771901d06b04134ec7f13ae8d0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-pelvis.png": "cc5503bb8b466283d23e1e46f6970f2dd84cbd9f6d917d4fcf8cbe894d10bf9b",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-rightFoot.png": "417b5aa93dd660042364c036a54981a6995936714a6dcc899e40d27638f8f7af",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-rightForearm.png": "5657e6eab2cb8f039bedd478d2d6db4589c543ea49595cb8a07c5a2b30d27cf7",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-rightHand.png": "410d0a6d9c8bf200d8d96c2d942b314d472dc370bb64a51eaf59cbc2470e7be8",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-rightShin.png": "e7a255906275b7b8e168d08ede0067bb60b0407bcfc882c6f76a04cc4b6a6cbc",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-rightThigh.png": "8ede578747d01e1f1659c334d533bf43f51d5cd22e0aa971d92b729f12190ef1",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-rightUpperArm.png": "108f1f60b5afc52ee24a01e49dcd73ded4c0697bf075f8c2de029966fd2b2143",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-torso.png": "02284675503bddf56288e37e2b36bbceb9647c6d9e189cd97b21d4b74e309119",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-walk-0-body.png": "2c1e9eeb5a7dd0a341344f662dcc0ad6f499cf60a94461b7245bfc352a7e8058",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-walk-0-head.png": "4a3e9b41563614d054a92642197ba661f66b4786fbb866aac9db975078884ad7",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-walk-1-body.png": "9474ee8347eeb11091893f73a606ae67ec1b0037ed82e21e11bf0a5aa0022676",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-walk-1-head.png": "f6b66fb0403209e2da7aac4d749f926adce57691c53307af48fe1f6c76c23662",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-walk-2-body.png": "c670e2c2efa28f2af2015fa5cceab1f08d24e5d73b931a9409ab9636bb3594af",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-1-walk-2-head.png": "251b49cce5598a1243b11a448fdda3d08c693d9f2ab027b2380831d58b0c40a4",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-head.png": "6f62d617d1873eba1e92fab0bddf68bada1cc7864b14905685c5283da9e3f8f1",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-leftFoot.png": "37092e3d1b956bd9308e8da24c941319b25eca28639c5091248c42b63f1d6703",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-leftShin.png": "d7f5001482c730f2c06e31fbb161c91e2d985cc74047f98da6e325490b22c8a4",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-leftThigh.png": "a705e962a86f3768c86a95a1019d6ef28483180a018ac1fbbd2c016209d45cfd",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-pelvis.png": "2d54c6ff84781567b896a4c4c27d6f08bfc6be9c68be52096eec913671f9e999",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-rightForearm.png": "979f38ab4b87064f90df3af8e64777a64fe141639ae665ac12590f4dd7ef485f",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-rightHand.png": "336aaa0a3e90e6225d983c97ec10d6f3d44a062d9c8d36eeb61a253cceab9287",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-rightThigh.png": "70fef18c26bf1a74d37660a2d803c2cda93123b739dfa93ea2ecd50a36f7c9a6",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-rightUpperArm.png": "727a001bb2ef1780f350b8f84d43651b2395a559e6fe732665172a59139251a5",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-torso.png": "9de37fd7b94209a45bcbde704e8295acb5300c6a8dd33f8a0e85c5b9997bdfd3",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-walk-0-body.png": "6187626aa74d983a9979c5504dfee3b550a72e80e29fbe1b757caf42a7563f2e",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-walk-0-head.png": "6f62d617d1873eba1e92fab0bddf68bada1cc7864b14905685c5283da9e3f8f1",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-walk-1-body.png": "11c936e9ee67a07eb65a94e57661a44f781d59bd2fc685e95d335bf40de96825",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-walk-1-head.png": "82dd390b5d9d41835485bdbacab94c4cc740dd2381db71cfead6e4ca185ddb7d",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-walk-2-body.png": "989f8cf1b56d7682a85f4ab90044b6c903b53323720c6dccdd08a06eecf795d1",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-2-walk-2-head.png": "23da9ec08f8a2b8d1d31aff50915766cba87e3120af736cca595cfbe40ba6ef0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-head.png": "3390822935efec1d02b1b42ca738f9e4c0fe62309a9f718bb29c9711311eccb0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-leftForearm.png": "934dbd5c182ccab5e4cbca7807c18b74eda2b4c50f6ed6738b9deccdc2aed0b2",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-leftHand.png": "f7412e3c6e57779daabc2ac6591daee8b07b59fdd0d1af81a5fb37d81aef8283",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-leftThigh.png": "63d47eb9b0880952b2ba70419f6be879318fa849d0f2cc7b249b3c1900615f66",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-leftUpperArm.png": "35f5a0009d4a7406650dd25bb1ae201a3306e556ef9837cf4bb171058f5a34a4",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-pelvis.png": "5ea2516656ff90b1df7aad9c696969b894de596e184509daf462ecf88488f637",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-rightFoot.png": "3ee59f5488a82874fb1e1dddaaa31dd012ca5744e458cf335a51215d8694630a",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-rightShin.png": "8378c3f396da0cbd9d2a1cc80e3ab023129543a00886b7d59af102bf928b7c8f",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-rightThigh.png": "38925071201a93f7f5308e6333f93b6d38970c6db9a7a17b5ad3a6c54e01c5da",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-torso.png": "2baa72048077a0b12bba708ea001d54c7fc757031b3c9ebbc0d3a83011885c0f",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-walk-0-body.png": "ffd1d64ca858b8268c056b39db3d66b3d2c60000d36946c5c291008c23cb6186",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-walk-0-head.png": "3390822935efec1d02b1b42ca738f9e4c0fe62309a9f718bb29c9711311eccb0",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-walk-1-body.png": "5287abbf9edc86a37253adde6f500810c6781e2566c608d17a89e2a26197faf7",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-walk-1-head.png": "6f687e9de8c51a16ace0f3632d62c6285f40f83c12b0617569abc0e613eae1cc",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-walk-2-body.png": "60a611989ba4c5d4be82e03f3de421bd94b109844e763d7b18386e2add469a6f",
+          "Dungeon Master Sample/GOA Retarget Review - Orc Male/preview/assets/orc-3-walk-2-head.png": "c895f4f6046eaa8be8a4392ea1efb1d3d59ab45182c08903d5781f407bcc3c0d"
+        }
+      },
+      "candidateInputs": [
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/Orc.json",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Orc/fine.png",
+        "standalone/remastered/reports/goa-sprite-test/staged/rig/finezones/Orc/fine.json"
+      ],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Orc/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "sha256": "46ef69a20c9d6306e8fc26897979c09ade1d1db4a54a07977713dee646e1b0a3",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 3028,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "sha256": "39fa607f92dcb749f7b22c139fc774ab68905d52956d8bc48eff808e43f9214f",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 7077,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Marked/sprites.png",
+          "sha256": "fb080219ddc3bafaf8766c9926cf2974b164483cd0833f43afe5b19d0cd9468c",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 2709,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Possessed1/sprites.png",
+          "sha256": "2a6fc33aa9f4d07d868bbed1c4ed8c53cdd21aa3f992cc06f435747ce48ab30c",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 1843,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Possessed2/sprites.png",
+          "sha256": "d82cc91004c6bea86a79bd4b89689408d7690d1cb1a2233077f84fbfa1c12e24",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 2346,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Werewolf/sprites.png",
+          "sha256": "87f94c716378fe927f60eb74eec80b31aa96d20e2a790ab81e1cca8e0c9b9a93",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 5961,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Zombie/sprites.png",
+          "sha256": "276c8d37285bc0f6ed28cdf90f5b3034970bab238e707c4bdf7cd38c6b948a80",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+            "differingVisiblePixels": 4057,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Male/Orc/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/base/sprites.png",
+          "sha256": "d8773134ed383455f087c722b3907d238259a8f449b329fd69edf5aa2cdd61aa",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Skeleton",
+      "sex": "Male",
+      "race": "Skeleton",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Skeleton/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Skeleton/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Skeleton/base/sprites.png",
+          "sha256": "808e9d270b7f3efb6324f41b725b5d0f7ab31ca5ddfbc6fc37255ecde6da9268",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/Vampire",
+      "sex": "Male",
+      "race": "Vampire",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/Vampire/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/Vampire/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/Vampire/base/sprites.png",
+          "sha256": "01e9c1b50d359f42121c818268789d5ccd8d90a08e01a5b74de2b061e6e3e1c7",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Male/VampireFly",
+      "sex": "Male",
+      "race": "VampireFly",
+      "baseSource": "Dungeon Master Sample/Sprites/Male/VampireFly/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Male/VampireFly/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Male/VampireFly/base/sprites.png",
+          "sha256": "a9b217644de71f74a554975f6a080be6bb85b723268205acfb01d9ec55989778",
+          "size": [
+            256,
+            64
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Dwarves",
+      "sex": "Female",
+      "race": "Dwarves",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Dwarves/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Ashen/sprites.png",
+          "sha256": "329884f6e9032ca9a41dfc999c907ee760d3b32ccea9c12cf6c2b1c8b705c21f",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 1080,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Hellblooded/sprites.png",
+          "sha256": "cc4cae42ea482599260aebfaa0b146a166766aa47a70ef2a2c50652930b6f9a7",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 1933,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Marked/sprites.png",
+          "sha256": "789f9c22caf94ade4ce007cae9ad47a21d62c2c806492d1d037c1d7948c3b228",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 1272,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Possessed1/sprites.png",
+          "sha256": "fd5eb195427a5586f45b8fd6aab2a14b671abe00723caa58e9a1d4c5ac490daf",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 629,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Possessed2/sprites.png",
+          "sha256": "7240d5154916c9de93d300f82f0a9b3141e98e04c130e04d9875a215ced9cd82",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 903,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Werewolf/sprites.png",
+          "sha256": "5ea8c81b151da87045854a8162734d87cfb8bdb84d3d44898109723c0f303b8a",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 3375,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/Zombie/sprites.png",
+          "sha256": "3be454769a6f736d8eeb01cdf4fd130ab8ad3407bff9d96e39630f4ad9aaf051",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+            "differingVisiblePixels": 511,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Dwarves/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Dwarves/base/sprites.png",
+          "sha256": "25a462c41f3a88810413214749a9df87c2fb4371aed26305a0a16c6fc1d62846",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Elf",
+      "sex": "Female",
+      "race": "Elf",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Elf/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Ashen/sprites.png",
+          "sha256": "2d2418bedda129a231b71a02dc060cc2755a5d63593865093bca9ebd2966330a",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 1613,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Hellblooded/sprites.png",
+          "sha256": "644e0c8233e49379054a88abb122f64ab320e23df3e1d3fb2da67409ce11865e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 4185,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Marked/sprites.png",
+          "sha256": "54b3f572cbdd149e45e80be25edbbb1fb574169cd2245efb72843a233d7341f9",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 1451,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Possessed1/sprites.png",
+          "sha256": "2420c45ff2231a7c263c6e1aa4323753e568dac3e322490aec9e1cf343ee0815",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 685,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Possessed2/sprites.png",
+          "sha256": "2dfc0f7007464e954a293b8e1295ef4ef24f48abd31879a1c0013568d98419e2",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 1053,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Werewolf/sprites.png",
+          "sha256": "7b0c2530bfe69bca07f311cb9e7eb0f7bf42c9e9ccc946aa86dc9d54b36acaff",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 4813,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/Zombie/sprites.png",
+          "sha256": "8888c055995d9740c27154422fceadc1c54883b8c2c90fa8a02631db0c68739e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+            "differingVisiblePixels": 1024,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Elf/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Elf/base/sprites.png",
+          "sha256": "d230ada29abb150011f235c77c545b239fc0bee46416490064f62145300a2767",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/FrogMan",
+      "sex": "Female",
+      "race": "FrogMan",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/FrogMan/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Ashen/sprites.png",
+          "sha256": "f8e6a2309648b5b4e54fb4046a76093bafc07440545aa10e5b9f01497ac15cbe",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 1745,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Hellblooded/sprites.png",
+          "sha256": "479673b97fd8a1f1103bf9153dc8ae4debf73cc6fdf925bbe06f7874230fca54",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 4584,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Marked/sprites.png",
+          "sha256": "2adc98fbbca24786a38ae842abbfdc3aa76b75873898602ac65ef9df168a310e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 1028,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Possessed1/sprites.png",
+          "sha256": "1a566807332e5cd7d69e0be66472fd4346963a4f0803eafc57ba5505c39bb3ff",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 579,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Possessed2/sprites.png",
+          "sha256": "02202c5f9c324ae131082cac822c3cbfb762613bdbb980c876ffe387ec43a822",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 754,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Werewolf/sprites.png",
+          "sha256": "5fa62ca545a27a0ce3a48b973b852a414706a2aaa5826fcbef5246b0639b80a2",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 5035,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/Zombie/sprites.png",
+          "sha256": "41b304f02118ee9a320241d9b643cc0eb083d3c38c4872acb9b922f4758aff84",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+            "differingVisiblePixels": 231,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/FrogMan/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/FrogMan/base/sprites.png",
+          "sha256": "b74fd7ea959aa00d312b2bd73018c8203fdca47e6dc4f0e5b73005202aebc702",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Goblins",
+      "sex": "Female",
+      "race": "Goblins",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Goblins/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Ashen/sprites.png",
+          "sha256": "145cffaeafef02cc7a97db60e44cfa9bfe4372b8d4e3569144e6d092b6264eb1",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 1485,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Hellblooded/sprites.png",
+          "sha256": "969d6c2f466379add82c568e76ca8a1a9b26f7fbd04fbfd1ec68ccdb76d46e2b",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 2042,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Marked/sprites.png",
+          "sha256": "e8c69a72a35e61aaa2df2e86aad2b8524ac245ce859f80924d4391b961259524",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 1115,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Possessed1/sprites.png",
+          "sha256": "c50ed42da58e884e9f0a82cae3835e287e33350b41c3fbaf2a1a3564cd504d52",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 578,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Possessed2/sprites.png",
+          "sha256": "e7b1b483139b1b004491de60f8eae91b797677b36e3c8ab60d2586ecaf40d274",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 1083,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Werewolf/sprites.png",
+          "sha256": "24dfea096a60df6959f1a1482ad96399661e503ec7ee574211c8b1951efac451",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 2466,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/Zombie/sprites.png",
+          "sha256": "cb92d13ce2bbd47179d213b387e52a5f5ecd853a2527016452aeb90f68734800",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+            "differingVisiblePixels": 724,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Goblins/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Goblins/base/sprites.png",
+          "sha256": "a9294ff5f852a008314d8c8e5058881094feb04cdf9f962000f3565dd1969a1e",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Human",
+      "sex": "Female",
+      "race": "Human",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Human/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Ashen/sprites.png",
+          "sha256": "c4ef18975435d6485763076d27bda7943a03afc34e7c4cf40f45238c42e46056",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 1060,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Hellblooded/sprites.png",
+          "sha256": "6292f230a243c4290ae7beb56143dc5f3e325e3e79f5857413e47a382925be8c",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 3186,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Marked/sprites.png",
+          "sha256": "9df7940ae4abbbd23e70751127a7bdfcf0a36ef7f6f1895bd5df70d39012beaa",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 1128,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Possessed1/sprites.png",
+          "sha256": "dde3ce2f7473da530ae2b62afd3cc614c22ef6392c07f3e91100750ff5065925",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 871,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Possessed2/sprites.png",
+          "sha256": "9c2899b16bb24aa72f2b979005f134b06ba011e7d1d4556399289677880af385",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 1330,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Werewolf/sprites.png",
+          "sha256": "47156df55bed712d626377bce6152b565fc8dbcf32ace17a0e2a7d6501c035cb",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 3509,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/Zombie/sprites.png",
+          "sha256": "178623a53a8470c72a2154b530d3974cf10cc7281e7524ab1f31d1394c1e43bb",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+            "differingVisiblePixels": 1137,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Human/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Human/base/sprites.png",
+          "sha256": "8ebeb98359d1996acb745d1e02de8bae5056e5437fbce9dcb64d64345b9e4af5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/HumanBlack",
+      "sex": "Female",
+      "race": "HumanBlack",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/HumanBlack/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Ashen/sprites.png",
+          "sha256": "8983740908114eced779ac8600f33e197a3df293b26bb67f7e26745db8dd8178",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 1387,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Hellblooded/sprites.png",
+          "sha256": "ef486a2d6cddbf7a1e571f72ad64b3fb9ced28fb6934d117bb6e6a974894cb8d",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 2233,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Marked/sprites.png",
+          "sha256": "362595ade2d8ea4a7c46ad47ab469b11df71a8b4dbc54c8de435a340e09e33ce",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 1135,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Possessed1/sprites.png",
+          "sha256": "2a20bc6e977a89b09a7a7ca34edcaca57baec5f08a4ee9749a99229f00643fef",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 866,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Possessed2/sprites.png",
+          "sha256": "bfbbf7d36336269a5ea0157644a38676ec09ee151116300c5a07da00bcee7aab",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 1015,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Werewolf/sprites.png",
+          "sha256": "780050a536083001217f4c6241e16ba8d0406dea380acb3ae4f9b708471ea2e8",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 2820,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/Zombie/sprites.png",
+          "sha256": "6ccc354192c715ad0145dc48551333de83462ef2ebeaa4d1908527281c119097",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+            "differingVisiblePixels": 879,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/HumanBlack/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/HumanBlack/base/sprites.png",
+          "sha256": "207524dec02707e786b2285db7f55002a0a85f918c8bfa0eea69717ffd31da31",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Kobold",
+      "sex": "Female",
+      "race": "Kobold",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Kobold/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Ashen/sprites.png",
+          "sha256": "74efcfff8eb9c41d148198b5080c538921e50bbdc00bbb2362e4de96cf5b9dee",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 1852,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Hellblooded/sprites.png",
+          "sha256": "8e22f949869b594317db1fe8584a01535f7bdc2725680f1022419259f76b13a8",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 2323,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Marked/sprites.png",
+          "sha256": "808f34310e46e80196a5d749a9ade9459aa6c741e9f8b61ded9d09dd2722ecac",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 1305,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Possessed1/sprites.png",
+          "sha256": "c01dd3c189176945802bad99507fc526df10d75c527e4462aa383e911a36d369",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 728,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Possessed2/sprites.png",
+          "sha256": "00c71bfc4702fd3b7df46070e8aba85d126cb80dd5c81659c638d0505c5f8aff",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 840,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Werewolf/sprites.png",
+          "sha256": "9809c291976c3dc651f74e85806b805c4e08306a77eccf131027095daa3c0432",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 2942,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/Zombie/sprites.png",
+          "sha256": "6a00484138e99fd0d7a4775be2817116e0a9995d84d2c49f2030c106519f9813",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+            "differingVisiblePixels": 365,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Kobold/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Kobold/base/sprites.png",
+          "sha256": "a2a167c5571c687c7616f2353494bd3ee4d63261bf8069f19485267e36b42294",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/LizardMan",
+      "sex": "Female",
+      "race": "LizardMan",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/LizardMan/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Ashen/sprites.png",
+          "sha256": "d1243ea9adf1ae78b5a387f03a5437fb556c0c48056a8805a3bff8a8f585bbf6",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 1558,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Hellblooded/sprites.png",
+          "sha256": "a1093fb75194340145e6c1452646321090069058136c85bb0790428e76e0d2df",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 2201,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Marked/sprites.png",
+          "sha256": "1f3cda644a382dc1d9348a94bc26688d515c0df75fb6f340034ddc3160d0a193",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 1224,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Possessed1/sprites.png",
+          "sha256": "d459187a645a310ba8ee21c867e6e5299e5023756de005b2498805f1a6372670",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 596,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Possessed2/sprites.png",
+          "sha256": "86ed8f21ffda7dbd9ddc77f89cf39ba91aad4864438f5421180399784106def1",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 925,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Werewolf/sprites.png",
+          "sha256": "243fc8ad170440789ac0bab6b92521f3de5e7bb2b904de7ad4e10fd57d0f4de2",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 2542,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/Zombie/sprites.png",
+          "sha256": "577673b664e284f5fc1be20c4ed8e2c3b69526d0ab64a3af8b1964ec2d8bc223",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+            "differingVisiblePixels": 891,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/LizardMan/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/LizardMan/base/sprites.png",
+          "sha256": "6c4546554be898dfcaae26712f9c924cbafb5ea5bdeb33dab2622a8bbf760bb0",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Night Elf",
+      "sex": "Female",
+      "race": "Night Elf",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Night Elf/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Ashen/sprites.png",
+          "sha256": "596a7e0dd419c5be7c98e23d26e88cace5cfe50b239f2f2371d6d0ca7141e54a",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 1092,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Hellblooded/sprites.png",
+          "sha256": "43edffd61b96036cb994df2bde2f3fd1a0daed7cea0eef68c4d1e37c5b125e34",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 4080,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Marked/sprites.png",
+          "sha256": "f63bc3653c5acd260cf87cfcfb10d576b08fb6dc554629fe3f670bb17d2b9c8c",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 1152,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Possessed1/sprites.png",
+          "sha256": "b63d86e9b8ede7874345bb7086819cc8c974926308d824b3daa095857cee27db",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 791,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Possessed2/sprites.png",
+          "sha256": "fe8ccda4d9c9aa14bfb275bb927eeb5dd11324e3b164fbfa816cf0be3bc8f6bb",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 763,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Werewolf/sprites.png",
+          "sha256": "94f1abf739a268053c062228202a106b469249188dafa316d0fe15a839df0f07",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 2576,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/Zombie/sprites.png",
+          "sha256": "020301d39caf8876ebddf5bcdcace3a1cf986c7ab77e2efc1f64b9ce7bc13236",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+            "differingVisiblePixels": 1203,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Night Elf/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Night Elf/base/sprites.png",
+          "sha256": "8c7dcc2c69ba45be32d17d41453cac9c9424f1b4ec3a4b2788c242b879a10a76",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    },
+    {
+      "id": "Female/Orc",
+      "sex": "Female",
+      "race": "Orc",
+      "baseSource": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+      "rig": null,
+      "candidateInputs": [],
+      "inputRegistrationVerified": false,
+      "appearances": [
+        {
+          "id": "Female/Orc/Ashen",
+          "appearance": "Ashen",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Ashen/sprites.png",
+          "sha256": "75c7623a59404eb91d3b6de5b0a4a23c0147b26f10734e1a27943c5843f35266",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 1234,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/Hellblooded",
+          "appearance": "Hellblooded",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Hellblooded/sprites.png",
+          "sha256": "757a4c681524c772d6a554cf9d0d7f20294346635402b1253993f49893afbe84",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 3502,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/Marked",
+          "appearance": "Marked",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Marked/sprites.png",
+          "sha256": "85795f9b08fe148f5c05e508c7f4ad7dcc91174a00d94b1903668cba6f4af2c8",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 1296,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/Possessed1",
+          "appearance": "Possessed1",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Possessed1/sprites.png",
+          "sha256": "26a191c7448c31e6ebd3bbb05a9e5afead890f659bdfa5434e444a66b6bb1008",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 511,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/Possessed2",
+          "appearance": "Possessed2",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Possessed2/sprites.png",
+          "sha256": "07329e56967caa46ac150ca1701c753603ab845b7e19a461f5dc999925ec18d5",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 732,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/Werewolf",
+          "appearance": "Werewolf",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Werewolf/sprites.png",
+          "sha256": "acb1c969201c5a5658634e42edce38a939e93fa6faedef46266d1fb29fa86700",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 3995,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/Zombie",
+          "appearance": "Zombie",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/Zombie/sprites.png",
+          "sha256": "11082a82a62d9deaf24e2cca166cc068e6d3fb382aa4c1f17283a0ba89669b88",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": {
+            "status": "silhouette_differs_needs_anatomy_review",
+            "parent": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+            "differingVisiblePixels": 828,
+            "approvedInheritance": false
+          }
+        },
+        {
+          "id": "Female/Orc/base",
+          "appearance": "base",
+          "source": "Dungeon Master Sample/Sprites/Female/Orc/base/sprites.png",
+          "sha256": "f21887daee08b924a62b4633dd687a6f06e2ed0440b4c7c7bf80e19a4384fc5a",
+          "size": [
+            256,
+            192
+          ],
+          "comparison": null
+        }
+      ]
+    }
+  ],
+  "rules": [
+    "Preserve original body pixels and calibrated Human/Elf renderers.",
+    "Reuse animation clips; calibrate each distinct anatomy separately.",
+    "Same silhouette does not prove rig compatibility; different silhouette may only be hair or horns.",
+    "Never run the legacy filler-producing cutter blindly over this inventory.",
+    "Female profiles require their own calibration; do not assume male joints.",
+    "Record hybrid inheritance only after body-part and joint review."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "lunge",
+  "label": "Lunge",
+  "category": "Combat",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.22,
+      {
+        "Ru": -2.6,
+        "Rl": 0,
+        "W": 0.06,
+        "Lu": -0.4,
+        "Ll": -0.1,
+        "lean": -0.12,
+        "back": 0.3,
+        "crouch": 0.18
+      }
+    ],
+    [
+      0.36,
+      {
+        "Ru": -0.05,
+        "Rl": 0,
+        "W": 0,
+        "Lu": -1.3,
+        "Ll": -0.5,
+        "lean": 0.3,
+        "lunge": 1,
+        "step": 1.35,
+        "back": 0.25,
+        "crouch": 0.4
+      }
+    ],
+    [
+      0.6,
+      {
+        "Ru": -0.3,
+        "Rl": -0.15,
+        "W": 0.05,
+        "lean": 0.22,
+        "lunge": 0.9,
+        "step": 1.35,
+        "back": 0.25,
+        "crouch": 0.34
+      }
+    ],
+    [
+      0.95
+    ]
+  ],
+  "duration": 1.2,
+  "events": {
+    "hit": [
+      0.36
+    ],
+    "trail": [
+      0.24,
+      0.4
+    ]
+  },
+  "source": "art/gear3d/skills.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.22,
+        {
+          "Ru": -2.6,
+          "Rl": 0,
+          "W": 0.06,
+          "Lu": -0.4,
+          "Ll": -0.1,
+          "lean": -0.12,
+          "back": 0.3,
+          "crouch": 0.18
+        }
+      ],
+      [
+        0.36,
+        {
+          "Ru": -0.05,
+          "Rl": 0,
+          "W": 0,
+          "Lu": -1.3,
+          "Ll": -0.5,
+          "lean": 0.3,
+          "lunge": 1,
+          "step": 1.35,
+          "back": 0.25,
+          "crouch": 0.4
+        }
+      ],
+      [
+        0.6,
+        {
+          "Ru": -0.3,
+          "Rl": -0.15,
+          "W": 0.05,
+          "lean": 0.22,
+          "lunge": 0.9,
+          "step": 1.35,
+          "back": 0.25,
+          "crouch": 0.34
+        }
+      ],
+      [
+        0.95
+      ]
+    ],
+    "hit": [
+      0.36
+    ],
+    "trail": [
+      0.24,
+      0.4
+    ],
+    "death": "fall"
+  },
+  "status": "source-keyed clip; mapping preview"
+}

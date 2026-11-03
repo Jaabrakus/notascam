@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "name": "Possessed2 \u2014 approved attack variants",
+  "geometryReference": "inputs/approved-attack.png",
+  "baseIsProductionAtlas": false,
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "xEdges": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ],
+    "yEdges": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ]
+  },
+  "skinMaskRule": {
+    "greenMinusRed": 6,
+    "greenMinusBlue": 9,
+    "minGreen": 25
+  },
+  "occlusionAlphaMin": 128,
+  "variants": [
+    {
+      "id": "possessed2",
+      "base": "palette-bases/Possessed2.png",
+      "layers": []
+    }
+  ],
+  "reviewNotes": [
+    "Exact approved input retained at original resolution.",
+    "Native game atlas registration is a separate step.",
+    "All donor overlays require visual review on the final animation."
+  ]
+}

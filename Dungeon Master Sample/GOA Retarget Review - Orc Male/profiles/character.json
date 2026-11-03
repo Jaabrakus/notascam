@@ -1,0 +1,982 @@
+{
+  "name": "GOA Orc male",
+  "source": "Dungeon Master Sample/.retarget-jjesslx3/inputs/sprites.png",
+  "zones": "fine zones for Orc",
+  "zoneRowShift": {
+    "S0": -2,
+    "S1": -2,
+    "S2": -2,
+    "N0": -2,
+    "N1": -2,
+    "N2": -2,
+    "E0": -2,
+    "E1": -2,
+    "E2": -2,
+    "W0": -2,
+    "W1": -2,
+    "W2": -2
+  },
+  "calibration": "joints from the staged Orc skeleton (inputs/Orc.json, 2 rows up); pieces from the Orc own zones (tools/recut_by_zones.py); guard grips from the Orc sword-and-shield draft; front/back bow targets = Elf targets around the South neck scaled by arm reach; side bow on the side body (bowSideBody); renderer = approved Human renderer 2026-10-31 + tools/patch_engine.py",
+  "views": [
+    {
+      "name": "South",
+      "arms": {
+        "right": [
+          [
+            20.68,
+            26.58
+          ],
+          [
+            17.85,
+            35.65
+          ],
+          [
+            15.57,
+            46.57
+          ]
+        ],
+        "left": [
+          [
+            44.83,
+            28.1
+          ],
+          [
+            47.23,
+            38.53
+          ],
+          [
+            49.3,
+            47.17
+          ]
+        ]
+      },
+      "legs": {
+        "right": [
+          [
+            25.58,
+            45.05
+          ],
+          [
+            24.95,
+            53.5
+          ],
+          [
+            24.54,
+            58.89
+          ]
+        ],
+        "left": [
+          [
+            38.0,
+            45.05
+          ],
+          [
+            39.34,
+            53.5
+          ],
+          [
+            40.18,
+            58.82
+          ]
+        ]
+      },
+      "waist": [
+        33,
+        44
+      ],
+      "neck": [
+        33,
+        24
+      ],
+      "nearLeg": "right",
+      "parts": {
+        "head": "orc-0-head.png",
+        "torso": "orc-0-torso.png",
+        "pelvis": "orc-0-pelvis.png",
+        "rightUpperArm": "orc-0-rightUpperArm.png",
+        "rightForearm": "orc-0-rightForearm.png",
+        "rightHand": "orc-0-rightHand.png",
+        "leftUpperArm": "orc-0-leftUpperArm.png",
+        "leftForearm": "orc-0-leftForearm.png",
+        "leftHand": "orc-0-leftHand.png",
+        "rightThigh": "orc-0-rightThigh.png",
+        "rightShin": "orc-0-rightShin.png",
+        "rightFoot": "orc-0-rightFoot.png",
+        "leftThigh": "orc-0-leftThigh.png",
+        "leftShin": "orc-0-leftShin.png",
+        "leftFoot": "orc-0-leftFoot.png"
+      },
+      "walk": [
+        {
+          "refined-torso": "orc-0-walk-0-body.png",
+          "render-head": "orc-0-walk-0-head.png"
+        },
+        {
+          "refined-torso": "orc-0-walk-1-body.png",
+          "render-head": "orc-0-walk-1-head.png"
+        },
+        {
+          "refined-torso": "orc-0-walk-2-body.png",
+          "render-head": "orc-0-walk-2-head.png"
+        }
+      ],
+      "jointColors": {
+        "rightElbow": [
+          84,
+          121,
+          56,
+          253
+        ],
+        "rightWrist": [
+          46,
+          74,
+          27,
+          252
+        ],
+        "rightKnee": [
+          51,
+          78,
+          29,
+          253
+        ],
+        "rightAnkle": [
+          86,
+          123,
+          62,
+          253
+        ],
+        "leftElbow": [
+          82,
+          119,
+          56,
+          253
+        ],
+        "leftWrist": [
+          73,
+          107,
+          48,
+          252
+        ],
+        "leftKnee": [
+          67,
+          94,
+          41,
+          253
+        ],
+        "leftAnkle": [
+          95,
+          133,
+          61,
+          252
+        ]
+      }
+    },
+    {
+      "name": "North",
+      "arms": {
+        "right": [
+          [
+            43.45,
+            26.65
+          ],
+          [
+            45.5,
+            35.5
+          ],
+          [
+            48.07,
+            46.26
+          ]
+        ],
+        "left": [
+          [
+            18.94,
+            27.76
+          ],
+          [
+            16.38,
+            38.12
+          ],
+          [
+            15.38,
+            47.14
+          ]
+        ]
+      },
+      "legs": {
+        "right": [
+          [
+            37.39,
+            45.05
+          ],
+          [
+            38.35,
+            53.5
+          ],
+          [
+            38.96,
+            58.92
+          ]
+        ],
+        "left": [
+          [
+            25.16,
+            45.05
+          ],
+          [
+            24.3,
+            53.5
+          ],
+          [
+            23.75,
+            58.89
+          ]
+        ]
+      },
+      "waist": [
+        32,
+        44
+      ],
+      "neck": [
+        32,
+        24
+      ],
+      "nearLeg": "right",
+      "parts": {
+        "head": "orc-1-head.png",
+        "torso": "orc-1-torso.png",
+        "pelvis": "orc-1-pelvis.png",
+        "rightUpperArm": "orc-1-rightUpperArm.png",
+        "rightForearm": "orc-1-rightForearm.png",
+        "rightHand": "orc-1-rightHand.png",
+        "leftUpperArm": "orc-1-leftUpperArm.png",
+        "leftForearm": "orc-1-leftForearm.png",
+        "leftHand": "orc-1-leftHand.png",
+        "rightThigh": "orc-1-rightThigh.png",
+        "rightShin": "orc-1-rightShin.png",
+        "rightFoot": "orc-1-rightFoot.png",
+        "leftThigh": "orc-1-leftThigh.png",
+        "leftShin": "orc-1-leftShin.png",
+        "leftFoot": "orc-1-leftFoot.png"
+      },
+      "walk": [
+        {
+          "refined-torso": "orc-1-walk-0-body.png",
+          "render-head": "orc-1-walk-0-head.png"
+        },
+        {
+          "refined-torso": "orc-1-walk-1-body.png",
+          "render-head": "orc-1-walk-1-head.png"
+        },
+        {
+          "refined-torso": "orc-1-walk-2-body.png",
+          "render-head": "orc-1-walk-2-head.png"
+        }
+      ],
+      "jointColors": {
+        "rightElbow": [
+          79,
+          114,
+          52,
+          253
+        ],
+        "rightWrist": [
+          29,
+          48,
+          15,
+          253
+        ],
+        "rightKnee": [
+          56,
+          86,
+          37,
+          252
+        ],
+        "rightAnkle": [
+          80,
+          115,
+          55,
+          253
+        ],
+        "leftElbow": [
+          84,
+          119,
+          57,
+          253
+        ],
+        "leftWrist": [
+          66,
+          99,
+          40,
+          253
+        ],
+        "leftKnee": [
+          75,
+          110,
+          48,
+          253
+        ],
+        "leftAnkle": [
+          93,
+          131,
+          65,
+          252
+        ]
+      }
+    },
+    {
+      "name": "East",
+      "arms": {
+        "right": [
+          [
+            25.0,
+            29.0
+          ],
+          [
+            23.93,
+            42.37
+          ],
+          [
+            23.31,
+            50.13
+          ]
+        ],
+        "left": [
+          [
+            34.38,
+            30.0
+          ],
+          [
+            33.3,
+            43.37
+          ],
+          [
+            32.69,
+            51.13
+          ]
+        ]
+      },
+      "legs": {
+        "right": [
+          [
+            36.5,
+            44.0
+          ],
+          [
+            38.0,
+            50.93
+          ],
+          [
+            39.0,
+            56.5
+          ]
+        ],
+        "left": [
+          [
+            36.5,
+            44.0
+          ],
+          [
+            33.42,
+            50.58
+          ],
+          [
+            29.82,
+            57.85
+          ]
+        ]
+      },
+      "waist": [
+        36,
+        44
+      ],
+      "neck": [
+        36,
+        24
+      ],
+      "nearLeg": "left",
+      "parts": {
+        "head": "orc-2-head.png",
+        "torso": "orc-2-torso.png",
+        "pelvis": "orc-2-pelvis.png",
+        "rightUpperArm": "orc-2-rightUpperArm.png",
+        "rightForearm": "orc-2-rightForearm.png",
+        "rightHand": "orc-2-rightHand.png",
+        "leftUpperArm": "orc-2-rightUpperArm.png",
+        "leftForearm": "orc-2-rightForearm.png",
+        "leftHand": "orc-2-rightHand.png",
+        "rightThigh": "orc-2-rightThigh.png",
+        "rightShin": "orc-2-leftShin.png",
+        "rightFoot": "orc-2-leftFoot.png",
+        "leftThigh": "orc-2-leftThigh.png",
+        "leftShin": "orc-2-leftShin.png",
+        "leftFoot": "orc-2-leftFoot.png"
+      },
+      "walk": [
+        {
+          "refined-torso": "orc-2-walk-0-body.png",
+          "render-head": "orc-2-walk-0-head.png"
+        },
+        {
+          "refined-torso": "orc-2-walk-1-body.png",
+          "render-head": "orc-2-walk-1-head.png"
+        },
+        {
+          "refined-torso": "orc-2-walk-2-body.png",
+          "render-head": "orc-2-walk-2-head.png"
+        }
+      ],
+      "jointColors": {
+        "rightElbow": [
+          84,
+          121,
+          58,
+          253
+        ],
+        "rightWrist": [
+          86,
+          123,
+          57,
+          252
+        ],
+        "rightKnee": [
+          29,
+          47,
+          17,
+          252
+        ],
+        "rightAnkle": [
+          71,
+          104,
+          48,
+          252
+        ],
+        "leftElbow": [
+          44,
+          73,
+          24,
+          253
+        ],
+        "leftWrist": [
+          71,
+          103,
+          47,
+          253
+        ],
+        "leftKnee": [
+          55,
+          80,
+          34,
+          253
+        ],
+        "leftAnkle": [
+          77,
+          112,
+          50,
+          252
+        ]
+      },
+      "partSource": {
+        "leftHand": [
+          [
+            23.31,
+            50.13
+          ],
+          [
+            23.31,
+            51.13
+          ]
+        ],
+        "rightShin": [
+          [
+            33.42,
+            50.58
+          ],
+          [
+            29.82,
+            57.85
+          ]
+        ],
+        "rightFoot": [
+          [
+            29.82,
+            57.85
+          ],
+          [
+            29.82,
+            58.85
+          ]
+        ],
+        "leftUpperArm": [
+          [
+            25.0,
+            29.0
+          ],
+          [
+            23.93,
+            42.37
+          ]
+        ],
+        "leftForearm": [
+          [
+            23.93,
+            42.37
+          ],
+          [
+            23.31,
+            50.13
+          ]
+        ]
+      }
+    },
+    {
+      "name": "West",
+      "arms": {
+        "left": [
+          [
+            38.5,
+            29.0
+          ],
+          [
+            40.39,
+            41.39
+          ],
+          [
+            40.29,
+            50.08
+          ]
+        ],
+        "right": [
+          [
+            29.75,
+            30.0
+          ],
+          [
+            31.64,
+            42.39
+          ],
+          [
+            31.54,
+            51.08
+          ]
+        ]
+      },
+      "legs": {
+        "right": [
+          [
+            27.0,
+            44.7
+          ],
+          [
+            29.58,
+            50.58
+          ],
+          [
+            33.09,
+            58.03
+          ]
+        ],
+        "left": [
+          [
+            27.0,
+            44.7
+          ],
+          [
+            25.0,
+            50.93
+          ],
+          [
+            24.38,
+            56.62
+          ]
+        ]
+      },
+      "waist": [
+        32,
+        44
+      ],
+      "neck": [
+        32,
+        24
+      ],
+      "nearLeg": "right",
+      "parts": {
+        "head": "orc-3-head.png",
+        "torso": "orc-3-torso.png",
+        "pelvis": "orc-3-pelvis.png",
+        "rightUpperArm": "orc-3-leftUpperArm.png",
+        "rightForearm": "orc-3-leftForearm.png",
+        "rightHand": "orc-3-leftHand.png",
+        "leftUpperArm": "orc-3-leftUpperArm.png",
+        "leftForearm": "orc-3-leftForearm.png",
+        "leftHand": "orc-3-leftHand.png",
+        "rightThigh": "orc-3-rightThigh.png",
+        "rightShin": "orc-3-rightShin.png",
+        "rightFoot": "orc-3-rightFoot.png",
+        "leftThigh": "orc-3-leftThigh.png",
+        "leftShin": "orc-3-rightShin.png",
+        "leftFoot": "orc-3-rightFoot.png"
+      },
+      "walk": [
+        {
+          "refined-torso": "orc-3-walk-0-body.png",
+          "render-head": "orc-3-walk-0-head.png"
+        },
+        {
+          "refined-torso": "orc-3-walk-1-body.png",
+          "render-head": "orc-3-walk-1-head.png"
+        },
+        {
+          "refined-torso": "orc-3-walk-2-body.png",
+          "render-head": "orc-3-walk-2-head.png"
+        }
+      ],
+      "jointColors": {
+        "rightElbow": [
+          63,
+          92,
+          41,
+          253
+        ],
+        "rightWrist": [
+          85,
+          122,
+          56,
+          252
+        ],
+        "rightKnee": [
+          75,
+          106,
+          48,
+          253
+        ],
+        "rightAnkle": [
+          82,
+          119,
+          54,
+          252
+        ],
+        "leftElbow": [
+          79,
+          115,
+          51,
+          253
+        ],
+        "leftWrist": [
+          83,
+          120,
+          57,
+          252
+        ],
+        "leftKnee": [
+          40,
+          53,
+          25,
+          252
+        ],
+        "leftAnkle": [
+          78,
+          110,
+          48,
+          251
+        ]
+      },
+      "partSource": {
+        "rightHand": [
+          [
+            40.29,
+            50.08
+          ],
+          [
+            40.29,
+            51.08
+          ]
+        ],
+        "leftShin": [
+          [
+            29.58,
+            50.58
+          ],
+          [
+            33.09,
+            58.03
+          ]
+        ],
+        "leftFoot": [
+          [
+            33.09,
+            58.03
+          ],
+          [
+            33.09,
+            59.03
+          ]
+        ],
+        "rightUpperArm": [
+          [
+            38.5,
+            29.0
+          ],
+          [
+            40.39,
+            41.39
+          ]
+        ],
+        "rightForearm": [
+          [
+            40.39,
+            41.39
+          ],
+          [
+            40.29,
+            50.08
+          ]
+        ]
+      }
+    }
+  ],
+  "grips": [
+    {
+      "right": [
+        16.0,
+        37.0
+      ],
+      "left": [
+        48.0,
+        38.0
+      ]
+    },
+    {
+      "right": [
+        48.0,
+        37.0
+      ],
+      "left": [
+        16.0,
+        38.0
+      ]
+    },
+    {
+      "right": [
+        38.0,
+        40.0
+      ],
+      "left": [
+        40.0,
+        37.0
+      ]
+    },
+    {
+      "right": [
+        18.0,
+        34.0
+      ],
+      "left": [
+        26.0,
+        40.0
+      ]
+    }
+  ],
+  "actions": {
+    "bow": [
+      {
+        "bow": [
+          40,
+          33
+        ],
+        "nock": [
+          33,
+          33
+        ],
+        "cheek": [
+          28,
+          29
+        ],
+        "flung": [
+          26,
+          28
+        ]
+      },
+      {
+        "bow": [
+          24,
+          31
+        ],
+        "nock": [
+          30,
+          31
+        ],
+        "cheek": [
+          36,
+          30
+        ],
+        "flung": [
+          39,
+          29
+        ]
+      },
+      {
+        "bow": [
+          62,
+          28
+        ],
+        "nock": [
+          50,
+          28
+        ],
+        "cheek": [
+          38,
+          27
+        ],
+        "flung": [
+          33,
+          25
+        ]
+      },
+      {
+        "bow": [
+          5,
+          28
+        ],
+        "nock": [
+          17,
+          28
+        ],
+        "cheek": [
+          29,
+          27
+        ],
+        "flung": [
+          32,
+          28
+        ]
+      }
+    ],
+    "throwFront": {
+      "windup": [
+        7,
+        -7
+      ],
+      "release": [
+        4,
+        1
+      ],
+      "follow": [
+        1,
+        9
+      ]
+    },
+    "throwSouth": {
+      "hand": [
+        -4,
+        -5
+      ],
+      "elbow": [
+        0,
+        8
+      ]
+    },
+    "throwNorth": {
+      "elbow": [
+        8,
+        0
+      ],
+      "hand": [
+        0,
+        -9
+      ]
+    }
+  },
+  "poseTargets": {
+    "bow": [
+      {
+        "bow": [
+          41,
+          33
+        ],
+        "nock": [
+          33,
+          33
+        ],
+        "cheek": [
+          28,
+          29
+        ],
+        "flung": [
+          25,
+          28
+        ]
+      },
+      {
+        "bow": [
+          24,
+          32
+        ],
+        "nock": [
+          31,
+          32
+        ],
+        "cheek": [
+          37,
+          31
+        ],
+        "flung": [
+          40,
+          29
+        ]
+      },
+      {
+        "bow": [
+          62,
+          28
+        ],
+        "nock": [
+          50,
+          28
+        ],
+        "cheek": [
+          38,
+          27
+        ],
+        "flung": [
+          33,
+          25
+        ]
+      },
+      {
+        "bow": [
+          3,
+          28
+        ],
+        "nock": [
+          15,
+          28
+        ],
+        "cheek": [
+          26,
+          27
+        ],
+        "flung": [
+          29,
+          28
+        ]
+      }
+    ]
+  },
+  "keepGrips": true,
+  "bowSideBody": false,
+  "frontLegsSquash": true,
+  "sideHeadOnTop": true,
+  "closePinholes": true,
+  "frontHeadOnTop": 4,
+  "armPose": [
+    {
+      "spread": 0.5
+    },
+    {
+      "spread": 0.5
+    },
+    null,
+    null
+  ]
+}

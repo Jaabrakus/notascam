@@ -1,0 +1,102 @@
+{
+  "name": "Human_Spear_and_Shield_Hold",
+  "artwork": "Human_Spear_and_Shield_Hold_Artwork.png",
+  "sheet": "Human_Spear_and_Shield_Hold_Sheet_64px.png",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": [
+    {
+      "direction": "South",
+      "file": "Human_Spear_and_Shield_Hold_South_64px.png",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        151,
+        155,
+        425,
+        658
+      ]
+    },
+    {
+      "direction": "North",
+      "file": "Human_Spear_and_Shield_Hold_North_64px.png",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        688,
+        155,
+        998,
+        658
+      ]
+    },
+    {
+      "direction": "East",
+      "file": "Human_Spear_and_Shield_Hold_East_64px.png",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        1237,
+        155,
+        1471,
+        658
+      ]
+    },
+    {
+      "direction": "West",
+      "file": "Human_Spear_and_Shield_Hold_West_64px.png",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        1712,
+        155,
+        1977,
+        658
+      ]
+    }
+  ],
+  "equipmentVisible": false,
+  "armorVisible": false,
+  "generation": "built-in imagegen",
+  "limits": "Four standing empty-hand holding poses. No walking, attacks, equipment layers or sixteen-direction animation included.",
+  "sourceSha256": "7913a5fc3ba3467208c6997dbf62bae13c51e9fd649cb0da9b116753af69133c"
+}

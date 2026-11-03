@@ -1,0 +1,7 @@
+{
+ "check": "720 frames (18 clips x 10 times x 4 views) rendered with the approved Elf parts",
+ "old_engine": "rig-package-16 preview (v1 folder, port 8880), digest 8d0d43a8",
+ "new_engine": "this folder's source/engine.js with the Elf targets read from profiles/elf-male.json, digest 8d0d43a8",
+ "result": "identical",
+ "method": "FNV-1a over each 192x192 frame's pixels, then over the joined list; browser pane, 2026-10-30"
+}

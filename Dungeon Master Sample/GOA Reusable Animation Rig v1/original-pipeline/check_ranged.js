@@ -1,0 +1,26 @@
+const fs=require('fs'),vm=require('vm'),path=require('path');
+const root=path.resolve(__dirname,'../../..'),out=path.join(root,'Dungeon Master Sample/GOA Sword and Shield Rig/library'),data=JSON.parse(fs.readFileSync(path.join(out,'library.json'),'utf8'));
+const context=vm.createContext({data});vm.runInContext(fs.readFileSync(path.join(__dirname,'engine.js'),'utf8')+';globalThis.animator=new ElfAnimator(data,{});',context);
+const report=vm.runInContext(`(()=>{let checks=0;
+if(data.clips.bow_shot.events.release!==.9||data.clips.bow_shot.duration!==1.75)throw Error('Bow runtime timing mismatch');
+for(let d=0;d<4;d++){
+ const ready=animator.sample('bow_ready',.5,d),aim=animator.sample('bow_shot',.72,d),before=animator.sample('bow_shot',.899,d),release=animator.sample('bow_shot',.9,d);
+ if(ready.bow.nocked||!aim.bow.nocked||!before.bow.nocked||release.bow.nocked||!release.bow.released)throw Error('Arrow release state '+d);
+ if(d<2){for(const [id,t] of [['bow_shot',.72],['throw',.38]]){const p=animator.sample(id,t,d),side=id==='bow_shot'?'left':'right',a=p.arms[side];if(!(a.projectedUpperLength<a.upperLength*.8))throw Error('Missing front/back foreshortening');for(const [x,y,n] of [[a.shoulder,a.elbow,a.projectedUpperLength],[a.elbow,a.hand,a.projectedLowerLength]])if(Math.abs(V.len(V.sub(y,x))-n)>1e-6)throw Error('Projection mismatch');checks++;}}
+ const bowSide=d>=2?'right':'left',drawSide=d>=2?'left':'right';if(aim.bow.bowSide!==bowSide||aim.bow.drawSide!==drawSide)throw Error('Wrong bow hand');
+ if(V.len(V.sub(aim.arms[bowSide].hand,before.arms[bowSide].hand))>.001)throw Error('Bow grip drifts during aim '+d);
+ if(d>=2){if(d===2?aim.mirroredFrom!==3:aim.bodyDirection!==0)throw Error('Wrong archer body/head facing');const early=animator.sample('bow_shot',.32,d);if(V.len(V.sub(aim.arms[bowSide].hand,aim.arms[drawSide].hand))<=V.len(V.sub(early.arms[bowSide].hand,early.arms[drawSide].hand))+2)throw Error('String hand does not draw back');}
+ if(d<2&&aim.bow.arrowPresentation!=='tip')throw Error('Front/back arrow must be foreshortened');
+ for(const id of ['throw','throw_axe','throw_dagger']){const t=data.clips[id].events.release;if(animator.sample(id,t-.001,d).released||!animator.sample(id,t,d).released)throw Error('Throw release '+id);if(d<2)for(const t of [.26,.38]){const a=animator.sample(id,t,d).arms.right;if(d===0?a.hand[0]>a.shoulder[0]:a.hand[0]<a.shoulder[0])throw Error('Throw drifts across chest');}checks++;}
+}
+for(const id of ['lunge','thrust','slash','chop','cast'])for(const d of [2,3])for(const time of animator.times(id)){const c=data.clips[id],p=animator.sample(id,time,d),w=animator.scalar(c,time,'W',Math.PI/2),side=d===2?1:-1,expected=Math.atan2(side*Math.cos(w),Math.sin(w));if(Math.abs(Math.sin(p.weaponAngle-expected))>1e-6)throw Error('Weapon angle contains body lean '+id);checks++;}
+for(let d=0;d<4;d++)for(const t of animator.times('throw')){const p=animator.sample('throw',t,d);if(Math.abs(d<2?Math.sin(p.weaponAngle):Math.cos(p.weaponAngle))>1e-6)throw Error('Spear facing projection incorrect '+d);checks++;}
+for(const id of ['bow_ready','bow_shot'])for(const t of animator.times(id)){const e=animator.sample(id,t,2),w=animator.sample(id,t,3);for(const side of ['left','right'])for(const joint of ['shoulder','elbow','hand']){const a=e.arms[side][joint],b=w.arms[side][joint];if(Math.abs(a[0]+b[0]-64)>1e-6||Math.abs(a[1]-b[1])>1e-6)throw Error('Bow mirror mismatch');checks++;}}
+for(const t of [.26,.38,.52]){const p=animator.sample('throw',t,0),a=p.arms.right;if(Math.abs(a.hand[0]-a.elbow[0])>1e-6)throw Error('South throwing forearm not upright');checks++;}
+for(const d of [2,3])for(const t of [.32,.72,.9,1.1]){const a=animator.sample('bow_shot',t,d).arms.left;if(Math.abs(a.hand[1]-a.elbow[1])>1e-6)throw Error('Bow drawing forearm not level');checks++;}
+for(const d of [2,3])for(const t of [1.25,1.35,1.5,1.65,1.75]){const a=animator.sample('bow_shot',t,d).arms.left,u=V.sub(a.elbow,a.shoulder),v=V.sub(a.hand,a.elbow);if(Math.abs(u[0]*v[1]-u[1]*v[0])>1e-6)throw Error('Bow recovery elbow kink');checks++;}
+for(const t of [.0,.26,.379]){const q=animator.sample('throw',t,1).parts.rightHand;if(Math.abs(q.tip[0]-q.root[0])>1e-6)throw Error('North grip rolls before release');checks++;}if(animator.sample('throw',.47,1).parts.rightHand.tip[0]-animator.sample('throw',.47,1).parts.rightHand.root[0]<.5)throw Error('Missing release wrist turn');
+{const a=animator.sample('throw',.26,1).arms.right;if(Math.abs(a.shoulder[1]-a.elbow[1])>1e-6||Math.abs(a.elbow[0]-a.hand[0])>1e-6||a.hand[1]>=a.elbow[1])throw Error('North reverse L windup missing');checks++;}
+return {status:'passed',checks,verticalFrontBackLevelSides:true,absoluteWeaponAngles:true,bowHandStable:true,westBowRightHand:true,frontBackArrowTipOnly:true,rightShoulderThrows:true,stringDrawsBack:true,releaseSeconds:.9,throwVariants:3};})()`,context);
+const runtime=fs.readFileSync(path.join(root,'standalone/remastered/art/gear3d/ragdoll.js'),'utf8');if(!runtime.includes('b>=0.9&&!sh.loosed')||!runtime.includes('if(b>1.75)'))throw Error('Live bow timing changed');
+fs.writeFileSync(path.join(out,'ranged-checks.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));

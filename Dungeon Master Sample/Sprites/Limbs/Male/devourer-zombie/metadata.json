@@ -1,0 +1,779 @@
+{
+  "format": "goa-source-pixel-limbs",
+  "version": 1,
+  "bodyId": "devourer-zombie",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "source": {
+    "id": "devourer-zombie",
+    "label": "Devourer zombie",
+    "raceKey": "DevourerZombie",
+    "baseId": "devourer-zombie",
+    "variant": "Base",
+    "status": "walk",
+    "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214910-56105354/result.png",
+    "sourceSha256": "be889c7e82cf2a8f7b7706ea396e1b8e313665eaf46f5faa8abcdf9a32f013b9",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "sourceRects": [
+      [
+        [
+          0,
+          0,
+          425,
+          380
+        ],
+        [
+          425,
+          0,
+          332,
+          380
+        ],
+        [
+          757,
+          0,
+          288,
+          380
+        ],
+        [
+          1045,
+          0,
+          403,
+          380
+        ]
+      ],
+      [
+        [
+          0,
+          380,
+          419,
+          331
+        ],
+        [
+          419,
+          380,
+          343,
+          331
+        ],
+        [
+          762,
+          380,
+          284,
+          331
+        ],
+        [
+          1046,
+          380,
+          402,
+          331
+        ]
+      ],
+      [
+        [
+          0,
+          711,
+          421,
+          375
+        ],
+        [
+          421,
+          711,
+          333,
+          375
+        ],
+        [
+          754,
+          711,
+          290,
+          375
+        ],
+        [
+          1044,
+          711,
+          404,
+          375
+        ]
+      ]
+    ],
+    "frameBounds": [
+      [
+        [
+          158,
+          66,
+          367,
+          366
+        ],
+        [
+          58,
+          66,
+          266,
+          366
+        ],
+        [
+          67,
+          66,
+          218,
+          368
+        ],
+        [
+          71,
+          66,
+          217,
+          368
+        ]
+      ],
+      [
+        [
+          152,
+          13,
+          361,
+          320
+        ],
+        [
+          58,
+          13,
+          281,
+          318
+        ],
+        [
+          63,
+          16,
+          215,
+          320
+        ],
+        [
+          70,
+          16,
+          224,
+          320
+        ]
+      ],
+      [
+        [
+          159,
+          12,
+          368,
+          317
+        ],
+        [
+          54,
+          12,
+          270,
+          317
+        ],
+        [
+          64,
+          13,
+          223,
+          314
+        ],
+        [
+          67,
+          13,
+          218,
+          314
+        ]
+      ]
+    ],
+    "unionBounds": [
+      [
+        152,
+        12,
+        368,
+        366
+      ],
+      [
+        54,
+        12,
+        281,
+        366
+      ],
+      [
+        63,
+        13,
+        223,
+        368
+      ],
+      [
+        67,
+        13,
+        224,
+        368
+      ]
+    ],
+    "targetHeight": 56,
+    "layout": {
+      "columns": 4,
+      "rows": 3,
+      "row": 0,
+      "frames": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ]
+    },
+    "animation": {
+      "kind": "walk",
+      "sequence": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "delaysMs": [
+        200,
+        200,
+        200,
+        200
+      ]
+    },
+    "segmentation": {
+      "method": "alpha128 projection bands with separator cuts",
+      "rowBands": [
+        [
+          66,
+          368
+        ],
+        [
+          393,
+          700
+        ],
+        [
+          723,
+          1028
+        ]
+      ],
+      "equalCellsAssumed": false
+    },
+    "normalization": {
+      "referenceHeight": 307,
+      "centerX": 32,
+      "footY": 61
+    },
+    "qualityFlags": [],
+    "sourceEdgeContacts": [],
+    "artStatus": "generated draft; body animation and gear fitting need visual review"
+  },
+  "states": [
+    {
+      "bits": "0000",
+      "name": "Normal",
+      "missing": []
+    },
+    {
+      "bits": "1000",
+      "name": "NoLeftArm",
+      "missing": [
+        "LeftArm"
+      ]
+    },
+    {
+      "bits": "0100",
+      "name": "NoRightArm",
+      "missing": [
+        "RightArm"
+      ]
+    },
+    {
+      "bits": "0010",
+      "name": "NoLeftLeg",
+      "missing": [
+        "LeftLeg"
+      ]
+    },
+    {
+      "bits": "0001",
+      "name": "NoRightLeg",
+      "missing": [
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "1100",
+      "name": "NoArms",
+      "missing": [
+        "LeftArm",
+        "RightArm"
+      ]
+    },
+    {
+      "bits": "0011",
+      "name": "NoLegs",
+      "missing": [
+        "LeftLeg",
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "1001",
+      "name": "NoRightLegNoLeftArm",
+      "missing": [
+        "LeftArm",
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "0110",
+      "name": "NoLeftLegNoRightArm",
+      "missing": [
+        "RightArm",
+        "LeftLeg"
+      ]
+    },
+    {
+      "bits": "0101",
+      "name": "NoRightArmNoRightLeg",
+      "missing": [
+        "RightArm",
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "1010",
+      "name": "NoLeftArmNoLeftLeg",
+      "missing": [
+        "LeftArm",
+        "LeftLeg"
+      ]
+    },
+    {
+      "bits": "0111",
+      "name": "NoLegsNoRightArm",
+      "missing": [
+        "RightArm",
+        "LeftLeg",
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "1011",
+      "name": "NoLegsNoLeftArm",
+      "missing": [
+        "LeftArm",
+        "LeftLeg",
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "1101",
+      "name": "NoArmsNoRightLeg",
+      "missing": [
+        "LeftArm",
+        "RightArm",
+        "RightLeg"
+      ]
+    },
+    {
+      "bits": "1110",
+      "name": "NoArmsNoLeftLeg",
+      "missing": [
+        "LeftArm",
+        "RightArm",
+        "LeftLeg"
+      ]
+    },
+    {
+      "bits": "1111",
+      "name": "None",
+      "missing": [
+        "LeftArm",
+        "RightArm",
+        "LeftLeg",
+        "RightLeg"
+      ]
+    }
+  ],
+  "slots": [
+    "LeftArm",
+    "RightArm",
+    "LeftLeg",
+    "RightLeg"
+  ],
+  "animation": {
+    "kind": "walk",
+    "sequence": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "delaysMs": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "encodedDMISequence": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "encodedDMIFrames": 4,
+    "delaysDeciseconds": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ]
+  },
+  "atlases": {
+    "normal": {
+      "image": "normal.png",
+      "rows": 3
+    },
+    "parts": {
+      "image": "parts.png",
+      "rows": 12,
+      "rowOrder": "slot then source frame"
+    },
+    "injury": {
+      "image": "injuries.png",
+      "rows": 48,
+      "rowOrder": "canonical state then source frame"
+    },
+    "woundCaps": {
+      "image": "wound-caps.png",
+      "rows": 12,
+      "rowOrder": "slot then source frame",
+      "dmi": "wound-caps.dmi"
+    },
+    "injuryWithBlood": {
+      "image": "injuries-with-blood.png",
+      "rows": 48,
+      "rowOrder": "canonical state then source frame",
+      "dmi": "injuries-with-blood.dmi"
+    }
+  },
+  "normalState": "Normal",
+  "stateNameBinding": "Canonical Surgery.dm rm_limb_states names; renderer callers must use Normal for the intact body.",
+  "reconstruction": {
+    "exactRGBA": true,
+    "overlapPixels": 0,
+    "outsideMaskChangedPixels": 0
+  },
+  "wounds": {
+    "enabled": true,
+    "separateOverlay": true,
+    "capPixelBudget": 4,
+    "noBloodMaterial": false,
+    "capPixels": 166,
+    "capCounts": [
+      {
+        "frame": 0,
+        "direction": "South",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "South",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "South",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "South",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "North",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "North",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "North",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "North",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "East",
+        "slot": "LeftArm",
+        "pixels": 0
+      },
+      {
+        "frame": 0,
+        "direction": "East",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "East",
+        "slot": "LeftLeg",
+        "pixels": 2
+      },
+      {
+        "frame": 0,
+        "direction": "East",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "West",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "West",
+        "slot": "RightArm",
+        "pixels": 0
+      },
+      {
+        "frame": 0,
+        "direction": "West",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 0,
+        "direction": "West",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "South",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "South",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "South",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "South",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "North",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "North",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "North",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "North",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "East",
+        "slot": "LeftArm",
+        "pixels": 0
+      },
+      {
+        "frame": 1,
+        "direction": "East",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "East",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "East",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "West",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "West",
+        "slot": "RightArm",
+        "pixels": 0
+      },
+      {
+        "frame": 1,
+        "direction": "West",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 1,
+        "direction": "West",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "South",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "South",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "South",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "South",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "North",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "North",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "North",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "North",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "East",
+        "slot": "LeftArm",
+        "pixels": 0
+      },
+      {
+        "frame": 2,
+        "direction": "East",
+        "slot": "RightArm",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "East",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "East",
+        "slot": "RightLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "West",
+        "slot": "LeftArm",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "West",
+        "slot": "RightArm",
+        "pixels": 0
+      },
+      {
+        "frame": 2,
+        "direction": "West",
+        "slot": "LeftLeg",
+        "pixels": 4
+      },
+      {
+        "frame": 2,
+        "direction": "West",
+        "slot": "RightLeg",
+        "pixels": 4
+      }
+    ],
+    "injuryViewsChecked": 192,
+    "outsideCapAndRemovedMaskChangedPixels": 0,
+    "outsideCapVsPureInjuryChangedPixels": 0,
+    "sourcePaletteOnly": true,
+    "qualityFlags": [
+      "wound_seam_geometry_draft",
+      "visible_cut_contact_only"
+    ],
+    "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+  },
+  "existingGameBinding": {
+    "physics": "LimbFling and RmG3Limb already implement flying body pieces; this export adds no physics",
+    "limbStates": "Code/Remastered/Surgery.dm rm_limb_states",
+    "status": "asset export only; not integrated into live body registration"
+  },
+  "status": "actual source-pixel cutouts; geometry is a review draft, not anatomy approval"
+}

@@ -1,0 +1,4902 @@
+{
+  "version": 7,
+  "actor": "Approved GOA Elf \u00b7 male",
+  "frameSize": 64,
+  "canvasSize": 128,
+  "directions": [
+    {
+      "name": "South",
+      "frames": [
+        {
+          "head": "south/0-head.png",
+          "torso": "south/0-torso.png",
+          "right-upper": "south/0-right-upper.png",
+          "right-lower": "south/0-right-lower.png",
+          "left-upper": "south/0-left-upper.png",
+          "left-lower": "south/0-left-lower.png",
+          "right-upper-rig": "south/right-upper-overlap.png",
+          "right-lower-rig": "south/right-lower-overlap.png",
+          "left-upper-rig": "south/left-upper-overlap.png",
+          "left-lower-rig": "south/left-lower-overlap.png",
+          "right-upper-complete": "south/right-upper-completed.png",
+          "right-lower-complete": "south/right-lower-completed.png",
+          "left-upper-complete": "south/left-upper-completed.png",
+          "left-lower-complete": "south/left-lower-completed.png",
+          "equipped-torso": "south/0-equipped-torso.png",
+          "completed-torso": "south/0-completed-torso.png",
+          "refined-torso": "south/0-anatomical-walk-body.png",
+          "render-head": "south/0-head-refined.png",
+          "right-upper-refined": "south/right-upper-refined.png",
+          "right-lower-refined": "south/right-lower-refined.png",
+          "left-upper-refined": "south/left-upper-refined.png",
+          "left-lower-refined": "south/left-lower-refined.png",
+          "walk-lower": "south/0-original-pelvis-legs.png",
+          "walk-lower-mask": "south/0-pelvis-leg-mask.png",
+          "right-forearm-rig": "south/right-forearm-rig.png",
+          "right-hand-rig": "south/right-hand-rig.png",
+          "right-forearm-refined": "south/right-forearm-refined.png",
+          "right-hand-refined": "south/right-hand-refined.png",
+          "left-forearm-rig": "south/left-forearm-rig.png",
+          "left-hand-rig": "south/left-hand-rig.png",
+          "left-forearm-refined": "south/left-forearm-refined.png",
+          "left-hand-refined": "south/left-hand-refined.png"
+        },
+        {
+          "head": "south/1-head.png",
+          "torso": "south/1-torso.png",
+          "right-upper": "south/1-right-upper.png",
+          "right-lower": "south/1-right-lower.png",
+          "left-upper": "south/1-left-upper.png",
+          "left-lower": "south/1-left-lower.png",
+          "equipped-torso": "south/1-equipped-torso.png",
+          "completed-torso": "south/1-completed-torso.png",
+          "refined-torso": "south/1-anatomical-walk-body.png",
+          "render-head": "south/1-head-refined.png",
+          "walk-lower": "south/1-original-pelvis-legs.png",
+          "walk-lower-mask": "south/1-pelvis-leg-mask.png"
+        },
+        {
+          "head": "south/2-head.png",
+          "torso": "south/2-torso.png",
+          "right-upper": "south/2-right-upper.png",
+          "right-lower": "south/2-right-lower.png",
+          "left-upper": "south/2-left-upper.png",
+          "left-lower": "south/2-left-lower.png",
+          "equipped-torso": "south/2-equipped-torso.png",
+          "completed-torso": "south/2-completed-torso.png",
+          "refined-torso": "south/2-anatomical-walk-body.png",
+          "render-head": "south/2-head-refined.png",
+          "walk-lower": "south/2-original-pelvis-legs.png",
+          "walk-lower-mask": "south/2-pelvis-leg-mask.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            23,
+            29
+          ],
+          [
+            21,
+            37
+          ],
+          [
+            20,
+            44
+          ]
+        ],
+        "left": [
+          [
+            40,
+            29
+          ],
+          [
+            42,
+            37
+          ],
+          [
+            43,
+            44
+          ]
+        ]
+      },
+      "chest": {
+        "image": "south/deepguard-chest.png",
+        "origin": [
+          23,
+          28
+        ]
+      },
+      "shield": {
+        "image": "south/round-shield.png",
+        "grip": [
+          10,
+          10
+        ]
+      },
+      "nearArm": "right",
+      "fullBody": {
+        "parts": {
+          "head": "south/full-body/head.png",
+          "torso": "south/full-body/torso.png",
+          "pelvis": "south/full-body/pelvis.png",
+          "rightUpperArm": "south/full-body/rightUpperArm.png",
+          "rightForearm": "south/full-body/rightForearm.png",
+          "rightHand": "south/full-body/rightHand.png",
+          "leftUpperArm": "south/full-body/leftUpperArm.png",
+          "leftForearm": "south/full-body/leftForearm.png",
+          "leftHand": "south/full-body/leftHand.png",
+          "rightThigh": "south/full-body/rightThigh.png",
+          "rightShin": "south/full-body/rightShin.png",
+          "rightFoot": "south/full-body/rightFoot.png",
+          "leftThigh": "south/full-body/leftThigh.png",
+          "leftShin": "south/full-body/leftShin.png",
+          "leftFoot": "south/full-body/leftFoot.png"
+        },
+        "legs": {
+          "right": [
+            [
+              27,
+              49
+            ],
+            [
+              27,
+              54
+            ],
+            [
+              26,
+              58
+            ]
+          ],
+          "left": [
+            [
+              36,
+              49
+            ],
+            [
+              36,
+              54
+            ],
+            [
+              37,
+              58
+            ]
+          ]
+        },
+        "waist": [
+          32,
+          42
+        ],
+        "neck": [
+          32,
+          25
+        ],
+        "nearLeg": "right"
+      }
+    },
+    {
+      "name": "North",
+      "frames": [
+        {
+          "head": "north/0-head.png",
+          "torso": "north/0-torso.png",
+          "right-upper": "north/0-right-upper.png",
+          "right-lower": "north/0-right-lower.png",
+          "left-upper": "north/0-left-upper.png",
+          "left-lower": "north/0-left-lower.png",
+          "right-upper-rig": "north/right-upper-overlap.png",
+          "right-lower-rig": "north/right-lower-overlap.png",
+          "left-upper-rig": "north/left-upper-overlap.png",
+          "left-lower-rig": "north/left-lower-overlap.png",
+          "right-upper-complete": "north/right-upper-completed.png",
+          "right-lower-complete": "north/right-lower-completed.png",
+          "left-upper-complete": "north/left-upper-completed.png",
+          "left-lower-complete": "north/left-lower-completed.png",
+          "equipped-torso": "north/0-equipped-torso.png",
+          "completed-torso": "north/0-completed-torso.png",
+          "refined-torso": "north/0-anatomical-walk-body.png",
+          "render-head": "north/0-head-refined.png",
+          "right-upper-refined": "north/right-upper-refined.png",
+          "right-lower-refined": "north/right-lower-refined.png",
+          "left-upper-refined": "north/left-upper-refined.png",
+          "left-lower-refined": "north/left-lower-refined.png",
+          "walk-lower": "north/0-original-pelvis-legs.png",
+          "walk-lower-mask": "north/0-pelvis-leg-mask.png",
+          "right-forearm-rig": "north/right-forearm-rig.png",
+          "right-hand-rig": "north/right-hand-rig.png",
+          "right-forearm-refined": "north/right-forearm-refined.png",
+          "right-hand-refined": "north/right-hand-refined.png",
+          "left-forearm-rig": "north/left-forearm-rig.png",
+          "left-hand-rig": "north/left-hand-rig.png",
+          "left-forearm-refined": "north/left-forearm-refined.png",
+          "left-hand-refined": "north/left-hand-refined.png"
+        },
+        {
+          "head": "north/1-head.png",
+          "torso": "north/1-torso.png",
+          "right-upper": "north/1-right-upper.png",
+          "right-lower": "north/1-right-lower.png",
+          "left-upper": "north/1-left-upper.png",
+          "left-lower": "north/1-left-lower.png",
+          "equipped-torso": "north/1-equipped-torso.png",
+          "completed-torso": "north/1-completed-torso.png",
+          "refined-torso": "north/1-anatomical-walk-body.png",
+          "render-head": "north/1-head-refined.png",
+          "walk-lower": "north/1-original-pelvis-legs.png",
+          "walk-lower-mask": "north/1-pelvis-leg-mask.png"
+        },
+        {
+          "head": "north/2-head.png",
+          "torso": "north/2-torso.png",
+          "right-upper": "north/2-right-upper.png",
+          "right-lower": "north/2-right-lower.png",
+          "left-upper": "north/2-left-upper.png",
+          "left-lower": "north/2-left-lower.png",
+          "equipped-torso": "north/2-equipped-torso.png",
+          "completed-torso": "north/2-completed-torso.png",
+          "refined-torso": "north/2-anatomical-walk-body.png",
+          "render-head": "north/2-head-refined.png",
+          "walk-lower": "north/2-original-pelvis-legs.png",
+          "walk-lower-mask": "north/2-pelvis-leg-mask.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            40,
+            29
+          ],
+          [
+            42,
+            37
+          ],
+          [
+            43,
+            44
+          ]
+        ],
+        "left": [
+          [
+            23,
+            29
+          ],
+          [
+            21,
+            37
+          ],
+          [
+            20,
+            44
+          ]
+        ]
+      },
+      "chest": {
+        "image": "north/deepguard-chest.png",
+        "origin": [
+          23,
+          29
+        ]
+      },
+      "shield": {
+        "image": "north/round-shield.png",
+        "grip": [
+          10,
+          10
+        ]
+      },
+      "nearArm": "right",
+      "fullBody": {
+        "parts": {
+          "head": "north/full-body/head.png",
+          "torso": "north/full-body/torso.png",
+          "pelvis": "north/full-body/pelvis.png",
+          "rightUpperArm": "north/full-body/rightUpperArm.png",
+          "rightForearm": "north/full-body/rightForearm.png",
+          "rightHand": "north/full-body/rightHand.png",
+          "leftUpperArm": "north/full-body/leftUpperArm.png",
+          "leftForearm": "north/full-body/leftForearm.png",
+          "leftHand": "north/full-body/leftHand.png",
+          "rightThigh": "north/full-body/rightThigh.png",
+          "rightShin": "north/full-body/rightShin.png",
+          "rightFoot": "north/full-body/rightFoot.png",
+          "leftThigh": "north/full-body/leftThigh.png",
+          "leftShin": "north/full-body/leftShin.png",
+          "leftFoot": "north/full-body/leftFoot.png"
+        },
+        "legs": {
+          "right": [
+            [
+              36,
+              49
+            ],
+            [
+              36,
+              54
+            ],
+            [
+              37,
+              58
+            ]
+          ],
+          "left": [
+            [
+              27,
+              49
+            ],
+            [
+              27,
+              54
+            ],
+            [
+              26,
+              58
+            ]
+          ]
+        },
+        "waist": [
+          32,
+          42
+        ],
+        "neck": [
+          32,
+          25
+        ],
+        "nearLeg": "right"
+      }
+    },
+    {
+      "name": "East",
+      "frames": [
+        {
+          "head": "east/0-head.png",
+          "torso": "east/0-torso.png",
+          "right-upper": "east/0-right-upper.png",
+          "right-lower": "east/0-right-lower.png",
+          "left-upper": "east/0-left-upper.png",
+          "left-lower": "east/0-left-lower.png",
+          "right-upper-rig": "east/right-upper-overlap.png",
+          "right-lower-rig": "east/right-lower-overlap.png",
+          "left-upper-rig": "east/left-upper-overlap.png",
+          "left-lower-rig": "east/left-lower-overlap.png",
+          "right-upper-complete": "east/right-upper-completed.png",
+          "right-lower-complete": "east/right-lower-completed.png",
+          "left-upper-complete": "east/left-upper-completed.png",
+          "left-lower-complete": "east/left-lower-completed.png",
+          "equipped-torso": "east/0-equipped-torso.png",
+          "completed-torso": "east/0-completed-torso.png",
+          "refined-torso": "east/0-anatomical-walk-body.png",
+          "render-head": "east/0-head-refined.png",
+          "right-upper-refined": "east/right-upper-refined.png",
+          "right-lower-refined": "east/right-lower-refined.png",
+          "left-upper-refined": "east/left-upper-refined.png",
+          "left-lower-refined": "east/left-lower-refined.png",
+          "walk-lower": "east/0-original-pelvis-legs.png",
+          "walk-lower-mask": "east/0-pelvis-leg-mask.png",
+          "right-forearm-rig": "east/right-forearm-rig.png",
+          "right-hand-rig": "east/right-hand-rig.png",
+          "right-forearm-refined": "east/right-forearm-refined.png",
+          "right-hand-refined": "east/right-hand-refined.png",
+          "left-forearm-rig": "east/left-forearm-rig.png",
+          "left-hand-rig": "east/left-hand-rig.png",
+          "left-forearm-refined": "east/left-forearm-refined.png",
+          "left-hand-refined": "east/left-hand-refined.png"
+        },
+        {
+          "head": "east/1-head.png",
+          "torso": "east/1-torso.png",
+          "right-upper": "east/1-right-upper.png",
+          "right-lower": "east/1-right-lower.png",
+          "left-upper": "east/1-left-upper.png",
+          "left-lower": "east/1-left-lower.png",
+          "equipped-torso": "east/1-equipped-torso.png",
+          "completed-torso": "east/1-completed-torso.png",
+          "refined-torso": "east/1-anatomical-walk-body.png",
+          "render-head": "east/1-head-refined.png",
+          "walk-lower": "east/1-original-pelvis-legs.png",
+          "walk-lower-mask": "east/1-pelvis-leg-mask.png"
+        },
+        {
+          "head": "east/2-head.png",
+          "torso": "east/2-torso.png",
+          "right-upper": "east/2-right-upper.png",
+          "right-lower": "east/2-right-lower.png",
+          "left-upper": "east/2-left-upper.png",
+          "left-lower": "east/2-left-lower.png",
+          "equipped-torso": "east/2-equipped-torso.png",
+          "completed-torso": "east/2-completed-torso.png",
+          "refined-torso": "east/2-anatomical-walk-body.png",
+          "render-head": "east/2-head-refined.png",
+          "walk-lower": "east/2-original-pelvis-legs.png",
+          "walk-lower-mask": "east/2-pelvis-leg-mask.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            37
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "left": [
+          [
+            36,
+            30
+          ],
+          [
+            38,
+            34
+          ],
+          [
+            38,
+            39
+          ]
+        ]
+      },
+      "chest": {
+        "image": "east/deepguard-chest.png",
+        "origin": [
+          31,
+          28
+        ]
+      },
+      "shield": {
+        "image": "east/round-shield.png",
+        "grip": [
+          3,
+          10
+        ]
+      },
+      "nearArm": "right",
+      "fullBody": {
+        "parts": {
+          "head": "east/full-body/head.png",
+          "torso": "east/full-body/torso.png",
+          "pelvis": "east/full-body/pelvis.png",
+          "rightUpperArm": "east/full-body/rightUpperArm.png",
+          "rightForearm": "east/full-body/rightForearm.png",
+          "rightHand": "east/full-body/rightHand.png",
+          "leftUpperArm": "east/full-body/leftUpperArm.png",
+          "leftForearm": "east/full-body/leftForearm.png",
+          "leftHand": "east/full-body/leftHand.png",
+          "rightThigh": "east/full-body/rightThigh.png",
+          "rightShin": "east/full-body/rightShin.png",
+          "rightFoot": "east/full-body/rightFoot.png",
+          "leftThigh": "east/full-body/leftThigh.png",
+          "leftShin": "east/full-body/leftShin.png",
+          "leftFoot": "east/full-body/leftFoot.png"
+        },
+        "legs": {
+          "right": [
+            [
+              32,
+              49
+            ],
+            [
+              32,
+              53
+            ],
+            [
+              31,
+              57
+            ]
+          ],
+          "left": [
+            [
+              36,
+              49
+            ],
+            [
+              36,
+              53
+            ],
+            [
+              35,
+              57
+            ]
+          ]
+        },
+        "waist": [
+          35,
+          42
+        ],
+        "neck": [
+          34,
+          25
+        ],
+        "nearLeg": "right"
+      }
+    },
+    {
+      "name": "West",
+      "frames": [
+        {
+          "head": "west/0-head.png",
+          "torso": "west/0-torso.png",
+          "right-upper": "west/0-right-upper.png",
+          "right-lower": "west/0-right-lower.png",
+          "left-upper": "west/0-left-upper.png",
+          "left-lower": "west/0-left-lower.png",
+          "right-upper-rig": "west/mirrored-east-right-upper-rig.png",
+          "right-lower-rig": "west/mirrored-east-right-lower-rig.png",
+          "left-upper-rig": "west/mirrored-east-left-upper-rig.png",
+          "left-lower-rig": "west/mirrored-east-left-lower-rig.png",
+          "right-upper-complete": "west/mirrored-east-right-upper-complete.png",
+          "right-lower-complete": "west/mirrored-east-right-lower-complete.png",
+          "left-upper-complete": "west/mirrored-east-left-upper-complete.png",
+          "left-lower-complete": "west/mirrored-east-left-lower-complete.png",
+          "equipped-torso": "west/0-equipped-torso.png",
+          "completed-torso": "west/0-completed-torso.png",
+          "refined-torso": "west/0-mirrored-east-body.png",
+          "render-head": "west/0-head-refined.png",
+          "right-upper-refined": "west/right-upper-refined.png",
+          "right-lower-refined": "west/right-lower-refined.png",
+          "left-upper-refined": "west/left-upper-refined.png",
+          "left-lower-refined": "west/left-lower-refined.png",
+          "walk-lower": "west/0-mirrored-walk-lower.png",
+          "walk-lower-mask": "west/0-mirrored-walk-lower-mask.png",
+          "right-forearm-rig": "west/right-forearm-rig.png",
+          "right-hand-rig": "west/right-hand-rig.png",
+          "right-forearm-refined": "west/right-forearm-refined.png",
+          "right-hand-refined": "west/right-hand-refined.png",
+          "left-forearm-rig": "west/left-forearm-rig.png",
+          "left-hand-rig": "west/left-hand-rig.png",
+          "left-forearm-refined": "west/left-forearm-refined.png",
+          "left-hand-refined": "west/left-hand-refined.png"
+        },
+        {
+          "head": "west/1-head.png",
+          "torso": "west/1-torso.png",
+          "right-upper": "west/1-right-upper.png",
+          "right-lower": "west/1-right-lower.png",
+          "left-upper": "west/1-left-upper.png",
+          "left-lower": "west/1-left-lower.png",
+          "equipped-torso": "west/1-equipped-torso.png",
+          "completed-torso": "west/1-completed-torso.png",
+          "refined-torso": "west/1-mirrored-east-body.png",
+          "render-head": "west/1-head-refined.png",
+          "walk-lower": "west/1-mirrored-walk-lower.png",
+          "walk-lower-mask": "west/1-mirrored-walk-lower-mask.png"
+        },
+        {
+          "head": "west/2-head.png",
+          "torso": "west/2-torso.png",
+          "right-upper": "west/2-right-upper.png",
+          "right-lower": "west/2-right-lower.png",
+          "left-upper": "west/2-left-upper.png",
+          "left-lower": "west/2-left-lower.png",
+          "equipped-torso": "west/2-equipped-torso.png",
+          "completed-torso": "west/2-completed-torso.png",
+          "refined-torso": "west/2-mirrored-east-body.png",
+          "render-head": "west/2-head-refined.png",
+          "walk-lower": "west/2-mirrored-walk-lower.png",
+          "walk-lower-mask": "west/2-mirrored-walk-lower-mask.png"
+        }
+      ],
+      "arms": {
+        "right": [
+          [
+            27,
+            30
+          ],
+          [
+            25,
+            34
+          ],
+          [
+            25,
+            39
+          ]
+        ],
+        "left": [
+          [
+            34,
+            29
+          ],
+          [
+            33,
+            37
+          ],
+          [
+            33,
+            44
+          ]
+        ]
+      },
+      "chest": {
+        "image": "west/deepguard-chest.png",
+        "origin": [
+          23,
+          28
+        ]
+      },
+      "shield": {
+        "image": "west/round-shield.png",
+        "grip": [
+          10,
+          10
+        ]
+      },
+      "nearArm": "left",
+      "sourceArms": {
+        "right": [
+          [
+            26,
+            30
+          ],
+          [
+            24,
+            34
+          ],
+          [
+            24,
+            39
+          ]
+        ],
+        "left": [
+          [
+            34,
+            29
+          ],
+          [
+            34,
+            37
+          ],
+          [
+            34,
+            44
+          ]
+        ]
+      },
+      "armMirror": {
+        "source": "East",
+        "axisX": 31.5,
+        "sideMap": {
+          "right": "left",
+          "left": "right"
+        }
+      },
+      "bodyMirror": {
+        "source": "East",
+        "axisX": 31.5,
+        "includes": "torso, shorts and original walk legs; original west head retained"
+      },
+      "fullBody": {
+        "parts": {
+          "head": "west/full-body/head.png",
+          "torso": "west/full-body/torso.png",
+          "pelvis": "west/full-body/pelvis.png",
+          "rightUpperArm": "west/full-body/rightUpperArm.png",
+          "rightForearm": "west/full-body/rightForearm.png",
+          "rightHand": "west/full-body/rightHand.png",
+          "leftUpperArm": "west/full-body/leftUpperArm.png",
+          "leftForearm": "west/full-body/leftForearm.png",
+          "leftHand": "west/full-body/leftHand.png",
+          "rightThigh": "west/full-body/rightThigh.png",
+          "rightShin": "west/full-body/rightShin.png",
+          "rightFoot": "west/full-body/rightFoot.png",
+          "leftThigh": "west/full-body/leftThigh.png",
+          "leftShin": "west/full-body/leftShin.png",
+          "leftFoot": "west/full-body/leftFoot.png"
+        },
+        "legs": {
+          "right": [
+            [
+              27,
+              49
+            ],
+            [
+              27,
+              53
+            ],
+            [
+              28,
+              57
+            ]
+          ],
+          "left": [
+            [
+              31,
+              49
+            ],
+            [
+              31,
+              53
+            ],
+            [
+              32,
+              57
+            ]
+          ]
+        },
+        "waist": [
+          28,
+          42
+        ],
+        "neck": [
+          29,
+          25
+        ],
+        "nearLeg": "left"
+      }
+    }
+  ],
+  "fullBody": {
+    "parts": [
+      "pelvis",
+      "torso",
+      "head",
+      "rightUpperArm",
+      "rightForearm",
+      "rightHand",
+      "rightThigh",
+      "rightShin",
+      "rightFoot",
+      "leftUpperArm",
+      "leftForearm",
+      "leftHand",
+      "leftThigh",
+      "leftShin",
+      "leftFoot"
+    ],
+    "parents": {
+      "pelvis": null,
+      "torso": "pelvis",
+      "head": "torso",
+      "rightUpperArm": "torso",
+      "rightForearm": "rightUpperArm",
+      "rightHand": "rightForearm",
+      "rightThigh": "pelvis",
+      "rightShin": "rightThigh",
+      "rightFoot": "rightShin",
+      "leftUpperArm": "torso",
+      "leftForearm": "leftUpperArm",
+      "leftHand": "leftForearm",
+      "leftThigh": "pelvis",
+      "leftShin": "leftThigh",
+      "leftFoot": "leftShin"
+    },
+    "slots": {
+      "helmet": "head",
+      "chest": "torso",
+      "waist": "pelvis",
+      "mainHand": "rightHand",
+      "offHand": "leftHand",
+      "rightShoulder": "rightUpperArm",
+      "rightBracer": "rightForearm",
+      "rightGlove": "rightHand",
+      "rightGreave": "rightShin",
+      "rightBoot": "rightFoot",
+      "leftShoulder": "leftUpperArm",
+      "leftBracer": "leftForearm",
+      "leftGlove": "leftHand",
+      "leftGreave": "leftShin",
+      "leftBoot": "leftFoot"
+    },
+    "preparation": [
+      {
+        "facing": "South",
+        "side": "right",
+        "hiddenCapPixels": 0,
+        "inferredFarLeg": false
+      },
+      {
+        "facing": "South",
+        "side": "left",
+        "hiddenCapPixels": 0,
+        "inferredFarLeg": false
+      },
+      {
+        "facing": "North",
+        "side": "right",
+        "hiddenCapPixels": 0,
+        "inferredFarLeg": false
+      },
+      {
+        "facing": "North",
+        "side": "left",
+        "hiddenCapPixels": 0,
+        "inferredFarLeg": false
+      },
+      {
+        "facing": "East",
+        "side": "right",
+        "hiddenCapPixels": 0,
+        "inferredFarLeg": false
+      },
+      {
+        "facing": "East",
+        "side": "left",
+        "hiddenCapPixels": 0,
+        "inferredFarLeg": true
+      }
+    ],
+    "status": "Elf articulated component study; far side leg and tiny hidden joint caps are inferred from adjacent source artwork.",
+    "profilePolicy": "Shared bone/slot names and motion; unique per-appearance art, proportions, pivots and masks. No automatic race or female body replacement."
+  },
+  "raiseMotion": {
+    "action": "forward arm raise",
+    "maxPitchDegrees": 115,
+    "projection": "One sagittal-plane lift viewed from four cardinal directions. Front/back limb length is foreshortened; hands remain separate unscaled attachments."
+  },
+  "walkMotion": {
+    "frames": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "sideContacts": [
+      "near leg forward",
+      "far leg forward"
+    ],
+    "oppositeContact": {
+      "source": "standalone/goa-races/unique-body-rig-v1/walk-repair-v6/Elf_East_Opposite_Contact_AI.png",
+      "crop": [
+        385,
+        910,
+        984,
+        1195
+      ],
+      "nativeSize": [
+        25,
+        13
+      ],
+      "origin": [
+        22,
+        48
+      ],
+      "palette": "exact approved source palette"
+    },
+    "mirror": "West reflects each completed East frame; never mirror a frame to fake the next temporal step."
+  },
+  "refinement": {
+    "method": "Original north/south arm and hand pixels restored from completed source cutouts, elbow overlap reduced to three rows, west side body mirrored from east to correct abdomen. Original sheets retained.",
+    "layers": [
+      {
+        "file": "south/0-completed-torso-refined.png",
+        "changedPixels": 170
+      },
+      {
+        "file": "south/0-head-refined.png",
+        "changedPixels": 104
+      },
+      {
+        "file": "south/1-completed-torso-refined.png",
+        "changedPixels": 135
+      },
+      {
+        "file": "south/1-head-refined.png",
+        "changedPixels": 101
+      },
+      {
+        "file": "south/2-completed-torso-refined.png",
+        "changedPixels": 149
+      },
+      {
+        "file": "south/2-head-refined.png",
+        "changedPixels": 119
+      },
+      {
+        "file": "south/right-upper-refined.png",
+        "changedPixels": 43
+      },
+      {
+        "file": "south/right-lower-refined.png",
+        "changedPixels": 69
+      },
+      {
+        "file": "south/left-upper-refined.png",
+        "changedPixels": 36
+      },
+      {
+        "file": "south/left-lower-refined.png",
+        "changedPixels": 49
+      },
+      {
+        "file": "north/0-completed-torso-refined.png",
+        "changedPixels": 158
+      },
+      {
+        "file": "north/0-head-refined.png",
+        "changedPixels": 111
+      },
+      {
+        "file": "north/1-completed-torso-refined.png",
+        "changedPixels": 147
+      },
+      {
+        "file": "north/1-head-refined.png",
+        "changedPixels": 87
+      },
+      {
+        "file": "north/2-completed-torso-refined.png",
+        "changedPixels": 135
+      },
+      {
+        "file": "north/2-head-refined.png",
+        "changedPixels": 113
+      },
+      {
+        "file": "north/right-upper-refined.png",
+        "changedPixels": 37
+      },
+      {
+        "file": "north/right-lower-refined.png",
+        "changedPixels": 59
+      },
+      {
+        "file": "north/left-upper-refined.png",
+        "changedPixels": 36
+      },
+      {
+        "file": "north/left-lower-refined.png",
+        "changedPixels": 51
+      },
+      {
+        "file": "east/0-completed-torso-refined.png",
+        "changedPixels": 128
+      },
+      {
+        "file": "east/0-head-refined.png",
+        "changedPixels": 89
+      },
+      {
+        "file": "east/1-completed-torso-refined.png",
+        "changedPixels": 167
+      },
+      {
+        "file": "east/1-head-refined.png",
+        "changedPixels": 92
+      },
+      {
+        "file": "east/2-completed-torso-refined.png",
+        "changedPixels": 185
+      },
+      {
+        "file": "east/2-head-refined.png",
+        "changedPixels": 101
+      },
+      {
+        "file": "east/right-upper-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "east/right-lower-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "east/left-upper-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "east/left-lower-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "west/0-completed-torso-refined.png",
+        "changedPixels": 162
+      },
+      {
+        "file": "west/0-head-refined.png",
+        "changedPixels": 90
+      },
+      {
+        "file": "west/1-completed-torso-refined.png",
+        "changedPixels": 197
+      },
+      {
+        "file": "west/1-head-refined.png",
+        "changedPixels": 99
+      },
+      {
+        "file": "west/2-completed-torso-refined.png",
+        "changedPixels": 174
+      },
+      {
+        "file": "west/2-head-refined.png",
+        "changedPixels": 100
+      },
+      {
+        "file": "west/right-upper-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "west/right-lower-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "west/left-upper-refined.png",
+        "changedPixels": 0
+      },
+      {
+        "file": "west/left-lower-refined.png",
+        "changedPixels": 0
+      }
+    ]
+  },
+  "sourceDecision": "User selected approved GOA-style sprites intended for the finished game.",
+  "completion": {
+    "method": "AI-generated hidden surfaces, registered to authored masks and remapped to exact source colors in CIELAB. Original visible layer pixels retained.",
+    "palette": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        2
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        3,
+        2
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        5,
+        3
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        5,
+        2,
+        0
+      ],
+      [
+        5,
+        2,
+        2
+      ],
+      [
+        5,
+        2,
+        3
+      ],
+      [
+        5,
+        3,
+        2
+      ],
+      [
+        5,
+        4,
+        0
+      ],
+      [
+        5,
+        4,
+        3
+      ],
+      [
+        5,
+        5,
+        7
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        1
+      ],
+      [
+        6,
+        3,
+        2
+      ],
+      [
+        6,
+        4,
+        1
+      ],
+      [
+        6,
+        4,
+        2
+      ],
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        6,
+        5,
+        3
+      ],
+      [
+        6,
+        5,
+        4
+      ],
+      [
+        6,
+        6,
+        5
+      ],
+      [
+        7,
+        0,
+        0
+      ],
+      [
+        7,
+        4,
+        1
+      ],
+      [
+        7,
+        4,
+        2
+      ],
+      [
+        7,
+        4,
+        3
+      ],
+      [
+        7,
+        4,
+        4
+      ],
+      [
+        7,
+        5,
+        1
+      ],
+      [
+        7,
+        5,
+        3
+      ],
+      [
+        7,
+        5,
+        4
+      ],
+      [
+        7,
+        6,
+        4
+      ],
+      [
+        7,
+        7,
+        5
+      ],
+      [
+        8,
+        4,
+        0
+      ],
+      [
+        8,
+        4,
+        3
+      ],
+      [
+        8,
+        5,
+        1
+      ],
+      [
+        8,
+        5,
+        3
+      ],
+      [
+        8,
+        6,
+        3
+      ],
+      [
+        8,
+        6,
+        6
+      ],
+      [
+        8,
+        7,
+        6
+      ],
+      [
+        8,
+        7,
+        7
+      ],
+      [
+        8,
+        8,
+        5
+      ],
+      [
+        8,
+        11,
+        11
+      ],
+      [
+        9,
+        4,
+        1
+      ],
+      [
+        9,
+        6,
+        2
+      ],
+      [
+        9,
+        6,
+        3
+      ],
+      [
+        9,
+        6,
+        5
+      ],
+      [
+        9,
+        7,
+        1
+      ],
+      [
+        9,
+        7,
+        4
+      ],
+      [
+        9,
+        7,
+        5
+      ],
+      [
+        9,
+        7,
+        6
+      ],
+      [
+        9,
+        8,
+        6
+      ],
+      [
+        9,
+        8,
+        7
+      ],
+      [
+        9,
+        9,
+        7
+      ],
+      [
+        9,
+        14,
+        13
+      ],
+      [
+        10,
+        3,
+        2
+      ],
+      [
+        10,
+        4,
+        2
+      ],
+      [
+        10,
+        6,
+        4
+      ],
+      [
+        10,
+        7,
+        2
+      ],
+      [
+        10,
+        7,
+        4
+      ],
+      [
+        10,
+        7,
+        5
+      ],
+      [
+        10,
+        7,
+        6
+      ],
+      [
+        10,
+        8,
+        5
+      ],
+      [
+        10,
+        8,
+        6
+      ],
+      [
+        10,
+        9,
+        9
+      ],
+      [
+        10,
+        10,
+        8
+      ],
+      [
+        10,
+        10,
+        11
+      ],
+      [
+        10,
+        12,
+        12
+      ],
+      [
+        10,
+        14,
+        12
+      ],
+      [
+        11,
+        3,
+        2
+      ],
+      [
+        11,
+        5,
+        0
+      ],
+      [
+        11,
+        6,
+        2
+      ],
+      [
+        11,
+        6,
+        3
+      ],
+      [
+        11,
+        7,
+        4
+      ],
+      [
+        11,
+        7,
+        5
+      ],
+      [
+        11,
+        7,
+        6
+      ],
+      [
+        11,
+        8,
+        6
+      ],
+      [
+        11,
+        8,
+        7
+      ],
+      [
+        11,
+        10,
+        8
+      ],
+      [
+        11,
+        11,
+        11
+      ],
+      [
+        11,
+        13,
+        13
+      ],
+      [
+        12,
+        7,
+        3
+      ],
+      [
+        12,
+        7,
+        4
+      ],
+      [
+        12,
+        8,
+        6
+      ],
+      [
+        12,
+        9,
+        5
+      ],
+      [
+        12,
+        9,
+        6
+      ],
+      [
+        12,
+        9,
+        8
+      ],
+      [
+        12,
+        10,
+        8
+      ],
+      [
+        13,
+        8,
+        4
+      ],
+      [
+        13,
+        9,
+        4
+      ],
+      [
+        13,
+        9,
+        6
+      ],
+      [
+        13,
+        10,
+        7
+      ],
+      [
+        13,
+        11,
+        10
+      ],
+      [
+        14,
+        5,
+        0
+      ],
+      [
+        14,
+        8,
+        4
+      ],
+      [
+        14,
+        9,
+        5
+      ],
+      [
+        14,
+        10,
+        2
+      ],
+      [
+        14,
+        10,
+        3
+      ],
+      [
+        14,
+        10,
+        4
+      ],
+      [
+        15,
+        11,
+        8
+      ],
+      [
+        15,
+        12,
+        8
+      ],
+      [
+        15,
+        14,
+        12
+      ],
+      [
+        16,
+        4,
+        0
+      ],
+      [
+        16,
+        5,
+        2
+      ],
+      [
+        16,
+        6,
+        1
+      ],
+      [
+        16,
+        11,
+        4
+      ],
+      [
+        17,
+        7,
+        3
+      ],
+      [
+        17,
+        10,
+        3
+      ],
+      [
+        17,
+        13,
+        9
+      ],
+      [
+        18,
+        6,
+        2
+      ],
+      [
+        18,
+        13,
+        7
+      ],
+      [
+        19,
+        9,
+        1
+      ],
+      [
+        19,
+        11,
+        7
+      ],
+      [
+        20,
+        10,
+        3
+      ],
+      [
+        20,
+        15,
+        13
+      ],
+      [
+        21,
+        15,
+        10
+      ],
+      [
+        21,
+        16,
+        15
+      ],
+      [
+        22,
+        11,
+        3
+      ],
+      [
+        25,
+        15,
+        6
+      ],
+      [
+        25,
+        19,
+        14
+      ],
+      [
+        26,
+        15,
+        9
+      ],
+      [
+        26,
+        17,
+        7
+      ],
+      [
+        26,
+        17,
+        9
+      ],
+      [
+        27,
+        20,
+        14
+      ],
+      [
+        29,
+        14,
+        3
+      ],
+      [
+        29,
+        17,
+        12
+      ],
+      [
+        30,
+        25,
+        20
+      ],
+      [
+        32,
+        12,
+        5
+      ],
+      [
+        32,
+        23,
+        17
+      ],
+      [
+        33,
+        25,
+        20
+      ],
+      [
+        34,
+        20,
+        13
+      ],
+      [
+        34,
+        25,
+        8
+      ],
+      [
+        35,
+        24,
+        18
+      ],
+      [
+        37,
+        19,
+        4
+      ],
+      [
+        37,
+        23,
+        6
+      ],
+      [
+        37,
+        24,
+        16
+      ],
+      [
+        38,
+        25,
+        6
+      ],
+      [
+        41,
+        30,
+        22
+      ],
+      [
+        42,
+        33,
+        27
+      ],
+      [
+        46,
+        32,
+        22
+      ],
+      [
+        47,
+        30,
+        23
+      ],
+      [
+        48,
+        24,
+        15
+      ],
+      [
+        48,
+        36,
+        27
+      ],
+      [
+        49,
+        32,
+        22
+      ],
+      [
+        52,
+        33,
+        10
+      ],
+      [
+        58,
+        33,
+        9
+      ],
+      [
+        61,
+        36,
+        30
+      ],
+      [
+        85,
+        66,
+        49
+      ],
+      [
+        85,
+        66,
+        54
+      ],
+      [
+        91,
+        71,
+        52
+      ],
+      [
+        98,
+        64,
+        46
+      ],
+      [
+        108,
+        73,
+        55
+      ],
+      [
+        121,
+        74,
+        49
+      ],
+      [
+        121,
+        77,
+        57
+      ],
+      [
+        125,
+        79,
+        59
+      ],
+      [
+        125,
+        83,
+        60
+      ],
+      [
+        134,
+        79,
+        57
+      ],
+      [
+        140,
+        84,
+        57
+      ],
+      [
+        146,
+        92,
+        65
+      ],
+      [
+        146,
+        97,
+        75
+      ],
+      [
+        146,
+        97,
+        78
+      ],
+      [
+        149,
+        94,
+        65
+      ],
+      [
+        151,
+        98,
+        71
+      ],
+      [
+        156,
+        118,
+        76
+      ],
+      [
+        157,
+        110,
+        88
+      ],
+      [
+        159,
+        105,
+        83
+      ],
+      [
+        161,
+        103,
+        74
+      ],
+      [
+        164,
+        98,
+        71
+      ],
+      [
+        166,
+        90,
+        57
+      ],
+      [
+        166,
+        103,
+        74
+      ],
+      [
+        167,
+        92,
+        46
+      ],
+      [
+        171,
+        119,
+        93
+      ],
+      [
+        172,
+        120,
+        95
+      ],
+      [
+        173,
+        90,
+        56
+      ],
+      [
+        178,
+        120,
+        93
+      ],
+      [
+        179,
+        131,
+        93
+      ],
+      [
+        180,
+        97,
+        67
+      ],
+      [
+        180,
+        117,
+        90
+      ],
+      [
+        182,
+        101,
+        67
+      ],
+      [
+        183,
+        101,
+        66
+      ],
+      [
+        183,
+        117,
+        89
+      ],
+      [
+        185,
+        100,
+        63
+      ],
+      [
+        189,
+        123,
+        85
+      ],
+      [
+        195,
+        111,
+        76
+      ],
+      [
+        195,
+        119,
+        84
+      ],
+      [
+        196,
+        114,
+        76
+      ],
+      [
+        196,
+        120,
+        84
+      ],
+      [
+        196,
+        124,
+        90
+      ],
+      [
+        197,
+        117,
+        78
+      ],
+      [
+        198,
+        117,
+        79
+      ],
+      [
+        201,
+        137,
+        107
+      ],
+      [
+        202,
+        120,
+        83
+      ],
+      [
+        203,
+        133,
+        95
+      ],
+      [
+        203,
+        142,
+        49
+      ],
+      [
+        205,
+        132,
+        87
+      ],
+      [
+        206,
+        123,
+        83
+      ],
+      [
+        206,
+        135,
+        101
+      ],
+      [
+        207,
+        122,
+        82
+      ],
+      [
+        207,
+        123,
+        81
+      ],
+      [
+        207,
+        144,
+        46
+      ],
+      [
+        208,
+        125,
+        85
+      ],
+      [
+        208,
+        126,
+        87
+      ],
+      [
+        208,
+        142,
+        46
+      ],
+      [
+        208,
+        144,
+        113
+      ],
+      [
+        209,
+        132,
+        92
+      ],
+      [
+        209,
+        141,
+        46
+      ],
+      [
+        209,
+        148,
+        50
+      ],
+      [
+        210,
+        126,
+        86
+      ],
+      [
+        210,
+        130,
+        92
+      ],
+      [
+        210,
+        142,
+        109
+      ],
+      [
+        210,
+        143,
+        102
+      ],
+      [
+        210,
+        147,
+        53
+      ],
+      [
+        211,
+        131,
+        90
+      ],
+      [
+        212,
+        129,
+        88
+      ],
+      [
+        212,
+        141,
+        106
+      ],
+      [
+        213,
+        128,
+        86
+      ],
+      [
+        213,
+        129,
+        89
+      ],
+      [
+        213,
+        133,
+        92
+      ],
+      [
+        213,
+        157,
+        124
+      ],
+      [
+        214,
+        148,
+        47
+      ],
+      [
+        215,
+        134,
+        93
+      ],
+      [
+        215,
+        147,
+        46
+      ],
+      [
+        215,
+        149,
+        49
+      ],
+      [
+        215,
+        150,
+        46
+      ],
+      [
+        215,
+        151,
+        47
+      ],
+      [
+        215,
+        163,
+        128
+      ],
+      [
+        216,
+        140,
+        96
+      ],
+      [
+        216,
+        151,
+        49
+      ],
+      [
+        216,
+        153,
+        47
+      ],
+      [
+        216,
+        153,
+        51
+      ],
+      [
+        216,
+        153,
+        98
+      ],
+      [
+        216,
+        154,
+        47
+      ],
+      [
+        217,
+        129,
+        86
+      ],
+      [
+        217,
+        129,
+        90
+      ],
+      [
+        217,
+        130,
+        87
+      ],
+      [
+        217,
+        131,
+        93
+      ],
+      [
+        217,
+        138,
+        98
+      ],
+      [
+        217,
+        140,
+        97
+      ],
+      [
+        217,
+        153,
+        52
+      ],
+      [
+        217,
+        154,
+        50
+      ],
+      [
+        217,
+        155,
+        51
+      ],
+      [
+        218,
+        138,
+        98
+      ],
+      [
+        218,
+        152,
+        48
+      ],
+      [
+        218,
+        156,
+        52
+      ],
+      [
+        218,
+        158,
+        50
+      ],
+      [
+        219,
+        133,
+        90
+      ],
+      [
+        219,
+        141,
+        98
+      ],
+      [
+        219,
+        154,
+        48
+      ],
+      [
+        219,
+        158,
+        52
+      ],
+      [
+        220,
+        136,
+        97
+      ],
+      [
+        220,
+        140,
+        100
+      ],
+      [
+        220,
+        147,
+        109
+      ],
+      [
+        220,
+        150,
+        49
+      ],
+      [
+        220,
+        157,
+        50
+      ],
+      [
+        220,
+        157,
+        51
+      ],
+      [
+        220,
+        158,
+        52
+      ],
+      [
+        220,
+        158,
+        53
+      ],
+      [
+        220,
+        160,
+        51
+      ],
+      [
+        220,
+        160,
+        52
+      ],
+      [
+        220,
+        160,
+        53
+      ],
+      [
+        220,
+        160,
+        55
+      ],
+      [
+        221,
+        139,
+        96
+      ],
+      [
+        221,
+        152,
+        48
+      ],
+      [
+        221,
+        152,
+        60
+      ],
+      [
+        221,
+        154,
+        46
+      ],
+      [
+        221,
+        156,
+        49
+      ],
+      [
+        221,
+        157,
+        53
+      ],
+      [
+        221,
+        159,
+        53
+      ],
+      [
+        221,
+        159,
+        54
+      ],
+      [
+        221,
+        159,
+        55
+      ],
+      [
+        221,
+        159,
+        122
+      ],
+      [
+        221,
+        160,
+        54
+      ],
+      [
+        222,
+        141,
+        101
+      ],
+      [
+        222,
+        142,
+        98
+      ],
+      [
+        222,
+        146,
+        105
+      ],
+      [
+        223,
+        141,
+        98
+      ],
+      [
+        223,
+        144,
+        101
+      ],
+      [
+        223,
+        145,
+        104
+      ],
+      [
+        223,
+        152,
+        114
+      ],
+      [
+        224,
+        150,
+        108
+      ],
+      [
+        224,
+        153,
+        113
+      ],
+      [
+        224,
+        158,
+        90
+      ],
+      [
+        224,
+        163,
+        57
+      ],
+      [
+        225,
+        136,
+        98
+      ],
+      [
+        225,
+        149,
+        103
+      ],
+      [
+        225,
+        149,
+        109
+      ],
+      [
+        225,
+        163,
+        61
+      ],
+      [
+        225,
+        165,
+        57
+      ],
+      [
+        225,
+        168,
+        133
+      ],
+      [
+        226,
+        149,
+        104
+      ],
+      [
+        226,
+        149,
+        105
+      ],
+      [
+        226,
+        149,
+        111
+      ],
+      [
+        226,
+        151,
+        112
+      ],
+      [
+        226,
+        153,
+        112
+      ],
+      [
+        226,
+        157,
+        115
+      ],
+      [
+        226,
+        165,
+        62
+      ],
+      [
+        227,
+        149,
+        108
+      ],
+      [
+        227,
+        164,
+        122
+      ],
+      [
+        227,
+        166,
+        61
+      ],
+      [
+        227,
+        168,
+        60
+      ],
+      [
+        227,
+        177,
+        128
+      ],
+      [
+        228,
+        149,
+        104
+      ],
+      [
+        228,
+        159,
+        120
+      ],
+      [
+        228,
+        165,
+        53
+      ],
+      [
+        229,
+        144,
+        103
+      ],
+      [
+        229,
+        148,
+        106
+      ],
+      [
+        229,
+        151,
+        107
+      ],
+      [
+        229,
+        152,
+        111
+      ],
+      [
+        229,
+        155,
+        113
+      ],
+      [
+        229,
+        169,
+        62
+      ],
+      [
+        229,
+        171,
+        66
+      ],
+      [
+        230,
+        149,
+        106
+      ],
+      [
+        230,
+        152,
+        108
+      ],
+      [
+        230,
+        158,
+        117
+      ],
+      [
+        230,
+        161,
+        122
+      ],
+      [
+        230,
+        166,
+        58
+      ],
+      [
+        230,
+        171,
+        61
+      ],
+      [
+        230,
+        171,
+        63
+      ],
+      [
+        231,
+        153,
+        108
+      ],
+      [
+        231,
+        154,
+        111
+      ],
+      [
+        231,
+        160,
+        125
+      ],
+      [
+        231,
+        168,
+        70
+      ],
+      [
+        231,
+        169,
+        53
+      ],
+      [
+        231,
+        170,
+        59
+      ],
+      [
+        231,
+        170,
+        63
+      ],
+      [
+        232,
+        154,
+        109
+      ],
+      [
+        232,
+        154,
+        112
+      ],
+      [
+        232,
+        155,
+        110
+      ],
+      [
+        232,
+        155,
+        111
+      ],
+      [
+        232,
+        156,
+        111
+      ],
+      [
+        232,
+        158,
+        117
+      ],
+      [
+        232,
+        164,
+        129
+      ],
+      [
+        232,
+        172,
+        62
+      ],
+      [
+        233,
+        152,
+        107
+      ],
+      [
+        233,
+        154,
+        107
+      ],
+      [
+        233,
+        155,
+        112
+      ],
+      [
+        233,
+        164,
+        119
+      ],
+      [
+        233,
+        164,
+        129
+      ],
+      [
+        233,
+        165,
+        117
+      ],
+      [
+        233,
+        166,
+        122
+      ],
+      [
+        233,
+        166,
+        128
+      ],
+      [
+        233,
+        172,
+        57
+      ],
+      [
+        233,
+        172,
+        62
+      ],
+      [
+        233,
+        173,
+        62
+      ],
+      [
+        233,
+        175,
+        62
+      ],
+      [
+        233,
+        178,
+        65
+      ],
+      [
+        234,
+        147,
+        108
+      ],
+      [
+        234,
+        150,
+        104
+      ],
+      [
+        234,
+        156,
+        113
+      ],
+      [
+        234,
+        157,
+        114
+      ],
+      [
+        234,
+        158,
+        112
+      ],
+      [
+        234,
+        158,
+        116
+      ],
+      [
+        235,
+        159,
+        116
+      ],
+      [
+        235,
+        160,
+        116
+      ],
+      [
+        235,
+        163,
+        123
+      ],
+      [
+        235,
+        165,
+        125
+      ],
+      [
+        235,
+        170,
+        128
+      ],
+      [
+        236,
+        154,
+        110
+      ],
+      [
+        236,
+        159,
+        115
+      ],
+      [
+        236,
+        160,
+        117
+      ],
+      [
+        236,
+        162,
+        117
+      ],
+      [
+        236,
+        162,
+        121
+      ],
+      [
+        236,
+        166,
+        122
+      ],
+      [
+        236,
+        168,
+        131
+      ],
+      [
+        237,
+        156,
+        116
+      ],
+      [
+        237,
+        158,
+        111
+      ],
+      [
+        237,
+        158,
+        116
+      ],
+      [
+        237,
+        160,
+        112
+      ],
+      [
+        237,
+        161,
+        116
+      ],
+      [
+        237,
+        162,
+        119
+      ],
+      [
+        237,
+        162,
+        122
+      ],
+      [
+        237,
+        165,
+        120
+      ],
+      [
+        237,
+        165,
+        121
+      ],
+      [
+        237,
+        169,
+        128
+      ],
+      [
+        237,
+        170,
+        128
+      ],
+      [
+        237,
+        178,
+        70
+      ],
+      [
+        238,
+        152,
+        114
+      ],
+      [
+        238,
+        157,
+        111
+      ],
+      [
+        238,
+        158,
+        114
+      ],
+      [
+        238,
+        161,
+        116
+      ],
+      [
+        238,
+        165,
+        124
+      ],
+      [
+        239,
+        154,
+        109
+      ],
+      [
+        239,
+        158,
+        114
+      ],
+      [
+        239,
+        161,
+        116
+      ],
+      [
+        239,
+        163,
+        117
+      ],
+      [
+        239,
+        163,
+        120
+      ],
+      [
+        239,
+        166,
+        126
+      ],
+      [
+        239,
+        167,
+        123
+      ],
+      [
+        239,
+        167,
+        124
+      ],
+      [
+        239,
+        168,
+        126
+      ],
+      [
+        239,
+        169,
+        128
+      ],
+      [
+        239,
+        169,
+        131
+      ],
+      [
+        239,
+        174,
+        130
+      ],
+      [
+        239,
+        175,
+        133
+      ],
+      [
+        239,
+        176,
+        64
+      ],
+      [
+        239,
+        178,
+        67
+      ],
+      [
+        239,
+        180,
+        138
+      ],
+      [
+        240,
+        155,
+        118
+      ],
+      [
+        240,
+        162,
+        118
+      ],
+      [
+        240,
+        163,
+        119
+      ],
+      [
+        240,
+        164,
+        120
+      ],
+      [
+        240,
+        164,
+        124
+      ],
+      [
+        240,
+        165,
+        120
+      ],
+      [
+        240,
+        167,
+        129
+      ],
+      [
+        240,
+        169,
+        123
+      ],
+      [
+        240,
+        169,
+        128
+      ],
+      [
+        240,
+        170,
+        128
+      ],
+      [
+        240,
+        171,
+        130
+      ],
+      [
+        240,
+        171,
+        132
+      ],
+      [
+        240,
+        175,
+        138
+      ],
+      [
+        240,
+        177,
+        135
+      ],
+      [
+        241,
+        162,
+        119
+      ],
+      [
+        241,
+        167,
+        123
+      ],
+      [
+        241,
+        168,
+        125
+      ],
+      [
+        241,
+        170,
+        125
+      ],
+      [
+        241,
+        170,
+        126
+      ],
+      [
+        241,
+        170,
+        128
+      ],
+      [
+        241,
+        171,
+        131
+      ],
+      [
+        241,
+        172,
+        131
+      ],
+      [
+        241,
+        173,
+        133
+      ],
+      [
+        241,
+        174,
+        128
+      ],
+      [
+        241,
+        177,
+        130
+      ],
+      [
+        242,
+        162,
+        120
+      ],
+      [
+        242,
+        166,
+        120
+      ],
+      [
+        242,
+        167,
+        122
+      ],
+      [
+        242,
+        168,
+        121
+      ],
+      [
+        242,
+        168,
+        123
+      ],
+      [
+        242,
+        169,
+        124
+      ],
+      [
+        242,
+        169,
+        125
+      ],
+      [
+        242,
+        170,
+        125
+      ],
+      [
+        242,
+        170,
+        129
+      ],
+      [
+        242,
+        171,
+        126
+      ],
+      [
+        242,
+        171,
+        128
+      ],
+      [
+        242,
+        173,
+        131
+      ],
+      [
+        242,
+        175,
+        132
+      ],
+      [
+        242,
+        175,
+        135
+      ],
+      [
+        242,
+        180,
+        140
+      ],
+      [
+        243,
+        158,
+        115
+      ],
+      [
+        243,
+        163,
+        115
+      ],
+      [
+        243,
+        165,
+        120
+      ],
+      [
+        243,
+        167,
+        122
+      ],
+      [
+        243,
+        168,
+        120
+      ],
+      [
+        243,
+        168,
+        123
+      ],
+      [
+        243,
+        169,
+        123
+      ],
+      [
+        243,
+        169,
+        125
+      ],
+      [
+        243,
+        170,
+        124
+      ],
+      [
+        243,
+        170,
+        125
+      ],
+      [
+        243,
+        172,
+        131
+      ],
+      [
+        243,
+        173,
+        133
+      ],
+      [
+        243,
+        174,
+        128
+      ],
+      [
+        243,
+        175,
+        132
+      ],
+      [
+        243,
+        176,
+        132
+      ],
+      [
+        243,
+        177,
+        135
+      ],
+      [
+        243,
+        183,
+        141
+      ],
+      [
+        243,
+        185,
+        144
+      ],
+      [
+        243,
+        194,
+        91
+      ],
+      [
+        244,
+        167,
+        122
+      ],
+      [
+        244,
+        167,
+        130
+      ],
+      [
+        244,
+        169,
+        124
+      ],
+      [
+        244,
+        169,
+        125
+      ],
+      [
+        244,
+        170,
+        125
+      ],
+      [
+        244,
+        171,
+        128
+      ],
+      [
+        244,
+        172,
+        129
+      ],
+      [
+        244,
+        172,
+        130
+      ],
+      [
+        244,
+        173,
+        129
+      ],
+      [
+        244,
+        173,
+        130
+      ],
+      [
+        244,
+        173,
+        131
+      ],
+      [
+        244,
+        173,
+        133
+      ],
+      [
+        244,
+        174,
+        129
+      ],
+      [
+        244,
+        174,
+        131
+      ],
+      [
+        244,
+        175,
+        131
+      ],
+      [
+        244,
+        175,
+        132
+      ],
+      [
+        244,
+        176,
+        131
+      ],
+      [
+        244,
+        176,
+        133
+      ],
+      [
+        244,
+        179,
+        137
+      ],
+      [
+        244,
+        180,
+        139
+      ],
+      [
+        244,
+        182,
+        143
+      ],
+      [
+        245,
+        164,
+        120
+      ],
+      [
+        245,
+        170,
+        123
+      ],
+      [
+        245,
+        171,
+        125
+      ],
+      [
+        245,
+        172,
+        126
+      ],
+      [
+        245,
+        172,
+        128
+      ],
+      [
+        245,
+        172,
+        129
+      ],
+      [
+        245,
+        173,
+        126
+      ],
+      [
+        245,
+        173,
+        128
+      ],
+      [
+        245,
+        174,
+        129
+      ],
+      [
+        245,
+        174,
+        130
+      ],
+      [
+        245,
+        174,
+        131
+      ],
+      [
+        245,
+        175,
+        129
+      ],
+      [
+        245,
+        175,
+        131
+      ],
+      [
+        245,
+        176,
+        132
+      ],
+      [
+        245,
+        176,
+        134
+      ],
+      [
+        245,
+        176,
+        136
+      ],
+      [
+        245,
+        177,
+        133
+      ],
+      [
+        245,
+        177,
+        135
+      ],
+      [
+        245,
+        177,
+        138
+      ],
+      [
+        245,
+        178,
+        133
+      ],
+      [
+        245,
+        179,
+        138
+      ],
+      [
+        245,
+        179,
+        140
+      ],
+      [
+        245,
+        183,
+        142
+      ],
+      [
+        245,
+        188,
+        72
+      ],
+      [
+        245,
+        188,
+        73
+      ],
+      [
+        245,
+        188,
+        145
+      ],
+      [
+        245,
+        190,
+        153
+      ],
+      [
+        246,
+        171,
+        129
+      ],
+      [
+        246,
+        171,
+        131
+      ],
+      [
+        246,
+        173,
+        126
+      ],
+      [
+        246,
+        174,
+        129
+      ],
+      [
+        246,
+        174,
+        131
+      ],
+      [
+        246,
+        174,
+        132
+      ],
+      [
+        246,
+        174,
+        133
+      ],
+      [
+        246,
+        176,
+        132
+      ],
+      [
+        246,
+        176,
+        133
+      ],
+      [
+        246,
+        176,
+        134
+      ],
+      [
+        246,
+        176,
+        137
+      ],
+      [
+        246,
+        178,
+        134
+      ],
+      [
+        246,
+        179,
+        138
+      ],
+      [
+        246,
+        180,
+        138
+      ],
+      [
+        246,
+        180,
+        139
+      ],
+      [
+        246,
+        182,
+        142
+      ],
+      [
+        246,
+        194,
+        154
+      ],
+      [
+        247,
+        170,
+        126
+      ],
+      [
+        247,
+        171,
+        126
+      ],
+      [
+        247,
+        173,
+        131
+      ],
+      [
+        247,
+        175,
+        135
+      ],
+      [
+        247,
+        176,
+        132
+      ],
+      [
+        247,
+        176,
+        136
+      ],
+      [
+        247,
+        179,
+        135
+      ],
+      [
+        247,
+        179,
+        136
+      ],
+      [
+        247,
+        181,
+        137
+      ],
+      [
+        247,
+        183,
+        141
+      ],
+      [
+        247,
+        184,
+        142
+      ],
+      [
+        248,
+        174,
+        128
+      ],
+      [
+        248,
+        175,
+        128
+      ],
+      [
+        248,
+        178,
+        134
+      ],
+      [
+        248,
+        178,
+        135
+      ],
+      [
+        248,
+        179,
+        134
+      ],
+      [
+        248,
+        179,
+        137
+      ],
+      [
+        248,
+        180,
+        133
+      ],
+      [
+        248,
+        180,
+        134
+      ],
+      [
+        248,
+        180,
+        137
+      ],
+      [
+        248,
+        181,
+        136
+      ],
+      [
+        248,
+        182,
+        138
+      ],
+      [
+        248,
+        183,
+        139
+      ],
+      [
+        248,
+        183,
+        143
+      ],
+      [
+        248,
+        184,
+        142
+      ],
+      [
+        248,
+        184,
+        143
+      ],
+      [
+        248,
+        185,
+        144
+      ],
+      [
+        248,
+        187,
+        146
+      ],
+      [
+        248,
+        188,
+        143
+      ],
+      [
+        248,
+        188,
+        146
+      ],
+      [
+        248,
+        192,
+        70
+      ],
+      [
+        248,
+        192,
+        72
+      ],
+      [
+        248,
+        195,
+        77
+      ],
+      [
+        249,
+        178,
+        130
+      ],
+      [
+        249,
+        182,
+        138
+      ],
+      [
+        249,
+        182,
+        139
+      ],
+      [
+        249,
+        184,
+        140
+      ],
+      [
+        249,
+        185,
+        145
+      ],
+      [
+        249,
+        187,
+        146
+      ],
+      [
+        249,
+        189,
+        149
+      ],
+      [
+        249,
+        192,
+        76
+      ],
+      [
+        249,
+        192,
+        151
+      ],
+      [
+        249,
+        192,
+        152
+      ],
+      [
+        249,
+        194,
+        155
+      ],
+      [
+        249,
+        197,
+        90
+      ],
+      [
+        250,
+        182,
+        136
+      ],
+      [
+        250,
+        183,
+        140
+      ],
+      [
+        250,
+        184,
+        141
+      ],
+      [
+        250,
+        186,
+        139
+      ],
+      [
+        250,
+        186,
+        141
+      ],
+      [
+        250,
+        186,
+        143
+      ],
+      [
+        250,
+        187,
+        143
+      ],
+      [
+        250,
+        188,
+        145
+      ],
+      [
+        250,
+        189,
+        145
+      ],
+      [
+        250,
+        189,
+        146
+      ],
+      [
+        250,
+        189,
+        147
+      ],
+      [
+        250,
+        190,
+        141
+      ],
+      [
+        250,
+        192,
+        149
+      ],
+      [
+        250,
+        193,
+        155
+      ],
+      [
+        250,
+        194,
+        80
+      ],
+      [
+        250,
+        194,
+        151
+      ],
+      [
+        250,
+        196,
+        80
+      ],
+      [
+        250,
+        200,
+        91
+      ],
+      [
+        250,
+        201,
+        91
+      ],
+      [
+        251,
+        182,
+        139
+      ],
+      [
+        251,
+        184,
+        141
+      ],
+      [
+        251,
+        185,
+        139
+      ],
+      [
+        251,
+        185,
+        142
+      ],
+      [
+        251,
+        186,
+        143
+      ],
+      [
+        251,
+        187,
+        144
+      ],
+      [
+        251,
+        187,
+        145
+      ],
+      [
+        251,
+        187,
+        147
+      ],
+      [
+        251,
+        188,
+        143
+      ],
+      [
+        251,
+        188,
+        145
+      ],
+      [
+        251,
+        188,
+        146
+      ],
+      [
+        251,
+        189,
+        145
+      ],
+      [
+        251,
+        189,
+        146
+      ],
+      [
+        251,
+        189,
+        147
+      ],
+      [
+        251,
+        189,
+        148
+      ],
+      [
+        251,
+        190,
+        148
+      ],
+      [
+        251,
+        190,
+        149
+      ],
+      [
+        251,
+        192,
+        72
+      ],
+      [
+        251,
+        192,
+        146
+      ],
+      [
+        251,
+        192,
+        147
+      ],
+      [
+        251,
+        192,
+        148
+      ],
+      [
+        251,
+        192,
+        149
+      ],
+      [
+        251,
+        192,
+        150
+      ],
+      [
+        251,
+        192,
+        151
+      ],
+      [
+        251,
+        192,
+        152
+      ],
+      [
+        251,
+        192,
+        154
+      ],
+      [
+        251,
+        193,
+        151
+      ],
+      [
+        251,
+        193,
+        152
+      ],
+      [
+        251,
+        193,
+        153
+      ],
+      [
+        251,
+        194,
+        80
+      ],
+      [
+        251,
+        194,
+        152
+      ],
+      [
+        251,
+        194,
+        153
+      ],
+      [
+        251,
+        194,
+        154
+      ],
+      [
+        251,
+        194,
+        155
+      ],
+      [
+        252,
+        184,
+        141
+      ],
+      [
+        252,
+        187,
+        142
+      ],
+      [
+        252,
+        188,
+        142
+      ],
+      [
+        252,
+        188,
+        146
+      ],
+      [
+        252,
+        189,
+        143
+      ],
+      [
+        252,
+        189,
+        145
+      ],
+      [
+        252,
+        190,
+        145
+      ],
+      [
+        252,
+        190,
+        146
+      ],
+      [
+        252,
+        190,
+        147
+      ],
+      [
+        252,
+        190,
+        149
+      ],
+      [
+        252,
+        192,
+        146
+      ],
+      [
+        252,
+        192,
+        147
+      ],
+      [
+        252,
+        192,
+        148
+      ],
+      [
+        252,
+        192,
+        149
+      ],
+      [
+        252,
+        192,
+        150
+      ],
+      [
+        252,
+        192,
+        151
+      ],
+      [
+        252,
+        192,
+        152
+      ],
+      [
+        252,
+        192,
+        153
+      ],
+      [
+        252,
+        193,
+        149
+      ],
+      [
+        252,
+        193,
+        150
+      ],
+      [
+        252,
+        193,
+        151
+      ],
+      [
+        252,
+        193,
+        152
+      ],
+      [
+        252,
+        193,
+        153
+      ],
+      [
+        252,
+        193,
+        154
+      ],
+      [
+        252,
+        193,
+        155
+      ],
+      [
+        252,
+        194,
+        150
+      ],
+      [
+        252,
+        194,
+        151
+      ],
+      [
+        252,
+        194,
+        152
+      ],
+      [
+        252,
+        194,
+        153
+      ],
+      [
+        252,
+        194,
+        154
+      ],
+      [
+        252,
+        194,
+        155
+      ],
+      [
+        252,
+        194,
+        156
+      ],
+      [
+        252,
+        194,
+        157
+      ],
+      [
+        252,
+        195,
+        76
+      ],
+      [
+        252,
+        195,
+        152
+      ],
+      [
+        252,
+        195,
+        153
+      ],
+      [
+        252,
+        195,
+        154
+      ],
+      [
+        252,
+        195,
+        155
+      ],
+      [
+        252,
+        195,
+        157
+      ],
+      [
+        252,
+        196,
+        153
+      ],
+      [
+        252,
+        196,
+        155
+      ],
+      [
+        252,
+        196,
+        157
+      ],
+      [
+        252,
+        196,
+        158
+      ],
+      [
+        252,
+        197,
+        155
+      ],
+      [
+        252,
+        197,
+        157
+      ],
+      [
+        252,
+        197,
+        159
+      ],
+      [
+        252,
+        197,
+        160
+      ],
+      [
+        252,
+        199,
+        158
+      ],
+      [
+        252,
+        199,
+        161
+      ],
+      [
+        253,
+        188,
+        144
+      ],
+      [
+        253,
+        190,
+        147
+      ],
+      [
+        253,
+        192,
+        146
+      ],
+      [
+        253,
+        192,
+        147
+      ],
+      [
+        253,
+        192,
+        148
+      ],
+      [
+        253,
+        192,
+        149
+      ],
+      [
+        253,
+        192,
+        150
+      ],
+      [
+        253,
+        192,
+        151
+      ],
+      [
+        253,
+        192,
+        152
+      ],
+      [
+        253,
+        192,
+        157
+      ],
+      [
+        253,
+        193,
+        149
+      ],
+      [
+        253,
+        193,
+        150
+      ],
+      [
+        253,
+        193,
+        151
+      ],
+      [
+        253,
+        193,
+        152
+      ],
+      [
+        253,
+        193,
+        153
+      ],
+      [
+        253,
+        193,
+        154
+      ],
+      [
+        253,
+        194,
+        150
+      ],
+      [
+        253,
+        194,
+        151
+      ],
+      [
+        253,
+        194,
+        152
+      ],
+      [
+        253,
+        194,
+        153
+      ],
+      [
+        253,
+        194,
+        154
+      ],
+      [
+        253,
+        194,
+        155
+      ],
+      [
+        253,
+        194,
+        156
+      ],
+      [
+        253,
+        195,
+        151
+      ],
+      [
+        253,
+        195,
+        153
+      ],
+      [
+        253,
+        195,
+        154
+      ],
+      [
+        253,
+        195,
+        155
+      ],
+      [
+        253,
+        196,
+        154
+      ],
+      [
+        253,
+        196,
+        155
+      ],
+      [
+        253,
+        196,
+        158
+      ],
+      [
+        253,
+        197,
+        154
+      ],
+      [
+        253,
+        197,
+        157
+      ],
+      [
+        253,
+        197,
+        158
+      ],
+      [
+        253,
+        198,
+        159
+      ],
+      [
+        255,
+        185,
+        142
+      ],
+      [
+        255,
+        188,
+        146
+      ],
+      [
+        255,
+        192,
+        151
+      ],
+      [
+        255,
+        195,
+        153
+      ],
+      [
+        255,
+        198,
+        153
+      ],
+      [
+        255,
+        199,
+        160
+      ],
+      [
+        255,
+        200,
+        154
+      ],
+      [
+        255,
+        200,
+        165
+      ],
+      [
+        255,
+        203,
+        164
+      ],
+      [
+        255,
+        204,
+        172
+      ],
+      [
+        255,
+        206,
+        169
+      ],
+      [
+        255,
+        211,
+        176
+      ]
+    ],
+    "layers": [
+      {
+        "layer": "0/right-upper",
+        "addedPixels": 11,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "0/right-lower",
+        "addedPixels": 0,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "0/left-upper",
+        "addedPixels": 11,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "0/left-lower",
+        "addedPixels": 0,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "0/torso",
+        "addedPixels": 30,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "1/right-upper",
+        "addedPixels": 13,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "1/right-lower",
+        "addedPixels": 0,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "1/left-upper",
+        "addedPixels": 12,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "1/left-lower",
+        "addedPixels": 0,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "1/torso",
+        "addedPixels": 114,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "2/right-upper",
+        "addedPixels": 8,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "2/right-lower",
+        "addedPixels": 0,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "2/left-upper",
+        "addedPixels": 21,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "2/left-lower",
+        "addedPixels": 8,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "2/torso",
+        "addedPixels": 120,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "3/right-upper",
+        "addedPixels": 13,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "3/right-lower",
+        "addedPixels": 4,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "3/left-upper",
+        "addedPixels": 8,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "3/left-lower",
+        "addedPixels": 0,
+        "visibleSourcePixelsUnchanged": true
+      },
+      {
+        "layer": "3/torso",
+        "addedPixels": 126,
+        "visibleSourcePixelsUnchanged": true
+      }
+    ]
+  },
+  "spear": {
+    "image": "spear.png",
+    "grip": [
+      4,
+      42
+    ]
+  },
+  "sources": {
+    "standalone/goa-races/shared-body-rigs-v1/references/Elf_male_User_Approved.png": "51e044dede01931c200c846ccd79c4b97abdcd881f95118f743365709a8aa663",
+    "Dungeon Master Sample/Shared Body Rigs/Body Templates/standard-male/Source_Heads_64px.png": "f43daedb6b8582e0c346f05ba14049f5426afaf8423d29215cce6c47463c5bee",
+    "standalone/goa-races/armor-designs/deepguard-iron/pixel-fit-v2/pieces/64px/chest.png": "ad61a11927306dd44656d4a5f653d32d29f1b4e799077adcaa11c325004c6688",
+    "standalone/goa-races/unique-body-rig-v1/hidden-surfaces-v2/Elf_Completed_Components_AI.png": "cfe42dec1a7db9211b1068ce91924825672dde8bd70793aa90efca11f9c5772e",
+    "standalone/goa-races/unique-body-rig-v1/walk-repair-v6/Elf_East_Opposite_Contact_AI.png": "36cce033efe7bd6aa4734e30e0d336dc1ce12db655aede8c453d18fa4f5a82af",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/polearms-tools/weapon.spear/South.png": "7a1b9ceb7c675e310d1811f839f6ea44bc47c74c5a4d0d48f8cfc66b5292c64b",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/custom-shields/shield.round/South.png": "dc02fff0e154bf60ad29406800875a0a6631968cc206623d77654efa8f15546c",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/custom-shields/shield.round/North.png": "90f0889b19ed026f092bf82565010fe4648a452309ce8bfc71f4d5789164f838"
+  },
+  "skeleton": {
+    "root": null,
+    "pelvis": "root",
+    "torso": "pelvis",
+    "head": "torso",
+    "rightUpperArm": "torso",
+    "rightForearm": "rightUpperArm",
+    "rightHand": "rightForearm",
+    "rightThigh": "pelvis",
+    "rightShin": "rightThigh",
+    "rightFoot": "rightShin",
+    "leftUpperArm": "torso",
+    "leftForearm": "leftUpperArm",
+    "leftHand": "leftForearm",
+    "leftThigh": "pelvis",
+    "leftShin": "leftThigh",
+    "leftFoot": "leftShin"
+  },
+  "slots": {
+    "helmet": "head",
+    "chest": "torso",
+    "waist": "pelvis",
+    "mainHand": "rightHand",
+    "offHand": "leftHand",
+    "rightShoulder": "rightUpperArm",
+    "rightBracer": "rightForearm",
+    "rightGlove": "rightHand",
+    "rightGreave": "rightShin",
+    "rightBoot": "rightFoot",
+    "leftShoulder": "leftUpperArm",
+    "leftBracer": "leftForearm",
+    "leftGlove": "leftHand",
+    "leftGreave": "leftShin",
+    "leftBoot": "leftFoot"
+  },
+  "limitations": [
+    "Walk mode retains the repaired drawn walk; Full-body joint test articulates all fifteen components through a small motion range, not a finished skeletal walk cycle.",
+    "Four authored facings; no synthesized 16-direction art.",
+    "Hidden surfaces are inferred artwork; source lighting rotates with the limb and extreme poses need replacement art and visual review.",
+    "Only Elf male has an authored full-body profile. Other races, females and hybrids retain their originals and need fit profiles.",
+    "Fifteen equipment attachment slots are defined; only chest, spear and shield have fitted render artwork in this proof."
+  ]
+}

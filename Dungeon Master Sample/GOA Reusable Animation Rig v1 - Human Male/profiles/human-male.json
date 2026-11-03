@@ -1,0 +1,872 @@
+{
+ "name": "GOA Human male",
+ "source": "Dungeon Master Sample/GOA Reusable Animation Rig v1 - Human Male/inputs/sprites.png",
+ "zones": "fine zones for Human",
+ "zoneRowShift": {
+  "S0": -2,
+  "S1": -2,
+  "S2": -2,
+  "N0": -2,
+  "N1": -2,
+  "N2": -2,
+  "E0": -2,
+  "E1": -2,
+  "E2": -2,
+  "W0": -2,
+  "W1": -2,
+  "W2": -2
+ },
+ "calibration": "joints measured on the idle pixels (tools/cut_from_finezones.py); bow/throw targets = the Elf targets moved to this body's neck and shoulders and scaled by arm reach (1.053); not yet fitted by eye",
+ "views": [
+  {
+   "name": "South",
+   "arms": {
+    "right": [
+     [
+      21,
+      30
+     ],
+     [
+      20,
+      37
+     ],
+     [
+      20,
+      44
+     ]
+    ],
+    "left": [
+     [
+      43,
+      30
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      44,
+      44
+     ]
+    ]
+   },
+   "legs": {
+    "right": [
+     [
+      26,
+      47
+     ],
+     [
+      26,
+      52
+     ],
+     [
+      25,
+      58
+     ]
+    ],
+    "left": [
+     [
+      36,
+      47
+     ],
+     [
+      36,
+      52
+     ],
+     [
+      38,
+      58
+     ]
+    ]
+   },
+   "waist": [
+    32,
+    44
+   ],
+   "neck": [
+    32,
+    27
+   ],
+   "nearLeg": "right",
+   "parts": {
+    "head": "human-male-0-head.png",
+    "torso": "human-male-0-torso.png",
+    "pelvis": "human-male-0-pelvis.png",
+    "rightUpperArm": "human-male-0-rightUpperArm.png",
+    "rightForearm": "human-male-0-rightForearm.png",
+    "rightHand": "human-male-0-rightHand.png",
+    "leftUpperArm": "human-male-0-leftUpperArm.png",
+    "leftForearm": "human-male-0-leftForearm.png",
+    "leftHand": "human-male-0-leftHand.png",
+    "rightThigh": "human-male-0-rightThigh.png",
+    "rightShin": "human-male-0-rightShin.png",
+    "rightFoot": "human-male-0-rightFoot.png",
+    "leftThigh": "human-male-0-leftThigh.png",
+    "leftShin": "human-male-0-leftShin.png",
+    "leftFoot": "human-male-0-leftFoot.png"
+   },
+   "walk": [
+    {
+     "refined-torso": "human-male-0-walk-0-refined-torso.png",
+     "render-head": "human-male-0-walk-0-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-0-walk-1-refined-torso.png",
+     "render-head": "human-male-0-walk-1-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-0-walk-2-refined-torso.png",
+     "render-head": "human-male-0-walk-2-render-head.png"
+    }
+   ],
+   "jointColors": {
+    "rightElbow": [
+     250,
+     192,
+     140,
+     253
+    ],
+    "rightWrist": [
+     246,
+     177,
+     119,
+     253
+    ],
+    "rightKnee": [
+     146,
+     100,
+     62,
+     253
+    ],
+    "rightAnkle": [
+     255,
+     181,
+     122,
+     253
+    ],
+    "leftElbow": [
+     252,
+     189,
+     134,
+     253
+    ],
+    "leftWrist": [
+     240,
+     159,
+     97,
+     253
+    ],
+    "leftKnee": [
+     22,
+     21,
+     21,
+     253
+    ],
+    "leftAnkle": [
+     255,
+     208,
+     160,
+     253
+    ]
+   }
+  },
+  {
+   "name": "North",
+   "arms": {
+    "right": [
+     [
+      42,
+      29
+     ],
+     [
+      44,
+      37
+     ],
+     [
+      44,
+      44
+     ]
+    ],
+    "left": [
+     [
+      22,
+      29
+     ],
+     [
+      22,
+      37
+     ],
+     [
+      22,
+      44
+     ]
+    ]
+   },
+   "legs": {
+    "right": [
+     [
+      37,
+      47
+     ],
+     [
+      37,
+      52
+     ],
+     [
+      38,
+      58
+     ]
+    ],
+    "left": [
+     [
+      26,
+      47
+     ],
+     [
+      26,
+      52
+     ],
+     [
+      25,
+      58
+     ]
+    ]
+   },
+   "waist": [
+    32,
+    44
+   ],
+   "neck": [
+    32,
+    27
+   ],
+   "nearLeg": "right",
+   "parts": {
+    "head": "human-male-1-head.png",
+    "torso": "human-male-1-torso.png",
+    "pelvis": "human-male-1-pelvis.png",
+    "rightUpperArm": "human-male-1-rightUpperArm.png",
+    "rightForearm": "human-male-1-rightForearm.png",
+    "rightHand": "human-male-1-rightHand.png",
+    "leftUpperArm": "human-male-1-leftUpperArm.png",
+    "leftForearm": "human-male-1-leftForearm.png",
+    "leftHand": "human-male-1-leftHand.png",
+    "rightThigh": "human-male-1-rightThigh.png",
+    "rightShin": "human-male-1-rightShin.png",
+    "rightFoot": "human-male-1-rightFoot.png",
+    "leftThigh": "human-male-1-leftThigh.png",
+    "leftShin": "human-male-1-leftShin.png",
+    "leftFoot": "human-male-1-leftFoot.png"
+   },
+   "walk": [
+    {
+     "refined-torso": "human-male-1-walk-0-refined-torso.png",
+     "render-head": "human-male-1-walk-0-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-1-walk-1-refined-torso.png",
+     "render-head": "human-male-1-walk-1-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-1-walk-2-refined-torso.png",
+     "render-head": "human-male-1-walk-2-render-head.png"
+    }
+   ],
+   "jointColors": {
+    "rightElbow": [
+     241,
+     174,
+     118,
+     252
+    ],
+    "rightWrist": [
+     245,
+     175,
+     118,
+     253
+    ],
+    "rightKnee": [
+     23,
+     23,
+     23,
+     253
+    ],
+    "rightAnkle": [
+     251,
+     192,
+     143,
+     252
+    ],
+    "leftElbow": [
+     246,
+     171,
+     110,
+     252
+    ],
+    "leftWrist": [
+     120,
+     85,
+     61,
+     253
+    ],
+    "leftKnee": [
+     21,
+     21,
+     21,
+     252
+    ],
+    "leftAnkle": [
+     255,
+     196,
+     134,
+     253
+    ]
+   }
+  },
+  {
+   "name": "East",
+   "arms": {
+    "right": [
+     [
+      28,
+      29
+     ],
+     [
+      26,
+      38
+     ],
+     [
+      26,
+      45
+     ]
+    ],
+    "left": [
+     [
+      30,
+      30
+     ],
+     [
+      28,
+      39
+     ],
+     [
+      30,
+      46
+     ]
+    ]
+   },
+   "legs": {
+    "right": [
+     [
+      34.5,
+      46.0
+     ],
+     [
+      34.5,
+      53.0
+     ],
+     [
+      35.5,
+      57.0
+     ]
+    ],
+    "left": [
+     [
+      30.5,
+      46.0
+     ],
+     [
+      28.0,
+      53.0
+     ],
+     [
+      29.0,
+      58.0
+     ]
+    ]
+   },
+   "waist": [
+    32,
+    44
+   ],
+   "neck": [
+    32,
+    27
+   ],
+   "nearLeg": "left",
+   "parts": {
+    "head": "human-male-2-head.png",
+    "torso": "human-male-2-torso.png",
+    "pelvis": "human-male-2-pelvis.png",
+    "rightUpperArm": "human-male-2-rightUpperArm.png",
+    "rightForearm": "human-male-2-rightForearm.png",
+    "rightHand": "human-male-2-rightHand.png",
+    "leftUpperArm": "human-male-2-leftUpperArm.png",
+    "leftForearm": "human-male-2-leftForearm.png",
+    "leftHand": "human-male-2-leftHand.png",
+    "rightThigh": "human-male-2-rightThigh.png",
+    "rightShin": "human-male-2-rightShin.png",
+    "rightFoot": "human-male-2-rightFoot.png",
+    "leftThigh": "human-male-2-leftThigh.png",
+    "leftShin": "human-male-2-leftShin.png",
+    "leftFoot": "human-male-2-leftFoot.png"
+   },
+   "walk": [
+    {
+     "refined-torso": "human-male-2-walk-0-refined-torso.png",
+     "render-head": "human-male-2-walk-0-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-2-walk-1-refined-torso.png",
+     "render-head": "human-male-2-walk-1-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-2-walk-2-refined-torso.png",
+     "render-head": "human-male-2-walk-2-render-head.png"
+    }
+   ],
+   "jointColors": {
+    "rightElbow": [
+     253,
+     186,
+     130,
+     255
+    ],
+    "rightWrist": [
+     253,
+     185,
+     129,
+     255
+    ],
+    "rightKnee": [
+     156,
+     85,
+     39,
+     255
+    ],
+    "rightAnkle": [
+     243,
+     157,
+     94,
+     255
+    ],
+    "leftElbow": [
+     250,
+     172,
+     113,
+     255
+    ],
+    "leftWrist": [
+     251,
+     169,
+     106,
+     255
+    ],
+    "leftKnee": [
+     209,
+     121,
+     61,
+     255
+    ],
+    "leftAnkle": [
+     252,
+     181,
+     124,
+     255
+    ]
+   },
+   "partSource": {
+    "leftHand": [
+     [
+      43.5,
+      38.0
+     ],
+     [
+      43.5,
+      39.0
+     ]
+    ],
+    "rightThigh": [
+     [
+      36.5,
+      46.0
+     ],
+     [
+      37.0,
+      53.0
+     ]
+    ],
+    "rightShin": [
+     [
+      37.0,
+      53.0
+     ],
+     [
+      40.0,
+      58.0
+     ],
+     "fit"
+    ],
+    "rightFoot": [
+     [
+      40.0,
+      58.0
+     ],
+     [
+      40.0,
+      59.0
+     ]
+    ]
+   }
+  },
+  {
+   "name": "West",
+   "arms": {
+    "left": [
+     [
+      38,
+      29
+     ],
+     [
+      40,
+      38
+     ],
+     [
+      38,
+      45
+     ]
+    ],
+    "right": [
+     [
+      34,
+      30
+     ],
+     [
+      34,
+      39
+     ],
+     [
+      34,
+      46
+     ]
+    ]
+   },
+   "legs": {
+    "right": [
+     [
+      34.5,
+      46.0
+     ],
+     [
+      37.0,
+      53.0
+     ],
+     [
+      36.0,
+      58.0
+     ]
+    ],
+    "left": [
+     [
+      30.5,
+      46.0
+     ],
+     [
+      30.5,
+      53.0
+     ],
+     [
+      29.5,
+      57.0
+     ]
+    ]
+   },
+   "waist": [
+    32,
+    44
+   ],
+   "neck": [
+    32,
+    27
+   ],
+   "nearLeg": "right",
+   "parts": {
+    "head": "human-male-3-head.png",
+    "torso": "human-male-3-torso.png",
+    "pelvis": "human-male-3-pelvis.png",
+    "rightUpperArm": "human-male-3-rightUpperArm.png",
+    "rightForearm": "human-male-3-rightForearm.png",
+    "rightHand": "human-male-3-rightHand.png",
+    "leftUpperArm": "human-male-3-leftUpperArm.png",
+    "leftForearm": "human-male-3-leftForearm.png",
+    "leftHand": "human-male-3-leftHand.png",
+    "rightThigh": "human-male-3-rightThigh.png",
+    "rightShin": "human-male-3-rightShin.png",
+    "rightFoot": "human-male-3-rightFoot.png",
+    "leftThigh": "human-male-3-leftThigh.png",
+    "leftShin": "human-male-3-leftShin.png",
+    "leftFoot": "human-male-3-leftFoot.png"
+   },
+   "walk": [
+    {
+     "refined-torso": "human-male-3-walk-0-refined-torso.png",
+     "render-head": "human-male-3-walk-0-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-3-walk-1-refined-torso.png",
+     "render-head": "human-male-3-walk-1-render-head.png"
+    },
+    {
+     "refined-torso": "human-male-3-walk-2-refined-torso.png",
+     "render-head": "human-male-3-walk-2-render-head.png"
+    }
+   ],
+   "jointColors": {
+    "rightElbow": [
+     252,
+     173,
+     109,
+     255
+    ],
+    "rightWrist": [
+     250,
+     172,
+     108,
+     255
+    ],
+    "rightKnee": [
+     247,
+     161,
+     96,
+     255
+    ],
+    "rightAnkle": [
+     227,
+     168,
+     119,
+     255
+    ],
+    "leftElbow": [
+     254,
+     187,
+     131,
+     255
+    ],
+    "leftWrist": [
+     253,
+     185,
+     129,
+     255
+    ],
+    "leftKnee": [
+     181,
+     100,
+     47,
+     255
+    ],
+    "leftAnkle": [
+     251,
+     168,
+     105,
+     255
+    ]
+   },
+   "partSource": {
+    "rightHand": [
+     [
+      21.5,
+      38.0
+     ],
+     [
+      21.5,
+      39.0
+     ]
+    ],
+    "leftThigh": [
+     [
+      28.5,
+      46.0
+     ],
+     [
+      28.0,
+      53.0
+     ]
+    ],
+    "leftShin": [
+     [
+      28.0,
+      53.0
+     ],
+     [
+      25.0,
+      58.0
+     ],
+     "fit"
+    ],
+    "leftFoot": [
+     [
+      25.0,
+      58.0
+     ],
+     [
+      25.0,
+      59.0
+     ]
+    ]
+   }
+  }
+ ],
+ "grips": [
+  {
+   "right": [
+    17,
+    37
+   ],
+   "left": [
+    47,
+    39
+   ]
+  },
+  {
+   "right": [
+    46,
+    37
+   ],
+   "left": [
+    23,
+    33
+   ]
+  },
+  {
+   "right": [
+    42,
+    36
+   ],
+   "left": [
+    34,
+    39
+   ]
+  },
+  {
+   "right": [
+    24,
+    32
+   ],
+   "left": [
+    27,
+    37
+   ]
+  }
+ ],
+ "actions": {
+  "bow": [
+   {
+    "bow": [
+     37,
+     33
+    ],
+    "nock": [
+     32,
+     33
+    ],
+    "cheek": [
+     28,
+     31
+    ],
+    "flung": [
+     26,
+     30
+    ]
+   },
+   {
+    "bow": [
+     26,
+     33
+    ],
+    "nock": [
+     31,
+     33
+    ],
+    "cheek": [
+     35,
+     32
+    ],
+    "flung": [
+     37,
+     31
+    ]
+   },
+   {
+    "bow": [
+     54,
+     30
+    ],
+    "nock": [
+     44,
+     30
+    ],
+    "cheek": [
+     35,
+     29
+    ],
+    "flung": [
+     30,
+     28
+    ]
+   },
+   {
+    "bow": [
+     11,
+     30
+    ],
+    "nock": [
+     21,
+     30
+    ],
+    "cheek": [
+     30,
+     29
+    ],
+    "flung": [
+     32,
+     30
+    ]
+   }
+  ],
+  "throwFront": {
+   "windup": [
+    5,
+    -5
+   ],
+   "release": [
+    3,
+    1
+   ],
+   "follow": [
+    1,
+    7
+   ]
+  },
+  "throwSouth": {
+   "hand": [
+    -3,
+    -4
+   ],
+   "elbow": [
+    0,
+    6
+   ]
+  },
+  "throwNorth": {
+   "elbow": [
+    6,
+    0
+   ],
+   "hand": [
+    0,
+    -7
+   ]
+  }
+ }
+}

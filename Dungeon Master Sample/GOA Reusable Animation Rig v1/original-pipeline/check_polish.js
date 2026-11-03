@@ -1,0 +1,8 @@
+const fs=require('fs'),vm=require('vm'),path=require('path'),assert=require('assert');
+const root=path.resolve(__dirname,'../../..'),out=path.join(root,'Dungeon Master Sample/GOA Sword and Shield Rig/library');
+const data=JSON.parse(fs.readFileSync(path.join(out,'library.json'),'utf8')),context=vm.createContext({data});vm.runInContext(fs.readFileSync(path.join(__dirname,'engine.js'),'utf8')+';globalThis.animator=new ElfAnimator(data,{});',context);
+const result=vm.runInContext(`(()=>{let support=0,maxSupport=0,guard=0;for(const [id,c] of Object.entries(data.clips))for(let d=0;d<4;d++)for(const t of animator.times(id)){const p=animator.sample(id,t,d);if(p.supportGrip){const e=V.len(V.sub(p.supportGrip,p.arms.left.hand));maxSupport=Math.max(maxSupport,e);support++;if(e>.05)throw Error(id+' support hand disconnected '+e);}}
+for(const id of ['slash','lunge','thrust','smash','cast'])for(let d=0;d<4;d++)for(const t of [0,data.clips[id].duration]){const p=animator.sample(id,t,d),delta=V.sub(p.waist,data.views[d].waist),expected=V.add(data.grips[d].right,delta);if(V.len(V.sub(expected,p.arms.right.hand))>.005)throw Error(id+' guard recovery '+d);guard++;}
+for(const id of ['slash','lunge','thrust','chop'])for(const t of animator.times(id)){const e=animator.sample(id,t,2),w=animator.sample(id,t,3);if(Math.abs(e.waist[0]+w.waist[0]-63)>.005)throw Error(id+' West counterbalance does not mirror East');}
+return {supportFrames:support,maxSupportError:maxSupport,guardRecoveryChecks:guard,mirroredCounterbalance:true};})()`,context);
+fs.writeFileSync(path.join(out,'polish-checks.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));

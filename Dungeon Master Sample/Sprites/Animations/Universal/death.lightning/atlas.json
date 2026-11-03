@@ -1,0 +1,77 @@
+{
+  "clip": "death.lightning",
+  "clipData": {
+    "id": "death.lightning",
+    "label": "Lightning death",
+    "category": "Death sequences",
+    "duration": 2.25,
+    "sequence": [
+      "d_jolt",
+      "reaction.stiff"
+    ],
+    "tint": [
+      0.36,
+      0.33,
+      0.33
+    ],
+    "keys": [
+      [
+        0
+      ],
+      [
+        2.25
+      ]
+    ],
+    "source": "art/gear3d/deaths.js#DZDEF",
+    "effects": "Live particles/tints remain external to body clips",
+    "status": "source-defined sequence; external effects not baked"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 28,
+  "times": [
+    0.0,
+    0.08333333333333333,
+    0.16666666666666666,
+    0.25,
+    0.3333333333333333,
+    0.4166666666666667,
+    0.5,
+    0.5833333333333334,
+    0.6666666666666666,
+    0.75,
+    0.8333333333333334,
+    0.9166666666666666,
+    1.0,
+    1.0833333333333333,
+    1.1666666666666667,
+    1.25,
+    1.3333333333333333,
+    1.4166666666666667,
+    1.5,
+    1.5833333333333333,
+    1.6666666666666667,
+    1.75,
+    1.8333333333333333,
+    1.9166666666666667,
+    2.0,
+    2.0833333333333335,
+    2.1666666666666665,
+    2.25
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}

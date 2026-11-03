@@ -1,0 +1,335 @@
+{
+  "rule": "original sprite pixels; joints from this body's zones; covered piece ends rounded and closed with the outline colour",
+  "views": [
+    {
+      "view": "South",
+      "skeleton": "inputs/Orc.json S0 (rows -2)",
+      "rightArm": [
+        [
+          20.68,
+          26.58
+        ],
+        [
+          17.85,
+          35.65
+        ],
+        [
+          15.57,
+          46.57
+        ]
+      ],
+      "leftArm": [
+        [
+          44.83,
+          28.1
+        ],
+        [
+          47.23,
+          38.53
+        ],
+        [
+          49.3,
+          47.17
+        ]
+      ],
+      "head": {
+        "chinPixels": 72,
+        "torsoBackingUnderHead": 105
+      },
+      "backing": {
+        "torsoUnderArms": 107,
+        "pelvisUnderTorso": 42
+      },
+      "rightLeg": [
+        [
+          25.58,
+          45.05
+        ],
+        [
+          24.95,
+          53.5
+        ],
+        [
+          24.54,
+          58.89
+        ]
+      ],
+      "leftLeg": [
+        [
+          38.0,
+          45.05
+        ],
+        [
+          39.34,
+          53.5
+        ],
+        [
+          40.18,
+          58.82
+        ]
+      ]
+    },
+    {
+      "view": "North",
+      "skeleton": "inputs/Orc.json N0 (rows -2)",
+      "rightArm": [
+        [
+          43.45,
+          26.65
+        ],
+        [
+          45.5,
+          35.5
+        ],
+        [
+          48.07,
+          46.26
+        ]
+      ],
+      "leftArm": [
+        [
+          18.94,
+          27.76
+        ],
+        [
+          16.38,
+          38.12
+        ],
+        [
+          15.38,
+          47.14
+        ]
+      ],
+      "head": {
+        "chinPixels": 0,
+        "torsoBackingUnderHead": 97
+      },
+      "backing": {
+        "torsoUnderArms": 0,
+        "pelvisUnderTorso": 40
+      },
+      "rightLeg": [
+        [
+          37.39,
+          45.05
+        ],
+        [
+          38.35,
+          53.5
+        ],
+        [
+          38.96,
+          58.92
+        ]
+      ],
+      "leftLeg": [
+        [
+          25.16,
+          45.05
+        ],
+        [
+          24.3,
+          53.5
+        ],
+        [
+          23.75,
+          58.89
+        ]
+      ]
+    },
+    {
+      "view": "East",
+      "skeleton": "inputs/Orc.json E0 (rows -2)",
+      "rightArm": [
+        [
+          25.0,
+          29.0
+        ],
+        [
+          23.93,
+          42.37
+        ],
+        [
+          23.31,
+          50.13
+        ]
+      ],
+      "farArm": {
+        "side": "left",
+        "chain": [
+          [
+            34.38,
+            30.0
+          ],
+          [
+            33.3,
+            43.37
+          ],
+          [
+            32.69,
+            51.13
+          ]
+        ],
+        "from": "the near arm pieces on a chain mirrored to the front of the body"
+      },
+      "torsoFill": {
+        "source": "walk frame 2, shift 4,1",
+        "back line": 14,
+        "from source": 63,
+        "row copy": 56,
+        "edge closed": 21,
+        "under head": 62
+      },
+      "head": {
+        "chinPixels": 65
+      },
+      "backing": {
+        "pelvisUnderTorso": 25,
+        "seatFromWalkFrame": 38
+      },
+      "sideLegs": {
+        "split": 34.81,
+        "near": [
+          [
+            36.5,
+            44.0
+          ],
+          [
+            33.42,
+            50.58
+          ],
+          [
+            29.82,
+            57.85
+          ]
+        ],
+        "far": [
+          [
+            36.5,
+            44.0
+          ],
+          [
+            38.0,
+            50.93
+          ],
+          [
+            39.0,
+            56.5
+          ]
+        ],
+        "rule": "thighs = shorts below the waistband, split between the shins; far shin and foot = near pieces from the far knee"
+      },
+      "walkTorsoShift": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          -1,
+          -1
+        ],
+        "2": [
+          -3,
+          -1
+        ]
+      }
+    },
+    {
+      "view": "West",
+      "skeleton": "inputs/Orc.json W0 (rows -2)",
+      "leftArm": [
+        [
+          38.5,
+          29.0
+        ],
+        [
+          40.39,
+          41.39
+        ],
+        [
+          40.29,
+          50.08
+        ]
+      ],
+      "farArm": {
+        "side": "right",
+        "chain": [
+          [
+            29.75,
+            30.0
+          ],
+          [
+            31.64,
+            42.39
+          ],
+          [
+            31.54,
+            51.08
+          ]
+        ],
+        "from": "the near arm pieces on a chain mirrored to the front of the body"
+      },
+      "torsoFill": {
+        "source": "walk frame 2, shift -4,1",
+        "back line": 14,
+        "from source": 82,
+        "row copy": 45,
+        "edge closed": 19,
+        "under head": 63
+      },
+      "head": {
+        "chinPixels": 70
+      },
+      "backing": {
+        "pelvisUnderTorso": 23,
+        "seatFromWalkFrame": 44
+      },
+      "sideLegs": {
+        "split": 29.2,
+        "near": [
+          [
+            27.0,
+            44.7
+          ],
+          [
+            29.58,
+            50.58
+          ],
+          [
+            33.09,
+            58.03
+          ]
+        ],
+        "far": [
+          [
+            27.0,
+            44.7
+          ],
+          [
+            25.0,
+            50.93
+          ],
+          [
+            24.38,
+            56.62
+          ]
+        ],
+        "rule": "thighs = shorts below the waistband, split between the shins; far shin and foot = near pieces from the far knee"
+      },
+      "walkTorsoShift": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          2,
+          -1
+        ],
+        "2": [
+          3,
+          -1
+        ]
+      }
+    }
+  ]
+}

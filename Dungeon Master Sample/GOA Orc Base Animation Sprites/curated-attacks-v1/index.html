@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curated Orc attacks</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:24px auto;padding:0 20px;max-width:1280px;background:#25282c;color:#eceee9;font:15px system-ui}h1{font-size:26px;margin-bottom:8px}p{color:#bfc5bd;max-width:850px;line-height:1.5}a{color:#c4e5a4}button,select{padding:9px 14px;background:#383e44;border:1px solid #687165;border-radius:6px;color:white;font:inherit}button{cursor:pointer}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:22px 0;position:sticky;top:0;background:#25282cee;padding:12px 0;z-index:2}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#444951;border:1px solid #545b64;border-radius:8px;padding:10px;text-align:center}canvas{display:block;width:240px;max-width:100%;height:auto;margin:auto;image-rendering:pixelated}.direction{color:#d7dfd1;font-size:13px}.attack{margin:24px 0 36px}.attack h2{font-size:18px}.phase{min-width:170px;font-size:13px;color:#d7dfd1}footer{margin:30px 0;color:#bcc3b7;font-size:13px}@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+<h1>Curated Orc attacks</h1>
+<p>Separate left/right punches and kicks, with a shared guard and short legs. Each action has four directions and four frames. These are drawn-pose selections prepared for review; they have not been integrated into the game.</p>
+<nav><a href="../appearance-variants-v1/">Appearance variants</a><a href="../thrust-foundation-v1/">Shared thrust: body / sword / spear</a><a href="../spear-shield-v1/">Spear + shield preview</a><a href="contact-sheet.png">All frames</a> · <a href="orc-attacks.png">Combined transparent atlas</a> · <a href="manifest.json">Frame map</a> · <a href="../new-drawn-attacks/references/user-approved-front-kick.png">Preferred front kick</a> · <a href="../short-kick-turnaround-v1/">New short-leg kick: side and back</a> · <a href="../ki-movement-v1/">Ki blasts, charge and jumping</a> · <a href="../special-moves-v1/">2D special moves</a></nav>
+<div class="controls"><button id="play" aria-pressed="true">Pause</button><button id="step">Next frame</button><label>Speed <select id="speed"><option value=".5">Half</option><option value="1" selected>Normal</option><option value="1.5">Fast</option></select></label><span class="phase" id="phase"></span></div>
+<main id="attacks"></main>
+<noscript><p>Animation needs JavaScript. All sprite frames are shown below.</p><img src="contact-sheet.png" alt="All Orc attack frames" style="max-width:100%;image-rendering:pixelated"></noscript>
+<footer>80 × 80 cells include transparent attack padding. Nearest-neighbor sampling, 16 source colors, binary transparency. The selected source drawings remain available alongside these exports. Rear kick anatomy and frame-to-frame body movement still need artistic review.</footer>
+<script>
+const actions=['punch_right','punch_left','kick_right','kick_left'];
+const directions=['South / front','North / back','East / right','West / left'];
+const phases=['Guard','Windup / knee chamber','Impact','Recovery'];
+const timings=[160,120,100,160];
+const views=[];let phase=0,playing=true,elapsed=0,last=0;
+for(const action of actions){
+ const section=document.createElement('section');section.className='attack';
+ const title=document.createElement('h2');title.textContent=action.replace('_',' ').replace(/\b\w/g,c=>c.toUpperCase());section.append(title);
+ const grid=document.createElement('div');grid.className='grid';section.append(grid);
+ const image=new Image();image.src=action+'.png?v=dark-reference-v1';image.onload=draw;image.onerror=()=>{title.textContent+=' — image could not load'};
+ directions.forEach((direction,column)=>{const card=document.createElement('div');card.className='card';const label=document.createElement('div');label.className='direction';label.textContent=direction;const canvas=document.createElement('canvas');canvas.width=240;canvas.height=240;canvas.setAttribute('aria-label',action+' '+direction);card.append(label,canvas);grid.append(card);views.push({image,column,canvas});});
+ document.querySelector('#attacks').append(section);
+}
+function draw(){for(const {image,column,canvas} of views){const ctx=canvas.getContext('2d');ctx.clearRect(0,0,240,240);ctx.imageSmoothingEnabled=false;ctx.strokeStyle='#596069';ctx.beginPath();ctx.moveTo(12,204.5);ctx.lineTo(228,204.5);ctx.stroke();if(image.complete&&image.naturalWidth)ctx.drawImage(image,column*80,phase*80,80,80,0,0,240,240);}document.querySelector('#phase').textContent=(phase+1)+' / 4 · '+phases[phase];}
+function pause(){playing=false;const b=document.querySelector('#play');b.textContent='Play';b.setAttribute('aria-pressed','false');}
+document.querySelector('#play').onclick=()=>{playing=!playing;document.querySelector('#play').textContent=playing?'Pause':'Play';document.querySelector('#play').setAttribute('aria-pressed',String(playing));elapsed=0;};
+document.querySelector('#step').onclick=()=>{pause();phase=(phase+1)%4;draw();};
+function animate(now){if(last&&playing){elapsed+=Math.min(now-last,100)*Number(document.querySelector('#speed').value);if(elapsed>=timings[phase]){elapsed-=timings[phase];phase=(phase+1)%4;draw();}}last=now;requestAnimationFrame(animate);}draw();requestAnimationFrame(animate);
+</script>
+</html>

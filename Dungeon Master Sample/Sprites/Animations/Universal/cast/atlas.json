@@ -1,0 +1,158 @@
+{
+  "clip": "cast",
+  "clipData": {
+    "id": "cast",
+    "label": "Cast",
+    "category": "Combat",
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.24,
+        {
+          "Ru": 1.9,
+          "Rl": 2.4,
+          "W": 1.65,
+          "Lu": 0.8,
+          "Ll": 1.3,
+          "lean": -0.12,
+          "back": 0.2,
+          "crouch": 0.06
+        }
+      ],
+      [
+        0.42,
+        {
+          "Ru": 0.35,
+          "Rl": 0.25,
+          "W": 0.45,
+          "Lu": 0.15,
+          "Ll": 0.05,
+          "lean": 0.15,
+          "lunge": 0.2,
+          "step": 0.4,
+          "back": 0.15,
+          "crouch": 0.12
+        }
+      ],
+      [
+        0.62,
+        {
+          "Ru": 0.4,
+          "Rl": 0.3,
+          "W": 0.5,
+          "Lu": 0.2,
+          "Ll": 0.1,
+          "lean": 0.1,
+          "lunge": 0.18,
+          "step": 0.4,
+          "back": 0.15,
+          "crouch": 0.1
+        }
+      ],
+      [
+        0.95
+      ]
+    ],
+    "duration": 1.2,
+    "events": {
+      "release": 0.42
+    },
+    "source": "art/gear3d/skills.js",
+    "sourceDefinition": {
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.24,
+          {
+            "Ru": 1.9,
+            "Rl": 2.4,
+            "W": 1.65,
+            "Lu": 0.8,
+            "Ll": 1.3,
+            "lean": -0.12,
+            "back": 0.2,
+            "crouch": 0.06
+          }
+        ],
+        [
+          0.42,
+          {
+            "Ru": 0.35,
+            "Rl": 0.25,
+            "W": 0.45,
+            "Lu": 0.15,
+            "Ll": 0.05,
+            "lean": 0.15,
+            "lunge": 0.2,
+            "step": 0.4,
+            "back": 0.15,
+            "crouch": 0.12
+          }
+        ],
+        [
+          0.62,
+          {
+            "Ru": 0.4,
+            "Rl": 0.3,
+            "W": 0.5,
+            "Lu": 0.2,
+            "Ll": 0.1,
+            "lean": 0.1,
+            "lunge": 0.18,
+            "step": 0.4,
+            "back": 0.15,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.95
+        ]
+      ],
+      "release": 0.42,
+      "ranged": true,
+      "spell": true,
+      "death": "fall"
+    },
+    "status": "source-keyed clip; mapping preview"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 16,
+  "times": [
+    0.0,
+    0.08,
+    0.16,
+    0.23999999999999996,
+    0.32,
+    0.4,
+    0.4799999999999999,
+    0.56,
+    0.64,
+    0.72,
+    0.8,
+    0.88,
+    0.9599999999999999,
+    1.04,
+    1.12,
+    1.2
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}

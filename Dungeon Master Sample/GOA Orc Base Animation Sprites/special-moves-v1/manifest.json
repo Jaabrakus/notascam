@@ -1,0 +1,1307 @@
+{
+  "status": "2d_drawing_review_not_game_integrated",
+  "cellSize": 80,
+  "directions": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "recipes": [
+    {
+      "id": "overhead_cast",
+      "name": "Overhead cast",
+      "sheet": "overhead_cast.png",
+      "labels": [
+        "Guard",
+        "Raise hands",
+        "Release",
+        "Follow through"
+      ],
+      "durations": [
+        180,
+        250,
+        140,
+        180
+      ],
+      "frameCount": 4,
+      "revision": "original-cast-restored-final",
+      "previewTravel": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ground_slam",
+      "name": "Ground slam",
+      "sheet": "ground_slam.png",
+      "labels": [
+        "Guard",
+        "Raise fists",
+        "Slam",
+        "Recover"
+      ],
+      "durations": [
+        180,
+        200,
+        130,
+        230
+      ],
+      "frameCount": 4,
+      "revision": "v1",
+      "previewTravel": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "dash_strike",
+      "name": "Dash strike",
+      "sheet": "dash_strike.png",
+      "labels": [
+        "Guard",
+        "Windup",
+        "Strike",
+        "Recover"
+      ],
+      "durations": [
+        180,
+        130,
+        120,
+        220
+      ],
+      "frameCount": 4,
+      "revision": "v1",
+      "previewTravel": [
+        0,
+        0,
+        7,
+        3
+      ]
+    },
+    {
+      "id": "stagger",
+      "name": "Hit reaction / stagger",
+      "sheet": "stagger.png",
+      "labels": [
+        "Guard",
+        "Recoil",
+        "Stagger",
+        "Recover"
+      ],
+      "durations": [
+        150,
+        120,
+        220,
+        250
+      ],
+      "frameCount": 4,
+      "revision": "v1",
+      "previewTravel": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "action": "overhead_cast",
+      "direction": "south",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/overhead_cast-south-0.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "north",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/overhead_cast-north-0.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "east",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/overhead_cast-east-0.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "west",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/overhead_cast-west-0.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "south",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-south-1.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "north",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-north-1.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "east",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-east-1.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "west",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-west-1.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "south",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-south-2.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "north",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-north-2.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "east",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-east-2.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "west",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-west-2.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "south",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-south-3.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "north",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-north-3.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "east",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-east-3.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "overhead_cast",
+      "direction": "west",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/overhead_cast-west-3.png",
+      "source": "overhead_cast.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "south",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/ground_slam-south-0.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "north",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/ground_slam-north-0.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "east",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/ground_slam-east-0.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "west",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/ground_slam-west-0.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "south",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-south-1.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "north",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-north-1.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "east",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-east-1.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "west",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-west-1.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "south",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-south-2.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "north",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-north-2.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "east",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-east-2.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "west",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-west-2.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "south",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-south-3.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "north",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-north-3.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "east",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-east-3.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "ground_slam",
+      "direction": "west",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/ground_slam-west-3.png",
+      "source": "ground_slam.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "south",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/dash_strike-south-0.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "north",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/dash_strike-north-0.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "east",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/dash_strike-east-0.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "west",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/dash_strike-west-0.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "south",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-south-1.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "north",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-north-1.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "east",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-east-1.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "west",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-west-1.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "south",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-south-2.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "north",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-north-2.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "east",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-east-2.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "west",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-west-2.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "south",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-south-3.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "north",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-north-3.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "east",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-east-3.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "dash_strike",
+      "direction": "west",
+      "phase": 3,
+      "sharedGuard": false,
+      "file": "frames/dash_strike-west-3.png",
+      "source": "dash_strike.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "south",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/stagger-south-0.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "north",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/stagger-north-0.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "east",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/stagger-east-0.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "west",
+      "phase": 0,
+      "sharedGuard": true,
+      "file": "frames/stagger-west-0.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "south",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/stagger-south-1.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "north",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/stagger-north-1.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "east",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/stagger-east-1.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "west",
+      "phase": 1,
+      "sharedGuard": false,
+      "file": "frames/stagger-west-1.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "south",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/stagger-south-2.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "north",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/stagger-north-2.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "east",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/stagger-east-2.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "west",
+      "phase": 2,
+      "sharedGuard": false,
+      "file": "frames/stagger-west-2.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "south",
+      "phase": 3,
+      "sharedGuard": true,
+      "file": "frames/stagger-south-3.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        0,
+        1200,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "north",
+      "phase": 3,
+      "sharedGuard": true,
+      "file": "frames/stagger-north-3.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        80,
+        1200,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "east",
+      "phase": 3,
+      "sharedGuard": true,
+      "file": "frames/stagger-east-3.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        160,
+        1200,
+        80,
+        80
+      ]
+    },
+    {
+      "action": "stagger",
+      "direction": "west",
+      "phase": 3,
+      "sharedGuard": true,
+      "file": "frames/stagger-west-3.png",
+      "source": "stagger.png",
+      "sharedLowerBody": false,
+      "nativeOverride": null,
+      "atlasRect": [
+        240,
+        1200,
+        80,
+        80
+      ]
+    }
+  ],
+  "palette": [
+    [
+      10,
+      14,
+      9
+    ],
+    [
+      29,
+      43,
+      18
+    ],
+    [
+      47,
+      66,
+      30
+    ],
+    [
+      62,
+      89,
+      37
+    ],
+    [
+      78,
+      110,
+      46
+    ],
+    [
+      95,
+      133,
+      61
+    ],
+    [
+      109,
+      152,
+      76
+    ],
+    [
+      22,
+      22,
+      22
+    ],
+    [
+      39,
+      40,
+      38
+    ],
+    [
+      59,
+      59,
+      57
+    ],
+    [
+      68,
+      67,
+      67
+    ],
+    [
+      112,
+      17,
+      4
+    ],
+    [
+      210,
+      0,
+      2
+    ],
+    [
+      252,
+      8,
+      3
+    ],
+    [
+      225,
+      227,
+      224
+    ],
+    [
+      233,
+      236,
+      231
+    ],
+    [
+      41,
+      63,
+      22
+    ],
+    [
+      53,
+      79,
+      30
+    ],
+    [
+      68,
+      100,
+      43
+    ],
+    [
+      79,
+      114,
+      52
+    ],
+    [
+      84,
+      120,
+      56
+    ],
+    [
+      87,
+      124,
+      59
+    ]
+  ],
+  "bodyOnly": true,
+  "approved64FramesUnchanged": true,
+  "newFrameCells": 64,
+  "sources": {
+    "overhead_cast.png": "f68e50599a867e5314b2476b01c4565240b4215051bfc36cdfa190b00c385d2b",
+    "dash_strike.png": "695d95722983d6d061b2ddadf05472aa4ad7c3e11d9dafadbc0cd29850e05976",
+    "stagger.png": "5644f16f1b6cac2a30eb2fa58d48c78401007522f5d5f2ec0103191009919f0d",
+    "overhead_cast-v3.png": "d12e81f67d94d9081ee3a4bfc8d0d6d4a7f68171c436e6e752b1cd8076bdd1ae",
+    "overhead_cast-v2.png": "0d9e95524d098b456489f4563de6996c82158c959ae1cd599e4e81067f0f1c26",
+    "ground_slam.png": "f5ab04fb21f04a843bb125493958e48670efe8f5cceb86d80de5c534bdd3a57c"
+  },
+  "nativeOverrides": {},
+  "note": "3D was declined. This pack uses only the newly drawn 2D sheets; timing and dash travel are preview values.",
+  "appearance": {
+    "id": "dark-reference-v1",
+    "reference": "references/user-liked-attack-appearance.png",
+    "skinRamp": [
+      [
+        41,
+        63,
+        22
+      ],
+      [
+        53,
+        79,
+        30
+      ],
+      [
+        68,
+        100,
+        43
+      ],
+      [
+        79,
+        114,
+        52
+      ],
+      [
+        84,
+        120,
+        56
+      ],
+      [
+        87,
+        124,
+        59
+      ]
+    ],
+    "sourceGreenThresholds": [
+      75,
+      110,
+      140,
+      150,
+      157
+    ],
+    "note": "Fixed mapping across all poses; preserve alpha, geometry, red eyes, tusks, shorts and equipment. Uses source drawing green intensity before palette quantization, not the flattened previous export."
+  }
+}

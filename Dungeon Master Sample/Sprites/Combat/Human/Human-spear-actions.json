@@ -1,0 +1,271 @@
+{
+  "family": "spear",
+  "weapon": "weapon.spear",
+  "frameSize": [
+    128,
+    128
+  ],
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "rows": [
+    "Ready",
+    "Draw back",
+    "Thrust"
+  ],
+  "phases": [
+    {
+      "row": 0,
+      "ms": 400,
+      "label": "Ready"
+    },
+    {
+      "row": 1,
+      "ms": 240,
+      "label": "Draw back"
+    },
+    {
+      "row": 2,
+      "ms": 120,
+      "label": "Thrust"
+    },
+    {
+      "row": 2,
+      "ms": 120,
+      "label": "Thrust"
+    },
+    {
+      "row": 0,
+      "ms": 260,
+      "label": "Ready"
+    }
+  ],
+  "grips": [
+    [
+      {
+        "weapon": [
+          28,
+          41
+        ],
+        "support": [
+          36,
+          38
+        ]
+      },
+      {
+        "weapon": [
+          36,
+          39
+        ],
+        "support": [
+          29,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          27,
+          40
+        ],
+        "support": [
+          47,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          38,
+          40
+        ],
+        "support": [
+          18,
+          35
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          28,
+          42
+        ],
+        "support": [
+          35,
+          38
+        ]
+      },
+      {
+        "weapon": [
+          36,
+          40
+        ],
+        "support": [
+          29,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          25,
+          40
+        ],
+        "support": [
+          38,
+          38
+        ]
+      },
+      {
+        "weapon": [
+          39,
+          40
+        ],
+        "support": [
+          26,
+          38
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          29,
+          44
+        ],
+        "support": [
+          34,
+          47
+        ]
+      },
+      {
+        "weapon": [
+          35,
+          34
+        ],
+        "support": [
+          31,
+          29
+        ]
+      },
+      {
+        "weapon": [
+          37,
+          37
+        ],
+        "support": [
+          53,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          27,
+          37
+        ],
+        "support": [
+          12,
+          35
+        ]
+      }
+    ]
+  ],
+  "rotations": [
+    [
+      -12,
+      12,
+      15,
+      -15
+    ],
+    [
+      -55,
+      55,
+      -60,
+      60
+    ],
+    [
+      -115,
+      115,
+      100,
+      -100
+    ]
+  ],
+  "bladeDirections": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -0.6
+      ],
+      [
+        -1,
+        -0.6
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -0.6,
+        -1
+      ],
+      [
+        0.6,
+        -1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0.4
+      ],
+      [
+        -1,
+        0.4
+      ]
+    ]
+  ],
+  "shieldFacingOffset": 135,
+  "shieldForearmOffset": [
+    -2,
+    2,
+    -2,
+    2
+  ],
+  "loadout": {
+    "weapon": {
+      "id": "weapon.spear",
+      "material": "iron"
+    },
+    "shield": {
+      "id": null,
+      "material": "iron"
+    }
+  }
+}

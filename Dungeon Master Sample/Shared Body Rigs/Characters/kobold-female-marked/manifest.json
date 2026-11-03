@@ -1,0 +1,376 @@
+{
+  "id": "kobold-female-marked",
+  "label": "Kobold \u00b7 Female \u00b7 Marked",
+  "race": "kobold",
+  "sex": "female",
+  "appearance": "Marked",
+  "template": "small-female",
+  "build": "small",
+  "displayScale": 1.04651,
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameSize": 128,
+  "bodySpace": 64,
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "feet": [
+    64,
+    93
+  ],
+  "body": "Characters/kobold-female-marked/Shared_Body_64px.png",
+  "head": "Characters/kobold-female-marked/Original_Head_Layer_128px.png",
+  "features": "Characters/kobold-female-marked/Features_Behind_Body_128px.png",
+  "composite": "Characters/kobold-female-marked/Standardized_Character_128px.png",
+  "markings": "Characters/kobold-female-marked/Hybrid_Identity_Marks_64px.png",
+  "placements": [
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          0,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            31,
+            33
+          ],
+          "skin": [
+            162,
+            114,
+            44
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 445
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          1,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            31,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            164,
+            117,
+            44
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 444
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            35,
+            33
+          ],
+          "extractionCenter": [
+            35,
+            33
+          ],
+          "skin": [
+            162,
+            118,
+            44
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 328
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          0,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            28,
+            33
+          ],
+          "skin": [
+            146,
+            102,
+            39
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 342
+      }
+    ],
+    [
+      {
+        "sourceFrame": 1,
+        "direction": "South",
+        "offset": [
+          -2,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            32,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            166,
+            119,
+            43
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 425
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "North",
+        "offset": [
+          1,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            31,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            167,
+            118,
+            43
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 435
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "East",
+        "offset": [
+          1,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            33,
+            33
+          ],
+          "extractionCenter": [
+            35,
+            33
+          ],
+          "skin": [
+            134,
+            89,
+            29
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 375
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "West",
+        "offset": [
+          0,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            29,
+            33
+          ],
+          "skin": [
+            132,
+            88,
+            29
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 383
+      }
+    ],
+    [
+      {
+        "sourceFrame": 2,
+        "direction": "South",
+        "offset": [
+          -2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            32,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            170,
+            125,
+            48
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 411
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "North",
+        "offset": [
+          2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            174,
+            128,
+            50
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 429
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "East",
+        "offset": [
+          -2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            36,
+            33
+          ],
+          "extractionCenter": [
+            34,
+            33
+          ],
+          "skin": [
+            130,
+            86,
+            27
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 363
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "West",
+        "offset": [
+          2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            28,
+            33
+          ],
+          "extractionCenter": [
+            30,
+            33
+          ],
+          "skin": [
+            134,
+            92,
+            30
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 369
+      }
+    ]
+  ],
+  "donor": "Characters/kobold-female-marked/Original_Donor_Atlas.png",
+  "donorSha256": "1912ccb993da743566773888be12622aee50b7f0ebdc53c17a727f83f4746151",
+  "headMethod": "Exact extracted RGBA pixels, integer translation only. Head size, color and features are unchanged.",
+  "bodyPalette": {
+    "mid": [
+      155,
+      109,
+      52
+    ],
+    "method": "One stable body palette from donor torso, hands and feet; identity markings excluded.",
+    "sampleCount": 117
+  },
+  "hybridDetails": {
+    "appearance": "Marked",
+    "markPixels": 34,
+    "method": "Original donor identity markings attached by body segment and clipped to the fixed skin mask."
+  },
+  "status": "Standardized body / original-head assembly draft"
+}

@@ -1,0 +1,148 @@
+{
+  "format": "goa-equipped-atlas",
+  "version": 1,
+  "bodyId": "lizardman-ashen",
+  "bodyStatus": "standing_only",
+  "bodyFrameSize": [
+    64,
+    64
+  ],
+  "frameSize": [
+    128,
+    128
+  ],
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": [
+    {
+      "direction": "South",
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "bodyOrigin": [
+        32,
+        32
+      ],
+      "feet": [
+        64,
+        93
+      ]
+    },
+    {
+      "direction": "North",
+      "frame": 0,
+      "rect": [
+        128,
+        0,
+        128,
+        128
+      ],
+      "bodyOrigin": [
+        32,
+        32
+      ],
+      "feet": [
+        64,
+        93
+      ]
+    },
+    {
+      "direction": "East",
+      "frame": 0,
+      "rect": [
+        256,
+        0,
+        128,
+        128
+      ],
+      "bodyOrigin": [
+        32,
+        32
+      ],
+      "feet": [
+        64,
+        93
+      ]
+    },
+    {
+      "direction": "West",
+      "frame": 0,
+      "rect": [
+        384,
+        0,
+        128,
+        128
+      ],
+      "bodyOrigin": [
+        32,
+        32
+      ],
+      "feet": [
+        64,
+        93
+      ]
+    }
+  ],
+  "animation": {
+    "kind": "standing",
+    "sequence": [
+      0
+    ],
+    "delaysMs": [
+      200
+    ]
+  },
+  "weaponPose": 0,
+  "loadout": {
+    "weapon": {
+      "id": "weapon.longsword",
+      "material": "iron"
+    },
+    "shield": {
+      "id": "shield.round",
+      "material": "iron"
+    },
+    "head": {
+      "id": "helmet.nasal",
+      "material": "iron"
+    },
+    "chest": {
+      "id": "chest.plate",
+      "material": "iron"
+    },
+    "arms": {
+      "id": "arms.plate",
+      "material": "iron"
+    },
+    "legs": {
+      "id": "legs.mail",
+      "material": "iron"
+    },
+    "feet": {
+      "id": "feet.boots",
+      "material": "original"
+    }
+  },
+  "fits": {},
+  "clipping": {
+    "measured": true,
+    "padding": 32,
+    "clipped": false
+  },
+  "notes": [
+    "Generated body animation and shared-gear fitting require visual review.",
+    "Weapon gear pose is not a completed body attack animation."
+  ]
+}

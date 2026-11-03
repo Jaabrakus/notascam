@@ -1,0 +1,141 @@
+{
+  "id": "stab",
+  "label": "Stab",
+  "category": "Combat",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.07,
+      {
+        "Ru": -2.4,
+        "Rl": 0.1,
+        "W": 0,
+        "back": 0.1,
+        "crouch": 0.1
+      }
+    ],
+    [
+      0.14,
+      {
+        "Ru": -0.2,
+        "Rl": 0,
+        "W": 0,
+        "lean": 0.12,
+        "lunge": 0.25,
+        "step": 0.45,
+        "back": 0.1,
+        "crouch": 0.16
+      }
+    ],
+    [
+      0.22,
+      {
+        "Ru": -2.4,
+        "Rl": 0.1,
+        "W": 0,
+        "lunge": 0.12,
+        "step": 0.45,
+        "back": 0.1,
+        "crouch": 0.12
+      }
+    ],
+    [
+      0.3,
+      {
+        "Ru": -0.15,
+        "Rl": 0,
+        "W": 0,
+        "lean": 0.14,
+        "lunge": 0.3,
+        "step": 0.5,
+        "back": 0.1,
+        "crouch": 0.18
+      }
+    ],
+    [
+      0.5
+    ]
+  ],
+  "duration": 0.75,
+  "events": {
+    "hit": [
+      0.14,
+      0.3
+    ],
+    "trail": [
+      0.08,
+      0.32
+    ]
+  },
+  "source": "art/gear3d/skills.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.07,
+        {
+          "Ru": -2.4,
+          "Rl": 0.1,
+          "W": 0,
+          "back": 0.1,
+          "crouch": 0.1
+        }
+      ],
+      [
+        0.14,
+        {
+          "Ru": -0.2,
+          "Rl": 0,
+          "W": 0,
+          "lean": 0.12,
+          "lunge": 0.25,
+          "step": 0.45,
+          "back": 0.1,
+          "crouch": 0.16
+        }
+      ],
+      [
+        0.22,
+        {
+          "Ru": -2.4,
+          "Rl": 0.1,
+          "W": 0,
+          "lunge": 0.12,
+          "step": 0.45,
+          "back": 0.1,
+          "crouch": 0.12
+        }
+      ],
+      [
+        0.3,
+        {
+          "Ru": -0.15,
+          "Rl": 0,
+          "W": 0,
+          "lean": 0.14,
+          "lunge": 0.3,
+          "step": 0.5,
+          "back": 0.1,
+          "crouch": 0.18
+        }
+      ],
+      [
+        0.5
+      ]
+    ],
+    "hit": [
+      0.14,
+      0.3
+    ],
+    "trail": [
+      0.08,
+      0.32
+    ],
+    "death": "crumple"
+  },
+  "status": "source-keyed clip; mapping preview"
+}

@@ -1,0 +1,376 @@
+{
+  "id": "dark-elf-zombie",
+  "label": "Dark elf \u00b7 Male \u00b7 Zombie",
+  "race": "dark-elf",
+  "sex": "male",
+  "appearance": "Zombie",
+  "template": "standard-male",
+  "build": "standard",
+  "displayScale": 1.0,
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameSize": 128,
+  "bodySpace": 64,
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "feet": [
+    64,
+    93
+  ],
+  "body": "Characters/dark-elf-zombie/Shared_Body_64px.png",
+  "head": "Characters/dark-elf-zombie/Original_Head_Layer_128px.png",
+  "features": "Characters/dark-elf-zombie/Features_Behind_Body_128px.png",
+  "composite": "Characters/dark-elf-zombie/Standardized_Character_128px.png",
+  "markings": "Characters/dark-elf-zombie/Hybrid_Identity_Marks_64px.png",
+  "placements": [
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          0,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            32,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            115,
+            120,
+            104
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 748
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            31,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            112,
+            118,
+            106
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 771
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          0,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 27,
+          "neck": [
+            30,
+            26
+          ],
+          "extractionCenter": [
+            32,
+            26
+          ],
+          "skin": [
+            122,
+            128,
+            109
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 655
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          0,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 27,
+          "neck": [
+            34,
+            26
+          ],
+          "extractionCenter": [
+            32,
+            26
+          ],
+          "skin": [
+            138,
+            146,
+            124
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 678
+      }
+    ],
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            32,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            115,
+            120,
+            104
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 748
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            31,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            112,
+            118,
+            106
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 771
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          4,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 27,
+          "neck": [
+            30,
+            26
+          ],
+          "extractionCenter": [
+            32,
+            26
+          ],
+          "skin": [
+            122,
+            128,
+            109
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 655
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          -4,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 27,
+          "neck": [
+            34,
+            26
+          ],
+          "extractionCenter": [
+            32,
+            26
+          ],
+          "skin": [
+            138,
+            146,
+            124
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 678
+      }
+    ],
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            32,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            115,
+            120,
+            104
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 748
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          -1,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 26,
+          "neck": [
+            31,
+            25
+          ],
+          "extractionCenter": [
+            32,
+            25
+          ],
+          "skin": [
+            112,
+            118,
+            106
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 771
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          4,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 27,
+          "neck": [
+            30,
+            26
+          ],
+          "extractionCenter": [
+            32,
+            26
+          ],
+          "skin": [
+            122,
+            128,
+            109
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 655
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          -1,
+          -1
+        ],
+        "sourceHead": {
+          "cutY": 27,
+          "neck": [
+            34,
+            26
+          ],
+          "extractionCenter": [
+            32,
+            26
+          ],
+          "skin": [
+            138,
+            146,
+            124
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 678
+      }
+    ]
+  ],
+  "donor": "Characters/dark-elf-zombie/Original_Donor_Atlas.png",
+  "donorSha256": "912c143fe91170af6359b73d47f3519d648e618c6374527ab3b58946881baf2f",
+  "headMethod": "Exact extracted RGBA pixels, integer translation only. Head size, color and features are unchanged.",
+  "bodyPalette": {
+    "mid": [
+      122,
+      130,
+      111
+    ],
+    "method": "One stable body palette from donor torso, hands and feet; identity markings excluded.",
+    "sampleCount": 598
+  },
+  "hybridDetails": {
+    "appearance": "Zombie",
+    "markPixels": 0,
+    "method": "Original donor identity markings attached by body segment and clipped to the fixed skin mask."
+  },
+  "status": "Standardized body / original-head assembly draft"
+}

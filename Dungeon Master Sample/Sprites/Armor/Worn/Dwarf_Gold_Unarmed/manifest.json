@@ -1,0 +1,93 @@
+{
+  "id": "dwarf-gold",
+  "name": "Dwarf_Gold_Unarmed",
+  "race": "dwarf",
+  "artwork": "Dwarf_Gold_Unarmed_Artwork.png",
+  "sheet": "Dwarf_Gold_Unarmed_Sheet_64px.png",
+  "frameSize": [
+    64,
+    64
+  ],
+  "bodySpace": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": [
+    {
+      "direction": "South",
+      "file": "Dwarf_Gold_Unarmed_South_64px.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "bodyOrigin": [
+        0,
+        0
+      ],
+      "feet": [
+        32,
+        61
+      ]
+    },
+    {
+      "direction": "North",
+      "file": "Dwarf_Gold_Unarmed_North_64px.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "bodyOrigin": [
+        0,
+        0
+      ],
+      "feet": [
+        32,
+        61
+      ]
+    },
+    {
+      "direction": "East",
+      "file": "Dwarf_Gold_Unarmed_East_64px.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "bodyOrigin": [
+        0,
+        0
+      ],
+      "feet": [
+        32,
+        61
+      ]
+    },
+    {
+      "direction": "West",
+      "file": "Dwarf_Gold_Unarmed_West_64px.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "bodyOrigin": [
+        0,
+        0
+      ],
+      "feet": [
+        32,
+        61
+      ]
+    }
+  ],
+  "sourceSha256": "22f63a8c8f7cae2781bef88eae9f545b84f19ef2ef94e35efab33c104f10e9da",
+  "sourceAsset": "standalone/goa-races/armor-designs/worn-masters-v1/dwarf-gold.png",
+  "pose": "standing",
+  "holdingHand": null,
+  "offhand": null,
+  "limits": "Complete standing character master; reusable overlays, motion and 16-direction views are not yet derived."
+}

@@ -1,0 +1,376 @@
+{
+  "id": "kobold-female-werewolf",
+  "label": "Kobold \u00b7 Female \u00b7 Werewolf",
+  "race": "kobold",
+  "sex": "female",
+  "appearance": "Werewolf",
+  "template": "small-female",
+  "build": "small",
+  "displayScale": 1.04651,
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameSize": 128,
+  "bodySpace": 64,
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "feet": [
+    64,
+    93
+  ],
+  "body": "Characters/kobold-female-werewolf/Shared_Body_64px.png",
+  "head": "Characters/kobold-female-werewolf/Original_Head_Layer_128px.png",
+  "features": "Characters/kobold-female-werewolf/Features_Behind_Body_128px.png",
+  "composite": "Characters/kobold-female-werewolf/Standardized_Character_128px.png",
+  "markings": "Characters/kobold-female-werewolf/Hybrid_Identity_Marks_64px.png",
+  "placements": [
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          -2,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            32,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            175,
+            129,
+            42
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 390
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            164,
+            116,
+            37
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 390
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          -2,
+          0
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            36,
+            33
+          ],
+          "extractionCenter": [
+            34,
+            33
+          ],
+          "skin": [
+            171,
+            126,
+            43
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 477
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          2,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            28,
+            33
+          ],
+          "extractionCenter": [
+            30,
+            33
+          ],
+          "skin": [
+            150,
+            105,
+            32
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 314
+      }
+    ],
+    [
+      {
+        "sourceFrame": 1,
+        "direction": "South",
+        "offset": [
+          -1,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            31,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            170,
+            122,
+            39
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 362
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "North",
+        "offset": [
+          2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            160,
+            114,
+            35
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 367
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "East",
+        "offset": [
+          0,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            34,
+            33
+          ],
+          "extractionCenter": [
+            34,
+            33
+          ],
+          "skin": [
+            153,
+            106,
+            32
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 300
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "West",
+        "offset": [
+          2,
+          2
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            28,
+            33
+          ],
+          "extractionCenter": [
+            30,
+            33
+          ],
+          "skin": [
+            150,
+            104,
+            33
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 291
+      }
+    ],
+    [
+      {
+        "sourceFrame": 2,
+        "direction": "South",
+        "offset": [
+          -1,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            31,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            182,
+            137,
+            47
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 373
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "North",
+        "offset": [
+          2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            30,
+            33
+          ],
+          "extractionCenter": [
+            32,
+            33
+          ],
+          "skin": [
+            164,
+            114,
+            40
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 354
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "East",
+        "offset": [
+          0,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            34,
+            33
+          ],
+          "extractionCenter": [
+            34,
+            33
+          ],
+          "skin": [
+            152,
+            108,
+            34
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 269
+      },
+      {
+        "sourceFrame": 2,
+        "direction": "West",
+        "offset": [
+          2,
+          1
+        ],
+        "sourceHead": {
+          "cutY": 34,
+          "neck": [
+            28,
+            33
+          ],
+          "extractionCenter": [
+            30,
+            33
+          ],
+          "skin": [
+            147,
+            101,
+            31
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 446
+      }
+    ]
+  ],
+  "donor": "Characters/kobold-female-werewolf/Original_Donor_Atlas.png",
+  "donorSha256": "dfe938ce552640271045fbde2afa95c44802d4548a903c04e1f940736e9df0e8",
+  "headMethod": "Exact extracted RGBA pixels, integer translation only. Head size, color and features are unchanged.",
+  "bodyPalette": {
+    "mid": [
+      154,
+      113,
+      53
+    ],
+    "method": "One stable body palette from donor torso, hands and feet; identity markings excluded.",
+    "sampleCount": 112
+  },
+  "hybridDetails": {
+    "appearance": "Werewolf",
+    "markPixels": 0,
+    "method": "Original donor identity markings attached by body segment and clipped to the fixed skin mask."
+  },
+  "status": "Standardized body / original-head assembly draft"
+}

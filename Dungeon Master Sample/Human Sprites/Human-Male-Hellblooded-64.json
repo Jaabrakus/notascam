@@ -1,0 +1,45 @@
+{
+  "format": "goa-human-rebuilt-sheet",
+  "race": "Human",
+  "sex": "male",
+  "appearance": "Hellblooded",
+  "image": "Human-Male-Hellblooded-64.png",
+  "revision": "v6-full-redrawn-frames",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "frameDurationMs": 200,
+  "assembly": "Full registered redraw cells replace previous side-view frames; no arm/nose patch compositing.",
+  "redrawnFrames": [
+    {
+      "view": 2,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Hellblooded/east-registered.png",
+      "sourceSha256": "4eed4edf1b9bb68c156519da871fa0bb52398ae292b07acfd5067f35e5650ddf",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Hellblooded/2-0-full-frame.png",
+      "packedSha256": "8cb3651de447d307671a8fba539d516a33587b3a50d067f6e94338dc4d164cec"
+    },
+    {
+      "view": 3,
+      "row": 0,
+      "source": "standalone/goa-races/human-hand-corrections-v4/Human/Hellblooded/west-registered.png",
+      "sourceSha256": "99c0b794d4aaf15b045c2d5446b6e5ba9f97c7add572c1bf8b9775fa96317dab",
+      "packedFrame": "standalone/goa-races/human-sheet-rebuild-v6/Human/Hellblooded/3-0-full-frame.png",
+      "packedSha256": "871fa49beb458cb2489228c549dbfe7014dae0844257bda545e11430ef5949b5"
+    }
+  ]
+}

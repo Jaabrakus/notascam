@@ -1,0 +1,53 @@
+{
+  "status": "prototype_for_visual_review",
+  "boneCount": 16,
+  "meshCount": 31,
+  "actions": [
+    "guard",
+    "overhead_cast",
+    "ground_slam",
+    "dash_strike",
+    "stagger"
+  ],
+  "keyframes": [
+    1,
+    7,
+    13,
+    21
+  ],
+  "directions": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "model": "orc-sprite-rig.blend",
+  "exchange": "orc-sprite-rig.glb",
+  "renders": [
+    {
+      "action": "guard",
+      "direction": "south",
+      "phase": 0,
+      "file": "renders/guard-south-0.png"
+    },
+    {
+      "action": "guard",
+      "direction": "north",
+      "phase": 0,
+      "file": "renders/guard-north-0.png"
+    },
+    {
+      "action": "guard",
+      "direction": "east",
+      "phase": 0,
+      "file": "renders/guard-east-0.png"
+    },
+    {
+      "action": "guard",
+      "direction": "west",
+      "phase": 0,
+      "file": "renders/guard-west-0.png"
+    }
+  ],
+  "notes": "True 3D geometry with weighted armature. Fixed-length limb targets; separate from approved 2D sprites."
+}

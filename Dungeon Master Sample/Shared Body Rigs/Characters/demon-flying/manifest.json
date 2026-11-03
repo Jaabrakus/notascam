@@ -1,0 +1,376 @@
+{
+  "id": "demon-flying",
+  "label": "Demon \u00b7 Male \u00b7 Flight form",
+  "race": "demon",
+  "sex": "male",
+  "appearance": "Base",
+  "template": "stocky-male",
+  "build": "stocky",
+  "displayScale": 1.0,
+  "frames": 3,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameSize": 128,
+  "bodySpace": 64,
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "feet": [
+    64,
+    93
+  ],
+  "body": "Characters/demon-flying/Shared_Body_64px.png",
+  "head": "Characters/demon-flying/Original_Head_Layer_128px.png",
+  "features": "Characters/demon-flying/Features_Behind_Body_128px.png",
+  "composite": "Characters/demon-flying/Standardized_Character_128px.png",
+  "markings": "Characters/demon-flying/Hybrid_Identity_Marks_64px.png",
+  "placements": [
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          -1,
+          -9
+        ],
+        "sourceHead": {
+          "cutY": 36,
+          "neck": [
+            32,
+            35
+          ],
+          "extractionCenter": [
+            32,
+            35
+          ],
+          "skin": [
+            141,
+            24,
+            27
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 1311
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          -1,
+          -11
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            32,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            154,
+            26,
+            24
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 1376
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          -4,
+          -10
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            34,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            152,
+            28,
+            32
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 852
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          4,
+          -10
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            30,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            157,
+            31,
+            31
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 792
+      }
+    ],
+    [
+      {
+        "sourceFrame": 1,
+        "direction": "South",
+        "offset": [
+          2,
+          -9
+        ],
+        "sourceHead": {
+          "cutY": 36,
+          "neck": [
+            30,
+            35
+          ],
+          "extractionCenter": [
+            32,
+            35
+          ],
+          "skin": [
+            138,
+            24,
+            28
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 913
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "North",
+        "offset": [
+          0,
+          -11
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            32,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            150,
+            23,
+            23
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 961
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "East",
+        "offset": [
+          -2,
+          -10
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            32,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            157,
+            30,
+            33
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 697
+      },
+      {
+        "sourceFrame": 1,
+        "direction": "West",
+        "offset": [
+          4,
+          -10
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            30,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            150,
+            26,
+            30
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 682
+      }
+    ],
+    [
+      {
+        "sourceFrame": 0,
+        "direction": "South",
+        "offset": [
+          0,
+          -9
+        ],
+        "sourceHead": {
+          "cutY": 36,
+          "neck": [
+            32,
+            35
+          ],
+          "extractionCenter": [
+            32,
+            35
+          ],
+          "skin": [
+            141,
+            24,
+            27
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 1311
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "North",
+        "offset": [
+          -1,
+          -11
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            32,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            154,
+            26,
+            24
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 1376
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "East",
+        "offset": [
+          -4,
+          -10
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            34,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            152,
+            28,
+            32
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 852
+      },
+      {
+        "sourceFrame": 0,
+        "direction": "West",
+        "offset": [
+          2,
+          -10
+        ],
+        "sourceHead": {
+          "cutY": 38,
+          "neck": [
+            30,
+            37
+          ],
+          "extractionCenter": [
+            32,
+            37
+          ],
+          "skin": [
+            157,
+            31,
+            31
+          ],
+          "method": "Source RGBA pixels copied without scaling or recoloring; integer attachment translation only."
+        },
+        "sourceHeadPixels": 792
+      }
+    ]
+  ],
+  "donor": "Characters/demon-flying/Original_Donor_Atlas.png",
+  "donorSha256": "c7935a5b59e576c76a2a57dc042b5f3771ab4cdb181b03e3f373b46ccccb9ff0",
+  "headMethod": "Exact extracted RGBA pixels, integer translation only. Head size, color and features are unchanged.",
+  "bodyPalette": {
+    "mid": [
+      116,
+      33,
+      33
+    ],
+    "method": "One stable body palette from donor torso, hands and feet; identity markings excluded.",
+    "sampleCount": 327
+  },
+  "hybridDetails": {
+    "appearance": "Base",
+    "markPixels": 0,
+    "method": "Original donor identity markings attached by body segment and clipped to the fixed skin mask."
+  },
+  "status": "Standardized body / original-head assembly draft"
+}

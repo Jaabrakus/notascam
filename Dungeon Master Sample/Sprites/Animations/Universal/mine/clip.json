@@ -1,0 +1,110 @@
+{
+  "id": "mine",
+  "label": "Mine",
+  "category": "Work",
+  "keys": [
+    [
+      0
+    ],
+    [
+      0.35,
+      {
+        "Ru": 2.5,
+        "Rl": 2.8,
+        "W": 2.3,
+        "lean": -0.15,
+        "back": 0.15,
+        "crouch": 0.05
+      }
+    ],
+    [
+      0.55,
+      {
+        "Ru": -0.45,
+        "Rl": -0.7,
+        "W": -0.95,
+        "lean": 0.35,
+        "crouch": 0.22,
+        "lunge": 0.15,
+        "step": 0.35,
+        "back": 0.15
+      }
+    ],
+    [
+      0.8,
+      {
+        "Ru": -0.55,
+        "Rl": -0.8,
+        "W": -1,
+        "lean": 0.3,
+        "crouch": 0.2,
+        "lunge": 0.15,
+        "step": 0.35,
+        "back": 0.15
+      }
+    ],
+    [
+      1.15
+    ]
+  ],
+  "duration": 1.4,
+  "events": {
+    "hit": [
+      0.55
+    ]
+  },
+  "source": "art/gear3d/work.js",
+  "sourceDefinition": {
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.35,
+        {
+          "Ru": 2.5,
+          "Rl": 2.8,
+          "W": 2.3,
+          "lean": -0.15,
+          "back": 0.15,
+          "crouch": 0.05
+        }
+      ],
+      [
+        0.55,
+        {
+          "Ru": -0.45,
+          "Rl": -0.7,
+          "W": -0.95,
+          "lean": 0.35,
+          "crouch": 0.22,
+          "lunge": 0.15,
+          "step": 0.35,
+          "back": 0.15
+        }
+      ],
+      [
+        0.8,
+        {
+          "Ru": -0.55,
+          "Rl": -0.8,
+          "W": -1,
+          "lean": 0.3,
+          "crouch": 0.2,
+          "lunge": 0.15,
+          "step": 0.35,
+          "back": 0.15
+        }
+      ],
+      [
+        1.15
+      ]
+    ],
+    "hit": [
+      0.55
+    ],
+    "two": true,
+    "work": "mine"
+  },
+  "status": "source-keyed clip; mapping preview"
+}

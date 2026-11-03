@@ -1,0 +1,29 @@
+{
+  "status": "applied",
+  "source": "staged rig/finezones/Orc/fine.png",
+  "original": "inputs/fine-staged-original.png",
+  "changes": [
+    {
+      "cell": "E0",
+      "arm": "R",
+      "rows": [
+        27,
+        35
+      ],
+      "frontEdgeX": 30,
+      "pixelsRelabelled": 85,
+      "rule": "chest pixels on the arm side of its front edge -> shoulder R"
+    },
+    {
+      "cell": "W0",
+      "arm": "L",
+      "rows": [
+        27,
+        35
+      ],
+      "frontEdgeX": 33,
+      "pixelsRelabelled": 89,
+      "rule": "chest pixels on the arm side of its front edge -> shoulder L"
+    }
+  ]
+}

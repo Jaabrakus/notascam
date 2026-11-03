@@ -1,0 +1,402 @@
+{
+  "status": "pose_review_not_game_integrated",
+  "cellSize": 128,
+  "bodyOffset": [
+    24,
+    24
+  ],
+  "directions": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "labels": [
+    "Ready",
+    "Pull back",
+    "Short thrust",
+    "Recover"
+  ],
+  "durations": [
+    260,
+    130,
+    140,
+    220
+  ],
+  "frames": [
+    {
+      "direction": "south",
+      "phase": 0,
+      "grip": [
+        52,
+        76
+      ],
+      "shieldAnchor": [
+        75,
+        75
+      ],
+      "body": "frames/body-south-0.png",
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "north",
+      "phase": 0,
+      "grip": [
+        78,
+        75
+      ],
+      "shieldAnchor": [
+        51,
+        75
+      ],
+      "body": "frames/body-north-0.png",
+      "rect": [
+        128,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "east",
+      "phase": 0,
+      "grip": [
+        69,
+        73
+      ],
+      "shieldAnchor": [
+        77,
+        75
+      ],
+      "body": "frames/body-east-0.png",
+      "rect": [
+        256,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "west",
+      "phase": 0,
+      "grip": [
+        50,
+        74
+      ],
+      "shieldAnchor": [
+        66,
+        75
+      ],
+      "body": "frames/body-west-0.png",
+      "rect": [
+        384,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "south",
+      "phase": 1,
+      "grip": [
+        53,
+        75
+      ],
+      "shieldAnchor": [
+        75,
+        75
+      ],
+      "body": "frames/body-south-1.png",
+      "rect": [
+        0,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "north",
+      "phase": 1,
+      "grip": [
+        77,
+        75
+      ],
+      "shieldAnchor": [
+        51,
+        75
+      ],
+      "body": "frames/body-north-1.png",
+      "rect": [
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "east",
+      "phase": 1,
+      "grip": [
+        67,
+        73
+      ],
+      "shieldAnchor": [
+        77,
+        75
+      ],
+      "body": "frames/body-east-1.png",
+      "rect": [
+        256,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "west",
+      "phase": 1,
+      "grip": [
+        51,
+        74
+      ],
+      "shieldAnchor": [
+        66,
+        75
+      ],
+      "body": "frames/body-west-1.png",
+      "rect": [
+        384,
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "south",
+      "phase": 2,
+      "grip": [
+        53,
+        74
+      ],
+      "shieldAnchor": [
+        75,
+        75
+      ],
+      "body": "frames/body-south-2.png",
+      "rect": [
+        0,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "north",
+      "phase": 2,
+      "grip": [
+        81,
+        71
+      ],
+      "shieldAnchor": [
+        51,
+        75
+      ],
+      "body": "frames/body-north-2.png",
+      "rect": [
+        128,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "east",
+      "phase": 2,
+      "grip": [
+        73,
+        73
+      ],
+      "shieldAnchor": [
+        77,
+        75
+      ],
+      "body": "frames/body-east-2.png",
+      "rect": [
+        256,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "west",
+      "phase": 2,
+      "grip": [
+        48,
+        74
+      ],
+      "shieldAnchor": [
+        66,
+        75
+      ],
+      "body": "frames/body-west-2.png",
+      "rect": [
+        384,
+        256,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "south",
+      "phase": 3,
+      "grip": [
+        52,
+        76
+      ],
+      "shieldAnchor": [
+        75,
+        75
+      ],
+      "body": "frames/body-south-3.png",
+      "rect": [
+        0,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "north",
+      "phase": 3,
+      "grip": [
+        78,
+        75
+      ],
+      "shieldAnchor": [
+        51,
+        75
+      ],
+      "body": "frames/body-north-3.png",
+      "rect": [
+        128,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "east",
+      "phase": 3,
+      "grip": [
+        69,
+        73
+      ],
+      "shieldAnchor": [
+        77,
+        75
+      ],
+      "body": "frames/body-east-3.png",
+      "rect": [
+        256,
+        384,
+        128,
+        128
+      ]
+    },
+    {
+      "direction": "west",
+      "phase": 3,
+      "grip": [
+        50,
+        74
+      ],
+      "shieldAnchor": [
+        66,
+        75
+      ],
+      "body": "frames/body-west-3.png",
+      "rect": [
+        384,
+        384,
+        128,
+        128
+      ]
+    }
+  ],
+  "sheets": {
+    "body": "sheets/body.png",
+    "sword": "sheets/sword.png",
+    "spear": "sheets/spear.png",
+    "shield-rear": "sheets/shield-rear.png",
+    "shield-front": "sheets/shield-front.png",
+    "sword-rear": "sheets/sword-rear.png",
+    "sword-front": "sheets/sword-front.png",
+    "spear-rear": "sheets/spear-rear.png",
+    "spear-front": "sheets/spear-front.png"
+  },
+  "equipmentLayersSeparate": true,
+  "bodySharedAcrossEquipment": true,
+  "sources": {
+    "body": "drawings/body-source.png",
+    "prompt": "prompts/body.txt",
+    "equipment": "equipment/sources.json"
+  },
+  "checks": {
+    "priorFramesUnchanged": 224,
+    "binaryAlpha": true,
+    "noClipping": true,
+    "recoveryCopiesReady": true,
+    "headAndLegsLocked": true
+  },
+  "notes": "One-handed thrust review. Fixed equipment pixels and hand sockets; no reach/hitboxes or game integration. Body source generated once; static regions and shortened forearm are copied pixels.",
+  "appearance": {
+    "id": "dark-reference-v1",
+    "reference": "references/user-liked-attack-appearance.png",
+    "skinRamp": [
+      [
+        41,
+        63,
+        22
+      ],
+      [
+        53,
+        79,
+        30
+      ],
+      [
+        68,
+        100,
+        43
+      ],
+      [
+        79,
+        114,
+        52
+      ],
+      [
+        84,
+        120,
+        56
+      ],
+      [
+        87,
+        124,
+        59
+      ]
+    ],
+    "sourceGreenThresholds": [
+      75,
+      110,
+      140,
+      150,
+      157
+    ],
+    "note": "Fixed mapping across all poses; preserve alpha, geometry, red eyes, tusks, shorts and equipment. Uses source drawing green intensity before palette quantization, not the flattened previous export."
+  }
+}

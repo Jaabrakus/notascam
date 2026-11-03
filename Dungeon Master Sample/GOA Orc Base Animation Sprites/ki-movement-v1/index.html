@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Orc ki and movement</title>
+<style>:root{color-scheme:dark}*{box-sizing:border-box}body{font:15px system-ui;background:#262a2e;color:#edf2e6;margin:24px auto;padding:0 20px;max-width:1380px}h1{font-size:27px}p{line-height:1.5;color:#c5cfbf;max-width:900px}a{color:#c5e8a7}.controls{position:sticky;top:0;z-index:2;background:#262a2ef5;display:flex;flex-wrap:wrap;gap:14px;align-items:center;padding:14px 0}button,select{font:inherit;background:#3b4248;color:white;border:1px solid #64725c;padding:8px 12px;border-radius:6px}button{cursor:pointer}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.card{background:#444951;border:1px solid #61686f;border-radius:8px;padding:8px;text-align:center}canvas{width:100%;height:auto;display:block;image-rendering:pixelated}.action{margin:28px 0 42px}.action h2{font-size:19px}.phase{font-size:12px;min-height:32px;color:#d6dfcf}.tag{font-size:12px;color:#b6d697;font-weight:normal}.error{background:#622c26;padding:12px}small{color:#c3c8bf}nav{display:flex;gap:16px;flex-wrap:wrap}@media(max-width:750px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}</style>
+<h1>Orc ki blasts and movement</h1>
+<p>Rapid blasts reuse the approved punches. Held blasts reuse the extended-arm frame. Body sprites and energy effects are separate. New charge, palm blast, two-hand wave, jump and landing drawings are included for review.</p>
+<nav><a href="../thrust-foundation-v1/">Shared thrust: body / sword / spear</a><a href="../spear-shield-v1/">Spear + shield preview</a><a href="../curated-attacks-v1/">Approved punches and kicks</a><a href="front-body-contact-sheet.png">New body frames</a><a href="manifest.json">Sprite and sequence list</a><a href="README.md">Build notes</a> · <a href="../special-moves-v1/">2D special moves</a></nav>
+<div class="controls"><button id="play" aria-pressed="true">Pause</button><button id="step">Next phase</button><label>Show <select id="group"><option value="all">All additions</option><option value="reuse">Reused poses</option><option value="new_ki">New ki drawings</option><option value="movement">Jump and landing</option></select></label><label><input id="effects" type="checkbox" checked> Energy effects</label><label>Speed <select id="speed"><option value=".5">Half</option><option value="1" selected>Normal</option><option value="1.5">Fast</option></select></label></div>
+<div id="error" hidden class="error"></div><main id="list"></main>
+<p><small>Preview timings, hand positions and jump offsets are adjustable. These additions have not been integrated with game collision, damage, movement or input.</small></p>
+<script src="catalog.js?v=dark-reference-v1"></script>
+<script>
+const catalog=window.ORC_KI_CATALOG, images=new Map(), states=[], directions=['South / front','North / back','East / right','West / left'];
+let playing=true,last=0,effectTime=0;
+function report(message){const e=document.querySelector('#error');e.hidden=false;e.textContent=message;}
+function getImage(path){if(!images.has(path)){const image=new Image();image.src=path+'?v=dark-reference-v1';image.onerror=()=>report('Could not load '+path);images.set(path,image);}return images.get(path);}
+if(!catalog)report('The animation catalog could not load. Reopen this page through the local preview server.');
+else for(const recipe of catalog.recipes){
+ const section=document.createElement('section');section.className='action';section.id=recipe.id;section.dataset.group=recipe.group;
+ const title=document.createElement('h2');title.textContent=recipe.name+' ';const tag=document.createElement('span');tag.className='tag';tag.textContent=recipe.reusesApprovedPixels?'Approved pose reuse':'New drawing · review';title.append(tag);section.append(title);
+ const grid=document.createElement('div');grid.className='grid';section.append(grid);
+ const state={recipe,section,phase:0,elapsed:0,views:[]};
+ recipe.phases.forEach(p=>getImage(p.sheet));
+ directions.forEach((direction,column)=>{const card=document.createElement('div');card.className='card';const name=document.createElement('div');name.textContent=direction;const canvas=document.createElement('canvas');canvas.width=384;canvas.height=336;canvas.setAttribute('aria-label',recipe.name+' '+direction);const label=document.createElement('div');label.className='phase';card.append(name,canvas,label);grid.append(card);state.views.push({canvas,label,column});});
+ states.push(state);document.querySelector('#list').append(section);
+}
+if(catalog)Object.values(catalog.effects).forEach(e=>getImage(e.sheet));
+function effect(ctx,kind,x,y,direction,index,scale=1){const meta=catalog.effects[kind],img=getImage(meta.sheet);if(!img.complete||!img.naturalWidth)return;ctx.save();ctx.translate(x,y);if(kind!=='aura')ctx.rotate([Math.PI/2,-Math.PI/2,0,Math.PI][direction]);ctx.scale(scale,scale);ctx.drawImage(img,0,index*meta.height,meta.width,meta.height,kind==='beam'?0:-meta.width/2,-meta.height/2,meta.width,meta.height);ctx.restore();}
+function draw(){if(!catalog)return;const fxIndex=Math.floor(effectTime/100)%4;for(const state of states){if(state.section.hidden)continue;const p=state.recipe.phases[state.phase];for(const view of state.views){const {canvas,column,label}=view,ctx=canvas.getContext('2d');ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,384,336);ctx.imageSmoothingEnabled=false;ctx.scale(3,3);ctx.strokeStyle='#596169';ctx.beginPath();ctx.moveTo(5,92.5);ctx.lineTo(123,92.5);ctx.stroke();
+ const dx=24,dy=24+(p.rootOffsetY||0),fx=document.querySelector('#effects').checked?p.effect:null;
+ const hand=p.hand||state.recipe.hand||'right';const anchors=hand==='left'?[[50,45],[30,40],[65,44],[14,44]]:[[30,45],[50,40],[65,44],[14,44]];
+ let [hx,hy]=anchors[column];if(state.recipe.id==='ki_beam'){if(column<2)hx=40;else hx=column===2?64:15;}if(state.recipe.id==='ki_blast'&&column>=2)hx=column===2?63:16;
+ const age=Math.min(1,state.elapsed/p.ms);const travel=fx==='projectile'?age*25:0;
+ const vx=[0,0,1,-1][column],vy=[1,-1,0,0][column];
+ function fxDraw(){if(fx==='aura')effect(ctx,fx,dx+40,dy+39,0,fxIndex,.85);else if(fx)effect(ctx,fx,dx+hx+vx*travel,dy+hy+vy*travel,column,fx==='beam'?1+Math.floor(effectTime/150)%2:fxIndex,fx==='beam'?.5:.65);}
+ // North casts behind the body; other facings cast in front.
+ if(fx==='aura'||column===1)fxDraw();
+ const img=getImage(p.sheet);if(img.complete&&img.naturalWidth)ctx.drawImage(img,column*80,p.row*80,80,80,dx,dy,80,80);
+ if(fx&&fx!=='aura'&&column!==1)fxDraw();
+ label.textContent=(state.phase+1)+' / '+state.recipe.phases.length+' · '+p.label;
+}}}
+document.querySelector('#play').onclick=()=>{playing=!playing;const b=document.querySelector('#play');b.textContent=playing?'Pause':'Play';b.setAttribute('aria-pressed',String(playing));};
+document.querySelector('#step').onclick=()=>{playing=false;document.querySelector('#play').textContent='Play';document.querySelector('#play').setAttribute('aria-pressed','false');for(const s of states){s.phase=(s.phase+1)%s.recipe.phases.length;s.elapsed=0;}effectTime+=100;draw();};
+document.querySelector('#group').onchange=e=>{for(const s of states)s.section.hidden=e.target.value!=='all'&&s.recipe.group!==e.target.value;draw();};
+document.querySelector('#effects').onchange=draw;
+function tick(now){const delta=last?Math.min(now-last,80)*Number(document.querySelector('#speed').value):0;last=now;if(playing){effectTime+=delta;for(const s of states){s.elapsed+=delta;while(s.elapsed>=s.recipe.phases[s.phase].ms){s.elapsed-=s.recipe.phases[s.phase].ms;s.phase=(s.phase+1)%s.recipe.phases.length;}}}draw();requestAnimationFrame(tick);}requestAnimationFrame(tick);
+</script></html>

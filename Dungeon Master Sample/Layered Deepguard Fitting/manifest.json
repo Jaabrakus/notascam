@@ -1,0 +1,279 @@
+{
+  "version": 2,
+  "frameSize": 64,
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "slots": {
+    "helmet": [
+      "helmet"
+    ],
+    "chest": [
+      "chest"
+    ],
+    "shoulders": [
+      "shoulder-left",
+      "shoulder-right"
+    ],
+    "bracers": [
+      "bracer-left",
+      "bracer-right"
+    ],
+    "belt": [
+      "belt"
+    ],
+    "waist": [
+      "waist-mail-cloth"
+    ],
+    "greaves": [
+      "greave-left",
+      "greave-right"
+    ],
+    "boots": [
+      "boot-left",
+      "boot-right"
+    ]
+  },
+  "profiles": [
+    {
+      "id": "human",
+      "label": "Human \u00b7 standard build",
+      "body": "Human",
+      "family": "standard",
+      "y": [
+        5,
+        29,
+        42,
+        44,
+        52,
+        56,
+        61
+      ],
+      "headY": [
+        [
+          5,
+          27
+        ],
+        [
+          5,
+          28
+        ],
+        [
+          4,
+          26
+        ],
+        [
+          4,
+          26
+        ]
+      ],
+      "headWidth": 1.04,
+      "torsoWidth": 1,
+      "lowerWidth": 1,
+      "armWidth": 1,
+      "armY": [
+        29,
+        40,
+        44
+      ],
+      "armSpread": 0,
+      "base": "human/base.png",
+      "layers": {
+        "helmet": "human/helmet.png",
+        "chest": "human/chest.png",
+        "shoulders": "human/shoulders.png",
+        "bracers": "human/bracers.png",
+        "belt": "human/belt.png",
+        "waist": "human/waist.png",
+        "greaves": "human/greaves.png",
+        "boots": "human/boots.png"
+      },
+      "layerOrder": [
+        "boots",
+        "greaves",
+        "waist",
+        "chest",
+        "belt",
+        "shoulders",
+        "bracers",
+        "helmet"
+      ],
+      "equipped": "human/equipped.png",
+      "coverage": {
+        "boots": "human/boots-coverage.png"
+      },
+      "baseSource": "standalone/goa-races/hybrids/references/Human-approved.png"
+    },
+    {
+      "id": "dwarf",
+      "label": "Dwarf \u00b7 stocky build",
+      "body": "Dwarves",
+      "family": "stocky",
+      "y": [
+        14,
+        35,
+        44,
+        46,
+        54,
+        57,
+        61
+      ],
+      "headY": [
+        [
+          14,
+          32
+        ],
+        [
+          14,
+          34
+        ],
+        [
+          14,
+          32
+        ],
+        [
+          14,
+          32
+        ]
+      ],
+      "headWidth": 1.0,
+      "torsoWidth": 1.12,
+      "lowerWidth": 1,
+      "armWidth": 1.05,
+      "armY": [
+        35,
+        44,
+        47
+      ],
+      "armSpread": 1,
+      "base": "dwarf/base.png",
+      "layers": {
+        "helmet": "dwarf/helmet.png",
+        "chest": "dwarf/chest.png",
+        "shoulders": "dwarf/shoulders.png",
+        "bracers": "dwarf/bracers.png",
+        "belt": "dwarf/belt.png",
+        "waist": "dwarf/waist.png",
+        "greaves": "dwarf/greaves.png",
+        "boots": "dwarf/boots.png"
+      },
+      "layerOrder": [
+        "boots",
+        "greaves",
+        "waist",
+        "chest",
+        "belt",
+        "shoulders",
+        "bracers",
+        "helmet"
+      ],
+      "equipped": "dwarf/equipped.png",
+      "coverage": {
+        "boots": "dwarf/boots-coverage.png"
+      },
+      "baseSource": "standalone/goa-races/hybrids/references/Dwarves-approved.png"
+    },
+    {
+      "id": "goblin",
+      "label": "Goblin \u00b7 small build",
+      "body": "Goblins",
+      "family": "small",
+      "y": [
+        17,
+        38,
+        46,
+        48,
+        54,
+        57,
+        61
+      ],
+      "headY": [
+        [
+          17,
+          33
+        ],
+        [
+          17,
+          36
+        ],
+        [
+          17,
+          33
+        ],
+        [
+          17,
+          33
+        ]
+      ],
+      "headWidth": 0.85,
+      "torsoWidth": 0.82,
+      "lowerWidth": 0.8,
+      "armWidth": 0.8,
+      "armY": [
+        38,
+        45,
+        49
+      ],
+      "armSpread": 0,
+      "base": "goblin/base.png",
+      "layers": {
+        "helmet": "goblin/helmet.png",
+        "chest": "goblin/chest.png",
+        "shoulders": "goblin/shoulders.png",
+        "bracers": "goblin/bracers.png",
+        "belt": "goblin/belt.png",
+        "waist": "goblin/waist.png",
+        "greaves": "goblin/greaves.png",
+        "boots": "goblin/boots.png"
+      },
+      "layerOrder": [
+        "boots",
+        "greaves",
+        "waist",
+        "chest",
+        "belt",
+        "shoulders",
+        "bracers",
+        "helmet"
+      ],
+      "equipped": "goblin/equipped.png",
+      "coverage": {
+        "boots": "goblin/boots-coverage.png"
+      },
+      "baseSource": "standalone/goa-races/hybrids/references/Goblins-approved.png"
+    }
+  ],
+  "sourceHashes": {
+    "helmet": "84952c5c0d75e8a3e3371d31dc6671c43318ea99ac25d32580b935442d4cf551",
+    "chest": "ad61a11927306dd44656d4a5f653d32d29f1b4e799077adcaa11c325004c6688",
+    "shoulder-left": "c95f35d5968867272cd3e60fd59d9ce412c34c3c8d1d29f6b001a2841de752fb",
+    "shoulder-right": "11c2433a992a460d9479b7b093b84bb759770f4a21feef325394f48c0577700f",
+    "bracer-left": "0f03095ee46b006fae644ce93352f9a7bbfccc7a9ce030ff1e1da67ff197d1c6",
+    "bracer-right": "e5bd5427ca1e6006d4822583be15665dddf7413eb4b1587409029e4650c6c88a",
+    "belt": "062292ec9156e7eedaecbad3e4b3abd07a584f7bf1d11fb1fb01bbbad94647cc",
+    "waist-mail-cloth": "176cec8b9522eafc68a421ad28f0258aecb24343099dcf260732613d6d8835f8",
+    "greave-left": "3868d354871646772f5c4c480b039ed7cc194b97458fc529bd01e7f0599039d0",
+    "greave-right": "6ec873c23a566e81b0c8edfd9670eaf5f7c883ddda3a8c83995a06c8d4fa8fb1",
+    "boot-left": "437ed9c15c299b593c3e5cb1690a56af3bffb66df6ed2f9eb488165224d0545d",
+    "boot-right": "46a03f61878ee0f463d996ed15d4fb3a3f423a90bc386441f20964cf2029154d"
+  },
+  "fullSourceHashes": {
+    "helmet": "10d17dbaa8c92fa8f6ea2724a35235e35ed8393d15041d83fdc0dc30ad0c9012",
+    "chest": "0f3db50fae4106390324d67bb488b0dec28106fb7d360916f9695c90e1656949",
+    "shoulder-left": "62a3d125e6352ea6b31ded0188ef12d243e4bfd04a2dc0c3ef43ff1df54eeec6",
+    "shoulder-right": "afb42c56d680e6671b609098764a2384f20e9a45d93affdd9ccfa791a59350cd",
+    "bracer-left": "af84cb5be970f818a51465ba444e8d01050abb16ccb62f420503ff2e68773e6a",
+    "bracer-right": "dffe3d68e1f4743463fd7387953dc9eb97523894f9917c20c19e8788903af66c",
+    "belt": "918644be9a2b74b4901fc3bf400f41a607af88ff334d0876bad65ab881e18130",
+    "waist-mail-cloth": "37cbd2335639bbd3d5e8c178d96d496255c544b7b82792328c84740506b95029",
+    "greave-left": "17df80307791e3cdb3b2796649c61e158607e3e198319f7060b881b3e59fe529",
+    "greave-right": "14190cd8eb1aeb645e08ebac61eba16741f6e5bd2e356ae801b75d835026087b",
+    "boot-left": "80768f3a48e8a2480b135cdd9b0e40009f20c86a974ece0175ed3e6f8dd18ef5",
+    "boot-right": "5626d80be0b21d6626dcd28727cbd56fa1a2bb89382e4cd54794c6acf51a40f8"
+  },
+  "fitMethod": "Full-resolution source pieces sampled once to each anatomical profile; independent helmet/arm/torso/leg fitting and slot-dependent boot coverage.",
+  "limits": "Standing four-direction fitting prototype. Female-specific fits, hybrid anatomy exceptions, walking, attacks and sixteen directions are not authored here."
+}

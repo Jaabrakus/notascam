@@ -1,0 +1,102 @@
+{
+  "name": "Human_Staff_Hold",
+  "artwork": "Human_Staff_Hold_Artwork.png",
+  "sheet": "Human_Staff_Hold_Sheet_64px.png",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": [
+    {
+      "direction": "South",
+      "file": "Human_Staff_Hold_South_64px.png",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        147,
+        137,
+        453,
+        661
+      ]
+    },
+    {
+      "direction": "North",
+      "file": "Human_Staff_Hold_North_64px.png",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        646,
+        137,
+        1013,
+        661
+      ]
+    },
+    {
+      "direction": "East",
+      "file": "Human_Staff_Hold_East_64px.png",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        1250,
+        137,
+        1489,
+        661
+      ]
+    },
+    {
+      "direction": "West",
+      "file": "Human_Staff_Hold_West_64px.png",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        1733,
+        137,
+        1987,
+        661
+      ]
+    }
+  ],
+  "equipmentVisible": false,
+  "armorVisible": false,
+  "generation": "built-in imagegen",
+  "limits": "Four standing empty-hand holding poses. No walking, attacks, equipment layers or sixteen-direction animation included.",
+  "sourceSha256": "0693e25ee12f66e7dd935e72d72bad5d0d35993d208713054ddaa640dbbf6c5b"
+}

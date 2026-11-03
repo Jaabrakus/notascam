@@ -1,0 +1,2381 @@
+{
+  "id": "kobold",
+  "label": "Kobold \u00b7 Male",
+  "race": "kobold",
+  "sex": "male",
+  "appearance": "Base",
+  "family": "small",
+  "fitParent": "kobold",
+  "frames": 3,
+  "motion": "walk",
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "delaysMs": [
+    200,
+    200,
+    200,
+    200
+  ],
+  "frameSize": 64,
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "layerOrder": [
+    "boots",
+    "greaves",
+    "waist",
+    "chest",
+    "belt",
+    "shoulders",
+    "bracers",
+    "helmet"
+  ],
+  "fitDefaults": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": -2
+    },
+    {
+      "x": 0,
+      "y": -2
+    }
+  ],
+  "base": "bodies/kobold/Base_Body.png",
+  "layers": {
+    "helmet": "bodies/kobold/helmet.png",
+    "chest": "bodies/kobold/chest.png",
+    "shoulders": "bodies/kobold/shoulders.png",
+    "bracers": "bodies/kobold/bracers.png",
+    "belt": "bodies/kobold/belt.png",
+    "waist": "bodies/kobold/waist.png",
+    "greaves": "bodies/kobold/greaves.png",
+    "boots": "bodies/kobold/boots.png"
+  },
+  "coverage": {
+    "boots": "bodies/kobold/boots-coverage.png"
+  },
+  "equipped": "bodies/kobold/Deepguard_Equipped_Atlas.png",
+  "source": "standalone/goa-races/armory/body-sources/Kobold-walk.png",
+  "sourceSha256": "5661b1d8d41ff1d825c483fd45d62ccb4533e67f292b82b8021b81128f44cb03",
+  "rigs": [
+    [
+      {
+        "eye": [
+          31.5,
+          28.0
+        ],
+        "eyeDelta": 1.3983822042467153,
+        "neck": 37.629423660262894,
+        "hip": 47.6051061678463,
+        "shoulders": {
+          "right": [
+            24.0,
+            39.629423660262894
+          ],
+          "left": [
+            40.0,
+            39.629423660262894
+          ]
+        },
+        "hands": {
+          "right": [
+            27.0,
+            54
+          ],
+          "left": [
+            36.0,
+            54
+          ]
+        },
+        "feet": {
+          "right": [
+            26.0,
+            61
+          ],
+          "left": [
+            37.5,
+            61
+          ]
+        },
+        "bounds": [
+          15,
+          17,
+          49,
+          61
+        ]
+      },
+      {
+        "eye": null,
+        "eyeDelta": 0,
+        "neck": 36.93023255813954,
+        "hip": 47.3953488372093,
+        "shoulders": {
+          "right": [
+            40.0,
+            38.93023255813954
+          ],
+          "left": [
+            24.0,
+            38.93023255813954
+          ]
+        },
+        "hands": {
+          "right": [
+            35.5,
+            54
+          ],
+          "left": [
+            27.0,
+            54
+          ]
+        },
+        "feet": {
+          "right": [
+            37.0,
+            61
+          ],
+          "left": [
+            26.0,
+            61
+          ]
+        },
+        "bounds": [
+          15,
+          18,
+          49,
+          61
+        ]
+      },
+      {
+        "eye": [
+          38.5,
+          27.0
+        ],
+        "eyeDelta": 1.854398382204252,
+        "neck": 37.85743174924166,
+        "hip": 47.67350859453994,
+        "shoulders": {
+          "right": [
+            27,
+            39.85743174924166
+          ],
+          "left": [
+            34,
+            39.85743174924166
+          ]
+        },
+        "hands": {
+          "right": [
+            30.5,
+            53
+          ],
+          "left": [
+            35.0,
+            53
+          ]
+        },
+        "feet": {
+          "right": [
+            36.0,
+            61
+          ],
+          "left": [
+            29.5,
+            61
+          ]
+        },
+        "bounds": [
+          19,
+          16,
+          45,
+          61
+        ]
+      },
+      {
+        "eye": [
+          25.0,
+          27.0
+        ],
+        "eyeDelta": 1.854398382204252,
+        "neck": 37.85743174924166,
+        "hip": 47.67350859453994,
+        "shoulders": {
+          "right": [
+            30,
+            39.85743174924166
+          ],
+          "left": [
+            37,
+            39.85743174924166
+          ]
+        },
+        "hands": {
+          "right": [
+            28.666666666666668,
+            53
+          ],
+          "left": [
+            33.0,
+            53
+          ]
+        },
+        "feet": {
+          "right": [
+            34.5,
+            61
+          ],
+          "left": [
+            27.5,
+            61
+          ]
+        },
+        "bounds": [
+          18,
+          16,
+          46,
+          61
+        ]
+      }
+    ],
+    [
+      {
+        "eye": [
+          31.5,
+          28.0
+        ],
+        "eyeDelta": 1.3983822042467153,
+        "neck": 37.629423660262894,
+        "hip": 47.6051061678463,
+        "shoulders": {
+          "right": [
+            24.0,
+            39.629423660262894
+          ],
+          "left": [
+            40.0,
+            39.629423660262894
+          ]
+        },
+        "hands": {
+          "right": [
+            27.5,
+            54
+          ],
+          "left": [
+            35.0,
+            54
+          ]
+        },
+        "feet": {
+          "right": [
+            27.0,
+            61
+          ],
+          "left": [
+            36.5,
+            59
+          ]
+        },
+        "bounds": [
+          15,
+          17,
+          49,
+          61
+        ]
+      },
+      {
+        "eye": null,
+        "eyeDelta": 0,
+        "neck": 36.93023255813954,
+        "hip": 47.3953488372093,
+        "shoulders": {
+          "right": [
+            40.0,
+            38.93023255813954
+          ],
+          "left": [
+            24.0,
+            38.93023255813954
+          ]
+        },
+        "hands": {
+          "right": [
+            35.0,
+            54
+          ],
+          "left": [
+            26.785714285714285,
+            54
+          ]
+        },
+        "feet": {
+          "right": [
+            35.5,
+            61
+          ],
+          "left": [
+            26.5,
+            61
+          ]
+        },
+        "bounds": [
+          15,
+          17,
+          49,
+          61
+        ]
+      },
+      {
+        "eye": [
+          38.5,
+          28.0
+        ],
+        "eyeDelta": 2.854398382204252,
+        "neck": 38.35743174924166,
+        "hip": 47.82350859453994,
+        "shoulders": {
+          "right": [
+            27,
+            40.35743174924166
+          ],
+          "left": [
+            34,
+            40.35743174924166
+          ]
+        },
+        "hands": {
+          "right": [
+            26.363636363636363,
+            48
+          ],
+          "left": [
+            36.5,
+            51
+          ]
+        },
+        "feet": {
+          "right": [
+            39.0,
+            61
+          ],
+          "left": [
+            27.0,
+            61
+          ]
+        },
+        "bounds": [
+          19,
+          17,
+          45,
+          61
+        ]
+      },
+      {
+        "eye": [
+          24.5,
+          28.0
+        ],
+        "eyeDelta": 2.854398382204252,
+        "neck": 38.35743174924166,
+        "hip": 47.82350859453994,
+        "shoulders": {
+          "right": [
+            30,
+            40.35743174924166
+          ],
+          "left": [
+            37,
+            40.35743174924166
+          ]
+        },
+        "hands": {
+          "right": [
+            26.0,
+            51
+          ],
+          "left": [
+            36.5,
+            48
+          ]
+        },
+        "feet": {
+          "right": [
+            36.5,
+            61
+          ],
+          "left": [
+            24.5,
+            61
+          ]
+        },
+        "bounds": [
+          18,
+          17,
+          46,
+          61
+        ]
+      }
+    ],
+    [
+      {
+        "eye": [
+          31.5,
+          28.0
+        ],
+        "eyeDelta": 1.3983822042467153,
+        "neck": 37.629423660262894,
+        "hip": 47.6051061678463,
+        "shoulders": {
+          "right": [
+            24.0,
+            39.629423660262894
+          ],
+          "left": [
+            40.0,
+            39.629423660262894
+          ]
+        },
+        "hands": {
+          "right": [
+            28.0,
+            54
+          ],
+          "left": [
+            35.714285714285715,
+            54
+          ]
+        },
+        "feet": {
+          "right": [
+            27.0,
+            60
+          ],
+          "left": [
+            36.0,
+            61
+          ]
+        },
+        "bounds": [
+          15,
+          17,
+          49,
+          61
+        ]
+      },
+      {
+        "eye": null,
+        "eyeDelta": 0,
+        "neck": 36.93023255813954,
+        "hip": 47.3953488372093,
+        "shoulders": {
+          "right": [
+            40.0,
+            38.93023255813954
+          ],
+          "left": [
+            24.0,
+            38.93023255813954
+          ]
+        },
+        "hands": {
+          "right": [
+            36.36363636363637,
+            54
+          ],
+          "left": [
+            28.0,
+            54
+          ]
+        },
+        "feet": {
+          "right": [
+            35.5,
+            60
+          ],
+          "left": [
+            27.5,
+            61
+          ]
+        },
+        "bounds": [
+          15,
+          18,
+          49,
+          61
+        ]
+      },
+      {
+        "eye": [
+          38.0,
+          29.0
+        ],
+        "eyeDelta": 3.854398382204252,
+        "neck": 38.85743174924166,
+        "hip": 47.973508594539936,
+        "shoulders": {
+          "right": [
+            27,
+            40.85743174924166
+          ],
+          "left": [
+            34,
+            40.85743174924166
+          ]
+        },
+        "hands": {
+          "right": [
+            38.0,
+            51
+          ],
+          "left": [
+            27.363636363636363,
+            49
+          ]
+        },
+        "feet": {
+          "right": [
+            28.0,
+            61
+          ],
+          "left": [
+            40.5,
+            61
+          ]
+        },
+        "bounds": [
+          19,
+          18,
+          45,
+          61
+        ]
+      },
+      {
+        "eye": [
+          24.5,
+          28.0
+        ],
+        "eyeDelta": 2.854398382204252,
+        "neck": 38.35743174924166,
+        "hip": 47.82350859453994,
+        "shoulders": {
+          "right": [
+            30,
+            40.35743174924166
+          ],
+          "left": [
+            37,
+            40.35743174924166
+          ]
+        },
+        "hands": {
+          "right": [
+            36.142857142857146,
+            49
+          ],
+          "left": [
+            25.5,
+            51
+          ]
+        },
+        "feet": {
+          "right": [
+            24.0,
+            61
+          ],
+          "left": [
+            37.0,
+            61
+          ]
+        },
+        "bounds": [
+          18,
+          17,
+          46,
+          61
+        ]
+      }
+    ]
+  ],
+  "attachments": [
+    [
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            1.4
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.629423660262894
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            40.0,
+            39.629423660262894
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            24.0,
+            39.629423660262894
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            36.0,
+            51
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            27.0,
+            51
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            37.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            26.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            37.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            26.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            27.930232558139537
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            24.0,
+            38.93023255813954
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            40.0,
+            38.93023255813954
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            27.0,
+            51
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            35.5,
+            51
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            26.0,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            37.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            26.0,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            37.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            1.85
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.857431749241663
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            34,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            27,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            35.0,
+            50
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            30.5,
+            50
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            29.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            36.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            29.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            36.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            1.85
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.857431749241663
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            37,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            30,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            33.0,
+            50
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            28.666666666666668,
+            50
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            27.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.0,
+          "pivot": [
+            34.5,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            27.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            0.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            34.5,
+            58
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            1.4
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.629423660262894
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": 0.73,
+          "pivot": [
+            40.0,
+            39.629423660262894
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.38,
+          "pivot": [
+            24.0,
+            39.629423660262894
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            -1.0,
+            0
+          ],
+          "rotation": 3.63,
+          "pivot": [
+            36.0,
+            51
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            0.5,
+            0
+          ],
+          "rotation": -1.9,
+          "pivot": [
+            27.0,
+            51
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            -0.65,
+            -1.3
+          ],
+          "rotation": 0.77,
+          "pivot": [
+            37.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            0.65,
+            0.0
+          ],
+          "rotation": -3.66,
+          "pivot": [
+            26.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            -1.0,
+            -2
+          ],
+          "rotation": 0,
+          "pivot": [
+            37.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            1.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            26.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            27.930232558139537
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": 0.16,
+          "pivot": [
+            24.0,
+            38.93023255813954
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": 0.35,
+          "pivot": [
+            40.0,
+            38.93023255813954
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            -0.21,
+            0
+          ],
+          "rotation": 0.79,
+          "pivot": [
+            27.0,
+            51
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            -0.5,
+            0
+          ],
+          "rotation": 1.73,
+          "pivot": [
+            35.5,
+            51
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            0.33,
+            0.0
+          ],
+          "rotation": -1.79,
+          "pivot": [
+            26.0,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            -0.98,
+            0.0
+          ],
+          "rotation": 5.75,
+          "pivot": [
+            37.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            0.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            26.0,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            -1.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            37.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            2.85
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.857431749241663
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": -1.77,
+          "pivot": [
+            34,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": 3.93,
+          "pivot": [
+            27,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            1.5,
+            -2
+          ],
+          "rotation": -8.87,
+          "pivot": [
+            35.0,
+            50
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            -4.14,
+            -5
+          ],
+          "rotation": 19.67,
+          "pivot": [
+            30.5,
+            50
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.15
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.15
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            -1.62,
+            0.0
+          ],
+          "rotation": 10.15,
+          "pivot": [
+            29.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            1.95,
+            0.0
+          ],
+          "rotation": -11.27,
+          "pivot": [
+            36.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            -2.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            29.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            3.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            36.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            2.85
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.857431749241663
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": -2.64,
+          "pivot": [
+            37,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": 2.96,
+          "pivot": [
+            30,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            3.5,
+            -5
+          ],
+          "rotation": -13.18,
+          "pivot": [
+            33.0,
+            50
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            -2.67,
+            -2
+          ],
+          "rotation": 14.81,
+          "pivot": [
+            28.666666666666668,
+            50
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.15
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.15
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            -1.95,
+            0.0
+          ],
+          "rotation": 10.99,
+          "pivot": [
+            27.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            1.3,
+            0.0
+          ],
+          "rotation": -8.23,
+          "pivot": [
+            34.5,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            -3.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            27.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            2.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            34.5,
+            58
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            1.4
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.629423660262894
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": 0.21,
+          "pivot": [
+            40.0,
+            39.629423660262894
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.75,
+          "pivot": [
+            24.0,
+            39.629423660262894
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            -0.29,
+            0
+          ],
+          "rotation": 1.05,
+          "pivot": [
+            36.0,
+            51
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            1.0,
+            0
+          ],
+          "rotation": -3.76,
+          "pivot": [
+            27.0,
+            51
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.629423660262894
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            -0.98,
+            0.0
+          ],
+          "rotation": 5.7,
+          "pivot": [
+            37.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            0.65,
+            -0.65
+          ],
+          "rotation": -2.16,
+          "pivot": [
+            26.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            -1.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            37.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            1.0,
+            -1
+          ],
+          "rotation": 0,
+          "pivot": [
+            26.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            27.930232558139537
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.72,
+          "pivot": [
+            24.0,
+            38.93023255813954
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0.0,
+            0.0
+          ],
+          "rotation": -0.61,
+          "pivot": [
+            40.0,
+            38.93023255813954
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            1.0,
+            0
+          ],
+          "rotation": -3.61,
+          "pivot": [
+            27.0,
+            51
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            0.86,
+            0
+          ],
+          "rotation": -3.06,
+          "pivot": [
+            35.5,
+            51
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            40.93023255813954
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            0.98,
+            0.0
+          ],
+          "rotation": -5.5,
+          "pivot": [
+            26.0,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            -0.98,
+            -0.65
+          ],
+          "rotation": 4.66,
+          "pivot": [
+            37.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            1.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            26.0,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            -1.5,
+            -1
+          ],
+          "rotation": 0,
+          "pivot": [
+            37.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            3.85
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.857431749241663
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            1.0
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0,
+            1.0
+          ],
+          "rotation": 8.0,
+          "pivot": [
+            34,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0,
+            1.0
+          ],
+          "rotation": -6.48,
+          "pivot": [
+            27,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            -7.64,
+            -4
+          ],
+          "rotation": 40,
+          "pivot": [
+            35.0,
+            50
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            7.5,
+            -2
+          ],
+          "rotation": -32.41,
+          "pivot": [
+            30.5,
+            50
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.3
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.3
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            7.15,
+            0.0
+          ],
+          "rotation": -35,
+          "pivot": [
+            29.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            -5.2,
+            0.0
+          ],
+          "rotation": 33.78,
+          "pivot": [
+            36.0,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            11.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            29.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            -8.0,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            36.0,
+            58
+          ]
+        }
+      ],
+      [
+        {
+          "part": "helmet",
+          "translation": [
+            0,
+            2.85
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            28.857431749241663
+          ]
+        },
+        {
+          "part": "chest",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-left",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": 6.06,
+          "pivot": [
+            37,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "shoulder-right",
+          "translation": [
+            0,
+            0.5
+          ],
+          "rotation": -8.0,
+          "pivot": [
+            30,
+            39.85743174924166
+          ]
+        },
+        {
+          "part": "bracer-left",
+          "translation": [
+            -7.5,
+            -2
+          ],
+          "rotation": 30.29,
+          "pivot": [
+            33.0,
+            50
+          ]
+        },
+        {
+          "part": "bracer-right",
+          "translation": [
+            7.48,
+            -4
+          ],
+          "rotation": -40,
+          "pivot": [
+            28.666666666666668,
+            50
+          ]
+        },
+        {
+          "part": "belt",
+          "translation": [
+            0,
+            0.15
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "waist-mail-cloth",
+          "translation": [
+            0,
+            0.15
+          ],
+          "rotation": 0,
+          "pivot": [
+            32,
+            41.85743174924166
+          ]
+        },
+        {
+          "part": "greave-left",
+          "translation": [
+            6.17,
+            0.0
+          ],
+          "rotation": -35,
+          "pivot": [
+            27.5,
+            53
+          ]
+        },
+        {
+          "part": "greave-right",
+          "translation": [
+            -6.83,
+            0.0
+          ],
+          "rotation": 35,
+          "pivot": [
+            34.5,
+            53
+          ]
+        },
+        {
+          "part": "boot-left",
+          "translation": [
+            9.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            27.5,
+            58
+          ]
+        },
+        {
+          "part": "boot-right",
+          "translation": [
+            -10.5,
+            0
+          ],
+          "rotation": 0,
+          "pivot": [
+            34.5,
+            58
+          ]
+        }
+      ]
+    ]
+  ],
+  "review": {
+    "status": "draft fit",
+    "frameEdgeExceptions": [],
+    "notes": [
+      "Existing body frames only. Armor attachments follow measured pose features; complex anatomy and motion need art review."
+    ]
+  }
+}

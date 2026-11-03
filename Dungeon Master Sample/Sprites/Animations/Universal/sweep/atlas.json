@@ -1,0 +1,161 @@
+{
+  "clip": "sweep",
+  "clipData": {
+    "id": "sweep",
+    "label": "Sweep",
+    "category": "Combat",
+    "keys": [
+      [
+        0
+      ],
+      [
+        0.24,
+        {
+          "Ru": 1.4,
+          "Rl": 2.2,
+          "W": 2.6,
+          "lean": -0.12,
+          "back": 0.15,
+          "crouch": 0.1
+        }
+      ],
+      [
+        0.4,
+        {
+          "Ru": -0.6,
+          "Rl": -0.4,
+          "W": -0.5,
+          "lean": 0.24,
+          "lunge": 0.3,
+          "step": 0.55,
+          "back": 0.15,
+          "crouch": 0.28
+        }
+      ],
+      [
+        0.6,
+        {
+          "Ru": -0.9,
+          "Rl": -0.8,
+          "W": -0.9,
+          "lean": 0.18,
+          "lunge": 0.3,
+          "step": 0.55,
+          "back": 0.15,
+          "crouch": 0.24
+        }
+      ],
+      [
+        0.9
+      ]
+    ],
+    "duration": 1.15,
+    "events": {
+      "hit": [
+        0.4
+      ],
+      "trail": [
+        0.26,
+        0.44
+      ]
+    },
+    "source": "art/gear3d/skills.js",
+    "sourceDefinition": {
+      "keys": [
+        [
+          0
+        ],
+        [
+          0.24,
+          {
+            "Ru": 1.4,
+            "Rl": 2.2,
+            "W": 2.6,
+            "lean": -0.12,
+            "back": 0.15,
+            "crouch": 0.1
+          }
+        ],
+        [
+          0.4,
+          {
+            "Ru": -0.6,
+            "Rl": -0.4,
+            "W": -0.5,
+            "lean": 0.24,
+            "lunge": 0.3,
+            "step": 0.55,
+            "back": 0.15,
+            "crouch": 0.28
+          }
+        ],
+        [
+          0.6,
+          {
+            "Ru": -0.9,
+            "Rl": -0.8,
+            "W": -0.9,
+            "lean": 0.18,
+            "lunge": 0.3,
+            "step": 0.55,
+            "back": 0.15,
+            "crouch": 0.24
+          }
+        ],
+        [
+          0.9
+        ]
+      ],
+      "hit": [
+        0.4
+      ],
+      "trail": [
+        0.26,
+        0.44
+      ],
+      "two": true,
+      "death": "spin",
+      "deaths": [
+        "spin",
+        "legoff"
+      ],
+      "maim": "legcut"
+    },
+    "status": "source-keyed clip; mapping preview"
+  },
+  "rig": "human-calibration",
+  "frameSize": [
+    192,
+    192
+  ],
+  "bodyOrigin": [
+    64,
+    64
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": 15,
+  "times": [
+    0.0,
+    0.08214285714285714,
+    0.16428571428571428,
+    0.2464285714285714,
+    0.32857142857142857,
+    0.4107142857142857,
+    0.4928571428571428,
+    0.575,
+    0.6571428571428571,
+    0.7392857142857142,
+    0.8214285714285714,
+    0.9035714285714285,
+    0.9857142857142857,
+    1.0678571428571428,
+    1.15
+  ],
+  "bodyOnly": true,
+  "status": "mapping preview; artistic review pending"
+}

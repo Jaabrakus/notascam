@@ -1,0 +1,300 @@
+{
+  "family": "staff",
+  "weapon": "weapon.crystal staff",
+  "frameSize": [
+    128,
+    128
+  ],
+  "bodyOrigin": [
+    32,
+    32
+  ],
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "action": "attack",
+  "bodySource": null,
+  "rows": [
+    "Ready",
+    "Charge",
+    "Cast"
+  ],
+  "phases": [
+    {
+      "row": 0,
+      "ms": 400,
+      "label": "Ready"
+    },
+    {
+      "row": 1,
+      "ms": 240,
+      "label": "Windup"
+    },
+    {
+      "row": 2,
+      "ms": 120,
+      "label": "Strike"
+    },
+    {
+      "row": 2,
+      "ms": 120,
+      "label": "Follow-through"
+    },
+    {
+      "row": 0,
+      "ms": 260,
+      "label": "Return to ready"
+    }
+  ],
+  "rootMotion": {
+    "enabled": false,
+    "forwardProjection": [
+      [
+        0,
+        0.45
+      ],
+      [
+        0,
+        -0.45
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "positionCurve": "smoothstep",
+    "heightCurve": "lift*sin(pi*u)",
+    "sharedBodyAndEquipment": true
+  },
+  "grips": [
+    [
+      {
+        "weapon": [
+          20,
+          33
+        ],
+        "support": [
+          44,
+          42
+        ]
+      },
+      {
+        "weapon": [
+          44,
+          33
+        ],
+        "support": [
+          21,
+          42
+        ]
+      },
+      {
+        "weapon": [
+          28,
+          40
+        ],
+        "support": [
+          47,
+          42
+        ]
+      },
+      {
+        "weapon": [
+          44,
+          33
+        ],
+        "support": [
+          21,
+          41
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          20,
+          33
+        ],
+        "support": [
+          43,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          44,
+          33
+        ],
+        "support": [
+          21,
+          36
+        ]
+      },
+      {
+        "weapon": [
+          22,
+          33
+        ],
+        "support": [
+          48,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          44,
+          33
+        ],
+        "support": [
+          19,
+          36
+        ]
+      }
+    ],
+    [
+      {
+        "weapon": [
+          20,
+          33
+        ],
+        "support": [
+          45,
+          35
+        ]
+      },
+      {
+        "weapon": [
+          44,
+          33
+        ],
+        "support": [
+          18,
+          34
+        ]
+      },
+      {
+        "weapon": [
+          23,
+          34
+        ],
+        "support": [
+          51,
+          33
+        ]
+      },
+      {
+        "weapon": [
+          44,
+          33
+        ],
+        "support": [
+          14,
+          33
+        ]
+      }
+    ]
+  ],
+  "weaponHands": null,
+  "jabProfile": null,
+  "sweepVectors": null,
+  "rotations": [
+    [
+      -12,
+      12,
+      15,
+      -15
+    ],
+    [
+      -55,
+      55,
+      -60,
+      60
+    ],
+    [
+      -115,
+      115,
+      100,
+      -100
+    ]
+  ],
+  "bladeDirections": [
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -0.6
+      ],
+      [
+        -1,
+        -0.6
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        -0.6,
+        -1
+      ],
+      [
+        0.6,
+        -1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0.4
+      ],
+      [
+        -1,
+        0.4
+      ]
+    ]
+  ],
+  "shieldFacingOffset": 135,
+  "shieldForearmOffset": [
+    -2,
+    2,
+    -2,
+    2
+  ],
+  "loadout": {
+    "weapon": {
+      "id": "weapon.crystal staff",
+      "material": "iron"
+    },
+    "shield": {
+      "id": null,
+      "material": "iron"
+    }
+  }
+}

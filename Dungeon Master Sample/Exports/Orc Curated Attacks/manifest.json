@@ -1,0 +1,1302 @@
+{
+  "status": "curated_native_size_review",
+  "originalMaster": "references/original-game-orc.png",
+  "note": "Derived from generated drawings; not pixel-identical to the original Orc. Anatomy still needs review.",
+  "cellSize": 80,
+  "directions": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "actions": [
+    "punch_right",
+    "punch_left",
+    "kick_right",
+    "kick_left"
+  ],
+  "phases": [
+    "guard",
+    "windup_or_chamber",
+    "impact",
+    "recovery"
+  ],
+  "previewDurationsMs": [
+    160,
+    120,
+    100,
+    160
+  ],
+  "scale": 0.205,
+  "palette": [
+    [
+      10,
+      14,
+      9
+    ],
+    [
+      29,
+      43,
+      18
+    ],
+    [
+      47,
+      66,
+      30
+    ],
+    [
+      62,
+      89,
+      37
+    ],
+    [
+      78,
+      110,
+      46
+    ],
+    [
+      95,
+      133,
+      61
+    ],
+    [
+      109,
+      152,
+      76
+    ],
+    [
+      22,
+      22,
+      22
+    ],
+    [
+      39,
+      40,
+      38
+    ],
+    [
+      59,
+      59,
+      57
+    ],
+    [
+      68,
+      67,
+      67
+    ],
+    [
+      112,
+      17,
+      4
+    ],
+    [
+      210,
+      0,
+      2
+    ],
+    [
+      252,
+      8,
+      3
+    ],
+    [
+      225,
+      227,
+      224
+    ],
+    [
+      233,
+      236,
+      231
+    ],
+    [
+      41,
+      63,
+      22
+    ],
+    [
+      53,
+      79,
+      30
+    ],
+    [
+      68,
+      100,
+      43
+    ],
+    [
+      79,
+      114,
+      52
+    ],
+    [
+      84,
+      120,
+      56
+    ],
+    [
+      87,
+      124,
+      59
+    ]
+  ],
+  "filter": "nearest",
+  "alpha": "binary",
+  "equipmentIncluded": false,
+  "frames": [
+    {
+      "id": "punch_right-south-0",
+      "action": "punch_right",
+      "direction": "south",
+      "phase": 0,
+      "file": "frames/punch_right-south-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-north-0",
+      "action": "punch_right",
+      "direction": "north",
+      "phase": 0,
+      "file": "frames/punch_right-north-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-east-0",
+      "action": "punch_right",
+      "direction": "east",
+      "phase": 0,
+      "file": "frames/punch_right-east-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-west-0",
+      "action": "punch_right",
+      "direction": "west",
+      "phase": 0,
+      "file": "frames/punch_right-west-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        0,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-south-1",
+      "action": "punch_right",
+      "direction": "south",
+      "phase": 1,
+      "file": "frames/punch_right-south-1.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-north-1",
+      "action": "punch_right",
+      "direction": "north",
+      "phase": 1,
+      "file": "frames/punch_right-north-1.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-east-1",
+      "action": "punch_right",
+      "direction": "east",
+      "phase": 1,
+      "file": "frames/punch_right-east-1.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-west-1",
+      "action": "punch_right",
+      "direction": "west",
+      "phase": 1,
+      "file": "frames/punch_right-west-1.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-south-2",
+      "action": "punch_right",
+      "direction": "south",
+      "phase": 2,
+      "file": "frames/punch_right-south-2.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-north-2",
+      "action": "punch_right",
+      "direction": "north",
+      "phase": 2,
+      "file": "frames/punch_right-north-2.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-east-2",
+      "action": "punch_right",
+      "direction": "east",
+      "phase": 2,
+      "file": "frames/punch_right-east-2.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-west-2",
+      "action": "punch_right",
+      "direction": "west",
+      "phase": 2,
+      "file": "frames/punch_right-west-2.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        160,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-south-3",
+      "action": "punch_right",
+      "direction": "south",
+      "phase": 3,
+      "file": "frames/punch_right-south-3.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-north-3",
+      "action": "punch_right",
+      "direction": "north",
+      "phase": 3,
+      "file": "frames/punch_right-north-3.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-east-3",
+      "action": "punch_right",
+      "direction": "east",
+      "phase": 3,
+      "file": "frames/punch_right-east-3.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_right-west-3",
+      "action": "punch_right",
+      "direction": "west",
+      "phase": 3,
+      "file": "frames/punch_right-west-3.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        240,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-south-0",
+      "action": "punch_left",
+      "direction": "south",
+      "phase": 0,
+      "file": "frames/punch_left-south-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-north-0",
+      "action": "punch_left",
+      "direction": "north",
+      "phase": 0,
+      "file": "frames/punch_left-north-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-east-0",
+      "action": "punch_left",
+      "direction": "east",
+      "phase": 0,
+      "file": "frames/punch_left-east-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-west-0",
+      "action": "punch_left",
+      "direction": "west",
+      "phase": 0,
+      "file": "frames/punch_left-west-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        320,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-south-1",
+      "action": "punch_left",
+      "direction": "south",
+      "phase": 1,
+      "file": "frames/punch_left-south-1.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-north-1",
+      "action": "punch_left",
+      "direction": "north",
+      "phase": 1,
+      "file": "frames/punch_left-north-1.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "north",
+      "mirror": true,
+      "atlasRect": [
+        80,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-east-1",
+      "action": "punch_left",
+      "direction": "east",
+      "phase": 1,
+      "file": "frames/punch_left-east-1.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-west-1",
+      "action": "punch_left",
+      "direction": "west",
+      "phase": 1,
+      "file": "frames/punch_left-west-1.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        400,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-south-2",
+      "action": "punch_left",
+      "direction": "south",
+      "phase": 2,
+      "file": "frames/punch_left-south-2.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-north-2",
+      "action": "punch_left",
+      "direction": "north",
+      "phase": 2,
+      "file": "frames/punch_left-north-2.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "north",
+      "mirror": true,
+      "atlasRect": [
+        80,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-east-2",
+      "action": "punch_left",
+      "direction": "east",
+      "phase": 2,
+      "file": "frames/punch_left-east-2.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-west-2",
+      "action": "punch_left",
+      "direction": "west",
+      "phase": 2,
+      "file": "frames/punch_left-west-2.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        480,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-south-3",
+      "action": "punch_left",
+      "direction": "south",
+      "phase": 3,
+      "file": "frames/punch_left-south-3.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-north-3",
+      "action": "punch_left",
+      "direction": "north",
+      "phase": 3,
+      "file": "frames/punch_left-north-3.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "north",
+      "mirror": true,
+      "atlasRect": [
+        80,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-east-3",
+      "action": "punch_left",
+      "direction": "east",
+      "phase": 3,
+      "file": "frames/punch_left-east-3.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "punch_left-west-3",
+      "action": "punch_left",
+      "direction": "west",
+      "phase": 3,
+      "file": "frames/punch_left-west-3.png",
+      "source": "source-drawings/punch-left-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        560,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-south-0",
+      "action": "kick_right",
+      "direction": "south",
+      "phase": 0,
+      "file": "frames/kick_right-south-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-north-0",
+      "action": "kick_right",
+      "direction": "north",
+      "phase": 0,
+      "file": "frames/kick_right-north-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-east-0",
+      "action": "kick_right",
+      "direction": "east",
+      "phase": 0,
+      "file": "frames/kick_right-east-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-west-0",
+      "action": "kick_right",
+      "direction": "west",
+      "phase": 0,
+      "file": "frames/kick_right-west-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        640,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-south-1",
+      "action": "kick_right",
+      "direction": "south",
+      "phase": 1,
+      "file": "frames/kick_right-south-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-north-1",
+      "action": "kick_right",
+      "direction": "north",
+      "phase": 1,
+      "file": "frames/kick_right-north-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-east-1",
+      "action": "kick_right",
+      "direction": "east",
+      "phase": 1,
+      "file": "frames/kick_right-east-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-west-1",
+      "action": "kick_right",
+      "direction": "west",
+      "phase": 1,
+      "file": "frames/kick_right-west-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        720,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-south-2",
+      "action": "kick_right",
+      "direction": "south",
+      "phase": 2,
+      "file": "frames/kick_right-south-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-north-2",
+      "action": "kick_right",
+      "direction": "north",
+      "phase": 2,
+      "file": "frames/kick_right-north-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-east-2",
+      "action": "kick_right",
+      "direction": "east",
+      "phase": 2,
+      "file": "frames/kick_right-east-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-west-2",
+      "action": "kick_right",
+      "direction": "west",
+      "phase": 2,
+      "file": "frames/kick_right-west-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        800,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-south-3",
+      "action": "kick_right",
+      "direction": "south",
+      "phase": 3,
+      "file": "frames/kick_right-south-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-north-3",
+      "action": "kick_right",
+      "direction": "north",
+      "phase": 3,
+      "file": "frames/kick_right-north-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-east-3",
+      "action": "kick_right",
+      "direction": "east",
+      "phase": 3,
+      "file": "frames/kick_right-east-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_right-west-3",
+      "action": "kick_right",
+      "direction": "west",
+      "phase": 3,
+      "file": "frames/kick_right-west-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        880,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-south-0",
+      "action": "kick_left",
+      "direction": "south",
+      "phase": 0,
+      "file": "frames/kick_left-south-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "south",
+      "mirror": false,
+      "atlasRect": [
+        0,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-north-0",
+      "action": "kick_left",
+      "direction": "north",
+      "phase": 0,
+      "file": "frames/kick_left-north-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "north",
+      "mirror": false,
+      "atlasRect": [
+        80,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-east-0",
+      "action": "kick_left",
+      "direction": "east",
+      "phase": 0,
+      "file": "frames/kick_left-east-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "east",
+      "mirror": false,
+      "atlasRect": [
+        160,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-west-0",
+      "action": "kick_left",
+      "direction": "west",
+      "phase": 0,
+      "file": "frames/kick_left-west-0.png",
+      "source": "source-drawings/punch-right-draft-v2.png",
+      "sourcePhase": 0,
+      "sourceDirection": "west",
+      "mirror": false,
+      "atlasRect": [
+        240,
+        960,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-south-1",
+      "action": "kick_left",
+      "direction": "south",
+      "phase": 1,
+      "file": "frames/kick_left-south-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "south",
+      "mirror": true,
+      "atlasRect": [
+        0,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-north-1",
+      "action": "kick_left",
+      "direction": "north",
+      "phase": 1,
+      "file": "frames/kick_left-north-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "north",
+      "mirror": true,
+      "atlasRect": [
+        80,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-east-1",
+      "action": "kick_left",
+      "direction": "east",
+      "phase": 1,
+      "file": "frames/kick_left-east-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "west",
+      "mirror": true,
+      "atlasRect": [
+        160,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-west-1",
+      "action": "kick_left",
+      "direction": "west",
+      "phase": 1,
+      "file": "frames/kick_left-west-1.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 1,
+      "sourceDirection": "east",
+      "mirror": true,
+      "atlasRect": [
+        240,
+        1040,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-south-2",
+      "action": "kick_left",
+      "direction": "south",
+      "phase": 2,
+      "file": "frames/kick_left-south-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "south",
+      "mirror": true,
+      "atlasRect": [
+        0,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-north-2",
+      "action": "kick_left",
+      "direction": "north",
+      "phase": 2,
+      "file": "frames/kick_left-north-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "north",
+      "mirror": true,
+      "atlasRect": [
+        80,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-east-2",
+      "action": "kick_left",
+      "direction": "east",
+      "phase": 2,
+      "file": "frames/kick_left-east-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "west",
+      "mirror": true,
+      "atlasRect": [
+        160,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-west-2",
+      "action": "kick_left",
+      "direction": "west",
+      "phase": 2,
+      "file": "frames/kick_left-west-2.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 2,
+      "sourceDirection": "east",
+      "mirror": true,
+      "atlasRect": [
+        240,
+        1120,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-south-3",
+      "action": "kick_left",
+      "direction": "south",
+      "phase": 3,
+      "file": "frames/kick_left-south-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "south",
+      "mirror": true,
+      "atlasRect": [
+        0,
+        1200,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-north-3",
+      "action": "kick_left",
+      "direction": "north",
+      "phase": 3,
+      "file": "frames/kick_left-north-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "north",
+      "mirror": true,
+      "atlasRect": [
+        80,
+        1200,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-east-3",
+      "action": "kick_left",
+      "direction": "east",
+      "phase": 3,
+      "file": "frames/kick_left-east-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "west",
+      "mirror": true,
+      "atlasRect": [
+        160,
+        1200,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "kick_left-west-3",
+      "action": "kick_left",
+      "direction": "west",
+      "phase": 3,
+      "file": "frames/kick_left-west-3.png",
+      "source": "source-drawings/kick-right-draft-v2.png",
+      "sourcePhase": 3,
+      "sourceDirection": "east",
+      "mirror": true,
+      "atlasRect": [
+        240,
+        1200,
+        80,
+        80
+      ]
+    }
+  ],
+  "sources": {
+    "source-drawings/punch-right-draft-v2.png": "e4834ee89ae41daef124916d3b80782268ad30ddfeecad567e31193b7ede02ad",
+    "source-drawings/punch-left-draft-v2.png": "73f1651bce9e9eeb9336980ccd4feb931d4f9364e854efb9d409d2eaa243c198",
+    "source-drawings/kick-right-draft-v2.png": "03cac9c78e81307e0d472605f55f3b4a7a63dd526007028bdeafff6bd4aa688f"
+  },
+  "checks": {
+    "frames": 64,
+    "sharedGuardsIdentical": true,
+    "noClipping": true,
+    "binaryAlpha": true,
+    "paletteFromOriginalSource": false,
+    "paletteUsesUserAttackReference": true
+  },
+  "appearance": {
+    "id": "dark-reference-v1",
+    "reference": "references/attack-appearance.png",
+    "skinRamp": [
+      [
+        41,
+        63,
+        22
+      ],
+      [
+        53,
+        79,
+        30
+      ],
+      [
+        68,
+        100,
+        43
+      ],
+      [
+        79,
+        114,
+        52
+      ],
+      [
+        84,
+        120,
+        56
+      ],
+      [
+        87,
+        124,
+        59
+      ]
+    ],
+    "sourceGreenThresholds": [
+      75,
+      110,
+      140,
+      150,
+      157
+    ],
+    "note": "Fixed mapping across all poses; preserve alpha, geometry, red eyes, tusks, shorts and equipment. Uses source drawing green intensity before palette quantization, not the flattened previous export."
+  },
+  "package": {
+    "name": "Orc Curated Attacks",
+    "appearance": "dark-reference-v1",
+    "actions": 4,
+    "directionsPerAction": 4,
+    "framesPerDirection": 4,
+    "totalFrames": 64,
+    "bodyOnly": true
+  }
+}

@@ -1,0 +1,4758 @@
+{
+  "actor": "Orc",
+  "version": 1,
+  "cellSize": 128,
+  "bodyPixels": 64,
+  "nativeExports": {
+    "cellSize": 64,
+    "columns": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "rows": 8,
+    "renderCrop": [
+      32,
+      32,
+      96,
+      96
+    ],
+    "frameMs": 150
+  },
+  "directions": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frameMs": 150,
+  "frames": {
+    "idle": [
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/0-S-body.png",
+            "rightArm": "idle/0-S-rightArm.png",
+            "leftArm": "idle/0-S-leftArm.png",
+            "sword": "idle/0-S-sword.png",
+            "shield": "idle/0-S-shield.png",
+            "rightHand": "idle/0-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.204840812219045,
+                29.28367490093803
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.099999999999994
+              ],
+              "grip": [
+                15.999999999999998,
+                39.0
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.11776905879373,
+                35.418105481326386
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.607142857142854
+              ],
+              "grip": [
+                48.0,
+                40.0
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.0
+          ],
+          "shieldGrip": [
+            48.0,
+            40.0
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/0-N-body.png",
+            "rightArm": "idle/0-N-rightArm.png",
+            "leftArm": "idle/0-N-leftArm.png",
+            "sword": "idle/0-N-sword.png",
+            "shield": "idle/0-N-shield.png",
+            "rightHand": "idle/0-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.50400122266739,
+                29.391661553498288
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.04142857142857
+              ],
+              "grip": [
+                48.0,
+                39.0
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.457686976475653,
+                34.655808383086544
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.56
+              ],
+              "grip": [
+                16.0,
+                40.0
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.0
+          ],
+          "shieldGrip": [
+            16.0,
+            40.0
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/0-E-body.png",
+            "rightArm": "idle/0-E-rightArm.png",
+            "leftArm": "idle/0-E-leftArm.png",
+            "sword": "idle/0-E-sword.png",
+            "shield": "idle/0-E-shield.png",
+            "rightHand": "idle/0-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.870936719246846,
+                41.91624563446696
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.999310344827585
+              ],
+              "grip": [
+                38.0,
+                42.0
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.52761599486531,
+                42.35632567199803
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.74909090909091
+              ],
+              "grip": [
+                40.0,
+                39.0
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.0
+          ],
+          "shieldGrip": [
+            40.0,
+            39.0
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/0-W-body.png",
+            "rightArm": "idle/0-W-rightArm.png",
+            "leftArm": "idle/0-W-leftArm.png",
+            "sword": "idle/0-W-sword.png",
+            "shield": "idle/0-W-shield.png",
+            "rightHand": "idle/0-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.548209351567017,
+                35.172782249926286
+              ],
+              "wrist": [
+                19.17,
+                33.83
+              ],
+              "grip": [
+                18.0,
+                36.0
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.149141108405246,
+                43.92188003146746
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.98827586206897
+              ],
+              "grip": [
+                26.0,
+                42.0
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.0
+          ],
+          "shieldGrip": [
+            26.0,
+            42.0
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/1-S-body.png",
+            "rightArm": "idle/1-S-rightArm.png",
+            "leftArm": "idle/1-S-leftArm.png",
+            "sword": "idle/1-S-sword.png",
+            "shield": "idle/1-S-shield.png",
+            "rightHand": "idle/1-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.228472442095772,
+                29.550786702719456
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.38284271247461
+              ],
+              "grip": [
+                15.999999999999998,
+                39.28284271247462
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.0422290526791,
+                35.54791114841048
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.88998556961747
+              ],
+              "grip": [
+                48.0,
+                40.28284271247462
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.28284271247462
+          ],
+          "shieldGrip": [
+            48.0,
+            40.28284271247462
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/1-N-body.png",
+            "rightArm": "idle/1-N-rightArm.png",
+            "leftArm": "idle/1-N-leftArm.png",
+            "sword": "idle/1-N-sword.png",
+            "shield": "idle/1-N-shield.png",
+            "rightHand": "idle/1-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.47828741775261,
+                29.657485137582622
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.32427128390319
+              ],
+              "grip": [
+                48.0,
+                39.28284271247462
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.536641006471086,
+                34.805794252525445
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.84284271247462
+              ],
+              "grip": [
+                16.0,
+                40.28284271247462
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.28284271247462
+          ],
+          "shieldGrip": [
+            16.0,
+            40.28284271247462
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/1-E-body.png",
+            "rightArm": "idle/1-E-rightArm.png",
+            "leftArm": "idle/1-E-leftArm.png",
+            "sword": "idle/1-E-sword.png",
+            "shield": "idle/1-E-shield.png",
+            "rightHand": "idle/1-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.80972021661506,
+                41.99624139497575
+              ],
+              "wrist": [
+                37.856206896551726,
+                40.2821530573022
+              ],
+              "grip": [
+                38.0,
+                42.28284271247462
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.38526760215878,
+                42.592774905887055
+              ],
+              "wrist": [
+                38.276363636363634,
+                37.03193362156553
+              ],
+              "grip": [
+                40.0,
+                39.28284271247462
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.28284271247462
+          ],
+          "shieldGrip": [
+            40.0,
+            39.28284271247462
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/1-W-body.png",
+            "rightArm": "idle/1-W-rightArm.png",
+            "leftArm": "idle/1-W-leftArm.png",
+            "sword": "idle/1-W-sword.png",
+            "shield": "idle/1-W-shield.png",
+            "rightHand": "idle/1-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.591932883638794,
+                35.2664647499359
+              ],
+              "wrist": [
+                19.17,
+                34.11284271247462
+              ],
+              "grip": [
+                18.0,
+                36.28284271247462
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.27971616789357,
+                43.99737848400681
+              ],
+              "wrist": [
+                26.132758620689657,
+                40.271118574543586
+              ],
+              "grip": [
+                26.0,
+                42.28284271247462
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.28284271247462
+          ],
+          "shieldGrip": [
+            26.0,
+            42.28284271247462
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/2-S-body.png",
+            "rightArm": "idle/2-S-rightArm.png",
+            "leftArm": "idle/2-S-leftArm.png",
+            "sword": "idle/2-S-sword.png",
+            "shield": "idle/2-S-shield.png",
+            "rightHand": "idle/2-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.240338025926638,
+                29.660084170439216
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.49999999999999
+              ],
+              "grip": [
+                15.999999999999998,
+                39.4
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.009907317016065,
+                35.60219971020636
+              ],
+              "wrist": [
+                47.464285714285715,
+                39.00714285714285
+              ],
+              "grip": [
+                48.0,
+                40.4
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.4
+          ],
+          "shieldGrip": [
+            48.0,
+            40.4
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/2-N-body.png",
+            "rightArm": "idle/2-N-rightArm.png",
+            "leftArm": "idle/2-N-leftArm.png",
+            "sword": "idle/2-N-sword.png",
+            "shield": "idle/2-N-shield.png",
+            "rightHand": "idle/2-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.46548982240724,
+                29.766218286031684
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.44142857142857
+              ],
+              "grip": [
+                48.0,
+                39.4
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.570318019650209,
+                34.868058299110174
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.96
+              ],
+              "grip": [
+                16.0,
+                40.4
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.4
+          ],
+          "shieldGrip": [
+            16.0,
+            40.4
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/2-E-body.png",
+            "rightArm": "idle/2-E-rightArm.png",
+            "leftArm": "idle/2-E-leftArm.png",
+            "sword": "idle/2-E-sword.png",
+            "shield": "idle/2-E-shield.png",
+            "rightHand": "idle/2-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.785842615686175,
+                42.026816872492425
+              ],
+              "wrist": [
+                37.856206896551726,
+                40.39931034482758
+              ],
+              "grip": [
+                38.0,
+                42.4
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.3249143629581,
+                42.689040884796924
+              ],
+              "wrist": [
+                38.276363636363634,
+                37.14909090909091
+              ],
+              "grip": [
+                40.0,
+                39.4
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.4
+          ],
+          "shieldGrip": [
+            40.0,
+            39.4
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/2-W-body.png",
+            "rightArm": "idle/2-W-rightArm.png",
+            "leftArm": "idle/2-W-leftArm.png",
+            "sword": "idle/2-W-sword.png",
+            "shield": "idle/2-W-shield.png",
+            "rightHand": "idle/2-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.608753785294887,
+                35.30152100443274
+              ],
+              "wrist": [
+                19.17,
+                34.23
+              ],
+              "grip": [
+                18.0,
+                36.4
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.33212209709474,
+                44.02668107416598
+              ],
+              "wrist": [
+                26.132758620689657,
+                40.388275862068966
+              ],
+              "grip": [
+                26.0,
+                42.4
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.4
+          ],
+          "shieldGrip": [
+            26.0,
+            42.4
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/3-S-body.png",
+            "rightArm": "idle/3-S-rightArm.png",
+            "leftArm": "idle/3-S-leftArm.png",
+            "sword": "idle/3-S-sword.png",
+            "shield": "idle/3-S-shield.png",
+            "rightHand": "idle/3-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.228472442095772,
+                29.550786702719456
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.38284271247461
+              ],
+              "grip": [
+                15.999999999999998,
+                39.28284271247462
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.0422290526791,
+                35.54791114841048
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.88998556961747
+              ],
+              "grip": [
+                48.0,
+                40.28284271247462
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.28284271247462
+          ],
+          "shieldGrip": [
+            48.0,
+            40.28284271247462
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/3-N-body.png",
+            "rightArm": "idle/3-N-rightArm.png",
+            "leftArm": "idle/3-N-leftArm.png",
+            "sword": "idle/3-N-sword.png",
+            "shield": "idle/3-N-shield.png",
+            "rightHand": "idle/3-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.47828741775261,
+                29.657485137582622
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.32427128390319
+              ],
+              "grip": [
+                48.0,
+                39.28284271247462
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.536641006471086,
+                34.805794252525445
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.84284271247462
+              ],
+              "grip": [
+                16.0,
+                40.28284271247462
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.28284271247462
+          ],
+          "shieldGrip": [
+            16.0,
+            40.28284271247462
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/3-E-body.png",
+            "rightArm": "idle/3-E-rightArm.png",
+            "leftArm": "idle/3-E-leftArm.png",
+            "sword": "idle/3-E-sword.png",
+            "shield": "idle/3-E-shield.png",
+            "rightHand": "idle/3-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.80972021661506,
+                41.99624139497575
+              ],
+              "wrist": [
+                37.856206896551726,
+                40.2821530573022
+              ],
+              "grip": [
+                38.0,
+                42.28284271247462
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.38526760215878,
+                42.592774905887055
+              ],
+              "wrist": [
+                38.276363636363634,
+                37.03193362156553
+              ],
+              "grip": [
+                40.0,
+                39.28284271247462
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.28284271247462
+          ],
+          "shieldGrip": [
+            40.0,
+            39.28284271247462
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/3-W-body.png",
+            "rightArm": "idle/3-W-rightArm.png",
+            "leftArm": "idle/3-W-leftArm.png",
+            "sword": "idle/3-W-sword.png",
+            "shield": "idle/3-W-shield.png",
+            "rightHand": "idle/3-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.591932883638794,
+                35.2664647499359
+              ],
+              "wrist": [
+                19.17,
+                34.11284271247462
+              ],
+              "grip": [
+                18.0,
+                36.28284271247462
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.27971616789357,
+                43.99737848400681
+              ],
+              "wrist": [
+                26.132758620689657,
+                40.271118574543586
+              ],
+              "grip": [
+                26.0,
+                42.28284271247462
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.28284271247462
+          ],
+          "shieldGrip": [
+            26.0,
+            42.28284271247462
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/4-S-body.png",
+            "rightArm": "idle/4-S-rightArm.png",
+            "leftArm": "idle/4-S-leftArm.png",
+            "sword": "idle/4-S-sword.png",
+            "shield": "idle/4-S-shield.png",
+            "rightHand": "idle/4-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.204840812219045,
+                29.28367490093803
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.099999999999994
+              ],
+              "grip": [
+                15.999999999999998,
+                39.0
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.11776905879373,
+                35.418105481326386
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.607142857142854
+              ],
+              "grip": [
+                48.0,
+                40.0
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.0
+          ],
+          "shieldGrip": [
+            48.0,
+            40.0
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/4-N-body.png",
+            "rightArm": "idle/4-N-rightArm.png",
+            "leftArm": "idle/4-N-leftArm.png",
+            "sword": "idle/4-N-sword.png",
+            "shield": "idle/4-N-shield.png",
+            "rightHand": "idle/4-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.50400122266739,
+                29.391661553498288
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.04142857142857
+              ],
+              "grip": [
+                48.0,
+                39.0
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.457686976475653,
+                34.655808383086544
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.56
+              ],
+              "grip": [
+                16.0,
+                40.0
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.0
+          ],
+          "shieldGrip": [
+            16.0,
+            40.0
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/4-E-body.png",
+            "rightArm": "idle/4-E-rightArm.png",
+            "leftArm": "idle/4-E-leftArm.png",
+            "sword": "idle/4-E-sword.png",
+            "shield": "idle/4-E-shield.png",
+            "rightHand": "idle/4-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.870936719246846,
+                41.91624563446696
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.999310344827585
+              ],
+              "grip": [
+                38.0,
+                42.0
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.52761599486531,
+                42.35632567199803
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.74909090909091
+              ],
+              "grip": [
+                40.0,
+                39.0
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.0
+          ],
+          "shieldGrip": [
+            40.0,
+            39.0
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/4-W-body.png",
+            "rightArm": "idle/4-W-rightArm.png",
+            "leftArm": "idle/4-W-leftArm.png",
+            "sword": "idle/4-W-sword.png",
+            "shield": "idle/4-W-shield.png",
+            "rightHand": "idle/4-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.548209351567017,
+                35.172782249926286
+              ],
+              "wrist": [
+                19.17,
+                33.83
+              ],
+              "grip": [
+                18.0,
+                36.0
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.149141108405246,
+                43.92188003146746
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.98827586206897
+              ],
+              "grip": [
+                26.0,
+                42.0
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.0
+          ],
+          "shieldGrip": [
+            26.0,
+            42.0
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/5-S-body.png",
+            "rightArm": "idle/5-S-rightArm.png",
+            "leftArm": "idle/5-S-leftArm.png",
+            "sword": "idle/5-S-sword.png",
+            "shield": "idle/5-S-shield.png",
+            "rightHand": "idle/5-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.188561227471872,
+                29.01172911339142
+              ],
+              "wrist": [
+                16.424999999999997,
+                36.817157287525376
+              ],
+              "grip": [
+                15.999999999999998,
+                38.71715728752538
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.189841045562574,
+                35.29020959131729
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.324300144668236
+              ],
+              "grip": [
+                48.0,
+                39.71715728752538
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            38.71715728752538
+          ],
+          "shieldGrip": [
+            48.0,
+            39.71715728752538
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/5-N-body.png",
+            "rightArm": "idle/5-N-rightArm.png",
+            "leftArm": "idle/5-N-leftArm.png",
+            "sword": "idle/5-N-sword.png",
+            "shield": "idle/5-N-shield.png",
+            "rightHand": "idle/5-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.522114952095826,
+                29.120882465122
+              ],
+              "wrist": [
+                47.42238095238095,
+                36.75858585895395
+              ],
+              "grip": [
+                48.0,
+                38.71715728752538
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.381978201377189,
+                34.50630585793321
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.277157287525384
+              ],
+              "grip": [
+                16.0,
+                39.71715728752538
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            38.71715728752538
+          ],
+          "shieldGrip": [
+            16.0,
+            39.71715728752538
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/5-E-body.png",
+            "rightArm": "idle/5-E-rightArm.png",
+            "leftArm": "idle/5-E-leftArm.png",
+            "sword": "idle/5-E-sword.png",
+            "shield": "idle/5-E-shield.png",
+            "rightHand": "idle/5-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.936664919980252,
+                41.827657530871875
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.716467632352966
+              ],
+              "grip": [
+                38.0,
+                41.71715728752538
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.66487554366708,
+                42.11446084550773
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.46624819661629
+              ],
+              "grip": [
+                40.0,
+                38.71715728752538
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            41.71715728752538
+          ],
+          "shieldGrip": [
+            40.0,
+            38.71715728752538
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/5-W-body.png",
+            "rightArm": "idle/5-W-rightArm.png",
+            "leftArm": "idle/5-W-leftArm.png",
+            "sword": "idle/5-W-sword.png",
+            "shield": "idle/5-W-shield.png",
+            "rightHand": "idle/5-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.500906781935495,
+                35.066904925231775
+              ],
+              "wrist": [
+                19.17,
+                33.54715728752538
+              ],
+              "grip": [
+                18.0,
+                35.71715728752538
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.01325203780379,
+                43.839426034358105
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.70543314959435
+              ],
+              "grip": [
+                26.0,
+                41.71715728752538
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            35.71715728752538
+          ],
+          "shieldGrip": [
+            26.0,
+            41.71715728752538
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/6-S-body.png",
+            "rightArm": "idle/6-S-rightArm.png",
+            "leftArm": "idle/6-S-leftArm.png",
+            "sword": "idle/6-S-sword.png",
+            "shield": "idle/6-S-shield.png",
+            "rightHand": "idle/6-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.184057017558432,
+                28.897595456860977
+              ],
+              "wrist": [
+                16.424999999999997,
+                36.699999999999996
+              ],
+              "grip": [
+                15.999999999999998,
+                38.6
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.218692603109815,
+                35.237835264419346
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.207142857142856
+              ],
+              "grip": [
+                48.0,
+                39.6
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            38.6
+          ],
+          "shieldGrip": [
+            48.0,
+            39.6
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/6-N-body.png",
+            "rightArm": "idle/6-N-rightArm.png",
+            "leftArm": "idle/6-N-leftArm.png",
+            "sword": "idle/6-N-sword.png",
+            "shield": "idle/6-N-shield.png",
+            "rightHand": "idle/6-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.52730215496784,
+                29.00719124767587
+              ],
+              "wrist": [
+                47.42238095238095,
+                36.64142857142857
+              ],
+              "grip": [
+                48.0,
+                38.6
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.35154773842515,
+                34.444525934126105
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.160000000000004
+              ],
+              "grip": [
+                16.0,
+                39.6
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            38.6
+          ],
+          "shieldGrip": [
+            16.0,
+            39.6
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/6-E-body.png",
+            "rightArm": "idle/6-E-rightArm.png",
+            "leftArm": "idle/6-E-leftArm.png",
+            "sword": "idle/6-E-sword.png",
+            "shield": "idle/6-E-shield.png",
+            "rightHand": "idle/6-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.965058538775175,
+                41.78848165531625
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.599310344827586
+              ],
+              "grip": [
+                38.0,
+                41.6
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.72014643553605,
+                42.012781227588945
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.34909090909091
+              ],
+              "grip": [
+                40.0,
+                38.6
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            41.6
+          ],
+          "shieldGrip": [
+            40.0,
+            38.6
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/6-W-body.png",
+            "rightArm": "idle/6-W-rightArm.png",
+            "leftArm": "idle/6-W-leftArm.png",
+            "sword": "idle/6-W-sword.png",
+            "shield": "idle/6-W-shield.png",
+            "rightHand": "idle/6-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.48049121075089,
+                35.019617281152144
+              ],
+              "wrist": [
+                19.17,
+                33.43
+              ],
+              "grip": [
+                18.0,
+                35.6
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                31.955538182201096,
+                43.80317066242219
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.58827586206897
+              ],
+              "grip": [
+                26.0,
+                41.6
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            35.6
+          ],
+          "shieldGrip": [
+            26.0,
+            41.6
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/7-S-body.png",
+            "rightArm": "idle/7-S-rightArm.png",
+            "leftArm": "idle/7-S-leftArm.png",
+            "sword": "idle/7-S-sword.png",
+            "shield": "idle/7-S-shield.png",
+            "rightHand": "idle/7-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.188561227471872,
+                29.01172911339142
+              ],
+              "wrist": [
+                16.424999999999997,
+                36.817157287525376
+              ],
+              "grip": [
+                15.999999999999998,
+                38.71715728752538
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.189841045562574,
+                35.29020959131729
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.324300144668236
+              ],
+              "grip": [
+                48.0,
+                39.71715728752538
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            38.71715728752538
+          ],
+          "shieldGrip": [
+            48.0,
+            39.71715728752538
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/7-N-body.png",
+            "rightArm": "idle/7-N-rightArm.png",
+            "leftArm": "idle/7-N-leftArm.png",
+            "sword": "idle/7-N-sword.png",
+            "shield": "idle/7-N-shield.png",
+            "rightHand": "idle/7-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.522114952095826,
+                29.120882465122
+              ],
+              "wrist": [
+                47.42238095238095,
+                36.75858585895395
+              ],
+              "grip": [
+                48.0,
+                38.71715728752538
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.381978201377189,
+                34.50630585793321
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.277157287525384
+              ],
+              "grip": [
+                16.0,
+                39.71715728752538
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            38.71715728752538
+          ],
+          "shieldGrip": [
+            16.0,
+            39.71715728752538
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/7-E-body.png",
+            "rightArm": "idle/7-E-rightArm.png",
+            "leftArm": "idle/7-E-leftArm.png",
+            "sword": "idle/7-E-sword.png",
+            "shield": "idle/7-E-shield.png",
+            "rightHand": "idle/7-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.936664919980252,
+                41.827657530871875
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.716467632352966
+              ],
+              "grip": [
+                38.0,
+                41.71715728752538
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.66487554366708,
+                42.11446084550773
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.46624819661629
+              ],
+              "grip": [
+                40.0,
+                38.71715728752538
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            41.71715728752538
+          ],
+          "shieldGrip": [
+            40.0,
+            38.71715728752538
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "idle/7-W-body.png",
+            "rightArm": "idle/7-W-rightArm.png",
+            "leftArm": "idle/7-W-leftArm.png",
+            "sword": "idle/7-W-sword.png",
+            "shield": "idle/7-W-shield.png",
+            "rightHand": "idle/7-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.500906781935495,
+                35.066904925231775
+              ],
+              "wrist": [
+                19.17,
+                33.54715728752538
+              ],
+              "grip": [
+                18.0,
+                35.71715728752538
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.01325203780379,
+                43.839426034358105
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.70543314959435
+              ],
+              "grip": [
+                26.0,
+                41.71715728752538
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            35.71715728752538
+          ],
+          "shieldGrip": [
+            26.0,
+            41.71715728752538
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ]
+    ],
+    "walk": [
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/0-S-body.png",
+            "rightArm": "walk/0-S-rightArm.png",
+            "leftArm": "walk/0-S-leftArm.png",
+            "sword": "walk/0-S-sword.png",
+            "shield": "walk/0-S-shield.png",
+            "rightHand": "walk/0-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.204840812219045,
+                29.28367490093803
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.099999999999994
+              ],
+              "grip": [
+                15.999999999999998,
+                39.0
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.11776905879373,
+                35.418105481326386
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.607142857142854
+              ],
+              "grip": [
+                48.0,
+                40.0
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.0
+          ],
+          "shieldGrip": [
+            48.0,
+            40.0
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/0-N-body.png",
+            "rightArm": "walk/0-N-rightArm.png",
+            "leftArm": "walk/0-N-leftArm.png",
+            "sword": "walk/0-N-sword.png",
+            "shield": "walk/0-N-shield.png",
+            "rightHand": "walk/0-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.50400122266739,
+                29.391661553498288
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.04142857142857
+              ],
+              "grip": [
+                48.0,
+                39.0
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.457686976475653,
+                34.655808383086544
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.56
+              ],
+              "grip": [
+                16.0,
+                40.0
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.0
+          ],
+          "shieldGrip": [
+            16.0,
+            40.0
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/0-E-body.png",
+            "rightArm": "walk/0-E-rightArm.png",
+            "leftArm": "walk/0-E-leftArm.png",
+            "sword": "walk/0-E-sword.png",
+            "shield": "walk/0-E-shield.png",
+            "rightHand": "walk/0-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.870936719246846,
+                41.91624563446696
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.999310344827585
+              ],
+              "grip": [
+                38.0,
+                42.0
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.52761599486531,
+                42.35632567199803
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.74909090909091
+              ],
+              "grip": [
+                40.0,
+                39.0
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.0
+          ],
+          "shieldGrip": [
+            40.0,
+            39.0
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/0-W-body.png",
+            "rightArm": "walk/0-W-rightArm.png",
+            "leftArm": "walk/0-W-leftArm.png",
+            "sword": "walk/0-W-sword.png",
+            "shield": "walk/0-W-shield.png",
+            "rightHand": "walk/0-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.548209351567017,
+                35.172782249926286
+              ],
+              "wrist": [
+                19.17,
+                33.83
+              ],
+              "grip": [
+                18.0,
+                36.0
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.149141108405246,
+                43.92188003146746
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.98827586206897
+              ],
+              "grip": [
+                26.0,
+                42.0
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.0
+          ],
+          "shieldGrip": [
+            26.0,
+            42.0
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/1-S-body.png",
+            "rightArm": "walk/1-S-rightArm.png",
+            "leftArm": "walk/1-S-leftArm.png",
+            "sword": "walk/1-S-sword.png",
+            "shield": "walk/1-S-shield.png",
+            "rightHand": "walk/1-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.250828810108493,
+                29.748131273325026
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.59497474683058
+              ],
+              "grip": [
+                15.999999999999998,
+                39.494974746830586
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                53.98325596070877,
+                35.64642274964227
+              ],
+              "wrist": [
+                47.464285714285715,
+                39.10211760397344
+              ],
+              "grip": [
+                48.0,
+                40.494974746830586
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.494974746830586
+          ],
+          "shieldGrip": [
+            48.0,
+            40.494974746830586
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/1-N-body.png",
+            "rightArm": "walk/1-N-rightArm.png",
+            "leftArm": "walk/1-N-leftArm.png",
+            "sword": "walk/1-N-sword.png",
+            "shield": "walk/1-N-shield.png",
+            "rightHand": "walk/1-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.45421428517567,
+                29.85379612336913
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.536403318259154
+              ],
+              "grip": [
+                48.0,
+                39.494974746830586
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.59804450292921,
+                34.91859161891584
+              ],
+              "wrist": [
+                16.17857142857143,
+                39.05497474683059
+              ],
+              "grip": [
+                16.0,
+                40.494974746830586
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.494974746830586
+          ],
+          "shieldGrip": [
+            16.0,
+            40.494974746830586
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/1-E-body.png",
+            "rightArm": "walk/1-E-rightArm.png",
+            "leftArm": "walk/1-E-leftArm.png",
+            "sword": "walk/1-E-sword.png",
+            "shield": "walk/1-E-shield.png",
+            "rightHand": "walk/1-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.76717265021094,
+                42.05048621840532
+              ],
+              "wrist": [
+                37.856206896551726,
+                40.49428509165817
+              ],
+              "grip": [
+                38.0,
+                42.494974746830586
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.27542359374247,
+                42.76633321063443
+              ],
+              "wrist": [
+                38.276363636363634,
+                37.244065655921496
+              ],
+              "grip": [
+                40.0,
+                39.494974746830586
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.494974746830586
+          ],
+          "shieldGrip": [
+            40.0,
+            39.494974746830586
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/1-W-body.png",
+            "rightArm": "walk/1-W-rightArm.png",
+            "leftArm": "walk/1-W-leftArm.png",
+            "sword": "walk/1-W-sword.png",
+            "shield": "walk/1-W-shield.png",
+            "rightHand": "walk/1-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.62175384166798,
+                35.32825937736094
+              ],
+              "wrist": [
+                19.17,
+                34.324974746830584
+              ],
+              "grip": [
+                18.0,
+                36.494974746830586
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.373846571920716,
+                44.04961026336495
+              ],
+              "wrist": [
+                26.132758620689657,
+                40.48325060889955
+              ],
+              "grip": [
+                26.0,
+                42.494974746830586
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.494974746830586
+          ],
+          "shieldGrip": [
+            26.0,
+            42.494974746830586
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/2-S-body.png",
+            "rightArm": "walk/2-S-rightArm.png",
+            "leftArm": "walk/2-S-leftArm.png",
+            "sword": "walk/2-S-sword.png",
+            "shield": "walk/2-S-shield.png",
+            "rightHand": "walk/2-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                19.18,
+                27.58
+              ],
+              "elbow": [
+                9.776088635268644,
+                28.936558529616924
+              ],
+              "wrist": [
+                14.924999999999999,
+                36.8
+              ],
+              "grip": [
+                14.5,
+                38.7
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.33,
+                29.1
+              ],
+              "elbow": [
+                52.42433453090939,
+                34.74251534689175
+              ],
+              "wrist": [
+                45.964285714285715,
+                38.30714285714286
+              ],
+              "grip": [
+                46.5,
+                39.7
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            14.5,
+            38.7
+          ],
+          "shieldGrip": [
+            46.5,
+            39.7
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/2-N-body.png",
+            "rightArm": "walk/2-N-rightArm.png",
+            "leftArm": "walk/2-N-leftArm.png",
+            "sword": "walk/2-N-sword.png",
+            "shield": "walk/2-N-shield.png",
+            "rightHand": "walk/2-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.95,
+                27.65
+              ],
+              "elbow": [
+                53.92717240718586,
+                29.041177764220294
+              ],
+              "wrist": [
+                48.92238095238095,
+                36.74142857142857
+              ],
+              "grip": [
+                49.5,
+                38.7
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.44,
+                28.76
+              ],
+              "elbow": [
+                11.159219042200071,
+                34.02785580794863
+              ],
+              "wrist": [
+                17.67857142857143,
+                38.260000000000005
+              ],
+              "grip": [
+                17.5,
+                39.7
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            49.5,
+            38.7
+          ],
+          "shieldGrip": [
+            17.5,
+            39.7
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/2-E-body.png",
+            "rightArm": "walk/2-E-rightArm.png",
+            "leftArm": "walk/2-E-leftArm.png",
+            "sword": "walk/2-E-sword.png",
+            "shield": "walk/2-E-shield.png",
+            "rightHand": "walk/2-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.709999999999997,
+                37.650000000000006
+              ],
+              "elbow": [
+                32.23910085315572,
+                42.10812110149922
+              ],
+              "wrist": [
+                38.36620689655172,
+                40.70931034482759
+              ],
+              "grip": [
+                38.50999999999999,
+                42.71000000000001
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.74,
+                36.93000000000001
+              ],
+              "elbow": [
+                36.67695115906572,
+                42.94084053859972
+              ],
+              "wrist": [
+                38.78636363636363,
+                37.45909090909092
+              ],
+              "grip": [
+                40.51,
+                39.71000000000001
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.50999999999999,
+            42.71000000000001
+          ],
+          "shieldGrip": [
+            40.51,
+            39.71000000000001
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/2-W-body.png",
+            "rightArm": "walk/2-W-rightArm.png",
+            "leftArm": "walk/2-W-leftArm.png",
+            "sword": "walk/2-W-sword.png",
+            "shield": "walk/2-W-shield.png",
+            "rightHand": "walk/2-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                33.08,
+                32.42
+              ],
+              "elbow": [
+                27.137647867387223,
+                35.390631436585906
+              ],
+              "wrist": [
+                21.66,
+                34.540000000000006
+              ],
+              "grip": [
+                20.49,
+                36.71000000000001
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                38.370000000000005,
+                37.629999999999995
+              ],
+              "elbow": [
+                34.951511727438955,
+                44.106645577022306
+              ],
+              "wrist": [
+                28.622758620689655,
+                40.698275862068975
+              ],
+              "grip": [
+                28.49,
+                42.71000000000001
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            20.49,
+            36.71000000000001
+          ],
+          "shieldGrip": [
+            28.49,
+            42.71000000000001
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/3-S-body.png",
+            "rightArm": "walk/3-S-rightArm.png",
+            "leftArm": "walk/3-S-leftArm.png",
+            "sword": "walk/3-S-sword.png",
+            "shield": "walk/3-S-shield.png",
+            "rightHand": "walk/3-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                19.18,
+                27.58
+              ],
+              "elbow": [
+                9.750828810108493,
+                28.748131273325026
+              ],
+              "wrist": [
+                14.924999999999997,
+                36.59497474683058
+              ],
+              "grip": [
+                14.499999999999998,
+                38.494974746830586
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.33,
+                29.1
+              ],
+              "elbow": [
+                52.48325596070877,
+                34.64642274964227
+              ],
+              "wrist": [
+                45.964285714285715,
+                38.10211760397344
+              ],
+              "grip": [
+                46.5,
+                39.494974746830586
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            14.499999999999998,
+            38.494974746830586
+          ],
+          "shieldGrip": [
+            46.5,
+            39.494974746830586
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/3-N-body.png",
+            "rightArm": "walk/3-N-rightArm.png",
+            "leftArm": "walk/3-N-leftArm.png",
+            "sword": "walk/3-N-sword.png",
+            "shield": "walk/3-N-shield.png",
+            "rightHand": "walk/3-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.95,
+                27.65
+              ],
+              "elbow": [
+                53.95421428517567,
+                28.85379612336913
+              ],
+              "wrist": [
+                48.92238095238095,
+                36.536403318259154
+              ],
+              "grip": [
+                49.5,
+                38.494974746830586
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.44,
+                28.76
+              ],
+              "elbow": [
+                11.09804450292921,
+                33.91859161891584
+              ],
+              "wrist": [
+                17.67857142857143,
+                38.05497474683059
+              ],
+              "grip": [
+                17.5,
+                39.494974746830586
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            49.5,
+            38.494974746830586
+          ],
+          "shieldGrip": [
+            17.5,
+            39.494974746830586
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/3-E-body.png",
+            "rightArm": "walk/3-E-rightArm.png",
+            "leftArm": "walk/3-E-leftArm.png",
+            "sword": "walk/3-E-sword.png",
+            "shield": "walk/3-E-shield.png",
+            "rightHand": "walk/3-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.709999999999997,
+                37.650000000000006
+              ],
+              "elbow": [
+                32.277172650210936,
+                42.06048621840533
+              ],
+              "wrist": [
+                38.36620689655172,
+                40.504285091658176
+              ],
+              "grip": [
+                38.50999999999999,
+                42.50497474683059
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.74,
+                36.93000000000001
+              ],
+              "elbow": [
+                36.785423593742465,
+                42.776333210634434
+              ],
+              "wrist": [
+                38.78636363636363,
+                37.2540656559215
+              ],
+              "grip": [
+                40.51,
+                39.50497474683059
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.50999999999999,
+            42.50497474683059
+          ],
+          "shieldGrip": [
+            40.51,
+            39.50497474683059
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 1,
+          "layers": {
+            "body": "walk/3-W-body.png",
+            "rightArm": "walk/3-W-rightArm.png",
+            "leftArm": "walk/3-W-leftArm.png",
+            "sword": "walk/3-W-sword.png",
+            "shield": "walk/3-W-shield.png",
+            "rightHand": "walk/3-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                33.08,
+                32.42
+              ],
+              "elbow": [
+                27.11175384166798,
+                35.33825937736095
+              ],
+              "wrist": [
+                21.66,
+                34.33497474683059
+              ],
+              "grip": [
+                20.49,
+                36.50497474683059
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                38.370000000000005,
+                37.629999999999995
+              ],
+              "elbow": [
+                34.86384657192072,
+                44.059610263364945
+              ],
+              "wrist": [
+                28.622758620689655,
+                40.49325060889956
+              ],
+              "grip": [
+                28.49,
+                42.50497474683059
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            20.49,
+            36.50497474683059
+          ],
+          "shieldGrip": [
+            28.49,
+            42.50497474683059
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/4-S-body.png",
+            "rightArm": "walk/4-S-rightArm.png",
+            "leftArm": "walk/4-S-leftArm.png",
+            "sword": "walk/4-S-sword.png",
+            "shield": "walk/4-S-shield.png",
+            "rightHand": "walk/4-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.204840812219045,
+                29.28367490093803
+              ],
+              "wrist": [
+                16.424999999999997,
+                37.099999999999994
+              ],
+              "grip": [
+                15.999999999999998,
+                39.0
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.11776905879373,
+                35.418105481326386
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.607142857142854
+              ],
+              "grip": [
+                48.0,
+                40.0
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            39.0
+          ],
+          "shieldGrip": [
+            48.0,
+            40.0
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/4-N-body.png",
+            "rightArm": "walk/4-N-rightArm.png",
+            "leftArm": "walk/4-N-leftArm.png",
+            "sword": "walk/4-N-sword.png",
+            "shield": "walk/4-N-shield.png",
+            "rightHand": "walk/4-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.50400122266739,
+                29.391661553498288
+              ],
+              "wrist": [
+                47.42238095238095,
+                37.04142857142857
+              ],
+              "grip": [
+                48.0,
+                39.0
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.457686976475653,
+                34.655808383086544
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.56
+              ],
+              "grip": [
+                16.0,
+                40.0
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            39.0
+          ],
+          "shieldGrip": [
+            16.0,
+            40.0
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/4-E-body.png",
+            "rightArm": "walk/4-E-rightArm.png",
+            "leftArm": "walk/4-E-leftArm.png",
+            "sword": "walk/4-E-sword.png",
+            "shield": "walk/4-E-shield.png",
+            "rightHand": "walk/4-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.870936719246846,
+                41.91624563446696
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.999310344827585
+              ],
+              "grip": [
+                38.0,
+                42.0
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.52761599486531,
+                42.35632567199803
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.74909090909091
+              ],
+              "grip": [
+                40.0,
+                39.0
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            42.0
+          ],
+          "shieldGrip": [
+            40.0,
+            39.0
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/4-W-body.png",
+            "rightArm": "walk/4-W-rightArm.png",
+            "leftArm": "walk/4-W-leftArm.png",
+            "sword": "walk/4-W-sword.png",
+            "shield": "walk/4-W-shield.png",
+            "rightHand": "walk/4-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.548209351567017,
+                35.172782249926286
+              ],
+              "wrist": [
+                19.17,
+                33.83
+              ],
+              "grip": [
+                18.0,
+                36.0
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                32.149141108405246,
+                43.92188003146746
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.98827586206897
+              ],
+              "grip": [
+                26.0,
+                42.0
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            36.0
+          ],
+          "shieldGrip": [
+            26.0,
+            42.0
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/5-S-body.png",
+            "rightArm": "walk/5-S-rightArm.png",
+            "leftArm": "walk/5-S-leftArm.png",
+            "sword": "walk/5-S-sword.png",
+            "shield": "walk/5-S-shield.png",
+            "rightHand": "walk/5-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.68,
+                28.58
+              ],
+              "elbow": [
+                11.181397930531231,
+                28.804407499615344
+              ],
+              "wrist": [
+                16.424999999999997,
+                36.60502525316941
+              ],
+              "grip": [
+                15.999999999999998,
+                38.505025253169414
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.83,
+                30.1
+              ],
+              "elbow": [
+                54.24165452261946,
+                35.195651003243505
+              ],
+              "wrist": [
+                47.464285714285715,
+                38.11216811031227
+              ],
+              "grip": [
+                48.0,
+                39.505025253169414
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.999999999999998,
+            38.505025253169414
+          ],
+          "shieldGrip": [
+            48.0,
+            39.505025253169414
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/5-N-body.png",
+            "rightArm": "walk/5-N-rightArm.png",
+            "leftArm": "walk/5-N-leftArm.png",
+            "sword": "walk/5-N-sword.png",
+            "shield": "walk/5-N-shield.png",
+            "rightHand": "walk/5-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                43.45,
+                28.65
+              ],
+              "elbow": [
+                52.53048032631658,
+                28.914342662802813
+              ],
+              "wrist": [
+                47.42238095238095,
+                36.54645382459798
+              ],
+              "grip": [
+                48.0,
+                38.505025253169414
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                18.94,
+                29.76
+              ],
+              "elbow": [
+                9.327272136089668,
+                34.39450785029024
+              ],
+              "wrist": [
+                16.17857142857143,
+                38.065025253169416
+              ],
+              "grip": [
+                16.0,
+                39.505025253169414
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            48.0,
+            38.505025253169414
+          ],
+          "shieldGrip": [
+            16.0,
+            39.505025253169414
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/5-E-body.png",
+            "rightArm": "walk/5-E-rightArm.png",
+            "leftArm": "walk/5-E-leftArm.png",
+            "sword": "walk/5-E-sword.png",
+            "shield": "walk/5-E-shield.png",
+            "rightHand": "walk/5-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.2,
+                37.64
+              ],
+              "elbow": [
+                31.98853156621324,
+                41.755665475588714
+              ],
+              "wrist": [
+                37.856206896551726,
+                39.504335597997
+              ],
+              "grip": [
+                38.0,
+                41.505025253169414
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.23,
+                36.92
+              ],
+              "elbow": [
+                36.764244314907145,
+                41.92973904945764
+              ],
+              "wrist": [
+                38.276363636363634,
+                36.254116162260324
+              ],
+              "grip": [
+                40.0,
+                38.505025253169414
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.0,
+            41.505025253169414
+          ],
+          "shieldGrip": [
+            40.0,
+            38.505025253169414
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 0,
+          "layers": {
+            "body": "walk/5-W-body.png",
+            "rightArm": "walk/5-W-rightArm.png",
+            "leftArm": "walk/5-W-leftArm.png",
+            "sword": "walk/5-W-sword.png",
+            "shield": "walk/5-W-shield.png",
+            "rightHand": "walk/5-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                30.59,
+                32.41
+              ],
+              "elbow": [
+                24.463654393739155,
+                34.97984231279828
+              ],
+              "wrist": [
+                19.17,
+                33.33502525316941
+              ],
+              "grip": [
+                18.0,
+                35.505025253169414
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                35.88,
+                37.62
+              ],
+              "elbow": [
+                31.908180683296802,
+                43.77285716683423
+              ],
+              "wrist": [
+                26.132758620689657,
+                39.49330111523838
+              ],
+              "grip": [
+                26.0,
+                41.505025253169414
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            18.0,
+            35.505025253169414
+          ],
+          "shieldGrip": [
+            26.0,
+            41.505025253169414
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/6-S-body.png",
+            "rightArm": "walk/6-S-rightArm.png",
+            "leftArm": "walk/6-S-leftArm.png",
+            "sword": "walk/6-S-sword.png",
+            "shield": "walk/6-S-shield.png",
+            "rightHand": "walk/6-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.18,
+                29.58
+              ],
+              "elbow": [
+                10.678770988377874,
+                29.60114872833092
+              ],
+              "wrist": [
+                15.925,
+                37.39999999999999
+              ],
+              "grip": [
+                15.500000000000002,
+                39.3
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.33,
+                31.1
+              ],
+              "elbow": [
+                53.78992794651832,
+                36.105463339859924
+              ],
+              "wrist": [
+                46.964285714285715,
+                38.90714285714285
+              ],
+              "grip": [
+                47.5,
+                40.3
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.500000000000002,
+            39.3
+          ],
+          "shieldGrip": [
+            47.5,
+            40.3
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/6-N-body.png",
+            "rightArm": "walk/6-N-rightArm.png",
+            "leftArm": "walk/6-N-leftArm.png",
+            "sword": "walk/6-N-sword.png",
+            "shield": "walk/6-N-shield.png",
+            "rightHand": "walk/6-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.45,
+                29.65
+              ],
+              "elbow": [
+                53.53411727066099,
+                29.711752837009914
+              ],
+              "wrist": [
+                48.42238095238095,
+                37.341428571428565
+              ],
+              "grip": [
+                49.0,
+                39.3
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                19.94,
+                30.76
+              ],
+              "elbow": [
+                10.276052466846734,
+                35.28673370947097
+              ],
+              "wrist": [
+                17.17857142857143,
+                38.86
+              ],
+              "grip": [
+                17.0,
+                40.3
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            49.0,
+            39.3
+          ],
+          "shieldGrip": [
+            17.0,
+            40.3
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/6-E-body.png",
+            "rightArm": "walk/6-E-rightArm.png",
+            "leftArm": "walk/6-E-leftArm.png",
+            "sword": "walk/6-E-sword.png",
+            "shield": "walk/6-E-shield.png",
+            "rightHand": "walk/6-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.209999999999997,
+                38.650000000000006
+              ],
+              "elbow": [
+                32.05047569897198,
+                42.691613985738584
+              ],
+              "wrist": [
+                37.86620689655172,
+                40.30931034482759
+              ],
+              "grip": [
+                38.00999999999999,
+                42.31
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.24,
+                37.93000000000001
+              ],
+              "elbow": [
+                36.867213355587594,
+                42.758670935774745
+              ],
+              "wrist": [
+                38.28636363636363,
+                37.05909090909091
+              ],
+              "grip": [
+                40.01,
+                39.31
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.00999999999999,
+            42.31
+          ],
+          "shieldGrip": [
+            40.01,
+            39.31
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/6-W-body.png",
+            "rightArm": "walk/6-W-rightArm.png",
+            "leftArm": "walk/6-W-leftArm.png",
+            "sword": "walk/6-W-sword.png",
+            "shield": "walk/6-W-shield.png",
+            "rightHand": "walk/6-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                32.08,
+                33.42
+              ],
+              "elbow": [
+                25.916598055385627,
+                35.89965248958878
+              ],
+              "wrist": [
+                20.660000000000004,
+                34.14
+              ],
+              "grip": [
+                19.490000000000002,
+                36.31
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                37.370000000000005,
+                38.629999999999995
+              ],
+              "elbow": [
+                33.294317300640984,
+                44.714555081034725
+              ],
+              "wrist": [
+                27.622758620689655,
+                40.29827586206897
+              ],
+              "grip": [
+                27.49,
+                42.31
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            19.490000000000002,
+            36.31
+          ],
+          "shieldGrip": [
+            27.49,
+            42.31
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ],
+      [
+        {
+          "facing": "S",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/7-S-body.png",
+            "rightArm": "walk/7-S-rightArm.png",
+            "leftArm": "walk/7-S-leftArm.png",
+            "sword": "walk/7-S-sword.png",
+            "shield": "walk/7-S-shield.png",
+            "rightHand": "walk/7-S-rightHand.png"
+          },
+          "order": [
+            "body",
+            "rightArm",
+            "leftArm",
+            "sword",
+            "rightHand",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                20.18,
+                29.58
+              ],
+              "elbow": [
+                10.681397930531231,
+                29.804407499615348
+              ],
+              "wrist": [
+                15.925,
+                37.60502525316941
+              ],
+              "grip": [
+                15.500000000000002,
+                39.505025253169414
+              ],
+              "upperLength": 9.501252549006367,
+              "forearmLength": 9.399202093794981
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.33,
+                31.1
+              ],
+              "elbow": [
+                53.74165452261946,
+                36.195651003243505
+              ],
+              "wrist": [
+                46.964285714285715,
+                39.11216811031227
+              ],
+              "grip": [
+                47.5,
+                40.505025253169414
+              ],
+              "upperLength": 10.702565113093215,
+              "forearmLength": 7.378265378800087
+            }
+          },
+          "swordGrip": [
+            15.500000000000002,
+            39.505025253169414
+          ],
+          "shieldGrip": [
+            47.5,
+            40.505025253169414
+          ],
+          "swordAngle": -0.17453292519943295
+        },
+        {
+          "facing": "N",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/7-N-body.png",
+            "rightArm": "walk/7-N-rightArm.png",
+            "leftArm": "walk/7-N-leftArm.png",
+            "sword": "walk/7-N-sword.png",
+            "shield": "walk/7-N-shield.png",
+            "rightHand": "walk/7-N-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "leftArm",
+            "shield",
+            "body"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                44.45,
+                29.65
+              ],
+              "elbow": [
+                53.53048032631658,
+                29.914342662802813
+              ],
+              "wrist": [
+                48.42238095238095,
+                37.54645382459798
+              ],
+              "grip": [
+                49.0,
+                39.505025253169414
+              ],
+              "upperLength": 9.084327162756745,
+              "forearmLength": 9.183779178529935
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                19.94,
+                30.76
+              ],
+              "elbow": [
+                10.327272136089668,
+                35.39450785029024
+              ],
+              "wrist": [
+                17.17857142857143,
+                39.065025253169416
+              ],
+              "grip": [
+                17.0,
+                40.505025253169414
+              ],
+              "upperLength": 10.671607189172581,
+              "forearmLength": 7.772580009237607
+            }
+          },
+          "swordGrip": [
+            49.0,
+            39.505025253169414
+          ],
+          "shieldGrip": [
+            17.0,
+            40.505025253169414
+          ],
+          "swordAngle": 0.17453292519943295
+        },
+        {
+          "facing": "E",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/7-E-body.png",
+            "rightArm": "walk/7-E-rightArm.png",
+            "leftArm": "walk/7-E-leftArm.png",
+            "sword": "walk/7-E-sword.png",
+            "shield": "walk/7-E-shield.png",
+            "rightHand": "walk/7-E-rightHand.png"
+          },
+          "order": [
+            "leftArm",
+            "shield",
+            "body",
+            "rightArm",
+            "sword",
+            "rightHand"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 0,
+              "shoulder": [
+                26.209999999999997,
+                38.650000000000006
+              ],
+              "elbow": [
+                31.99853156621323,
+                42.765665475588726
+              ],
+              "wrist": [
+                37.86620689655172,
+                40.514335597997004
+              ],
+              "grip": [
+                38.00999999999999,
+                42.51502525316942
+              ],
+              "upperLength": 7.102520679308154,
+              "forearmLength": 6.284751387286533
+            },
+            "L": {
+              "sourceFrame": 1,
+              "shoulder": [
+                27.24,
+                37.93000000000001
+              ],
+              "elbow": [
+                36.77424431490715,
+                42.93973904945764
+              ],
+              "wrist": [
+                38.28636363636363,
+                37.26411616226033
+              ],
+              "grip": [
+                40.01,
+                39.51502525316942
+              ],
+              "upperLength": 10.7702971175358,
+              "forearmLength": 5.873601961318115
+            }
+          },
+          "swordGrip": [
+            38.00999999999999,
+            42.51502525316942
+          ],
+          "shieldGrip": [
+            40.01,
+            39.51502525316942
+          ],
+          "swordAngle": 0.24434609527920614
+        },
+        {
+          "facing": "W",
+          "sourceFrame": 2,
+          "layers": {
+            "body": "walk/7-W-body.png",
+            "rightArm": "walk/7-W-rightArm.png",
+            "leftArm": "walk/7-W-leftArm.png",
+            "sword": "walk/7-W-sword.png",
+            "shield": "walk/7-W-shield.png",
+            "rightHand": "walk/7-W-rightHand.png"
+          },
+          "order": [
+            "rightArm",
+            "sword",
+            "rightHand",
+            "body",
+            "leftArm",
+            "shield"
+          ],
+          "arms": {
+            "R": {
+              "sourceFrame": 1,
+              "shoulder": [
+                32.08,
+                33.42
+              ],
+              "elbow": [
+                25.95365439373915,
+                35.98984231279829
+              ],
+              "wrist": [
+                20.660000000000004,
+                34.34502525316942
+              ],
+              "grip": [
+                19.490000000000002,
+                36.51502525316942
+              ],
+              "upperLength": 6.643508109425323,
+              "forearmLength": 5.543302264895898
+            },
+            "L": {
+              "sourceFrame": 0,
+              "shoulder": [
+                37.370000000000005,
+                38.629999999999995
+              ],
+              "elbow": [
+                33.39818068329681,
+                44.782857166834226
+              ],
+              "wrist": [
+                27.622758620689655,
+                40.503301115238386
+              ],
+              "grip": [
+                27.49,
+                42.51502525316942
+              ],
+              "upperLength": 7.323455468561273,
+              "forearmLength": 7.18819170584647
+            }
+          },
+          "swordGrip": [
+            19.490000000000002,
+            36.51502525316942
+          ],
+          "shieldGrip": [
+            27.49,
+            42.51502525316942
+          ],
+          "swordAngle": -0.24434609527920614
+        }
+      ]
+    ]
+  },
+  "sources": {
+    "standalone/remastered/reports/goa-sprite-test/goa-zones-bundle/limb-zones/Orc/body.png": "0ea41fc229cc34a6a64b845ab8ea7f1c6716b9988f0b2c91f6e21ef96dfb5216",
+    "standalone/remastered/reports/goa-sprite-test/goa-zones-bundle/fine-zones/Orc/fine.png": "bb18fd40ec6d58955c13bc490780fb44fc77ea41269476c867621f1be7d2073d",
+    "standalone/remastered/reports/goa-sprite-test/goa-zones-bundle/skeleton/Orc.json": "1a4558fb792060d9713ae40fda2c8ba4f8430dc0b5e2f3b30d6b2f94efb22807",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/melee-weapons/weapon.arming_sword/South.png": "29650c112df9bbfb38d255532003ea43b9c90b929c2e6e7b234da1763f03d65d",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/custom-shields/shield.round/South.png": "dc02fff0e154bf60ad29406800875a0a6631968cc206623d77654efa8f15546c",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/melee-weapons/weapon.arming_sword/North.png": "6a5e4c57b80ff3ac209b5e241d69c2f2bbef259dd3da3e3b591501a60f347e57",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/custom-shields/shield.round/North.png": "90f0889b19ed026f092bf82565010fe4648a452309ce8bfc71f4d5789164f838",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/melee-weapons/weapon.arming_sword/East.png": "3ce2abec3e2db9515ce1dc8ab66ecbb04d0e235be6695bcc77112aabe3860cab",
+    "standalone/goa-races/armor-designs/racial-redraws-v1/parts/melee-weapons/weapon.arming_sword/West.png": "9cf2967b8e4963a7e4508afe619d6f984ce5b134b20311c3c207b76e633a5428"
+  },
+  "notes": [
+    "Tuned GOA bundle Orc body, fine zones and skeleton.",
+    "Far arm uses visible authored walk-frame artwork when idle occludes it.",
+    "Right-hand arming sword; left-hand round shield.",
+    "Original drawn walk legs retained; only upper-body hold articulated.",
+    "Torso backing reuses visible pixels from the other source frames; extreme poses need further authored completion."
+  ]
+}

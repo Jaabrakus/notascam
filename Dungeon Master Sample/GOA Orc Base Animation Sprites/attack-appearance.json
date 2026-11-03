@@ -1,0 +1,44 @@
+{
+  "id": "dark-reference-v1",
+  "reference": "references/user-liked-attack-appearance.png",
+  "skinRamp": [
+    [
+      41,
+      63,
+      22
+    ],
+    [
+      53,
+      79,
+      30
+    ],
+    [
+      68,
+      100,
+      43
+    ],
+    [
+      79,
+      114,
+      52
+    ],
+    [
+      84,
+      120,
+      56
+    ],
+    [
+      87,
+      124,
+      59
+    ]
+  ],
+  "sourceGreenThresholds": [
+    75,
+    110,
+    140,
+    150,
+    157
+  ],
+  "note": "Fixed mapping across all poses; preserve alpha, geometry, red eyes, tusks, shorts and equipment. Uses source drawing green intensity before palette quantization, not the flattened previous export."
+}

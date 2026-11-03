@@ -1,0 +1,39 @@
+<!doctype html><meta charset="utf-8"><title>Appearance layer review</title>
+<style>
+body{margin:24px;background:#272c35;color:#edf1f7;font:16px system-ui}
+h1{font-size:24px}p{max-width:850px;line-height:1.5}label{display:inline-block;margin:12px 24px 16px 0}
+.views{display:flex;gap:12px;flex-wrap:wrap}article{background:#444952;padding:12px}
+h2{font-size:16px;margin:0 0 8px}canvas{width:280px;height:280px;image-rendering:pixelated}
+a{color:#bbd9ff}select,input{margin-left:8px}#error{color:#ffb6b6}
+</style>
+<h1 id="title"></h1>
+<p>Switch appearances and poses to compare the same body with its copied horns, markings and tail.</p>
+<label>Appearance<select id="variant"></select></label>
+<label>Pose<select id="pose"></select></label>
+<label><input type="checkbox" id="layers" checked>Show appearance layers</label>
+<div class="views" id="views"></div><p id="error"></p>
+<p><a id="sheet">Full sprite sheet</a> · <a href="comparison.png">Side-by-side comparison</a></p>
+<p>This Orc test uses a draft pose sheet. Attachment placement is saved for these poses;
+other body shapes need their own placement checks.</p>
+<script>
+const CONFIG={"name": "Hellblooded \u2014 approved attack variants", "rows": 4, "columns": 4, "xEdges": [0, 314, 627, 940, 1254], "yEdges": [0, 314, 627, 940, 1254], "variants": ["hellblooded"]};
+const $=id=>document.getElementById(id),images={},canvases=[];
+$('title').textContent=CONFIG.name;
+for(const id of CONFIG.variants){const o=document.createElement('option');o.value=id;o.textContent=id;$('variant').append(o);}
+for(let row=0;row<CONFIG.rows;row++){const o=document.createElement('option');o.value=row;o.textContent='Pose '+(row+1);$('pose').append(o);}
+for(let col=0;col<CONFIG.columns;col++){
+ const a=document.createElement('article'),h=document.createElement('h2'),c=document.createElement('canvas');
+ h.textContent=['South','North','East','West'][col]||'View '+(col+1);a.append(h,c);$('views').append(a);canvases.push(c);
+}
+function draw(){const name=$('variant').value,row=+$('pose').value,type=$('layers').checked?'composite':'palette-only',im=images[name+'/'+type];
+ if(!im)return;
+ canvases.forEach((c,d)=>{const x=CONFIG.xEdges[d],y=CONFIG.yEdges[row],w=CONFIG.xEdges[d+1]-x,h=CONFIG.yEdges[row+1]-y;
+ c.width=w;c.height=h;const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=false;ctx.drawImage(im,x,y,w,h,0,0,w,h);});
+ $('sheet').href=name+'/'+type+'.png';
+}
+Promise.all(CONFIG.variants.flatMap(name=>['composite','palette-only'].map(type=>new Promise((resolve,reject)=>{
+ const image=new Image();image.onload=()=>{images[name+'/'+type]=image;resolve();};image.onerror=()=>reject(Error('Could not load '+name));
+ image.src=name+'/'+type+'.png';
+})))).then(()=>{for(const id of ['variant','pose','layers'])$(id).onchange=draw;draw();document.body.dataset.ready='true';})
+.catch(error=>$('error').textContent=error.message);
+</script>

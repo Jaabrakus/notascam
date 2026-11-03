@@ -1,0 +1,102 @@
+{
+  "name": "Human_Sword_and_Shield_Hold",
+  "artwork": "Human_Sword_and_Shield_Hold_Artwork.png",
+  "sheet": "Human_Sword_and_Shield_Hold_Sheet_64px.png",
+  "frameSize": [
+    64,
+    64
+  ],
+  "directionOrder": [
+    "South",
+    "North",
+    "East",
+    "West"
+  ],
+  "frames": [
+    {
+      "direction": "South",
+      "file": "Human_Sword_and_Shield_Hold_South_64px.png",
+      "rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        118,
+        119,
+        400,
+        641
+      ]
+    },
+    {
+      "direction": "North",
+      "file": "Human_Sword_and_Shield_Hold_North_64px.png",
+      "rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        658,
+        119,
+        984,
+        641
+      ]
+    },
+    {
+      "direction": "East",
+      "file": "Human_Sword_and_Shield_Hold_East_64px.png",
+      "rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        1245,
+        119,
+        1491,
+        641
+      ]
+    },
+    {
+      "direction": "West",
+      "file": "Human_Sword_and_Shield_Hold_West_64px.png",
+      "rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "feet": [
+        32,
+        61
+      ],
+      "sourceBounds": [
+        1704,
+        119,
+        1965,
+        641
+      ]
+    }
+  ],
+  "equipmentVisible": false,
+  "armorVisible": false,
+  "generation": "built-in imagegen",
+  "limits": "Four standing empty-hand holding poses. No walking, attacks, equipment layers or sixteen-direction animation included.",
+  "sourceSha256": "75c0bf397123dbe97873679e554b9ca16e2890ebd1b782e5607920857bd95753"
+}

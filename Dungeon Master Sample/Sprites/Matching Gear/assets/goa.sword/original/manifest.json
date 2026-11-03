@@ -1,0 +1,552 @@
+{
+  "format": "banners.shared-equipment",
+  "version": 1,
+  "id": "goa.sword",
+  "material": "original",
+  "slot": "weapon",
+  "renderer": "goaHeld",
+  "sourceFrameCount": 1,
+  "frames": [
+    {
+      "direction": "South",
+      "frame": 0,
+      "rect": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        96
+      ],
+      "adaptation": {
+        "grip64": [
+          21,
+          43
+        ],
+        "completeSourceDirections": [
+          "South",
+          "East"
+        ],
+        "reflectedDirections": {
+          "North": "South",
+          "West": "East"
+        },
+        "notes": "Incomplete North/West held overlays are reconstructed by reflection around the measured grip; source files remain unchanged."
+      }
+    },
+    {
+      "direction": "North",
+      "frame": 0,
+      "rect": [
+        128,
+        0,
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        96
+      ],
+      "adaptation": {
+        "grip64": [
+          21,
+          43
+        ],
+        "completeSourceDirections": [
+          "South",
+          "East"
+        ],
+        "reflectedDirections": {
+          "North": "South",
+          "West": "East"
+        },
+        "notes": "Incomplete North/West held overlays are reconstructed by reflection around the measured grip; source files remain unchanged."
+      }
+    },
+    {
+      "direction": "East",
+      "frame": 0,
+      "rect": [
+        256,
+        0,
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        96
+      ],
+      "adaptation": {
+        "grip64": [
+          21,
+          43
+        ],
+        "completeSourceDirections": [
+          "South",
+          "East"
+        ],
+        "reflectedDirections": {
+          "North": "South",
+          "West": "East"
+        },
+        "notes": "Incomplete North/West held overlays are reconstructed by reflection around the measured grip; source files remain unchanged."
+      }
+    },
+    {
+      "direction": "West",
+      "frame": 0,
+      "rect": [
+        384,
+        0,
+        128,
+        128
+      ],
+      "pivot": [
+        64,
+        96
+      ],
+      "adaptation": {
+        "grip64": [
+          21,
+          43
+        ],
+        "completeSourceDirections": [
+          "South",
+          "East"
+        ],
+        "reflectedDirections": {
+          "North": "South",
+          "West": "East"
+        },
+        "notes": "Incomplete North/West held overlays are reconstructed by reflection around the measured grip; source files remain unchanged."
+      }
+    }
+  ],
+  "bodySpace": [
+    64,
+    64
+  ],
+  "artStatus": "source-art export; fit and style require visual review",
+  "source": {
+    "layers": [
+      {
+        "source": "/Users/kiwimango/Downloads/GOA Source/sword1/swordover.dmi",
+        "width": 32,
+        "height": 32,
+        "columns": 70,
+        "states": [
+          {
+            "name": "",
+            "offset": 0,
+            "dirs": 4,
+            "frames": 4,
+            "movement": 1,
+            "delays": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "name": "Run",
+            "offset": 16,
+            "dirs": 4,
+            "frames": 4,
+            "movement": 1,
+            "delays": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "name": "hurt",
+            "offset": 32,
+            "dirs": 4,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "hurt",
+            "offset": 36,
+            "dirs": 4,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Seal",
+            "offset": 40,
+            "dirs": 4,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Seal",
+            "offset": 44,
+            "dirs": 4,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "PunchA-1",
+            "offset": 48,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "KickA-1",
+            "offset": 49,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "KickA-2",
+            "offset": 50,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "KickA-2",
+            "offset": 51,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "KickA-1",
+            "offset": 52,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "PunchA-1",
+            "offset": 53,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "PunchA-2",
+            "offset": 54,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "PunchA-2",
+            "offset": 55,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Chakra",
+            "offset": 56,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Seal",
+            "offset": 57,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Seal",
+            "offset": 58,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "HandSeals",
+            "offset": 59,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Throw1",
+            "offset": 60,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Throw1",
+            "offset": 61,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Throw2",
+            "offset": 62,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Throw2",
+            "offset": 63,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Knockout",
+            "offset": 64,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "Dead",
+            "offset": 65,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "w-attack",
+            "offset": 66,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "w-attack",
+            "offset": 67,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "hurt",
+            "offset": 68,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 1,
+            "delays": [
+              1
+            ]
+          },
+          {
+            "name": "hurt",
+            "offset": 69,
+            "dirs": 1,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "attackLayers": [
+      {
+        "source": "/Users/kiwimango/Downloads/GOA Source/sword1/sword1.dmi",
+        "width": 32,
+        "height": 32,
+        "columns": 8,
+        "state": "w-attack",
+        "states": [
+          {
+            "name": "w-attack",
+            "offset": 0,
+            "dirs": 4,
+            "frames": 2,
+            "movement": 0,
+            "delays": [
+              3,
+              3
+            ]
+          }
+        ],
+        "offset": [
+          -48,
+          46
+        ],
+        "offsetSpace": "64px, +x right, +y down"
+      },
+      {
+        "source": "/Users/kiwimango/Downloads/GOA Source/sword1/sword2.dmi",
+        "width": 32,
+        "height": 32,
+        "columns": 4,
+        "state": "w-attack",
+        "states": [
+          {
+            "name": "w-attack",
+            "offset": 0,
+            "dirs": 4,
+            "frames": 1,
+            "movement": 0,
+            "delays": [
+              1
+            ]
+          }
+        ],
+        "offset": [
+          24,
+          -24
+        ],
+        "offsetSpace": "64px, +x right, +y down"
+      },
+      {
+        "source": "/Users/kiwimango/Downloads/GOA Source/sword1/sword3.dmi",
+        "width": 32,
+        "height": 32,
+        "columns": 8,
+        "state": "w-attack",
+        "states": [
+          {
+            "name": "w-attack",
+            "offset": 0,
+            "dirs": 4,
+            "frames": 2,
+            "movement": 0,
+            "delays": [
+              3,
+              3
+            ]
+          }
+        ],
+        "offset": [
+          0,
+          -40
+        ],
+        "offsetSpace": "64px, +x right, +y down"
+      },
+      {
+        "source": "/Users/kiwimango/Downloads/GOA Source/sword1/sword4.dmi",
+        "width": 32,
+        "height": 32,
+        "columns": 8,
+        "state": "w-attack",
+        "states": [
+          {
+            "name": "w-attack",
+            "offset": 0,
+            "dirs": 4,
+            "frames": 2,
+            "movement": 0,
+            "delays": [
+              3,
+              3
+            ]
+          }
+        ],
+        "offset": [
+          0,
+          42
+        ],
+        "offsetSpace": "64px, +x right, +y down"
+      }
+    ]
+  },
+  "fitAdaptation": {
+    "grip64": [
+      21,
+      43
+    ],
+    "completeSourceDirections": [
+      "South",
+      "East"
+    ],
+    "reflectedDirections": {
+      "North": "South",
+      "West": "East"
+    },
+    "notes": "Incomplete North/West held overlays are reconstructed by reflection around the measured grip; source files remain unchanged."
+  },
+  "buildKey": "95d412057250977d4df4ee2e585c6dce423ce380e2a0db9a46c3c45f2169736e",
+  "images": [
+    {
+      "name": "equipment.png"
+    }
+  ]
+}

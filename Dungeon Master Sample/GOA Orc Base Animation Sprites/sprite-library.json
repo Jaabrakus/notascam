@@ -1,0 +1,28 @@
+{
+  "artDirection": "2D",
+  "packs": [
+    {
+      "id": "curated_attacks",
+      "status": "user_accepted",
+      "manifest": "curated-attacks-v1/manifest.json",
+      "bodyCells": 64
+    },
+    {
+      "id": "ki_movement",
+      "status": "review",
+      "manifest": "ki-movement-v1/manifest.json",
+      "bodyCells": 80,
+      "effectCells": 12,
+      "reusedPoseRecipes": 5
+    },
+    {
+      "id": "special_moves",
+      "status": "review",
+      "manifest": "special-moves-v1/manifest.json",
+      "bodyCells": 64
+    }
+  ],
+  "bodyCellsIncludingSharedGuards": 208,
+  "effectCells": 12,
+  "note": "All packs are sprite/animation previews, not gameplay integration. The declined 3D experiment is excluded."
+}

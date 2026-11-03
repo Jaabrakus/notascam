@@ -1,0 +1,83 @@
+{
+  "master": "inputs/approved-attack.png",
+  "variants": [
+    {
+      "id": "Ashen",
+      "donor": "donors/Ashen.png",
+      "preset": "presets/Ashen.json",
+      "layers": 22,
+      "eyeSwap": false,
+      "paletteKind": "gray",
+      "status": "appearance_review"
+    },
+    {
+      "id": "Hellblooded",
+      "donor": "donors/Hellblooded.png",
+      "preset": "presets/Hellblooded.json",
+      "layers": 8,
+      "eyeSwap": false,
+      "paletteKind": "red",
+      "status": "appearance_review"
+    },
+    {
+      "id": "Marked",
+      "donor": "donors/Marked.png",
+      "preset": "presets/Marked.json",
+      "layers": 22,
+      "eyeSwap": false,
+      "paletteKind": "green",
+      "status": "appearance_review"
+    },
+    {
+      "id": "Possessed1",
+      "donor": "donors/Possessed1.png",
+      "preset": "presets/Possessed1.json",
+      "layers": 0,
+      "eyeSwap": false,
+      "paletteKind": "green",
+      "status": "appearance_review"
+    },
+    {
+      "id": "Possessed2",
+      "donor": "donors/Possessed2.png",
+      "preset": "presets/Possessed2.json",
+      "layers": 0,
+      "eyeSwap": false,
+      "paletteKind": "green",
+      "status": "appearance_review"
+    },
+    {
+      "id": "Zombie",
+      "donor": "donors/Zombie.png",
+      "preset": "presets/Zombie.json",
+      "layers": 15,
+      "eyeSwap": true,
+      "paletteKind": "green",
+      "status": "appearance_review"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "Werewolf",
+      "reason": "Different head, ears and tail anatomy; needs its own calibrated body/attachment mapping."
+    }
+  ],
+  "sourceGrid": {
+    "rows": 4,
+    "columns": 4,
+    "xEdges": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ],
+    "yEdges": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ]
+  }
+}

@@ -1,0 +1,2777 @@
+{
+  "version": 1,
+  "name": "Orc appearance layer proof",
+  "geometryReference": "Dungeon Master Sample/GOA Drawn Animation Library/Male/Orc/body-only-generated-draft-v2.png",
+  "baseIsProductionAtlas": false,
+  "grid": {
+    "rows": 4,
+    "columns": 4,
+    "xEdges": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ],
+    "yEdges": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ]
+  },
+  "skinMaskRule": {
+    "greenMinusRed": 6,
+    "greenMinusBlue": 9,
+    "minGreen": 25
+  },
+  "variants": [
+    {
+      "id": "ashen",
+      "base": "Dungeon Master Sample/GOA Drawn Animation Library/Male/Orc/skin-swap-test-v2/ashen-palette.png",
+      "layers": [
+        {
+          "id": "horn-0-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              18,
+              4,
+              26,
+              15
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            22,
+            13
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                106,
+                84
+              ]
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                110,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                100,
+                96
+              ]
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                108,
+                80
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-0-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              40,
+              4,
+              49,
+              15
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            44,
+            13
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                206,
+                84
+              ]
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                210,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                200,
+                96
+              ]
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                208,
+                80
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-1-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              17,
+              4,
+              25,
+              15
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            21,
+            13
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                107,
+                86
+              ]
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                109,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                107,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                105,
+                79
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-1-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              40,
+              4,
+              48,
+              15
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            43,
+            13
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                207,
+                86
+              ]
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                209,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                207,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                205,
+                79
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-2-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              2,
+              0
+            ],
+            "region": [
+              30,
+              4,
+              39,
+              16
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            35,
+            13
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                2
+              ],
+              "target": [
+                152,
+                83
+              ]
+            },
+            {
+              "cell": [
+                1,
+                2
+              ],
+              "target": [
+                164,
+                91
+              ]
+            },
+            {
+              "cell": [
+                2,
+                2
+              ],
+              "target": [
+                157,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                2
+              ],
+              "target": [
+                156,
+                77
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-3-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              3,
+              0
+            ],
+            "region": [
+              29,
+              4,
+              39,
+              17
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            33,
+            14
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                3
+              ],
+              "target": [
+                161,
+                83
+              ]
+            },
+            {
+              "cell": [
+                1,
+                3
+              ],
+              "target": [
+                149,
+                91
+              ]
+            },
+            {
+              "cell": [
+                2,
+                3
+              ],
+              "target": [
+                152,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                3
+              ],
+              "target": [
+                154,
+                77
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chest-marks-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              22,
+              30,
+              42,
+              44
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            32,
+            36
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                154,
+                184
+              ]
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                164,
+                195
+              ]
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                172,
+                181
+              ],
+              "occludePolygons": [
+                [
+                  [
+                    95,
+                    185
+                  ],
+                  [
+                    128,
+                    182
+                  ],
+                  [
+                    191,
+                    241
+                  ],
+                  [
+                    172,
+                    260
+                  ]
+                ]
+              ],
+              "allowOccluded": true
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                175,
+                170
+              ],
+              "occludePolygons": [
+                [
+                  [
+                    104,
+                    178
+                  ],
+                  [
+                    128,
+                    179
+                  ],
+                  [
+                    183,
+                    225
+                  ],
+                  [
+                    164,
+                    244
+                  ]
+                ]
+              ],
+              "allowOccluded": true
+            }
+          ]
+        },
+        {
+          "id": "chest-marks-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              22,
+              30,
+              43,
+              44
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            32,
+            36
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                157,
+                205
+              ]
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                158,
+                219
+              ]
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                153,
+                221
+              ]
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                154,
+                207
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chest-marks-2",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              2,
+              0
+            ],
+            "region": [
+              33,
+              31,
+              41,
+              44
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            37,
+            36
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                2
+              ],
+              "target": [
+                153,
+                185
+              ]
+            },
+            {
+              "cell": [
+                1,
+                2
+              ],
+              "target": [
+                163,
+                215
+              ]
+            },
+            {
+              "cell": [
+                2,
+                2
+              ],
+              "target": [
+                163,
+                232
+              ],
+              "occludePolygons": [
+                [
+                  [
+                    122,
+                    181
+                  ],
+                  [
+                    148,
+                    181
+                  ],
+                  [
+                    219,
+                    235
+                  ],
+                  [
+                    202,
+                    257
+                  ]
+                ]
+              ],
+              "allowOccluded": true
+            },
+            {
+              "cell": [
+                3,
+                2
+              ],
+              "target": [
+                165,
+                215
+              ],
+              "occludePolygons": [
+                [
+                  [
+                    124,
+                    174
+                  ],
+                  [
+                    150,
+                    175
+                  ],
+                  [
+                    218,
+                    221
+                  ],
+                  [
+                    204,
+                    243
+                  ]
+                ]
+              ],
+              "allowOccluded": true
+            }
+          ]
+        },
+        {
+          "id": "chest-marks-3",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              3,
+              0
+            ],
+            "region": [
+              22,
+              30,
+              35,
+              44
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            29,
+            36
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                3
+              ],
+              "target": [
+                161,
+                185
+              ]
+            },
+            {
+              "cell": [
+                1,
+                3
+              ],
+              "target": [
+                148,
+                215
+              ]
+            },
+            {
+              "cell": [
+                2,
+                3
+              ],
+              "target": [
+                150,
+                232
+              ],
+              "occludePolygons": [
+                [
+                  [
+                    168,
+                    184
+                  ],
+                  [
+                    194,
+                    185
+                  ],
+                  [
+                    123,
+                    258
+                  ],
+                  [
+                    101,
+                    238
+                  ]
+                ]
+              ],
+              "allowOccluded": true
+            },
+            {
+              "cell": [
+                3,
+                3
+              ],
+              "target": [
+                148,
+                215
+              ],
+              "occludePolygons": [
+                [
+                  [
+                    168,
+                    175
+                  ],
+                  [
+                    194,
+                    176
+                  ],
+                  [
+                    124,
+                    242
+                  ],
+                  [
+                    104,
+                    223
+                  ]
+                ]
+              ],
+              "allowOccluded": true
+            }
+          ]
+        },
+        {
+          "id": "right-shoulder-marks-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              14,
+              28,
+              22,
+              36
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            18,
+            31
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                105,
+                164
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                127,
+                164
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                113,
+                170
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                114,
+                153
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "left-shoulder-marks-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              42,
+              28,
+              51,
+              36
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            46,
+            31
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                209,
+                160
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                209,
+                176
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                210,
+                164
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                213,
+                147
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "right-forearm-marks-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              11,
+              35,
+              19,
+              42
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            15,
+            38
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                89,
+                194
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                91,
+                114
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                152,
+                210
+              ],
+              "quarterTurns": 1
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                128,
+                188
+              ],
+              "quarterTurns": 1
+            }
+          ]
+        },
+        {
+          "id": "left-forearm-marks-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              46,
+              35,
+              54,
+              42
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            50,
+            38
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                210,
+                177
+              ],
+              "quarterTurns": 1
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                210,
+                188
+              ],
+              "quarterTurns": 1
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                212,
+                181
+              ],
+              "quarterTurns": 1
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                212,
+                171
+              ],
+              "quarterTurns": 1
+            }
+          ]
+        },
+        {
+          "id": "left-shoulder-marks-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              14,
+              28,
+              23,
+              36
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            18,
+            31
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                102,
+                178
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                103,
+                194
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                101,
+                208
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                104,
+                192
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "right-shoulder-marks-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              42,
+              28,
+              51,
+              36
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            46,
+            31
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                209,
+                179
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                211,
+                182
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                214,
+                210
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                212,
+                197
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "left-forearm-marks-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              11,
+              35,
+              19,
+              42
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            15,
+            38
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                97,
+                210
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                95,
+                224
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                98,
+                237
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                98,
+                223
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "right-forearm-marks-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              46,
+              35,
+              54,
+              42
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            50,
+            38
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                219,
+                207
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                225,
+                123
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                228,
+                242
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                223,
+                227
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "near-shoulder-marks-2",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              2,
+              0
+            ],
+            "region": [
+              21,
+              28,
+              30,
+              36
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            25,
+            31
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                2
+              ],
+              "target": [
+                133,
+                178
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                2
+              ],
+              "target": [
+                130,
+                173
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                2
+              ],
+              "target": [
+                142,
+                204
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                2
+              ],
+              "target": [
+                141,
+                190
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "near-forearm-marks-2",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              2,
+              0
+            ],
+            "region": [
+              19,
+              40,
+              30,
+              50
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            24,
+            44
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                2
+              ],
+              "target": [
+                145,
+                215
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                2
+              ],
+              "target": [
+                112,
+                116
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                2
+              ],
+              "target": [
+                190,
+                233
+              ],
+              "quarterTurns": 1
+            },
+            {
+              "cell": [
+                3,
+                2
+              ],
+              "target": [
+                189,
+                216
+              ],
+              "quarterTurns": 1
+            }
+          ]
+        },
+        {
+          "id": "near-shoulder-marks-3",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              3,
+              0
+            ],
+            "region": [
+              36,
+              28,
+              46,
+              38
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            40,
+            32
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                3
+              ],
+              "target": [
+                181,
+                179
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                3
+              ],
+              "target": [
+                185,
+                173
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                3
+              ],
+              "target": [
+                175,
+                202
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                3,
+                3
+              ],
+              "target": [
+                176,
+                191
+              ],
+              "quarterTurns": 0
+            }
+          ]
+        },
+        {
+          "id": "near-forearm-marks-3",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Ashen/sprites.png",
+          "extract": {
+            "cell": [
+              3,
+              0
+            ],
+            "region": [
+              36,
+              39,
+              47,
+              51
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70
+              },
+              "ratios": [
+                [
+                  0,
+                  1,
+                  1.8
+                ],
+                [
+                  0,
+                  2,
+                  1.8
+                ]
+              ]
+            }
+          },
+          "sourceAnchor": [
+            41,
+            45
+          ],
+          "scale": 3,
+          "clipToSkin": true,
+          "placements": [
+            {
+              "cell": [
+                0,
+                3
+              ],
+              "target": [
+                170,
+                216
+              ],
+              "quarterTurns": 0
+            },
+            {
+              "cell": [
+                1,
+                3
+              ],
+              "target": [
+                201,
+                116
+              ],
+              "quarterTurns": 2
+            },
+            {
+              "cell": [
+                2,
+                3
+              ],
+              "target": [
+                123,
+                233
+              ],
+              "quarterTurns": 3
+            },
+            {
+              "cell": [
+                3,
+                3
+              ],
+              "target": [
+                126,
+                216
+              ],
+              "quarterTurns": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hellblooded",
+      "base": "Dungeon Master Sample/GOA Drawn Animation Library/Male/Orc/skin-swap-test-v2/hellblooded-palette.png",
+      "layers": [
+        {
+          "id": "horn-0-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              12,
+              1,
+              26,
+              18
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70,
+                "1": 50,
+                "2": 25
+              },
+              "ratios": [
+                [
+                  1,
+                  0,
+                  0.5
+                ],
+                [
+                  2,
+                  0,
+                  0.3
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            23,
+            15
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                106,
+                84
+              ]
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                110,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                100,
+                96
+              ]
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                108,
+                80
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-0-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              0,
+              0
+            ],
+            "region": [
+              41,
+              1,
+              55,
+              18
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70,
+                "1": 50,
+                "2": 25
+              },
+              "ratios": [
+                [
+                  1,
+                  0,
+                  0.5
+                ],
+                [
+                  2,
+                  0,
+                  0.3
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            44,
+            15
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                0
+              ],
+              "target": [
+                206,
+                84
+              ]
+            },
+            {
+              "cell": [
+                1,
+                0
+              ],
+              "target": [
+                210,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                0
+              ],
+              "target": [
+                200,
+                96
+              ]
+            },
+            {
+              "cell": [
+                3,
+                0
+              ],
+              "target": [
+                208,
+                80
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-1-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              7,
+              1,
+              20,
+              18
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70,
+                "1": 50,
+                "2": 25
+              },
+              "ratios": [
+                [
+                  1,
+                  0,
+                  0.5
+                ],
+                [
+                  2,
+                  0,
+                  0.3
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            16,
+            15
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                107,
+                86
+              ]
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                109,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                107,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                105,
+                79
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-1-1",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              35,
+              1,
+              49,
+              18
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70,
+                "1": 50,
+                "2": 25
+              },
+              "ratios": [
+                [
+                  1,
+                  0,
+                  0.5
+                ],
+                [
+                  2,
+                  0,
+                  0.3
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            38,
+            15
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                207,
+                86
+              ]
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                209,
+                96
+              ]
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                207,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                205,
+                79
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-2-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              2,
+              0
+            ],
+            "region": [
+              30,
+              1,
+              45,
+              19
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70,
+                "1": 50,
+                "2": 25
+              },
+              "ratios": [
+                [
+                  1,
+                  0,
+                  0.5
+                ],
+                [
+                  2,
+                  0,
+                  0.3
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            39,
+            16
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                2
+              ],
+              "target": [
+                152,
+                83
+              ]
+            },
+            {
+              "cell": [
+                1,
+                2
+              ],
+              "target": [
+                164,
+                91
+              ]
+            },
+            {
+              "cell": [
+                2,
+                2
+              ],
+              "target": [
+                157,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                2
+              ],
+              "target": [
+                156,
+                77
+              ]
+            }
+          ]
+        },
+        {
+          "id": "horn-3-0",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              3,
+              0
+            ],
+            "region": [
+              17,
+              1,
+              33,
+              19
+            ],
+            "colorRule": {
+              "min": {
+                "0": 70,
+                "1": 50,
+                "2": 25
+              },
+              "ratios": [
+                [
+                  1,
+                  0,
+                  0.5
+                ],
+                [
+                  2,
+                  0,
+                  0.3
+                ]
+              ]
+            },
+            "outlineRadius": 1,
+            "outlineMax": 50
+          },
+          "sourceAnchor": [
+            23,
+            16
+          ],
+          "scale": 5,
+          "depth": "front",
+          "placements": [
+            {
+              "cell": [
+                0,
+                3
+              ],
+              "target": [
+                161,
+                83
+              ]
+            },
+            {
+              "cell": [
+                1,
+                3
+              ],
+              "target": [
+                149,
+                91
+              ]
+            },
+            {
+              "cell": [
+                2,
+                3
+              ],
+              "target": [
+                152,
+                92
+              ]
+            },
+            {
+              "cell": [
+                3,
+                3
+              ],
+              "target": [
+                154,
+                77
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tail-north",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              1,
+              0
+            ],
+            "region": [
+              25,
+              33,
+              62,
+              54
+            ],
+            "polygon": [
+              [
+                25,
+                39
+              ],
+              [
+                30,
+                39
+              ],
+              [
+                33,
+                43
+              ],
+              [
+                37,
+                46
+              ],
+              [
+                43,
+                47
+              ],
+              [
+                48,
+                45
+              ],
+              [
+                52,
+                42
+              ],
+              [
+                49,
+                40
+              ],
+              [
+                53,
+                36
+              ],
+              [
+                57,
+                33
+              ],
+              [
+                60,
+                33
+              ],
+              [
+                61,
+                42
+              ],
+              [
+                58,
+                44
+              ],
+              [
+                56,
+                47
+              ],
+              [
+                49,
+                51
+              ],
+              [
+                42,
+                53
+              ],
+              [
+                35,
+                51
+              ],
+              [
+                28,
+                47
+              ],
+              [
+                25,
+                43
+              ]
+            ]
+          },
+          "sourceAnchor": [
+            28,
+            42
+          ],
+          "scale": 4,
+          "depth": "behind",
+          "placements": [
+            {
+              "cell": [
+                0,
+                1
+              ],
+              "target": [
+                151,
+                225
+              ]
+            },
+            {
+              "cell": [
+                1,
+                1
+              ],
+              "target": [
+                151,
+                242
+              ]
+            },
+            {
+              "cell": [
+                2,
+                1
+              ],
+              "target": [
+                151,
+                246
+              ]
+            },
+            {
+              "cell": [
+                3,
+                1
+              ],
+              "target": [
+                151,
+                230
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tail-west",
+          "source": "Dungeon Master Sample/Sprites/Male/Orc/Hellblooded/sprites.png",
+          "extract": {
+            "cell": [
+              3,
+              0
+            ],
+            "region": [
+              44,
+              33,
+              63,
+              53
+            ],
+            "polygon": [
+              [
+                44,
+                46
+              ],
+              [
+                48,
+                44
+              ],
+              [
+                50,
+                41
+              ],
+              [
+                50,
+                38
+              ],
+              [
+                54,
+                35
+              ],
+              [
+                58,
+                33
+              ],
+              [
+                61,
+                36
+              ],
+              [
+                62,
+                42
+              ],
+              [
+                57,
+                44
+              ],
+              [
+                54,
+                48
+              ],
+              [
+                49,
+                51
+              ],
+              [
+                44,
+                52
+              ]
+            ]
+          },
+          "sourceAnchor": [
+            44,
+            48
+          ],
+          "scale": 4,
+          "depth": "behind",
+          "placements": [
+            {
+              "cell": [
+                0,
+                3
+              ],
+              "target": [
+                193,
+                235
+              ]
+            },
+            {
+              "cell": [
+                1,
+                3
+              ],
+              "target": [
+                185,
+                249
+              ]
+            },
+            {
+              "cell": [
+                2,
+                3
+              ],
+              "target": [
+                188,
+                258
+              ]
+            },
+            {
+              "cell": [
+                3,
+                3
+              ],
+              "target": [
+                185,
+                242
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

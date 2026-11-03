@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GOA × Elf · Motion comparison</title><link rel="stylesheet" href="compare.css?v=compare-6"></head>
+<body><main>
+<header><div><a class="back" href="index.html?v=compare-6">← Back to Ki World</a><p class="eyebrow">Animation review</p><h1>GOA <span>×</span> Our Elf</h1><p class="intro">The original attacks beside our current rig animations.</p></div><div class="legend"><span class="goa-dot"></span> Original GOA <span class="elf-dot"></span> Our Elf</div></header>
+<section class="toolbar" aria-label="Comparison controls">
+<div class="selection-row"><label>Attack pair<select id="moveSelect"></select></label><label>Timing<select id="timingSelect"><option value="contact">Contact aligned</option><option value="native">Original timing</option></select></label><label>Speed<select id="speedSelect"><option value=".25">¼ speed</option><option value=".5" selected>½ speed</option><option value="1">1× speed</option></select></label><label class="check"><input id="skeletonToggle" type="checkbox"> Elf skeleton</label></div>
+<div class="transport"><button id="playToggle" class="accent">Pause</button><div class="step-controls"><button id="prevFrame" aria-label="Previous sampled frame">← Frame</button><button id="nextFrame" aria-label="Next sampled frame">Frame →</button></div><div class="pose-controls"><button id="startFrame">Start</button><button id="contactFrame">Contact</button><button id="recoveryFrame">Recovery</button></div><output id="progressLabel">0%</output></div>
+<input id="scrubber" type="range" min="0" max="1000" step="1" value="0" aria-label="Shared animation progress">
+<p id="timingNote" class="note" role="status">Loading reference sprites…</p>
+</section>
+<section class="source-summary" aria-label="Animation durations"><p><span class="tag goa">GOA</span> <strong id="goaSummary">Two original poses</strong></p><p><span class="tag elf">ELF</span> <strong id="elfSummary">Our current animation</strong></p></section>
+<section id="comparisonViews" class="comparison-grid" aria-label="Four-direction comparison"></section>
+<footer><p>Shared ground line · GOA’s 32px cells enlarged 2× beside our 64px rig · crisp pixel sampling</p><p>GOA is the reference here. The playable character remains our Elf.</p></footer>
+<div id="error" role="alert" hidden></div>
+</main>
+<script src="data.js?v=compare-6"></script><script src="reference-data.js?v=compare-6"></script><script src="animator.js?v=compare-6"></script><script src="goa-animator.js?v=compare-6"></script><script src="compare.js?v=compare-6"></script>
+</body></html>

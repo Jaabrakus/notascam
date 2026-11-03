@@ -1,0 +1,7474 @@
+{
+  "bodies": 15,
+  "bodyIds": [
+    "human",
+    "human-dark",
+    "dwarf",
+    "elf",
+    "dark-elf",
+    "orc",
+    "goblin",
+    "kobold",
+    "vampire",
+    "demon",
+    "gargoyle",
+    "frogman",
+    "lizardman",
+    "devourer-zombie",
+    "skeleton"
+  ],
+  "injuryViewsChecked": 2880,
+  "exactRGBAReconstruction": true,
+  "overlappingPixels": 0,
+  "outsideMaskChangedPixels": 0,
+  "geometryApproval": false,
+  "animationsEncoded": true,
+  "woundCaps": true,
+  "outsideCapAndRemovedMaskChangedPixels": 0,
+  "reports": [
+    {
+      "id": "human",
+      "label": "Human",
+      "raceKey": "Human",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Human-walk.png",
+      "sourceSha256": "5d863da6533f43b7a2f354509fb1a4dacebce9bb69812163e89ac668ca828366",
+      "renderedBodySha256": "7e8d55fc1e12a8fc48e83789917a9ab7f477606ff322b6b09f0b5150db120a18",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 166,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1468,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 102,
+            "RightArm": 116,
+            "LeftLeg": 115,
+            "RightLeg": 105
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1476,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 114,
+            "RightArm": 104,
+            "LeftLeg": 115,
+            "RightLeg": 105
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1156,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 145,
+            "LeftLeg": 82,
+            "RightLeg": 128
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1184,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 130,
+            "RightArm": 0,
+            "LeftLeg": 158,
+            "RightLeg": 60
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1330,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 85,
+            "RightArm": 99,
+            "LeftLeg": 88,
+            "RightLeg": 98
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1335,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 110,
+            "RightArm": 92,
+            "LeftLeg": 94,
+            "RightLeg": 61
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1269,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 103,
+            "RightLeg": 119
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1342,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 158,
+            "RightArm": 0,
+            "LeftLeg": 156,
+            "RightLeg": 72
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1348,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 91,
+            "RightArm": 95,
+            "LeftLeg": 98,
+            "RightLeg": 94
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1291,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 103,
+            "RightArm": 81,
+            "LeftLeg": 68,
+            "RightLeg": 84
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1204,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 137,
+            "LeftLeg": 109,
+            "RightLeg": 114
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1225,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 118,
+            "RightArm": 0,
+            "LeftLeg": 149,
+            "RightLeg": 78
+          }
+        }
+      ]
+    },
+    {
+      "id": "human-dark",
+      "label": "Human \u00b7 dark skin",
+      "raceKey": "HumanBlack",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214909-c61c89c3/result.png",
+      "sourceSha256": "c668dc477307fc817c3503b2d670140b5a3689b98f63f754f0a87dade3d07153",
+      "renderedBodySha256": "f6324586f59e98f42d9a45b6baf3edd0837ceedb7af0cce195489b788996d532",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 162,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1612,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 134,
+            "RightArm": 146,
+            "LeftLeg": 121,
+            "RightLeg": 118
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1612,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 140,
+            "RightArm": 130,
+            "LeftLeg": 118,
+            "RightLeg": 114
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1238,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 159,
+            "LeftLeg": 75,
+            "RightLeg": 116
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1262,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 146,
+            "RightArm": 0,
+            "LeftLeg": 158,
+            "RightLeg": 61
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1578,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 132,
+            "RightArm": 145,
+            "LeftLeg": 125,
+            "RightLeg": 111
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1629,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 143,
+            "RightArm": 147,
+            "LeftLeg": 116,
+            "RightLeg": 115
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1346,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 156,
+            "LeftLeg": 71,
+            "RightLeg": 129
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1334,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 153,
+            "RightArm": 0,
+            "LeftLeg": 153,
+            "RightLeg": 59
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1556,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 99,
+            "RightArm": 131,
+            "LeftLeg": 124,
+            "RightLeg": 121
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1567,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 146,
+            "RightArm": 116,
+            "LeftLeg": 120,
+            "RightLeg": 114
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1398,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 159,
+            "LeftLeg": 109,
+            "RightLeg": 129
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1410,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 156,
+            "RightArm": 0,
+            "LeftLeg": 167,
+            "RightLeg": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "dwarf",
+      "label": "Dwarf",
+      "raceKey": "Dwarves",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Dwarves-walk.png",
+      "sourceSha256": "a99e8e5595ec25314e2f647271f3e3321295c2bb1ae6624daf30ca39ca1a8e0d",
+      "renderedBodySha256": "7bbd8a0f4eb7a570cea6a0a0810e3746d48ccbf60cce1fb036cff6e7ffeb3f4a",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 156,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1308,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 95,
+            "RightArm": 95,
+            "LeftLeg": 91,
+            "RightLeg": 96
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1275,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 95,
+            "RightArm": 95,
+            "LeftLeg": 95,
+            "RightLeg": 96
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1104,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 104,
+            "LeftLeg": 91,
+            "RightLeg": 100
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1078,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 104,
+            "RightArm": 0,
+            "LeftLeg": 125,
+            "RightLeg": 63
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1184,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 95,
+            "RightArm": 95,
+            "LeftLeg": 82,
+            "RightLeg": 78
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1202,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 95,
+            "RightArm": 95,
+            "LeftLeg": 85,
+            "RightLeg": 79
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 989,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 104,
+            "LeftLeg": 87,
+            "RightLeg": 91
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1045,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 104,
+            "RightArm": 0,
+            "LeftLeg": 125,
+            "RightLeg": 64
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1172,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 95,
+            "RightArm": 95,
+            "LeftLeg": 67,
+            "RightLeg": 78
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1164,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 95,
+            "RightArm": 95,
+            "LeftLeg": 75,
+            "RightLeg": 88
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1052,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 104,
+            "LeftLeg": 87,
+            "RightLeg": 96
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1009,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 104,
+            "RightArm": 0,
+            "LeftLeg": 121,
+            "RightLeg": 64
+          }
+        }
+      ]
+    },
+    {
+      "id": "elf",
+      "label": "Elf \u00b7 blond",
+      "raceKey": "Elf",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Elf-walk.png",
+      "sourceSha256": "1800faa1bc5772b2c0660b133b80f90795b930b54500e879206127cef4151065",
+      "renderedBodySha256": "229eba6b4db96b03ba4b9fed792097b654c7907223abd05e1c5463a10d61a039",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 145,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hair_pixels_retained_in_core_LeftArm",
+        "hair_pixels_retained_in_core_RightArm",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1689,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 87,
+            "RightArm": 114,
+            "LeftLeg": 113,
+            "RightLeg": 121
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1655,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 87,
+            "RightArm": 101,
+            "LeftLeg": 105,
+            "RightLeg": 115
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1288,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 45,
+            "LeftLeg": 107,
+            "RightLeg": 82
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1319,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 52,
+            "RightArm": 0,
+            "LeftLeg": 129,
+            "RightLeg": 76
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1535,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 103,
+            "RightArm": 92,
+            "LeftLeg": 80,
+            "RightLeg": 80
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1525,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 112,
+            "RightArm": 69,
+            "LeftLeg": 67,
+            "RightLeg": 92
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1521,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 130,
+            "LeftLeg": 117,
+            "RightLeg": 146
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1530,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 141,
+            "RightArm": 0,
+            "LeftLeg": 177,
+            "RightLeg": 78
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1553,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 70,
+            "RightArm": 90,
+            "LeftLeg": 80,
+            "RightLeg": 86
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1508,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 94,
+            "RightArm": 50,
+            "LeftLeg": 65,
+            "RightLeg": 82
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1534,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 133,
+            "LeftLeg": 119,
+            "RightLeg": 149
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1519,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 118,
+            "RightArm": 0,
+            "LeftLeg": 169,
+            "RightLeg": 84
+          }
+        }
+      ]
+    },
+    {
+      "id": "dark-elf",
+      "label": "Dark Elf",
+      "raceKey": "Night Elf",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Night Elf-walk.png",
+      "sourceSha256": "bb0dd035c0b0d78934d51763c46c4b4b12b8cc70b4d58e33ade5368c87bceefe",
+      "renderedBodySha256": "aa680d361db45d28c39dbb75f6ba5baf53abb67b1e468e692b8ad0c3d39da95c",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 140,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hair_pixels_retained_in_core_LeftArm",
+        "hair_pixels_retained_in_core_RightArm",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1644,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 133,
+            "RightArm": 111,
+            "LeftLeg": 110,
+            "RightLeg": 102
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1662,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 125,
+            "RightArm": 111,
+            "LeftLeg": 106,
+            "RightLeg": 112
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1260,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 78,
+            "LeftLeg": 102,
+            "RightLeg": 84
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1263,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 71,
+            "RightArm": 0,
+            "LeftLeg": 125,
+            "RightLeg": 65
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1505,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 107,
+            "RightArm": 95,
+            "LeftLeg": 90,
+            "RightLeg": 76
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1500,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 112,
+            "RightArm": 87,
+            "LeftLeg": 89,
+            "RightLeg": 84
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1371,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 99,
+            "LeftLeg": 122,
+            "RightLeg": 128
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1367,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 87,
+            "RightArm": 0,
+            "LeftLeg": 154,
+            "RightLeg": 85
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1479,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 84,
+            "RightArm": 115,
+            "LeftLeg": 84,
+            "RightLeg": 94
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1464,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 102,
+            "RightArm": 96,
+            "LeftLeg": 89,
+            "RightLeg": 72
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1351,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 70,
+            "LeftLeg": 116,
+            "RightLeg": 134
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1374,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 98,
+            "RightArm": 0,
+            "LeftLeg": 170,
+            "RightLeg": 85
+          }
+        }
+      ]
+    },
+    {
+      "id": "orc",
+      "label": "Orc",
+      "raceKey": "Orc",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Orc-walk.png",
+      "sourceSha256": "50a07a28aefbc12e3289e296983519809e649f65b50825bbe7a27f88217fffe9",
+      "renderedBodySha256": "850bf5438b6337f35faa68dddcf0d502c10be9ca0e4ceade9a97da08ee235356",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 168,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1919,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 147,
+            "LeftLeg": 131,
+            "RightLeg": 143
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1930,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 147,
+            "LeftLeg": 127,
+            "RightLeg": 133
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1399,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 119,
+            "RightLeg": 130
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1382,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 161,
+            "RightArm": 0,
+            "LeftLeg": 172,
+            "RightLeg": 76
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1782,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 145,
+            "RightArm": 133,
+            "LeftLeg": 106,
+            "RightLeg": 105
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1791,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 137,
+            "RightArm": 125,
+            "LeftLeg": 103,
+            "RightLeg": 114
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1562,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 117,
+            "RightLeg": 152
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1588,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 161,
+            "RightArm": 0,
+            "LeftLeg": 193,
+            "RightLeg": 78
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1692,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 116,
+            "RightArm": 137,
+            "LeftLeg": 113,
+            "RightLeg": 86
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1721,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 140,
+            "RightArm": 114,
+            "LeftLeg": 102,
+            "RightLeg": 102
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1521,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 118,
+            "RightLeg": 130
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1505,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 158,
+            "RightArm": 0,
+            "LeftLeg": 165,
+            "RightLeg": 83
+          }
+        }
+      ]
+    },
+    {
+      "id": "goblin",
+      "label": "Goblin",
+      "raceKey": "Goblins",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Goblins-walk.png",
+      "sourceSha256": "9579030c1a1f9c21e188ab7c3ec520b712f1be9f745b1a87a42b2892289acc87",
+      "renderedBodySha256": "f0206275a3e721fefb0b3089cde0b3ece4c405305f190bfbc5c5d2b8452bf832",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 146,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 989,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 73,
+            "RightArm": 74,
+            "LeftLeg": 63,
+            "RightLeg": 61
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1007,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 76,
+            "RightArm": 71,
+            "LeftLeg": 67,
+            "RightLeg": 62
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 802,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 60,
+            "LeftLeg": 68,
+            "RightLeg": 49
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 810,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 59,
+            "RightArm": 0,
+            "LeftLeg": 72,
+            "RightLeg": 48
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 936,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 75,
+            "RightArm": 59,
+            "LeftLeg": 42,
+            "RightLeg": 49
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 936,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 80,
+            "RightArm": 40,
+            "LeftLeg": 51,
+            "RightLeg": 41
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 880,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 88,
+            "LeftLeg": 69,
+            "RightLeg": 72
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 892,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 78,
+            "RightArm": 0,
+            "LeftLeg": 95,
+            "RightLeg": 49
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 914,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 55,
+            "RightArm": 68,
+            "LeftLeg": 47,
+            "RightLeg": 44
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 935,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 82,
+            "RightArm": 45,
+            "LeftLeg": 47,
+            "RightLeg": 49
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 853,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 84,
+            "LeftLeg": 71,
+            "RightLeg": 74
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 899,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 88,
+            "RightArm": 0,
+            "LeftLeg": 100,
+            "RightLeg": 49
+          }
+        }
+      ]
+    },
+    {
+      "id": "kobold",
+      "label": "Kobold",
+      "raceKey": "Kobold",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/armory/body-sources/Kobold-walk.png",
+      "sourceSha256": "5661b1d8d41ff1d825c483fd45d62ccb4533e67f292b82b8021b81128f44cb03",
+      "renderedBodySha256": "30e424aa54b6b0bef41a42b898d1050dbf830d7208c6c1307ea49f7d67f6d598",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 122,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 2
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 1
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 1
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1058,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 58,
+            "RightArm": 69,
+            "LeftLeg": 81,
+            "RightLeg": 76
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1036,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 63,
+            "RightArm": 57,
+            "LeftLeg": 82,
+            "RightLeg": 72
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 813,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 65,
+            "LeftLeg": 71,
+            "RightLeg": 60
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 827,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 63,
+            "RightArm": 0,
+            "LeftLeg": 82,
+            "RightLeg": 44
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1046,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 72,
+            "RightArm": 75,
+            "LeftLeg": 64,
+            "RightLeg": 76
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1030,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 74,
+            "RightArm": 56,
+            "LeftLeg": 78,
+            "RightLeg": 62
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 878,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 93,
+            "LeftLeg": 61,
+            "RightLeg": 77
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 909,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 89,
+            "RightArm": 0,
+            "LeftLeg": 98,
+            "RightLeg": 49
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1019,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 64,
+            "RightArm": 67,
+            "LeftLeg": 67,
+            "RightLeg": 63
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1010,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 71,
+            "RightArm": 71,
+            "LeftLeg": 65,
+            "RightLeg": 53
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 866,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 81,
+            "LeftLeg": 65,
+            "RightLeg": 77
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 910,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 92,
+            "RightArm": 0,
+            "LeftLeg": 96,
+            "RightLeg": 49
+          }
+        }
+      ]
+    },
+    {
+      "id": "vampire",
+      "label": "Vampire",
+      "raceKey": "Vampire",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214924-9587fb64/result.png",
+      "sourceSha256": "f343f7c9dfb9b6aec62d8055be0438eae11a3247dbccc3614dafea0c16fee991",
+      "renderedBodySha256": "c8cc777af5e1f08e1f04c5768128f31eeffcdae0c48efad67be97bd943c677ae",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 163,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 1
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 2
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1591,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 115,
+            "RightArm": 130,
+            "LeftLeg": 107,
+            "RightLeg": 108
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1570,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 131,
+            "RightArm": 119,
+            "LeftLeg": 107,
+            "RightLeg": 105
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1158,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 131,
+            "LeftLeg": 76,
+            "RightLeg": 82
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1173,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 106,
+            "RightArm": 0,
+            "LeftLeg": 116,
+            "RightLeg": 61
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1402,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 120,
+            "RightArm": 107,
+            "LeftLeg": 66,
+            "RightLeg": 64
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1375,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 124,
+            "RightArm": 90,
+            "LeftLeg": 74,
+            "RightLeg": 52
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1268,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 160,
+            "LeftLeg": 103,
+            "RightLeg": 124
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1250,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 153,
+            "RightArm": 0,
+            "LeftLeg": 154,
+            "RightLeg": 74
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1383,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 120,
+            "RightArm": 109,
+            "LeftLeg": 30,
+            "RightLeg": 68
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1328,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 136,
+            "RightArm": 94,
+            "LeftLeg": 38,
+            "RightLeg": 56
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1082,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 155,
+            "LeftLeg": 3,
+            "RightLeg": 97
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1084,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 151,
+            "RightArm": 0,
+            "LeftLeg": 109,
+            "RightLeg": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "demon",
+      "label": "Demon",
+      "raceKey": "Demon",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214909-e680c1be/result.png",
+      "sourceSha256": "da216583a9a34de063a7e4915493ac79c0ccf67c61ec0cbd4a0eb282b6877eb7",
+      "renderedBodySha256": "afb5edde3a431957386a52691b1003ab1030ffc28d2f2589aa2a4f9beaf807e7",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 165,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 3
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1735,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 133,
+            "RightArm": 129,
+            "LeftLeg": 141,
+            "RightLeg": 132
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1725,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 131,
+            "RightArm": 127,
+            "LeftLeg": 136,
+            "RightLeg": 125
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1223,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 118,
+            "LeftLeg": 94,
+            "RightLeg": 122
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1168,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 123,
+            "RightArm": 0,
+            "LeftLeg": 165,
+            "RightLeg": 56
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1741,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 141,
+            "RightArm": 135,
+            "LeftLeg": 131,
+            "RightLeg": 121
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1633,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 130,
+            "RightArm": 147,
+            "LeftLeg": 107,
+            "RightLeg": 66
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1403,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 95,
+            "RightLeg": 151
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1323,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 0,
+            "LeftLeg": 193,
+            "RightLeg": 71
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1679,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 131,
+            "RightArm": 120,
+            "LeftLeg": 103,
+            "RightLeg": 110
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1575,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 121,
+            "RightArm": 104,
+            "LeftLeg": 94,
+            "RightLeg": 95
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1288,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 152,
+            "LeftLeg": 98,
+            "RightLeg": 142
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1335,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 140,
+            "RightArm": 0,
+            "LeftLeg": 190,
+            "RightLeg": 75
+          }
+        }
+      ]
+    },
+    {
+      "id": "gargoyle",
+      "label": "Gargoyle",
+      "raceKey": "Gargoyle",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214909-fc25c40c/result.png",
+      "sourceSha256": "b1c073afbf72044dc248a26dbb32066cbc3bfb3a225f869a09eb5e5c31959b4a",
+      "renderedBodySha256": "51bb84ca511baf7c2ee4f8797a708bf3260b331a4a925f1fa9c4b781d3dee720",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": true,
+        "capPixels": 0,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 0
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1693,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 131,
+            "RightArm": 133,
+            "LeftLeg": 123,
+            "RightLeg": 122
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1640,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 130,
+            "RightArm": 130,
+            "LeftLeg": 123,
+            "RightLeg": 125
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1272,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 144,
+            "LeftLeg": 113,
+            "RightLeg": 125
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1252,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 134,
+            "RightArm": 0,
+            "LeftLeg": 164,
+            "RightLeg": 72
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1601,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 125,
+            "RightArm": 112,
+            "LeftLeg": 118,
+            "RightLeg": 93
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1537,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 110,
+            "RightArm": 113,
+            "LeftLeg": 102,
+            "RightLeg": 79
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1308,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 107,
+            "RightLeg": 151
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1281,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 154,
+            "RightArm": 0,
+            "LeftLeg": 176,
+            "RightLeg": 70
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1602,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 112,
+            "RightArm": 128,
+            "LeftLeg": 93,
+            "RightLeg": 110
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1558,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 127,
+            "RightArm": 127,
+            "LeftLeg": 108,
+            "RightLeg": 59
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1250,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 153,
+            "LeftLeg": 105,
+            "RightLeg": 121
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1294,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 153,
+            "RightArm": 0,
+            "LeftLeg": 158,
+            "RightLeg": 71
+          }
+        }
+      ]
+    },
+    {
+      "id": "frogman",
+      "label": "Frogman",
+      "raceKey": "FrogMan",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214910-f80130e8/result.png",
+      "sourceSha256": "b31c0c38e51ccfb142856b1fdaedf20e018f78ced62bb05248f6ac7d558e11be",
+      "renderedBodySha256": "61dd016289d3709c486db58333e7f683310c2ed248d5f94d4ae110e560dffcb8",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 167,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 3
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1495,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 126,
+            "RightArm": 126,
+            "LeftLeg": 112,
+            "RightLeg": 113
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1441,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 126,
+            "RightArm": 125,
+            "LeftLeg": 105,
+            "RightLeg": 107
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 999,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 143,
+            "LeftLeg": 67,
+            "RightLeg": 117
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 994,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 146,
+            "RightArm": 0,
+            "LeftLeg": 153,
+            "RightLeg": 28
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1377,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 125,
+            "RightArm": 112,
+            "LeftLeg": 108,
+            "RightLeg": 104
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1290,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 105,
+            "RightArm": 126,
+            "LeftLeg": 96,
+            "RightLeg": 57
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1096,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 152,
+            "LeftLeg": 94,
+            "RightLeg": 118
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1103,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 152,
+            "RightArm": 0,
+            "LeftLeg": 148,
+            "RightLeg": 67
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1391,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 89,
+            "RightArm": 108,
+            "LeftLeg": 84,
+            "RightLeg": 112
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1255,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 121,
+            "RightArm": 86,
+            "LeftLeg": 60,
+            "RightLeg": 87
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1052,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 150,
+            "LeftLeg": 97,
+            "RightLeg": 123
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1080,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 151,
+            "RightArm": 0,
+            "LeftLeg": 153,
+            "RightLeg": 69
+          }
+        }
+      ]
+    },
+    {
+      "id": "lizardman",
+      "label": "Lizardman",
+      "raceKey": "LizardMan",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214910-e5f7bd9b/result.png",
+      "sourceSha256": "307ecde7d05775e877e93dcd78917013fa5f2521c0a05e2cd52e4d8cb4044669",
+      "renderedBodySha256": "863a6fbe1518535313b082510b641402c581b0b8b9d80e62a15e077d119a9bc9",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 167,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 3
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1622,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 132,
+            "RightArm": 146,
+            "LeftLeg": 112,
+            "RightLeg": 111
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1651,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 146,
+            "RightArm": 145,
+            "LeftLeg": 114,
+            "RightLeg": 107
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1292,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 160,
+            "LeftLeg": 75,
+            "RightLeg": 130
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1338,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 158,
+            "RightArm": 0,
+            "LeftLeg": 161,
+            "RightLeg": 53
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1490,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 133,
+            "RightArm": 135,
+            "LeftLeg": 81,
+            "RightLeg": 95
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1448,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 145,
+            "RightArm": 124,
+            "LeftLeg": 83,
+            "RightLeg": 69
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1365,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 108,
+            "RightLeg": 120
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1413,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 160,
+            "RightArm": 0,
+            "LeftLeg": 157,
+            "RightLeg": 76
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1419,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 115,
+            "RightArm": 134,
+            "LeftLeg": 78,
+            "RightLeg": 77
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1399,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 141,
+            "RightArm": 99,
+            "LeftLeg": 61,
+            "RightLeg": 79
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1395,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 102,
+            "RightLeg": 124
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1406,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 160,
+            "RightArm": 0,
+            "LeftLeg": 150,
+            "RightLeg": 78
+          }
+        }
+      ]
+    },
+    {
+      "id": "devourer-zombie",
+      "label": "Devourer zombie",
+      "raceKey": "DevourerZombie",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214910-56105354/result.png",
+      "sourceSha256": "be889c7e82cf2a8f7b7706ea396e1b8e313665eaf46f5faa8abcdf9a32f013b9",
+      "renderedBodySha256": "de9a3b940b1498ff1eb43d251be284defa31d0a4eb6f89ad618f63f058775b63",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": false,
+        "capPixels": 166,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 2
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 4
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 4
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1650,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 147,
+            "LeftLeg": 117,
+            "RightLeg": 112
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1650,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 147,
+            "LeftLeg": 118,
+            "RightLeg": 119
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1268,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 54,
+            "RightLeg": 129
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1224,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 158,
+            "RightArm": 0,
+            "LeftLeg": 151,
+            "RightLeg": 40
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1597,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 117,
+            "RightArm": 147,
+            "LeftLeg": 89,
+            "RightLeg": 90
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1645,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 146,
+            "LeftLeg": 110,
+            "RightLeg": 69
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1341,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 105,
+            "RightLeg": 128
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1343,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 159,
+            "RightArm": 0,
+            "LeftLeg": 163,
+            "RightLeg": 74
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1598,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 126,
+            "LeftLeg": 94,
+            "RightLeg": 88
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1623,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 147,
+            "RightArm": 144,
+            "LeftLeg": 77,
+            "RightLeg": 106
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1385,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 113,
+            "RightLeg": 111
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1332,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 153,
+            "RightArm": 0,
+            "LeftLeg": 167,
+            "RightLeg": 78
+          }
+        }
+      ]
+    },
+    {
+      "id": "skeleton",
+      "label": "Skeleton",
+      "raceKey": "Skeleton",
+      "variant": "Base",
+      "source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/goa-races/sprite-engine/jobs/20261029-214910-6ffbadc3/result.png",
+      "sourceSha256": "025db8c2f91ee906b50b9926069cf0a499e20f57001deafd84bb5750ca3f10d9",
+      "renderedBodySha256": "ca760a6bb698d172b79fd6b48f05ed1f0706346e73f41b93688ff880df730b6a",
+      "frameCount": 3,
+      "directions": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "states": 16,
+      "exactRGBAReconstruction": true,
+      "overlappingPixels": 0,
+      "outsideMaskChangedPixels": 0,
+      "injuryViewsChecked": 192,
+      "woundCaps": {
+        "enabled": true,
+        "separateOverlay": true,
+        "capPixelBudget": 4,
+        "noBloodMaterial": true,
+        "capPixels": 0,
+        "capCounts": [
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 0,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 1,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "South",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "North",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "East",
+            "slot": "RightLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightArm",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "LeftLeg",
+            "pixels": 0
+          },
+          {
+            "frame": 2,
+            "direction": "West",
+            "slot": "RightLeg",
+            "pixels": 0
+          }
+        ],
+        "injuryViewsChecked": 192,
+        "outsideCapAndRemovedMaskChangedPixels": 0,
+        "outsideCapVsPureInjuryChangedPixels": 0,
+        "sourcePaletteOnly": true,
+        "qualityFlags": [
+          "wound_seam_geometry_draft",
+          "visible_cut_contact_only"
+        ],
+        "method": "wound_pixels.wound_overlays; alpha support restricted composition"
+      },
+      "inventedFarSidePixels": 0,
+      "geometryStatus": "draft cut masks; anatomical review required",
+      "methods": [
+        "literal_rgba_polygon_partition_v1"
+      ],
+      "qualityFlags": [
+        "geometry_calibration_draft",
+        "hidden_art_unavailable",
+        "occluded_or_empty_LeftArm",
+        "occluded_or_empty_RightArm"
+      ],
+      "proof": [
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1550,
+          "frame": 0,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 119,
+            "RightArm": 137,
+            "LeftLeg": 113,
+            "RightLeg": 114
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1557,
+          "frame": 0,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 136,
+            "RightArm": 124,
+            "LeftLeg": 119,
+            "RightLeg": 116
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1166,
+          "frame": 0,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 147,
+            "LeftLeg": 62,
+            "RightLeg": 113
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1171,
+          "frame": 0,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 138,
+            "RightArm": 0,
+            "LeftLeg": 129,
+            "RightLeg": 39
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1452,
+          "frame": 1,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 121,
+            "RightArm": 131,
+            "LeftLeg": 103,
+            "RightLeg": 81
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1480,
+          "frame": 1,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 144,
+            "RightArm": 129,
+            "LeftLeg": 104,
+            "RightLeg": 72
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1258,
+          "frame": 1,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 161,
+            "LeftLeg": 106,
+            "RightLeg": 130
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1258,
+          "frame": 1,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 159,
+            "RightArm": 0,
+            "LeftLeg": 167,
+            "RightLeg": 70
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1519,
+          "frame": 2,
+          "direction": "South",
+          "visiblePartPixels": {
+            "LeftArm": 122,
+            "RightArm": 139,
+            "LeftLeg": 69,
+            "RightLeg": 99
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1517,
+          "frame": 2,
+          "direction": "North",
+          "visiblePartPixels": {
+            "LeftArm": 145,
+            "RightArm": 109,
+            "LeftLeg": 75,
+            "RightLeg": 97
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1316,
+          "frame": 2,
+          "direction": "East",
+          "visiblePartPixels": {
+            "LeftArm": 0,
+            "RightArm": 160,
+            "LeftLeg": 105,
+            "RightLeg": 125
+          }
+        },
+        {
+          "exactRGBAReconstruction": true,
+          "overlappingPixels": 0,
+          "sourceVisiblePixels": 1311,
+          "frame": 2,
+          "direction": "West",
+          "visiblePartPixels": {
+            "LeftArm": 157,
+            "RightArm": 0,
+            "LeftLeg": 159,
+            "RightLeg": 72
+          }
+        }
+      ]
+    }
+  ]
+}
