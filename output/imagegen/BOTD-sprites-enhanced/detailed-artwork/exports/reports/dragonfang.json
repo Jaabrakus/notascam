@@ -1,0 +1,1817 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "dragonfang",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "weapon.dagger.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        305,
+        115,
+        400,
+        215
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/000-weapon.dagger.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          305,
+          115,
+          400,
+          215
+        ],
+        "size": [
+          103,
+          108
+        ],
+        "source_crop_size": [
+          95,
+          100
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          20,
+          17,
+          76,
+          83
+        ],
+        "alpha_bbox": [
+          24,
+          21,
+          80,
+          87
+        ],
+        "retained_pixels": 1619,
+        "background_pixels_removed": 7881,
+        "enclosed_candidate_pixels_retained": 41,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 386,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/000-weapon.dagger.dragonfang.png",
+        "output_sha256": "b5aeafa4c164ef53480226cd1a622109b5f88c5847d144522ab40e6595a7d88f"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/000-weapon.dagger.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/000-weapon.dagger.dragonfang.export.json",
+        "sha256": "4abbd82ea360ca5c2f86f91db8600caf28d2f9a7833e49b156cb72c66313cad8",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          20,
+          14,
+          30
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 0,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            20,
+            14,
+            30
+          ],
+          "visible_height": 10,
+          "visible_width": 8,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "95d8e17e8ed5afb8d0bef421a75a1092aef6d9fb81baf5eab8383d170072b568",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.dagger.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/000-weapon.dagger.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/000-weapon.dagger.dragonfang.export.json",
+        "sha256": "d39b196e7e9f0e96ec22436985671862973eac2ec27265da15606df3748aca4b",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          40,
+          29,
+          60
+        ],
+        "visible_height": 20,
+        "baseline_exclusive": 60,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 0,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            12,
+            40,
+            28,
+            60
+          ],
+          "visible_height": 20,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 60,
+          "alpha_sha256": "19c74f48854bdbf2b590bd257c1743f8a486d4052a51eda228d450132187bd6f",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.dagger.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "weapon.arming sword.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        305,
+        250,
+        400,
+        380
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/001-weapon.arming_sword.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          305,
+          250,
+          400,
+          380
+        ],
+        "size": [
+          103,
+          138
+        ],
+        "source_crop_size": [
+          95,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          7,
+          27,
+          76,
+          117
+        ],
+        "alpha_bbox": [
+          11,
+          31,
+          80,
+          121
+        ],
+        "retained_pixels": 2298,
+        "background_pixels_removed": 10052,
+        "enclosed_candidate_pixels_retained": 33,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 446,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/001-weapon.arming_sword.dragonfang.png",
+        "output_sha256": "b2f4fb35f4993982c9e02ce7b2fba2d461216c24daf9d7127c707bbd239d441c"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/001-weapon.arming_sword.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/001-weapon.arming_sword.dragonfang.export.json",
+        "sha256": "33e360c01ba77355f6029b9d18c9747be8d47d54726b0ddc8c010acc8be35d32",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          3,
+          14,
+          15,
+          30
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 4,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            14,
+            15,
+            30
+          ],
+          "visible_height": 16,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "b43f409b6c7917a89208d4fb5611c8c20ad2ccf23ed9cce260e32b44cb69b9ed",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.arming sword.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/001-weapon.arming_sword.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/001-weapon.arming_sword.dragonfang.export.json",
+        "sha256": "160e9cd9a0a5c35a42827d3b8c151abfda698afe40f549c7855d1c877b8f5e04",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          6,
+          27,
+          31,
+          60
+        ],
+        "visible_height": 33,
+        "baseline_exclusive": 60,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 20,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            6,
+            27,
+            29,
+            60
+          ],
+          "visible_height": 33,
+          "visible_width": 23,
+          "bottom_baseline_exclusive": 60,
+          "alpha_sha256": "dde4fcb0daeea52f97fb45f2fcac2ebb71ca579992d7f37d1fdb2784b64b544d",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.arming sword.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "weapon.longsword.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        310,
+        400,
+        405,
+        575
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/002-weapon.longsword.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          310,
+          400,
+          405,
+          575
+        ],
+        "size": [
+          103,
+          183
+        ],
+        "source_crop_size": [
+          95,
+          175
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          19,
+          18,
+          67,
+          158
+        ],
+        "alpha_bbox": [
+          23,
+          22,
+          71,
+          162
+        ],
+        "retained_pixels": 3180,
+        "background_pixels_removed": 13445,
+        "enclosed_candidate_pixels_retained": 20,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 536,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/002-weapon.longsword.dragonfang.png",
+        "output_sha256": "ac4204ec3b81f2526051d7b7384608c2fbb123b7bfc8a66ca38ba3a73fd20eb9"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/002-weapon.longsword.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/002-weapon.longsword.dragonfang.export.json",
+        "sha256": "209ee7dec9113cb8129b893453fadff5d0a820f096d99c1a06c656570794e681",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          7,
+          15,
+          32
+        ],
+        "visible_height": 25,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 8,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            7,
+            15,
+            32
+          ],
+          "visible_height": 25,
+          "visible_width": 9,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ad20aa6cf76fda4b1005a1a63cef68389a05d449d7d6003fe54764ec668e652d",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.longsword.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/002-weapon.longsword.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/002-weapon.longsword.dragonfang.export.json",
+        "sha256": "6b8bae0105a47ecf8ca2344d09ca4565dbc9c82cf027ff5ddb52395e7bcf31ff",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          14,
+          30,
+          64
+        ],
+        "visible_height": 50,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 40,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            14,
+            30,
+            64
+          ],
+          "visible_height": 50,
+          "visible_width": 17,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "b7ea63ea06ca54d3317e3fb953d45005f49906bdc2cea9ee23fdfb703f3cd5f7",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.longsword.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "weapon.scimitar.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        310,
+        600,
+        405,
+        745
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/003-weapon.scimitar.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          310,
+          600,
+          405,
+          745
+        ],
+        "size": [
+          103,
+          153
+        ],
+        "source_crop_size": [
+          95,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          13,
+          18,
+          70,
+          121
+        ],
+        "alpha_bbox": [
+          17,
+          22,
+          74,
+          125
+        ],
+        "retained_pixels": 2441,
+        "background_pixels_removed": 11334,
+        "enclosed_candidate_pixels_retained": 34,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 476,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/003-weapon.scimitar.dragonfang.png",
+        "output_sha256": "8f90e70471d93b65590a691a7d093ca4282eaac9263b73d19c23c4da69728c27"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/003-weapon.scimitar.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/003-weapon.scimitar.dragonfang.export.json",
+        "sha256": "e77932b3f7d9424cf638355739c9aa1c1fcd7ffe874fae8c9612b5078772ebc8",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          5,
+          12,
+          15,
+          30
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 12,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            5,
+            12,
+            15,
+            30
+          ],
+          "visible_height": 18,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "00534a16276c157d39d31a76c924bd3c9eafe97124f6eb4f7337f0028c7980b9",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.scimitar.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/003-weapon.scimitar.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/003-weapon.scimitar.dragonfang.export.json",
+        "sha256": "431a1969290b3e11dd057d60fa767c22df590d3d08ab69c111584266c5aa9325",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          10,
+          23,
+          30,
+          60
+        ],
+        "visible_height": 37,
+        "baseline_exclusive": 60,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 60,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            10,
+            23,
+            29,
+            60
+          ],
+          "visible_height": 37,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 60,
+          "alpha_sha256": "e3918f3828419f78c93366101e5af993893be594c295d17433c5df163f163504",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.scimitar.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "weapon.hand axe.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        305,
+        790,
+        405,
+        900
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/004-weapon.hand_axe.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          305,
+          790,
+          405,
+          900
+        ],
+        "size": [
+          108,
+          118
+        ],
+        "source_crop_size": [
+          100,
+          110
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          6,
+          20,
+          78,
+          94
+        ],
+        "alpha_bbox": [
+          10,
+          24,
+          82,
+          98
+        ],
+        "retained_pixels": 1944,
+        "background_pixels_removed": 9056,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 416,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/004-weapon.hand_axe.dragonfang.png",
+        "output_sha256": "7f068fa680ce327d423d80c480a231e35933c3c3211f11335fba2455c341d28c"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/004-weapon.hand_axe.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/004-weapon.hand_axe.dragonfang.export.json",
+        "sha256": "e4bc977c4a4fb442a8c36514bf1c44834b9ba149c6ec453941ad1db4c045fb93",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          16,
+          12,
+          28
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 16,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            16,
+            13,
+            28
+          ],
+          "visible_height": 12,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6df95326d33064bb9fb445bc5a161f3daa51e354a8fc3aefa2beaf6320461a1d",
+          "state_occurrence_index": 4,
+          "state_name": "weapon.hand axe.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/004-weapon.hand_axe.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/004-weapon.hand_axe.dragonfang.export.json",
+        "sha256": "51c39c61376cbe2ec56968b8e5814e9fb588766804c22b4325e77437bfdcd5cd",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          28,
+          30,
+          57
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 57,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 80,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            28,
+            26,
+            57
+          ],
+          "visible_height": 29,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 57,
+          "alpha_sha256": "c4b0c6f962789b2ebe9b2f941f88cd6cf3c611839a7e1c6a2e14081d2616e43b",
+          "state_occurrence_index": 4,
+          "state_name": "weapon.hand axe.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 5,
+      "state_name": "weapon.battle axe.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        275,
+        935,
+        410,
+        1070
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/005-weapon.battle_axe.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          275,
+          935,
+          410,
+          1070
+        ],
+        "size": [
+          143,
+          143
+        ],
+        "source_crop_size": [
+          135,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          24,
+          110,
+          122
+        ],
+        "alpha_bbox": [
+          27,
+          28,
+          114,
+          126
+        ],
+        "retained_pixels": 2750,
+        "background_pixels_removed": 15475,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 536,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/005-weapon.battle_axe.dragonfang.png",
+        "output_sha256": "cf2a7d8d246d7d4e0d2d8745d335d82e4b605c1c19f0aacaa063617cfdf5eda2"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/005-weapon.battle_axe.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/005-weapon.battle_axe.dragonfang.export.json",
+        "sha256": "e8d9e459cd56f027d323c77c95d101603e1ca681e0d1a3311aa652b73f4dc3e2",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          12,
+          15,
+          29
+        ],
+        "visible_height": 17,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 20,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            12,
+            14,
+            29
+          ],
+          "visible_height": 17,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "18147a0dea430237d80be6aae737cbf216b03a5612d04f5a16142d30f395e6b4",
+          "state_occurrence_index": 5,
+          "state_name": "weapon.battle axe.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/005-weapon.battle_axe.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/005-weapon.battle_axe.dragonfang.export.json",
+        "sha256": "ce206fd326a47ba916b3e30b702268d91ad7a0898bee5f726882229eba9bcfb1",
+        "size": [
+          77,
+          64
+        ],
+        "alpha_bbox": [
+          3,
+          21,
+          39,
+          61
+        ],
+        "visible_height": 40,
+        "baseline_exclusive": 61,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 100,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            3,
+            21,
+            26,
+            61
+          ],
+          "visible_height": 40,
+          "visible_width": 23,
+          "bottom_baseline_exclusive": 61,
+          "alpha_sha256": "c1d05f3fc51da7bafaf7c7fcd8fe24deca3fa72be5fec2763fdac04c86e9f9f7",
+          "state_occurrence_index": 5,
+          "state_name": "weapon.battle axe.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 6,
+      "state_name": "weapon.spear.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        295,
+        1070,
+        405,
+        1265
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/006-weapon.spear.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          295,
+          1070,
+          405,
+          1265
+        ],
+        "size": [
+          118,
+          203
+        ],
+        "source_crop_size": [
+          110,
+          195
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          16,
+          17,
+          87,
+          186
+        ],
+        "alpha_bbox": [
+          20,
+          21,
+          91,
+          190
+        ],
+        "retained_pixels": 2713,
+        "background_pixels_removed": 18737,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 606,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/006-weapon.spear.dragonfang.png",
+        "output_sha256": "70c2622b76ca611b6e4c085a24b19efd3af4c431c35198442e8c678a79b1b7c7"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/006-weapon.spear.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/006-weapon.spear.dragonfang.export.json",
+        "sha256": "637dfc86cc48ff2b5ac3ab2138ae009798bc510f9110f5e9db689fc4b3a0347f",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          1,
+          14,
+          32
+        ],
+        "visible_height": 31,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 24,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            1,
+            14,
+            32
+          ],
+          "visible_height": 31,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "9301fe6fce1f928342327fd9ad879c24cd6a73b1131f5b8366b5e22d5e455192",
+          "state_occurrence_index": 6,
+          "state_name": "weapon.spear.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/006-weapon.spear.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/006-weapon.spear.dragonfang.export.json",
+        "sha256": "2283c0771df3ff96caa0bd2b79e82acd5cba571fd9b551b7a08f8fe581715c97",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          2,
+          28,
+          64
+        ],
+        "visible_height": 62,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 120,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            2,
+            27,
+            64
+          ],
+          "visible_height": 62,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "bd129ff7afe98203dcd7f62b4b794073f1eb45cd0e47c9f4456c287aed58c24b",
+          "state_occurrence_index": 6,
+          "state_name": "weapon.spear.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 7,
+      "state_name": "weapon.halberd.dragonfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+      "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "crop_box": [
+        285,
+        1260,
+        410,
+        1495
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/007-weapon.halberd.dragonfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonfang/page-01.png",
+        "source_sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+        "crop_box": [
+          285,
+          1260,
+          410,
+          1495
+        ],
+        "size": [
+          133,
+          243
+        ],
+        "source_crop_size": [
+          125,
+          235
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          21,
+          17,
+          108,
+          209
+        ],
+        "alpha_bbox": [
+          25,
+          21,
+          112,
+          213
+        ],
+        "retained_pixels": 3401,
+        "background_pixels_removed": 25974,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 716,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/007-weapon.halberd.dragonfang.png",
+        "output_sha256": "b9ddd89b974b4067b84405a532856303e6b3add7499be1b629fa946dbfd8110b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/007-weapon.halberd.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/007-weapon.halberd.dragonfang.export.json",
+        "sha256": "92589b549f4a5a8bdf500f90302eb8b6e3b8ba7b7f89a6e2944dc7569b938e34",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          3,
+          14,
+          32
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+          "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+          "cell_index": 28,
+          "atlas_size": [
+            192,
+            192
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            3,
+            14,
+            32
+          ],
+          "visible_height": 29,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "1b383dedf69faef754a1761e73a5879d51e6f93d29b14c67a9e70d809c4a61b9",
+          "state_occurrence_index": 7,
+          "state_name": "weapon.halberd.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/007-weapon.halberd.dragonfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonfang/007-weapon.halberd.dragonfang.export.json",
+        "sha256": "4849e6e2367d2308df0f3c1d6f92974f888d685ce824f1ffd5e953020cd2ccf6",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          5,
+          29,
+          64
+        ],
+        "visible_height": 59,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonfang.dmi",
+          "sha256": "14ab97d975ffbdd035e6c621ad0211653655faf97aeaabdbf6b6c2fae5a21f5f",
+          "cell_index": 140,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            5,
+            27,
+            64
+          ],
+          "visible_height": 59,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "f3d30c8e12462f3097428fdbc513e2f70be6f6be553479f480f20711055e19c7",
+          "state_occurrence_index": 7,
+          "state_name": "weapon.halberd.dragonfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6764c9b468d4e6620d74fd7c665e0b7126df1fb479b28804770a8ec7e3eda8c1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    }
+  ],
+  "state_count": 8,
+  "cutout_count": 8,
+  "height_export_count": 16,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragonfang-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragonfang-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

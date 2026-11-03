@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:33.932566+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/chitin/004-weapon.battle_axe.chitin.png",
+    "sha256": "955bc1410aaefe378bfd98d09f565e9eb1fb9ce9f08a2617b1019eefec06c5e3",
+    "size": [
+      127,
+      135
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      121,
+      129
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 12575,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      121,
+      129
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      121,
+      129
+    ],
+    "source_crop_size": [
+      115,
+      123
+    ],
+    "crop_rgba_sha256": "2a6939f20a05b2e88a38fdd5b9bab41983995ac905f1fd82d0c61ed4a7d9ea6b",
+    "discarded_pixel_count": 3000,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/chitin.dmi",
+    "sha256": "67750d73c6dd1bbd1f4fb2a7f1cb41c5265bc2c78172df23a0614e1c98369726",
+    "cell_index": 80,
+    "atlas_size": [
+      1216,
+      1152
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      3,
+      22,
+      26,
+      61
+    ],
+    "visible_height": 39,
+    "visible_width": 23,
+    "bottom_baseline_exclusive": 61,
+    "alpha_sha256": "92a145d8d4632669e8b3161ed58ac3cebb556d6cb21e2c2ee1aaa15774ab7230",
+    "state_occurrence_index": 4,
+    "state_name": "weapon.battle axe.chitin",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "5"
+      ],
+      [
+        "delay",
+        "1,1,1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "339f631ca85af1472f28a4abf934b1c843ad1b8a5f2d0d0c1fdec1d25dc30f81"
+  },
+  "placement": {
+    "target_visible_height": 39,
+    "proportional_content_size": [
+      36,
+      39
+    ],
+    "uniform_scale": 0.3170731707317073,
+    "actual_axis_scales": [
+      0.3130434782608696,
+      0.3170731707317073
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      77,
+      64
+    ],
+    "destination_box": [
+      3,
+      22,
+      39,
+      61
+    ],
+    "actual_alpha_bbox": [
+      3,
+      22,
+      39,
+      61
+    ],
+    "actual_visible_height": 39,
+    "actual_visible_width": 36,
+    "bottom_baseline_exclusive": 61,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/chitin/004-weapon.battle_axe.chitin.png",
+    "sha256": "ea7e89e61db4c89ca77e308b66f0188d56a1193d538fb1daae9c83dda4d91ee6",
+    "size": [
+      77,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      3,
+      22,
+      39,
+      61
+    ],
+    "alpha_sha256": "6eaf8880a9ebf951648842bc85425b507300fc686f9857a90debceb8879a2d2e",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

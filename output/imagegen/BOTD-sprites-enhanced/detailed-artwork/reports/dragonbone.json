@@ -1,0 +1,471 @@
+{
+  "family": "dragonbone",
+  "classification": "AI_detailed_enhanced_sheet_artwork",
+  "worker_model": "gpt-6.1-sol",
+  "tool": "builtin_image_gen",
+  "external_api_used": false,
+  "native_export": false,
+  "runtime_installed": false,
+  "pages": [
+    {
+      "page": 1,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "size": [
+        1303,
+        1207
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-afc5b651-79c8-4ef2-a0d9-9006c2e07d0f.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/dragonbone/page-01.png",
+      "source_sha256": "d52743b64514f748c45ec685a580d44b35369bddd3db8e06429e810af3749b1a",
+      "expected_rows": [
+        {
+          "state_index": 0,
+          "state_name": "weapon.longsword.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 0
+        },
+        {
+          "state_index": 1,
+          "state_name": "weapon.battle axe.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 4
+        },
+        {
+          "state_index": 2,
+          "state_name": "weapon.warhammer.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 8
+        },
+        {
+          "state_index": 3,
+          "state_name": "weapon.halberd.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 12
+        },
+        {
+          "state_index": 4,
+          "state_name": "weapon.bow.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 16
+        },
+        {
+          "state_index": 5,
+          "state_name": "helmet.kettle.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 20
+        },
+        {
+          "state_index": 6,
+          "state_name": "helmet.horned.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 24
+        }
+      ],
+      "expected_visible_cells": 28,
+      "observed_visible_cells": 28,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-dragonbone-page-01.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "All7rows28views retained incl3-pieceWlongsword,Whalberd enddot,tinyWbow speck. Ivorybone+brown grips; singlechoppingblade/fl atpoll axeconstruction.",
+      "observed_rows": [
+        {
+          "state_index": 0,
+          "state_name": "weapon.longsword.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 1,
+          "state_name": "weapon.battle axe.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 2,
+          "state_name": "weapon.warhammer.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 3,
+          "state_name": "weapon.halberd.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 4,
+          "state_name": "weapon.bow.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 5,
+          "state_name": "helmet.kettle.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 6,
+          "state_name": "helmet.horned.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "generation_calls": 1
+    },
+    {
+      "page": 2,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "size": [
+        1284,
+        1225
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-b224d7c0-e448-4967-b651-eb6f5ef10844.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/dragonbone/page-02.png",
+      "source_sha256": "7b921f044160dfa854a74b1457035529698b74d018d8810088db855db7c28ccd",
+      "expected_rows": [
+        {
+          "state_index": 7,
+          "state_name": "helmet.great helm.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 28
+        },
+        {
+          "state_index": 8,
+          "state_name": "chest.plate.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 32
+        },
+        {
+          "state_index": 9,
+          "state_name": "chest.lamellar.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 36
+        },
+        {
+          "state_index": 10,
+          "state_name": "legs.plate.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 40
+        },
+        {
+          "state_index": 11,
+          "state_name": "arms.plate.dragonbone.L",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            3
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 44
+        },
+        {
+          "state_index": 12,
+          "state_name": "arms.plate.dragonbone.R",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 48
+        },
+        {
+          "state_index": 13,
+          "state_name": "shield.round.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 52
+        }
+      ],
+      "expected_visible_cells": 26,
+      "observed_visible_cells": 26,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-dragonbone-page-02.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "Correct7armorrows26views with complementary emptyarmslots; boneridge chestconstruction, brownwoodroundshield andpairedEedgefragments retained.",
+      "observed_rows": [
+        {
+          "state_index": 7,
+          "state_name": "helmet.great helm.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 8,
+          "state_name": "chest.plate.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 9,
+          "state_name": "chest.lamellar.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 10,
+          "state_name": "legs.plate.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 11,
+          "state_name": "arms.plate.dragonbone.L",
+          "observed_occupied_directions": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "state_index": 12,
+          "state_name": "arms.plate.dragonbone.R",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "state_index": 13,
+          "state_name": "shield.round.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "generation_calls": 1
+    },
+    {
+      "page": 3,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-03.png",
+      "sha256": "6dbec7557866cb44b7590a0dbda60a35e71a37bd72fe24f89a930af579af8b02",
+      "size": [
+        2170,
+        725
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-624f7f6f-b531-4725-846b-689253c7c183.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/dragonbone/page-03.png",
+      "source_sha256": "c54df3d57c046f3df6cfa4845f2b816b2cbb5b3a28167f2866c24dabed92a700",
+      "expected_rows": [
+        {
+          "state_index": 14,
+          "state_name": "shield.kite.dragonbone",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 56
+        }
+      ],
+      "expected_visible_cells": 4,
+      "observed_visible_cells": 4,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-dragonbone-page-03.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "Singlekite shieldrow4views; redface, ivoryrim andsmall lowercentralbonemotif; narrowwoodenback andtwoEedgefragments.",
+      "observed_rows": [
+        {
+          "state_index": 14,
+          "state_name": "shield.kite.dragonbone",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "generation_calls": 1
+    }
+  ],
+  "expected_pages": 3,
+  "saved_pages": 3,
+  "status": "complete_self_review_pass_pending_independent_review",
+  "passed_pages": 3,
+  "ordered_states": 15,
+  "occupied_views": 58,
+  "source_preview_unchanged": true,
+  "generation_calls": 3
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_read_only_visual_and_native_data_check",
+  "status": "pass_reference_art_after_sleep_pose_repair",
+  "runtime_ready": false,
+  "source_relative": "Races64/Goblins.png",
+  "page": 1,
+  "files": {
+    "original": {
+      "path": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Goblins.png",
+      "sha256": "9bf0c9d7d53dc29f8b9bb9900e8194c17b6ce424c6b249ef0082a671f72e5359",
+      "dimensions": [
+        2526,
+        3388
+      ],
+      "mode": "RGBA"
+    },
+    "native": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+      "sha256": "52c6f3fa00c8dce18e38eeb8d7b4b07cd6ac37fed90c6752e528221b60331cef",
+      "dimensions": [
+        640,
+        640
+      ],
+      "mode": "RGBA"
+    },
+    "output": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+      "sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    }
+  },
+  "review_method": "Original preview and generated page inspected with view_image; native first default and first Sleep RGBA cells compared without modifying raster files; manual counts and pose/facing review.",
+  "included_states": [
+    "",
+    "Sleep"
+  ],
+  "represented_native_cell_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "expected_occupied_cells": 14,
+  "observed_occupied_cells": 14,
+  "expected_empty_cells": 2,
+  "observed_empty_cells": 2,
+  "checks": {
+    "twelve_default_views_present": "pass",
+    "three_default_animation_phases_distinguishable": "pass_at_reference_level",
+    "direction_columns_front_back_east_west": "pass",
+    "both_arms_and_legs_retained": "pass_at_visible_anatomy_level",
+    "sleep_eyes_dark_closed": "pass",
+    "sleep_second_frame_z_only": "pass",
+    "sleep_remaining_columns_empty": "pass",
+    "sleep_body_pose_matches_source": "pass_at_reference_level",
+    "labels_readable": "pass"
+  },
+  "findings": [
+    "Default twelveviews and directionorder retained; all three animationphases remain distinguishable at referencelevel.",
+    "Sleep body is now neutralstanding with the same broad footstance as defaultfrontframe1; eyesremain darkclosed.",
+    "Separate Z-only bubble and twoemptySleep slots retained; nootherfigureorlabel visiblylost."
+  ],
+  "native_sleep_comparison": {
+    "default_cell_0based": 0,
+    "sleep_cell_0based": 12,
+    "frame_dimensions": [
+      64,
+      64
+    ],
+    "different_pixel_count": 52,
+    "difference_bbox_xyxy": [
+      26,
+      29,
+      38,
+      40
+    ],
+    "all_body_pixels_outside_eye_region_identical": true,
+    "explanation": "Only the facial eye area differs; source does not introduce a seated or crouched body pose for Sleep."
+  },
+  "issues": [
+    {
+      "id": "goblins-sleep-body-pose",
+      "severity": "moderate",
+      "cell": "output row4 column1",
+      "requested_correction": "Use same standing body and foot placement as output row1 column1, change eyes to dark/closed. Preserve all other13 occupied cells and labels.",
+      "status": "resolved",
+      "resolution": "Targeted imagegen repair restored neutral standing Sleep body; independently reviewed final hash."
+    }
+  ],
+  "limitations": [
+    "Generated reference page has changed pixel geometry, scale, spacing, background and alpha; no native registration or DMI metadata is preserved.",
+    "Phase distinctions are visual reference checks, not proof of exact source animation equivalence.",
+    "Only first2 of17 native states are represented on this page; cannot establish full Goblins source completion."
+  ],
+  "mutations": "Only this JSON review was written; raster images and shared manifest unchanged.",
+  "history": [
+    {
+      "status": "needs_sleep_pose_correction",
+      "output": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+        "sha256": "45dde7df23b0dc2c8a5448b8b75245c64325fc76bda3c8aa1559effe14b80d7f",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "mode": "RGB"
+      },
+      "findings": [
+        "Default frame1 shows standing pose; frame2 and3 show distinct stepping/swing phases in all four directions, with front/back and opposed profiles retained.",
+        "Sleep row contains one goblin and one separate white Z bubble; no extra goblin in the second frame; other two slots are empty.",
+        "Sleep goblin appears seated/crouched with splayed forward feet, while native Sleep frame1 retains the same neutral standing body as default front frame1."
+      ],
+      "issues": [
+        {
+          "id": "goblins-sleep-body-pose",
+          "severity": "moderate",
+          "cell": "output row4 column1",
+          "requested_correction": "Use same standing body and foot placement as output row1 column1, change eyes to dark/closed. Preserve all other13 occupied cells and labels."
+        }
+      ]
+    }
+  ]
+}

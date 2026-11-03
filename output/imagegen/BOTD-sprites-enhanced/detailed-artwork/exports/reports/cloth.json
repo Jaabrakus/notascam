@@ -1,0 +1,3327 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "cloth",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "chest.robe.black",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        50,
+        600,
+        180
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/000-chest.robe.black.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_specific_alpha_restoration_reviewed",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          50,
+          600,
+          180
+        ],
+        "size": [
+          173,
+          138
+        ],
+        "source_crop_size": [
+          165,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          26,
+          17,
+          142,
+          120
+        ],
+        "alpha_bbox": [
+          30,
+          21,
+          146,
+          124
+        ],
+        "retained_pixels": 7894,
+        "background_pixels_removed": 13556,
+        "enclosed_candidate_pixels_retained": 71,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.0,
+          "border_background_sample_count": 586,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging",
+          "Restore original source alpha only inside reviewed recorded robe protection mask; RGB unchanged"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/000-chest.robe.black.png",
+        "output_sha256": "f3a4c3cc996566ac0b5702b45d4d9b10b0db347d28c4815dd8ec4fc8a7346595",
+        "manual_alpha_protection": {
+          "input_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/candidates/held-height-crops/source-cutouts/cloth/000-chest.robe.black.png",
+          "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+          "source_crop": [
+            435,
+            50,
+            600,
+            180
+          ],
+          "source_crop_coordinate_polygon": [
+            [
+              61,
+              28
+            ],
+            [
+              109,
+              28
+            ],
+            [
+              109,
+              33
+            ],
+            [
+              120,
+              33
+            ],
+            [
+              120,
+              38
+            ],
+            [
+              126,
+              38
+            ],
+            [
+              126,
+              49
+            ],
+            [
+              121,
+              49
+            ],
+            [
+              121,
+              61
+            ],
+            [
+              115,
+              61
+            ],
+            [
+              115,
+              69
+            ],
+            [
+              110,
+              69
+            ],
+            [
+              110,
+              86
+            ],
+            [
+              116,
+              86
+            ],
+            [
+              116,
+              94
+            ],
+            [
+              122,
+              94
+            ],
+            [
+              122,
+              101
+            ],
+            [
+              129,
+              101
+            ],
+            [
+              129,
+              107
+            ],
+            [
+              115,
+              107
+            ],
+            [
+              115,
+              116
+            ],
+            [
+              57,
+              116
+            ],
+            [
+              57,
+              107
+            ],
+            [
+              44,
+              107
+            ],
+            [
+              44,
+              101
+            ],
+            [
+              50,
+              101
+            ],
+            [
+              50,
+              94
+            ],
+            [
+              55,
+              94
+            ],
+            [
+              55,
+              86
+            ],
+            [
+              61,
+              86
+            ],
+            [
+              61,
+              69
+            ],
+            [
+              55,
+              69
+            ],
+            [
+              55,
+              62
+            ],
+            [
+              49,
+              62
+            ],
+            [
+              49,
+              49
+            ],
+            [
+              43,
+              49
+            ],
+            [
+              43,
+              39
+            ],
+            [
+              49,
+              39
+            ],
+            [
+              49,
+              33
+            ],
+            [
+              61,
+              33
+            ]
+          ],
+          "source_padding": [
+            4,
+            4
+          ],
+          "restored_source_alpha_pixels": 3016,
+          "RGB_changed": 0,
+          "mask_sha256": "efcba0cfa5eb29a5c5d7e6b0c58412b188c28e36e0280c9630f9baf943a5b5cb",
+          "tail_rules": "Within source-crop y85:120 and left-tail x26:55/right-tail x115:143, restore alpha between original nearblack ink(maxRGB<=18) row extrema; main body protected by recorded polygon",
+          "tail_local_patches_xyxy": [
+            [
+              43,
+              100,
+              49,
+              107
+            ],
+            [
+              120,
+              100,
+              126,
+              107
+            ]
+          ],
+          "enclosed_hole_finalization": "After reviewed inner-body restoration, fill enclosed alpha0 holes; this robe has no intentionally transparent enclosed holes",
+          "enclosed_holes_restored": 28,
+          "restoration_mask": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/reports/cloth-black-alpha-restoration-mask.png"
+        }
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/000-chest.robe.black.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/000-chest.robe.black.export.json",
+        "sha256": "b5285dd2a3b7e3558d5dfd8cd6b513ba7f1fe5a0b29baaf0ef87d99de593d27a",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          27,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 0,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 0,
+          "state_name": "chest.robe.black",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/000-chest.robe.black.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/000-chest.robe.black.export.json",
+        "sha256": "ea0690eca8a908a36cc23f661fa71ca51b278423eeffb3284a33805e1898a903",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          53,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 0,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 0,
+          "state_name": "chest.robe.black",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Gray fabric protected by reviewed source-specific alpha restoration mask,3016sourcealpha pixels restored; sourceRGB unchanged. Conservative original tail edge grooves retained."
+      ],
+      "alpha_restoration_provenance": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/reports/cloth-black-alpha-restoration.json"
+    },
+    {
+      "state_index": 1,
+      "state_name": "chest.robe.red",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        185,
+        600,
+        320
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/001-chest.robe.red.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          185,
+          600,
+          320
+        ],
+        "size": [
+          173,
+          143
+        ],
+        "source_crop_size": [
+          165,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          25,
+          14,
+          142,
+          119
+        ],
+        "alpha_bbox": [
+          29,
+          18,
+          146,
+          123
+        ],
+        "retained_pixels": 8469,
+        "background_pixels_removed": 13806,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.0,
+          "border_background_sample_count": 596,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/001-chest.robe.red.png",
+        "output_sha256": "4bc08e912919b85a960227e1d28d834b110ac1a23cf56348099b7e4219d9b081"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/001-chest.robe.red.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/001-chest.robe.red.export.json",
+        "sha256": "73f25868677a3fa2fad4c3fad7f72ad5483122a35b2f31890e74c2fffbed1919",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          27,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 4,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 1,
+          "state_name": "chest.robe.red",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/001-chest.robe.red.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/001-chest.robe.red.export.json",
+        "sha256": "42f94d0de4cb4be88471203167d3dd8938e9ffb2f8fd7a077fbda7726c4a2c42",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          53,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 12,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 1,
+          "state_name": "chest.robe.red",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 2,
+      "state_name": "chest.robe.white",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        325,
+        600,
+        455
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/002-chest.robe.white.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          325,
+          600,
+          455
+        ],
+        "size": [
+          173,
+          138
+        ],
+        "source_crop_size": [
+          165,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          25,
+          13,
+          142,
+          116
+        ],
+        "alpha_bbox": [
+          29,
+          17,
+          146,
+          120
+        ],
+        "retained_pixels": 7156,
+        "background_pixels_removed": 14294,
+        "enclosed_candidate_pixels_retained": 10,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.0,
+          "border_background_sample_count": 586,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/002-chest.robe.white.png",
+        "output_sha256": "4f4382cc0d420bfd067b880e43f53a7378a6b00b773185657bafce9e6de7e934"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/002-chest.robe.white.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/002-chest.robe.white.export.json",
+        "sha256": "c763e828b9190efa408a8e0639f66f9c1279cfe655b0fb766fe7c5a471925ed2",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          27,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 8,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 2,
+          "state_name": "chest.robe.white",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "lanczos",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/002-chest.robe.white.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/002-chest.robe.white.export.json",
+        "sha256": "a30a21853c3a95a756f9958916809dab01fe009a0f142edc0e9a69ee9197200a",
+        "size": [
+          69,
+          64
+        ],
+        "alpha_bbox": [
+          17,
+          29,
+          52,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 24,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 2,
+          "state_name": "chest.robe.white",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Minor conservative gray edge residue retained to avoid removing fabric; sourceRGB unchanged."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "chest.robe.brown",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        460,
+        600,
+        595
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/003-chest.robe.brown.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          460,
+          600,
+          595
+        ],
+        "size": [
+          173,
+          143
+        ],
+        "source_crop_size": [
+          165,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          25,
+          16,
+          142,
+          121
+        ],
+        "alpha_bbox": [
+          29,
+          20,
+          146,
+          125
+        ],
+        "retained_pixels": 8286,
+        "background_pixels_removed": 13989,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.0,
+          "border_background_sample_count": 596,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/003-chest.robe.brown.png",
+        "output_sha256": "8ce602c70d3552575c08c61d62b8507ded8647be31c0598e5aac240bb63989d1"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/003-chest.robe.brown.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/003-chest.robe.brown.export.json",
+        "sha256": "61999d92d7e95863dd155c5cdb9166711bf91d75def61a9ad2c839b274302686",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          27,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 12,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 3,
+          "state_name": "chest.robe.brown",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/003-chest.robe.brown.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/003-chest.robe.brown.export.json",
+        "sha256": "e603e90671462351e6a43c7f0d81229e09bffc37821bfa7af6f4859e5251e397",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          53,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 36,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 3,
+          "state_name": "chest.robe.brown",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 4,
+      "state_name": "chest.robe.blue",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        600,
+        600,
+        735
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/004-chest.robe.blue.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          600,
+          600,
+          735
+        ],
+        "size": [
+          173,
+          143
+        ],
+        "source_crop_size": [
+          165,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          24,
+          17,
+          142,
+          119
+        ],
+        "alpha_bbox": [
+          28,
+          21,
+          146,
+          123
+        ],
+        "retained_pixels": 7996,
+        "background_pixels_removed": 14279,
+        "enclosed_candidate_pixels_retained": 18,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.0,
+          "border_background_sample_count": 596,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/004-chest.robe.blue.png",
+        "output_sha256": "78515ad1c84cf784d7e5692eb393324750f761f96a314fd7e8de88fd8838ca6a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/004-chest.robe.blue.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/004-chest.robe.blue.export.json",
+        "sha256": "0426f8dc31b82cbf563ab5f0add08c98d72b287eb31013c535eef3df58e3bf69",
+        "size": [
+          35,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          28,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 16,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 4,
+          "state_name": "chest.robe.blue",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/004-chest.robe.blue.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/004-chest.robe.blue.export.json",
+        "sha256": "e75b999511e871dcbb5da3e4429acb5b4bd2dd1a46aee15c2ec74b083fdd1cf4",
+        "size": [
+          69,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          54,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 48,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 4,
+          "state_name": "chest.robe.blue",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Minor conservative gray edge residue retained to avoid removing fabric; sourceRGB unchanged."
+      ]
+    },
+    {
+      "state_index": 5,
+      "state_name": "chest.robe.purple",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        740,
+        600,
+        875
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/005-chest.robe.purple.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          740,
+          600,
+          875
+        ],
+        "size": [
+          173,
+          143
+        ],
+        "source_crop_size": [
+          165,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          24,
+          13,
+          142,
+          118
+        ],
+        "alpha_bbox": [
+          28,
+          17,
+          146,
+          122
+        ],
+        "retained_pixels": 8611,
+        "background_pixels_removed": 13664,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.0,
+          "border_background_sample_count": 596,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/005-chest.robe.purple.png",
+        "output_sha256": "539747010fea0e6aaa7094f57b4b156652a69ffe5dd087f2a3d6a3d4fbe382e3"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/005-chest.robe.purple.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/005-chest.robe.purple.export.json",
+        "sha256": "72aba24723a3b2a1bf9cfe9007d45c54c296ac15da696cf1a48e3330e738540e",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          27,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 20,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 5,
+          "state_name": "chest.robe.purple",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/005-chest.robe.purple.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/005-chest.robe.purple.export.json",
+        "sha256": "98ec50ac52111d5cda314b45724c17869e52399002d817d2eea8e39ef3c8b4b5",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          53,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 60,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 5,
+          "state_name": "chest.robe.purple",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 6,
+      "state_name": "chest.robe.crimson",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+      "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "crop_box": [
+        435,
+        880,
+        600,
+        1015
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/006-chest.robe.crimson.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-01.png",
+        "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+        "crop_box": [
+          435,
+          880,
+          600,
+          1015
+        ],
+        "size": [
+          173,
+          143
+        ],
+        "source_crop_size": [
+          165,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          11,
+          142,
+          118
+        ],
+        "alpha_bbox": [
+          27,
+          15,
+          146,
+          122
+        ],
+        "retained_pixels": 8500,
+        "background_pixels_removed": 13775,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 67.25,
+          "border_background_sample_count": 596,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/006-chest.robe.crimson.png",
+        "output_sha256": "de10657c4ba8f714173d13f2c15ad2fd6565b3e957268a4824c9aae26f8053c6"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/006-chest.robe.crimson.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/006-chest.robe.crimson.export.json",
+        "sha256": "f46d22d083a1e7753d3cd515aee68d91cd950a064bed1c85c1aa6690fab9031e",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          27,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 24,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 6,
+          "state_name": "chest.robe.crimson",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/006-chest.robe.crimson.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/006-chest.robe.crimson.export.json",
+        "sha256": "954a2928bb3faeb41f23d4bffb78abb77a090ab6704b1a0e74b90af258dd84b2",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          53,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 72,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 6,
+          "state_name": "chest.robe.crimson",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 7,
+      "state_name": "chest.robe.green",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        375,
+        80,
+        550,
+        230
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/007-chest.robe.green.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          375,
+          80,
+          550,
+          230
+        ],
+        "size": [
+          183,
+          158
+        ],
+        "source_crop_size": [
+          175,
+          150
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          27,
+          22,
+          144,
+          137
+        ],
+        "alpha_bbox": [
+          31,
+          26,
+          148,
+          141
+        ],
+        "retained_pixels": 9292,
+        "background_pixels_removed": 16958,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 646,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/007-chest.robe.green.png",
+        "output_sha256": "85afe552e07a4c093ac0e41f8b1c4603efd686c88c172f3dd66d6e19d7d06d37"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/007-chest.robe.green.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/007-chest.robe.green.export.json",
+        "sha256": "907771fde9d891d8db29d563a5e0511419b7d92f247f04a8ad5f18ae308e952e",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          25,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 28,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 7,
+          "state_name": "chest.robe.green",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/007-chest.robe.green.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/007-chest.robe.green.export.json",
+        "sha256": "81bf57f99eb22f3d91a73c188e31ce5d46dfe369727cfb3c5ecf7767aac6d593",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          50,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 84,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 7,
+          "state_name": "chest.robe.green",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "lanczos",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 8,
+      "state_name": "chest.robe.grey",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        375,
+        245,
+        550,
+        395
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/008-chest.robe.grey.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          375,
+          245,
+          550,
+          395
+        ],
+        "size": [
+          183,
+          158
+        ],
+        "source_crop_size": [
+          175,
+          150
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          25,
+          20,
+          145,
+          136
+        ],
+        "alpha_bbox": [
+          29,
+          24,
+          149,
+          140
+        ],
+        "retained_pixels": 9783,
+        "background_pixels_removed": 16467,
+        "enclosed_candidate_pixels_retained": 801,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 646,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/008-chest.robe.grey.png",
+        "output_sha256": "316f359c0d8078ddbee11c75128c01008f7e031c2bbfaa030f7559ecf5ab1d7d"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/008-chest.robe.grey.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/008-chest.robe.grey.export.json",
+        "sha256": "6f4df1a89275d4ddce9d3a3ef315d666873003f317b31245a5bb4dbd7e6ef620",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          26,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 32,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "ce7a28e184a335287ecbc40179acd606a903ccbaf371598b0e3688434e29898f",
+          "state_occurrence_index": 8,
+          "state_name": "chest.robe.grey",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/008-chest.robe.grey.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/008-chest.robe.grey.export.json",
+        "sha256": "a44592c58d52e778902dda2b22b5920ab9cf8eb7f6aa22429da22fee0d386fb8",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          29,
+          50,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 96,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            29,
+            49,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 34,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "8942bc27c2dafebbc814de0dd1c668c706aff9120b3521926b00a6c7978b7410",
+          "state_occurrence_index": 8,
+          "state_name": "chest.robe.grey",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 9,
+      "state_name": "chest.robe.dragonrobe",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        365,
+        405,
+        555,
+        565
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/009-chest.robe.dragonrobe.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          365,
+          405,
+          555,
+          565
+        ],
+        "size": [
+          198,
+          168
+        ],
+        "source_crop_size": [
+          190,
+          160
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          22,
+          171,
+          144
+        ],
+        "alpha_bbox": [
+          27,
+          26,
+          175,
+          148
+        ],
+        "retained_pixels": 11631,
+        "background_pixels_removed": 18769,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 696,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/009-chest.robe.dragonrobe.png",
+        "output_sha256": "05d03e5f80bfeb4b73f64a0a3edcd4e568c5d8e028d20bca2f27b90b6e132b59"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/009-chest.robe.dragonrobe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/009-chest.robe.dragonrobe.export.json",
+        "sha256": "78ae1872b4a7c651f614492919797dfd511b707ca270e32e7121e60c8eb1c0aa",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          13,
+          29,
+          32
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 36,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            13,
+            25,
+            32
+          ],
+          "visible_height": 19,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "3d07e1315b0ba9ffcefc886838c9196379d7a987df2aadb1dc820b8124a74443",
+          "state_occurrence_index": 9,
+          "state_name": "chest.robe.dragonrobe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/009-chest.robe.dragonrobe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/009-chest.robe.dragonrobe.export.json",
+        "sha256": "517ac0f910e8a85f6bef46552554d4f71d3595065e6ab63e23d82f21ea8c6132",
+        "size": [
+          70,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          26,
+          57,
+          63
+        ],
+        "visible_height": 37,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 108,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            12,
+            26,
+            51,
+            63
+          ],
+          "visible_height": 37,
+          "visible_width": 39,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "f1a8ced162d109640826908306cb97be847cf6ef47da319de7796c2a962538d7",
+          "state_occurrence_index": 9,
+          "state_name": "chest.robe.dragonrobe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 10,
+      "state_name": "chest.robe.spiderrobe",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        355,
+        580,
+        560,
+        755
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/010-chest.robe.spiderrobe.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          355,
+          580,
+          560,
+          755
+        ],
+        "size": [
+          213,
+          183
+        ],
+        "source_crop_size": [
+          205,
+          175
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          26,
+          20,
+          185,
+          156
+        ],
+        "alpha_bbox": [
+          30,
+          24,
+          189,
+          160
+        ],
+        "retained_pixels": 11420,
+        "background_pixels_removed": 24455,
+        "enclosed_candidate_pixels_retained": 923,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 756,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/010-chest.robe.spiderrobe.png",
+        "output_sha256": "f9fc1e282b9e83d2b9932ebdf5b5d11f194618da9ed9f09d7089e5843c7f7d81"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/010-chest.robe.spiderrobe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/010-chest.robe.spiderrobe.export.json",
+        "sha256": "8f4d1439e0521a49234be8be3bde37964e5da84ca3f2a821d1caa11c56a46b45",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          4,
+          10,
+          30,
+          32
+        ],
+        "visible_height": 22,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 40,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            4,
+            10,
+            28,
+            32
+          ],
+          "visible_height": 22,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e8ab5e08b0d3fdf9d4c368a953a6d4ecec4c46f0fd18bf8eb11c39e22b1bf7cf",
+          "state_occurrence_index": 10,
+          "state_name": "chest.robe.spiderrobe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/010-chest.robe.spiderrobe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/010-chest.robe.spiderrobe.export.json",
+        "sha256": "4dd4279cf38f485da20396bcc7e51b1ef286fa322dab53403d9463de947d4eaa",
+        "size": [
+          67,
+          64
+        ],
+        "alpha_bbox": [
+          8,
+          20,
+          58,
+          63
+        ],
+        "visible_height": 43,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 120,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            8,
+            20,
+            55,
+            63
+          ],
+          "visible_height": 43,
+          "visible_width": 47,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "d0c2b2d803da6c2fafafebd825534ee40bbf3fbaff2e4d92693335f84431bf65",
+          "state_occurrence_index": 10,
+          "state_name": "chest.robe.spiderrobe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 11,
+      "state_name": "chest.robe.bonerobe",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        355,
+        775,
+        560,
+        925
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/011-chest.robe.bonerobe.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          355,
+          775,
+          560,
+          925
+        ],
+        "size": [
+          213,
+          158
+        ],
+        "source_crop_size": [
+          205,
+          150
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          16,
+          186,
+          134
+        ],
+        "alpha_bbox": [
+          27,
+          20,
+          190,
+          138
+        ],
+        "retained_pixels": 11586,
+        "background_pixels_removed": 19164,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 706,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/011-chest.robe.bonerobe.png",
+        "output_sha256": "6ee69089d234603c2a2a71e4a23d995debbda81c4139b92abadc2dad194a5d4a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/011-chest.robe.bonerobe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/011-chest.robe.bonerobe.export.json",
+        "sha256": "26941e867968812b33d986d0ce27924ed5cdfd6da2a6d4d7b239542e5ee4bb7b",
+        "size": [
+          37,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          14,
+          31,
+          32
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 44,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            14,
+            26,
+            32
+          ],
+          "visible_height": 18,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "025ee84a8ded232d63f6220e8dfcb7be9f9eef466385e44bf346c980a6d32488",
+          "state_occurrence_index": 11,
+          "state_name": "chest.robe.bonerobe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/011-chest.robe.bonerobe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/011-chest.robe.bonerobe.export.json",
+        "sha256": "96159ba5cadcfbda0854727ad4c6a24530127e805c06173e86cf45dd4853f0a3",
+        "size": [
+          70,
+          64
+        ],
+        "alpha_bbox": [
+          11,
+          29,
+          58,
+          63
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 63,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 132,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            29,
+            52,
+            63
+          ],
+          "visible_height": 34,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 63,
+          "alpha_sha256": "fb0625f8f5831be7849e5293f4a5b05ba575dc1d5d256c897494c2f8de02ef34",
+          "state_occurrence_index": 11,
+          "state_name": "chest.robe.bonerobe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 12,
+      "state_name": "legs.cloth",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        380,
+        955,
+        530,
+        1065
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/012-legs.cloth.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          380,
+          955,
+          530,
+          1065
+        ],
+        "size": [
+          158,
+          118
+        ],
+        "source_crop_size": [
+          150,
+          110
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          25,
+          25,
+          128,
+          92
+        ],
+        "alpha_bbox": [
+          29,
+          29,
+          132,
+          96
+        ],
+        "retained_pixels": 5651,
+        "background_pixels_removed": 10849,
+        "enclosed_candidate_pixels_retained": 51,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 516,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/012-legs.cloth.png",
+        "output_sha256": "151202abef6b738046564997b65f3cbf65128d8a3556c4393eba401cfcb981f5"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/012-legs.cloth.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/012-legs.cloth.export.json",
+        "sha256": "465df855c8e719b014ef3c506f209467f67cde77225113320ca0a568b2515ac0",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          24,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 48,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 12,
+          "state_name": "legs.cloth",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/012-legs.cloth.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/012-legs.cloth.export.json",
+        "sha256": "b30180e8d61d7f96e6735e11a7788a66bb8fd4c87ac00ddae318c88b4ab1682f",
+        "size": [
+          67,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          47,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 144,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 12,
+          "state_name": "legs.cloth",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 13,
+      "state_name": "legs.boots",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+      "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "crop_box": [
+        385,
+        1095,
+        525,
+        1175
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/013-legs.boots.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/cloth/page-02.png",
+        "source_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+        "crop_box": [
+          385,
+          1095,
+          525,
+          1175
+        ],
+        "size": [
+          148,
+          88
+        ],
+        "source_crop_size": [
+          140,
+          80
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          26,
+          24,
+          117,
+          50
+        ],
+        "alpha_bbox": [
+          30,
+          28,
+          121,
+          54
+        ],
+        "retained_pixels": 1927,
+        "background_pixels_removed": 9273,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 436,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/013-legs.boots.png",
+        "output_sha256": "8750266745f44edbe7e28b474009b592417a9530e1bd915b0c3fc55264dd1f3a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/013-legs.boots.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/013-legs.boots.export.json",
+        "sha256": "58f011ca4a6bebd327a249f71c5e6c2adaba1da62ff8e9c69ced5600ee997836",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          10,
+          29,
+          21,
+          32
+        ],
+        "visible_height": 3,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+          "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+          "cell_index": 52,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            29,
+            23,
+            32
+          ],
+          "visible_height": 3,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "7aa61e5e31cf7bcd8f1542018eea3e777b36c11e6eb06b5f60525c6ce8d61d37",
+          "state_occurrence_index": 13,
+          "state_name": "legs.boots",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/013-legs.boots.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/cloth/013-legs.boots.export.json",
+        "sha256": "8138fc4afb52119606767b13a90c85c57aa44e924f9082645be842e9bc871707",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          21,
+          58,
+          42,
+          64
+        ],
+        "visible_height": 6,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/cloth.dmi",
+          "sha256": "693271a7603322571d726c8c843a344fab3ca2bb5afdbd441952ee5a9d93c3f5",
+          "cell_index": 156,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            58,
+            45,
+            64
+          ],
+          "visible_height": 6,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "608e5d5db829dd25bcdcbb4d62a9e8fa542ac67b8173ed87a16228cb7d01a5fd",
+          "state_occurrence_index": 13,
+          "state_name": "legs.boots",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "d8a55c9d9878b4a5c3aea5d9abf6a132e28e6987b6eececd185e7a81bbb46113"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    }
+  ],
+  "state_count": 14,
+  "cutout_count": 14,
+  "height_export_count": 28,
+  "visual_review": {
+    "source_cutout_montage": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/cloth-source-cutouts.png",
+    "height_montage": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/cloth-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

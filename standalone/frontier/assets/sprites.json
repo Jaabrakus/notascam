@@ -1,0 +1,3567 @@
+{
+  "dm_cave": {
+    "source_project": "dungeon-master",
+    "source": "Icons/Cave.dmi",
+    "sha256": "f42e9a409367a7da591cc8e2f0e8df255f61ebe4854f481a3189b580824a3c4c",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 576,
+    "states": [
+      {
+        "name": "CaveFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "CaveWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 1
+      },
+      {
+        "name": "Dig2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 2
+      },
+      {
+        "name": "Wood",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 3
+      },
+      {
+        "name": "Stone",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 4
+      },
+      {
+        "name": "WorkShopMiddle",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 5
+      },
+      {
+        "name": "LeatherBed",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 6
+      },
+      {
+        "name": "Bone",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 7
+      },
+      {
+        "name": "Skull",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 8
+      },
+      {
+        "name": "Shaft",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 9
+      },
+      {
+        "name": "SpearHead",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "Gland",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 11
+      },
+      {
+        "name": "Poison",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "Gold",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 13
+      },
+      {
+        "name": "Diamond",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "Spike",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 15
+      },
+      {
+        "name": "Hole",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 16
+      },
+      {
+        "name": "WoodenDoor",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 17
+      },
+      {
+        "name": "Open",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 21
+      },
+      {
+        "name": "Cage",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 25
+      },
+      {
+        "name": "preg",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 26
+      },
+      {
+        "name": "GoldIngot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 27
+      },
+      {
+        "name": "Bone Helmet",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 28
+      },
+      {
+        "name": "Metal Pick",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 40
+      },
+      {
+        "name": "Metal Dagger",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 52
+      },
+      {
+        "name": "SilverIngot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 64
+      },
+      {
+        "name": "SleepingBag",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 65
+      },
+      {
+        "name": "Fish",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 66
+      },
+      {
+        "name": "SkullPile",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 67
+      },
+      {
+        "name": "Grave",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 68
+      },
+      {
+        "name": "FallTrap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 69
+      },
+      {
+        "name": "sign",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 70
+      },
+      {
+        "name": "Fire",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 74
+      },
+      {
+        "name": "Shell",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 77
+      },
+      {
+        "name": "SilkWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 78
+      },
+      {
+        "name": "SilkWall2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 79
+      },
+      {
+        "name": "Toxic",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 80
+      },
+      {
+        "name": "CaveFish",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 81
+      },
+      {
+        "name": "Un-CutEmerald",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 82
+      },
+      {
+        "name": "Un-CutDiamond",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 83
+      },
+      {
+        "name": "Un-CutRuby",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 84
+      },
+      {
+        "name": "Ruby",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 85
+      },
+      {
+        "name": "Emerald",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 86
+      },
+      {
+        "name": "Iron",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 87
+      },
+      {
+        "name": "IronIngot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 88
+      },
+      {
+        "name": "Silver",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 89
+      },
+      {
+        "name": "LockPick",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 90
+      },
+      {
+        "name": "Snow",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 91
+      },
+      {
+        "name": "snowtree",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 92
+      },
+      {
+        "name": "SilkPost",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 93
+      },
+      {
+        "name": "Desert",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 94
+      },
+      {
+        "name": "Cactus",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 95
+      },
+      {
+        "name": "BonePost",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 96
+      },
+      {
+        "name": "TowerCapSeed",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 97
+      },
+      {
+        "name": "FarmLand",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 98
+      },
+      {
+        "name": "Plant1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 99
+      },
+      {
+        "name": "Plant2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 100
+      },
+      {
+        "name": "Plant3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 101
+      },
+      {
+        "name": "Plant4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 102
+      },
+      {
+        "name": "Plant5",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 103
+      },
+      {
+        "name": "Grass",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 104
+      },
+      {
+        "name": "tree",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 105
+      },
+      {
+        "name": "Deadness",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 106
+      },
+      {
+        "name": "Deadness2",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 109
+      },
+      {
+        "name": "WorkShopLeft",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 112
+      },
+      {
+        "name": "WorkShopRight",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 113
+      },
+      {
+        "name": "WorkShopRight2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 114
+      },
+      {
+        "name": "WorkShopLeft2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 115
+      },
+      {
+        "name": "BoneDoor",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 116
+      },
+      {
+        "name": "BoneWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 120
+      },
+      {
+        "name": "BoneFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 121
+      },
+      {
+        "name": "BoneFloorOLD",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 122
+      },
+      {
+        "name": "Bone Wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 123
+      },
+      {
+        "name": "BoneBridge",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 124
+      },
+      {
+        "name": "TowerCap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 125
+      },
+      {
+        "name": "Wooden Chest",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 126
+      },
+      {
+        "name": "Wagon",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 127
+      },
+      {
+        "name": "Metal Chest",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 128
+      },
+      {
+        "name": "Gold Chest",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 129
+      },
+      {
+        "name": "Silver Chest",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 130
+      },
+      {
+        "name": "Wood Post",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 131
+      },
+      {
+        "name": "Bridge",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 132
+      },
+      {
+        "name": "LavaBridge",
+        "dirs": 1,
+        "frames": 2,
+        "delay": "5,5",
+        "cell_offset": 133
+      },
+      {
+        "name": "NPCWindow",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 135
+      },
+      {
+        "name": "NPCWindow2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 136
+      },
+      {
+        "name": "Wall10",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 137
+      },
+      {
+        "name": "PPlant1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 138
+      },
+      {
+        "name": "PPlant2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 139
+      },
+      {
+        "name": "PPlant3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 140
+      },
+      {
+        "name": "PPlant4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 141
+      },
+      {
+        "name": "PPlant5",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 142
+      },
+      {
+        "name": "Axe",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 143
+      },
+      {
+        "name": "Dark",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 155
+      },
+      {
+        "name": "RibTrap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 156
+      },
+      {
+        "name": "BST",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 157
+      },
+      {
+        "name": "BoneAlarm",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 158
+      },
+      {
+        "name": "DFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 159
+      },
+      {
+        "name": "Tomb",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 160
+      },
+      {
+        "name": "Spade",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 161
+      },
+      {
+        "name": "Table",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 162
+      },
+      {
+        "name": "Bed",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 163
+      },
+      {
+        "name": "Garlic Plant",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 164
+      },
+      {
+        "name": "Portal",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 165
+      },
+      {
+        "name": "Marsh",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 168
+      },
+      {
+        "name": "Tropical1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 169
+      },
+      {
+        "name": "Tropical2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 170
+      },
+      {
+        "name": "Tropical3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 171
+      },
+      {
+        "name": "Tropical4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 172
+      },
+      {
+        "name": "Tropical5",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 173
+      },
+      {
+        "name": "TFish",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 174
+      },
+      {
+        "name": "BlowFish",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 175
+      },
+      {
+        "name": "StoneWall",
+        "dirs": 8,
+        "frames": 1,
+        "cell_offset": 176
+      },
+      {
+        "name": "StoneWall2",
+        "dirs": 8,
+        "frames": 1,
+        "cell_offset": 184
+      },
+      {
+        "name": "Bamboo",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 192
+      },
+      {
+        "name": "Twigs",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 193
+      },
+      {
+        "name": "Sky",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 194
+      },
+      {
+        "name": "Peak",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 195
+      },
+      {
+        "name": "Chasm",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 196
+      },
+      {
+        "name": "Smoke",
+        "dirs": 1,
+        "frames": 4,
+        "delay": "2,2,2,2",
+        "cell_offset": 197
+      },
+      {
+        "name": "Flame",
+        "dirs": 1,
+        "frames": 4,
+        "delay": "1,1,1,1",
+        "cell_offset": 201
+      },
+      {
+        "name": "HellFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 205
+      },
+      {
+        "name": "HellCliff",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 206
+      },
+      {
+        "name": "CakePan",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 207
+      },
+      {
+        "name": "Grain",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 208
+      },
+      {
+        "name": "Flour",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 209
+      },
+      {
+        "name": "Bread",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 210
+      },
+      {
+        "name": "Dough",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 211
+      },
+      {
+        "name": "Oven",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 212
+      },
+      {
+        "name": "NetherFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 213
+      },
+      {
+        "name": "Chair",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 214
+      },
+      {
+        "name": "GoldOven",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 218
+      },
+      {
+        "name": "SilverOven",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 219
+      },
+      {
+        "name": "Cake",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 220
+      },
+      {
+        "name": "EvilAltar",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 221
+      },
+      {
+        "name": "GoodAltar",
+        "dirs": 1,
+        "frames": 4,
+        "delay": "2,2,2,1",
+        "cell_offset": 224
+      },
+      {
+        "name": "Holy Water",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 228
+      },
+      {
+        "name": "DeadGrass",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 231
+      },
+      {
+        "name": "GoodGrass",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 232
+      },
+      {
+        "name": "SandWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 233
+      },
+      {
+        "name": "SandFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 234
+      },
+      {
+        "name": "Stew",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 235
+      },
+      {
+        "name": "Adamantium",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 236
+      },
+      {
+        "name": "AdamantiumIngot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 237
+      },
+      {
+        "name": "NeutralTurf",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 238
+      },
+      {
+        "name": "IllithidFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 239
+      },
+      {
+        "name": "IllithidWall",
+        "dirs": 1,
+        "frames": 2,
+        "delay": "20,4",
+        "cell_offset": 240
+      },
+      {
+        "name": "Acidground",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 242
+      },
+      {
+        "name": "AdaSpire",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 243
+      },
+      {
+        "name": "Silver Dagger",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 244
+      },
+      {
+        "name": "DevourerWall1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 256
+      },
+      {
+        "name": "DevourerWall2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 257
+      },
+      {
+        "name": "DevourerWall3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 258
+      },
+      {
+        "name": "DevourerFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 259
+      },
+      {
+        "name": "DevourerWall4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 260
+      },
+      {
+        "name": "StrongPoison",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 261
+      },
+      {
+        "name": "ArrowSlit",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 262
+      },
+      {
+        "name": "RubyWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 263
+      },
+      {
+        "name": "EmeraldWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 264
+      },
+      {
+        "name": "DiamondWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 265
+      },
+      {
+        "name": "OpenTrapDoor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 266
+      },
+      {
+        "name": "ClosedTrapDoor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 267
+      },
+      {
+        "name": "Elf Wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 268
+      },
+      {
+        "name": "Metal Spike Trap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 269
+      },
+      {
+        "name": "Rope",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 270
+      },
+      {
+        "name": "RopeOff",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 274
+      },
+      {
+        "name": "Dig",
+        "dirs": 1,
+        "frames": 2,
+        "delay": "1,1",
+        "cell_offset": 275
+      },
+      {
+        "name": "Stairs",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 277
+      },
+      {
+        "name": "Up",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 278
+      },
+      {
+        "name": "Hole2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 279
+      },
+      {
+        "name": "KoboldUp",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 280
+      },
+      {
+        "name": "SpiderStairs",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 281
+      },
+      {
+        "name": "SpiderUp",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 282
+      },
+      {
+        "name": "GoblinUp",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 283
+      },
+      {
+        "name": "GoblinStairs",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 284
+      },
+      {
+        "name": "BambooStairs",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 285
+      },
+      {
+        "name": "BambooStairs2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 286
+      },
+      {
+        "name": "DetailedWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 287
+      },
+      {
+        "name": "DetailedFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 288
+      },
+      {
+        "name": "WoodFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 289
+      },
+      {
+        "name": "WoodBridge",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 290
+      },
+      {
+        "name": "WoodWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 291
+      },
+      {
+        "name": "TribalBridge",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 292
+      },
+      {
+        "name": "Tribal",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 293
+      },
+      {
+        "name": "TribalWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 294
+      },
+      {
+        "name": "GoblinFloor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 295
+      },
+      {
+        "name": "GoblinWall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 296
+      }
+    ]
+  },
+  "dm_human": {
+    "source_project": "dungeon-master",
+    "source": "Icons/Human.dmi",
+    "sha256": "003d14a4a8bae5cba0f24f8b7ada255cd749a1561799964f57afd92bf195baec",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 320,
+    "states": [
+      {
+        "name": "",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "Sleep",
+        "dirs": 1,
+        "frames": 2,
+        "delay": "5,5",
+        "cell_offset": 12
+      },
+      {
+        "name": "NoRightArm",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "NoLeftArm",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 26
+      },
+      {
+        "name": "NoArms",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 38
+      },
+      {
+        "name": "NoRightLeg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 50
+      },
+      {
+        "name": "NoLeftLeg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 54
+      },
+      {
+        "name": "NoLeftLegNoRightArm",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 58
+      },
+      {
+        "name": "NoRightLegNoLeftArm",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 62
+      },
+      {
+        "name": "NoLegs",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 66
+      },
+      {
+        "name": "NoRightArmNoRightLeg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 70
+      },
+      {
+        "name": "NoLeftArmNoLeftLeg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 74
+      },
+      {
+        "name": "NoLegsNoRightArm",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 78
+      },
+      {
+        "name": "NoLegsNoLeftArm",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 82
+      },
+      {
+        "name": "None",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 86
+      },
+      {
+        "name": "NoArmsNoLeftLeg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 90
+      },
+      {
+        "name": "NoArmsNoRightLeg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 94
+      }
+    ]
+  },
+  "dm_wooditems": {
+    "source_project": "dungeon-master",
+    "source": "Icons/WoodItems.dmi",
+    "sha256": "b468cf086979239ea975ac948e8e28c012c87555d2b94df14365adc3e823090f",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 448,
+    "states": [
+      {
+        "name": "WoodBow",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "Arrow",
+        "dirs": 8,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "Elf Spear",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 20
+      },
+      {
+        "name": "Bucket",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 32
+      },
+      {
+        "name": "Wooden ChestPlate",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 33
+      },
+      {
+        "name": "Wooden Leggings",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 45
+      },
+      {
+        "name": "Wooden Helmet",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 57
+      },
+      {
+        "name": "Wooden Mace",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 69
+      },
+      {
+        "name": "Wooden Sword",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 81
+      },
+      {
+        "name": "Wooden Axe",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 93
+      },
+      {
+        "name": "Elf Arrow",
+        "dirs": 8,
+        "frames": 1,
+        "cell_offset": 105
+      },
+      {
+        "name": "Elf Bow",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 113
+      },
+      {
+        "name": "Wood Spear",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 125
+      },
+      {
+        "name": "Wooden RightArm",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 137
+      },
+      {
+        "name": "Wooden LeftArm",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 149
+      },
+      {
+        "name": "Wooden Pick",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "2,2,2",
+        "movement": 1,
+        "cell_offset": 161
+      }
+    ]
+  },
+  "lol_clothes": {
+    "source_project": "lands-of-legend",
+    "source": "clothes.dmi",
+    "sha256": "ebe508fab028d2d2bc52b571337a4b30603201dd41e4373240ce0d8d14e4cc86",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 5376,
+    "states": [
+      {
+        "name": "cloak",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "cloak equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 1
+      },
+      {
+        "name": "small cloak equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 5
+      },
+      {
+        "name": "mask",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 9
+      },
+      {
+        "name": "fggf",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "pants",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "pantson",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 15
+      },
+      {
+        "name": "pantsl",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 19
+      },
+      {
+        "name": "fgfg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 20
+      },
+      {
+        "name": "blouse",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 24
+      },
+      {
+        "name": "blouseon",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 25
+      },
+      {
+        "name": "blousel",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 29
+      },
+      {
+        "name": "gfg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 30
+      },
+      {
+        "name": "shirt",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 34
+      },
+      {
+        "name": "shirtl",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 35
+      },
+      {
+        "name": "gfgfg",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 36
+      },
+      {
+        "name": "fgfd",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 40
+      },
+      {
+        "name": "eyesashL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 41
+      },
+      {
+        "name": "eyesashLl",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 45
+      },
+      {
+        "name": "eyesashR",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 49
+      },
+      {
+        "name": "eyesashR",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 50
+      },
+      {
+        "name": "eyesashRl",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 54
+      },
+      {
+        "name": "blindfold",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 58
+      },
+      {
+        "name": "blindfold",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 59
+      },
+      {
+        "name": "blindfoldl",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 63
+      },
+      {
+        "name": "inquisitor priest robe",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 67
+      },
+      {
+        "name": "priest robe",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 68
+      },
+      {
+        "name": "cape",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 72
+      },
+      {
+        "name": "cape equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 73
+      },
+      {
+        "name": "small cape equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 77
+      },
+      {
+        "name": "giant vest",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 81
+      },
+      {
+        "name": "giant vest l",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 85
+      },
+      {
+        "name": "giant blouse",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 89
+      },
+      {
+        "name": "giant blouse l",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 93
+      },
+      {
+        "name": "giant pants",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 97
+      },
+      {
+        "name": "giant pants l",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 101
+      },
+      {
+        "name": "small vest",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 105
+      },
+      {
+        "name": "small vest l",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 109
+      },
+      {
+        "name": "small blouse",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 113
+      },
+      {
+        "name": "small blouse l",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 117
+      },
+      {
+        "name": "small pants",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 121
+      },
+      {
+        "name": "small pants l",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 125
+      },
+      {
+        "name": "folded cloth",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 129
+      },
+      {
+        "name": "folded trench",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 130
+      },
+      {
+        "name": "folded priest robe",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 131
+      },
+      {
+        "name": "folded desert robe",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 132
+      },
+      {
+        "name": "folded kings robe",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 133
+      },
+      {
+        "name": "robe",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 134
+      },
+      {
+        "name": "desert robe",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 138
+      },
+      {
+        "name": "kings robe",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 142
+      },
+      {
+        "name": "shirton",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 146
+      },
+      {
+        "name": "hood",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 150
+      },
+      {
+        "name": "witch hunter hat",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 154
+      },
+      {
+        "name": "witch hunter hat equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 155
+      },
+      {
+        "name": "witch hunter trench",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 159
+      },
+      {
+        "name": "turban equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 163
+      },
+      {
+        "name": "turban",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 167
+      }
+    ]
+  },
+  "lol_creatures": {
+    "source_project": "lands-of-legend",
+    "source": "creatures.dmi",
+    "sha256": "4f7920a6a66b0cc07ce491362b359365e66d0c67ae0480bfb492c18e2cb44b87",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 5856,
+    "states": [
+      {
+        "name": "chaos",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "3,3,3",
+        "cell_offset": 0
+      },
+      {
+        "name": "",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "2,2,2",
+        "cell_offset": 3
+      },
+      {
+        "name": "fox",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 6
+      },
+      {
+        "name": "arctic fox",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "black wolf",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "rabbit",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 18
+      },
+      {
+        "name": "arctic rabbit",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 22
+      },
+      {
+        "name": "deer",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 26
+      },
+      {
+        "name": "deer f",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 30
+      },
+      {
+        "name": "horse",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 34
+      },
+      {
+        "name": "camel",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 38
+      },
+      {
+        "name": "bear",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 42
+      },
+      {
+        "name": "polar bear",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 46
+      },
+      {
+        "name": "lion",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 50
+      },
+      {
+        "name": "chicken",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 54
+      },
+      {
+        "name": "corpse devourer",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 58
+      },
+      {
+        "name": "giant spider",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 62
+      },
+      {
+        "name": "baby giant spider",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 66
+      },
+      {
+        "name": "rat",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 70
+      },
+      {
+        "name": "snake",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 74
+      },
+      {
+        "name": "fish",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 78
+      },
+      {
+        "name": "flesh beast",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 82
+      },
+      {
+        "name": "flesh beast BL",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 83
+      },
+      {
+        "name": "flesh beast BR",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 84
+      },
+      {
+        "name": "flesh beast TL",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 85
+      },
+      {
+        "name": "flesh beast TR",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 86
+      },
+      {
+        "name": "drake bl",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 87
+      },
+      {
+        "name": "drake br",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 91
+      },
+      {
+        "name": "drake tl",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 95
+      },
+      {
+        "name": "drake tr",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 99
+      },
+      {
+        "name": "Dreiner 1x1",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 103
+      },
+      {
+        "name": "Dreiner 2x1",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 107
+      },
+      {
+        "name": "Dreiner 1x2",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 111
+      },
+      {
+        "name": "Dreiner 2x2",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 115
+      },
+      {
+        "name": "Dreiner 1x3",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 119
+      },
+      {
+        "name": "Dreiner 2x3",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 123
+      },
+      {
+        "name": "",
+        "dirs": 4,
+        "frames": 1,
+        "movement": 1,
+        "cell_offset": 127
+      },
+      {
+        "name": "sea monster",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 131
+      },
+      {
+        "name": "troll TL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 135
+      },
+      {
+        "name": "troll TR",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 139
+      },
+      {
+        "name": "troll BL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 143
+      },
+      {
+        "name": "troll BR",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 147
+      },
+      {
+        "name": "giant snake top",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 151
+      },
+      {
+        "name": "giant snake bottom",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 155
+      },
+      {
+        "name": "swamp monster",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 159
+      },
+      {
+        "name": "large scorpion",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 163
+      },
+      {
+        "name": "mushroom monster",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 167
+      },
+      {
+        "name": "scorpion",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 171
+      },
+      {
+        "name": "deadly fish",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 175
+      },
+      {
+        "name": "gremlin",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 179
+      }
+    ]
+  },
+  "lol_dwarf": {
+    "source_project": "lands-of-legend",
+    "source": "dwarf.dmi",
+    "sha256": "b337921bb577b16b7923e9c670ee8c290d5a3833d10c802b3d4f2b7265059dda",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 2336,
+    "states": [
+      {
+        "name": "N",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "NoRA",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 4
+      },
+      {
+        "name": "NoLA",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 8
+      },
+      {
+        "name": "NoRL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "NoLL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 16
+      },
+      {
+        "name": "NoRARL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 20
+      },
+      {
+        "name": "NoLALL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 24
+      },
+      {
+        "name": "NoLARL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 28
+      },
+      {
+        "name": "NoRALL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 32
+      },
+      {
+        "name": "NoArms",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 36
+      },
+      {
+        "name": "NoLegs",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 40
+      },
+      {
+        "name": "NoArmsNoRL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 44
+      },
+      {
+        "name": "NoLegsNoRA",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 48
+      },
+      {
+        "name": "NoArmsNoLL",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 52
+      },
+      {
+        "name": "NoLegsNoLA",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 56
+      },
+      {
+        "name": "None",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 60
+      },
+      {
+        "name": "right eye",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 64
+      },
+      {
+        "name": "left eye",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 68
+      },
+      {
+        "name": "limb",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 72
+      }
+    ]
+  },
+  "lol_furniture": {
+    "source_project": "lands-of-legend",
+    "source": "furniture.dmi",
+    "sha256": "c499facba9ef0524d7611fdbb0d3b99e03348f0e40a46577b91bc5f05d1de566",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 480,
+    "states": [
+      {
+        "name": "table",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "chair",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 1
+      },
+      {
+        "name": "bed",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 5
+      },
+      {
+        "name": "bookstand",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 6
+      },
+      {
+        "name": "chest of drawers",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 7
+      },
+      {
+        "name": "counter",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 8
+      },
+      {
+        "name": "bookcase",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 9
+      },
+      {
+        "name": "bookcase with books",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "stone stand",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 11
+      },
+      {
+        "name": "crystal stand",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "illithid bed",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 13
+      },
+      {
+        "name": "illithid counter",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 14
+      }
+    ]
+  },
+  "lol_materials": {
+    "source_project": "lands-of-legend",
+    "source": "materials.dmi",
+    "sha256": "823851750261e18f9dba189ad2c4e9dc74ff3eef2ec2876715d4ecc3755484d5",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 992,
+    "states": [
+      {
+        "name": "log",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "branch",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 1
+      },
+      {
+        "name": "branch equip",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 2
+      },
+      {
+        "name": "plank",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 6
+      },
+      {
+        "name": "block",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 7
+      },
+      {
+        "name": "charcoal",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 8
+      },
+      {
+        "name": "Iron ore",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 9
+      },
+      {
+        "name": "Silver ore",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "Gold ore",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 11
+      },
+      {
+        "name": "Coal",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "Iron ingot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 13
+      },
+      {
+        "name": "Copper ingot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "Silver ingot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 15
+      },
+      {
+        "name": "Gold ingot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 16
+      },
+      {
+        "name": "Steel ingot",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 17
+      },
+      {
+        "name": "brick",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 18
+      },
+      {
+        "name": "stone",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 19
+      },
+      {
+        "name": "stone shard",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 20
+      },
+      {
+        "name": "large brick",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 21
+      },
+      {
+        "name": "Copper ore",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 22
+      },
+      {
+        "name": "ash",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 23
+      },
+      {
+        "name": "Bamboo",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 24
+      },
+      {
+        "name": "molton ore",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 25
+      },
+      {
+        "name": "web",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 26
+      },
+      {
+        "name": "Iron scrap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 27
+      },
+      {
+        "name": "Copper scrap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 28
+      },
+      {
+        "name": "Silver scrap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 29
+      },
+      {
+        "name": "Gold scrap",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 30
+      }
+    ]
+  },
+  "lol_plants": {
+    "source_project": "lands-of-legend",
+    "source": "plants.dmi",
+    "sha256": "6ba8726e289aa367d8b1e1d99a627223e6c0616c4e3342556b761ec9a86e3b1a",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 2656,
+    "states": [
+      {
+        "name": "bush1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "bush2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 1
+      },
+      {
+        "name": "bush3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 2
+      },
+      {
+        "name": "berries1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 3
+      },
+      {
+        "name": "berries2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 4
+      },
+      {
+        "name": "berries3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 5
+      },
+      {
+        "name": "berries4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 6
+      },
+      {
+        "name": "tree trunk",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 7
+      },
+      {
+        "name": "tree 2x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 8
+      },
+      {
+        "name": "big stump",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 9
+      },
+      {
+        "name": "trunk1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "burnt1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 11
+      },
+      {
+        "name": "burnt tree 2x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "tree 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 13
+      },
+      {
+        "name": "tree 2x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "tree 3x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 15
+      },
+      {
+        "name": "burnt tree 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 16
+      },
+      {
+        "name": "burnt tree 2x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 17
+      },
+      {
+        "name": "burnt tree 3x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 18
+      },
+      {
+        "name": "leaves 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 19
+      },
+      {
+        "name": "leaves 2x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 20
+      },
+      {
+        "name": "leaves 3x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 21
+      },
+      {
+        "name": "leaves 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 22
+      },
+      {
+        "name": "leaves 2x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 23
+      },
+      {
+        "name": "leaves 3x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 24
+      },
+      {
+        "name": "tree2 trunk",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 25
+      },
+      {
+        "name": "tree 2 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 26
+      },
+      {
+        "name": "small stump",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 27
+      },
+      {
+        "name": "trunk2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 28
+      },
+      {
+        "name": "burnt2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 29
+      },
+      {
+        "name": "burnt tree 2 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 30
+      },
+      {
+        "name": "tree2 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 31
+      },
+      {
+        "name": "burnt tree2 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 32
+      },
+      {
+        "name": "leaves2 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 33
+      },
+      {
+        "name": "leaves2 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 34
+      },
+      {
+        "name": "plant1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 35
+      },
+      {
+        "name": "plant2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 36
+      },
+      {
+        "name": "plant3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 37
+      },
+      {
+        "name": "plant4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 38
+      },
+      {
+        "name": "plant5",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 39
+      },
+      {
+        "name": "plant6",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 40
+      },
+      {
+        "name": "plant7",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 41
+      },
+      {
+        "name": "",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 42
+      },
+      {
+        "name": "wheat",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 43
+      },
+      {
+        "name": "felled tree2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 44
+      },
+      {
+        "name": "felled tree2 2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 45
+      },
+      {
+        "name": "leaves2 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 46
+      },
+      {
+        "name": "leaves2 2x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 47
+      },
+      {
+        "name": "",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 48
+      },
+      {
+        "name": "rock1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 49
+      },
+      {
+        "name": "rock2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 50
+      },
+      {
+        "name": "rock3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 51
+      },
+      {
+        "name": "rock4",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 52
+      },
+      {
+        "name": "shroom",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 53
+      },
+      {
+        "name": "cave shroom",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 54
+      },
+      {
+        "name": "leaves",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 55
+      },
+      {
+        "name": "tree and leaves",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 56
+      },
+      {
+        "name": "tree2 and leaves",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 57
+      },
+      {
+        "name": "autumn leaves 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 58
+      },
+      {
+        "name": "autumn leaves 2x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 59
+      },
+      {
+        "name": "autumn leaves 3x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 60
+      },
+      {
+        "name": "autumn leaves 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 61
+      },
+      {
+        "name": "autumn leaves 2x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 62
+      },
+      {
+        "name": "autumn leaves 3x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 63
+      },
+      {
+        "name": "autumn leaves2 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 64
+      },
+      {
+        "name": "autumn leaves2 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 65
+      },
+      {
+        "name": "sea weed dancing",
+        "dirs": 1,
+        "frames": 3,
+        "delay": "6,6,6",
+        "cell_offset": 66
+      },
+      {
+        "name": "bamboo1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 69
+      },
+      {
+        "name": "bamboo2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 70
+      },
+      {
+        "name": ":O",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 71
+      },
+      {
+        "name": "ash tree 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 72
+      },
+      {
+        "name": ":O",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 73
+      },
+      {
+        "name": "ash tree 2 1x2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 74
+      },
+      {
+        "name": "ash tree 1 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 75
+      },
+      {
+        "name": "ash tree 2 1x1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 76
+      },
+      {
+        "name": "felled tree",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 77
+      },
+      {
+        "name": "felled tree 2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 78
+      },
+      {
+        "name": "shroom2",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 79
+      }
+    ]
+  },
+  "lol_terrain": {
+    "source_project": "lands-of-legend",
+    "source": "terrain.dmi",
+    "sha256": "517ad0b9fca3cb4bdebf86b0976b391dc22478d465c29668996b613bb7cfbb14",
+    "tile_width": 32,
+    "tile_height": 32,
+    "sheet_width": 448,
+    "states": [
+      {
+        "name": "grass",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 0
+      },
+      {
+        "name": "grass-snow",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 1
+      },
+      {
+        "name": "grass-sand",
+        "dirs": 4,
+        "frames": 1,
+        "cell_offset": 5
+      },
+      {
+        "name": "grass-stone",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 9
+      },
+      {
+        "name": "dirt",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 10
+      },
+      {
+        "name": "sowed dirt",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 11
+      },
+      {
+        "name": "dirt road",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 12
+      },
+      {
+        "name": "sand",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 13
+      },
+      {
+        "name": "stone",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 14
+      },
+      {
+        "name": "Gold",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 15
+      },
+      {
+        "name": "Silver",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 16
+      },
+      {
+        "name": "Iron",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 17
+      },
+      {
+        "name": "Copper",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 18
+      },
+      {
+        "name": "stone floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 19
+      },
+      {
+        "name": "stal1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 20
+      },
+      {
+        "name": "stal2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 21
+      },
+      {
+        "name": "stal3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 22
+      },
+      {
+        "name": "dark stone1",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 23
+      },
+      {
+        "name": "dark stone",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 24
+      },
+      {
+        "name": "dark stone floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 25
+      },
+      {
+        "name": "snow",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 26
+      },
+      {
+        "name": "null",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 27
+      },
+      {
+        "name": "water",
+        "dirs": 1,
+        "frames": 2,
+        "delay": "7,7",
+        "cell_offset": 28
+      },
+      {
+        "name": "swim",
+        "dirs": 1,
+        "frames": 2,
+        "delay": "7,7",
+        "cell_offset": 30
+      },
+      {
+        "name": "brick wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 32
+      },
+      {
+        "name": "wood wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 33
+      },
+      {
+        "name": "wood floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 34
+      },
+      {
+        "name": "crossroad",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 35
+      },
+      {
+        "name": "NES",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 36
+      },
+      {
+        "name": "NS",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 37
+      },
+      {
+        "name": "NWS",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 38
+      },
+      {
+        "name": "WNE",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 39
+      },
+      {
+        "name": "WE",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 40
+      },
+      {
+        "name": "WSE",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 41
+      },
+      {
+        "name": "E",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 42
+      },
+      {
+        "name": "W",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 43
+      },
+      {
+        "name": "S",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 44
+      },
+      {
+        "name": "N",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 45
+      },
+      {
+        "name": "stone road",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 46
+      },
+      {
+        "name": "stone road2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 47
+      },
+      {
+        "name": "stone road3",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 48
+      },
+      {
+        "name": "Wood door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 49
+      },
+      {
+        "name": "Wood door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 50
+      },
+      {
+        "name": "Iron door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 51
+      },
+      {
+        "name": "Iron door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 52
+      },
+      {
+        "name": "Gold door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 53
+      },
+      {
+        "name": "Gold door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 54
+      },
+      {
+        "name": "Copper door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 55
+      },
+      {
+        "name": "Copper door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 56
+      },
+      {
+        "name": "Inquisitor Iron door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 57
+      },
+      {
+        "name": "Inquisitor Iron door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 58
+      },
+      {
+        "name": "Stone door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 59
+      },
+      {
+        "name": "Stone door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 60
+      },
+      {
+        "name": "window",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 61
+      },
+      {
+        "name": "red carpet",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 62
+      },
+      {
+        "name": "bulky brick wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 63
+      },
+      {
+        "name": "stairs up",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 64
+      },
+      {
+        "name": "sewer entrance",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 65
+      },
+      {
+        "name": "mucky water",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 66
+      },
+      {
+        "name": "blood",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 67
+      },
+      {
+        "name": "Iron prison door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 68
+      },
+      {
+        "name": "Iron prison door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 69
+      },
+      {
+        "name": "metal ladder",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 70
+      },
+      {
+        "name": "wooden ladder",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 71
+      },
+      {
+        "name": "brick wall w/ladder",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 72
+      },
+      {
+        "name": "stairs down",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 73
+      },
+      {
+        "name": "clouds",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 74
+      },
+      {
+        "name": "slab stone floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 75
+      },
+      {
+        "name": "really bulky wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 76
+      },
+      {
+        "name": "really bulky light stone wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 77
+      },
+      {
+        "name": "light slab stone floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 78
+      },
+      {
+        "name": "slab sandstone floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 79
+      },
+      {
+        "name": "really bulky sandstone wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 80
+      },
+      {
+        "name": "sandstone secret door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 81
+      },
+      {
+        "name": "underground",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 82
+      },
+      {
+        "name": "gate",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 83
+      },
+      {
+        "name": "gate opening",
+        "dirs": 1,
+        "frames": 12,
+        "delay": "1,1,1,1,1,1,1,1,1,1,1,1",
+        "cell_offset": 84
+      },
+      {
+        "name": "blood clouds",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 96
+      },
+      {
+        "name": "ash floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 97
+      },
+      {
+        "name": "underwater floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 98
+      },
+      {
+        "name": "lol sea weed",
+        "dirs": 1,
+        "frames": 4,
+        "delay": "3,3,3,3",
+        "cell_offset": 99
+      },
+      {
+        "name": "bubbles",
+        "dirs": 1,
+        "frames": 4,
+        "delay": "3,3,3,3",
+        "cell_offset": 103
+      },
+      {
+        "name": "Dark",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 107
+      },
+      {
+        "name": "swampy water",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 108
+      },
+      {
+        "name": "Chasm",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 109
+      },
+      {
+        "name": "Coal",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 110
+      },
+      {
+        "name": "gate open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 111
+      },
+      {
+        "name": "gate closing",
+        "dirs": 1,
+        "frames": 12,
+        "delay": "1,1,1,1,1,1,1,1,1,1,1,1",
+        "cell_offset": 112
+      },
+      {
+        "name": "bulky brick window",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 124
+      },
+      {
+        "name": "sand stairs up",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 125
+      },
+      {
+        "name": "sand stairs down",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 126
+      },
+      {
+        "name": "astral plane",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 127
+      },
+      {
+        "name": "astral strands",
+        "dirs": 8,
+        "frames": 4,
+        "delay": "3,3,3,3",
+        "cell_offset": 128
+      },
+      {
+        "name": "astral strand",
+        "dirs": 4,
+        "frames": 3,
+        "delay": "3,3,3",
+        "cell_offset": 160
+      },
+      {
+        "name": "hole",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 172
+      },
+      {
+        "name": "hole2",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 173
+      },
+      {
+        "name": "really bulky darkstone wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 174
+      },
+      {
+        "name": "dark stone wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 175
+      },
+      {
+        "name": "dark stone floor",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 176
+      },
+      {
+        "name": "strange crystal slab",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 177
+      },
+      {
+        "name": "strange crystal wall",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 178
+      },
+      {
+        "name": "strange crystal door",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 179
+      },
+      {
+        "name": "strange crystal door open",
+        "dirs": 1,
+        "frames": 1,
+        "cell_offset": 180
+      }
+    ]
+  }
+}

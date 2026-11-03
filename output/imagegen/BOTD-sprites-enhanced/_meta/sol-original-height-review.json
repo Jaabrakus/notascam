@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-24T17:23:56.100842+00:00",
+  "reviewer": "independent_sol_height_qa",
+  "status": "passed_two_existing_art_original_height_exports",
+  "scope": "Independent visual and measured review of two local exports only; no new generated artwork, paid calls or runtime integration.",
+  "reference_rule": "Visible alpha >0 height of corresponding native Remastered DMI cell, proportional width with integer rounding, native canvas height and bottom baseline.",
+  "reference_clarification": "Races64/Goblins.dmi is the canonical reviewed source here; root Icons/Goblins.dmi is a separate 32px asset and is not the 44px reference.",
+  "counts": {
+    "reviewed_frames": 2,
+    "passed_frames": 2,
+    "failed_frames": 0,
+    "reviewed_source_sheets": 2,
+    "complete_source_artwork_sheets": 1,
+    "complete_race_sheets": 0,
+    "runtime_integrated_source_sheets": 0,
+    "goblin_cells_reviewed": 1,
+    "goblin_cells_required": 98,
+    "stonelimb_cells_reviewed": 1,
+    "stonelimb_cells_required": 1,
+    "independently_validated_local_dmi_packages": 1
+  },
+  "frames": [
+    {
+      "output": "enhanced-height/Races64/Goblins/standing-front.png",
+      "passed": true,
+      "checks": {
+        "exact_original_visible_height": true,
+        "original_bottom_baseline": true,
+        "original_canvas_height": true,
+        "proportional_width_nearest_integer": true,
+        "rgba_transparency": true,
+        "hidden_rgb_clear": true,
+        "mechanical_crop_resize_place_rgba_reproduced": true,
+        "recorded_output_hash_matches": true,
+        "native_source_hash_matches": true,
+        "approved_art_source_hash_matches": true,
+        "no_substantive_source_art_cropped": true,
+        "visual_identity": true,
+        "visual_anatomy_or_object_structure": true,
+        "native_pixel_readability": true
+      },
+      "output_sha256": "1c0cd97c95930bad358817e5fb579efcfdf5d6467a7726c8c2981f8381bfa8c8",
+      "native_source": "standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+      "native_sha256": "9eef9feca0f31894fc74e0270f362b0809a6fd7d686b1f4aa96c21fc9856d9dc",
+      "source_art": "output/imagegen/BOTD-sprites-enhanced/enhanced-64/source-art/Goblins-standing-front.png",
+      "source_art_sha256": "a95a5ddc8369d0b12c6cb8c002cd2476366cb86c1200f35944e9a460cefc4e3f",
+      "native_cell_index": 0,
+      "state_name": "",
+      "frame_index": 0,
+      "direction": "S",
+      "native_frame_size": [
+        64,
+        64
+      ],
+      "native_alpha_bbox": [
+        15,
+        20,
+        49,
+        64
+      ],
+      "output_canvas_size": [
+        72,
+        64
+      ],
+      "output_alpha_bbox": [
+        15,
+        20,
+        57,
+        64
+      ],
+      "visible_size": [
+        42,
+        44
+      ],
+      "transparent_pixel_count": 3359,
+      "semi_transparent_pixel_count": 1246,
+      "opaque_pixel_count": 3,
+      "crop_discarded_nonzero_alpha_pixel_count": 1053,
+      "crop_discarded_maximum_alpha": 1,
+      "native_declared_cells": 98,
+      "reviewed_mapped_cells": 1,
+      "complete_source_artwork": false,
+      "runtime_installed": false,
+      "visual_findings": [
+        "Front facing green goblin retains pointed ears, bright eyes with pupils, two fangs, two arms and two separated legs; enhanced block-shaded design is consistent with approved artwork.",
+        "At native 44px visible height eyes, fangs and limb gaps remain readable; no substantive anatomy is clipped.",
+        "Feet meet native frame bottom intentionally; 15px horizontal margins remain on both sides."
+      ]
+    },
+    {
+      "output": "enhanced-height/Items/stonelimb/Arm.png",
+      "passed": true,
+      "checks": {
+        "exact_original_visible_height": true,
+        "original_bottom_baseline": true,
+        "original_canvas_height": true,
+        "proportional_width_nearest_integer": true,
+        "rgba_transparency": true,
+        "hidden_rgb_clear": true,
+        "mechanical_crop_resize_place_rgba_reproduced": true,
+        "recorded_output_hash_matches": true,
+        "native_source_hash_matches": true,
+        "approved_art_source_hash_matches": true,
+        "no_substantive_source_art_cropped": true,
+        "visual_identity": true,
+        "visual_anatomy_or_object_structure": true,
+        "native_pixel_readability": true
+      },
+      "output_sha256": "a747e48e987334a5dac768f27a3a7bd7886a3dd09edffe2340aba83307ece20b",
+      "native_source": "standalone/remastered/game/Icons/Remastered/Items/stonelimb.dmi",
+      "native_sha256": "438a19aa08ff9c8637c5a9131dbdec46049fa49603d96437ef8d402e3f6a5551",
+      "source_art": "output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/source-art/stonelimb-Arm.png",
+      "source_art_sha256": "d5e2d08437fc72db889ddbcdd5cab63b4c31d79b6b9f60348d5900f73454da03",
+      "native_cell_index": 0,
+      "state_name": "Arm",
+      "frame_index": 0,
+      "direction": "S",
+      "native_frame_size": [
+        32,
+        32
+      ],
+      "native_alpha_bbox": [
+        11,
+        13,
+        20,
+        17
+      ],
+      "output_canvas_size": [
+        32,
+        32
+      ],
+      "output_alpha_bbox": [
+        11,
+        13,
+        20,
+        17
+      ],
+      "visible_size": [
+        9,
+        4
+      ],
+      "transparent_pixel_count": 994,
+      "semi_transparent_pixel_count": 30,
+      "opaque_pixel_count": 0,
+      "crop_discarded_nonzero_alpha_pixel_count": 438,
+      "crop_discarded_maximum_alpha": 1,
+      "native_declared_cells": 1,
+      "reviewed_mapped_cells": 1,
+      "complete_source_artwork": true,
+      "runtime_installed": false,
+      "visual_findings": [
+        "Gray stone hand/arm lies horizontally with finger projections left and larger wrist/arm section right, consistent with source item.",
+        "At native 4px visible height it reads as a tiny gray limb silhouette; individual fingers and richer stone facets cannot be judged at this resolution.",
+        "The native original is also 9x4 visible pixels. Height and baseline rule passes; detailed anatomy at 4px remains an inherent resolution limitation."
+      ]
+    }
+  ],
+  "original_preservation": {
+    "original_preview_files_expected": 669,
+    "original_preview_files_hash_matched": 669,
+    "missing": [],
+    "changed": [],
+    "native_reference_files_hash_matched": 2,
+    "native_all_669_files_historical_hash_verification_claimed": false,
+    "note": "All 669 original preview file hashes independently matched existing manifest baseline. Both reviewed native DMI files match their export source hashes. Full historical native-file hash baseline was not present in manifest, so no all-native historical hash claim is made."
+  },
+  "limitations": [
+    "Goblin maps only cell0 of98; all remaining animation, facing and limb states remain unreviewed for original-height enhanced exports.",
+    "Stonelimb covers its sole native cell as source artwork. Its local DMI package preserves original Description and matches Arm.png RGBA exactly; runtime installation and game testing have not been performed.",
+    "Matching baseline and visible height does not validate equipment overlays, runtime registration or animation consistency.",
+    "Reviewed explicit crops discard only alpha1 detached peripheral specks:1053 Goblin pixels and438 stonelimb pixels. All alpha>1 source pixels are retained before proportional resizing.",
+    "Stonelimb detailed anatomy is below the native4px visible-height resolution."
+  ],
+  "package_review": {
+    "path": "output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/stonelimb.dmi",
+    "sha256": "842e3df0ce8d0f04ff8bd38f14fe9631b0b864c86d6b5394de9abd454c3257d4",
+    "passed": true,
+    "checks": {
+      "native_description_exactly_preserved": true,
+      "frame32x32": true,
+      "declared_single_cell": true,
+      "arm_png_rgba_pixelbytes_exact": true,
+      "atlas_size_matches_png": true,
+      "native_file_hash_unchanged": true
+    },
+    "runtime_installed": false,
+    "runtime_tested": false
+  }
+}

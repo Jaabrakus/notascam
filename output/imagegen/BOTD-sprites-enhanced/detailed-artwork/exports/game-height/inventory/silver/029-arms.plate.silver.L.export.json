@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:49.841028+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/silver/029-arms.plate.silver.L.png",
+    "sha256": "4deaaa0b88f60022c513e0421204321a30a8edae569215f3f2ffb790b6f58e7d",
+    "size": [
+      65,
+      92
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      59,
+      86
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 2929,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      59,
+      86
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      59,
+      86
+    ],
+    "source_crop_size": [
+      53,
+      80
+    ],
+    "crop_rgba_sha256": "47177db59a2e0462438f8a9fb658cd333eb2db1dfd5e5427dd72b5fe06a291db",
+    "discarded_pixel_count": 1740,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/silver.dmi",
+    "sha256": "e70ba48273b0295e3925aa205c70da43cedda55ebaf94ebabcd082ceabb0a631",
+    "cell_index": 116,
+    "atlas_size": [
+      416,
+      384
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      19,
+      17,
+      26,
+      27
+    ],
+    "visible_height": 10,
+    "visible_width": 7,
+    "bottom_baseline_exclusive": 27,
+    "alpha_sha256": "f5e7559519ff9f281df545b20274014699138bfead9c57e3d6c9acb8c453c51a",
+    "state_occurrence_index": 29,
+    "state_name": "arms.plate.silver.L",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "27ea0df34d75904c014d0c687f4f3f3049a4aaa412f9cc753179a2a78b9a6aef"
+  },
+  "placement": {
+    "target_visible_height": 10,
+    "proportional_content_size": [
+      7,
+      10
+    ],
+    "uniform_scale": 0.125,
+    "actual_axis_scales": [
+      0.1320754716981132,
+      0.125
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      19,
+      17,
+      26,
+      27
+    ],
+    "actual_alpha_bbox": [
+      19,
+      17,
+      26,
+      27
+    ],
+    "actual_visible_height": 10,
+    "actual_visible_width": 7,
+    "bottom_baseline_exclusive": 27,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/silver/029-arms.plate.silver.L.png",
+    "sha256": "8c4c7acaa0de12acaf34e7b20e6fe96d3bf7e950ac5d43aff1c7b2729b58cefd",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      19,
+      17,
+      26,
+      27
+    ],
+    "alpha_sha256": "5d381f8c431760b23d53fee02c67c71fc848629d4fab3cb0edc6fc3031ad4336",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

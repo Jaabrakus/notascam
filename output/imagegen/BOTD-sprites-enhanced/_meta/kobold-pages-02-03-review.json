@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_reference_art_anatomy_phase_order_review",
+  "status": "pass_reference_art",
+  "runtime_ready": false,
+  "source_relative": "Races64/Kobold.png",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Kobold.png",
+    "sha256": "6d9d3ae7781089d62f7e5d85e79f96f84adc6825c5f6589c33ccb3f6dfd9c4b3",
+    "dimensions": [
+      2526,
+      3586
+    ],
+    "mode": "RGBA"
+  },
+  "native": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+    "sha256": "10021b820e4afcc3c2f94d06636a8b7905b8449145a85b0222d3a90aa64e0710",
+    "dimensions": [
+      704,
+      640
+    ],
+    "mode": "RGBA"
+  },
+  "expected_occupied_cells": 24,
+  "observed_occupied_cells": 24,
+  "pages": [
+    {
+      "page": 2,
+      "status": "pass_reference_art",
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-02.png",
+        "sha256": "74293961ad2a49aa882efda928ea2bf77e5c6447b92f47f79c71db4f4c317713",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "included_states": [
+        "NoLeftArm"
+      ],
+      "represented_native_cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "checks": {
+        "state_frame_labels": "pass",
+        "direction_order_SNEW": "pass",
+        "missing_arm_frontback_side": "pass",
+        "near_side_profile_anatomy": "pass",
+        "bothlegs_retained": "pass",
+        "standing_frame1": "pass",
+        "frontback_phase_order": "pass",
+        "goldenolive_kobold_species_and_triangular_ears": "pass"
+      },
+      "front_frame2_frame3_lowerfoot_sides": [
+        "screen_right",
+        "screen_left"
+      ],
+      "back_frame2_frame3_lowerfoot_sides": [
+        "screen_left",
+        "screen_right"
+      ],
+      "findings": [
+        "Missingleftarm frontscreenright/backscreenleft remainsredcapped; intactrightarm retained.",
+        "Wprofile nearleftarmabsent; Enear rightarmretained without inventedstump; bothlegs present.",
+        "Threeframes and fourfacings retained; front/back phase2/3lowerfoot sides matchownnative stateorder.",
+        "Warmgolden skin and triangularbrown-interior ears remainconsistent with approvedKoboldpage01."
+      ]
+    },
+    {
+      "page": 3,
+      "status": "pass_reference_art",
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-03.png",
+        "sha256": "da8ba064f741fd6bc3ba27ebd88406d7bfb25a9666157830f9a35cd0c22c9c32",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "included_states": [
+        "NoRightArm"
+      ],
+      "represented_native_cells": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "checks": {
+        "state_frame_labels": "pass",
+        "direction_order_SNEW": "pass",
+        "missing_arm_frontback_side": "pass",
+        "near_side_profile_anatomy": "pass",
+        "bothlegs_retained": "pass",
+        "standing_frame1": "pass",
+        "frontback_phase_order": "pass",
+        "goldenolive_kobold_species_and_triangular_ears": "pass"
+      },
+      "front_frame2_frame3_lowerfoot_sides": [
+        "screen_left",
+        "screen_right"
+      ],
+      "back_frame2_frame3_lowerfoot_sides": [
+        "screen_right",
+        "screen_left"
+      ],
+      "findings": [
+        "Missingrightarm frontscreenleft/backscreenright remainsredcapped; intactleftarm retained.",
+        "Eprofile near rightarmabsent/redcap; Wnearleftarmintact with noinventednearredcap; bothlegs present.",
+        "Threeframes and fourfacings retained; front/back phase2/3lowerfoot sides matchownnative stateorder.",
+        "Warmgolden skin and triangularbrown-interior ears remainconsistent with approvedKoboldpage01."
+      ]
+    }
+  ],
+  "issues": [],
+  "native_profile_projection_comparison": {
+    "actual_sheet_columns": 11,
+    "default_to_missing_far_arm_rgba_difference_counts": {
+      "2:16": 0,
+      "6:20": 0,
+      "10:24": 0,
+      "3:29": 0,
+      "7:33": 0,
+      "11:37": 0
+    },
+    "meaning": "NoLeftArm E andNoRightArm W unchangedfromdefault in nativeprojection; avoid inventing visible near-stumps in thoseviews."
+  },
+  "review_method": "Independent visual comparison of original and finalpages, actualnativequeue and read-only RGBA footprint/profileanalysis using11-columnnativegrid.",
+  "limitations": [
+    "Referenceart only: generated size, geometry, shading, opaquealpha andspacing differ fromnative; no runtimecompatibilityclaim.",
+    "Front/back lowerfootphaseorder checked againstnative; exact full-body animationgeometry/timing remains unverified.",
+    "Side-view near/far details simplified; nativeprojection evidence used toavoid guessing hiddenlimbs."
+  ],
+  "mutations": "Only reviewJSONwritten; noimage/source/manifest changes."
+}

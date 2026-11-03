@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+  "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+  "crop_box": [
+    61,
+    1560,
+    153,
+    1698
+  ],
+  "size": [
+    92,
+    138
+  ],
+  "alpha_bbox": [
+    10,
+    5,
+    81,
+    124
+  ],
+  "retained_pixels": 6022,
+  "background_pixels_removed": 6674,
+  "enclosed_candidate_pixels_retained": 8,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red": true,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.48,
+    "red_minimum": 13,
+    "blue_ceiling": 66.0,
+    "border_background_sample_count": 456,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/standing-front-source-resolution.png",
+  "output_sha256": "d763854951e2b6a93adad9a431963a47583e8333d719d69fcbf66eeadc3051d0"
+}

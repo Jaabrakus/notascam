@@ -1,0 +1,485 @@
+{
+  "source_relative": "Races64/Kobold.png",
+  "source": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Kobold.png",
+  "source_sha256": "6d9d3ae7781089d62f7e5d85e79f96f84adc6825c5f6589c33ccb3f6dfd9c4b3",
+  "native": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+  "native_sha256": "10021b820e4afcc3c2f94d06636a8b7905b8449145a85b0222d3a90aa64e0710",
+  "source_native_state_count": 18,
+  "source_native_cells": 110,
+  "page": 1,
+  "status": "reference_page_checked",
+  "runtime_ready": false,
+  "whole_source_complete": false,
+  "included_states": [
+    "Normal",
+    "Sleep"
+  ],
+  "represented_native_cells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "source_row_details": [
+    {
+      "output_row_1based": 1,
+      "state_name": "Normal",
+      "source_row_1based": 1,
+      "frame_1based": 1,
+      "display_label": "Normal frame 1",
+      "layout": "south,north,east,west",
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 0,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1218,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            25,
+            345,
+            217
+          ],
+          "output_column_1based": 1
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 1,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1218,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            25,
+            543,
+            217
+          ],
+          "output_column_1based": 2
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 2,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            25,
+            741,
+            217
+          ],
+          "output_column_1based": 3
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 3,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            25,
+            939,
+            217
+          ],
+          "output_column_1based": 4
+        }
+      ],
+      "anatomy": {
+        "missing_anatomical_limbs": [],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+        ]
+      }
+    },
+    {
+      "output_row_1based": 2,
+      "state_name": "Normal",
+      "source_row_1based": 1,
+      "frame_1based": 2,
+      "display_label": "Normal frame 2",
+      "layout": "south,north,east,west",
+      "cells": [
+        {
+          "source_preview_column_1based": 5,
+          "native_cell_0based": 4,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 1165,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            945,
+            25,
+            1137,
+            217
+          ],
+          "output_column_1based": 1
+        },
+        {
+          "source_preview_column_1based": 6,
+          "native_cell_0based": 5,
+          "frame_1based": 2,
+          "direction": "north",
+          "occupied_pixels": 1175,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1143,
+            25,
+            1335,
+            217
+          ],
+          "output_column_1based": 2
+        },
+        {
+          "source_preview_column_1based": 7,
+          "native_cell_0based": 6,
+          "frame_1based": 2,
+          "direction": "east",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            19,
+            20,
+            44,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1341,
+            25,
+            1533,
+            217
+          ],
+          "output_column_1based": 3
+        },
+        {
+          "source_preview_column_1based": 8,
+          "native_cell_0based": 7,
+          "frame_1based": 2,
+          "direction": "west",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            20,
+            20,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1539,
+            25,
+            1731,
+            217
+          ],
+          "output_column_1based": 4
+        }
+      ],
+      "anatomy": {
+        "missing_anatomical_limbs": [],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+        ]
+      }
+    },
+    {
+      "output_row_1based": 3,
+      "state_name": "Normal",
+      "source_row_1based": 1,
+      "frame_1based": 3,
+      "display_label": "Normal frame 3",
+      "layout": "south,north,east,west",
+      "cells": [
+        {
+          "source_preview_column_1based": 9,
+          "native_cell_0based": 8,
+          "frame_1based": 3,
+          "direction": "south",
+          "occupied_pixels": 1165,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1737,
+            25,
+            1929,
+            217
+          ],
+          "output_column_1based": 1
+        },
+        {
+          "source_preview_column_1based": 10,
+          "native_cell_0based": 9,
+          "frame_1based": 3,
+          "direction": "north",
+          "occupied_pixels": 1175,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1935,
+            25,
+            2127,
+            217
+          ],
+          "output_column_1based": 2
+        },
+        {
+          "source_preview_column_1based": 11,
+          "native_cell_0based": 10,
+          "frame_1based": 3,
+          "direction": "east",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            17,
+            20,
+            42,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2133,
+            25,
+            2325,
+            217
+          ],
+          "output_column_1based": 3
+        },
+        {
+          "source_preview_column_1based": 12,
+          "native_cell_0based": 11,
+          "frame_1based": 3,
+          "direction": "west",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            22,
+            20,
+            47,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2331,
+            25,
+            2523,
+            217
+          ],
+          "output_column_1based": 4
+        }
+      ],
+      "anatomy": {
+        "missing_anatomical_limbs": [],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+        ]
+      }
+    },
+    {
+      "output_row_1based": 4,
+      "state_name": "Sleep",
+      "source_row_1based": 2,
+      "display_label": "Sleep",
+      "layout": "Two sleep frames in columns 1 and 2; columns 3 and 4 empty.",
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 12,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1218,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "sleeping_kobold",
+          "sprite_region_preview_box": [
+            153,
+            223,
+            345,
+            415
+          ],
+          "output_column_1based": 1
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 13,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 2991,
+          "alpha_bbox": [
+            1,
+            0,
+            64,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "sleep_Z_only_graphic",
+          "sprite_region_preview_box": [
+            351,
+            223,
+            543,
+            415
+          ],
+          "output_column_1based": 2
+        }
+      ],
+      "anatomy": {
+        "missing_anatomical_limbs": [],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "Frame1 is one front-facing full-limbed standing Kobold. Eyes are dim olive/ochre oval areas rather than awake bright yellow-white; retain source expression.",
+          "Frame2 is white irregular sleep bubble with black Z only; no Kobold body or additional limbs."
+        ]
+      }
+    }
+  ],
+  "expected_occupied_cells": 14,
+  "observed_occupied_cells": 14,
+  "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-01.png",
+  "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-f2d8-7901-9a12-ed145572cfc2/exec-8134b0ae-f56a-4830-bd37-dd31bddaf246.png",
+  "output_sha256": "841ef702f884ef0cce6a6ef8d5db33825eccdf96b1eefcdcac2774fbbb8d2e9f",
+  "generated_size": [
+    1774,
+    887
+  ],
+  "generated_mode": "RGB",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "style-transfer/edit",
+  "generation_prompt": "Use case: style-transfer. Asset: enhanced Kobold fantasy-game sprite reference page. Image1 is the ORIGINAL Races64/Kobold.png and is authoritative for species, poses, facing order, states and content. Image2 is the approved polished races style sheet; use ONLY its Kobold row as species/style reference. Image3 is the corrected Goblins page01 and is only a layout/rendering consistency example; DO NOT copy Goblin ear shape or greener skin. Create the same Kobold from image1, with warm golden/yellow-olive skin, sharply triangular high pointed ears with reddish-brown inner surfaces and dark brown edges, a broad blocky head and small squared muzzle, yellow awake eyes, tiny pale teeth, squat unclothed body and short limbs. Clean faceted pixel/voxel shading, crisp dark outlines, consistent light. No hair, horns, tail, weapons or clothes. Dark charcoal background. Header EXACTLY 'Races64/Kobold.dmi'. Four horizontal rows with a wide left label margin and four aligned sprite columns. Exactly14 occupied cells:12awake Kobolds,1sleeping Kobold,1standalone Z graphic. Row1 label 'Normal frame 1': first original row columns1\u20134, neutral standing full body in FRONT/SOUTH, BACK/NORTH, RIGHT-FACING/EAST PROFILE, LEFT-FACING/WEST PROFILE order. Row2 label 'Normal frame 2': original row1 columns5\u20138, walking phaseA, same facing order, one leg advanced and appropriate arm pose. Row3 label 'Normal frame 3': original row1 columns9\u201312, opposite walking phaseB, same facing order, opposite leg advanced. Keep profile views true side views, not diagonal. All awake figures retain both arms and both legs despite far-side occlusion. Row4 label 'Sleep': ONLY two cells occupied. Cell1 is the SAME upright neutral standing full-body pose as row1 FRONT figure: same torso, arms hanging down, straight short legs and feet flat underneath, same outline and height. Change ONLY its face/eyes to the source Sleep appearance, DIM OCHRE/OLIVE eye areas instead of bright yellow-white awake eyes. Do NOT make Sleep seated, crouched, reclining, shorter or wide-legged. Native source Normal-front and Sleep1 silhouettes are identical; only53facepixels differ. Cell2 is ONLY the white irregular sleep bubble with single black uppercase 'Z' from original Sleep row. No creature behind this effect. Row4 columns3and4 completely empty. Keep all figures fully visible and separated, all four labels spelled exactly once, margins around feet and ears. No additional rows, no limb-loss states or Sneak state, no extra text, no watermark. This is enhanced reference art, not a native runtime atlas.",
+  "generation_calls": 1,
+  "repair_calls": 0,
+  "source_sleep_pose_evidence": {
+    "normal_front_native_cell": 0,
+    "sleep1_native_cell": 12,
+    "alpha_exactly_equal": true,
+    "changed_rgb_pixels": 53,
+    "difference_bbox": [
+      26,
+      29,
+      38,
+      40
+    ],
+    "conclusion": "Source Sleep1 retains identical upright standing silhouette; only face colors differ."
+  },
+  "checks": {
+    "normal_twelve_cells": true,
+    "three_animation_rows": true,
+    "S_N_E_W_facing_order": true,
+    "sleep_upright_body": true,
+    "sleep_second_frame_Z_only": true,
+    "empty_last_two_sleep_columns": true,
+    "all_original_limbs_present": true,
+    "no_cropped_figures": true,
+    "source_files_unchanged": true,
+    "independent_reference_review": true,
+    "sleep_not_awake_glowing_eyes": true
+  },
+  "review_notes": [
+    "Twelve awake figures, one upright sleeping figure, and one standalone Z effect; walking phases and source four-direction order are visible.",
+    "Golden/yellow-olive palette and sharply pointed ears with reddish-brown interiors retain Kobold identity, distinct from the green Goblin.",
+    "Independent review confirms all 14 cells, upright neutral Sleep body with all limbs, Z-only second Sleep frame and two empty final columns.",
+    "Sleep source dim oval eye patches are interpreted as dark closed slits. Parent and independent reviewer accept this as stylistic expression variation within reference-art fidelity; no awake yellow glow or posture regression."
+  ],
+  "limitations": [
+    "This is one page of an incomplete 18-state source. It must not count as a completed Kobold source.",
+    "Generated opaque RGB reference art changes pixel size, spacing, pose geometry and registration. Native alpha and DMI metadata are not retained.",
+    "Broad visual poses/species are reviewed; exact native animation equivalence, eye-pixel geometry and game compatibility are not established."
+  ],
+  "independent_review": "_meta/kobold-page-01-review.json",
+  "independent_review_status": "pass_reference_art"
+}

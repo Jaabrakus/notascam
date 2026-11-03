@@ -1,0 +1,78 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/hell/page-03.png",
+  "source_sha256": "33d735888ee5348ffa427713c0ce8beb30eb88a2d92afd689bac42214c712f43",
+  "crop_box": [
+    304,
+    1047,
+    482,
+    1174
+  ],
+  "size": [
+    186,
+    135
+  ],
+  "source_crop_size": [
+    178,
+    127
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    2,
+    2,
+    176,
+    125
+  ],
+  "alpha_bbox": [
+    6,
+    6,
+    180,
+    129
+  ],
+  "retained_pixels": 13794,
+  "background_pixels_removed": 8812,
+  "enclosed_candidate_pixels_retained": 0,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 66.0,
+    "border_background_sample_count": 606,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/hell/019-chest.plate.hell.png",
+  "output_sha256": "7d7f876e03c21b60e346f674f632b136ae264296fae631bc617c9521bb980ad6"
+}

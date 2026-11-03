@@ -1,0 +1,911 @@
+{
+  "source_relative": "Races64/Goblins.png",
+  "source": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Goblins.png",
+  "source_sha256": "9bf0c9d7d53dc29f8b9bb9900e8194c17b6ce424c6b249ef0082a671f72e5359",
+  "native": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+  "native_sha256": "52c6f3fa00c8dce18e38eeb8d7b4b07cd6ac37fed90c6752e528221b60331cef",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "style-transfer/edit",
+  "status": "checked_reference_art",
+  "runtime_ready": false,
+  "pages": [
+    {
+      "page": 4,
+      "source_rows": [
+        5
+      ],
+      "included_states": [
+        "NoArms"
+      ],
+      "represented_native_cells": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "source_row_details": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoArms",
+          "source_row_1based": 5,
+          "frame_1based": 1,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 38,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1072,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                153,
+                817,
+                345,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 39,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1049,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                351,
+                817,
+                543,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 40,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 771,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                549,
+                817,
+                741,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 41,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 771,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                747,
+                817,
+                939,
+                1009
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoArms",
+          "source_row_1based": 5,
+          "frame_1based": 2,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 5,
+              "native_cell_0based": 42,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 1031,
+              "alpha_bbox": [
+                15,
+                18,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                945,
+                817,
+                1137,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 6,
+              "native_cell_0based": 43,
+              "frame_1based": 2,
+              "direction": "north",
+              "occupied_pixels": 990,
+              "alpha_bbox": [
+                15,
+                18,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                1143,
+                817,
+                1335,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 7,
+              "native_cell_0based": 44,
+              "frame_1based": 2,
+              "direction": "east",
+              "occupied_pixels": 822,
+              "alpha_bbox": [
+                20,
+                20,
+                44,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                1341,
+                817,
+                1533,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 8,
+              "native_cell_0based": 45,
+              "frame_1based": 2,
+              "direction": "west",
+              "occupied_pixels": 822,
+              "alpha_bbox": [
+                20,
+                20,
+                44,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                1539,
+                817,
+                1731,
+                1009
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoArms",
+          "source_row_1based": 5,
+          "frame_1based": 3,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 9,
+              "native_cell_0based": 46,
+              "frame_1based": 3,
+              "direction": "south",
+              "occupied_pixels": 1052,
+              "alpha_bbox": [
+                15,
+                18,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                1737,
+                817,
+                1929,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 10,
+              "native_cell_0based": 47,
+              "frame_1based": 3,
+              "direction": "north",
+              "occupied_pixels": 987,
+              "alpha_bbox": [
+                15,
+                18,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                1935,
+                817,
+                2127,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 11,
+              "native_cell_0based": 48,
+              "frame_1based": 3,
+              "direction": "east",
+              "occupied_pixels": 806,
+              "alpha_bbox": [
+                19,
+                20,
+                42,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                2133,
+                817,
+                2325,
+                1009
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 12,
+              "native_cell_0based": 49,
+              "frame_1based": 3,
+              "direction": "west",
+              "occupied_pixels": 806,
+              "alpha_bbox": [
+                22,
+                20,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                2331,
+                817,
+                2523,
+                1009
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ],
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-04.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-f2d8-7901-9a12-ed145572cfc2/exec-bec155b0-042f-4d56-a497-466f516242ed.png",
+      "output_sha256": "839d6c63b107135827359e31bc60937bcfd6acbdb97177c753dde94df84db561",
+      "generated_size": [
+        1774,
+        887
+      ],
+      "generated_mode": "RGB",
+      "generation_prompt": "Use case: style-transfer. Enhanced fantasy game sprite reference page. Image1 is the original Races64/Goblins.png: authoritative state/facing/anatomy reference. Image2 is the approved polished Goblins page01: style and character identity ONLY, not limb anatomy. Match this SAME small olive-green goblin with broad chunky head, pointed brown-inner ears, yellow eyes, tiny ivory teeth, short torso, faceted voxel/pixel shading and crisp black contours. Flat dark charcoal background, well-separated grid and white text labels on left. Header verbatim 'Races64/Goblins.dmi'. Columns always FRONT/SOUTH, BACK/NORTH, RIGHT-FACING/EAST PROFILE, LEFT-FACING/WEST PROFILE. Not diagonal turns. Source missing limb states are mandatory. Retain small stylized red source stump caps where limbs are absent, no elaborate wounds, no extra blood, no prosthetics, no added clothing or weapons. Do not regrow removed limbs from style image2. Keep all rows/cells fully visible and no clipping. This is reference artwork, not a playable atlas. Create page04: EXACTLY3rows and4columns,12goblin figures. ONLY the NoArms state from original row5. Every figure has ZERO ARMS and ZERO HANDS, with tiny red caps at both shoulder positions, head+torso+bOTH LEGS remain. No green forearms beside the body, no hands crossing chest, no arms in side views. Row1 label 'NoArms frame 1': original row5 columns1\u20134, neutral standing frame, bothlegs. Row2 label 'NoArms frame 2': original row5 columns5\u20138, first walking step; bothlegs with one forward. Row3 label 'NoArms frame 3': original row5 columns9\u201312, opposite walking step; bothlegs with the opposite leg forward. Upper body stays without arms throughout. Follow original facing and leg pose changes; keep the same goblin proportions/colors. Exactly three labels and twelve figures. The profile figures also have no near or far arms/hands.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "runtime_ready": false,
+      "checks": {
+        "rows_and_cells": true,
+        "four_facing_order": true,
+        "source_labels_present": true,
+        "source_missing_limb_count_visually_retained": true,
+        "front_back_anatomical_sides": true,
+        "no_cropped_content": true,
+        "independent_reference_anatomy_review": true,
+        "exact_native_animation_equivalence": false
+      },
+      "qa_notes": "All12NoArms figures have red shoulder-end caps, no hands/forearms, bothlegs retained and ordered facings. Front/back show distinct opposite steps. Independent reviewer finds profile green lower-body bulges continuous with hips/thighs/legs, no detached wrist or restored hand. Sidewalking phases remain similar; exact native motion is not asserted.",
+      "status": "reference_page_checked"
+    },
+    {
+      "page": 5,
+      "source_rows": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "included_states": [
+        "NoLeftLeg",
+        "NoRightLeg",
+        "NoLegs",
+        "NoRightLegNoLeftArm"
+      ],
+      "represented_native_cells": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "source_row_details": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoLeftLeg",
+          "source_row_1based": 6,
+          "frame_1based": 1,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 50,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1091,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                153,
+                1015,
+                345,
+                1207
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 51,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1095,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                351,
+                1015,
+                543,
+                1207
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 52,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 771,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                549,
+                1015,
+                741,
+                1207
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 53,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 773,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                747,
+                1015,
+                939,
+                1207
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoRightLeg",
+          "source_row_1based": 7,
+          "frame_1based": 1,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 54,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1091,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                153,
+                1213,
+                345,
+                1405
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 55,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1095,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                351,
+                1213,
+                543,
+                1405
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 56,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 773,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                549,
+                1213,
+                741,
+                1405
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 57,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 771,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                747,
+                1213,
+                939,
+                1405
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoLegs",
+          "source_row_1based": 8,
+          "frame_1based": 1,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 58,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1050,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                153,
+                1411,
+                345,
+                1603
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 59,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1057,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                63
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                351,
+                1411,
+                543,
+                1603
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 60,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 718,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                549,
+                1411,
+                741,
+                1603
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 61,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 718,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                747,
+                1411,
+                939,
+                1603
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 4,
+          "state_name": "NoRightLegNoLeftArm",
+          "source_row_1based": 9,
+          "frame_1based": 1,
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "output_column_1based": 1,
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 62,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1075,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                153,
+                1609,
+                345,
+                1801
+              ]
+            },
+            {
+              "output_column_1based": 2,
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 63,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1053,
+              "alpha_bbox": [
+                15,
+                20,
+                49,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                351,
+                1609,
+                543,
+                1801
+              ]
+            },
+            {
+              "output_column_1based": 3,
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 64,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 773,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                549,
+                1609,
+                741,
+                1801
+              ]
+            },
+            {
+              "output_column_1based": 4,
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 65,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 771,
+              "alpha_bbox": [
+                21,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "goblin",
+              "sprite_region_preview_box": [
+                747,
+                1609,
+                939,
+                1801
+              ]
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_leg",
+              "left_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm",
+              "left_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the goblin: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ],
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-05.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-f2d8-7901-9a12-ed145572cfc2/exec-22aa0172-5723-402c-a23f-2af30b41c029.png",
+      "output_sha256": "f5502dbdcf7d0791192c3d00096979b24d9e0f59354dfa4e8a36c5d0a57ed6f3",
+      "generated_size": [
+        1536,
+        1024
+      ],
+      "generated_mode": "RGB",
+      "generation_prompt": "Use case: style-transfer. Enhanced fantasy game sprite reference page. Image1 is the original Races64/Goblins.png: authoritative state/facing/anatomy reference. Image2 is the approved polished Goblins page01: style and character identity ONLY, not limb anatomy. Match this SAME small olive-green goblin with broad chunky head, pointed brown-inner ears, yellow eyes, tiny ivory teeth, short torso, faceted voxel/pixel shading and crisp black contours. Flat dark charcoal background, well-separated grid and white text labels on left. Header verbatim 'Races64/Goblins.dmi'. Columns always FRONT/SOUTH, BACK/NORTH, RIGHT-FACING/EAST PROFILE, LEFT-FACING/WEST PROFILE. Not diagonal turns. Source missing limb states are mandatory. Retain small stylized red source stump caps where limbs are absent, no elaborate wounds, no extra blood, no prosthetics, no added clothing or weapons. Do not regrow removed limbs from style image2. Keep all rows/cells fully visible and no clipping. This is reference artwork, not a playable atlas. Create page05: EXACTLY4rows and4columns,16goblin figures. Include ONLY original rows6\u20139, one row per state, exact labels: Row1 'NoLeftLeg': both arms remain, ONLY anatomical RIGHT LEG remains. FRONT single foot screenLEFT, BACK single foot screenRIGHT; red missing-left-hip cap frontscreenRIGHT/backscreenLEFT. All profiles show only one surviving foot, no extra stump-shaped green foot. Row2 'NoRightLeg': both arms remain, ONLY anatomical LEFT LEG remains. FRONT single foot screenRIGHT, BACK single foot screenLEFT; red missing-right-hip cap frontscreenLEFT/backscreenRIGHT. Row3 'NoLegs': both arms remain, ZERO LEGS and ZERO FEET in ALL four views. Torso ends at tiny red hip stump caps. Empty charcoal below, no green foot-shaped bulges, no shoes or restored short legs. Row4 'NoRightLegNoLeftArm': ONLY anatomical RIGHT ARM and LEFT LEG remain. FRONT intact arm screenLEFT and single foot screenRIGHT; missing arm redcap screenRIGHT, missingleg redcap screenLEFT. BACK intact arm screenRIGHT and singlefoot screenLEFT; missingarm redcap screenLEFT, missingleg redcap screenRIGHT. RIGHT-FACING profile: near right arm intact, rightleg missingredcap, far leftleg supplies solefoot. LEFT-FACING profile: near leftarm missingredcap, leftleg intact supplies solefoot, rightarm far side mostly occluded. Respect original profile occlusion, never restore absent limbs. Body and head same size across rows. Exactly four labels and sixteen views.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "runtime_ready": false,
+      "checks": {
+        "rows_and_cells": true,
+        "four_facing_order": true,
+        "source_labels_present": true,
+        "source_missing_limb_count_visually_retained": true,
+        "front_back_anatomical_sides": true,
+        "no_cropped_content": true,
+        "independent_reference_anatomy_review": true,
+        "exact_native_animation_equivalence": false
+      },
+      "qa_notes": "Four states/16figures. NoLeftLeg and NoRightLeg front/back retain opposite one-foot sides. NoLegs all4views have zero feet. Combo front intact rightarm(screenleft),leftleg(screenright), rear reversed; profiles match expected near/far visibility broadly. Redcap visibility and exact silhouettes are reinterpreted. Independent reviewer confirms all16views retain broad intended anatomy, no extra feet inNoLegs, correctfront/back sides and no concrete restoredlimb error.",
+      "status": "reference_page_checked"
+    }
+  ],
+  "limits": [
+    "Enhanced reference pages only. Generated RGB artwork changes dimensions, silhouettes, spacing and registration. Native transparency and DMI metadata are not preserved.",
+    "Broad anatomical states are judged visually, not as native-game equivalence.",
+    "No source edits, raster scripts, paidAPI or sharedmanifest changes.",
+    "Profile walking phases are similar and depth/occlusion are simplified. Reference review does not establish exact native animation equivalence, injury depth or pixel geometry."
+  ],
+  "review_method": "Producer inspected source, style, generated images and PNG metadata; independent_race_review independently checked full pages against source anatomical states and verified hashes.",
+  "independent_review_status": "pass_broad_reference_anatomy_and_coverage",
+  "independent_review": "_meta/goblins-pages-04-05-review.json"
+}

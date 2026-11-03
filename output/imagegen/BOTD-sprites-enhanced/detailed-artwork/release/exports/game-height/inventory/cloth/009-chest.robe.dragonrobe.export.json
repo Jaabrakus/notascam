@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:29.002500+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/009-chest.robe.dragonrobe.png",
+    "sha256": "05d03e5f80bfeb4b73f64a0a3edcd4e568c5d8e028d20bca2f27b90b6e132b59",
+    "size": [
+      198,
+      168
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      27,
+      26,
+      175,
+      148
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 21633,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      27,
+      26,
+      175,
+      148
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      27,
+      26,
+      175,
+      148
+    ],
+    "source_crop_size": [
+      148,
+      122
+    ],
+    "crop_rgba_sha256": "2a00f0c696c4abdca294d34b40de073f2cb270351295d194ca9599aa6cfcb263",
+    "discarded_pixel_count": 15208,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+    "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+    "cell_index": 36,
+    "atlas_size": [
+      256,
+      224
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      6,
+      13,
+      25,
+      32
+    ],
+    "visible_height": 19,
+    "visible_width": 19,
+    "bottom_baseline_exclusive": 32,
+    "alpha_sha256": "3d07e1315b0ba9ffcefc886838c9196379d7a987df2aadb1dc820b8124a74443",
+    "state_occurrence_index": 9,
+    "state_name": "chest.robe.dragonrobe",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+  },
+  "placement": {
+    "target_visible_height": 19,
+    "proportional_content_size": [
+      23,
+      19
+    ],
+    "uniform_scale": 0.1557377049180328,
+    "actual_axis_scales": [
+      0.1554054054054054,
+      0.1557377049180328
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      36,
+      32
+    ],
+    "destination_box": [
+      6,
+      13,
+      29,
+      32
+    ],
+    "actual_alpha_bbox": [
+      6,
+      13,
+      29,
+      32
+    ],
+    "actual_visible_height": 19,
+    "actual_visible_width": 23,
+    "bottom_baseline_exclusive": 32,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/009-chest.robe.dragonrobe.png",
+    "sha256": "78ae1872b4a7c651f614492919797dfd511b707ca270e32e7121e60c8eb1c0aa",
+    "size": [
+      36,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      6,
+      13,
+      29,
+      32
+    ],
+    "alpha_sha256": "642b05af6a9263c99e9714c012c33a67a974a9bec81261049f0efc68450db20c",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

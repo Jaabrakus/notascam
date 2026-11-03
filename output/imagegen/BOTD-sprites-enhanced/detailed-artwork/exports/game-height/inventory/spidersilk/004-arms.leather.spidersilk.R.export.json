@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:27.097739+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/004-arms.leather.spidersilk.R.png",
+    "sha256": "b1a9358d5a5d795b129e6fc3f268962ae3912309b8ec040f8b71aa80dc08989e",
+    "size": [
+      118,
+      108
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      32,
+      36,
+      79,
+      79
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 11297,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      32,
+      36,
+      79,
+      79
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      32,
+      36,
+      79,
+      79
+    ],
+    "source_crop_size": [
+      47,
+      43
+    ],
+    "crop_rgba_sha256": "797b3c4d3cfef1e9c9f7f7a2ea05c881d6ae0b7ee166edd148108e5ae41c4618",
+    "discarded_pixel_count": 10723,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spidersilk.dmi",
+    "sha256": "7a7e4238c602d066ff12a0d538b295c47bd1132dc96453bbcdd2392f21eb2593",
+    "cell_index": 16,
+    "atlas_size": [
+      160,
+      128
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      6,
+      21,
+      13,
+      27
+    ],
+    "visible_height": 6,
+    "visible_width": 7,
+    "bottom_baseline_exclusive": 27,
+    "alpha_sha256": "75f79da5ee0e9c4bc97c38a510cd31dc6a8088462930c3ba59ab1c447acaf8fc",
+    "state_occurrence_index": 4,
+    "state_name": "arms.leather.spidersilk.R",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "e3b1d8c8bb61275f62972d7b6b670f09727cf5824ef29454241cc9d4df8807de"
+  },
+  "placement": {
+    "target_visible_height": 6,
+    "proportional_content_size": [
+      7,
+      6
+    ],
+    "uniform_scale": 0.13953488372093023,
+    "actual_axis_scales": [
+      0.14893617021276595,
+      0.13953488372093023
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      6,
+      21,
+      13,
+      27
+    ],
+    "actual_alpha_bbox": [
+      6,
+      21,
+      13,
+      27
+    ],
+    "actual_visible_height": 6,
+    "actual_visible_width": 7,
+    "bottom_baseline_exclusive": 27,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/004-arms.leather.spidersilk.R.png",
+    "sha256": "41099770bca5d4ec991c31d46f3656b03f8b8096d65e425c4f0af76f2fc5e965",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      6,
+      21,
+      13,
+      27
+    ],
+    "alpha_sha256": "f689e6e0d37dd24ef5576734d67dd3e5f9906b43bbfa745c88e40ddf86962945",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

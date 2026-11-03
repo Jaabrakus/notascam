@@ -1,0 +1,3701 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "dragonbone",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "weapon.longsword.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        400,
+        75,
+        545,
+        215
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": {
+        "row_center": 138.32713567839195,
+        "selected_components": [
+          {
+            "area": 218,
+            "box": [
+              480,
+              49,
+              495,
+              69
+            ],
+            "center": [
+              486.8669724770642,
+              58.39449541284404
+            ]
+          },
+          {
+            "area": 3762,
+            "box": [
+              423,
+              83,
+              528,
+              202
+            ],
+            "center": [
+              476.9976076555024,
+              142.95906432748538
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/000-weapon.longsword.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          400,
+          75,
+          545,
+          215
+        ],
+        "size": [
+          153,
+          148
+        ],
+        "source_crop_size": [
+          145,
+          140
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          8,
+          128,
+          127
+        ],
+        "alpha_bbox": [
+          27,
+          12,
+          132,
+          131
+        ],
+        "retained_pixels": 3762,
+        "background_pixels_removed": 16538,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 74.0,
+          "border_background_sample_count": 566,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/000-weapon.longsword.dragonbone.png",
+        "output_sha256": "96963552effd02988df4ec3b6507fc8cc0d4649a90fc10818335905566473b88"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/000-weapon.longsword.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/000-weapon.longsword.dragonbone.export.json",
+        "sha256": "7bb61302061c8cf48198e1aa57866239a09ffbd61459b0c5440b4f569426c94f",
+        "size": [
+          38,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          10,
+          21,
+          31
+        ],
+        "visible_height": 21,
+        "baseline_exclusive": 31,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 0,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            2,
+            10,
+            15,
+            31
+          ],
+          "visible_height": 21,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 31,
+          "alpha_sha256": "3896bf4c0861e660acd4894c934af7cec6c43ba4e20f9032713050b29824a573",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.longsword.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/000-weapon.longsword.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/000-weapon.longsword.dragonbone.export.json",
+        "sha256": "933d3a9366dee711e78b445ae5899ee73879393bbf21d4a7a7a433d023ac08aa",
+        "size": [
+          75,
+          64
+        ],
+        "alpha_bbox": [
+          4,
+          20,
+          41,
+          62
+        ],
+        "visible_height": 42,
+        "baseline_exclusive": 62,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 0,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            4,
+            20,
+            30,
+            62
+          ],
+          "visible_height": 42,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 62,
+          "alpha_sha256": "a7503f41d423f239dfac18a89a397b27458d0d885a46c01e6490dfc888e0038d",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.longsword.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "weapon.battle axe.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        413,
+        228,
+        530,
+        346
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 277.925431711146,
+        "selected_components": [
+          {
+            "area": 3372,
+            "box": [
+              415,
+              230,
+              505,
+              319
+            ],
+            "center": [
+              451.79151838671413,
+              270.87158956109135
+            ]
+          },
+          {
+            "area": 5,
+            "box": [
+              426,
+              244,
+              427,
+              249
+            ],
+            "center": [
+              426.0,
+              246.0
+            ]
+          },
+          {
+            "area": 450,
+            "box": [
+              502,
+              319,
+              528,
+              344
+            ],
+            "center": [
+              514.1266666666667,
+              330.78222222222223
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/001-weapon.battle_axe.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          413,
+          228,
+          530,
+          346
+        ],
+        "size": [
+          125,
+          126
+        ],
+        "source_crop_size": [
+          117,
+          118
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          115,
+          116
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          119,
+          120
+        ],
+        "retained_pixels": 3824,
+        "background_pixels_removed": 9982,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 466,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/001-weapon.battle_axe.dragonbone.png",
+        "output_sha256": "865e1b62753e5a43e8bef6499a0195e66f20dcce5fd5952ebd3e5a2f365d6811"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/001-weapon.battle_axe.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/001-weapon.battle_axe.dragonbone.export.json",
+        "sha256": "d337a13db404176792f1583760e976576094b67e83aedbedb9fc111a9747c099",
+        "size": [
+          35,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          12,
+          17,
+          29
+        ],
+        "visible_height": 17,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 4,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            12,
+            14,
+            29
+          ],
+          "visible_height": 17,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "18147a0dea430237d80be6aae737cbf216b03a5612d04f5a16142d30f395e6b4",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.battle axe.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/001-weapon.battle_axe.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/001-weapon.battle_axe.dragonbone.export.json",
+        "sha256": "ec080532796e8d69a7d7759bd7ece45f60a238bf54b1f4a9063797017259700f",
+        "size": [
+          81,
+          64
+        ],
+        "alpha_bbox": [
+          3,
+          21,
+          43,
+          61
+        ],
+        "visible_height": 40,
+        "baseline_exclusive": 61,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 20,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            3,
+            21,
+            26,
+            61
+          ],
+          "visible_height": 40,
+          "visible_width": 23,
+          "bottom_baseline_exclusive": 61,
+          "alpha_sha256": "c1d05f3fc51da7bafaf7c7fcd8fe24deca3fa72be5fec2763fdac04c86e9f9f7",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.battle axe.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 2,
+      "state_name": "weapon.warhammer.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        407,
+        383,
+        524,
+        495
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 427.68602739726026,
+        "selected_components": [
+          {
+            "area": 3290,
+            "box": [
+              409,
+              385,
+              499,
+              471
+            ],
+            "center": [
+              448.27477203647413,
+              421.8130699088146
+            ]
+          },
+          {
+            "area": 360,
+            "box": [
+              501,
+              471,
+              522,
+              493
+            ],
+            "center": [
+              511.0527777777778,
+              481.35833333333335
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/002-weapon.warhammer.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          407,
+          383,
+          524,
+          495
+        ],
+        "size": [
+          125,
+          120
+        ],
+        "source_crop_size": [
+          117,
+          112
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          115,
+          110
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          119,
+          114
+        ],
+        "retained_pixels": 3648,
+        "background_pixels_removed": 9456,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 454,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/002-weapon.warhammer.dragonbone.png",
+        "output_sha256": "7e7e61cb2bd9dac2b0cc1293685f1850874f12e20e869f3dc395458284078e09"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/002-weapon.warhammer.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/002-weapon.warhammer.dragonbone.export.json",
+        "sha256": "a02ebefcb56de0e0db2d2b7fa0787ea7385f95f79a436f7ded02b2b5f0a30d17",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          14,
+          16,
+          29
+        ],
+        "visible_height": 15,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 8,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            14,
+            14,
+            29
+          ],
+          "visible_height": 15,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "8aeb86749712a1310d8ed974328d22b79283d4bd3d7c607043c41c82bd3f7b7a",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.warhammer.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/002-weapon.warhammer.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/002-weapon.warhammer.dragonbone.export.json",
+        "sha256": "a3cbe19fe1528556913db4b3fdce56b76f840f584da56129f66bf22dd5fb3b60",
+        "size": [
+          78,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          23,
+          40,
+          59
+        ],
+        "visible_height": 36,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 40,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            23,
+            26,
+            59
+          ],
+          "visible_height": 36,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "11ba18a7b04207fd3bfae1cac5c2b861e28ab8c3bf11511606c4b2a3f3f4f899",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.warhammer.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 3,
+      "state_name": "weapon.halberd.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        417,
+        515,
+        521,
+        688
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 592.399336020868,
+        "selected_components": [
+          {
+            "area": 3769,
+            "box": [
+              419,
+              517,
+              502,
+              655
+            ],
+            "center": [
+              454.0875563810029,
+              582.8978508888299
+            ]
+          },
+          {
+            "area": 448,
+            "box": [
+              495,
+              660,
+              519,
+              686
+            ],
+            "center": [
+              505.19419642857144,
+              672.3348214285714
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/003-weapon.halberd.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          417,
+          515,
+          521,
+          688
+        ],
+        "size": [
+          112,
+          181
+        ],
+        "source_crop_size": [
+          104,
+          173
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          101,
+          171
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          105,
+          175
+        ],
+        "retained_pixels": 4215,
+        "background_pixels_removed": 13777,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 550,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/003-weapon.halberd.dragonbone.png",
+        "output_sha256": "7b0c7191ec18a444545a57ef0ae8dce4f6ee47cb46596f2bc1a3388a68be5cf9"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/003-weapon.halberd.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/003-weapon.halberd.dragonbone.export.json",
+        "sha256": "6a8f44b6e1a868179b0a0d2ccff4741bd5e7eef61f220c777e6351b7d025561f",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          3,
+          18,
+          32
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 12,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            3,
+            14,
+            32
+          ],
+          "visible_height": 29,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "1b383dedf69faef754a1761e73a5879d51e6f93d29b14c67a9e70d809c4a61b9",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.halberd.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/003-weapon.halberd.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/003-weapon.halberd.dragonbone.export.json",
+        "sha256": "4f63eba69ec58a03ca81b31962604ef8f9d74d40466f239e4a5f846fbf2bf90b",
+        "size": [
+          74,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          5,
+          37,
+          64
+        ],
+        "visible_height": 59,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 60,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            5,
+            27,
+            64
+          ],
+          "visible_height": 59,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "f3d30c8e12462f3097428fdbc513e2f70be6f6be553479f480f20711055e19c7",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.halberd.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 4,
+      "state_name": "weapon.bow.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        441,
+        711,
+        501,
+        833
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 774.6424196018377,
+        "selected_components": [
+          {
+            "area": 2612,
+            "box": [
+              443,
+              713,
+              499,
+              831
+            ],
+            "center": [
+              463.5708269525268,
+              774.6424196018377
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/004-weapon.bow.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          441,
+          711,
+          501,
+          833
+        ],
+        "size": [
+          68,
+          130
+        ],
+        "source_crop_size": [
+          60,
+          122
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          58,
+          120
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          62,
+          124
+        ],
+        "retained_pixels": 2612,
+        "background_pixels_removed": 4708,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 360,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/004-weapon.bow.dragonbone.png",
+        "output_sha256": "1a0d9c8226e29c173290089d348f4f368e996b304f597424a01d06a79b4d8ad5"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/004-weapon.bow.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/004-weapon.bow.dragonbone.export.json",
+        "sha256": "3cd6b6874424a51665c6c34cf3a9a97ae06e8ae76ca89c8f7794d012f5be2dc9",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          17,
+          14,
+          32
+        ],
+        "visible_height": 15,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 16,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            17,
+            14,
+            32
+          ],
+          "visible_height": 15,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "024f8047c7a39a708aa2e356ffaa430babe4409225f4699565331802b7f5ccdc",
+          "state_occurrence_index": 4,
+          "state_name": "weapon.bow.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/004-weapon.bow.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/004-weapon.bow.dragonbone.export.json",
+        "sha256": "9aa2f4c466f05371af3cdf259795550e2b71669cde3ac0fe0079d8459311eaa5",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          33,
+          30,
+          64
+        ],
+        "visible_height": 31,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 80,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            15,
+            33,
+            28,
+            64
+          ],
+          "visible_height": 31,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "3db838756f85d8ca56b59947ae8c7e0c677a8516a18f52d4545c7bb5734380f8",
+          "state_occurrence_index": 4,
+          "state_name": "weapon.bow.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 5,
+      "state_name": "helmet.kettle.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        425,
+        870,
+        536,
+        963
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 915.299445194182,
+        "selected_components": [
+          {
+            "area": 6669,
+            "box": [
+              427,
+              872,
+              534,
+              961
+            ],
+            "center": [
+              480.377567851252,
+              915.299445194182
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/005-helmet.kettle.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          425,
+          870,
+          536,
+          963
+        ],
+        "size": [
+          119,
+          101
+        ],
+        "source_crop_size": [
+          111,
+          93
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          109,
+          91
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          113,
+          95
+        ],
+        "retained_pixels": 6666,
+        "background_pixels_removed": 3657,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 404,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/005-helmet.kettle.dragonbone.png",
+        "output_sha256": "5f31b83212251862e365e13776601f3d9cf07101ddac925d08918def5dd6a9bd"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/005-helmet.kettle.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/005-helmet.kettle.dragonbone.export.json",
+        "sha256": "dc2992dc63df3451d37496cdc06d811254f9619bc42fab2a8f639fbb781d85f3",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          4,
+          22,
+          15
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 20,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            8,
+            4,
+            24,
+            15
+          ],
+          "visible_height": 11,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "2a10c36430bbbf9f04f3d9235b47b75812b9c9ea3ee473d083554ddc8c5f4216",
+          "state_occurrence_index": 5,
+          "state_name": "helmet.kettle.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/005-helmet.kettle.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/005-helmet.kettle.dragonbone.export.json",
+        "sha256": "e22382d382f63ea260c2891c1f743e8834ea45f77b7b6b7ce814df823a7b2f4e",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          18,
+          7,
+          46,
+          30
+        ],
+        "visible_height": 23,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 100,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            16,
+            7,
+            48,
+            30
+          ],
+          "visible_height": 23,
+          "visible_width": 32,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "42e29028704a9b940a3c8890990110c71ef3d65340d54b029ef9025c44a2ce63",
+          "state_occurrence_index": 5,
+          "state_name": "helmet.kettle.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 6,
+      "state_name": "helmet.horned.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+      "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "crop_box": [
+        393,
+        1027,
+        561,
+        1142
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1084.0471570397112,
+        "selected_components": [
+          {
+            "area": 8864,
+            "box": [
+              395,
+              1029,
+              559,
+              1140
+            ],
+            "center": [
+              477.1697879061372,
+              1084.0471570397112
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/006-helmet.horned.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+        "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+        "crop_box": [
+          393,
+          1027,
+          561,
+          1142
+        ],
+        "size": [
+          176,
+          123
+        ],
+        "source_crop_size": [
+          168,
+          115
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          166,
+          113
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          170,
+          117
+        ],
+        "retained_pixels": 8864,
+        "background_pixels_removed": 10456,
+        "enclosed_candidate_pixels_retained": 8,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 562,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/006-helmet.horned.dragonbone.png",
+        "output_sha256": "566ef34f3f228d915d9cc42ada5e4897bf4500b833817750297d46f0560fdda9"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/006-helmet.horned.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/006-helmet.horned.dragonbone.export.json",
+        "sha256": "c80df8cb291eccfc2bfb14201ebf8c0c36c6f7220a290f857e2fd335ea2a869f",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          1,
+          23,
+          12
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 12,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 24,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            5,
+            1,
+            26,
+            12
+          ],
+          "visible_height": 11,
+          "visible_width": 21,
+          "bottom_baseline_exclusive": 12,
+          "alpha_sha256": "7eefa107f5083ce3e2b7bb3893d57430aaac942887aed7d2b4de74a3418f7f6e",
+          "state_occurrence_index": 6,
+          "state_name": "helmet.horned.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/006-helmet.horned.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/006-helmet.horned.dragonbone.export.json",
+        "sha256": "cd0ed533d97ed4ef992b79b01b87cb05d373b2ab22c02ede2689f5653f0cc6c2",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          1,
+          48,
+          23
+        ],
+        "visible_height": 22,
+        "baseline_exclusive": 23,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 112,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            1,
+            52,
+            23
+          ],
+          "visible_height": 22,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 23,
+          "alpha_sha256": "833c43b47db49909e745f53cbf781ecb75f7011e29e86b407c13533c2fa5e689",
+          "state_occurrence_index": 6,
+          "state_name": "helmet.horned.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 7,
+      "state_name": "helmet.great helm.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        375,
+        75,
+        575,
+        200
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": {
+        "row_center": 133.50673703121493,
+        "selected_components": [
+          {
+            "area": 212,
+            "box": [
+              465,
+              45,
+              480,
+              66
+            ],
+            "center": [
+              472.0707547169811,
+              55.14150943396226
+            ]
+          },
+          {
+            "area": 8694,
+            "box": [
+              398,
+              92,
+              539,
+              180
+            ],
+            "center": [
+              468.65585461237634,
+              135.41764435242698
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/007-helmet.great_helm.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          375,
+          75,
+          575,
+          200
+        ],
+        "size": [
+          208,
+          133
+        ],
+        "source_crop_size": [
+          200,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          17,
+          164,
+          105
+        ],
+        "alpha_bbox": [
+          27,
+          21,
+          168,
+          109
+        ],
+        "retained_pixels": 8694,
+        "background_pixels_removed": 16306,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 646,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/007-helmet.great_helm.dragonbone.png",
+        "output_sha256": "8af71ab4ec5088dd11d2ab47697d3580fb95173415fe93a823b6afa313f18089"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/007-helmet.great_helm.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/007-helmet.great_helm.dragonbone.export.json",
+        "sha256": "ec04dd955dbef57727d7eb97c2373d7b98d21e2e593e5394805a4d9da661f9b0",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          4,
+          25,
+          15
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 28,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            4,
+            25,
+            15
+          ],
+          "visible_height": 11,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "94d00577fc742e8de94e914fe2f4e327c4e208765ca9591dc0189d002e0ee971",
+          "state_occurrence_index": 7,
+          "state_name": "helmet.great helm.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/007-helmet.great_helm.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/007-helmet.great_helm.dragonbone.export.json",
+        "sha256": "e57ecf1174704a83dbb0e438312c20344ceb48815ed78f245de1f400460cbd83",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          14,
+          8,
+          49,
+          30
+        ],
+        "visible_height": 22,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 124,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            14,
+            8,
+            50,
+            30
+          ],
+          "visible_height": 22,
+          "visible_width": 36,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "f4deb2a0082b2ea2697edcacaddabfad74a986afd1aba2e5b432950cf8c50730",
+          "state_occurrence_index": 7,
+          "state_name": "helmet.great helm.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 8,
+      "state_name": "chest.plate.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        381,
+        243,
+        551,
+        351
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 292.3234643054787,
+        "selected_components": [
+          {
+            "area": 10842,
+            "box": [
+              383,
+              245,
+              549,
+              349
+            ],
+            "center": [
+              465.94770337576097,
+              292.3234643054787
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/008-chest.plate.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          381,
+          243,
+          551,
+          351
+        ],
+        "size": [
+          178,
+          116
+        ],
+        "source_crop_size": [
+          170,
+          108
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          168,
+          106
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          172,
+          110
+        ],
+        "retained_pixels": 10846,
+        "background_pixels_removed": 7514,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 552,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/008-chest.plate.dragonbone.png",
+        "output_sha256": "05f806b3d46066e2dfc437a50b56a6ea82954f6a3fa48a95467b7e51f385e62f"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/008-chest.plate.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/008-chest.plate.dragonbone.export.json",
+        "sha256": "6e1078e3199a7b78f780124178eeae5844e5aecc274172fdb8ff4edbc3063cdc",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          14,
+          27,
+          27
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 32,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            14,
+            26,
+            27
+          ],
+          "visible_height": 13,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "64b11b56189209d69539277ecd3bedda90ede5ff58f8c116149fb3afc06d9691",
+          "state_occurrence_index": 8,
+          "state_name": "chest.plate.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/008-chest.plate.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/008-chest.plate.dragonbone.export.json",
+        "sha256": "1a70dd4c2689c760a8cb5957d965f5e56478253c3005446f367fc4922494b3f9",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          29,
+          50,
+          53
+        ],
+        "visible_height": 24,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 136,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            29,
+            52,
+            53
+          ],
+          "visible_height": 24,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "fbced4d59dbfbb2bfed0cd08d8123f32a7743b580a9181ec3f90367b67f20527",
+          "state_occurrence_index": 8,
+          "state_name": "chest.plate.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 9,
+      "state_name": "chest.lamellar.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        381,
+        410,
+        553,
+        527
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 463.1457738944365,
+        "selected_components": [
+          {
+            "area": 11216,
+            "box": [
+              383,
+              412,
+              551,
+              525
+            ],
+            "center": [
+              466.05581312410845,
+              463.1457738944365
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/009-chest.lamellar.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          381,
+          410,
+          553,
+          527
+        ],
+        "size": [
+          180,
+          125
+        ],
+        "source_crop_size": [
+          172,
+          117
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          170,
+          115
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          174,
+          119
+        ],
+        "retained_pixels": 11215,
+        "background_pixels_removed": 8909,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 574,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/009-chest.lamellar.dragonbone.png",
+        "output_sha256": "9b984232974292d34b21cb2890c1e17731fdcfae1ece018215301a40c2067340"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/009-chest.lamellar.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/009-chest.lamellar.dragonbone.export.json",
+        "sha256": "41400918a2dc91e809cbad71383601bbcb5e1e17d47e9ee47c301396cae95227",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          14,
+          27,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 36,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            14,
+            26,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "cbcd45259958eed5a2fa5f5a8db8b1708050d4dda12fbf785ec65ded3404b7d2",
+          "state_occurrence_index": 9,
+          "state_name": "chest.lamellar.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/009-chest.lamellar.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/009-chest.lamellar.dragonbone.export.json",
+        "sha256": "323055918bde7040814c4658585964f47fd043cc500b309c66aa96402922fb4e",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          29,
+          51,
+          55
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 148,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            29,
+            52,
+            55
+          ],
+          "visible_height": 26,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "c2d863be349707975be23b5f21902920bcf0bd4fb8916d489eed1f273d69c04e",
+          "state_occurrence_index": 9,
+          "state_name": "chest.lamellar.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 10,
+      "state_name": "legs.plate.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        396,
+        592,
+        522,
+        685
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 639.3727143326399,
+        "selected_components": [
+          {
+            "area": 9133,
+            "box": [
+              398,
+              594,
+              520,
+              683
+            ],
+            "center": [
+              459.7401729990146,
+              639.3727143326399
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/010-legs.plate.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          396,
+          592,
+          522,
+          685
+        ],
+        "size": [
+          134,
+          101
+        ],
+        "source_crop_size": [
+          126,
+          93
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          124,
+          91
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          128,
+          95
+        ],
+        "retained_pixels": 9130,
+        "background_pixels_removed": 2588,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 434,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/010-legs.plate.dragonbone.png",
+        "output_sha256": "46a7f68afd481e6143f22a9b53e072170caa68bf97993c41c847208708807c38"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/010-legs.plate.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/010-legs.plate.dragonbone.export.json",
+        "sha256": "e75f9e1a636875647a98bcd10005fd7160ee7f383856bd06ea646f3cfec1f540",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          23,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 40,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 10,
+          "state_name": "legs.plate.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/010-legs.plate.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/010-legs.plate.dragonbone.export.json",
+        "sha256": "5ac6a01ca0277bead60be14b589b2901f660c3c61a4285bdaab6f2b70108b137",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          45,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 160,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 10,
+          "state_name": "legs.plate.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 11,
+      "state_name": "arms.plate.dragonbone.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        447,
+        741,
+        511,
+        834
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 786.5099282956426,
+        "selected_components": [
+          {
+            "area": 3626,
+            "box": [
+              449,
+              743,
+              509,
+              832
+            ],
+            "center": [
+              477.13127413127415,
+              786.5099282956426
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              504,
+              751,
+              505,
+              754
+            ],
+            "center": [
+              504.0,
+              752.0
+            ]
+          },
+          {
+            "area": 6,
+            "box": [
+              452,
+              768,
+              453,
+              774
+            ],
+            "center": [
+              452.0,
+              770.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/011-arms.plate.dragonbone.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          447,
+          741,
+          511,
+          834
+        ],
+        "size": [
+          72,
+          101
+        ],
+        "source_crop_size": [
+          64,
+          93
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          62,
+          91
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          66,
+          95
+        ],
+        "retained_pixels": 3629,
+        "background_pixels_removed": 2323,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 310,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/011-arms.plate.dragonbone.L.png",
+        "output_sha256": "fdf83893ec148f7a2183f976a9c4c9d7f965b56f976803a86bfa2043f935181b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/011-arms.plate.dragonbone.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/011-arms.plate.dragonbone.L.export.json",
+        "sha256": "6aa3ea10f8cbb4d3569143debae0daac333035372509d0e059b45d21c13da6ef",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          17,
+          26,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 44,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            17,
+            26,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "f5e7559519ff9f281df545b20274014699138bfead9c57e3d6c9acb8c453c51a",
+          "state_occurrence_index": 11,
+          "state_name": "arms.plate.dragonbone.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/011-arms.plate.dragonbone.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/011-arms.plate.dragonbone.L.export.json",
+        "sha256": "869eb414b731155a2037427eaab046f82a3e5c0d40a4da0fd7ddb6bc4c066b63",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          35,
+          51,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 172,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            35,
+            51,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "2a0615e881f32bf31b3d2eda5f1ca01b7ed0e1d65327d035ef5fff94fc008e3a",
+          "state_occurrence_index": 11,
+          "state_name": "arms.plate.dragonbone.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 12,
+      "state_name": "arms.plate.dragonbone.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        388,
+        895,
+        451,
+        989
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 941.2722703155544,
+        "selected_components": [
+          {
+            "area": 3581,
+            "box": [
+              390,
+              897,
+              449,
+              987
+            ],
+            "center": [
+              420.6674113376152,
+              941.2722703155544
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/012-arms.plate.dragonbone.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          388,
+          895,
+          451,
+          989
+        ],
+        "size": [
+          71,
+          102
+        ],
+        "source_crop_size": [
+          63,
+          94
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          61,
+          92
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          65,
+          96
+        ],
+        "retained_pixels": 3581,
+        "background_pixels_removed": 2341,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 310,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/012-arms.plate.dragonbone.R.png",
+        "output_sha256": "bbcaff2d01f01056d67e51a1e3052c07dd5137448c4be5b9db49671009bc3add"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/012-arms.plate.dragonbone.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/012-arms.plate.dragonbone.R.export.json",
+        "sha256": "f0ce311e2ad0cf458370a443e3b7eb52569f00768517b35b7474d8d43e960c4d",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          17,
+          13,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 48,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            17,
+            13,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "e91b32111ced068b6aae02d5b7fbb111abb560cf169eb95cdd4d43872239f6a2",
+          "state_occurrence_index": 12,
+          "state_name": "arms.plate.dragonbone.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/012-arms.plate.dragonbone.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/012-arms.plate.dragonbone.R.export.json",
+        "sha256": "fbf0c60546381191587d8e5b24ff9ede3ba589a5f7355f7f279cce5091b59714",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          35,
+          25,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 184,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            35,
+            25,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0be1eb997a3461ba89b7af4c887294ef58513f5e28bb955869b932697bd3e2c2",
+          "state_occurrence_index": 12,
+          "state_name": "arms.plate.dragonbone.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 13,
+      "state_name": "shield.round.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+      "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "crop_box": [
+        384,
+        1034,
+        526,
+        1171
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1102.3887279249448,
+        "selected_components": [
+          {
+            "area": 14496,
+            "box": [
+              386,
+              1036,
+              524,
+              1169
+            ],
+            "center": [
+              454.72564845474614,
+              1102.3887279249448
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/013-shield.round.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-02.png",
+        "source_sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+        "crop_box": [
+          384,
+          1034,
+          526,
+          1171
+        ],
+        "size": [
+          150,
+          145
+        ],
+        "source_crop_size": [
+          142,
+          137
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          140,
+          135
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          144,
+          139
+        ],
+        "retained_pixels": 14496,
+        "background_pixels_removed": 4958,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 554,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/013-shield.round.dragonbone.png",
+        "output_sha256": "1012ba9a55242fdf5dcf99a185e52945692869b36f148378153d1a9b03b74249"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/013-shield.round.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/013-shield.round.dragonbone.export.json",
+        "sha256": "10c0c5caf293e372bfa8a4039472c769d4e72b1c7cc9106e495ca96c2bd0ddfe",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          15,
+          14,
+          30,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 52,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            15,
+            14,
+            29,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6b7ee5be0cd65dd5f1cd688a92aa24e9ec267b428f530d2a49bdf30913abe56e",
+          "state_occurrence_index": 13,
+          "state_name": "shield.round.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/013-shield.round.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/013-shield.round.dragonbone.export.json",
+        "sha256": "e1e5c524186eb69902f530179b4d0a5084f494a7fcd27ccbd5f4e207cc10c197",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          31,
+          29,
+          58,
+          55
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 196,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            31,
+            29,
+            57,
+            55
+          ],
+          "visible_height": 26,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "67d1089c6065c7b5f40fe38048cd1623d4b820faae1f20b89a42c9fb7d6736bd",
+          "state_occurrence_index": 13,
+          "state_name": "shield.round.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": []
+    },
+    {
+      "state_index": 14,
+      "state_name": "shield.kite.dragonbone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-03.png",
+      "source_sha256": "6dbec7557866cb44b7590a0dbda60a35e71a37bd72fe24f89a930af579af8b02",
+      "crop_box": [
+        675,
+        305,
+        885,
+        600
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/014-shield.kite.dragonbone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-03.png",
+        "source_sha256": "6dbec7557866cb44b7590a0dbda60a35e71a37bd72fe24f89a930af579af8b02",
+        "crop_box": [
+          675,
+          305,
+          885,
+          600
+        ],
+        "size": [
+          218,
+          303
+        ],
+        "source_crop_size": [
+          210,
+          295
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          25,
+          183,
+          271
+        ],
+        "alpha_bbox": [
+          27,
+          29,
+          187,
+          275
+        ],
+        "retained_pixels": 27101,
+        "background_pixels_removed": 34849,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 1006,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/014-shield.kite.dragonbone.png",
+        "output_sha256": "0f1b51b004130c3853e2687a13928a03d0885e6d7974f0c1dd39398aba574288"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/014-shield.kite.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonbone/014-shield.kite.dragonbone.export.json",
+        "sha256": "24448b779854442e4e6b1854d3faeea135f0dece69277aecb6221927626e4d29",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          17,
+          13,
+          27,
+          29
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonbone.dmi",
+          "sha256": "4a9073d41cce3cf75d64e8538f454630b7978fa9967c14a7952e1b13c3d6a988",
+          "cell_index": 56,
+          "atlas_size": [
+            256,
+            256
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            17,
+            13,
+            27,
+            29
+          ],
+          "visible_height": 16,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "11930ea2cb2c9e2627f0f5a5cc02d712aec503f05492a7add07415d545ad3476",
+          "state_occurrence_index": 14,
+          "state_name": "shield.kite.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "600eb93dccc0cb0441192ee06039025f47688f4d1f06ac86564abf0b557f670a"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/014-shield.kite.dragonbone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/014-shield.kite.dragonbone.export.json",
+        "sha256": "aa66620a4d0f748e47de4d4c05eff0d39c0ac0b8330375017100ad2442b5e34c",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          34,
+          27,
+          55,
+          59
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+          "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+          "cell_index": 208,
+          "atlas_size": [
+            960,
+            960
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            34,
+            27,
+            54,
+            59
+          ],
+          "visible_height": 32,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "6aaa5e429ff8a07fb5fc9343ec0a618d9ca3a70ce056888ce53b468553d81bd6",
+          "state_occurrence_index": 14,
+          "state_name": "shield.kite.dragonbone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    }
+  ],
+  "state_count": 15,
+  "cutout_count": 15,
+  "height_export_count": 30,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragonbone-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragonbone-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

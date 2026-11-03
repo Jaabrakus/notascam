@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T18:04:27.597699+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/gear/dragonhide/helmet-kettle-dragonhide-quadrant.png",
+    "sha256": "0ddf071082df7d063c15739a8ce08a6bd2f1b82b1642f1b01d801eff923c3e87",
+    "size": [
+      627,
+      627
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      19,
+      19,
+      627,
+      627
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 292247,
+    "transparent_perimeter_fraction": 0.9972044728434505,
+    "semi_transparent_pixels": 100556,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      19,
+      19,
+      627,
+      627
+    ],
+    "requested_source_crop": [
+      90,
+      114,
+      529,
+      471
+    ],
+    "effective_source_crop": [
+      90,
+      114,
+      529,
+      471
+    ],
+    "source_crop_size": [
+      439,
+      357
+    ],
+    "crop_rgba_sha256": "85b0dde768b960e52794e774e338ad4a67f767da3081d24f76dc3be73e654f45",
+    "discarded_pixel_count": 236406,
+    "discarded_nonzero_alpha_pixel_count": 3913,
+    "discarded_maximum_alpha": 1,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+    "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+    "cell_index": 0,
+    "atlas_size": [
+      512,
+      512
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      16,
+      7,
+      48,
+      30
+    ],
+    "visible_height": 23,
+    "visible_width": 32,
+    "bottom_baseline_exclusive": 30,
+    "alpha_sha256": "42e29028704a9b940a3c8890990110c71ef3d65340d54b029ef9025c44a2ce63",
+    "state_occurrence_index": 0,
+    "state_name": "helmet.kettle.dragonhide",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+  },
+  "placement": {
+    "target_visible_height": 23,
+    "proportional_content_size": [
+      28,
+      23
+    ],
+    "uniform_scale": 0.06442577030812324,
+    "actual_axis_scales": [
+      0.06378132118451026,
+      0.06442577030812324
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      18,
+      7,
+      46,
+      30
+    ],
+    "actual_alpha_bbox": [
+      18,
+      7,
+      46,
+      30
+    ],
+    "actual_visible_height": 23,
+    "actual_visible_width": 28,
+    "bottom_baseline_exclusive": 30,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/ai-designs/gear/dragonhide/helmet-kettle-dragonhide.png",
+    "sha256": "ef100740b63094b706cc2b4e3e596457c4e64d60910dbcaf65556683e6bc0466",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "lanczos",
+    "alpha_bbox": [
+      18,
+      7,
+      46,
+      30
+    ],
+    "alpha_sha256": "955f7dcc95d71cdab934622a0d53eeb209fe8f5a32f725e81393a65b220b4879",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 435
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

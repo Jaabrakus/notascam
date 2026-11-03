@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/Races64/Orc.png",
+  "source_sha256": "6fe9a641f578b4b6945cd2548d6f1daad10b5f19c14f568adcf6b3c8a090f4b2",
+  "crop_box": [
+    74,
+    13,
+    147,
+    101
+  ],
+  "size": [
+    73,
+    88
+  ],
+  "alpha_bbox": [
+    9,
+    5,
+    62,
+    82
+  ],
+  "retained_pixels": 3184,
+  "background_pixels_removed": 3240,
+  "enclosed_candidate_pixels_retained": 6,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red": true,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.48,
+    "red_minimum": 13,
+    "blue_ceiling": 62.0,
+    "border_background_sample_count": 318,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-source-resolution.png",
+  "output_sha256": "d4d5a5e68acf79e2a1339d135fe4bac03afd32c28ec7f928ce5be366fbbe4fd1"
+}

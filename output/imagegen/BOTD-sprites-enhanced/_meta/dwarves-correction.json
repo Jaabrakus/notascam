@@ -1,0 +1,72 @@
+{
+  "task": "One targeted Dwarves reference-sheet correction experiment",
+  "method": "Built-in image_gen__imagegen; one call; copied generated PNG without raster alterations",
+  "prompt": "Use case: identity-preserve. Perform a TARGETED CORRECTION of the enhanced Dwarves game animation reference sheet.\nINPUT 1 (path ending _reference-samples/Races64/Dwarves.png) is the EDIT TARGET and authoritative for approved chunky pixel/voxel dimensional shading, warm golden-brown skin, clean outline, character identity, 17-row layout, 12-column maximum layout and charcoal background.\nINPUT 2 (path ending BOTD-sprites/Races64/Dwarves.png) is the STRICT ANATOMY AND POSE SOURCE. Match which limbs exist in EVERY occupied source cell. The old source is flat artwork; preserve input 1's enhanced shading, not input 2's flat style.\nKeep the same 17 rows and exactly 98 occupied cells; do not add or delete cells. The first, third, fourth and fifth rows have 12 occupied cells (three animation frames × S/N/E/W directions); the second Sleep row has two occupied cells (sleeping dwarf then Z symbol); each remaining row has four occupied cells ordered S/N/E/W. Keep every blank area empty.\nReplace the top title with EXACT text: Races64/Dwarves.dmi\nPreserve the row labels EXACTLY, in this order and with the following anatomical rules:\n1. (blank): both arms and both legs.\n2. Sleep: dwarf with visibly closed sleepy eyes, not ordinary awake eyes; keep the large Z icon in the second cell.\n3. NoRightArm: remove character's RIGHT arm entirely, retain left arm and both legs.\n4. NoLeftArm: remove character's LEFT arm entirely, retain right arm and both legs.\n5. NoArms: neither arm; both legs remain.\n6. NoRightLeg: remove character's RIGHT leg including its foot; retain left leg and both arms.\n7. NoLeftLeg: remove character's LEFT leg including its foot; retain right leg and both arms.\n8. NoLeftLegNoRightArm: no left leg/foot and no right arm.\n9. NoRightLegNoLeftArm: no right leg/foot and no left arm.\n10. NoLegs: ZERO legs and ZERO feet; both arms remain, torso ends flat at the bottom with tiny stylized red stump marks from source.\n11. NoRightArmNoRightLeg: no right arm and no right leg/foot.\n12. NoLeftArmNoLeftLeg: no left arm and no left leg/foot.\n13. NoLegsNoRightArm: ZERO legs, ZERO feet, ZERO right arm. Only the left arm remains. The existing golden foot is an ERROR: remove it. No shoe shapes or rounded golden foot buds beneath the torso.\n14. NoLegsNoLeftArm: ZERO legs, ZERO feet, ZERO left arm. Only right arm remains. No shoe shapes or golden foot buds.\n15. None: ZERO ARMS, ZERO HANDS, ZERO LEGS, ZERO FEET in all four directions. Head and torso ONLY. The existing two golden feet are ERRORS: remove both. Smooth flat truncated torso bottom, tiny source-level stylized red stump marks; no limb-shaped bumps. This is an explicit missing-limb animation state, not a neutral complete dwarf.\n16. NoArmsNoLeftLeg: ZERO arms, no left leg/foot, right leg only.\n17. NoArmsNoRightLeg: ZERO arms, no right leg/foot, left leg only.\nAnatomical right/left belongs to the character, reversing screen-side between front and rear; follow input 2 exactly instead of guessing. Every missing limb in input 2 must also be missing in the corrected output. Do not restore limbs for visual completeness. Keep tiny red stump marks subtle and stylized as in the source, no added gore.\nIn profile do not add hidden limbs. Preserve the source's walking pose changes across all three frame groups, not repeated idle poses. Preserve the target's polished lighting and small shadows. Do not change style, add equipment, decorations, clothing, props, extra labels, extra sprites, or placeholders. Keep entire sheet visible with all bottom rows. Output only the corrected complete reference sheet.",
+  "edit_target": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/Races64/Dwarves.png",
+  "strict_anatomy_source": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Dwarves.png",
+  "generated_source_path": "/Users/kiwimango/.codex/generated_images/01a16ea4-f45b-78d2-a278-715f98401cbd/exec-3021ad42-b27c-4e07-940c-2f531e5884ad.png",
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/corrections/Dwarves-corrected.png",
+  "output_dimensions": [
+    1083,
+    1452
+  ],
+  "output_mode": "RGB",
+  "source_dimensions": [
+    2526,
+    3388
+  ],
+  "visible_qa": {
+    "outcome": "Failed anatomy correction; reference-only artwork, not faithful all-frame enhancement or runtime asset",
+    "title": {
+      "status": "fixed",
+      "detail": "Top title now visibly reads Races64/Dwarves.dmi."
+    },
+    "sleep": {
+      "status": "fixed",
+      "detail": "Dwarf eyes visibly closed; adjacent Z retained."
+    },
+    "occupancy": {
+      "status": "visually retained",
+      "detail": "17 rows; expected 98 occupied slots appear present: four rows of 12, Sleep row of 2, twelve rows of 4; blank area stays empty. This is visual assessment, not an automated sprite segmentation count."
+    },
+    "shading": {
+      "status": "retained",
+      "detail": "Prior warm golden pixel/voxel dimensional shading, outline, and face identity remain."
+    },
+    "none_state": {
+      "status": "failed",
+      "detail": "Front view still has two obvious golden feet; rear view retains lower golden limb forms, whereas original None state has no arms or legs."
+    },
+    "no_legs_no_right_arm": {
+      "status": "failed",
+      "detail": "Front view still has two golden feet and profiles retain golden lower appendages; row requires zero legs and feet."
+    },
+    "no_legs_no_left_arm": {
+      "status": "failed",
+      "detail": "Front view retains a golden foot on image right; row requires zero legs and feet."
+    },
+    "single_missing_leg_states": {
+      "status": "failed",
+      "detail": "NoRightArmNoRightLeg front view still shows two feet; NoArmsNoRightLeg front view also appears to retain two golden feet."
+    },
+    "no_legs_row": {
+      "status": "visually improved or retained",
+      "detail": "NoLegs front/rear views terminate around red stump marks with no clearly separate golden feet; this does not fix the other NoLegs variants."
+    },
+    "labels": {
+      "status": "partly improved",
+      "detail": "Main title fixed and row labels retained, but longer labels remain compressed/crowded near sprites; verbatim OCR fidelity not certified."
+    },
+    "animation_poses": {
+      "status": "unverified",
+      "detail": "Full source walk-cycle pose fidelity has not been established; do not claim every frame faithfully preserved."
+    },
+    "runtime_registration": {
+      "status": "failed",
+      "detail": "Generated 1083x1452 RGB reference sheet has different geometry and dimensions from 2526x3388 original opaque preview and no native DMI metadata or validated overlay registration."
+    }
+  },
+  "original_or_prior_sample_modified": false,
+  "shared_manifest_modified": false,
+  "further_imagegen_calls": 0
+}

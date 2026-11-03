@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+  "source_sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0",
+  "crop_box": [
+    485,
+    73,
+    639,
+    246
+  ],
+  "size": [
+    154,
+    173
+  ],
+  "alpha_bbox": [
+    1,
+    1,
+    153,
+    172
+  ],
+  "retained_pixels": 18256,
+  "background_pixels_removed": 8386,
+  "enclosed_candidate_pixels_retained": 9,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 64.0,
+    "border_background_sample_count": 650,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/extraction-pilot/Goblins-v2.png",
+  "output_sha256": "1f1319c93026392ecb8549a6b7f56bf7e9bf5d0ab8de146c7a43a8035bfdcc74"
+}

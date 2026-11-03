@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:38.622706+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/gold/002-weapon.longsword.gold.png",
+    "sha256": "2e60fc83bf62295155e94dc7c5c6886394e927cfcc81e194235a605cab485094",
+    "size": [
+      104,
+      154
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      98,
+      148
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 11651,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      98,
+      148
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      98,
+      148
+    ],
+    "source_crop_size": [
+      92,
+      142
+    ],
+    "crop_rgba_sha256": "6165debb24c981e4f00ccce359ff5f4578abe454389975fca0aa3a56ebc8b469",
+    "discarded_pixel_count": 2952,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/gold.dmi",
+    "sha256": "8036322c63b7e9989be323b2f3dd7570dc02ac7eda8dc73205c4be68c82c98e7",
+    "cell_index": 8,
+    "atlas_size": [
+      416,
+      384
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      2,
+      10,
+      14,
+      31
+    ],
+    "visible_height": 21,
+    "visible_width": 12,
+    "bottom_baseline_exclusive": 31,
+    "alpha_sha256": "7d13ff869741ddb2b7bb7f06708ab794c45a5ec178b537a247d5556847828fd7",
+    "state_occurrence_index": 2,
+    "state_name": "weapon.longsword.gold",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "e5d29a85b40de4b8b4b58ab06dbae48f9138c0fb4935d3ac71b3f465ba591809"
+  },
+  "placement": {
+    "target_visible_height": 21,
+    "proportional_content_size": [
+      14,
+      21
+    ],
+    "uniform_scale": 0.14788732394366197,
+    "actual_axis_scales": [
+      0.15217391304347827,
+      0.14788732394366197
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      34,
+      32
+    ],
+    "destination_box": [
+      2,
+      10,
+      16,
+      31
+    ],
+    "actual_alpha_bbox": [
+      2,
+      10,
+      16,
+      31
+    ],
+    "actual_visible_height": 21,
+    "actual_visible_width": 14,
+    "bottom_baseline_exclusive": 31,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/gold/002-weapon.longsword.gold.png",
+    "sha256": "395b7558f21c502493d63c67594ddf6ca68bfb6cbd1ac590027bb80bbbb33c65",
+    "size": [
+      34,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      2,
+      10,
+      16,
+      31
+    ],
+    "alpha_sha256": "5f52c3a0d520b175457fb85fcc20a9f9b3e1e32f2a6d048405e6c382f65b0a1e",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

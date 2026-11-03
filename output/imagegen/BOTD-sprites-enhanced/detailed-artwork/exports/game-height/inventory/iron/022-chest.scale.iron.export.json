@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:48.886511+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/iron/022-chest.scale.iron.png",
+    "sha256": "946f811f9848341cec1e3576548dca27158fb5b0e2ae5f05e50be32dd7505078",
+    "size": [
+      141,
+      135
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      135,
+      129
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 7511,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      135,
+      129
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      135,
+      129
+    ],
+    "source_crop_size": [
+      129,
+      123
+    ],
+    "crop_rgba_sha256": "78505e4ab7c58f8310ce46376c4fbc614e22f06036087fe894619fb63a99c3f4",
+    "discarded_pixel_count": 3168,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/iron.dmi",
+    "sha256": "99f4693f3c4b43b8cb7015dab760b2a313deed73f6bca0878a77e854b13d9b02",
+    "cell_index": 88,
+    "atlas_size": [
+      416,
+      384
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      9,
+      14,
+      23,
+      29
+    ],
+    "visible_height": 15,
+    "visible_width": 14,
+    "bottom_baseline_exclusive": 29,
+    "alpha_sha256": "3bc8967b993cf25449833663c68e864605ab1b81fd6920f3c179dd8804d9e4b1",
+    "state_occurrence_index": 22,
+    "state_name": "chest.scale.iron",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "100aa3ddf11dcfc182db3ac111b077e4fb33fd2cf2d4a11521fb08b8cfd014d7"
+  },
+  "placement": {
+    "target_visible_height": 15,
+    "proportional_content_size": [
+      16,
+      15
+    ],
+    "uniform_scale": 0.12195121951219512,
+    "actual_axis_scales": [
+      0.12403100775193798,
+      0.12195121951219512
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      34,
+      32
+    ],
+    "destination_box": [
+      9,
+      14,
+      25,
+      29
+    ],
+    "actual_alpha_bbox": [
+      9,
+      14,
+      25,
+      29
+    ],
+    "actual_visible_height": 15,
+    "actual_visible_width": 16,
+    "bottom_baseline_exclusive": 29,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/iron/022-chest.scale.iron.png",
+    "sha256": "d30c0ab3ec77161d8cf03002bd021434bd73a7bcf72dce1639b6a97a1a4c1ec5",
+    "size": [
+      34,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      9,
+      14,
+      25,
+      29
+    ],
+    "alpha_sha256": "7928b5fa5642c55e44c371409cdcbadc52982707a5a6b933705cd430a7494506",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

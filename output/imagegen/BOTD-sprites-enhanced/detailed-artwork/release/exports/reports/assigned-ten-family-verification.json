@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "worker_model": "gpt-6.1-sol",
+  "new_artwork_generated": false,
+  "runtime_installed": false,
+  "source": "actual_detailed_enhanced_artwork_not_native_fallback",
+  "families": {
+    "diamond": {
+      "states": 37,
+      "passed": true,
+      "failures": []
+    },
+    "dragonbone": {
+      "states": 15,
+      "passed": true,
+      "failures": []
+    },
+    "bonehide": {
+      "states": 5,
+      "passed": true,
+      "failures": []
+    },
+    "dragonhide": {
+      "states": 5,
+      "passed": true,
+      "failures": []
+    },
+    "spidersilk": {
+      "states": 5,
+      "passed": true,
+      "failures": []
+    },
+    "leather": {
+      "states": 7,
+      "passed": true,
+      "failures": []
+    },
+    "spiderfang": {
+      "states": 4,
+      "passed": true,
+      "failures": []
+    },
+    "dragonfang": {
+      "states": 8,
+      "passed": true,
+      "failures": []
+    },
+    "cloth": {
+      "states": 14,
+      "passed": true,
+      "failures": []
+    },
+    "magic": {
+      "states": 13,
+      "passed": true,
+      "failures": []
+    }
+  },
+  "failures": [],
+  "counts": {
+    "families": 10,
+    "source_cutouts": 113,
+    "height_exports": 226,
+    "nearest_exports": 219,
+    "lanczos_sparse_edge_fallback_exports": 7
+  },
+  "passed": true,
+  "limitations": [
+    "Alpha-only extraction uses reviewed segmentation; conservative edge residue can remain on some cloth.",
+    "Cutouts retain all source RGB before resizing; resizing changes sampled pixels according to the recorded resampler.",
+    "Height and bottom anchor match native references; width can vary, and these are not drop-in registered equipment overlays."
+  ]
+}

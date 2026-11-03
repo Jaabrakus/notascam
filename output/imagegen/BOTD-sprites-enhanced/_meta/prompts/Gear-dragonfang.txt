@@ -1,0 +1,31 @@
+Use case: identity-preserve.
+Enhance the entire supplied dragonfang weapon sprite REFERENCE SHEET into the polished chunky pixel/voxel artwork style used by the checked enhanced equipment sheets.
+
+INPUT 1: /Users/kiwimango/Downloads/BOTD-sprites/Gear/dragonfang.png is the EDIT TARGET and STRICT AUTHORITY for which objects exist, all eight rows, object sizes relative to each other, exact directional poses, occupied cells, and deliberately clipped or disconnected weapon fragments.
+INPUT 2: /Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png is STYLE REFERENCE ONLY for crisp voxel-like pixel edges, dark outlines, small tonal ramps, rich dimensional highlights and clear material detail. Do not copy its green blade palette, red gems, four-row layout, or empty dagger-west slot.
+
+OUTPUT: one complete readable tall contact sheet, all EIGHT rows visible, FOUR columns ordered SOUTH, NORTH, EAST, WEST as in input 1. Exactly THIRTY-TWO occupied cells; each row has four occupied cells, even when the fourth contains only tiny sparse pixels. No rows omitted, no cropping at the bottom, no duplicate rows. Retain source charcoal background and the source row spacing and cell arrangement proportionally. Keep enhanced objects inside their assigned cells.
+Top title EXACTLY: Gear/dragonfang.dmi
+Retain the source's existing visible truncated row-label text verbatim, in order. Full states for semantic reference only are:
+1 weapon.dagger.dragonfang
+2 weapon.arming sword.dragonfang
+3 weapon.longsword.dragonfang
+4 weapon.scimitar.dragonfang
+5 weapon.hand axe.dragonfang
+6 weapon.battle axe.dragonfang
+7 weapon.spear.dragonfang
+8 weapon.halberd.dragonfang
+
+Art: dragon FANG material is creamy ivory/beige, warm pale bone highlights, subtle ochre shadows, dark brown wooden/leather grips and shafts. Improve definition, clean individual pixel shapes, give blade/fang planes clear dimensional lighting. Preserve dagger shorter than sword, longsword tall and slender, scimitar visibly curved, small hand axe versus larger battle axe, spear a simple pointed tip, halberd a hooked/branching blade. Do not invent bright gemstones, green poison edges, metal armor, ornate new hardware, characters or clothing. Keep the original designs recognizable. Preserve current pose angle for every occupied source cell: this is fitted worn equipment, not a new freely rotating complete-weapon catalog.
+
+CRITICAL OCCLUSION RULE: these are weapon OVERLAYS partly hidden behind a character. The sparse fourth column is intentional. Do NOT complete the missing weapon shape. Keep disconnected tips/grips as disconnected fragments, with empty background between them. In particular:
+- Row 1 / column 4 (dagger west) has ONLY TWO tiny detached dark-brown marks, slightly staggered vertically. At native 32x32 they occupy (19,22) and (20,26). Keep exactly these two small visible marks in the proportional source positions; NO blade, NO full dagger, NO new large object. This cell is occupied, not blank.
+- Row 2 / column 4: short pale blade-tip fragment near the upper-left of its cell, plus two small detached brown grip marks below/right. Retain all three disconnected source pieces.
+- Row 3 / column 4: pale diagonal blade-tip fragment plus separate small brown lower grip pieces. Keep partial.
+- Row 4 / column 4: short curved pale blade-tip fragment plus detached small brown grip marks below/right. Keep partial.
+- Row 5 / column 4: compact hand-axe-head fragment only, as source.
+- Row 6 / column 4: compact battle-axe-head fragment only, as source.
+- Row 7 / column 4: ivory spear-tip/short upper-shaft fragment near top plus a tiny detached lower shaft mark near bottom. Do NOT connect with a full shaft.
+- Row 8 / column 4: small ivory hooked halberd-head fragment near top plus a tiny detached lower shaft mark near bottom. Do NOT connect with a full shaft.
+The visible first/second/third-column axe handles also have detached little end pieces; retain them as in source rather than remove them as noise.
+All 32 occupied cells and all source fragments must survive this enhancement. Empty areas remain empty. Do not add grid lines, direction text, decorations or borders. Deliver the whole sheet only.

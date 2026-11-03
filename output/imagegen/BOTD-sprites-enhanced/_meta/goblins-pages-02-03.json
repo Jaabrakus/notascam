@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "source_relative": "Races64/Goblins.png",
+  "source": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Goblins.png",
+  "source_sha256": "9bf0c9d7d53dc29f8b9bb9900e8194c17b6ce424c6b249ef0082a671f72e5359",
+  "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+  "native_sha256": "52c6f3fa00c8dce18e38eeb8d7b4b07cd6ac37fed90c6752e528221b60331cef",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit/style-transfer and targeted corrections",
+  "status": "reference_art_checked",
+  "runtime_ready": false,
+  "playable_asset_complete": false,
+  "pages": [
+    {
+      "page": 2,
+      "source_row_range_inclusive": [
+        3,
+        3
+      ],
+      "included_states": [
+        "NoLeftArm"
+      ],
+      "represented_native_cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-02.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-5468706f-a500-4303-8c59-5f9152a00bb5.png",
+      "output_sha256": "cbdde7ee6ba05a068fe445bcc810b2e93403470b6fd5a8b336fb3cdacffb2c8b",
+      "generated_size": [
+        1536,
+        1024
+      ],
+      "generated_mode": "RGB",
+      "expected_rows": 3,
+      "observed_rows": 3,
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "source_state_frame_count": 3,
+      "source_directions": [
+        "S",
+        "N",
+        "E",
+        "W"
+      ],
+      "prompts": [
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Races64-Goblins-page-02-repair.txt",
+          "text": "Use case: precise-object-edit. Image1 is an existing Goblins NoLeftArm reference page that needs a targeted animation correction. Image2 is approved Goblins default/sleep page01 for exact walking-phase reference and visual identity. Image3 is original full Goblins state preview. Preserve the entire3rows\u00d74columns layout, header, direction letters S N E W, labels, palette, pixel/voxel style, eyes/ears, red stump caps, original missing LEFT ARM in everyfigure. Change ONLY the third row, labelled 'NoLeftArm frame 3': its leg/foot stance currently duplicates frame2 in front/back views. Replace its walking stance with the OPPOSITE stepping phase, matching the third row '(blank) frame 3' of Image2 in each corresponding S,N,E,W direction. In FRONT, row3 must have the foot at screenLEFT forward/down and the foot at screenRIGHT lifted/back, opposite row2. In BACK, reverse the stepping sides from row2, with screenRIGHT foot forward/down and screenLEFT foot lifted/back. The two profiles must also show the opposite stepping phase, as Image2 row3. Keep both legs/feet on each creature. Maintain only the goblin's anatomical RIGHT ARM: front visible arm on screenLEFT with a small red missing-left-arm cap screenRIGHT; back visible arm on screenRIGHT with cap screenLEFT. Right-facing profile retains near right arm; left-facing profile has missing near left arm, only far right arm can be partly visible. Do not regrow any left hand/forearm below a red cap. Do not change rows1or2 or any text. No other states or objects. Exactly12figures. No added clothing, no enlarged wounds, no realistic gore. This is reference artwork, not runtime sprite data."
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Races64-Goblins-page-02-repair-02.txt",
+          "text": "Use case: precise-object-edit. Image1 is Goblins NoLeftArm page02 exacttarget. Image2 is original full Goblins sprite reference. Correct ONLY the FOURTH column W, all3rows. In NoLeftArm state the LEFT arm is amputated; in the left-facing W profile this is the near arm. The generated W figures incorrectly show a green arm/hand extending from the shoulder under the red cap. REMOVE ALL visible green arm/forearm/hand shapes from these three W profile figures. Keep narrow short torso, head, ears, BOTH walking legs/feet and the small RED shoulder stump cap. The remaining anatomicalRIGHTarm is on the far side and completely OCCLUDED behind the torso in these profile views, so draw NO visible green arm or hand in the entire Wcolumn. Avoid replacing removed arm with a thick torso bulge. In the bottom Wfigure remove the prominent green diagonal arm across the chest as well. Preserve the three different leg poses exactly. Do not change S,N,Ecolumns or labels, header, colors, lighting, layout or figurecount. Keep all12figures, all3rows, fourcolumnS,N,E,W. No enlarged wounds or newobjects. Referenceart only."
+        }
+      ],
+      "generation_calls": 1,
+      "repair_calls": 2,
+      "runtime_ready": false,
+      "checks": {
+        "all_twelve_views_visible": true,
+        "missing_arm_on_correct_front_back_side": true,
+        "missing_near_profile_arm_not_regrown": true,
+        "intact_near_profile_arm_preserved": true,
+        "both_legs_present": true,
+        "front_back_walk_phases_visibly_distinct": true,
+        "header_and_row_labels_correct": true,
+        "no_cropped_content": true,
+        "independent_visual_review_passed": true
+      },
+      "status": "reference_page_checked",
+      "recovered_candidate": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-f197cee5-6947-4e0c-9a12-16a47c5d3473.png",
+      "original_generation_prompt": "Unavailable: recovered interrupted prior-agent output; not invented.",
+      "repair_history": [
+        {
+          "candidate": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-be851801-1266-49f7-bfaf-5e3f9585ceb0.png",
+          "result": "Corrected repeated front/back frame3 stepping phase; Wneararm remained regrown."
+        },
+        {
+          "candidate": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-5468706f-a500-4303-8c59-5f9152a00bb5.png",
+          "result": "Removed regrown Wneararm while retaining bothlegs and front/back gait. Independent reviewer already confirmed pass."
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "source_row_range_inclusive": [
+        4,
+        4
+      ],
+      "included_states": [
+        "NoRightArm"
+      ],
+      "represented_native_cells": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-03.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-edb70454-a161-4607-ad26-62c339dd75b1.png",
+      "output_sha256": "2730f3d374225141cbf7fceca06f87c3821f3d0891e1e13a0102a91a3d4ae71c",
+      "generated_size": [
+        1536,
+        1024
+      ],
+      "generated_mode": "RGB",
+      "expected_rows": 3,
+      "observed_rows": 3,
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "source_state_frame_count": 3,
+      "source_directions": [
+        "S",
+        "N",
+        "E",
+        "W"
+      ],
+      "prompts": [
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Races64-Goblins-page-03.txt",
+          "text": "Use case: style-transfer. Image1 is original Races64/Goblins.dmi full preview, authoritative content. Image2 is approved enhanced Goblins default/sleep page01, style and identity reference. Make ONE new polished pixel/voxel reference page for ONLY native state 'NoRightArm', original source row4, 3animationframes\u00d74directions. ExactlyTHREErows andFOURcolumns=12figures. Header exactly 'Races64/Goblins.dmi - NoRightArm'. Column labels S,N,E,W; left row labels exactly 'NoRightArm frame 1', 'NoRightArm frame 2', 'NoRightArm frame 3'. Columns front/south,back/north,right-facing/eastprofile,left-facing/westprofile. Same olive-green large-headed squat goblin, pointed brown-inner ears,yelloweyes,twotinyteeth,blocky faceted shading,dark outlines,charcoalbackground asImage2. CRITICAL ALL12figures lack the anatomical RIGHT ARM and right hand entirely. FRONT: missing right arm means small red source stump at screenLEFT shoulder, sole intact LEFT ARM at screenRIGHT. BACK: missing right arm cap screenRIGHT, intact LEFT ARM screenLEFT. RIGHT-FACING/EAST profile: the near anatomicalRIGHTarm is absent with a small red stump cap; no dangling green near arm or hand; far left arm may be partially occluded. LEFT-FACING/WEST profile: near anatomicalLEFTarm is INTACT, no red cap on that near arm; missingfar right arm usually occluded. Do not mirror the wrong arm. BOTHLEGS remain in allviews. Row1neutralstand matches firstdefaultrow inImage2. Row2walkingphaseA: front screenRIGHT foot forward/down, screenLEFT foot lifted/back; back screenLEFT foot forward/down, screenRIGHT lifted/back. Row3OPPOSITEwalkingphaseB: front screenLEFT foot forward/down, screenRIGHT lifted/back; back screenRIGHT foot forward/down, screenLEFT lifted/back. Each profile matches corresponding phase fromImage2, so rows2and3 are visibly distinct. Onlytheintactleftarmcan swing. Original source NoRightArm row4 columns1-4/5-8/9-12 provide the threeframegroups. Keep exact required missinglimb, allhead/torso/ears, red small stylized stump caps, no enlarged wounds. Wholefigures/feetvisible with margins; no additional limb-lossstates,sleep,extrafigures,clothing/weapons. Referenceart only; no runtimeatlas claims."
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Races64-Goblins-page-03-repair-01.txt",
+          "text": "Use case: precise-object-edit. Image1 is Goblins NoRightArm page03 exacttarget. Image2 is approved Goblins defaultpage01 for walkingpose. Image3 is original Goblins preview. Make TWO precisely localized corrections while preserving allothercontent. FIRST: THIRD column E, all3rows: remove ALL green arm/forearm/hand shapes below or near the red shoulder cap. NoRightArm amputates the NEAR anatomicalRIGHTarm in this right-facing profile. Draw the head, short NARROW torso, small red shoulder stump, BOTH legs/feet, with NO visible green arm or hand. The remaining leftarm is on FAR side and fully OCCLUDED behind torso. Do not substitute a thick torso bulge for removed arm. SECOND: SECOND ROW front/S and back/N figures currently repeat row3 stance. Match Image2 row2 '(blank) frame2': S has screenRIGHT foot forward/down, screenLEFT foot lifted/back; N has screenLEFT foot forward/down, screenRIGHT foot lifted/back. Keep BOTH legs. Row3mustremainOPPOSITE: S screenLEFTfootforward/down and N screenRIGHTfootforward/down. Preserve sole intactleftarm in S/Nfigures: S arm screenRIGHT, N arm screenLEFT. Keep missingrightarmredcap at SscreenLEFT/NscreenRIGHT. Do not change row1, row3S/N, Wcolumn, header, direction letters, exact rowlabels, style, color, layout, shadow or 12figurecount. No other states, bodyparts or objects."
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Races64-Goblins-page-03-repair-02.txt",
+          "text": "Use case: precise-object-edit. EDIT ONLY Image1, a polished NoLeftArm sprite reference page, into the corresponding NoRightArm page using exact geometric visual transformations, without redesign. Preserve every pixel-art figure's style, color, head, eyes, ears, small red cap and limb silhouette. Do these operations: (1) Horizontally mirror EACH GOBLIN FIGURE individually inside its own cell, never mirror labels or page. This switches the anatomical missing LEFT arm to missing RIGHT arm. (2) Exchange the mirrored figure images of columns E and W so E still faces RIGHT and W still faces LEFT. Keep columns S,N in place. (3) Exchange the figure artwork of walking rows2and3 so frame2 retains its original stepping-phase sides after the mirror. Keep label positions unchanged. (4) Change header 'NoLeftArm' to 'NoRightArm' and allthree rowlabels to 'NoRightArm frame 1', 'NoRightArm frame 2', 'NoRightArm frame 3'. Keep S,N,E,W headers unchanged. RESULT CHECK: allFRONTfigures sole green arm is SCREENRIGHT and missingarmredcap SCREENLEFT. AllBACKfigures sole arm SCREENLEFT and redcap SCREENRIGHT. AllE/right-facing figures have NO VISIBLE ARMS OR HANDS, small red shoulder cap, narrow torso and TWO legs. AllW/left-facing figures show the one intact near green arm. Frontframe2 screenRIGHT foot forward/down, frame3 screenLEFT foot forward/down; backframe2 screenLEFT foot forward/down, frame3 screenRIGHT foot forward/down. Keep exactly12figures in3rows4columns, clean charcoal background, dark ground ellipses, and same label/font/layout/dimensions. Do not introduce any green arm shapes in E column. Do not grow a hand below a stump cap. No extraobjects/states/columns. This is a reference image only."
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Races64-Goblins-page-03-repair-03.txt",
+          "text": "Use case: precise-object-edit. Image1 is NoRightArm page03 editTARGET. Image2 is corrected NoLeftArm page02 used ONLY to source intact-arm profile poses. Make ONE column correction to Image1: replace the three W/fourth-column figures with horizontally mirrored copies of the corresponding E/third-column figures of Image2, same row1to1,row2to2,row3to3. These are the intact near LEFT ARM profiles needed for NoRightArm when facingLEFT. The new Wfigures must faceLEFT and have ONE intact green neararm, BOTH legs/feet, and ABSOLUTELY NO RED PIXELS/STUMP CAP anywhere on them, since the missing rightarm is fullyoccluded onthefarside. Wrow1 is NEUTRALSTANDING: bothfeetsettledclosetogether, sole arm hangingstraightdown, exactly mirroring Image2Erow1. Wrow2 mirrors Image2Erow2walkingpose. Wrow3 mirrors Image2Erow3walkingpose. Do NOT reuse the bottomwalkingpose for all3rows. Erase the existing incorrect red shoulder dots from ALL3Wfigures. Preserve the entire other S,N,Ecolumns of Image1 EXACTLY, including theircorrectarmcount and distinctfront/back walkinglegs. Preserve alltext/header/directionletters,3\u00d74grid,colors,pixelstyle,lighting,background,dimensions and12figurecount. Only Wcolumn changes. No addedarms or newobjects."
+        }
+      ],
+      "generation_calls": 1,
+      "repair_calls": 3,
+      "runtime_ready": false,
+      "checks": {
+        "all_twelve_views_visible": true,
+        "missing_arm_on_correct_front_back_side": true,
+        "missing_near_profile_arm_not_regrown": true,
+        "intact_near_profile_arm_preserved": true,
+        "both_legs_present": true,
+        "front_back_walk_phases_visibly_distinct": true,
+        "header_and_row_labels_correct": true,
+        "no_cropped_content": true,
+        "independent_visual_review_passed": true
+      },
+      "status": "reference_page_checked",
+      "repair_history": [
+        {
+          "candidate": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-0d3c6967-0795-4fe0-9ccc-ab055d68015f.png",
+          "result": "Initial generation: repeated front/back gait and near Earm regrown."
+        },
+        {
+          "candidate": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-a1e5ec11-9b42-4b22-ab04-2fdb332cdc9e.png",
+          "result": "Targeted repair did not fully resolve gait/neararm issues; rejected."
+        },
+        {
+          "candidate": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-0ca5d1df-64d9-40bb-beb5-f19baddeddbb.png",
+          "result": "Derived imagegen edit of checked NoLeftArm corrected arm sides, Eprofiles and state-specific gait; Wredcaps and neutralpose still wrong."
+        },
+        {
+          "candidate": "/Users/kiwimango/.codex/generated_images/01a16ec6-d6ce-7940-a5f3-231397697efc/exec-edb70454-a161-4607-ad26-62c339dd75b1.png",
+          "result": "Wcolumn repair removed invented redcaps and restored neutral standing firstrow with intactleftarm; all12views rechecked."
+        }
+      ]
+    }
+  ],
+  "native_checks": [
+    "Exact queued native cell mappings: NoLeftArm14\u201325, NoRightArm26\u201337;12cells each.",
+    "Read-only native foot rows prove NoRightArm frame2 front cell30 has low foot at screenleft; frame3 cell34 has lowfoot screenright, opposite default frame2/3. Final page03 reflects native state-specific phase order.",
+    "Native NoRightArm west cells29/33/37 contain zero red stump pixels; final west figures contain no redcaps.",
+    "Native NoLeftArm east cells16/20/24 contain zero redstump pixels; final east figures retain intact near arm."
+  ],
+  "limitations": [
+    "Reference art only; changed dimensions, scale, geometry, background and typography.",
+    "Native alpha, exact pixel registration, DMI metadata and runtime animation compatibility are not preserved.",
+    "Visual review verifies required limb absence, broad facing and distinct walking phases; precise native animation motion is not established.",
+    "NoLeftArm first generation was recovered from an interrupted prioragent; original generation prompt was not persisted and is unavailable. All new exact prompts are saved."
+  ],
+  "independent_review": "_meta/goblins-pages-02-03-review.json"
+}

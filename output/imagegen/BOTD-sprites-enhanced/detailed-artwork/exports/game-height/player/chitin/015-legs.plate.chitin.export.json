@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:35.477989+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/chitin/015-legs.plate.chitin.png",
+    "sha256": "ed2e38d4e6f53ff611e9868db1921c62535cc626e0f05c3e6fc08c8fbb675070",
+    "size": [
+      126,
+      94
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      120,
+      88
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 4238,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      120,
+      88
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      120,
+      88
+    ],
+    "source_crop_size": [
+      114,
+      82
+    ],
+    "crop_rgba_sha256": "88fdad21cf697b19f277791175d8feb8f2e79c9752f784b16c04c24ff52b9249",
+    "discarded_pixel_count": 2496,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/chitin.dmi",
+    "sha256": "67750d73c6dd1bbd1f4fb2a7f1cb41c5265bc2c78172df23a0614e1c98369726",
+    "cell_index": 244,
+    "atlas_size": [
+      1216,
+      1152
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      19,
+      45,
+      45,
+      64
+    ],
+    "visible_height": 19,
+    "visible_width": 26,
+    "bottom_baseline_exclusive": 64,
+    "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+    "state_occurrence_index": 15,
+    "state_name": "legs.plate.chitin",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "339f631ca85af1472f28a4abf934b1c843ad1b8a5f2d0d0c1fdec1d25dc30f81"
+  },
+  "placement": {
+    "target_visible_height": 19,
+    "proportional_content_size": [
+      26,
+      19
+    ],
+    "uniform_scale": 0.23170731707317074,
+    "actual_axis_scales": [
+      0.22807017543859648,
+      0.23170731707317074
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      19,
+      45,
+      45,
+      64
+    ],
+    "actual_alpha_bbox": [
+      19,
+      45,
+      45,
+      64
+    ],
+    "actual_visible_height": 19,
+    "actual_visible_width": 26,
+    "bottom_baseline_exclusive": 64,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/chitin/015-legs.plate.chitin.png",
+    "sha256": "d1565c31ae56c89dff2e89371acbc60e0f7ca22b20e72eec9ae0a8fcb7d16c3e",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      19,
+      45,
+      45,
+      64
+    ],
+    "alpha_sha256": "15d531e8b277fa237a5df5acb6300db1c8be2953bcce083796a9706d37c9ef75",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

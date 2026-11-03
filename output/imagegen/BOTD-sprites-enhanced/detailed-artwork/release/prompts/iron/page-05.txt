@@ -1,0 +1,17 @@
+Use case: stylized-concept. Produce a FULL HIGH RESOLUTION portrait detailed equipment sheet. Image1 is the EXACT source designs/layout; image2 is approved enhanced style. Increase drawn resolution, faceted voxel/pixel material shading and readable depth ONLY. Preserve ALL object identities, silhouettes, blade types, handles, proportions, directional poses, partial fragments and intentional blank cells. No arbitrary ornaments, spikes, horns, trim, new equipment, characters, photorealism or smooth blur. Opaque dark charcoal background, crisp dark outlines, polished pixel clusters. Clear white title and exact left row labels; four spacious columns headed S N E W. One object view per source cell, centered, separated, not cropped. Never turn a partial/occluded source weapon into a full weapon; preserve detached grip pieces. Redraw additional clean high-resolution material detail, do not merely nearest-upscale source. Use full page, all listed rows and fourcolumns. Title exactly "Gear/iron.dmi". Muted cool gray iron/steel, bright silver bevels, charcoal shadow, brown wood/leather handles; keep original colors. Page5 rows verbatim in order:
+1. "legs.scale.iron"; occupied S,N,E,W; all other columns BLANK.
+2. "arms.plate.iron.L"; occupied S,N,W; all other columns BLANK.
+3. "arms.plate.iron.R"; occupied S,N,E; all other columns BLANK.
+4. "arms.mail.iron.L"; occupied S,N,W; all other columns BLANK.
+5. "arms.mail.iron.R"; occupied S,N,E; all other columns BLANK.
+6. "shield.buckler.iron"; occupied S,N,E,W; all other columns BLANK.
+7. "shield.round.iron"; occupied S,N,E,W; all other columns BLANK.
+Total 24 occupiedcells. ArmrowsONLYsingle detachedupper-armarmorpieces, neverfullarms/hands/pairedgauntlets. PlateL andmailL EcolumnsBLANK; plateR andmailR WcolumnsBLANK. Keep left/rightsourcehandedness. Compactscalehip/thighshorts firstrow. BucklerE singleTINYdarkgrayedgefragment; roundshieldE TWOseparatedrimsidecomponents, no fullshield inE. Sourcefront/backroundshieldbrownwoodcenterwithironrim; backnarrowbrownshape. Fourblanks exact.
+Source component guidance (do not omit tiny detached pieces):
+legs.scale.iron: S/N/E/W source connected-component counts 1/1/1/1
+arms.plate.iron.L: S/N/E/W source connected-component counts 1/1/0/1
+arms.plate.iron.R: S/N/E/W source connected-component counts 1/1/1/0
+arms.mail.iron.L: S/N/E/W source connected-component counts 1/1/0/1
+arms.mail.iron.R: S/N/E/W source connected-component counts 1/1/1/0
+shield.buckler.iron: S/N/E/W source connected-component counts 1/1/1/1
+shield.round.iron: S/N/E/W source connected-component counts 1/1/2/1

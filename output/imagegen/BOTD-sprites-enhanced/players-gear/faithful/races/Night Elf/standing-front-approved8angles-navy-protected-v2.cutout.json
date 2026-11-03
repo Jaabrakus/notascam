@@ -1,0 +1,96 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "reviewed_existing_art_cutout_with_source_specific_navy_alpha_restoration",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+  "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+  "crop_box": [
+    64,
+    267,
+    150,
+    395
+  ],
+  "size": [
+    94,
+    136
+  ],
+  "source_crop_size": [
+    86,
+    128
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    8,
+    2,
+    78,
+    117
+  ],
+  "alpha_bbox": [
+    12,
+    6,
+    82,
+    121
+  ],
+  "retained_pixels": 5706,
+  "background_pixels_removed": 5302,
+  "enclosed_candidate_pixels_retained": 209,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 73.0,
+    "border_background_sample_count": 424,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protected-v2.png",
+  "output_sha256": "5e0ac116defbb76323320cba9e55daf599dc66e192aeaa74dc26aee9dd95014d",
+  "manual_alpha_protection": {
+    "reason": "GenericbluegraymaskoverlappedNightElfsaturatednavymaterial;restoreonlysourcealphaatreviewednavypixels",
+    "restored_pixel_count": 209,
+    "mask_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protection-mask.png",
+    "mask_sha256": "5b20f532f69247c0ee000eda77b7a97bd1fd16cda9929374d3cb6757410a5f86",
+    "mask_coordinate_system": "Paddedcutoutcoordinates;sourcecropoffset4,4",
+    "region_xyxy": [
+      16,
+      14,
+      78,
+      123
+    ],
+    "palette_predicate": "originallyremoved AND B>=20 AND B>=1.6*R AND B-G>=7 AND B-R>=10",
+    "source_alpha_restored": 255,
+    "rgb_changed": 0,
+    "frozen_extractor_modified": false
+  }
+}

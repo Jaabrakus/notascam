@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:28.147201+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonfang/005-weapon.battle_axe.dragonfang.png",
+    "sha256": "cf2a7d8d246d7d4e0d2d8745d335d82e4b605c1c19f0aacaa063617cfdf5eda2",
+    "size": [
+      143,
+      143
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      27,
+      28,
+      114,
+      126
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 17699,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      27,
+      28,
+      114,
+      126
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      27,
+      28,
+      114,
+      126
+    ],
+    "source_crop_size": [
+      87,
+      98
+    ],
+    "crop_rgba_sha256": "d6fe62b54f4e7ff73c8cedc99df2da0a4d7638d8b4cde8907d76dbd6b7b3da5d",
+    "discarded_pixel_count": 11923,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+    "sha256": "066bb89a12853c4c1d040dd4399680019ab55379e71144213d1ec3c298225747",
+    "cell_index": 20,
+    "atlas_size": [
+      192,
+      192
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      0,
+      12,
+      14,
+      29
+    ],
+    "visible_height": 17,
+    "visible_width": 14,
+    "bottom_baseline_exclusive": 29,
+    "alpha_sha256": "18147a0dea430237d80be6aae737cbf216b03a5612d04f5a16142d30f395e6b4",
+    "state_occurrence_index": 5,
+    "state_name": "weapon.battle axe.dragonfang",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "b26ab97f1d7c304e9970fbe101001831994bd8f5bf1f69edfc0b7f8ac93599c1"
+  },
+  "placement": {
+    "target_visible_height": 17,
+    "proportional_content_size": [
+      15,
+      17
+    ],
+    "uniform_scale": 0.17346938775510204,
+    "actual_axis_scales": [
+      0.1724137931034483,
+      0.17346938775510204
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      33,
+      32
+    ],
+    "destination_box": [
+      0,
+      12,
+      15,
+      29
+    ],
+    "actual_alpha_bbox": [
+      0,
+      12,
+      15,
+      29
+    ],
+    "actual_visible_height": 17,
+    "actual_visible_width": 15,
+    "bottom_baseline_exclusive": 29,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonfang/005-weapon.battle_axe.dragonfang.png",
+    "sha256": "e8d9e459cd56f027d323c77c95d101603e1ca681e0d1a3311aa652b73f4dc3e2",
+    "size": [
+      33,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      0,
+      12,
+      15,
+      29
+    ],
+    "alpha_sha256": "29893838dc19db6656951ce05ade677236157de4ca421e35b2f03d40f84487e7",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

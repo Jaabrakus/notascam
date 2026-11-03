@@ -1,0 +1,143 @@
+{
+  "status": "framing_issue_from_low_alpha_background_specks",
+  "source_sha256": "a95a5ddc8369d0b12c6cb8c002cd2476366cb86c1200f35944e9a460cefc4e3f",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "read_only_analysis": true,
+  "thresholds_applied_to_artwork": false,
+  "alpha_greater_than": {
+    "0": {
+      "pixels": 498242,
+      "bbox": [
+        0,
+        21,
+        1208,
+        1254
+      ]
+    },
+    "1": {
+      "pixels": 493307,
+      "bbox": [
+        208,
+        251,
+        1045,
+        1132
+      ]
+    },
+    "2": {
+      "pixels": 492095,
+      "bbox": [
+        209,
+        251,
+        1043,
+        1132
+      ]
+    },
+    "4": {
+      "pixels": 490568,
+      "bbox": [
+        210,
+        251,
+        1043,
+        1132
+      ]
+    },
+    "8": {
+      "pixels": 488192,
+      "bbox": [
+        210,
+        253,
+        1043,
+        1130
+      ]
+    },
+    "16": {
+      "pixels": 487800,
+      "bbox": [
+        211,
+        253,
+        1043,
+        1130
+      ]
+    },
+    "32": {
+      "pixels": 487259,
+      "bbox": [
+        211,
+        253,
+        1043,
+        1130
+      ]
+    },
+    "64": {
+      "pixels": 486014,
+      "bbox": [
+        211,
+        253,
+        1042,
+        1129
+      ]
+    },
+    "128": {
+      "pixels": 484311,
+      "bbox": [
+        211,
+        254,
+        1042,
+        1129
+      ]
+    },
+    "192": {
+      "pixels": 482806,
+      "bbox": [
+        211,
+        254,
+        1042,
+        1129
+      ]
+    },
+    "254": {
+      "pixels": 1820,
+      "bbox": [
+        212,
+        255,
+        1041,
+        1128
+      ]
+    }
+  },
+  "proposed_explicit_source_crop": [
+    208,
+    251,
+    1045,
+    1132
+  ],
+  "alternative_four_pixel_padding": [
+    204,
+    247,
+    1049,
+    1136
+  ],
+  "outside_proposed_crop": {
+    "nonzero_alpha_pixels": 1053,
+    "maximum_alpha": 1
+  },
+  "v1_visual_review": {
+    "nearest_visible_bbox": [
+      21,
+      36,
+      44,
+      60
+    ],
+    "lanczos_alpha_greater_than_128_bbox": [
+      21,
+      36,
+      44,
+      60
+    ],
+    "finding": "Visible figure is undersized and visibly floats above intended bottom anchor because source alpha=1 specks determined the automatic crop. Both64 exports are valid mechanics but not accepted framing."
+  },
+  "proposal_note": "Explicit crop preserves all RGB/alpha values inside the recorded rectangle; no threshold cleanup or retouch. Await root selection before applying."
+}

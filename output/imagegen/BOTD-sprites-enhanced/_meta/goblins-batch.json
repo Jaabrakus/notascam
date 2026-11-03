@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "source_relative": "Races64/Goblins.png",
+  "source_sha256": "9bf0c9d7d53dc29f8b9bb9900e8194c17b6ce424c6b249ef0082a671f72e5359",
+  "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+  "native_sha256": "52c6f3fa00c8dce18e38eeb8d7b4b07cd6ac37fed90c6752e528221b60331cef",
+  "native_description": "# BEGIN DMI\nversion = 4.0\n\twidth = 64\n\theight = 64\nstate = \"\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"Sleep\"\n\tdirs = 1\n\tframes = 2\n\tdelay = 5,5\nstate = \"NoLeftArm\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoRightArm\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoArms\"\n\tdirs = 4\n\tframes = 3\n\tdelay = 2,2,2\n\tmovement = 1\nstate = \"NoLeftLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoRightLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLegs\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoRightLegNoLeftArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLeftLegNoRightArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoRightArmNoRightLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLeftArmNoLeftLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLegsNoLeftArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoLegsNoRightArm\"\n\tdirs = 4\n\tframes = 1\nstate = \"None\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoArmsNoRightLeg\"\n\tdirs = 4\n\tframes = 1\nstate = \"NoArmsNoLeftLeg\"\n\tdirs = 4\n\tframes = 1\n# END DMI\n",
+  "status": "needs_native_phase_order_correction",
+  "runtime_ready": false,
+  "whole_reference_source_complete": false,
+  "expected_state_count": 17,
+  "represented_state_count": 17,
+  "expected_native_cells": 98,
+  "represented_native_cells": 98,
+  "unique_native_cells": 98,
+  "missing_states": [],
+  "missing_native_cells": [],
+  "duplicate_native_cells": [],
+  "page_count": 7,
+  "pages": [
+    {
+      "page": 1,
+      "path": "Races64/Goblins/page-01.png",
+      "sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "states": [
+        "",
+        "Sleep"
+      ],
+      "source_rows": [
+        1,
+        2
+      ],
+      "native_cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "observed_occupied_cells": 14,
+      "production_report": "_meta/goblins-page-01.json",
+      "independent_review": "_meta/goblins-page-01-review.json",
+      "status": "checked_reference_art"
+    },
+    {
+      "page": 2,
+      "path": "Races64/Goblins/page-02.png",
+      "sha256": "cbdde7ee6ba05a068fe445bcc810b2e93403470b6fd5a8b336fb3cdacffb2c8b",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "states": [
+        "NoLeftArm"
+      ],
+      "source_rows": [
+        3
+      ],
+      "native_cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "observed_occupied_cells": 12,
+      "production_report": "_meta/goblins-pages-02-03.json",
+      "independent_review": "_meta/goblins-pages-02-03-review.json",
+      "status": "checked_reference_art"
+    },
+    {
+      "page": 3,
+      "path": "Races64/Goblins/page-03.png",
+      "sha256": "2730f3d374225141cbf7fceca06f87c3821f3d0891e1e13a0102a91a3d4ae71c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "states": [
+        "NoRightArm"
+      ],
+      "source_rows": [
+        4
+      ],
+      "native_cells": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "observed_occupied_cells": 12,
+      "production_report": "_meta/goblins-pages-02-03.json",
+      "independent_review": "_meta/goblins-pages-02-03-review.json",
+      "status": "checked_reference_art"
+    },
+    {
+      "page": 4,
+      "path": "Races64/Goblins/page-04.png",
+      "sha256": "839d6c63b107135827359e31bc60937bcfd6acbdb97177c753dde94df84db561",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "states": [
+        "NoArms"
+      ],
+      "source_rows": [
+        5
+      ],
+      "native_cells": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "observed_occupied_cells": 12,
+      "production_report": "_meta/goblins-pages-04-05.json",
+      "independent_review": "_meta/goblins-pages-04-05-review.json",
+      "status": "checked_reference_art"
+    },
+    {
+      "page": 5,
+      "path": "Races64/Goblins/page-05.png",
+      "sha256": "f5502dbdcf7d0791192c3d00096979b24d9e0f59354dfa4e8a36c5d0a57ed6f3",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "states": [
+        "NoLeftLeg",
+        "NoRightLeg",
+        "NoLegs",
+        "NoRightLegNoLeftArm"
+      ],
+      "source_rows": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "native_cells": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "observed_occupied_cells": 16,
+      "production_report": "_meta/goblins-pages-04-05.json",
+      "independent_review": "_meta/goblins-pages-04-05-review.json",
+      "status": "checked_reference_art"
+    },
+    {
+      "page": 6,
+      "path": "Races64/Goblins/page-06.png",
+      "sha256": "03be485bec6163974a631e48e16ee742601f17f8918f3089d61f002d76af2ca4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "states": [
+        "NoLeftLegNoRightArm",
+        "NoRightArmNoRightLeg",
+        "NoLeftArmNoLeftLeg",
+        "NoLegsNoLeftArm"
+      ],
+      "source_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "native_cells": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "observed_occupied_cells": 16,
+      "production_report": "_meta/goblins-pages-06-07.json",
+      "independent_review": "_meta/goblins-pages-06-07-review.json",
+      "status": "checked_reference_art"
+    },
+    {
+      "page": 7,
+      "path": "Races64/Goblins/page-07.png",
+      "sha256": "c72dca35e1968003c67503da6f4c3a1975117039d97f143a23e894bdf0adaff4",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "states": [
+        "NoLegsNoRightArm",
+        "None",
+        "NoArmsNoRightLeg",
+        "NoArmsNoLeftLeg"
+      ],
+      "source_rows": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "native_cells": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "observed_occupied_cells": 16,
+      "production_report": "_meta/goblins-pages-06-07.json",
+      "independent_review": "_meta/goblins-pages-06-07-review.json",
+      "status": "checked_reference_art"
+    }
+  ],
+  "verified": {
+    "original_source_hash_unchanged": true,
+    "native_source_hash_unchanged": true,
+    "all_page_hashes_match_independent_reviews": true,
+    "all_native_cells_mapped_exactly_once": true,
+    "state_order_preserved_in_page_order": true,
+    "all_generated_pngs_decode": true,
+    "visual_anatomy_review_passed": false,
+    "native_animation_phase_order": false
+  },
+  "limitations": [
+    "Enhanced reference artwork, not native playable sprites.",
+    "Generated pages are opaque RGB with changed sizes, registration and silhouettes.",
+    "Native Description is archived here as source metadata but not embedded in PNGs as a playable atlas.",
+    "Visual review verifies required states, broad facing and phase distinctions, missing-limb anatomy, and cell coverage. Exact native animation equivalence and equipment fitting are not verified.",
+    "Some far-limb depth and small details are stylized. See individual review reports."
+  ],
+  "newly_identified_issue": "NoArms page04 front/back frames2/3 were reversed relative to native cells42,43,46,47; updated independentreview supersedes earlierpass."
+}

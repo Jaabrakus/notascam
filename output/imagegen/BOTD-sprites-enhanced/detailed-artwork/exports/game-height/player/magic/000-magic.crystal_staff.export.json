@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:29.382498+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/000-magic.crystal_staff.png",
+    "sha256": "52c2a7bacde740497a9dd93e1d27fa2cc3dfc01a64058770be210a29ee375231",
+    "size": [
+      123,
+      153
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      34,
+      16,
+      101,
+      138
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 16077,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      34,
+      16,
+      101,
+      138
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      34,
+      16,
+      101,
+      138
+    ],
+    "source_crop_size": [
+      67,
+      122
+    ],
+    "crop_rgba_sha256": "63e5648c55edb37e409d5013c74a8712c01fbe9487b76f8c2d20f3a736d79998",
+    "discarded_pixel_count": 10645,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+    "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+    "cell_index": 0,
+    "atlas_size": [
+      1088,
+      1024
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      8,
+      11,
+      26,
+      64
+    ],
+    "visible_height": 53,
+    "visible_width": 18,
+    "bottom_baseline_exclusive": 64,
+    "alpha_sha256": "3adb513f3847237633dd7e17f28bbe0cb3d4e7b2974e573ff692030c6d1492d0",
+    "state_occurrence_index": 0,
+    "state_name": "magic.crystal staff",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "5"
+      ],
+      [
+        "delay",
+        "1,1,1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+  },
+  "placement": {
+    "target_visible_height": 53,
+    "proportional_content_size": [
+      29,
+      53
+    ],
+    "uniform_scale": 0.4344262295081967,
+    "actual_axis_scales": [
+      0.43283582089552236,
+      0.4344262295081967
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      75,
+      64
+    ],
+    "destination_box": [
+      8,
+      11,
+      37,
+      64
+    ],
+    "actual_alpha_bbox": [
+      8,
+      11,
+      37,
+      64
+    ],
+    "actual_visible_height": 53,
+    "actual_visible_width": 29,
+    "bottom_baseline_exclusive": 64,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/000-magic.crystal_staff.png",
+    "sha256": "20498024b09c871ffe52efc40e47eef8d597de60c7a148669531aac500849b79",
+    "size": [
+      75,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      8,
+      11,
+      37,
+      64
+    ],
+    "alpha_sha256": "2b7a59d47d8a120836a308f634a260b48eddbf8262c6c53427d2ba01b5f0a4d1",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

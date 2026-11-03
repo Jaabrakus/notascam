@@ -1,0 +1,1027 @@
+{
+  "schema_version": 1,
+  "status": "enhanced_reference_generated_and_visually_reviewed",
+  "runtime_ready": false,
+  "method": "Built-in image_gen__imagegen; one image generation call; generated PNG copied unchanged.",
+  "files": {
+    "original": {
+      "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/dragonfang.png",
+      "sha256": "7a21f7ac0813b7c6139e1735dd0d5caaa84f0dd1cd6a6538154cd4b3f0aea9df",
+      "dimensions": [
+        558,
+        838
+      ],
+      "mode": "RGBA"
+    },
+    "native": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+      "sha256": "13ab58fa9f73a106364e1a92aacdc6d7c3e49f84114d8cf61a59bb98d801a433",
+      "dimensions": [
+        192,
+        192
+      ],
+      "mode": "RGBA"
+    },
+    "style_reference": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png",
+      "sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+      "dimensions": [
+        1429,
+        1101
+      ],
+      "mode": "RGB"
+    },
+    "generated_source": {
+      "path": "/Users/kiwimango/.codex/generated_images/01a16ea4-f45b-78d2-a278-715f98401cbd/exec-23e53427-1ab3-47b4-8d99-747c13f0c906.png",
+      "sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "dimensions": [
+        1023,
+        1538
+      ],
+      "mode": "RGB"
+    },
+    "final": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/dragonfang.png",
+      "sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "dimensions": [
+        1023,
+        1538
+      ],
+      "mode": "RGB"
+    },
+    "prompt": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-dragonfang.txt",
+      "sha256": "a75482c5d136ffa85f475fc587f09cedb48acb10a1d1f208c5fe2e1c4bfa1d51"
+    }
+  },
+  "prompt": "Use case: identity-preserve.\nEnhance the entire supplied dragonfang weapon sprite REFERENCE SHEET into the polished chunky pixel/voxel artwork style used by the checked enhanced equipment sheets.\n\nINPUT 1: /Users/kiwimango/Downloads/BOTD-sprites/Gear/dragonfang.png is the EDIT TARGET and STRICT AUTHORITY for which objects exist, all eight rows, object sizes relative to each other, exact directional poses, occupied cells, and deliberately clipped or disconnected weapon fragments.\nINPUT 2: /Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png is STYLE REFERENCE ONLY for crisp voxel-like pixel edges, dark outlines, small tonal ramps, rich dimensional highlights and clear material detail. Do not copy its green blade palette, red gems, four-row layout, or empty dagger-west slot.\n\nOUTPUT: one complete readable tall contact sheet, all EIGHT rows visible, FOUR columns ordered SOUTH, NORTH, EAST, WEST as in input 1. Exactly THIRTY-TWO occupied cells; each row has four occupied cells, even when the fourth contains only tiny sparse pixels. No rows omitted, no cropping at the bottom, no duplicate rows. Retain source charcoal background and the source row spacing and cell arrangement proportionally. Keep enhanced objects inside their assigned cells.\nTop title EXACTLY: Gear/dragonfang.dmi\nRetain the source's existing visible truncated row-label text verbatim, in order. Full states for semantic reference only are:\n1 weapon.dagger.dragonfang\n2 weapon.arming sword.dragonfang\n3 weapon.longsword.dragonfang\n4 weapon.scimitar.dragonfang\n5 weapon.hand axe.dragonfang\n6 weapon.battle axe.dragonfang\n7 weapon.spear.dragonfang\n8 weapon.halberd.dragonfang\n\nArt: dragon FANG material is creamy ivory/beige, warm pale bone highlights, subtle ochre shadows, dark brown wooden/leather grips and shafts. Improve definition, clean individual pixel shapes, give blade/fang planes clear dimensional lighting. Preserve dagger shorter than sword, longsword tall and slender, scimitar visibly curved, small hand axe versus larger battle axe, spear a simple pointed tip, halberd a hooked/branching blade. Do not invent bright gemstones, green poison edges, metal armor, ornate new hardware, characters or clothing. Keep the original designs recognizable. Preserve current pose angle for every occupied source cell: this is fitted worn equipment, not a new freely rotating complete-weapon catalog.\n\nCRITICAL OCCLUSION RULE: these are weapon OVERLAYS partly hidden behind a character. The sparse fourth column is intentional. Do NOT complete the missing weapon shape. Keep disconnected tips/grips as disconnected fragments, with empty background between them. In particular:\n- Row 1 / column 4 (dagger west) has ONLY TWO tiny detached dark-brown marks, slightly staggered vertically. At native 32x32 they occupy (19,22) and (20,26). Keep exactly these two small visible marks in the proportional source positions; NO blade, NO full dagger, NO new large object. This cell is occupied, not blank.\n- Row 2 / column 4: short pale blade-tip fragment near the upper-left of its cell, plus two small detached brown grip marks below/right. Retain all three disconnected source pieces.\n- Row 3 / column 4: pale diagonal blade-tip fragment plus separate small brown lower grip pieces. Keep partial.\n- Row 4 / column 4: short curved pale blade-tip fragment plus detached small brown grip marks below/right. Keep partial.\n- Row 5 / column 4: compact hand-axe-head fragment only, as source.\n- Row 6 / column 4: compact battle-axe-head fragment only, as source.\n- Row 7 / column 4: ivory spear-tip/short upper-shaft fragment near top plus a tiny detached lower shaft mark near bottom. Do NOT connect with a full shaft.\n- Row 8 / column 4: small ivory hooked halberd-head fragment near top plus a tiny detached lower shaft mark near bottom. Do NOT connect with a full shaft.\nThe visible first/second/third-column axe handles also have detached little end pieces; retain them as in source rather than remove them as noise.\nAll 32 occupied cells and all source fragments must survive this enhancement. Empty areas remain empty. Do not add grid lines, direction text, decorations or borders. Deliver the whole sheet only.",
+  "source_inventory": {
+    "source_path": "Gear/dragonfang.png",
+    "source_absolute_path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/dragonfang.png",
+    "native_path": "standalone/remastered/game/Icons/Remastered/Gear/dragonfang.dmi",
+    "source_sha256": "7a21f7ac0813b7c6139e1735dd0d5caaa84f0dd1cd6a6538154cd4b3f0aea9df",
+    "source_dimensions": [
+      558,
+      838
+    ],
+    "native_frame_dimensions": [
+      32,
+      32
+    ],
+    "rows": [
+      {
+        "row_1based": 1,
+        "label": "weapon.dagger.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          22,
+          124
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 0,
+            "occupied_pixels": 34,
+            "alpha_bbox": [
+              6,
+              20,
+              14,
+              30
+            ],
+            "component_sizes": [
+              34
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 1,
+            "occupied_pixels": 34,
+            "alpha_bbox": [
+              18,
+              20,
+              26,
+              30
+            ],
+            "component_sizes": [
+              34
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 2,
+            "occupied_pixels": 35,
+            "alpha_bbox": [
+              11,
+              19,
+              21,
+              27
+            ],
+            "component_sizes": [
+              35
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 3,
+            "occupied_pixels": 2,
+            "alpha_bbox": [
+              19,
+              22,
+              21,
+              27
+            ],
+            "component_sizes": [
+              1,
+              1
+            ],
+            "tiny_components": [
+              {
+                "pixels": 1,
+                "bbox": [
+                  19,
+                  22,
+                  20,
+                  23
+                ]
+              },
+              {
+                "pixels": 1,
+                "bbox": [
+                  20,
+                  26,
+                  21,
+                  27
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "row_1based": 2,
+        "label": "weapon.arming sword.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          124,
+          226
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 4,
+            "occupied_pixels": 61,
+            "alpha_bbox": [
+              3,
+              14,
+              15,
+              30
+            ],
+            "component_sizes": [
+              50,
+              11
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 5,
+            "occupied_pixels": 61,
+            "alpha_bbox": [
+              17,
+              14,
+              29,
+              30
+            ],
+            "component_sizes": [
+              50,
+              11
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 6,
+            "occupied_pixels": 61,
+            "alpha_bbox": [
+              11,
+              16,
+              27,
+              27
+            ],
+            "component_sizes": [
+              51,
+              10
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 7,
+            "occupied_pixels": 22,
+            "alpha_bbox": [
+              5,
+              16,
+              21,
+              27
+            ],
+            "component_sizes": [
+              18,
+              2,
+              2
+            ],
+            "tiny_components": [
+              {
+                "pixels": 2,
+                "bbox": [
+                  19,
+                  21,
+                  20,
+                  23
+                ]
+              },
+              {
+                "pixels": 2,
+                "bbox": [
+                  20,
+                  25,
+                  21,
+                  27
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "row_1based": 3,
+        "label": "weapon.longsword.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          226,
+          328
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 8,
+            "occupied_pixels": 82,
+            "alpha_bbox": [
+              6,
+              7,
+              15,
+              32
+            ],
+            "component_sizes": [
+              68,
+              14
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 9,
+            "occupied_pixels": 82,
+            "alpha_bbox": [
+              17,
+              7,
+              26,
+              32
+            ],
+            "component_sizes": [
+              68,
+              14
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 10,
+            "occupied_pixels": 76,
+            "alpha_bbox": [
+              11,
+              10,
+              29,
+              29
+            ],
+            "component_sizes": [
+              76
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 11,
+            "occupied_pixels": 31,
+            "alpha_bbox": [
+              3,
+              10,
+              21,
+              29
+            ],
+            "component_sizes": [
+              25,
+              4,
+              2
+            ],
+            "tiny_components": [
+              {
+                "pixels": 4,
+                "bbox": [
+                  19,
+                  21,
+                  21,
+                  24
+                ]
+              },
+              {
+                "pixels": 2,
+                "bbox": [
+                  19,
+                  27,
+                  21,
+                  29
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "row_1based": 4,
+        "label": "weapon.scimitar.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          328,
+          430
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 12,
+            "occupied_pixels": 66,
+            "alpha_bbox": [
+              5,
+              12,
+              15,
+              30
+            ],
+            "component_sizes": [
+              55,
+              11
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 13,
+            "occupied_pixels": 66,
+            "alpha_bbox": [
+              17,
+              12,
+              27,
+              30
+            ],
+            "component_sizes": [
+              55,
+              11
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 14,
+            "occupied_pixels": 66,
+            "alpha_bbox": [
+              11,
+              18,
+              30,
+              27
+            ],
+            "component_sizes": [
+              56,
+              10
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 15,
+            "occupied_pixels": 30,
+            "alpha_bbox": [
+              2,
+              18,
+              21,
+              27
+            ],
+            "component_sizes": [
+              27,
+              2,
+              1
+            ],
+            "tiny_components": [
+              {
+                "pixels": 2,
+                "bbox": [
+                  20,
+                  25,
+                  21,
+                  27
+                ]
+              },
+              {
+                "pixels": 1,
+                "bbox": [
+                  19,
+                  22,
+                  20,
+                  23
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "row_1based": 5,
+        "label": "weapon.hand axe.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          430,
+          532
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 16,
+            "occupied_pixels": 46,
+            "alpha_bbox": [
+              0,
+              16,
+              13,
+              28
+            ],
+            "component_sizes": [
+              42,
+              4
+            ],
+            "tiny_components": [
+              {
+                "pixels": 4,
+                "bbox": [
+                  11,
+                  26,
+                  13,
+                  28
+                ]
+              }
+            ]
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 17,
+            "occupied_pixels": 46,
+            "alpha_bbox": [
+              19,
+              16,
+              32,
+              28
+            ],
+            "component_sizes": [
+              42,
+              4
+            ],
+            "tiny_components": [
+              {
+                "pixels": 4,
+                "bbox": [
+                  19,
+                  26,
+                  21,
+                  28
+                ]
+              }
+            ]
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 18,
+            "occupied_pixels": 50,
+            "alpha_bbox": [
+              13,
+              12,
+              25,
+              26
+            ],
+            "component_sizes": [
+              46,
+              4
+            ],
+            "tiny_components": [
+              {
+                "pixels": 4,
+                "bbox": [
+                  13,
+                  24,
+                  15,
+                  26
+                ]
+              }
+            ]
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 19,
+            "occupied_pixels": 25,
+            "alpha_bbox": [
+              7,
+              12,
+              12,
+              19
+            ],
+            "component_sizes": [
+              25
+            ],
+            "tiny_components": []
+          }
+        ]
+      },
+      {
+        "row_1based": 6,
+        "label": "weapon.battle axe.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          532,
+          634
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 20,
+            "occupied_pixels": 60,
+            "alpha_bbox": [
+              0,
+              12,
+              14,
+              29
+            ],
+            "component_sizes": [
+              53,
+              7
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 21,
+            "occupied_pixels": 60,
+            "alpha_bbox": [
+              18,
+              12,
+              32,
+              29
+            ],
+            "component_sizes": [
+              53,
+              7
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 22,
+            "occupied_pixels": 70,
+            "alpha_bbox": [
+              12,
+              10,
+              29,
+              27
+            ],
+            "component_sizes": [
+              63,
+              7
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 23,
+            "occupied_pixels": 47,
+            "alpha_bbox": [
+              3,
+              10,
+              11,
+              19
+            ],
+            "component_sizes": [
+              47
+            ],
+            "tiny_components": []
+          }
+        ]
+      },
+      {
+        "row_1based": 7,
+        "label": "weapon.spear.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          634,
+          736
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 24,
+            "occupied_pixels": 76,
+            "alpha_bbox": [
+              1,
+              1,
+              14,
+              32
+            ],
+            "component_sizes": [
+              63,
+              13
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 25,
+            "occupied_pixels": 76,
+            "alpha_bbox": [
+              18,
+              1,
+              31,
+              32
+            ],
+            "component_sizes": [
+              63,
+              13
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 26,
+            "occupied_pixels": 77,
+            "alpha_bbox": [
+              12,
+              0,
+              25,
+              31
+            ],
+            "component_sizes": [
+              61,
+              16
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 27,
+            "occupied_pixels": 29,
+            "alpha_bbox": [
+              7,
+              0,
+              20,
+              31
+            ],
+            "component_sizes": [
+              27,
+              2
+            ],
+            "tiny_components": [
+              {
+                "pixels": 2,
+                "bbox": [
+                  19,
+                  29,
+                  20,
+                  31
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "row_1based": 8,
+        "label": "weapon.halberd.dragonfang",
+        "directions": 4,
+        "frames": 1,
+        "source_preview_y_span": [
+          736,
+          838
+        ],
+        "occupied_columns": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "empty_columns": [],
+        "cells": [
+          {
+            "column_1based": 1,
+            "direction": "south",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 28,
+            "occupied_pixels": 78,
+            "alpha_bbox": [
+              1,
+              3,
+              14,
+              32
+            ],
+            "component_sizes": [
+              65,
+              13
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 2,
+            "direction": "north",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 29,
+            "occupied_pixels": 78,
+            "alpha_bbox": [
+              18,
+              3,
+              31,
+              32
+            ],
+            "component_sizes": [
+              65,
+              13
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 3,
+            "direction": "east",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 30,
+            "occupied_pixels": 81,
+            "alpha_bbox": [
+              12,
+              1,
+              24,
+              31
+            ],
+            "component_sizes": [
+              66,
+              15
+            ],
+            "tiny_components": []
+          },
+          {
+            "column_1based": 4,
+            "direction": "west",
+            "frame_1based": 1,
+            "native_sheet_cell_0based": 31,
+            "occupied_pixels": 23,
+            "alpha_bbox": [
+              8,
+              1,
+              20,
+              30
+            ],
+            "component_sizes": [
+              22,
+              1
+            ],
+            "tiny_components": [
+              {
+                "pixels": 1,
+                "bbox": [
+                  19,
+                  29,
+                  20,
+                  30
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "occupied_cells": 32,
+    "total_cells": 32
+  },
+  "qa": {
+    "inspection": "Both original source PNG and checked spiderfang style image inspected with view_image before generation. Generated result inspected at returned resolution against source and authoritative native state/component inventory.",
+    "expected_rows": 8,
+    "observed_rows": 8,
+    "expected_occupied_cells": 32,
+    "observed_occupied_cells": 32,
+    "expected_empty_cells": 0,
+    "observed_empty_cells": 0,
+    "count_method": "Manual visual row/cell count; sparse west-facing fragments count as occupied cells, not extra cells.",
+    "direction_order": "South, north, east, west remains in original column order; broad facing/angle arrangement matches source.",
+    "title": "Gear/dragonfang.dmi retained correctly.",
+    "art_improvements": "Ivory blade planes, warmer dark-brown grip and shaft shading, clean dark outlines and crisp pixel detail give stronger material readability in the checked Gear style.",
+    "source_designs": "Dagger, medium sword, tall longsword, curved scimitar, small hand axe, larger battle axe, simple spear and hooked halberd remain distinct.",
+    "west_overlay_preservation": "All eight western cells remain partial; notably dagger west has two small marks rather than a full dagger, and spear/halberd tips remain separated from lower shaft marks.",
+    "states": [
+      {
+        "row": 1,
+        "full_state": "weapon.dagger.dragonfang",
+        "visible_label": "weapon.dagger.dragonfang",
+        "observed_cells": 4,
+        "objects": "Three short ivory daggers; fourth cell contains only two detached staggered brown marks.",
+        "west_fragments": "Both tiny marks retained; no invented full dagger.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 2,
+        "full_state": "weapon.arming sword.dragonfang",
+        "visible_label": "weapon.arming sword.dragonfang",
+        "observed_cells": 4,
+        "objects": "Three medium ivory blades with brown grips; western cell is pale diagonal tip plus two brown marks.",
+        "west_fragments": "Tip and both lower marks retained separately.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 3,
+        "full_state": "weapon.longsword.dragonfang",
+        "visible_label": "weapon.longsword.dragonfang",
+        "observed_cells": 4,
+        "objects": "Three taller ivory blades; western cell contains detached blade tip and separate lower brown grip pieces.",
+        "west_fragments": "Partial blade and lower pieces retained.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 4,
+        "full_state": "weapon.scimitar.dragonfang",
+        "visible_label": "weapon.scimitar.dragonfang",
+        "observed_cells": 4,
+        "objects": "Three visibly curved ivory blades; western cell is a curved tip and two lower brown marks.",
+        "west_fragments": "Curved tip and lower marks retained separately.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 5,
+        "full_state": "weapon.hand axe.dragonfang",
+        "visible_label": "weapon.hand axe.dragonfang",
+        "observed_cells": 4,
+        "objects": "Three smaller ivory axes on brown handles; western cell contains compact head fragment.",
+        "west_fragments": "Compact head retained without inventing a full handle.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 6,
+        "full_state": "weapon.battle axe.dragonfang",
+        "visible_label": "weapon.battle axe.drag",
+        "observed_cells": 4,
+        "objects": "Three larger ivory axes, distinct from hand axes; western cell contains larger isolated head fragment.",
+        "west_fragments": "Head-only partial view retained.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 7,
+        "full_state": "weapon.spear.dragonfang",
+        "visible_label": "weapon.spear.dragonfang",
+        "observed_cells": 4,
+        "objects": "Three long brown shafts with simple ivory points; western cell has upper tip/short shaft and isolated lower brown mark.",
+        "west_fragments": "Large gap remains empty; no full connecting shaft invented.",
+        "finding": "reference_pass"
+      },
+      {
+        "row": 8,
+        "full_state": "weapon.halberd.dragonfang",
+        "visible_label": "weapon.halberd.dragonf",
+        "observed_cells": 4,
+        "objects": "Three long shafts with hooked/branching ivory heads; western cell contains hooked head and isolated lower shaft mark.",
+        "west_fragments": "Hooked head and lower mark retained without connecting shaft.",
+        "finding": "reference_pass"
+      }
+    ],
+    "deviations": [
+      "Several labels expand the original exporter's visually truncated labels to the full native state name; battle-axe and halberd labels remain truncated. This changes display text but does not remove or rename native metadata, which is recorded separately.",
+      "Sprites are newly rendered artwork with changed dimensions, outline thickness and detailed geometry. Exact subpixel/native-pixel registration and component gaps outside the explicitly checked western fragments are not certified.",
+      "Some first/second-column sword grips look visually more continuous than the native component inventory; no claim of exact internal gap or alpha preservation is made."
+    ],
+    "correction_needed_for_meaningful_omission": false,
+    "correction_reason": "No lost state, object, occupied cell, or required western fragment found. A second generation was not justified solely to change minor display-label lengths.",
+    "runtime_limitations": "This is an opaque RGB 1023x1538 reference image versus the original opaque preview's 558x838 canvas. It is not a native DMI or validated transparent overlay atlas, and has no tested runtime state timing, layer registration, alpha masks or game integration."
+  },
+  "originals_modified": false,
+  "shared_manifest_modified": false,
+  "scripted_artistic_transformations": false
+}

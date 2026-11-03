@@ -1,0 +1,79 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/Races64/Night Elf.png",
+  "source_sha256": "a60064d6ad7e4afd3d55db7aa245b44fb39393df9e2f3d6b7251f072084c3aec",
+  "crop_box": [
+    76,
+    11,
+    144,
+    100
+  ],
+  "size": [
+    76,
+    97
+  ],
+  "source_crop_size": [
+    68,
+    89
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    10,
+    6,
+    51,
+    82
+  ],
+  "alpha_bbox": [
+    14,
+    10,
+    55,
+    86
+  ],
+  "retained_pixels": 2576,
+  "background_pixels_removed": 3476,
+  "enclosed_candidate_pixels_retained": 79,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 74.0,
+    "border_background_sample_count": 310,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/extraction-pilot/Night Elf-v12.png",
+  "output_sha256": "62d62620d7f33c7ed0062068467b867ff8259872072f752dc218597a08d1aeed"
+}

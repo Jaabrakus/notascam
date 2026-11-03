@@ -1,0 +1,6297 @@
+{
+  "schema_version": 1,
+  "race": "Kobold",
+  "status": "queued",
+  "source_png": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Kobold.png",
+  "source_png_sha256": "6d9d3ae7781089d62f7e5d85e79f96f84adc6825c5f6589c33ccb3f6dfd9c4b3",
+  "native_dmi": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+  "native_dmi_sha256": "10021b820e4afcc3c2f94d06636a8b7905b8449145a85b0222d3a90aa64e0710",
+  "native_description_sha256": "f29dbc2419984ffe6296f003a0557bbd7dacaf6b4b5b007dcfc454ba0604d5f8",
+  "source_preview_dimensions": [
+    2526,
+    3586
+  ],
+  "native_dimensions": [
+    704,
+    640
+  ],
+  "native_frame_dimensions": [
+    64,
+    64
+  ],
+  "native_state_count": 18,
+  "native_used_cells": 110,
+  "native_occupied_cells": 98,
+  "native_intentionally_empty_cells": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109
+  ],
+  "native_padding_cells": [],
+  "source_preview_grid": {
+    "label_margin": 150,
+    "top_margin": 22,
+    "cell_pitch": 198,
+    "sprite_inset": 3,
+    "display_scale": 3,
+    "columns": 12,
+    "rows": 18
+  },
+  "native_frames_absent_from_preview": [],
+  "native_preview_comparison": {
+    "method": "Read-only per-cell native alpha compositing over exporter charcoal after nearest3x scale, compared exactRGBAbytes to original preview sprite rectangle. No raster files written.",
+    "cells_compared": 110,
+    "matched": 110,
+    "mismatched": [],
+    "occupied_matches": 98,
+    "transparent_matches": 12
+  },
+  "sheet_direction_order": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "animation_order": "Frame-major: four S, N, E, W facings per frame.",
+  "page_count": 8,
+  "artwork_pages_with_visible_sprites": 7,
+  "intentional_empty_state_page": 8,
+  "color_and_identity_constraints": [
+    "Ochre/yellow-olive skin and broad short body; this species is warmer/yellower than the greener Goblin.",
+    "Large high triangular upright ears with reddish-brown inner material and darkbrown outer rim; preserve sharply pointed ear silhouette rather than Goblin rounded/laterally broad ears.",
+    "Bright yellow awake eyes and tiny light teeth; short squared muzzle/face. No invented tail,hair,horns,clothes,armor or Goblin replacement.",
+    "Match approved polished pixel/voxel shading while keeping Kobold identity, S/N/E/W direction order, body proportions and native limb-state identity.",
+    "Use small source red stump caps, not enlarged gore. Missing arms means no hands or forearms; missing legs means no feet or boots; None is head and torso only."
+  ],
+  "notes": [
+    "Default state is Normal, not an unnamed/blank state.",
+    "Kobold has 18 states rather than Goblin 17. Sneak adds 12 fully transparent native frames, with no padding or omitted preview frames.",
+    "Combination-state row ordering differs from Goblins: follow this source state order exactly.",
+    "Sleep frame 1 has dim ochre/olive eye areas; Sleep frame 2 is a standalone Z graphic.",
+    "Page 1 includes one 12-cell Normal animation state plus two Sleep frames. Pages 2\u20134 have one 12-cell limb-animation state each. Pages 5\u20137 have four static states each.",
+    "Page 8 records the 12 intentionally empty Sneak cells. Do not generate visible sprites for that state. Runtime metadata and transparency preservation are still required when converting to game assets.",
+    "This file is read-only production planning. No artwork generated, source files changed or shared manifest edited."
+  ],
+  "source_states": [
+    {
+      "source_row_1based": 1,
+      "state_name": "Normal",
+      "display_label": "Normal",
+      "dirs": 4,
+      "frames": 3,
+      "native_cell_start_0based": 0,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "3"
+        ],
+        [
+          "delay",
+          "2,2,2"
+        ],
+        [
+          "movement",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 12,
+      "expected_frame_cells": 12,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 0,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1218,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            25,
+            345,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 1,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1218,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            25,
+            543,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 2,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            25,
+            741,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 3,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            25,
+            939,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 5,
+          "native_cell_0based": 4,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 1165,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            945,
+            25,
+            1137,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 6,
+          "native_cell_0based": 5,
+          "frame_1based": 2,
+          "direction": "north",
+          "occupied_pixels": 1175,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1143,
+            25,
+            1335,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 7,
+          "native_cell_0based": 6,
+          "frame_1based": 2,
+          "direction": "east",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            19,
+            20,
+            44,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1341,
+            25,
+            1533,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 8,
+          "native_cell_0based": 7,
+          "frame_1based": 2,
+          "direction": "west",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            20,
+            20,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1539,
+            25,
+            1731,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 9,
+          "native_cell_0based": 8,
+          "frame_1based": 3,
+          "direction": "south",
+          "occupied_pixels": 1165,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1737,
+            25,
+            1929,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 10,
+          "native_cell_0based": 9,
+          "frame_1based": 3,
+          "direction": "north",
+          "occupied_pixels": 1175,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1935,
+            25,
+            2127,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 11,
+          "native_cell_0based": 10,
+          "frame_1based": 3,
+          "direction": "east",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            17,
+            20,
+            42,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2133,
+            25,
+            2325,
+            217
+          ]
+        },
+        {
+          "source_preview_column_1based": 12,
+          "native_cell_0based": 11,
+          "frame_1based": 3,
+          "direction": "west",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            22,
+            20,
+            47,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2331,
+            25,
+            2523,
+            217
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 2,
+      "state_name": "Sleep",
+      "display_label": "Sleep",
+      "dirs": 1,
+      "frames": 2,
+      "native_cell_start_0based": 12,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "1"
+        ],
+        [
+          "frames",
+          "2"
+        ],
+        [
+          "delay",
+          "5,5"
+        ]
+      ],
+      "expected_occupied_cells": 2,
+      "expected_frame_cells": 2,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "Frame1 is one front-facing full-limbed standing Kobold. Eyes are dim olive/ochre oval areas rather than awake bright yellow-white; retain source expression.",
+          "Frame2 is white irregular sleep bubble with black Z only; no Kobold body or additional limbs."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 12,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1218,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "sleeping_kobold",
+          "sprite_region_preview_box": [
+            153,
+            223,
+            345,
+            415
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 13,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 2991,
+          "alpha_bbox": [
+            1,
+            0,
+            64,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "sleep_Z_only_graphic",
+          "sprite_region_preview_box": [
+            351,
+            223,
+            543,
+            415
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 3,
+      "state_name": "NoLeftArm",
+      "display_label": "NoLeftArm",
+      "dirs": 4,
+      "frames": 3,
+      "native_cell_start_0based": 14,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "3"
+        ],
+        [
+          "delay",
+          "2,2,2"
+        ],
+        [
+          "movement",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 12,
+      "expected_frame_cells": 12,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 14,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1185,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            421,
+            345,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 15,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1183,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            421,
+            543,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 16,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            421,
+            741,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 17,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            421,
+            939,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 5,
+          "native_cell_0based": 18,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 1132,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            945,
+            421,
+            1137,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 6,
+          "native_cell_0based": 19,
+          "frame_1based": 2,
+          "direction": "north",
+          "occupied_pixels": 1138,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1143,
+            421,
+            1335,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 7,
+          "native_cell_0based": 20,
+          "frame_1based": 2,
+          "direction": "east",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            19,
+            20,
+            44,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1341,
+            421,
+            1533,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 8,
+          "native_cell_0based": 21,
+          "frame_1based": 2,
+          "direction": "west",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            20,
+            20,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1539,
+            421,
+            1731,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 9,
+          "native_cell_0based": 22,
+          "frame_1based": 3,
+          "direction": "south",
+          "occupied_pixels": 1147,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1737,
+            421,
+            1929,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 10,
+          "native_cell_0based": 23,
+          "frame_1based": 3,
+          "direction": "north",
+          "occupied_pixels": 1110,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1935,
+            421,
+            2127,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 11,
+          "native_cell_0based": 24,
+          "frame_1based": 3,
+          "direction": "east",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            17,
+            20,
+            42,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2133,
+            421,
+            2325,
+            613
+          ]
+        },
+        {
+          "source_preview_column_1based": 12,
+          "native_cell_0based": 25,
+          "frame_1based": 3,
+          "direction": "west",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            22,
+            20,
+            47,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2331,
+            421,
+            2523,
+            613
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 4,
+      "state_name": "NoRightArm",
+      "display_label": "NoRightArm",
+      "dirs": 4,
+      "frames": 3,
+      "native_cell_start_0based": 26,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "3"
+        ],
+        [
+          "delay",
+          "2,2,2"
+        ],
+        [
+          "movement",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 12,
+      "expected_frame_cells": 12,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "right_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 26,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1185,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            619,
+            345,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 27,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1183,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            619,
+            543,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 28,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            619,
+            741,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 29,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            619,
+            939,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 5,
+          "native_cell_0based": 30,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 1132,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            945,
+            619,
+            1137,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 6,
+          "native_cell_0based": 31,
+          "frame_1based": 2,
+          "direction": "north",
+          "occupied_pixels": 1138,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1143,
+            619,
+            1335,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 7,
+          "native_cell_0based": 32,
+          "frame_1based": 2,
+          "direction": "east",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            19,
+            20,
+            44,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1341,
+            619,
+            1533,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 8,
+          "native_cell_0based": 33,
+          "frame_1based": 2,
+          "direction": "west",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            20,
+            20,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1539,
+            619,
+            1731,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 9,
+          "native_cell_0based": 34,
+          "frame_1based": 3,
+          "direction": "south",
+          "occupied_pixels": 1147,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1737,
+            619,
+            1929,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 10,
+          "native_cell_0based": 35,
+          "frame_1based": 3,
+          "direction": "north",
+          "occupied_pixels": 1110,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1935,
+            619,
+            2127,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 11,
+          "native_cell_0based": 36,
+          "frame_1based": 3,
+          "direction": "east",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            17,
+            20,
+            42,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2133,
+            619,
+            2325,
+            811
+          ]
+        },
+        {
+          "source_preview_column_1based": 12,
+          "native_cell_0based": 37,
+          "frame_1based": 3,
+          "direction": "west",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            22,
+            20,
+            47,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2331,
+            619,
+            2523,
+            811
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 5,
+      "state_name": "NoArms",
+      "display_label": "NoArms",
+      "dirs": 4,
+      "frames": 3,
+      "native_cell_start_0based": 38,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "3"
+        ],
+        [
+          "delay",
+          "2,2,2"
+        ],
+        [
+          "movement",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 12,
+      "expected_frame_cells": 12,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_arm",
+          "right_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "left_leg",
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 38,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1146,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            817,
+            345,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 39,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1146,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            817,
+            543,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 40,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            817,
+            741,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 41,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            817,
+            939,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 5,
+          "native_cell_0based": 42,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 1118,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            945,
+            817,
+            1137,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 6,
+          "native_cell_0based": 43,
+          "frame_1based": 2,
+          "direction": "north",
+          "occupied_pixels": 1076,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1143,
+            817,
+            1335,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 7,
+          "native_cell_0based": 44,
+          "frame_1based": 2,
+          "direction": "east",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            19,
+            20,
+            44,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1341,
+            817,
+            1533,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 8,
+          "native_cell_0based": 45,
+          "frame_1based": 2,
+          "direction": "west",
+          "occupied_pixels": 845,
+          "alpha_bbox": [
+            20,
+            20,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1539,
+            817,
+            1731,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 9,
+          "native_cell_0based": 46,
+          "frame_1based": 3,
+          "direction": "south",
+          "occupied_pixels": 1117,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1737,
+            817,
+            1929,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 10,
+          "native_cell_0based": 47,
+          "frame_1based": 3,
+          "direction": "north",
+          "occupied_pixels": 1086,
+          "alpha_bbox": [
+            13,
+            14,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            1935,
+            817,
+            2127,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 11,
+          "native_cell_0based": 48,
+          "frame_1based": 3,
+          "direction": "east",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            17,
+            20,
+            42,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2133,
+            817,
+            2325,
+            1009
+          ]
+        },
+        {
+          "source_preview_column_1based": 12,
+          "native_cell_0based": 49,
+          "frame_1based": 3,
+          "direction": "west",
+          "occupied_pixels": 829,
+          "alpha_bbox": [
+            22,
+            20,
+            47,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            2331,
+            817,
+            2523,
+            1009
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 6,
+      "state_name": "NoLeftLeg",
+      "display_label": "NoLeftLeg",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 50,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 50,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1180,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            1015,
+            345,
+            1207
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 51,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1174,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            1015,
+            543,
+            1207
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 52,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            1015,
+            741,
+            1207
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 53,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            1015,
+            939,
+            1207
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 7,
+      "state_name": "NoRightLeg",
+      "display_label": "NoRightLeg",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 54,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "right_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 54,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1180,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            1213,
+            345,
+            1405
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 55,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1174,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            1213,
+            543,
+            1405
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 56,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            1213,
+            741,
+            1405
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 57,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            1213,
+            939,
+            1405
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 8,
+      "state_name": "NoLegs",
+      "display_label": "NoLegs",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 58,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_leg",
+          "right_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_arm"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 58,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1133,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            1411,
+            345,
+            1603
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 59,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1131,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            1411,
+            543,
+            1603
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 60,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            1411,
+            741,
+            1603
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 61,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            1411,
+            939,
+            1603
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 9,
+      "state_name": "NoRightArmNoRightLeg",
+      "display_label": "NoRightArmNoRightLeg",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 62,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "right_arm",
+          "right_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "left_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 62,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1142,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            1609,
+            345,
+            1801
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 63,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1137,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            1609,
+            543,
+            1801
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 64,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            1609,
+            741,
+            1801
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 65,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            1609,
+            939,
+            1801
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 10,
+      "state_name": "NoLeftArmNoLeftLeg",
+      "display_label": "NoLeftArmNoLeftLeg",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 66,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_arm",
+          "left_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "right_arm",
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 66,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1142,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            1807,
+            345,
+            1999
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 67,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1137,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            1807,
+            543,
+            1999
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 68,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            1807,
+            741,
+            1999
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 69,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            1807,
+            939,
+            1999
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 11,
+      "state_name": "NoRightLegNoLeftArm",
+      "display_label": "NoRightLegNoLeftArm",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 70,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "right_leg",
+          "left_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "right_arm",
+          "left_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 70,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1146,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            2005,
+            345,
+            2197
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 71,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1142,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            2005,
+            543,
+            2197
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 72,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            2005,
+            741,
+            2197
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 73,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            2005,
+            939,
+            2197
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 12,
+      "state_name": "NoLeftLegNoRightArm",
+      "display_label": "NoLeftLegNoRightArm",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 74,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_leg",
+          "right_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm",
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 74,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1146,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            2203,
+            345,
+            2395
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 75,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1142,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            2203,
+            543,
+            2395
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 76,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            2203,
+            741,
+            2395
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 77,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            2203,
+            939,
+            2395
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 13,
+      "state_name": "NoLegsNoLeftArm",
+      "display_label": "NoLegsNoLeftArm",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 78,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_leg",
+          "right_leg",
+          "left_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "right_arm"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 78,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1103,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            2401,
+            345,
+            2593
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 79,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1101,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            2401,
+            543,
+            2593
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 80,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            2401,
+            741,
+            2593
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 81,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            2401,
+            939,
+            2593
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 14,
+      "state_name": "NoLegsNoRightArm",
+      "display_label": "NoLegsNoRightArm",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 82,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_leg",
+          "right_leg",
+          "right_arm"
+        ],
+        "retained_anatomical_limbs": [
+          "left_arm"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 82,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1103,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            2599,
+            345,
+            2791
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 83,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1101,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            2599,
+            543,
+            2791
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 84,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            2599,
+            741,
+            2791
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 85,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            2599,
+            939,
+            2791
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 15,
+      "state_name": "None",
+      "display_label": "None",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 86,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg",
+          "right_leg"
+        ],
+        "retained_anatomical_limbs": [],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing.",
+          "All four limbs absent: retain head-and-torso stump form only. No feet, hands, knees, or complete arms; never substitute standing intact kobold."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 86,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1062,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            2797,
+            345,
+            2989
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 87,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1073,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            61
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            2797,
+            543,
+            2989
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 88,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            2797,
+            741,
+            2989
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 89,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 735,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            59
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            2797,
+            939,
+            2989
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 16,
+      "state_name": "NoArmsNoLeftLeg",
+      "display_label": "NoArmsNoLeftLeg",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 90,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "left_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "right_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 90,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1101,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            2995,
+            345,
+            3187
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 91,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1092,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            2995,
+            543,
+            3187
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 92,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            2995,
+            741,
+            3187
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 93,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            2995,
+            939,
+            3187
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 17,
+      "state_name": "NoArmsNoRightLeg",
+      "display_label": "NoArmsNoRightLeg",
+      "dirs": 4,
+      "frames": 1,
+      "native_cell_start_0based": 94,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 4,
+      "expected_frame_cells": 4,
+      "source_preview_occupied_columns_1based": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_preview_empty_columns_1based": [],
+      "anatomy": {
+        "missing_anatomical_limbs": [
+          "left_arm",
+          "right_arm",
+          "right_leg"
+        ],
+        "retained_anatomical_limbs": [
+          "left_leg"
+        ],
+        "constraints": [
+          "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+          "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 94,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 1101,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            153,
+            3193,
+            345,
+            3385
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 95,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 1092,
+          "alpha_bbox": [
+            13,
+            16,
+            51,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            351,
+            3193,
+            543,
+            3385
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 96,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            19,
+            18,
+            43,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            549,
+            3193,
+            741,
+            3385
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 97,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 794,
+          "alpha_bbox": [
+            21,
+            18,
+            45,
+            64
+          ],
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "kobold",
+          "sprite_region_preview_box": [
+            747,
+            3193,
+            939,
+            3385
+          ]
+        }
+      ]
+    },
+    {
+      "source_row_1based": 18,
+      "state_name": "Sneak",
+      "display_label": "Sneak",
+      "dirs": 4,
+      "frames": 3,
+      "native_cell_start_0based": 98,
+      "native_metadata_fields": [
+        [
+          "dirs",
+          "4"
+        ],
+        [
+          "frames",
+          "3"
+        ],
+        [
+          "delay",
+          "2,2,2"
+        ],
+        [
+          "movement",
+          "1"
+        ]
+      ],
+      "expected_occupied_cells": 0,
+      "expected_frame_cells": 12,
+      "source_preview_occupied_columns_1based": [],
+      "source_preview_empty_columns_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "anatomy": {
+        "missing_anatomical_limbs": null,
+        "retained_anatomical_limbs": null,
+        "constraints": [
+          "Every native Sneak frame is entirely transparent. Preserve all12empty frames; do not invent a crouched, translucent or visible Kobold."
+        ]
+      },
+      "cells": [
+        {
+          "source_preview_column_1based": 1,
+          "native_cell_0based": 98,
+          "frame_1based": 1,
+          "direction": "south",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            153,
+            3391,
+            345,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 2,
+          "native_cell_0based": 99,
+          "frame_1based": 1,
+          "direction": "north",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            351,
+            3391,
+            543,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 3,
+          "native_cell_0based": 100,
+          "frame_1based": 1,
+          "direction": "east",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            549,
+            3391,
+            741,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 4,
+          "native_cell_0based": 101,
+          "frame_1based": 1,
+          "direction": "west",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            747,
+            3391,
+            939,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 5,
+          "native_cell_0based": 102,
+          "frame_1based": 2,
+          "direction": "south",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            945,
+            3391,
+            1137,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 6,
+          "native_cell_0based": 103,
+          "frame_1based": 2,
+          "direction": "north",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            1143,
+            3391,
+            1335,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 7,
+          "native_cell_0based": 104,
+          "frame_1based": 2,
+          "direction": "east",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            1341,
+            3391,
+            1533,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 8,
+          "native_cell_0based": 105,
+          "frame_1based": 2,
+          "direction": "west",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            1539,
+            3391,
+            1731,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 9,
+          "native_cell_0based": 106,
+          "frame_1based": 3,
+          "direction": "south",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            1737,
+            3391,
+            1929,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 10,
+          "native_cell_0based": 107,
+          "frame_1based": 3,
+          "direction": "north",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            1935,
+            3391,
+            2127,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 11,
+          "native_cell_0based": 108,
+          "frame_1based": 3,
+          "direction": "east",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            2133,
+            3391,
+            2325,
+            3583
+          ]
+        },
+        {
+          "source_preview_column_1based": 12,
+          "native_cell_0based": 109,
+          "frame_1based": 3,
+          "direction": "west",
+          "occupied_pixels": 0,
+          "alpha_bbox": null,
+          "source_preview_exact_native_composite_match": true,
+          "content_kind": "intentional_empty_frame",
+          "sprite_region_preview_box": [
+            2331,
+            3391,
+            2523,
+            3583
+          ]
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-01.png",
+      "source_state_rows_1based": [
+        1,
+        2
+      ],
+      "output_columns": 4,
+      "output_rows": 4,
+      "expected_native_frame_cells": 14,
+      "expected_occupied_cells": 14,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "Normal",
+          "source_row_1based": 1,
+          "frame_1based": 1,
+          "display_label": "Normal frame 1",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 0,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1218,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                25,
+                345,
+                217
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 1,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1218,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                25,
+                543,
+                217
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 2,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                25,
+                741,
+                217
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 3,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                25,
+                939,
+                217
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "Normal",
+          "source_row_1based": 1,
+          "frame_1based": 2,
+          "display_label": "Normal frame 2",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 5,
+              "native_cell_0based": 4,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 1165,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                945,
+                25,
+                1137,
+                217
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 6,
+              "native_cell_0based": 5,
+              "frame_1based": 2,
+              "direction": "north",
+              "occupied_pixels": 1175,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1143,
+                25,
+                1335,
+                217
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 7,
+              "native_cell_0based": 6,
+              "frame_1based": 2,
+              "direction": "east",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                19,
+                20,
+                44,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1341,
+                25,
+                1533,
+                217
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 8,
+              "native_cell_0based": 7,
+              "frame_1based": 2,
+              "direction": "west",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                20,
+                20,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1539,
+                25,
+                1731,
+                217
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "Normal",
+          "source_row_1based": 1,
+          "frame_1based": 3,
+          "display_label": "Normal frame 3",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 9,
+              "native_cell_0based": 8,
+              "frame_1based": 3,
+              "direction": "south",
+              "occupied_pixels": 1165,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1737,
+                25,
+                1929,
+                217
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 10,
+              "native_cell_0based": 9,
+              "frame_1based": 3,
+              "direction": "north",
+              "occupied_pixels": 1175,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1935,
+                25,
+                2127,
+                217
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 11,
+              "native_cell_0based": 10,
+              "frame_1based": 3,
+              "direction": "east",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                17,
+                20,
+                42,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2133,
+                25,
+                2325,
+                217
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 12,
+              "native_cell_0based": 11,
+              "frame_1based": 3,
+              "direction": "west",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                22,
+                20,
+                47,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2331,
+                25,
+                2523,
+                217
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "All four limbs present; correct Kobold species proportions, not Goblin anatomy."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 4,
+          "state_name": "Sleep",
+          "source_row_1based": 2,
+          "display_label": "Sleep",
+          "layout": "Two sleep frames in columns 1 and 2; columns 3 and 4 empty.",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 12,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1218,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "sleeping_kobold",
+              "sprite_region_preview_box": [
+                153,
+                223,
+                345,
+                415
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 13,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 2991,
+              "alpha_bbox": [
+                1,
+                0,
+                64,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "sleep_Z_only_graphic",
+              "sprite_region_preview_box": [
+                351,
+                223,
+                543,
+                415
+              ],
+              "output_column_1based": 2
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Frame1 is one front-facing full-limbed standing Kobold. Eyes are dim olive/ochre oval areas rather than awake bright yellow-white; retain source expression.",
+              "Frame2 is white irregular sleep bubble with black Z only; no Kobold body or additional limbs."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-02.png",
+      "source_state_rows_1based": [
+        3
+      ],
+      "output_columns": 4,
+      "output_rows": 3,
+      "expected_native_frame_cells": 12,
+      "expected_occupied_cells": 12,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoLeftArm",
+          "source_row_1based": 3,
+          "frame_1based": 1,
+          "display_label": "NoLeftArm frame 1",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 14,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1185,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                421,
+                345,
+                613
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 15,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1183,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                421,
+                543,
+                613
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 16,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                421,
+                741,
+                613
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 17,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                421,
+                939,
+                613
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoLeftArm",
+          "source_row_1based": 3,
+          "frame_1based": 2,
+          "display_label": "NoLeftArm frame 2",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 5,
+              "native_cell_0based": 18,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 1132,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                945,
+                421,
+                1137,
+                613
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 6,
+              "native_cell_0based": 19,
+              "frame_1based": 2,
+              "direction": "north",
+              "occupied_pixels": 1138,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1143,
+                421,
+                1335,
+                613
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 7,
+              "native_cell_0based": 20,
+              "frame_1based": 2,
+              "direction": "east",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                19,
+                20,
+                44,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1341,
+                421,
+                1533,
+                613
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 8,
+              "native_cell_0based": 21,
+              "frame_1based": 2,
+              "direction": "west",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                20,
+                20,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1539,
+                421,
+                1731,
+                613
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoLeftArm",
+          "source_row_1based": 3,
+          "frame_1based": 3,
+          "display_label": "NoLeftArm frame 3",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 9,
+              "native_cell_0based": 22,
+              "frame_1based": 3,
+              "direction": "south",
+              "occupied_pixels": 1147,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1737,
+                421,
+                1929,
+                613
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 10,
+              "native_cell_0based": 23,
+              "frame_1based": 3,
+              "direction": "north",
+              "occupied_pixels": 1110,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1935,
+                421,
+                2127,
+                613
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 11,
+              "native_cell_0based": 24,
+              "frame_1based": 3,
+              "direction": "east",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                17,
+                20,
+                42,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2133,
+                421,
+                2325,
+                613
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 12,
+              "native_cell_0based": 25,
+              "frame_1based": 3,
+              "direction": "west",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                22,
+                20,
+                47,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2331,
+                421,
+                2523,
+                613
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-03.png",
+      "source_state_rows_1based": [
+        4
+      ],
+      "output_columns": 4,
+      "output_rows": 3,
+      "expected_native_frame_cells": 12,
+      "expected_occupied_cells": 12,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoRightArm",
+          "source_row_1based": 4,
+          "frame_1based": 1,
+          "display_label": "NoRightArm frame 1",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 26,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1185,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                619,
+                345,
+                811
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 27,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1183,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                619,
+                543,
+                811
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 28,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                619,
+                741,
+                811
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 29,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                619,
+                939,
+                811
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoRightArm",
+          "source_row_1based": 4,
+          "frame_1based": 2,
+          "display_label": "NoRightArm frame 2",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 5,
+              "native_cell_0based": 30,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 1132,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                945,
+                619,
+                1137,
+                811
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 6,
+              "native_cell_0based": 31,
+              "frame_1based": 2,
+              "direction": "north",
+              "occupied_pixels": 1138,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1143,
+                619,
+                1335,
+                811
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 7,
+              "native_cell_0based": 32,
+              "frame_1based": 2,
+              "direction": "east",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                19,
+                20,
+                44,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1341,
+                619,
+                1533,
+                811
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 8,
+              "native_cell_0based": 33,
+              "frame_1based": 2,
+              "direction": "west",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                20,
+                20,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1539,
+                619,
+                1731,
+                811
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoRightArm",
+          "source_row_1based": 4,
+          "frame_1based": 3,
+          "display_label": "NoRightArm frame 3",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 9,
+              "native_cell_0based": 34,
+              "frame_1based": 3,
+              "direction": "south",
+              "occupied_pixels": 1147,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1737,
+                619,
+                1929,
+                811
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 10,
+              "native_cell_0based": 35,
+              "frame_1based": 3,
+              "direction": "north",
+              "occupied_pixels": 1110,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1935,
+                619,
+                2127,
+                811
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 11,
+              "native_cell_0based": 36,
+              "frame_1based": 3,
+              "direction": "east",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                17,
+                20,
+                42,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2133,
+                619,
+                2325,
+                811
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 12,
+              "native_cell_0based": 37,
+              "frame_1based": 3,
+              "direction": "west",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                22,
+                20,
+                47,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2331,
+                619,
+                2523,
+                811
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-04.png",
+      "source_state_rows_1based": [
+        5
+      ],
+      "output_columns": 4,
+      "output_rows": 3,
+      "expected_native_frame_cells": 12,
+      "expected_occupied_cells": 12,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoArms",
+          "source_row_1based": 5,
+          "frame_1based": 1,
+          "display_label": "NoArms frame 1",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 38,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1146,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                817,
+                345,
+                1009
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 39,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1146,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                817,
+                543,
+                1009
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 40,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                817,
+                741,
+                1009
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 41,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                817,
+                939,
+                1009
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoArms",
+          "source_row_1based": 5,
+          "frame_1based": 2,
+          "display_label": "NoArms frame 2",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 5,
+              "native_cell_0based": 42,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 1118,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                945,
+                817,
+                1137,
+                1009
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 6,
+              "native_cell_0based": 43,
+              "frame_1based": 2,
+              "direction": "north",
+              "occupied_pixels": 1076,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1143,
+                817,
+                1335,
+                1009
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 7,
+              "native_cell_0based": 44,
+              "frame_1based": 2,
+              "direction": "east",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                19,
+                20,
+                44,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1341,
+                817,
+                1533,
+                1009
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 8,
+              "native_cell_0based": 45,
+              "frame_1based": 2,
+              "direction": "west",
+              "occupied_pixels": 845,
+              "alpha_bbox": [
+                20,
+                20,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1539,
+                817,
+                1731,
+                1009
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoArms",
+          "source_row_1based": 5,
+          "frame_1based": 3,
+          "display_label": "NoArms frame 3",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 9,
+              "native_cell_0based": 46,
+              "frame_1based": 3,
+              "direction": "south",
+              "occupied_pixels": 1117,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1737,
+                817,
+                1929,
+                1009
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 10,
+              "native_cell_0based": 47,
+              "frame_1based": 3,
+              "direction": "north",
+              "occupied_pixels": 1086,
+              "alpha_bbox": [
+                13,
+                14,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                1935,
+                817,
+                2127,
+                1009
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 11,
+              "native_cell_0based": 48,
+              "frame_1based": 3,
+              "direction": "east",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                17,
+                20,
+                42,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2133,
+                817,
+                2325,
+                1009
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 12,
+              "native_cell_0based": 49,
+              "frame_1based": 3,
+              "direction": "west",
+              "occupied_pixels": 829,
+              "alpha_bbox": [
+                22,
+                20,
+                47,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                2331,
+                817,
+                2523,
+                1009
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-05.png",
+      "source_state_rows_1based": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "output_columns": 4,
+      "output_rows": 4,
+      "expected_native_frame_cells": 16,
+      "expected_occupied_cells": 16,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoLeftLeg",
+          "source_row_1based": 6,
+          "display_label": "NoLeftLeg",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 50,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1180,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                1015,
+                345,
+                1207
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 51,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1174,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                1015,
+                543,
+                1207
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 52,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                1015,
+                741,
+                1207
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 53,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                1015,
+                939,
+                1207
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoRightLeg",
+          "source_row_1based": 7,
+          "display_label": "NoRightLeg",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 54,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1180,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                1213,
+                345,
+                1405
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 55,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1174,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                1213,
+                543,
+                1405
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 56,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                1213,
+                741,
+                1405
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 57,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                1213,
+                939,
+                1405
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoLegs",
+          "source_row_1based": 8,
+          "display_label": "NoLegs",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 58,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1133,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                1411,
+                345,
+                1603
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 59,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1131,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                1411,
+                543,
+                1603
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 60,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                1411,
+                741,
+                1603
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 61,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                1411,
+                939,
+                1603
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg",
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_arm"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 4,
+          "state_name": "NoRightArmNoRightLeg",
+          "source_row_1based": 9,
+          "display_label": "NoRightArmNoRightLeg",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 62,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1142,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                1609,
+                345,
+                1801
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 63,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1137,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                1609,
+                543,
+                1801
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 64,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                1609,
+                741,
+                1801
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 65,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                1609,
+                939,
+                1801
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_arm",
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "left_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-06.png",
+      "source_state_rows_1based": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "output_columns": 4,
+      "output_rows": 4,
+      "expected_native_frame_cells": 16,
+      "expected_occupied_cells": 16,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoLeftArmNoLeftLeg",
+          "source_row_1based": 10,
+          "display_label": "NoLeftArmNoLeftLeg",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 66,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1142,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                1807,
+                345,
+                1999
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 67,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1137,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                1807,
+                543,
+                1999
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 68,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                1807,
+                741,
+                1999
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 69,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                1807,
+                939,
+                1999
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "left_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "NoRightLegNoLeftArm",
+          "source_row_1based": 11,
+          "display_label": "NoRightLegNoLeftArm",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 70,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1146,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                2005,
+                345,
+                2197
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 71,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1142,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                2005,
+                543,
+                2197
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 72,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                2005,
+                741,
+                2197
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 73,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                2005,
+                939,
+                2197
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "right_leg",
+              "left_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm",
+              "left_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoLeftLegNoRightArm",
+          "source_row_1based": 12,
+          "display_label": "NoLeftLegNoRightArm",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 74,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1146,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                2203,
+                345,
+                2395
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 75,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1142,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                2203,
+                543,
+                2395
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 76,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                2203,
+                741,
+                2395
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 77,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                2203,
+                939,
+                2395
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm",
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 4,
+          "state_name": "NoLegsNoLeftArm",
+          "source_row_1based": 13,
+          "display_label": "NoLegsNoLeftArm",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 78,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1103,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                2401,
+                345,
+                2593
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 79,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1101,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                2401,
+                543,
+                2593
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 80,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                2401,
+                741,
+                2593
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 81,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                2401,
+                939,
+                2593
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg",
+              "right_leg",
+              "left_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "right_arm"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "status": "queued",
+      "suggested_output_path": "Races64/Kobold/page-07.png",
+      "source_state_rows_1based": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "output_columns": 4,
+      "output_rows": 4,
+      "expected_native_frame_cells": 16,
+      "expected_occupied_cells": 16,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "NoLegsNoRightArm",
+          "source_row_1based": 14,
+          "display_label": "NoLegsNoRightArm",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 82,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1103,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                2599,
+                345,
+                2791
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 83,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1101,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                2599,
+                543,
+                2791
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 84,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                2599,
+                741,
+                2791
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 85,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                2599,
+                939,
+                2791
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_leg",
+              "right_leg",
+              "right_arm"
+            ],
+            "retained_anatomical_limbs": [
+              "left_arm"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "None",
+          "source_row_1based": 15,
+          "display_label": "None",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 86,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1062,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                2797,
+                345,
+                2989
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 87,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1073,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                61
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                2797,
+                543,
+                2989
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 88,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                2797,
+                741,
+                2989
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 89,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 735,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                59
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                2797,
+                939,
+                2989
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg",
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing.",
+              "All four limbs absent: retain head-and-torso stump form only. No feet, hands, knees, or complete arms; never substitute standing intact kobold."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "NoArmsNoLeftLeg",
+          "source_row_1based": 16,
+          "display_label": "NoArmsNoLeftLeg",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 90,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1101,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                2995,
+                345,
+                3187
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 91,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1092,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                2995,
+                543,
+                3187
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 92,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                2995,
+                741,
+                3187
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 93,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                2995,
+                939,
+                3187
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "left_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "right_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 4,
+          "state_name": "NoArmsNoRightLeg",
+          "source_row_1based": 17,
+          "display_label": "NoArmsNoRightLeg",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 94,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 1101,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                153,
+                3193,
+                345,
+                3385
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 95,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 1092,
+              "alpha_bbox": [
+                13,
+                16,
+                51,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                351,
+                3193,
+                543,
+                3385
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 96,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                19,
+                18,
+                43,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                549,
+                3193,
+                741,
+                3385
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 97,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 794,
+              "alpha_bbox": [
+                21,
+                18,
+                45,
+                64
+              ],
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "kobold",
+              "sprite_region_preview_box": [
+                747,
+                3193,
+                939,
+                3385
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": [
+              "left_arm",
+              "right_arm",
+              "right_leg"
+            ],
+            "retained_anatomical_limbs": [
+              "left_leg"
+            ],
+            "constraints": [
+              "Keep head, torso, ears, and red source stump markers. Do not regrow missing hands, arms, legs, or feet.",
+              "Anatomical left/right belong to the kobold: in south/front view its left appears on screen right; back view reverses screen placement. Match each native direction rather than mirror guessing."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "status": "intentional_empty_state_no_character_generation",
+      "suggested_output_path": "Races64/Kobold/page-08.png",
+      "source_state_rows_1based": [
+        18
+      ],
+      "output_columns": 4,
+      "output_rows": 3,
+      "expected_native_frame_cells": 12,
+      "expected_occupied_cells": 0,
+      "rows": [
+        {
+          "output_row_1based": 1,
+          "state_name": "Sneak",
+          "source_row_1based": 18,
+          "frame_1based": 1,
+          "display_label": "Sneak frame 1",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 1,
+              "native_cell_0based": 98,
+              "frame_1based": 1,
+              "direction": "south",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                153,
+                3391,
+                345,
+                3583
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 2,
+              "native_cell_0based": 99,
+              "frame_1based": 1,
+              "direction": "north",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                351,
+                3391,
+                543,
+                3583
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 3,
+              "native_cell_0based": 100,
+              "frame_1based": 1,
+              "direction": "east",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                549,
+                3391,
+                741,
+                3583
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 4,
+              "native_cell_0based": 101,
+              "frame_1based": 1,
+              "direction": "west",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                747,
+                3391,
+                939,
+                3583
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": null,
+            "retained_anatomical_limbs": null,
+            "constraints": [
+              "Every native Sneak frame is entirely transparent. Preserve all12empty frames; do not invent a crouched, translucent or visible Kobold."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 2,
+          "state_name": "Sneak",
+          "source_row_1based": 18,
+          "frame_1based": 2,
+          "display_label": "Sneak frame 2",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 5,
+              "native_cell_0based": 102,
+              "frame_1based": 2,
+              "direction": "south",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                945,
+                3391,
+                1137,
+                3583
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 6,
+              "native_cell_0based": 103,
+              "frame_1based": 2,
+              "direction": "north",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                1143,
+                3391,
+                1335,
+                3583
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 7,
+              "native_cell_0based": 104,
+              "frame_1based": 2,
+              "direction": "east",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                1341,
+                3391,
+                1533,
+                3583
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 8,
+              "native_cell_0based": 105,
+              "frame_1based": 2,
+              "direction": "west",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                1539,
+                3391,
+                1731,
+                3583
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": null,
+            "retained_anatomical_limbs": null,
+            "constraints": [
+              "Every native Sneak frame is entirely transparent. Preserve all12empty frames; do not invent a crouched, translucent or visible Kobold."
+            ]
+          }
+        },
+        {
+          "output_row_1based": 3,
+          "state_name": "Sneak",
+          "source_row_1based": 18,
+          "frame_1based": 3,
+          "display_label": "Sneak frame 3",
+          "layout": "south,north,east,west",
+          "cells": [
+            {
+              "source_preview_column_1based": 9,
+              "native_cell_0based": 106,
+              "frame_1based": 3,
+              "direction": "south",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                1737,
+                3391,
+                1929,
+                3583
+              ],
+              "output_column_1based": 1
+            },
+            {
+              "source_preview_column_1based": 10,
+              "native_cell_0based": 107,
+              "frame_1based": 3,
+              "direction": "north",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                1935,
+                3391,
+                2127,
+                3583
+              ],
+              "output_column_1based": 2
+            },
+            {
+              "source_preview_column_1based": 11,
+              "native_cell_0based": 108,
+              "frame_1based": 3,
+              "direction": "east",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                2133,
+                3391,
+                2325,
+                3583
+              ],
+              "output_column_1based": 3
+            },
+            {
+              "source_preview_column_1based": 12,
+              "native_cell_0based": 109,
+              "frame_1based": 3,
+              "direction": "west",
+              "occupied_pixels": 0,
+              "alpha_bbox": null,
+              "source_preview_exact_native_composite_match": true,
+              "content_kind": "intentional_empty_frame",
+              "sprite_region_preview_box": [
+                2331,
+                3391,
+                2523,
+                3583
+              ],
+              "output_column_1based": 4
+            }
+          ],
+          "anatomy": {
+            "missing_anatomical_limbs": null,
+            "retained_anatomical_limbs": null,
+            "constraints": [
+              "Every native Sneak frame is entirely transparent. Preserve all12empty frames; do not invent a crouched, translucent or visible Kobold."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

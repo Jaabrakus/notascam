@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "reviewer": "root",
+  "source_cutouts_rgb_checked": 375,
+  "method": "Direct comparison of every source-cutout crop RGB with the corresponding full-resolution detailed plate, including hidden pixels; transparent padding excluded.",
+  "source_cutout_colors_exact": true,
+  "independent_native_preview_review": {
+    "families": [
+      "adamantium",
+      "bone",
+      "chitin",
+      "dragon",
+      "wood",
+      "gold"
+    ],
+    "states": 148,
+    "method": "All six per-family inventory/player montages visually inspected at3x for label fragments, missing objects and clipped designs.",
+    "result": "passed"
+  },
+  "height_and_baseline_exports_checked": 763,
+  "height_validation": "package_detailed_exports.py reopens each delivered PNG and compares its actual alpha height and bottom anchor with the native reference metadata."
+}

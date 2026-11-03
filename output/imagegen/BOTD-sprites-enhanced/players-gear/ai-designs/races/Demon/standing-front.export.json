@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T18:02:53.167978+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/Demon/standing-front-original.png",
+    "sha256": "37e4e3250a2acc1130b6cf1da3201124fa56ebd47d0778f34f5114bbcc3d54fe",
+    "size": [
+      1155,
+      1362
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      0,
+      37,
+      1127,
+      1344
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 917935,
+    "transparent_perimeter_fraction": 0.999403578528827,
+    "semi_transparent_pixels": 653528,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      0,
+      37,
+      1127,
+      1344
+    ],
+    "requested_source_crop": [
+      183,
+      64,
+      972,
+      1294
+    ],
+    "effective_source_crop": [
+      185,
+      64,
+      971,
+      1294
+    ],
+    "source_crop_size": [
+      786,
+      1230
+    ],
+    "crop_rgba_sha256": "6b206958c6681373094d0a7344805c737afea5acb3caed8fad28b623268cc072",
+    "discarded_pixel_count": 606330,
+    "discarded_nonzero_alpha_pixel_count": 322,
+    "discarded_maximum_alpha": 1,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Demon.dmi",
+    "sha256": "9b6da3ce3d77b4e2c80d8d6848160333155e360ca0810c387a03e7cd5ff030cf",
+    "cell_index": 0,
+    "atlas_size": [
+      640,
+      640
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      12,
+      2,
+      52,
+      64
+    ],
+    "visible_height": 62,
+    "visible_width": 40,
+    "bottom_baseline_exclusive": 64,
+    "alpha_sha256": "204c42c61eef3580e0553140f4210345a7c4a771c317bd0f90deb5218276eb2d",
+    "state_occurrence_index": 0,
+    "state_name": "",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "2,2,2"
+      ],
+      [
+        "rewind",
+        "0"
+      ],
+      [
+        "movement",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "3ec40fd78f402efe4216a90b3b43349397372e08e8bbb15174b109588872c0be"
+  },
+  "placement": {
+    "target_visible_height": 62,
+    "proportional_content_size": [
+      40,
+      62
+    ],
+    "uniform_scale": 0.05040650406504065,
+    "actual_axis_scales": [
+      0.05089058524173028,
+      0.05040650406504065
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      12,
+      2,
+      52,
+      64
+    ],
+    "actual_alpha_bbox": [
+      12,
+      2,
+      52,
+      64
+    ],
+    "actual_visible_height": 62,
+    "actual_visible_width": 40,
+    "bottom_baseline_exclusive": 64,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/ai-designs/races/Demon/standing-front.png",
+    "sha256": "2e1797d0a3bf0ec6989105b69f909eb3383d98407026502d52416f8f08909ef6",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      12,
+      2,
+      52,
+      64
+    ],
+    "alpha_sha256": "d82b413c50ecb09a0bc8218cbdbb3ae53da9f4712a438423601785b4da169c8e",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 1680
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

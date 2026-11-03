@@ -1,0 +1,349 @@
+{
+  "status": "passed_single_frame_64x64_design_export",
+  "reviewed_utc": "2026-10-24T17:12:51.200798+00:00",
+  "reviewer": "independent_race_review",
+  "latest_direction": "Enhanced AI artwork style at exact64x64 first; 3D work later.",
+  "scope": "One standing front Goblin frame, four mechanical sizing/resampling variants; not a complete source sheet or runtime integration.",
+  "preferred_output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-canvasfit.nearest.64.png",
+    "sha256": "38fd2af87c405e459605d99b5ddce7c5e0cf20a67e4f6ad0f6da7e8e5eaeb192",
+    "reason": "Canvas-fit nearest preserves crisp pixel edges and has the clearest eyes, pupils, fangs, ears and limb gaps at actual64 size.",
+    "intended_delivery_copy": "enhanced-64/Goblins-standing-front-64.png",
+    "delivery_copy_verified": false
+  },
+  "artwork_source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/source-art/Goblins-standing-front.png",
+    "sha256": "a95a5ddc8369d0b12c6cb8c002cd2476366cb86c1200f35944e9a460cefc4e3f",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "style_reference_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+    "style_reference_sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0"
+  },
+  "crop_audit": {
+    "explicit_source_crop": [
+      204,
+      247,
+      1049,
+      1136
+    ],
+    "crop_dimensions": [
+      845,
+      889
+    ],
+    "all_pixels_with_alpha_greater_than_one_are_inside_crop": true,
+    "alpha_gt1_bbox": [
+      208,
+      251,
+      1045,
+      1132
+    ],
+    "padding_around_alpha_gt1_bbox": 4,
+    "discarded_nonzero_alpha_pixels": 977,
+    "maximum_discarded_alpha": 1,
+    "inside_crop_rgba_preserved_before_resizing": true,
+    "alpha_threshold_filter_used": false,
+    "finding": "Only977 alpha=1 background specks lie outside the explicit crop. All stronger artwork pixels remain inside with four source pixels of padding. No visible ear, hand, foot or outline is cropped."
+  },
+  "export_reports": [
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-native.export.json",
+      "sha256": "038f33273b246a96c953174db1b09ccc9ba06d49fbfc834adedd0fb4c794d326",
+      "placement": {
+        "content_box": [
+          15,
+          20,
+          49,
+          64
+        ],
+        "anchor_x": 32.0,
+        "feet_anchor_bottom_exclusive": 64,
+        "source_crop_size": [
+          845,
+          889
+        ],
+        "resized_size": [
+          34,
+          36
+        ],
+        "uniform_fit_scale": 0.040236686390532544,
+        "actual_axis_scales": [
+          0.040236686390532544,
+          0.04049493813273341
+        ],
+        "rounding": "Nearest integer dimensions; aspect ratio differs only by unavoidable pixel rounding",
+        "destination_box": [
+          15,
+          28,
+          49,
+          64
+        ]
+      }
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-canvasfit.export.json",
+      "sha256": "245f91767a32d4eb24d04fa714a70eb9f2ad588ea4df50d203f27568d7b7d474",
+      "placement": {
+        "content_box": [
+          8,
+          4,
+          56,
+          60
+        ],
+        "anchor_x": 32.0,
+        "feet_anchor_bottom_exclusive": 60,
+        "source_crop_size": [
+          845,
+          889
+        ],
+        "resized_size": [
+          48,
+          50
+        ],
+        "uniform_fit_scale": 0.05680473372781065,
+        "actual_axis_scales": [
+          0.05680473372781065,
+          0.0562429696287964
+        ],
+        "rounding": "Nearest integer dimensions; aspect ratio differs only by unavoidable pixel rounding",
+        "destination_box": [
+          8,
+          10,
+          56,
+          60
+        ]
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-native.nearest.64.png",
+      "sha256": "8876b1fa67f43c3f3cee375ca72ac782ab58b90636066006d2bc254c8eb8d8d1",
+      "reported_hash_matches": true,
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "resampler": "nearest",
+      "alpha_bbox": [
+        15,
+        28,
+        49,
+        64
+      ],
+      "transparent_margins_left_top_right_bottom": [
+        15,
+        28,
+        15,
+        0
+      ],
+      "transparent_pixels": 3285,
+      "alpha1_pixels": 8,
+      "alpha2_to8_pixels": 6,
+      "near_opaque_alpha250_to255_pixels": 786,
+      "all_zero_alpha_pixels_zero_rgba": true,
+      "frame_edge_contact": true,
+      "independent_in_memory_mechanical_export_rgba_match": true,
+      "embedded_dmi_description": false
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-native.lanczos.64.png",
+      "sha256": "3e678c687277827027efa0aad2d84aecd59da2b897fa2419b1d3c592e42cfc64",
+      "reported_hash_matches": true,
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "resampler": "lanczos",
+      "alpha_bbox": [
+        15,
+        28,
+        49,
+        64
+      ],
+      "transparent_margins_left_top_right_bottom": [
+        15,
+        28,
+        15,
+        0
+      ],
+      "transparent_pixels": 3125,
+      "alpha1_pixels": 25,
+      "alpha2_to8_pixels": 62,
+      "near_opaque_alpha250_to255_pixels": 667,
+      "all_zero_alpha_pixels_zero_rgba": true,
+      "frame_edge_contact": true,
+      "independent_in_memory_mechanical_export_rgba_match": true,
+      "embedded_dmi_description": false
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-canvasfit.nearest.64.png",
+      "sha256": "38fd2af87c405e459605d99b5ddce7c5e0cf20a67e4f6ad0f6da7e8e5eaeb192",
+      "reported_hash_matches": true,
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "resampler": "nearest",
+      "alpha_bbox": [
+        8,
+        10,
+        56,
+        60
+      ],
+      "transparent_margins_left_top_right_bottom": [
+        8,
+        10,
+        8,
+        4
+      ],
+      "transparent_pixels": 2493,
+      "alpha1_pixels": 12,
+      "alpha2_to8_pixels": 12,
+      "near_opaque_alpha250_to255_pixels": 1518,
+      "all_zero_alpha_pixels_zero_rgba": true,
+      "frame_edge_contact": false,
+      "independent_in_memory_mechanical_export_rgba_match": true,
+      "embedded_dmi_description": false
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-canvasfit.lanczos.64.png",
+      "sha256": "35302ba245e6f076244ac91b3e069db3c7c198bd8e968876fb72a43e5bbdf4f1",
+      "reported_hash_matches": true,
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "resampler": "lanczos",
+      "alpha_bbox": [
+        8,
+        10,
+        56,
+        60
+      ],
+      "transparent_margins_left_top_right_bottom": [
+        8,
+        10,
+        8,
+        4
+      ],
+      "transparent_pixels": 2275,
+      "alpha1_pixels": 44,
+      "alpha2_to8_pixels": 100,
+      "near_opaque_alpha250_to255_pixels": 1347,
+      "all_zero_alpha_pixels_zero_rgba": true,
+      "frame_edge_contact": false,
+      "independent_in_memory_mechanical_export_rgba_match": true,
+      "embedded_dmi_description": false
+    }
+  ],
+  "visual_review": {
+    "viewed_at_actual64": [
+      "goblin-front-v2-native.nearest.64.png",
+      "goblin-front-v2-native.lanczos.64.png",
+      "goblin-front-v2-canvasfit.nearest.64.png",
+      "goblin-front-v2-canvasfit.lanczos.64.png"
+    ],
+    "viewed_reference_and_generated_source": true,
+    "source_identity_pass": true,
+    "anatomy_pass": true,
+    "source_style_pass": true,
+    "findings": [
+      "Olive Goblin skin, large ears with brown inner shading, bright yellow eyes with dark pupils, and two small white fangs remain recognizable from the approved enhanced reference.",
+      "Standing front pose preserves both ears, both arms, both legs and both feet. No unwanted clothing, extra limbs, sleep expression or walking pose was introduced.",
+      "Canvas-fit nearest keeps eye highlights, pupils and fangs readable at actual64 while retaining clearer pixel edges than Lanczos.",
+      "Canvas-fit Lanczos is a valid smoother alternative but softens fine pixel boundaries and adds more partial-alpha edge samples.",
+      "Native-content-box variants are smaller34x36 figures because the generated artwork has wider proportions than the native44px-high sprite; they remain recognizable but lose detail at actual64.",
+      "No visible background rectangle, label, drop shadow, or severe crop artifact is present in the preferred transparent export."
+    ]
+  },
+  "transparency_assessment": {
+    "primary_visible_bbox": [
+      8,
+      10,
+      56,
+      60
+    ],
+    "primary_canvas_dimensions": [
+      64,
+      64
+    ],
+    "primary_clear_margins_left_top_right_bottom": [
+      8,
+      10,
+      8,
+      4
+    ],
+    "primary_alpha1_samples_retained": 12,
+    "primary_alpha2_to8_samples_retained": 12,
+    "primary_near_opaque_alpha250_to255_pixels": 1518,
+    "primary_alpha_gt127_is_one_connected_8_neighbor_component": true,
+    "note": "Transparency is not binary: source near-opaque and faint edge alpha is preserved, with twelve alpha1 pixels remaining inside the fitted artwork. They do not reach the frame border or create a visible background; no unrequested alpha threshold was applied.",
+    "hidden_rgb_zeroed_where_alpha_zero": true
+  },
+  "anchor_assessment": {
+    "preferred_canvas_center_x": 32,
+    "preferred_feet_anchor_bottom_exclusive": 60,
+    "preferred_bottom_visible_row": 59,
+    "original_native_cell0_alpha_bbox": [
+      15,
+      20,
+      49,
+      64
+    ],
+    "native_box_variant_destination": [
+      15,
+      28,
+      49,
+      64
+    ],
+    "canvasfit_variant_destination": [
+      8,
+      10,
+      56,
+      60
+    ],
+    "old_dmi_registration_equivalence_claimed": false,
+    "finding": "Canvas-fit is an explicit64x64 design layout with four transparent bottom rows. Native-box variant uses the original horizontal/foot limits but does not reproduce the original silhouette or content height."
+  },
+  "code_review": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite64.py",
+    "sha256": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "source_crop_and_resize_only": true,
+    "no_creative_filter_or_3d_processing": true,
+    "premultiplied_alpha_lanczos": true,
+    "direct_rgba_paste_does_not_square_alpha": true,
+    "all_four_output_arrays_match_independent_in_memory_reconstruction": true,
+    "source_and_report_hashes_verified": true
+  },
+  "count_audit": {
+    "requested_source_sheets": 669,
+    "checked_reference_sources": 12,
+    "reference_sources_remaining": 657,
+    "checked_reference_pages": 16,
+    "checked_reference_page_hashes_verified": 16,
+    "complete_game_source_sheets": 0,
+    "complete64_source_sheets": 0,
+    "native64_source_sheet_count": 646,
+    "native32_source_sheet_count": 23,
+    "total_native_directional_frame_cells": 146255,
+    "wording_note": "669 counts source sheets;146255 counts native directional frame cells. The four PNG variants describe one pose and do not count as four completed source sheets."
+  },
+  "blocking_findings": [],
+  "limitations": [
+    "Only one standing front Goblin frame is reviewed. Remaining facings, walking phases, Sleep and limb states are not supplied by this export.",
+    "This is artwork packaged in a64x64 PNG frame; no3D model, DMI metadata, atlas or runtime installation is produced.",
+    "Canvas-fit registration is intentionally different from the old native DMI. Equipment and animation alignment remain unverified.",
+    "The exact original alpha mask and palette are not preserved or claimed.",
+    "Source sheets remain incomplete; this reviewed sample does not increase the complete-sheet count."
+  ],
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "mutations": "Only this review JSON was written. No artwork, native source, shared manifest or runtime asset was changed."
+}

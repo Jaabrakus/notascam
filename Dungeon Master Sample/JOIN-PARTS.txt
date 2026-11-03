@@ -1,0 +1,4 @@
+The two sprite-pack zips are split into 95 MB parts (GitHub refuses files over 100 MB). To rebuild them:
+    cat "All Sprites.zip.part-"* > "All Sprites.zip"
+    cat "GOA Female Sprite Sources.zip.part-"* > "GOA Female Sprite Sources.zip"
+The sprite manifests are gzipped: gunzip -k standalone/remastered/assets/sprites/manifest.json.gz

@@ -1,0 +1,17 @@
+Use case: stylized-concept. Produce a FULL HIGH RESOLUTION portrait detailed equipment sheet. Image1 is the EXACT source designs/layout; image2 is approved enhanced style. Increase drawn resolution, faceted voxel/pixel material shading and readable depth ONLY. Preserve ALL object identities, silhouettes, blade types, handles, proportions, directional poses, partial fragments and intentional blank cells. No arbitrary ornaments, spikes, horns, trim, new equipment, characters, photorealism or smooth blur. Opaque dark charcoal background, crisp dark outlines, polished pixel clusters. Clear white title and exact left row labels; four spacious columns headed S N E W. One object view per source cell, centered, separated, not cropped. Never turn a partial/occluded source weapon into a full weapon; preserve detached grip pieces. Redraw additional clean high-resolution material detail, do not merely nearest-upscale source. Use full page, all listed rows and fourcolumns. Title exactly "Gear/hell.dmi". Rusty dark-red hell metal with modest orange bevel highlights, brown wood/leather handles; no new gold. Page5 rows verbatim in order:
+1. "legs.scale.hell"; occupied S,N,E,W; all other columns BLANK.
+2. "arms.plate.hell.L"; occupied S,N,W; all other columns BLANK.
+3. "arms.plate.hell.R"; occupied S,N,E; all other columns BLANK.
+4. "arms.mail.hell.L"; occupied S,N,W; all other columns BLANK.
+5. "arms.mail.hell.R"; occupied S,N,E; all other columns BLANK.
+6. "shield.buckler.hell"; occupied S,N,E,W; all other columns BLANK.
+7. "shield.round.hell"; occupied S,N,E,W; all other columns BLANK.
+Total 24 occupiedcells. Arm rows are ONLY SINGLE detached upper-arm armor pieces, not full arms, hands or paired gauntlets; L rows Ecolumn intentionally EMPTY, R rows Wcolumn EMPTY. Source L front pieces are on right side of their cells and R front on left. Keep partial silhouettes and left/right handedness. Legsscale compact SHORT hips/thighs. BucklerE is a TINY thin edge fragment, not complete disc. Roundshield metalrim+originalbrownwood center, narrow E/N sideviews. Four blanks EXACTLY.
+Source component guidance (do not omit tiny detached pieces):
+legs.scale.hell: S/N/E/W source connected-component counts 1/1/1/1
+arms.plate.hell.L: S/N/E/W source connected-component counts 1/1/0/1
+arms.plate.hell.R: S/N/E/W source connected-component counts 1/1/1/0
+arms.mail.hell.L: S/N/E/W source connected-component counts 1/1/0/1
+arms.mail.hell.R: S/N/E/W source connected-component counts 1/1/1/0
+shield.buckler.hell: S/N/E/W source connected-component counts 1/1/1/1
+shield.round.hell: S/N/E/W source connected-component counts 1/1/2/1

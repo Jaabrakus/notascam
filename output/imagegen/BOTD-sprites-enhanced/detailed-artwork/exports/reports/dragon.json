@@ -1,0 +1,3959 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "dragon",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "accepted_game_height_exports_from_detailed_artwork",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "helmet.kettle.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        327,
+        62,
+        467,
+        166
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 109.91693528390776,
+        "selected_components": [
+          {
+            "area": 8066,
+            "box": [
+              329,
+              64,
+              465,
+              164
+            ],
+            "center": [
+              396.24869823952395,
+              109.91693528390776
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/000-helmet.kettle.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          327,
+          62,
+          467,
+          166
+        ],
+        "size": [
+          148,
+          112
+        ],
+        "source_crop_size": [
+          140,
+          104
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          138,
+          102
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          142,
+          106
+        ],
+        "retained_pixels": 8063,
+        "background_pixels_removed": 6497,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 484,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/000-helmet.kettle.dragon.png",
+        "output_sha256": "9ebe998606127b0d0b14d2ce66a70a554538cfd79755dc5d5bfb1cd1bb3835f3"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/000-helmet.kettle.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/000-helmet.kettle.dragon.export.json",
+        "sha256": "5dcef5cca57b7df7fbf1b14ef980d3c6db6d8c3e4b757ed595bcae5ccf656669",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          8,
+          4,
+          23,
+          15
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 0,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            8,
+            4,
+            24,
+            15
+          ],
+          "visible_height": 11,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "2a10c36430bbbf9f04f3d9235b47b75812b9c9ea3ee473d083554ddc8c5f4216",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/000-helmet.kettle.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/000-helmet.kettle.dragon.export.json",
+        "sha256": "454d91e8299aad09a7a6e4ba50930095091c7aeeee29fc92d5c8f0880ab49d25",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          7,
+          47,
+          30
+        ],
+        "visible_height": 23,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 0,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            16,
+            7,
+            48,
+            30
+          ],
+          "visible_height": 23,
+          "visible_width": 32,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "42e29028704a9b940a3c8890990110c71ef3d65340d54b029ef9025c44a2ce63",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "helmet.horned.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        308,
+        243,
+        485,
+        342
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 288.57972394098044,
+        "selected_components": [
+          {
+            "area": 8404,
+            "box": [
+              310,
+              245,
+              483,
+              340
+            ],
+            "center": [
+              396.38422179914323,
+              288.57972394098044
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/001-helmet.horned.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          308,
+          243,
+          485,
+          342
+        ],
+        "size": [
+          185,
+          107
+        ],
+        "source_crop_size": [
+          177,
+          99
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          175,
+          97
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          179,
+          101
+        ],
+        "retained_pixels": 8400,
+        "background_pixels_removed": 9123,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 85.0,
+          "border_background_sample_count": 548,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/001-helmet.horned.dragon.png",
+        "output_sha256": "e50feac217dcb006656f209d2d962620e8c14ac26ac4d01ab0efb45b46042603"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/001-helmet.horned.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/001-helmet.horned.dragon.export.json",
+        "sha256": "4259b8739871932c1fbd16045698a1b82f727dbaf1a6cc67d167db357cfea39b",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          5,
+          1,
+          25,
+          12
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 12,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 4,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            5,
+            1,
+            26,
+            12
+          ],
+          "visible_height": 11,
+          "visible_width": 21,
+          "bottom_baseline_exclusive": 12,
+          "alpha_sha256": "7eefa107f5083ce3e2b7bb3893d57430aaac942887aed7d2b4de74a3418f7f6e",
+          "state_occurrence_index": 1,
+          "state_name": "helmet.horned.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/001-helmet.horned.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/001-helmet.horned.dragon.export.json",
+        "sha256": "056319c1aaa18f1167e8b4356c5523db5fe42be5005ff2ef4966586abfef261c",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          11,
+          1,
+          51,
+          23
+        ],
+        "visible_height": 22,
+        "baseline_exclusive": 23,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 12,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            1,
+            52,
+            23
+          ],
+          "visible_height": 22,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 23,
+          "alpha_sha256": "833c43b47db49909e745f53cbf781ecb75f7011e29e86b407c13533c2fa5e689",
+          "state_occurrence_index": 1,
+          "state_name": "helmet.horned.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "helmet.crested.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        331,
+        431,
+        462,
+        544
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 488.1288049605412,
+        "selected_components": [
+          {
+            "area": 826,
+            "box": [
+              428,
+              433,
+              460,
+              474
+            ],
+            "center": [
+              443.93220338983053,
+              454.7493946731235
+            ]
+          },
+          {
+            "area": 858,
+            "box": [
+              333,
+              434,
+              365,
+              477
+            ],
+            "center": [
+              348.0699300699301,
+              455.15034965034965
+            ]
+          },
+          {
+            "area": 5412,
+            "box": [
+              342,
+              440,
+              450,
+              542
+            ],
+            "center": [
+              395.3375831485588,
+              498.45158906134515
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/002-helmet.crested.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          331,
+          431,
+          462,
+          544
+        ],
+        "size": [
+          139,
+          121
+        ],
+        "source_crop_size": [
+          131,
+          113
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          129,
+          111
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          133,
+          115
+        ],
+        "retained_pixels": 7080,
+        "background_pixels_removed": 7723,
+        "enclosed_candidate_pixels_retained": 5,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 484,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/002-helmet.crested.dragon.png",
+        "output_sha256": "cddf20069673b6358ecc5a7ff28920c5d192706e36e5e5acdd426e7eb13caed4"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/002-helmet.crested.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/002-helmet.crested.dragon.export.json",
+        "sha256": "fa48125a719ff5e3ce8ff1fafba9a81fbc281482012ac34765f5c6a968382769",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          8,
+          0,
+          23,
+          13
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 13,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 8,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            0,
+            25,
+            13
+          ],
+          "visible_height": 13,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 13,
+          "alpha_sha256": "7e7b8277a42c179fb5a3d649b41da2646637bd3c4de07bf0d049c2c5e9e938e0",
+          "state_occurrence_index": 2,
+          "state_name": "helmet.crested.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/002-helmet.crested.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/002-helmet.crested.dragon.export.json",
+        "sha256": "0d058145b353b3fa2739481f9cc6033d51f6e76169bb4e76b18a95dda2ff1625",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          17,
+          0,
+          47,
+          26
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 26,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 24,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            14,
+            0,
+            50,
+            26
+          ],
+          "visible_height": 26,
+          "visible_width": 36,
+          "bottom_baseline_exclusive": 26,
+          "alpha_sha256": "4f64d6a78ea6601f88308f5345a4f85512f3f7f3403b5f75f9017e176876b718",
+          "state_occurrence_index": 2,
+          "state_name": "helmet.crested.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "helmet.great helm.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        323,
+        638,
+        469,
+        735
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 685.7398037077427,
+        "selected_components": [
+          {
+            "area": 9170,
+            "box": [
+              325,
+              640,
+              467,
+              733
+            ],
+            "center": [
+              395.2352235550709,
+              685.7398037077427
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              444,
+              683,
+              445,
+              686
+            ],
+            "center": [
+              444.0,
+              684.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/003-helmet.great_helm.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          323,
+          638,
+          469,
+          735
+        ],
+        "size": [
+          154,
+          105
+        ],
+        "source_crop_size": [
+          146,
+          97
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          144,
+          95
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          148,
+          99
+        ],
+        "retained_pixels": 9165,
+        "background_pixels_removed": 4997,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 82.0,
+          "border_background_sample_count": 482,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/003-helmet.great_helm.dragon.png",
+        "output_sha256": "6037a0dcda304e3fce4ea3155cc439db39379d95e5ea54e89cc3c35eb78b40bd"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/003-helmet.great_helm.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/003-helmet.great_helm.dragon.export.json",
+        "sha256": "267854a0d9aab274cb39dd9d0f7e80e6ccaabe197f121353b312eb0dad2d7642",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          4,
+          24,
+          15
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 12,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            4,
+            25,
+            15
+          ],
+          "visible_height": 11,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "af176cea3d1d9f4cf0750983778ac6a59f3eabea90e171de65f525068c17a235",
+          "state_occurrence_index": 3,
+          "state_name": "helmet.great helm.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/003-helmet.great_helm.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/003-helmet.great_helm.dragon.export.json",
+        "sha256": "caad682826607397dd2161bb17eb6e61165dc429c0352ef6c961f81f1418208b",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          8,
+          49,
+          30
+        ],
+        "visible_height": 22,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 36,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            14,
+            8,
+            50,
+            30
+          ],
+          "visible_height": 22,
+          "visible_width": 36,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "b96b5199ed6926591c6abda54fc21f66c5558fd26192eec5578d33ffe25c3bc5",
+          "state_occurrence_index": 3,
+          "state_name": "helmet.great helm.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "chest.scale.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        312,
+        816,
+        474,
+        953
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 883.5227616997529,
+        "selected_components": [
+          {
+            "area": 12543,
+            "box": [
+              314,
+              818,
+              472,
+              951
+            ],
+            "center": [
+              393.63804512477077,
+              883.5227616997529
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/004-chest.scale.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          312,
+          816,
+          474,
+          953
+        ],
+        "size": [
+          170,
+          145
+        ],
+        "source_crop_size": [
+          162,
+          137
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          160,
+          134
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          164,
+          138
+        ],
+        "retained_pixels": 12537,
+        "background_pixels_removed": 9657,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 594,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/004-chest.scale.dragon.png",
+        "output_sha256": "eb13ac2a2d27d0406eea46867298b1e485009a8682c5c8859f9968c2a1181f8c"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/004-chest.scale.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/004-chest.scale.dragon.export.json",
+        "sha256": "a64e29ff8b26ea022c51bfa99bb7c84939b0811a5f547f1b290d287f13259332",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          13,
+          25,
+          29
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 16,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            13,
+            25,
+            29
+          ],
+          "visible_height": 16,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "aa1753df277fd3cdb98176f73209ad1ac8324d2559b5092173b70739c18af094",
+          "state_occurrence_index": 4,
+          "state_name": "chest.scale.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/004-chest.scale.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/004-chest.scale.dragon.export.json",
+        "sha256": "3de5286a39b2b041a6c290c767a117c08560b3630b3f2d202ac4ad4dd0c567c3",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          26,
+          50,
+          58
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 58,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 48,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            12,
+            26,
+            51,
+            58
+          ],
+          "visible_height": 32,
+          "visible_width": 39,
+          "bottom_baseline_exclusive": 58,
+          "alpha_sha256": "9cc59903fea1cbf8c783eb97a32bbdc17f1d4702c5697b23e08652d5bbe3067c",
+          "state_occurrence_index": 4,
+          "state_name": "chest.scale.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 5,
+      "state_name": "chest.lamellar.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        313,
+        1016,
+        473,
+        1145
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1077.9353455818023,
+        "selected_components": [
+          {
+            "area": 11430,
+            "box": [
+              315,
+              1018,
+              471,
+              1143
+            ],
+            "center": [
+              393.4189851268591,
+              1077.9353455818023
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/005-chest.lamellar.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          313,
+          1016,
+          473,
+          1145
+        ],
+        "size": [
+          168,
+          137
+        ],
+        "source_crop_size": [
+          160,
+          129
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          158,
+          127
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          162,
+          131
+        ],
+        "retained_pixels": 11420,
+        "background_pixels_removed": 9220,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 82.0,
+          "border_background_sample_count": 574,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/005-chest.lamellar.dragon.png",
+        "output_sha256": "4748f6275971684bb12b107ca7d5097b4bda9be04c155d79b3a80ede948acb79"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/005-chest.lamellar.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/005-chest.lamellar.dragon.export.json",
+        "sha256": "bec3deaa454ce6c05ae334b7f0f3a479544f7cd9d2542287f76f63239e5960c6",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          13,
+          25,
+          28
+        ],
+        "visible_height": 15,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 20,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            13,
+            25,
+            28
+          ],
+          "visible_height": 15,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6122255e759428f7f83a4f59e9ef67b27b1a410cedb2ae716acf210bfe1b0d4f",
+          "state_occurrence_index": 5,
+          "state_name": "chest.lamellar.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/005-chest.lamellar.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/005-chest.lamellar.dragon.export.json",
+        "sha256": "e8ad90530b772790691e2d4f042325bffcbffde021fabd266cf0ab440c582726",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          26,
+          49,
+          55
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 60,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            12,
+            26,
+            51,
+            55
+          ],
+          "visible_height": 29,
+          "visible_width": 39,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "9d482249c7f250cdc7876e2270704cde23ee5494f578d07c451e9540865f9512",
+          "state_occurrence_index": 5,
+          "state_name": "chest.lamellar.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 6,
+      "state_name": "chest.plate.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+      "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "crop_box": [
+        313,
+        1226,
+        474,
+        1355
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1288.0110048251927,
+        "selected_components": [
+          {
+            "area": 11813,
+            "box": [
+              315,
+              1228,
+              472,
+              1353
+            ],
+            "center": [
+              393.2643697621265,
+              1288.0110048251927
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/006-chest.plate.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-01.png",
+        "source_sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+        "crop_box": [
+          313,
+          1226,
+          474,
+          1355
+        ],
+        "size": [
+          169,
+          137
+        ],
+        "source_crop_size": [
+          161,
+          129
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          159,
+          127
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          163,
+          131
+        ],
+        "retained_pixels": 11813,
+        "background_pixels_removed": 8956,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 576,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/006-chest.plate.dragon.png",
+        "output_sha256": "ac14b9834291dad3a118eb77b6430a9883a831e2024fbd5de3ed6df3437b8ae9"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/006-chest.plate.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/006-chest.plate.dragon.export.json",
+        "sha256": "e9f0e21ae82ed1dc0a438d6106b711baceb273f28782c80ded462ce427bb0b0b",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          13,
+          24,
+          27
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 24,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            13,
+            25,
+            27
+          ],
+          "visible_height": 14,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "076ce0b9eb5575d152b55ed55ffeafe7986d5c0f5e183f15ed4594b44be09360",
+          "state_occurrence_index": 6,
+          "state_name": "chest.plate.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/006-chest.plate.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/006-chest.plate.dragon.export.json",
+        "sha256": "4b895ce29d3a197ec385f321229b215361c8dca378cd8a2393b98531af8edabe",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          14,
+          26,
+          48,
+          53
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 72,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            12,
+            26,
+            51,
+            53
+          ],
+          "visible_height": 27,
+          "visible_width": 39,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "3363d29bd2668756909f43964b98733798b23c5441878925daecc44a269576c8",
+          "state_occurrence_index": 6,
+          "state_name": "chest.plate.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 7,
+      "state_name": "legs.scale.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        334,
+        120,
+        457,
+        217
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 169.6167698368036,
+        "selected_components": [
+          {
+            "area": 8885,
+            "box": [
+              336,
+              122,
+              455,
+              215
+            ],
+            "center": [
+              396.206527855937,
+              169.6167698368036
+            ]
+          },
+          {
+            "area": 4,
+            "box": [
+              340,
+              156,
+              341,
+              160
+            ],
+            "center": [
+              340.0,
+              157.5
+            ]
+          },
+          {
+            "area": 7,
+            "box": [
+              394,
+              200,
+              398,
+              203
+            ],
+            "center": [
+              395.1428571428571,
+              201.42857142857142
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/007-legs.scale.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          334,
+          120,
+          457,
+          217
+        ],
+        "size": [
+          131,
+          105
+        ],
+        "source_crop_size": [
+          123,
+          97
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          122,
+          95
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          126,
+          99
+        ],
+        "retained_pixels": 8895,
+        "background_pixels_removed": 3036,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 85.0,
+          "border_background_sample_count": 436,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/007-legs.scale.dragon.png",
+        "output_sha256": "cf6d516b6d549d0286e713a405b1c71c52fdee47c4e62675bc1ba559b1f96003"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/007-legs.scale.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/007-legs.scale.dragon.export.json",
+        "sha256": "5b5b66f0cb566d0d6979ee45d11471bb0a6f38a6979ddcd49ea7f55bf7d1c06f",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          22,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 28,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 7,
+          "state_name": "legs.scale.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/007-legs.scale.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/007-legs.scale.dragon.export.json",
+        "sha256": "b277e3516b05e1538019313a5c5a1ba0f0f1243181963d922ac2ff27ffbd3232",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          44,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 84,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 7,
+          "state_name": "legs.scale.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 8,
+      "state_name": "legs.plate.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        331,
+        299,
+        461,
+        398
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 351.195670361849,
+        "selected_components": [
+          {
+            "area": 2,
+            "box": [
+              364,
+              301,
+              365,
+              303
+            ],
+            "center": [
+              364.0,
+              301.5
+            ]
+          },
+          {
+            "area": 9562,
+            "box": [
+              333,
+              301,
+              459,
+              396
+            ],
+            "center": [
+              395.6654465592972,
+              351.195670361849
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              347,
+              323,
+              348,
+              325
+            ],
+            "center": [
+              347.0,
+              323.5
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              345,
+              329,
+              346,
+              331
+            ],
+            "center": [
+              345.0,
+              329.5
+            ]
+          },
+          {
+            "area": 17,
+            "box": [
+              394,
+              378,
+              397,
+              386
+            ],
+            "center": [
+              394.8235294117647,
+              380.5882352941176
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              399,
+              383,
+              400,
+              385
+            ],
+            "center": [
+              399.0,
+              383.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/008-legs.plate.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          331,
+          299,
+          461,
+          398
+        ],
+        "size": [
+          138,
+          107
+        ],
+        "source_crop_size": [
+          130,
+          99
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          2,
+          128,
+          97
+        ],
+        "alpha_bbox": [
+          4,
+          6,
+          132,
+          101
+        ],
+        "retained_pixels": 9588,
+        "background_pixels_removed": 3282,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 86.0,
+          "border_background_sample_count": 452,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/008-legs.plate.dragon.png",
+        "output_sha256": "85a762d54c0e9e88dc0f7f7e9bc7813ee9d7619ceecdb3a15560637a47375037"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/008-legs.plate.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/008-legs.plate.dragon.export.json",
+        "sha256": "59b8e348c4957e8a1cd9d0d27d909ad3f880e0a645cfb9eaa40f83b7111cdadc",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          22,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 32,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 8,
+          "state_name": "legs.plate.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/008-legs.plate.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/008-legs.plate.dragon.export.json",
+        "sha256": "7f854633e331d446c0ab151c77180542d9450d8385ca1c305058a4c618993ab9",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          45,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 96,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 8,
+          "state_name": "legs.plate.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays",
+        "Crop-border warning independently inspected at source2x: minor retained edge pixels, no visible object clipping"
+      ]
+    },
+    {
+      "state_index": 9,
+      "state_name": "arms.plate.dragon.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        371,
+        473,
+        449,
+        580
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 527.9319103521879,
+        "selected_components": [
+          {
+            "area": 2,
+            "box": [
+              420,
+              475,
+              422,
+              476
+            ],
+            "center": [
+              420.5,
+              475.0
+            ]
+          },
+          {
+            "area": 6,
+            "box": [
+              424,
+              475,
+              430,
+              476
+            ],
+            "center": [
+              426.5,
+              475.0
+            ]
+          },
+          {
+            "area": 4685,
+            "box": [
+              374,
+              477,
+              447,
+              578
+            ],
+            "center": [
+              408.7741728922092,
+              527.9319103521879
+            ]
+          },
+          {
+            "area": 4,
+            "box": [
+              402,
+              487,
+              403,
+              491
+            ],
+            "center": [
+              402.0,
+              488.5
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              392,
+              499,
+              394,
+              500
+            ],
+            "center": [
+              392.5,
+              499.0
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              388,
+              502,
+              390,
+              504
+            ],
+            "center": [
+              388.6666666666667,
+              502.6666666666667
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              438,
+              538,
+              439,
+              540
+            ],
+            "center": [
+              438.0,
+              538.5
+            ]
+          },
+          {
+            "area": 6,
+            "box": [
+              438,
+              543,
+              439,
+              549
+            ],
+            "center": [
+              438.0,
+              545.5
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              373,
+              545,
+              374,
+              547
+            ],
+            "center": [
+              373.0,
+              545.5
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              420,
+              564,
+              422,
+              565
+            ],
+            "center": [
+              420.5,
+              564.0
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              381,
+              567,
+              383,
+              568
+            ],
+            "center": [
+              381.5,
+              567.0
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              411,
+              568,
+              412,
+              571
+            ],
+            "center": [
+              411.0,
+              569.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/009-arms.plate.dragon.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          371,
+          473,
+          449,
+          580
+        ],
+        "size": [
+          86,
+          115
+        ],
+        "source_crop_size": [
+          78,
+          107
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          76,
+          105
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          80,
+          109
+        ],
+        "retained_pixels": 4720,
+        "background_pixels_removed": 3626,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 82.0,
+          "border_background_sample_count": 366,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/009-arms.plate.dragon.L.png",
+        "output_sha256": "7724fc65058ff5f4e2758a973198c2e5a2bcc812adab7c12cddb649b6b314c2a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/009-arms.plate.dragon.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/009-arms.plate.dragon.L.export.json",
+        "sha256": "e61dd6cabc0387a15fda24c81626711a71d50e96e194e7dfd6bd6433921709cb",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          17,
+          26,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 36,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            17,
+            26,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "f5e7559519ff9f281df545b20274014699138bfead9c57e3d6c9acb8c453c51a",
+          "state_occurrence_index": 9,
+          "state_name": "arms.plate.dragon.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/009-arms.plate.dragon.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/009-arms.plate.dragon.L.export.json",
+        "sha256": "624aff46752d83ebfbfe3d1a0ac548162ba1b91ffb56a7d4c87021103e7413be",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          35,
+          52,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 108,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            35,
+            51,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "2a0615e881f32bf31b3d2eda5f1ca01b7ed0e1d65327d035ef5fff94fc008e3a",
+          "state_occurrence_index": 9,
+          "state_name": "arms.plate.dragon.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 10,
+      "state_name": "arms.plate.dragon.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        324,
+        669,
+        398,
+        766
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 718.2596698113208,
+        "selected_components": [
+          {
+            "area": 4240,
+            "box": [
+              326,
+              671,
+              396,
+              764
+            ],
+            "center": [
+              362.8509433962264,
+              718.2596698113208
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              332,
+              739,
+              334,
+              740
+            ],
+            "center": [
+              332.5,
+              739.0
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              352,
+              752,
+              355,
+              753
+            ],
+            "center": [
+              353.0,
+              752.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/010-arms.plate.dragon.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          324,
+          669,
+          398,
+          766
+        ],
+        "size": [
+          82,
+          105
+        ],
+        "source_crop_size": [
+          74,
+          97
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          72,
+          95
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          76,
+          99
+        ],
+        "retained_pixels": 4250,
+        "background_pixels_removed": 2928,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 84.14999389648438,
+          "border_background_sample_count": 338,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/010-arms.plate.dragon.R.png",
+        "output_sha256": "ee367dbf26bfe5c9ec9dec01d7f2520ed720c14d59406df49d1875cdade0272b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/010-arms.plate.dragon.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/010-arms.plate.dragon.R.export.json",
+        "sha256": "eb2d0ea4da821d3889940734042daefd0e90b4b5c804fab42a7cb24474671e90",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          17,
+          14,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 40,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            17,
+            13,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "e91b32111ced068b6aae02d5b7fbb111abb560cf169eb95cdd4d43872239f6a2",
+          "state_occurrence_index": 10,
+          "state_name": "arms.plate.dragon.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/010-arms.plate.dragon.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/010-arms.plate.dragon.R.export.json",
+        "sha256": "f9d79bf2e827323ae556265289a4ff70e2eafd777e148649886b3aafc780bb34",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          35,
+          27,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 120,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            35,
+            25,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0be1eb997a3461ba89b7af4c887294ef58513f5e28bb955869b932697bd3e2c2",
+          "state_occurrence_index": 10,
+          "state_name": "arms.plate.dragon.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 11,
+      "state_name": "shield.round.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        334,
+        835,
+        467,
+        962
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 898.508860549851,
+        "selected_components": [
+          {
+            "area": 2,
+            "box": [
+              380,
+              837,
+              382,
+              838
+            ],
+            "center": [
+              380.5,
+              837.0
+            ]
+          },
+          {
+            "area": 12076,
+            "box": [
+              338,
+              838,
+              464,
+              960
+            ],
+            "center": [
+              400.1670255051341,
+              898.508860549851
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              451,
+              859,
+              452,
+              862
+            ],
+            "center": [
+              451.0,
+              860.0
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              343,
+              867,
+              344,
+              870
+            ],
+            "center": [
+              343.0,
+              868.0
+            ]
+          },
+          {
+            "area": 5,
+            "box": [
+              456,
+              867,
+              457,
+              872
+            ],
+            "center": [
+              456.0,
+              869.0
+            ]
+          },
+          {
+            "area": 4,
+            "box": [
+              343,
+              871,
+              344,
+              875
+            ],
+            "center": [
+              343.0,
+              872.5
+            ]
+          },
+          {
+            "area": 5,
+            "box": [
+              336,
+              881,
+              337,
+              886
+            ],
+            "center": [
+              336.0,
+              883.0
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              464,
+              915,
+              465,
+              918
+            ],
+            "center": [
+              464.0,
+              916.0
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              340,
+              920,
+              342,
+              921
+            ],
+            "center": [
+              340.5,
+              920.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/011-shield.round.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          334,
+          835,
+          467,
+          962
+        ],
+        "size": [
+          141,
+          135
+        ],
+        "source_crop_size": [
+          133,
+          127
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          1,
+          131,
+          125
+        ],
+        "alpha_bbox": [
+          6,
+          5,
+          135,
+          129
+        ],
+        "retained_pixels": 12108,
+        "background_pixels_removed": 4783,
+        "enclosed_candidate_pixels_retained": 7,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 84.0,
+          "border_background_sample_count": 516,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/011-shield.round.dragon.png",
+        "output_sha256": "363a73d9cb1c8f7d44b2f8e28eeef3f5d2058e79c0941b31e0f272ce861731ea"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/011-shield.round.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/011-shield.round.dragon.export.json",
+        "sha256": "dd0146afd49faf11a46e1f1a030d2719d45c763f49f31bfb2257a1aff20ec9c6",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          15,
+          14,
+          30,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 44,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            15,
+            14,
+            29,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6b7ee5be0cd65dd5f1cd688a92aa24e9ec267b428f530d2a49bdf30913abe56e",
+          "state_occurrence_index": 11,
+          "state_name": "shield.round.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/011-shield.round.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/011-shield.round.dragon.export.json",
+        "sha256": "616555a4d66b64194d420a632cef6e694e1b99627ee0d4bd59709f88018f9980",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          31,
+          29,
+          58,
+          55
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 132,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            31,
+            29,
+            57,
+            55
+          ],
+          "visible_height": 26,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "67d1089c6065c7b5f40fe38048cd1623d4b820faae1f20b89a42c9fb7d6736bd",
+          "state_occurrence_index": 11,
+          "state_name": "shield.round.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 12,
+      "state_name": "shield.kite.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        352,
+        1035,
+        448,
+        1180
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1098.675518857398,
+        "selected_components": [
+          {
+            "area": 8962,
+            "box": [
+              354,
+              1037,
+              446,
+              1178
+            ],
+            "center": [
+              398.9162017406829,
+              1098.675518857398
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              369,
+              1051,
+              372,
+              1052
+            ],
+            "center": [
+              370.0,
+              1051.0
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              438,
+              1121,
+              439,
+              1124
+            ],
+            "center": [
+              438.0,
+              1122.0
+            ]
+          },
+          {
+            "area": 7,
+            "box": [
+              426,
+              1131,
+              428,
+              1137
+            ],
+            "center": [
+              426.8571428571429,
+              1133.142857142857
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              371,
+              1144,
+              372,
+              1146
+            ],
+            "center": [
+              371.0,
+              1144.5
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              405,
+              1176,
+              406,
+              1178
+            ],
+            "center": [
+              405.0,
+              1176.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/012-shield.kite.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          352,
+          1035,
+          448,
+          1180
+        ],
+        "size": [
+          104,
+          153
+        ],
+        "source_crop_size": [
+          96,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          94,
+          143
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          98,
+          147
+        ],
+        "retained_pixels": 8976,
+        "background_pixels_removed": 4944,
+        "enclosed_candidate_pixels_retained": 9,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 87.0,
+          "border_background_sample_count": 478,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/012-shield.kite.dragon.png",
+        "output_sha256": "447989ee07522942bcd7c3315588da0cf98768194c068eaf34de910793e0e66a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/012-shield.kite.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/012-shield.kite.dragon.export.json",
+        "sha256": "4960de02a2108affb72405b9cbd1b768b81aedda27d80eb911f6698d4a350234",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          17,
+          13,
+          27,
+          29
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 48,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            17,
+            13,
+            27,
+            29
+          ],
+          "visible_height": 16,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "11930ea2cb2c9e2627f0f5a5cc02d712aec503f05492a7add07415d545ad3476",
+          "state_occurrence_index": 12,
+          "state_name": "shield.kite.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/012-shield.kite.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/012-shield.kite.dragon.export.json",
+        "sha256": "c6f758b57ba74ef84b44486a89be8d970856b4736af6dac8e9cbddf3dabf692d",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          34,
+          27,
+          55,
+          59
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 144,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            34,
+            27,
+            54,
+            59
+          ],
+          "visible_height": 32,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "6aaa5e429ff8a07fb5fc9343ec0a618d9ca3a70ce056888ce53b468553d81bd6",
+          "state_occurrence_index": 12,
+          "state_name": "shield.kite.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 13,
+      "state_name": "shield.heater.dragon",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+      "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "crop_box": [
+        341,
+        1254,
+        452,
+        1387
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1309.947115828334,
+        "selected_components": [
+          {
+            "area": 10835,
+            "box": [
+              345,
+              1256,
+              450,
+              1385
+            ],
+            "center": [
+              396.8091370558376,
+              1309.947115828334
+            ]
+          },
+          {
+            "area": 12,
+            "box": [
+              343,
+              1261,
+              344,
+              1273
+            ],
+            "center": [
+              343.0,
+              1266.5
+            ]
+          },
+          {
+            "area": 12,
+            "box": [
+              343,
+              1277,
+              344,
+              1289
+            ],
+            "center": [
+              343.0,
+              1282.5
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              427,
+              1359,
+              428,
+              1361
+            ],
+            "center": [
+              427.0,
+              1359.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/013-shield.heater.dragon.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragon/page-02.png",
+        "source_sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+        "crop_box": [
+          341,
+          1254,
+          452,
+          1387
+        ],
+        "size": [
+          119,
+          141
+        ],
+        "source_crop_size": [
+          111,
+          133
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          111,
+          131
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          115,
+          135
+        ],
+        "retained_pixels": 10858,
+        "background_pixels_removed": 3905,
+        "enclosed_candidate_pixels_retained": 7,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 85.0,
+          "border_background_sample_count": 483,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/013-shield.heater.dragon.png",
+        "output_sha256": "08892934382dd08ce5334274f9fd1f75288ce32446aabcfe13006cb3efd8310e"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/013-shield.heater.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/013-shield.heater.dragon.export.json",
+        "sha256": "4ae83cc294eb09a02c1bea180d5e17c8345370ca37bd40a22993a5eb6d0bfa1e",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          16,
+          15,
+          28,
+          29
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+          "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+          "cell_index": 52,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            16,
+            15,
+            28,
+            29
+          ],
+          "visible_height": 14,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "e12d41779cb08f3b6c256a122ac833c20f847c1d41d2704ffbee607bf0cad348",
+          "state_occurrence_index": 13,
+          "state_name": "shield.heater.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/013-shield.heater.dragon.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragon/013-shield.heater.dragon.export.json",
+        "sha256": "cd57bca4d196e492dfb56e6f28efbf001c358992fc8ec66cd0b072dbc79bd6ef",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          33,
+          30,
+          56,
+          57
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 57,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragon.dmi",
+          "sha256": "217806e8742aa2317e9a905035f9e953374c6df1a8002fd7a43b9984e15c5533",
+          "cell_index": 156,
+          "atlas_size": [
+            832,
+            832
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            33,
+            30,
+            55,
+            57
+          ],
+          "visible_height": 27,
+          "visible_width": 22,
+          "bottom_baseline_exclusive": 57,
+          "alpha_sha256": "7046635f765c0b141fcf783d47b8ebfa808ea3372f36cc7e82503dedd2c30dbe",
+          "state_occurrence_index": 13,
+          "state_name": "shield.heater.dragon",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "79a9d5d20a97459bfb9b70030d53f994c61ac7de600e1cc6ad1f5bfa42288a4d"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays",
+        "Crop-border warning independently inspected at source2x: minor retained edge pixels, no visible object clipping"
+      ]
+    }
+  ],
+  "state_count": 14,
+  "cutout_count": 14,
+  "height_export_count": 28,
+  "passed": true,
+  "visual_review": {
+    "native_preview": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragon-native3x.png",
+    "source_border_warning_preview": "/private/tmp/detailed-height-border-warning-review.png",
+    "result": "Allstateschecked; no visible label fragments or neighboring objects"
+  },
+  "all_source_resolution_RGB_exact": true,
+  "all_native_heights_and_baselines_exact": true,
+  "all_source_and_native_hashes_verified": true
+}

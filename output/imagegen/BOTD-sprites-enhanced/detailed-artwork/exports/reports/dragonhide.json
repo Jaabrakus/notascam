@@ -1,0 +1,1134 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "dragonhide",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "helmet.kettle.dragonhide",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+      "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+      "crop_box": [
+        370,
+        65,
+        550,
+        190
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/000-helmet.kettle.dragonhide.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+        "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+        "crop_box": [
+          370,
+          65,
+          550,
+          190
+        ],
+        "size": [
+          188,
+          133
+        ],
+        "source_crop_size": [
+          180,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          25,
+          15,
+          155,
+          107
+        ],
+        "alpha_bbox": [
+          29,
+          19,
+          159,
+          111
+        ],
+        "retained_pixels": 7272,
+        "background_pixels_removed": 15228,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 606,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/000-helmet.kettle.dragonhide.png",
+        "output_sha256": "935f3de315b1d217c0f0051efd7d5c9b878cd36039a05a492a3ee90c10d6584f"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/000-helmet.kettle.dragonhide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/000-helmet.kettle.dragonhide.export.json",
+        "sha256": "29361e3e4553f7a2a84759c15ca091393f9ae61b3cf9854fca2bf1d66d9258d3",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          8,
+          4,
+          24,
+          15
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonhide.dmi",
+          "sha256": "5a29ddabba386417d925329c4d8f80ced3fb2858d9cba7cd23c084a7d7b0e9f6",
+          "cell_index": 0,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            8,
+            4,
+            24,
+            15
+          ],
+          "visible_height": 11,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "2a10c36430bbbf9f04f3d9235b47b75812b9c9ea3ee473d083554ddc8c5f4216",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.dragonhide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "595946649c9ffa4d4fb57b8ee7c489e3994ce0882a2008b9ab229db789e7deea"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/000-helmet.kettle.dragonhide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/000-helmet.kettle.dragonhide.export.json",
+        "sha256": "065632872d979fb14e2fc36fe546edcc1d2361b36d3cdb2744b068757f85503a",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          7,
+          49,
+          30
+        ],
+        "visible_height": 23,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+          "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+          "cell_index": 0,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            16,
+            7,
+            48,
+            30
+          ],
+          "visible_height": 23,
+          "visible_width": 32,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "42e29028704a9b940a3c8890990110c71ef3d65340d54b029ef9025c44a2ce63",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.dragonhide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "chest.leather.dragonhide",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+      "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+      "crop_box": [
+        350,
+        340,
+        555,
+        500
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/001-chest.leather.dragonhide.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+        "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+        "crop_box": [
+          350,
+          340,
+          555,
+          500
+        ],
+        "size": [
+          213,
+          168
+        ],
+        "source_crop_size": [
+          205,
+          160
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          26,
+          21,
+          179,
+          144
+        ],
+        "alpha_bbox": [
+          30,
+          25,
+          183,
+          148
+        ],
+        "retained_pixels": 11769,
+        "background_pixels_removed": 21031,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 726,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/001-chest.leather.dragonhide.png",
+        "output_sha256": "1e426fcfd3cc041d9e5a02f3b59895fd1b70b5ae4fb9b7f038bfc4eb0f01ac88"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/001-chest.leather.dragonhide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/001-chest.leather.dragonhide.export.json",
+        "sha256": "274907a855928edcf7a89b15ba238aefbde5ccbd10e69da95815073ce1beb3c5",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          13,
+          23,
+          26
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 26,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonhide.dmi",
+          "sha256": "5a29ddabba386417d925329c4d8f80ced3fb2858d9cba7cd23c084a7d7b0e9f6",
+          "cell_index": 4,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            13,
+            25,
+            26
+          ],
+          "visible_height": 13,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 26,
+          "alpha_sha256": "5db3815fbd9cb79bdd0c821632e9ec9bba16d8cc17c37ecfc31aaf8b1fd8e14a",
+          "state_occurrence_index": 1,
+          "state_name": "chest.leather.dragonhide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "595946649c9ffa4d4fb57b8ee7c489e3994ce0882a2008b9ab229db789e7deea"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/001-chest.leather.dragonhide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/001-chest.leather.dragonhide.export.json",
+        "sha256": "5e4c28b165bffc22f6b59b9ab90d58b0efe348c582cd1b206357c90dbb755a3c",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          26,
+          47,
+          51
+        ],
+        "visible_height": 25,
+        "baseline_exclusive": 51,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+          "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+          "cell_index": 12,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            12,
+            26,
+            51,
+            51
+          ],
+          "visible_height": 25,
+          "visible_width": 39,
+          "bottom_baseline_exclusive": 51,
+          "alpha_sha256": "b3277d503987716d64a4ff36ad424c511234adfbc4b3bd55b0ff02c2d5623a6e",
+          "state_occurrence_index": 1,
+          "state_name": "chest.leather.dragonhide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "legs.leather.dragonhide",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+      "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+      "crop_box": [
+        375,
+        630,
+        540,
+        775
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/002-legs.leather.dragonhide.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+        "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+        "crop_box": [
+          375,
+          630,
+          540,
+          775
+        ],
+        "size": [
+          173,
+          153
+        ],
+        "source_crop_size": [
+          165,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          18,
+          23,
+          136,
+          120
+        ],
+        "alpha_bbox": [
+          22,
+          27,
+          140,
+          124
+        ],
+        "retained_pixels": 9735,
+        "background_pixels_removed": 14190,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 616,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/002-legs.leather.dragonhide.png",
+        "output_sha256": "b7017cc9caff8a03a12fa9015beb2381bd1304576fddb335a4214c8ee35f6f3a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/002-legs.leather.dragonhide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/002-legs.leather.dragonhide.export.json",
+        "sha256": "9cfa5515ae661615b5c8e989972268abcaccdfbf2510780e54bf4031e4960c74",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          10,
+          22,
+          22,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonhide.dmi",
+          "sha256": "5a29ddabba386417d925329c4d8f80ced3fb2858d9cba7cd23c084a7d7b0e9f6",
+          "cell_index": 8,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 2,
+          "state_name": "legs.leather.dragonhide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "595946649c9ffa4d4fb57b8ee7c489e3994ce0882a2008b9ab229db789e7deea"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/002-legs.leather.dragonhide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/002-legs.leather.dragonhide.export.json",
+        "sha256": "c1cf602673649f46b62c0acdc21afd37df6d2ff33702f96993763daf91544eda",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          20,
+          45,
+          43,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+          "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+          "cell_index": 24,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 2,
+          "state_name": "legs.leather.dragonhide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "arms.leather.dragonhide.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+      "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+      "crop_box": [
+        390,
+        860,
+        515,
+        975
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/003-arms.leather.dragonhide.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+        "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+        "crop_box": [
+          390,
+          860,
+          515,
+          975
+        ],
+        "size": [
+          133,
+          123
+        ],
+        "source_crop_size": [
+          125,
+          115
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          41,
+          98,
+          112
+        ],
+        "alpha_bbox": [
+          34,
+          45,
+          102,
+          116
+        ],
+        "retained_pixels": 2835,
+        "background_pixels_removed": 11540,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 476,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/003-arms.leather.dragonhide.L.png",
+        "output_sha256": "feceacab96b1d9fe5c67bd62815b4fe779c05b9ddbde236aa513e46465cc1ab0"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/003-arms.leather.dragonhide.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/003-arms.leather.dragonhide.L.export.json",
+        "sha256": "30d7a9692b7cc149c8e692ad54284193e45fab0cff455f8578729bec73e1d865",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          20,
+          26,
+          27
+        ],
+        "visible_height": 7,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonhide.dmi",
+          "sha256": "5a29ddabba386417d925329c4d8f80ced3fb2858d9cba7cd23c084a7d7b0e9f6",
+          "cell_index": 12,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            20,
+            26,
+            27
+          ],
+          "visible_height": 7,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "b40dd66420dae1c6c1b686b6db46ae2c381b619ddc4635265149c175dd38b23f",
+          "state_occurrence_index": 3,
+          "state_name": "arms.leather.dragonhide.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "595946649c9ffa4d4fb57b8ee7c489e3994ce0882a2008b9ab229db789e7deea"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/003-arms.leather.dragonhide.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/003-arms.leather.dragonhide.L.export.json",
+        "sha256": "e2b4a1ecfa5fab9cad14b7640403fe03cd907e29124e361ffb012ceb8cc36915",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          39,
+          52,
+          53
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+          "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+          "cell_index": 36,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            39,
+            51,
+            53
+          ],
+          "visible_height": 14,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "6bd63d1bb7b081bd0b0b6bf5a9061340b32a3df54b800c57c3cd5d5aff9151d5",
+          "state_occurrence_index": 3,
+          "state_name": "arms.leather.dragonhide.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "arms.leather.dragonhide.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+      "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+      "crop_box": [
+        370,
+        1080,
+        510,
+        1205
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/004-arms.leather.dragonhide.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+        "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+        "crop_box": [
+          370,
+          1080,
+          510,
+          1205
+        ],
+        "size": [
+          148,
+          133
+        ],
+        "source_crop_size": [
+          140,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          33,
+          34,
+          98,
+          103
+        ],
+        "alpha_bbox": [
+          37,
+          38,
+          102,
+          107
+        ],
+        "retained_pixels": 2686,
+        "background_pixels_removed": 14814,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 526,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/004-arms.leather.dragonhide.R.png",
+        "output_sha256": "4f3af53b1d6e5bdc58f3472ddf67de945f3f289b2c0ac11cf4d639609d50433f"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/004-arms.leather.dragonhide.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/004-arms.leather.dragonhide.R.export.json",
+        "sha256": "531e4efcd70f66c87960f99782a155ee8f61423aaa9c5f5aefad99bfc6543844",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          20,
+          13,
+          27
+        ],
+        "visible_height": 7,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonhide.dmi",
+          "sha256": "5a29ddabba386417d925329c4d8f80ced3fb2858d9cba7cd23c084a7d7b0e9f6",
+          "cell_index": 16,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            20,
+            13,
+            27
+          ],
+          "visible_height": 7,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "39da6e38bfc09af07c9f1546c15b42896e7336b9db69e32453c7a751a651d03a",
+          "state_occurrence_index": 4,
+          "state_name": "arms.leather.dragonhide.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "595946649c9ffa4d4fb57b8ee7c489e3994ce0882a2008b9ab229db789e7deea"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/004-arms.leather.dragonhide.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonhide/004-arms.leather.dragonhide.R.export.json",
+        "sha256": "25224ff46380bf81f8400895dfd09c482415d9dcadfb7228f8d5eed4489fbb9c",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          39,
+          26,
+          53
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+          "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+          "cell_index": 48,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            39,
+            25,
+            53
+          ],
+          "visible_height": 14,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0bc205e75c27c9550b6fbc3e5b3e7a80d878ecf109a5f0b7551d57dff43dddef",
+          "state_occurrence_index": 4,
+          "state_name": "arms.leather.dragonhide.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    }
+  ],
+  "state_count": 5,
+  "cutout_count": 5,
+  "height_export_count": 10,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragonhide-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/dragonhide-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

@@ -1,0 +1,17 @@
+Use case: stylized-concept. Produce a FULL HIGH RESOLUTION portrait detailed equipment sheet. Image1 is the EXACT source designs/layout; image2 is approved enhanced style. Increase drawn resolution, faceted voxel/pixel material shading and readable depth ONLY. Preserve ALL object identities, silhouettes, blade types, handles, proportions, directional poses, partial fragments and intentional blank cells. No arbitrary ornaments, spikes, horns, trim, new equipment, characters, photorealism or smooth blur. Opaque dark charcoal background, crisp dark outlines, polished pixel clusters. Clear white title and exact left row labels; four spacious columns headed S N E W. One object view per source cell, centered, separated, not cropped. Never turn a partial/occluded source weapon into a full weapon; preserve detached grip pieces. Redraw additional clean high-resolution material detail, do not merely nearest-upscale source. Use full page, all listed rows and fourcolumns. Title exactly "Gear/silver.dmi". Light neutral silver metal with white bevel highlights, gray shadows, brown wood/leather handles; keep original accent colors. Page5 rows verbatim in order:
+1. "legs.scale.silver"; occupied S,N,E,W; all other columns BLANK.
+2. "arms.plate.silver.L"; occupied S,N,W; all other columns BLANK.
+3. "arms.plate.silver.R"; occupied S,N,E; all other columns BLANK.
+4. "arms.mail.silver.L"; occupied S,N,W; all other columns BLANK.
+5. "arms.mail.silver.R"; occupied S,N,E; all other columns BLANK.
+6. "shield.buckler.silver"; occupied S,N,E,W; all other columns BLANK.
+7. "shield.round.silver"; occupied S,N,E,W; all other columns BLANK.
+Total 24 occupiedcells. Armrows ONLYsingle detachedupperarm armorfragments, nohumanarms/hands/fullgauntlets. LrowsEcolumnEMPTY,RrowsWcolumnEMPTY; exactfourblanks. Preservehandedness andgray/silverplates versus mail. Firstrowcompactscaleshorts withoriginalbrownbottomedge. BucklerE ONEtinyedgefragment. RoundshieldE TWOseparatededgecomponents, nofullshield. Otherroundshieldviews sourcebrownwoodcenter+silverrim/narrowwoodback. No newornaments/gold.
+Source component guidance (do not omit tiny detached pieces):
+legs.scale.silver: S/N/E/W source connected-component counts 1/1/1/1
+arms.plate.silver.L: S/N/E/W source connected-component counts 1/1/0/1
+arms.plate.silver.R: S/N/E/W source connected-component counts 1/1/1/0
+arms.mail.silver.L: S/N/E/W source connected-component counts 1/1/0/1
+arms.mail.silver.R: S/N/E/W source connected-component counts 1/1/1/0
+shield.buckler.silver: S/N/E/W source connected-component counts 1/1/1/1
+shield.round.silver: S/N/E/W source connected-component counts 1/1/2/1

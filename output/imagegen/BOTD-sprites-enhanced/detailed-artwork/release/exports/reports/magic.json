@@ -1,0 +1,2942 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "magic",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "magic.crystal staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        75,
+        545,
+        220
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/000-magic.crystal_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          75,
+          545,
+          220
+        ],
+        "size": [
+          123,
+          153
+        ],
+        "source_crop_size": [
+          115,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          12,
+          97,
+          134
+        ],
+        "alpha_bbox": [
+          34,
+          16,
+          101,
+          138
+        ],
+        "retained_pixels": 2742,
+        "background_pixels_removed": 13933,
+        "enclosed_candidate_pixels_retained": 4,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 516,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/000-magic.crystal_staff.png",
+        "output_sha256": "52c2a7bacde740497a9dd93e1d27fa2cc3dfc01a64058770be210a29ee375231"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/000-magic.crystal_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/000-magic.crystal_staff.export.json",
+        "sha256": "579bee92fa4cd5afcb56f754f5294eae00768530b9afa0b51e453a2141bd75d3",
+        "size": [
+          37,
+          32
+        ],
+        "alpha_bbox": [
+          3,
+          4,
+          18,
+          32
+        ],
+        "visible_height": 28,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 0,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            4,
+            13,
+            32
+          ],
+          "visible_height": 28,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "5586a06ea11fb802b9e8a9ba371cf360af5de13deff7d9bb94698bcd3cc0c4ac",
+          "state_occurrence_index": 0,
+          "state_name": "magic.crystal staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "lanczos",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/000-magic.crystal_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/000-magic.crystal_staff.export.json",
+        "sha256": "20498024b09c871ffe52efc40e47eef8d597de60c7a148669531aac500849b79",
+        "size": [
+          75,
+          64
+        ],
+        "alpha_bbox": [
+          8,
+          11,
+          37,
+          64
+        ],
+        "visible_height": 53,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 0,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            8,
+            11,
+            26,
+            64
+          ],
+          "visible_height": 53,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "3adb513f3847237633dd7e17f28bbe0cb3d4e7b2974e573ff692030c6d1492d0",
+          "state_occurrence_index": 0,
+          "state_name": "magic.crystal staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "magic.orb staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        220,
+        545,
+        350
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/001-magic.orb_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          220,
+          545,
+          350
+        ],
+        "size": [
+          123,
+          138
+        ],
+        "source_crop_size": [
+          115,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          28,
+          8,
+          94,
+          126
+        ],
+        "alpha_bbox": [
+          32,
+          12,
+          98,
+          130
+        ],
+        "retained_pixels": 2801,
+        "background_pixels_removed": 12149,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 486,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/001-magic.orb_staff.png",
+        "output_sha256": "67403f97fc9161670e76ab84690ff7baeaf6e66e7daf340419ebf6a693aeb3d8"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/001-magic.orb_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/001-magic.orb_staff.export.json",
+        "sha256": "126b6db6f7eda6da6a96b54bbaf5370e27309fde28220b5f8a342757758f59fc",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          5,
+          17,
+          32
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 4,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            2,
+            5,
+            13,
+            32
+          ],
+          "visible_height": 27,
+          "visible_width": 11,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "8a536488edeff44c1c1f1f28d26c123407f713f1d8ffd6512608884515150aef",
+          "state_occurrence_index": 1,
+          "state_name": "magic.orb staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/001-magic.orb_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/001-magic.orb_staff.export.json",
+        "sha256": "bbcac1a2193a995ea7ab0f42486adfee310424457d4d22153903cf5157919cad",
+        "size": [
+          74,
+          64
+        ],
+        "alpha_bbox": [
+          8,
+          14,
+          36,
+          64
+        ],
+        "visible_height": 50,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 20,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            8,
+            14,
+            26,
+            64
+          ],
+          "visible_height": 50,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "099427912e087c6e9c7ef8632bb163691b73cdd8c67ef5e65c6061433692171a",
+          "state_occurrence_index": 1,
+          "state_name": "magic.orb staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "magic.skull staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        350,
+        545,
+        495
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/002-magic.skull_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          350,
+          545,
+          495
+        ],
+        "size": [
+          123,
+          153
+        ],
+        "source_crop_size": [
+          115,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          26,
+          7,
+          96,
+          137
+        ],
+        "alpha_bbox": [
+          30,
+          11,
+          100,
+          141
+        ],
+        "retained_pixels": 2925,
+        "background_pixels_removed": 13750,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 516,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/002-magic.skull_staff.png",
+        "output_sha256": "1d4cd4a17ae5cde3af674b9ded3160bcd013f8fe45153072c02d0b7ef30c69db"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/002-magic.skull_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/002-magic.skull_staff.export.json",
+        "sha256": "0b7dcd5ad129d8f7cca6e93f620c84d65edde7eb0f8821527ff4933136b8cbb9",
+        "size": [
+          37,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          2,
+          18,
+          32
+        ],
+        "visible_height": 30,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 8,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            2,
+            2,
+            13,
+            32
+          ],
+          "visible_height": 30,
+          "visible_width": 11,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "848cccb91eeb688e4d91f19ef06ab6989307fc66b79be13671406b6708445fc8",
+          "state_occurrence_index": 2,
+          "state_name": "magic.skull staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/002-magic.skull_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/002-magic.skull_staff.export.json",
+        "sha256": "eb7cb8d37a1b36eaa06c810d61f2e55e7bd8e18359d48120af9dee4d1a9bc843",
+        "size": [
+          73,
+          64
+        ],
+        "alpha_bbox": [
+          8,
+          13,
+          35,
+          64
+        ],
+        "visible_height": 51,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 40,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            8,
+            13,
+            26,
+            64
+          ],
+          "visible_height": 51,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "bf66891c338e0d407ff893b1bd6cafad4ae805a4a97bf05e5a678cfc8cf129f0",
+          "state_occurrence_index": 2,
+          "state_name": "magic.skull staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "magic.flame staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        495,
+        545,
+        640
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/003-magic.flame_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          495,
+          545,
+          640
+        ],
+        "size": [
+          123,
+          153
+        ],
+        "source_crop_size": [
+          115,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          35,
+          10,
+          96,
+          130
+        ],
+        "alpha_bbox": [
+          39,
+          14,
+          100,
+          134
+        ],
+        "retained_pixels": 2723,
+        "background_pixels_removed": 13952,
+        "enclosed_candidate_pixels_retained": 18,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 516,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/003-magic.flame_staff.png",
+        "output_sha256": "dca04a18a8e2f82c9b5b9e01e59a2bbe934d5f8c60b0c798166beb23e3cf0a9d"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/003-magic.flame_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/003-magic.flame_staff.export.json",
+        "sha256": "47e4f4a600cf3e4f21618cd664abb9b8b5d659b34bb13856e956e5fccfabea25",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          3,
+          5,
+          17,
+          32
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 12,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            5,
+            13,
+            32
+          ],
+          "visible_height": 27,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e98fc2572c1d0e63104c7bc8cfe2a66c7d117f69bace92ad8d2411f6ffc30ec5",
+          "state_occurrence_index": 3,
+          "state_name": "magic.flame staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/003-magic.flame_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/003-magic.flame_staff.export.json",
+        "sha256": "5e0802cb7ac692b7e40d6410d6aac657ccb8dd820c640005f0c3ad8181ffd1aa",
+        "size": [
+          70,
+          64
+        ],
+        "alpha_bbox": [
+          8,
+          16,
+          32,
+          64
+        ],
+        "visible_height": 48,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 60,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            8,
+            16,
+            26,
+            64
+          ],
+          "visible_height": 48,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "3ab60fc181428b61b98bee4da7cba0101573c3662843d8483fbda24a11e972ee",
+          "state_occurrence_index": 3,
+          "state_name": "magic.flame staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "magic.nature staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        640,
+        545,
+        775
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/004-magic.nature_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          640,
+          545,
+          775
+        ],
+        "size": [
+          123,
+          143
+        ],
+        "source_crop_size": [
+          115,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          35,
+          11,
+          96,
+          123
+        ],
+        "alpha_bbox": [
+          39,
+          15,
+          100,
+          127
+        ],
+        "retained_pixels": 2381,
+        "background_pixels_removed": 13144,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 496,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/004-magic.nature_staff.png",
+        "output_sha256": "26e7cf209229b9d91a3bf185db0014388e1dc5d806990a237efb859562325708"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/004-magic.nature_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/004-magic.nature_staff.export.json",
+        "sha256": "c8c00fe6355cc15b69470cf57beded52d59cb99638c5c7eedf8e50bfbdbeb23b",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          3,
+          6,
+          17,
+          32
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 16,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            6,
+            13,
+            32
+          ],
+          "visible_height": 26,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "160f18eebaeba46ec5c2be93ffe6774edf679c3c969bd24d4c88ec432e0cb369",
+          "state_occurrence_index": 4,
+          "state_name": "magic.nature staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/004-magic.nature_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/004-magic.nature_staff.export.json",
+        "sha256": "c95f44b3afce0b43ce3846a92392d77b062fc86cba1fc9950cf7b7bf0811e1c5",
+        "size": [
+          73,
+          64
+        ],
+        "alpha_bbox": [
+          6,
+          12,
+          34,
+          64
+        ],
+        "visible_height": 52,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 80,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            6,
+            12,
+            25,
+            64
+          ],
+          "visible_height": 52,
+          "visible_width": 19,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "cfb498fa8400454ac9d2d2d53908275da67cb4c67bbb8a144b61aa747caf3955",
+          "state_occurrence_index": 4,
+          "state_name": "magic.nature staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 5,
+      "state_name": "magic.dragon staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        775,
+        545,
+        910
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/005-magic.dragon_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          775,
+          545,
+          910
+        ],
+        "size": [
+          123,
+          143
+        ],
+        "source_crop_size": [
+          115,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          1,
+          96,
+          120
+        ],
+        "alpha_bbox": [
+          34,
+          5,
+          100,
+          124
+        ],
+        "retained_pixels": 2520,
+        "background_pixels_removed": 13005,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.0,
+          "border_background_sample_count": 496,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/005-magic.dragon_staff.png",
+        "output_sha256": "697f84befe9b636fade15c73ad56d31f06028618a2a63ebde186ea26a7aeb01e"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/005-magic.dragon_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/005-magic.dragon_staff.export.json",
+        "sha256": "f133de91edeeeb70c17685ffd924166a5de0f18cc8aa866cf22d74e55d07ba1d",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          5,
+          17,
+          32
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 20,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            2,
+            5,
+            13,
+            32
+          ],
+          "visible_height": 27,
+          "visible_width": 11,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e2530695e9f971b9840a16858e011ad7286b414a4f593ec5477c0f95ecd96ec0",
+          "state_occurrence_index": 5,
+          "state_name": "magic.dragon staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/005-magic.dragon_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/005-magic.dragon_staff.export.json",
+        "sha256": "2440ff2ffc83408c3d1e2fb328a4eac378566a1d4a6a5f6dabe596dec530cd98",
+        "size": [
+          73,
+          64
+        ],
+        "alpha_bbox": [
+          4,
+          9,
+          35,
+          64
+        ],
+        "visible_height": 55,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 100,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            4,
+            9,
+            26,
+            64
+          ],
+          "visible_height": 55,
+          "visible_width": 22,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "fd70e0b2ded23668015df423726279a9b5583138a105a63a115294b391e59989",
+          "state_occurrence_index": 5,
+          "state_name": "magic.dragon staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 6,
+      "state_name": "magic.spider staff",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+      "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "crop_box": [
+        430,
+        910,
+        545,
+        1055
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/006-magic.spider_staff.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-01.png",
+        "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+        "crop_box": [
+          430,
+          910,
+          545,
+          1055
+        ],
+        "size": [
+          123,
+          153
+        ],
+        "source_crop_size": [
+          115,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          31,
+          6,
+          96,
+          131
+        ],
+        "alpha_bbox": [
+          35,
+          10,
+          100,
+          135
+        ],
+        "retained_pixels": 2756,
+        "background_pixels_removed": 13919,
+        "enclosed_candidate_pixels_retained": 99,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 516,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/006-magic.spider_staff.png",
+        "output_sha256": "933746b588bd7ad60f69e5b45460dd2b7e57307d0dc76a7009575eee9363edd1"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/006-magic.spider_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/006-magic.spider_staff.export.json",
+        "sha256": "0e1782da39f9e309681cb6c3ec5c2a5b7db0d94aebbe3cb70636295909dff2a8",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          3,
+          6,
+          17,
+          32
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 24,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            6,
+            13,
+            32
+          ],
+          "visible_height": 26,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "c92160d2e847a632461da808eab6c40790bb775c973870d2d415cf7def7a2b10",
+          "state_occurrence_index": 6,
+          "state_name": "magic.spider staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/006-magic.spider_staff.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/006-magic.spider_staff.export.json",
+        "sha256": "dbe47db7aeda3694d1031619ef0da1b3911a887313875ac313853759fd53e8db",
+        "size": [
+          71,
+          64
+        ],
+        "alpha_bbox": [
+          6,
+          12,
+          33,
+          64
+        ],
+        "visible_height": 52,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 120,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            6,
+            12,
+            26,
+            64
+          ],
+          "visible_height": 52,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "a8ba90af93af4428ca07e83e4cdaebc222b51d8aaaf605358969f0858365e0d2",
+          "state_occurrence_index": 6,
+          "state_name": "magic.spider staff",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 7,
+      "state_name": "magic.rune sword",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+      "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "crop_box": [
+        420,
+        80,
+        555,
+        230
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/007-magic.rune_sword.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+        "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+        "crop_box": [
+          420,
+          80,
+          555,
+          230
+        ],
+        "size": [
+          143,
+          158
+        ],
+        "source_crop_size": [
+          135,
+          150
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          32,
+          9,
+          116,
+          136
+        ],
+        "alpha_bbox": [
+          36,
+          13,
+          120,
+          140
+        ],
+        "retained_pixels": 4573,
+        "background_pixels_removed": 15677,
+        "enclosed_candidate_pixels_retained": 77,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 70.0,
+          "border_background_sample_count": 566,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/007-magic.rune_sword.png",
+        "output_sha256": "faf20f6a3148085e6d8435d4153fa7b1a43c5074c7ad473fcaab346ad28941f5"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/007-magic.rune_sword.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/007-magic.rune_sword.export.json",
+        "sha256": "ef55fb96844d85fc8194a37a84f49c0a0891d3537519222a08fdda2cb2e80cf7",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          8,
+          15,
+          31
+        ],
+        "visible_height": 23,
+        "baseline_exclusive": 31,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 28,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            8,
+            14,
+            31
+          ],
+          "visible_height": 23,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 31,
+          "alpha_sha256": "0086642e2a27b1097e57f051f4c92caa09ef1de23f78104f0abba755ce4ae3bf",
+          "state_occurrence_index": 7,
+          "state_name": "magic.rune sword",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/007-magic.rune_sword.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/007-magic.rune_sword.export.json",
+        "sha256": "541e6255fd94b906d6f33d9573fe9ee0aa11defb792f4f121f891519785317a8",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          4,
+          20,
+          32,
+          62
+        ],
+        "visible_height": 42,
+        "baseline_exclusive": 62,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 140,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            4,
+            20,
+            28,
+            62
+          ],
+          "visible_height": 42,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 62,
+          "alpha_sha256": "5701de36c25091168fd40f02be23072f68494f793e927646ac1f7d4a24a2e1b8",
+          "state_occurrence_index": 7,
+          "state_name": "magic.rune sword",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 8,
+      "state_name": "magic.flame sword",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+      "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "crop_box": [
+        420,
+        245,
+        555,
+        385
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/008-magic.flame_sword.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+        "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+        "crop_box": [
+          420,
+          245,
+          555,
+          385
+        ],
+        "size": [
+          143,
+          148
+        ],
+        "source_crop_size": [
+          135,
+          140
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          28,
+          12,
+          123,
+          130
+        ],
+        "alpha_bbox": [
+          32,
+          16,
+          127,
+          134
+        ],
+        "retained_pixels": 3876,
+        "background_pixels_removed": 15024,
+        "enclosed_candidate_pixels_retained": 44,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 70.0,
+          "border_background_sample_count": 546,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/008-magic.flame_sword.png",
+        "output_sha256": "427195a63b6b4f18285e6f4bed7ccbf059c5dedc6e592b9e2f2395b0ec1eea40"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/008-magic.flame_sword.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/008-magic.flame_sword.export.json",
+        "sha256": "3163b48f666b6482065a22d47c02e207a9c793d4080f846356524155c3a0ae6e",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          14,
+          13,
+          29
+        ],
+        "visible_height": 15,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 32,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            14,
+            15,
+            29
+          ],
+          "visible_height": 15,
+          "visible_width": 15,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "833e1a6bd464ef5c646f3b775e56ff4ebb2df0e7e9209cfef7642e3a4f35a0e8",
+          "state_occurrence_index": 8,
+          "state_name": "magic.flame sword",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/008-magic.flame_sword.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/008-magic.flame_sword.export.json",
+        "sha256": "888bd15c992c2a4877576a520ae9b542c4f5429a8b5cc52c94849f225125f7bb",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          4,
+          29,
+          28,
+          59
+        ],
+        "visible_height": 30,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 160,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            4,
+            29,
+            28,
+            59
+          ],
+          "visible_height": 30,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "6302a752756b937dcd12fd4f7bd7397e1ae7d90b89207bfe0a296ffb131c803b",
+          "state_occurrence_index": 8,
+          "state_name": "magic.flame sword",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 9,
+      "state_name": "magic.frost axe",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+      "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "crop_box": [
+        420,
+        405,
+        555,
+        555
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/009-magic.frost_axe.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+        "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+        "crop_box": [
+          420,
+          405,
+          555,
+          555
+        ],
+        "size": [
+          143,
+          158
+        ],
+        "source_crop_size": [
+          135,
+          150
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          21,
+          13,
+          116,
+          135
+        ],
+        "alpha_bbox": [
+          25,
+          17,
+          120,
+          139
+        ],
+        "retained_pixels": 4098,
+        "background_pixels_removed": 16152,
+        "enclosed_candidate_pixels_retained": 26,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 70.0,
+          "border_background_sample_count": 566,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/009-magic.frost_axe.png",
+        "output_sha256": "8bd3e7d5fe2a6784b991d858a16968d7c44a6426430100d07a0e7558ffa9f45b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/009-magic.frost_axe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/009-magic.frost_axe.export.json",
+        "sha256": "d801289e497e16851a42ce84e58539ff42e9e2af73f5e9dc48372cc8b1a9aca9",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          10,
+          15,
+          29
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 36,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            10,
+            14,
+            29
+          ],
+          "visible_height": 19,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "c98a240f14832c7e95a8df1ecd05e6aab96176cdff643842787c65475bb826af",
+          "state_occurrence_index": 9,
+          "state_name": "magic.frost axe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/009-magic.frost_axe.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/009-magic.frost_axe.export.json",
+        "sha256": "3c3b7446597192e5a0350310626bb43b727935668f873ac996c93e06f284764f",
+        "size": [
+          75,
+          64
+        ],
+        "alpha_bbox": [
+          6,
+          21,
+          37,
+          61
+        ],
+        "visible_height": 40,
+        "baseline_exclusive": 61,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 180,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            6,
+            21,
+            26,
+            61
+          ],
+          "visible_height": 40,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 61,
+          "alpha_sha256": "02d87dc48840d41ad63443abf110b47bedc6552ba6d16e7442a878f51ee4ec2c",
+          "state_occurrence_index": 9,
+          "state_name": "magic.frost axe",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 10,
+      "state_name": "magic.storm spear",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+      "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "crop_box": [
+        420,
+        555,
+        555,
+        745
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/010-magic.storm_spear.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+        "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+        "crop_box": [
+          420,
+          555,
+          555,
+          745
+        ],
+        "size": [
+          143,
+          198
+        ],
+        "source_crop_size": [
+          135,
+          190
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          27,
+          14,
+          113,
+          180
+        ],
+        "alpha_bbox": [
+          31,
+          18,
+          117,
+          184
+        ],
+        "retained_pixels": 3788,
+        "background_pixels_removed": 21862,
+        "enclosed_candidate_pixels_retained": 16,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 646,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/010-magic.storm_spear.png",
+        "output_sha256": "31978bd4dfb0547b7f0eeb96c6787b1a449925a50eabba9335a552783e730517"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/010-magic.storm_spear.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/010-magic.storm_spear.export.json",
+        "sha256": "8879aade1f83198c0ae6357c3840c917e9ef87f1d2ed89921536be958c5ce111",
+        "size": [
+          35,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          17,
+          32
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 40,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            14,
+            32
+          ],
+          "visible_height": 32,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "c2355b5145c5fcf47ed6fe1b30d3a2f6aac2492588fa05f96ffcf645f0cf035e",
+          "state_occurrence_index": 10,
+          "state_name": "magic.storm spear",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/010-magic.storm_spear.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/010-magic.storm_spear.export.json",
+        "sha256": "f45edb511045841ac55915395b54c562e4290cead7de4a00ce527937b2238c67",
+        "size": [
+          71,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          2,
+          34,
+          64
+        ],
+        "visible_height": 62,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 200,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            2,
+            27,
+            64
+          ],
+          "visible_height": 62,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "bd129ff7afe98203dcd7f62b4b794073f1eb45cd0e47c9f4456c287aed58c24b",
+          "state_occurrence_index": 10,
+          "state_name": "magic.storm spear",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 11,
+      "state_name": "magic.void blade",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+      "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "crop_box": [
+        420,
+        760,
+        555,
+        895
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/011-magic.void_blade.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+        "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+        "crop_box": [
+          420,
+          760,
+          555,
+          895
+        ],
+        "size": [
+          143,
+          143
+        ],
+        "source_crop_size": [
+          135,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          32,
+          12,
+          116,
+          127
+        ],
+        "alpha_bbox": [
+          36,
+          16,
+          120,
+          131
+        ],
+        "retained_pixels": 4023,
+        "background_pixels_removed": 14202,
+        "enclosed_candidate_pixels_retained": 27,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 536,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/011-magic.void_blade.png",
+        "output_sha256": "cd4781d0d2499a13aceba980016aa17fd595ccdee6d526b1fa66dafd041883c8"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/011-magic.void_blade.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/011-magic.void_blade.export.json",
+        "sha256": "859fd857be5db65e3084e3344f0644abff93600e8e6d818fa46a8faea93f22d8",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          13,
+          14,
+          29
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 44,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            13,
+            15,
+            29
+          ],
+          "visible_height": 16,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "d8b692994b27495ba8b6f1fe02723664b4229e8f955ab51227e5737703cdb3dd",
+          "state_occurrence_index": 11,
+          "state_name": "magic.void blade",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/011-magic.void_blade.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/011-magic.void_blade.export.json",
+        "sha256": "51da215c683a864eb2473c1f7d6649445ad37e1998521f6339e15c7fae53531f",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          7,
+          27,
+          30,
+          59
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 220,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            7,
+            27,
+            29,
+            59
+          ],
+          "visible_height": 32,
+          "visible_width": 22,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "c7acbc23627570da7d1d2e7870de015efaef540646792f73e9cfafd8a13b9207",
+          "state_occurrence_index": 11,
+          "state_name": "magic.void blade",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    },
+    {
+      "state_index": 12,
+      "state_name": "magic.holy mace",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+      "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "crop_box": [
+        420,
+        910,
+        555,
+        1050
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/012-magic.holy_mace.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/magic/page-02.png",
+        "source_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+        "crop_box": [
+          420,
+          910,
+          555,
+          1050
+        ],
+        "size": [
+          143,
+          148
+        ],
+        "source_crop_size": [
+          135,
+          140
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          22,
+          21,
+          117,
+          125
+        ],
+        "alpha_bbox": [
+          26,
+          25,
+          121,
+          129
+        ],
+        "retained_pixels": 3561,
+        "background_pixels_removed": 15339,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 546,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/magic/012-magic.holy_mace.png",
+        "output_sha256": "0cfbcb416727ab34c12c51213bcbdf9e3c4cf0f5547747d2bff1ddc0ebcedc4b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/012-magic.holy_mace.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/magic/012-magic.holy_mace.export.json",
+        "sha256": "c66792f39e77cc6ff397137c3aece3df6dabd23f52bab981ce79774a3bdffa1d",
+        "size": [
+          34,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          12,
+          15,
+          28
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+          "sha256": "82fe5ff4db1b2813cfa2a10bc032245979613cfb216ae121272ca66998d88c03",
+          "cell_index": 48,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            12,
+            13,
+            28
+          ],
+          "visible_height": 16,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "839fa33d3d2213d37649db0fe3e525d30a97985c220e16185e7fbb0e4d2df4ab",
+          "state_occurrence_index": 12,
+          "state_name": "magic.holy mace",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "5733f44dc184d311dd2831a344c5ac93341329d521fb662c5470a2d6fc8e51ef"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/012-magic.holy_mace.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/magic/012-magic.holy_mace.export.json",
+        "sha256": "380eaa07d4d5f651d31eb7bd732410a1504becf1cfef3ed29f4223c4e2051fa7",
+        "size": [
+          78,
+          64
+        ],
+        "alpha_bbox": [
+          7,
+          23,
+          38,
+          57
+        ],
+        "visible_height": 34,
+        "baseline_exclusive": 57,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/magic.dmi",
+          "sha256": "9ad1273592768504035031fdb25cba9b97702dc8d45cfdb7f68433ac9b291e59",
+          "cell_index": 240,
+          "atlas_size": [
+            1088,
+            1024
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            7,
+            23,
+            24,
+            57
+          ],
+          "visible_height": 34,
+          "visible_width": 17,
+          "bottom_baseline_exclusive": 57,
+          "alpha_sha256": "121c20e80d6f38b54b6e1774cc480cc77901fc13ae4c7bd30c851bcf2ab42475",
+          "state_occurrence_index": 12,
+          "state_name": "magic.holy mace",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "f61483ffae3b1a2147a9e46b7c1b0dbf4cf9bb57f9cdcca95cc2d668db22bde8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects.",
+        "Detached grip/shaft/pommel pieces preserved as present in detailed source artwork."
+      ]
+    }
+  ],
+  "state_count": 13,
+  "cutout_count": 13,
+  "height_export_count": 26,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/magic-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/magic-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

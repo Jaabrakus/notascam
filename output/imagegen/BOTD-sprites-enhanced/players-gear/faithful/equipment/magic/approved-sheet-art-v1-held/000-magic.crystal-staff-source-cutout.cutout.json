@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/magic/page-01.png",
+  "source_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+  "crop_box": [
+    430,
+    75,
+    545,
+    220
+  ],
+  "size": [
+    115,
+    145
+  ],
+  "alpha_bbox": [
+    31,
+    12,
+    96,
+    134
+  ],
+  "retained_pixels": 2646,
+  "background_pixels_removed": 14029,
+  "enclosed_candidate_pixels_retained": 9,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 71.0,
+    "border_background_sample_count": 516,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/magic/approved-sheet-art/000-magic.crystal-staff-source-cutout.png",
+  "output_sha256": "775c3cbfc747ce1a6147486f8d226da2fc80503fabc5912cbdd16fda0a22f038"
+}

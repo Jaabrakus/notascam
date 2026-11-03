@@ -1,0 +1,1987 @@
+{
+  "schema_version": 1,
+  "method": "existing_approved_art_alpha_only_extraction_and_native_height_export",
+  "status": "complete",
+  "race_count": 13,
+  "files": [
+    {
+      "race": "Kobold",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-01.png",
+      "crop_box": [
+        481,
+        71,
+        639,
+        244
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+        "sha256": "df9400aec390a38d1f26008f92037158c92f26a8fcd5345803d124f8d9969073",
+        "cell_index": 0,
+        "atlas_size": [
+          704,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          16,
+          51,
+          64
+        ],
+        "visible_height": 48,
+        "visible_width": 38,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "dcc5a951a106e70ae276cf4fabb787df17875302c0f7d24bc1d45fa86e4ce70b",
+        "state_occurrence_index": 0,
+        "state_name": "Normal",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "f29dbc2419984ffe6296f003a0557bbd7dacaf6b4b5b007dcfc454ba0604d5f8"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-01.png",
+        "source_sha256": "841ef702f884ef0cce6a6ef8d5db33825eccdf96b1eefcdcac2774fbbb8d2e9f",
+        "crop_box": [
+          481,
+          71,
+          639,
+          244
+        ],
+        "size": [
+          166,
+          181
+        ],
+        "source_crop_size": [
+          158,
+          173
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          0,
+          158,
+          173
+        ],
+        "alpha_bbox": [
+          4,
+          4,
+          162,
+          177
+        ],
+        "retained_pixels": 19334,
+        "background_pixels_removed": 8000,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 69.0,
+          "border_background_sample_count": 563,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Kobold/standing-front-source-resolution.png",
+        "output_sha256": "e2d2a9aaa6c7439c3234bfb635b50858f0b415683b005129e0d9e41aff6d99f4"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Kobold/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Kobold/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Kobold/candidate-v1",
+      "output_sha256": "73df727d21fb0981ac06e54455d226cc0d614edde014010fb19457a9b5ec22fe",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Kobold/standing-front-source-resolution.png",
+      "source_resolution_sha256": "e2d2a9aaa6c7439c3234bfb635b50858f0b415683b005129e0d9e41aff6d99f4",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "Goblins",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+      "crop_box": [
+        486,
+        74,
+        638,
+        245
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+        "sha256": "9eef9feca0f31894fc74e0270f362b0809a6fd7d686b1f4aa96c21fc9856d9dc",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          20,
+          49,
+          64
+        ],
+        "visible_height": 44,
+        "visible_width": 34,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "0f2960df9dfcc4303d2c01cdd672910cf1c6868844a8f68922b2b41b1a6f68b0",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "7738f54c20db11587c7e700ebd53aea7ff085c569f0a53c4b1b4f247e53c6516"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+        "source_sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0",
+        "crop_box": [
+          486,
+          74,
+          638,
+          245
+        ],
+        "size": [
+          160,
+          179
+        ],
+        "source_crop_size": [
+          152,
+          171
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          0,
+          152,
+          171
+        ],
+        "alpha_bbox": [
+          4,
+          4,
+          156,
+          175
+        ],
+        "retained_pixels": 18432,
+        "background_pixels_removed": 7560,
+        "enclosed_candidate_pixels_retained": 5,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 65.0,
+          "border_background_sample_count": 588,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/standing-front-source-resolution.png",
+        "output_sha256": "b1f61d4f11fb1cb00b173d7f7c43a46aa37ca44e0bdb1d05d8745e736190c7a8"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/candidate-v1",
+      "output_sha256": "acee38bc0af07989f91d325456f4e23790bd1b234159af598203d0e361418943",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/standing-front-source-resolution.png",
+      "source_resolution_sha256": "b1f61d4f11fb1cb00b173d7f7c43a46aa37ca44e0bdb1d05d8745e736190c7a8",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "Human",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        65,
+        35,
+        149,
+        158
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Human.dmi",
+        "sha256": "a6986eb5ba0ab289789f8da7e62c9f3f2895a7c72a7740909c14eb329e0cef46",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          11,
+          49,
+          64
+        ],
+        "visible_height": 53,
+        "visible_width": 34,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "d204fadce900c03a870e26c2f655c8e9170ad9f19d59f3cb8c5ca3de40484c9d",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "35a9c7f22d3aa32be293f59ed26cf2c3883314f0450a37aa088d66e5118a6cc3"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          65,
+          35,
+          149,
+          158
+        ],
+        "size": [
+          92,
+          131
+        ],
+        "source_crop_size": [
+          84,
+          123
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          9,
+          6,
+          74,
+          113
+        ],
+        "alpha_bbox": [
+          13,
+          10,
+          78,
+          117
+        ],
+        "retained_pixels": 5144,
+        "background_pixels_removed": 5188,
+        "enclosed_candidate_pixels_retained": 24,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.0,
+          "border_background_sample_count": 410,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-source-resolution.png",
+        "output_sha256": "9baf3ae0f26b28946db205cdda0841276271f9a7a53dfb6a868b3ea127f2af9e"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/candidate-v1",
+      "output_sha256": "1595e99f9ecb83f042caa6bd41980c5d8a5931d1396b88422c32d3d66a90103e",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-source-resolution.png",
+      "source_resolution_sha256": "9baf3ae0f26b28946db205cdda0841276271f9a7a53dfb6a868b3ea127f2af9e",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json",
+      "prior_source_candidates": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/prior-source-candidates",
+      "corrected_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-approved8angles.png",
+      "corrected_output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-approved8angles-height.png",
+      "corrected_export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-approved8angles-height.export.json"
+    },
+    {
+      "race": "Dwarves",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        64,
+        160,
+        150,
+        268
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Dwarves.dmi",
+        "sha256": "09cb22529aec07a58dc2c009189db4722a5feb8619e5c4a388cd84b50dabf8f4",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          25,
+          52,
+          64
+        ],
+        "visible_height": 39,
+        "visible_width": 40,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "62a79e3dd37965dc364f4cfd4f2b36d2af41c272a9432fa830558434386c7e7f",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "35a9c7f22d3aa32be293f59ed26cf2c3883314f0450a37aa088d66e5118a6cc3"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          64,
+          160,
+          150,
+          268
+        ],
+        "size": [
+          94,
+          116
+        ],
+        "source_crop_size": [
+          86,
+          108
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          5,
+          5,
+          81,
+          96
+        ],
+        "alpha_bbox": [
+          9,
+          9,
+          85,
+          100
+        ],
+        "retained_pixels": 4913,
+        "background_pixels_removed": 4375,
+        "enclosed_candidate_pixels_retained": 14,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 384,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-source-resolution.png",
+        "output_sha256": "eaa2ff80a555c8980f834a585b792e052f3fa50885346efcbdf3dcfb24431166"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/candidate-v1",
+      "output_sha256": "fd5689aaa689f09fa29d3d147b06331c6724d0073dc1f9974d87cfbf62914d6a",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-source-resolution.png",
+      "source_resolution_sha256": "eaa2ff80a555c8980f834a585b792e052f3fa50885346efcbdf3dcfb24431166",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json",
+      "prior_source_candidates": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/prior-source-candidates",
+      "corrected_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-approved8angles.png",
+      "corrected_output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-approved8angles-height.png",
+      "corrected_export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-approved8angles-height.export.json",
+      "resampling_note": "Nearest lost sparse boundary pixels; mechanical premultiplied Lanczos yields exact native visible height."
+    },
+    {
+      "race": "Night Elf",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        64,
+        267,
+        150,
+        395
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Night Elf.dmi",
+        "sha256": "19d75a586362c559d9da7229f81b915a8cce16c686f86e06148fd3b4cc248ee4",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          6,
+          48,
+          64
+        ],
+        "visible_height": 58,
+        "visible_width": 32,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "7d01b5abad4b2f2e72f81543adee570fa7b51159e6c5c453190c040630c71165",
+        "state_occurrence_index": 0,
+        "state_name": "Normal",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "3c87822b75dc3df6d6f9033071c419ce808200141fe0a3bc6ab4898543b96b75"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          64,
+          267,
+          150,
+          395
+        ],
+        "size": [
+          94,
+          136
+        ],
+        "source_crop_size": [
+          86,
+          128
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          8,
+          2,
+          78,
+          117
+        ],
+        "alpha_bbox": [
+          12,
+          6,
+          82,
+          121
+        ],
+        "retained_pixels": 5706,
+        "background_pixels_removed": 5302,
+        "enclosed_candidate_pixels_retained": 209,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 424,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-source-resolution.png",
+        "output_sha256": "5e0ac116defbb76323320cba9e55daf599dc66e192aeaa74dc26aee9dd95014d",
+        "manual_alpha_protection": {
+          "reason": "GenericbluegraymaskoverlappedNightElfsaturatednavymaterial;restoreonlysourcealphaatreviewednavypixels",
+          "restored_pixel_count": 209,
+          "mask_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protection-mask.png",
+          "mask_sha256": "5b20f532f69247c0ee000eda77b7a97bd1fd16cda9929374d3cb6757410a5f86",
+          "mask_coordinate_system": "Paddedcutoutcoordinates;sourcecropoffset4,4",
+          "region_xyxy": [
+            16,
+            14,
+            78,
+            123
+          ],
+          "palette_predicate": "originallyremoved AND B>=20 AND B>=1.6*R AND B-G>=7 AND B-R>=10",
+          "source_alpha_restored": 255,
+          "rgb_changed": 0,
+          "frozen_extractor_modified": false
+        }
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/candidate-v1",
+      "output_sha256": "6ff8c997934310b89fc8697eb7ad158f18e9da3565f4323cc38525446900ce11",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-source-resolution.png",
+      "source_resolution_sha256": "5e0ac116defbb76323320cba9e55daf599dc66e192aeaa74dc26aee9dd95014d",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json",
+      "prior_source_candidates": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/prior-source-candidates",
+      "corrected_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protected-v2.png",
+      "corrected_output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protected-height-v2.png",
+      "corrected_export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protected-height-v2.export.json"
+    },
+    {
+      "race": "Orc",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        63,
+        395,
+        151,
+        525
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Orc.dmi",
+        "sha256": "13c6e34c6dab7a62060701981666589d020f74cf5aba0e06ce976f4c13b2a8d2",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          9,
+          51,
+          64
+        ],
+        "visible_height": 55,
+        "visible_width": 38,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "65e2640c4cd7d60c584859c122867860b8a98518f7bb308969bf0f7161ea96d1",
+        "state_occurrence_index": 0,
+        "state_name": "Normal",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "rewind",
+            "0"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "b900c444b681087a5027df9edcf797aa13122046d4e3c743aa6644c602844c92"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          63,
+          395,
+          151,
+          525
+        ],
+        "size": [
+          96,
+          138
+        ],
+        "source_crop_size": [
+          88,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          7,
+          6,
+          81,
+          122
+        ],
+        "alpha_bbox": [
+          11,
+          10,
+          85,
+          126
+        ],
+        "retained_pixels": 6394,
+        "background_pixels_removed": 5046,
+        "enclosed_candidate_pixels_retained": 10,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.44998168945312,
+          "border_background_sample_count": 432,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-source-resolution.png",
+        "output_sha256": "fe5615452b81b9120ae102d9412c628dadd2532291bc35a2788158a4515d4750"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/candidate-v1",
+      "output_sha256": "c0c7bb60425d73f046846ee8af2f596cd1eff8129e17ae4017d866d84ebc4261",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-source-resolution.png",
+      "source_resolution_sha256": "fe5615452b81b9120ae102d9412c628dadd2532291bc35a2788158a4515d4750",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json",
+      "prior_source_candidates": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/prior-source-candidates",
+      "corrected_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-approved8angles.png",
+      "corrected_output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-approved8angles-height.png",
+      "corrected_export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-approved8angles-height.export.json"
+    },
+    {
+      "race": "LizardMan",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        62,
+        766,
+        152,
+        896
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/LizardMan.dmi",
+        "sha256": "16b3ad406e9e32853d01dae0fb3ad48a1b82a237ac4d23f4bd29e45abca9e0c5",
+        "cell_index": 0,
+        "atlas_size": [
+          704,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          11,
+          49,
+          64
+        ],
+        "visible_height": 53,
+        "visible_width": 34,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "d204fadce900c03a870e26c2f655c8e9170ad9f19d59f3cb8c5ca3de40484c9d",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "065116af42dcfba07ee97b57ac44ad216a061bcf9bdf1d2c4a06969e974fc07a"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          62,
+          766,
+          152,
+          896
+        ],
+        "size": [
+          98,
+          138
+        ],
+        "source_crop_size": [
+          90,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          10,
+          6,
+          80,
+          118
+        ],
+        "alpha_bbox": [
+          14,
+          10,
+          84,
+          122
+        ],
+        "retained_pixels": 5623,
+        "background_pixels_removed": 6077,
+        "enclosed_candidate_pixels_retained": 103,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 71.0,
+          "border_background_sample_count": 436,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/LizardMan/standing-front-source-resolution.png",
+        "output_sha256": "6ea932f1c05eba154f966a08219b779a2ee97a6c5a1fb47fa06170523cd49fe2"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/LizardMan/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/LizardMan/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/LizardMan/candidate-v1",
+      "output_sha256": "7a37bf3328118873b9182a7878e6683c202bb7427ebc662e4bf8cdc179860bfc",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/LizardMan/standing-front-source-resolution.png",
+      "source_resolution_sha256": "6ea932f1c05eba154f966a08219b779a2ee97a6c5a1fb47fa06170523cd49fe2",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "FrogMan",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        61,
+        897,
+        153,
+        1025
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/FrogMan.dmi",
+        "sha256": "848ccaeccf5dd4a74832a0f9a5c63380f0b17b3696a3bcabae860db127cf7eaf",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          11,
+          14,
+          53,
+          64
+        ],
+        "visible_height": 50,
+        "visible_width": 42,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "0f8848622d624660f93a86f689efd52a362a5c3e275a39dcaf272b5b92b0fae9",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "c0f05e6f096ee03885d474137c046945100874bccda898fecdd8e93f6c38c810"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          61,
+          897,
+          153,
+          1025
+        ],
+        "size": [
+          100,
+          136
+        ],
+        "source_crop_size": [
+          92,
+          128
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          6,
+          5,
+          88,
+          119
+        ],
+        "alpha_bbox": [
+          10,
+          9,
+          92,
+          123
+        ],
+        "retained_pixels": 7230,
+        "background_pixels_removed": 4546,
+        "enclosed_candidate_pixels_retained": 31,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.0,
+          "border_background_sample_count": 436,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/FrogMan/standing-front-source-resolution.png",
+        "output_sha256": "8c303d9d53481849cddcde5e4d7146a3e9c686715fee030e478ede48ecccd2f7"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/FrogMan/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/FrogMan/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/FrogMan/candidate-v1",
+      "output_sha256": "8cab4417f4470351cb22e7441ab4ee2ecbad1185770439924efbb9567dfd77d6",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/FrogMan/standing-front-source-resolution.png",
+      "source_resolution_sha256": "8c303d9d53481849cddcde5e4d7146a3e9c686715fee030e478ede48ecccd2f7",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "Vampire",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        62,
+        1024,
+        153,
+        1149
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Vampire.dmi",
+        "sha256": "f3485b54e51342baab9f14c73465ec0496fb361386fed90507a3989d379ba638",
+        "cell_index": 1,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          6,
+          48,
+          64
+        ],
+        "visible_height": 58,
+        "visible_width": 32,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "6830fdd533c2b7b02d22d6aa1717705c7b51828eeedce0f7ea008177f51fcf41",
+        "state_occurrence_index": 1,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "rewind",
+            "0"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "9850bda3c4a3beebb95c5ad41e9cc767bc004784401606bda7735422fe6ad40e"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          62,
+          1024,
+          153,
+          1149
+        ],
+        "size": [
+          99,
+          133
+        ],
+        "source_crop_size": [
+          91,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          10,
+          3,
+          80,
+          117
+        ],
+        "alpha_bbox": [
+          14,
+          7,
+          84,
+          121
+        ],
+        "retained_pixels": 6084,
+        "background_pixels_removed": 5291,
+        "enclosed_candidate_pixels_retained": 18,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 73.0,
+          "border_background_sample_count": 428,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Vampire/standing-front-source-resolution.png",
+        "output_sha256": "693aed80a0b0a4fdca652caba3dc7dbec2de02d5b67bae2c9483fdfd097004db"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Vampire/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Vampire/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Vampire/candidate-v1",
+      "output_sha256": "a7e18ca5456e1dd2af6e56bf915b53fa865a5aed4f4af3cbd736e3de217859dc",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Vampire/standing-front-source-resolution.png",
+      "source_resolution_sha256": "693aed80a0b0a4fdca652caba3dc7dbec2de02d5b67bae2c9483fdfd097004db",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "Demon",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        60,
+        1148,
+        154,
+        1282
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Demon.dmi",
+        "sha256": "9b6da3ce3d77b4e2c80d8d6848160333155e360ca0810c387a03e7cd5ff030cf",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          12,
+          2,
+          52,
+          64
+        ],
+        "visible_height": 62,
+        "visible_width": 40,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "204c42c61eef3580e0553140f4210345a7c4a771c317bd0f90deb5218276eb2d",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "rewind",
+            "0"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "3ec40fd78f402efe4216a90b3b43349397372e08e8bbb15174b109588872c0be"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          60,
+          1148,
+          154,
+          1282
+        ],
+        "size": [
+          102,
+          142
+        ],
+        "source_crop_size": [
+          94,
+          134
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          10,
+          3,
+          85,
+          128
+        ],
+        "alpha_bbox": [
+          14,
+          7,
+          89,
+          132
+        ],
+        "retained_pixels": 7044,
+        "background_pixels_removed": 5552,
+        "enclosed_candidate_pixels_retained": 11,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.44998168945312,
+          "border_background_sample_count": 452,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Demon/standing-front-source-resolution.png",
+        "output_sha256": "11d3dc9a18b254379d3a924cbb4bdd93d7d6b4f221748f0ea99ea7d595ad97f5"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Demon/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Demon/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Demon/candidate-v1",
+      "output_sha256": "5f132b24d95d43c469b1c123a60d43258d5044a69dcd03e5b7778aa3684c13fe",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Demon/standing-front-source-resolution.png",
+      "source_resolution_sha256": "11d3dc9a18b254379d3a924cbb4bdd93d7d6b4f221748f0ea99ea7d595ad97f5",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "Gargoyle",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        61,
+        1282,
+        153,
+        1417
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Gargoyle.dmi",
+        "sha256": "9d75944a9760493613ca31bdc2d54573247891f1dec11d17ad7a15b7777109a2",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          9,
+          49,
+          64
+        ],
+        "visible_height": 55,
+        "visible_width": 34,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "ea37d84aa82ea9f09e29277dcb536b3f123e72e8f24001919207c1bf3b7cbc2d",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "a6d639a49d6871fd3f14d4872c55dcf3b7ea28ef5640cdd7ebd6d5fb7711f3cd"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          61,
+          1282,
+          153,
+          1417
+        ],
+        "size": [
+          100,
+          143
+        ],
+        "source_crop_size": [
+          92,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          11,
+          10,
+          80,
+          120
+        ],
+        "alpha_bbox": [
+          15,
+          14,
+          84,
+          124
+        ],
+        "retained_pixels": 5918,
+        "background_pixels_removed": 6502,
+        "enclosed_candidate_pixels_retained": 26,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.0,
+          "border_background_sample_count": 450,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Gargoyle/standing-front-source-resolution.png",
+        "output_sha256": "d95f4b5e0f5299d2a886e65cd432d6f53a0433d1e9340878b4ee449cdefc9808"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Gargoyle/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Gargoyle/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Gargoyle/candidate-v1",
+      "output_sha256": "6852ed245225e2a1ab52c208d1273642a50a48f0aca5158483ebae0b1bfba08a",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Gargoyle/standing-front-source-resolution.png",
+      "source_resolution_sha256": "d95f4b5e0f5299d2a886e65cd432d6f53a0433d1e9340878b4ee449cdefc9808",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "Skeleton",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        61,
+        1415,
+        153,
+        1555
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Skeleton.dmi",
+        "sha256": "43fee758d8f45a5f6a7974f00d02891b3f59982038f8696c8f1746e75cbc84cc",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          17,
+          13,
+          47,
+          63
+        ],
+        "visible_height": 50,
+        "visible_width": 30,
+        "bottom_baseline_exclusive": 63,
+        "alpha_sha256": "ceb8006ea2c3d9a68d41c85623c7835b107f658db10de4e597a7a1626fc57038",
+        "state_occurrence_index": 0,
+        "state_name": "Normal",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "rewind",
+            "0"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "8724d19902490cd1f633bc83b819979c8fecd0a04332235b57b39f04ba991204"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          61,
+          1415,
+          153,
+          1555
+        ],
+        "size": [
+          100,
+          148
+        ],
+        "source_crop_size": [
+          92,
+          140
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          13,
+          9,
+          78,
+          124
+        ],
+        "alpha_bbox": [
+          17,
+          13,
+          82,
+          128
+        ],
+        "retained_pixels": 5269,
+        "background_pixels_removed": 7611,
+        "enclosed_candidate_pixels_retained": 122,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.0,
+          "border_background_sample_count": 460,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Skeleton/standing-front-source-resolution.png",
+        "output_sha256": "388ee296fa39ea11a67ac55b8a2276c8de59c23c6e244844aa38955640253385"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Skeleton/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Skeleton/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Skeleton/candidate-v1",
+      "output_sha256": "539a1b287cc8396003e0db70ece3fed295b9c529ef980e271abc97ced2aeb085",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Skeleton/standing-front-source-resolution.png",
+      "source_resolution_sha256": "388ee296fa39ea11a67ac55b8a2276c8de59c23c6e244844aa38955640253385",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    },
+    {
+      "race": "DevourerZombie",
+      "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "crop_box": [
+        61,
+        1560,
+        153,
+        1698
+      ],
+      "native_reference": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/DevourerZombie.dmi",
+        "sha256": "a5e30c425191c340dc662fc4c7b27c626c2d7e7ca955c7f3052f8210afc2ba11",
+        "cell_index": 0,
+        "atlas_size": [
+          640,
+          640
+        ],
+        "frame_size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          11,
+          49,
+          64
+        ],
+        "visible_height": 53,
+        "visible_width": 34,
+        "bottom_baseline_exclusive": 64,
+        "alpha_sha256": "d204fadce900c03a870e26c2f655c8e9170ad9f19d59f3cb8c5ca3de40484c9d",
+        "state_occurrence_index": 0,
+        "state_name": "",
+        "state_fields": [
+          [
+            "dirs",
+            "4"
+          ],
+          [
+            "frames",
+            "3"
+          ],
+          [
+            "delay",
+            "2,2,2"
+          ],
+          [
+            "movement",
+            "1"
+          ]
+        ],
+        "frame_index": 0,
+        "direction_index": 0,
+        "direction": "S",
+        "description_sha256": "793c7b1c394cd3a406d5d9c0e46dc2cf1634abb75568187a1f4a6592aaafc4fa"
+      },
+      "status": "complete",
+      "cutout": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "reviewed_existing_art_source_resolution_cutout",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+        "crop_box": [
+          61,
+          1560,
+          153,
+          1698
+        ],
+        "size": [
+          100,
+          146
+        ],
+        "source_crop_size": [
+          92,
+          138
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          10,
+          6,
+          81,
+          124
+        ],
+        "alpha_bbox": [
+          14,
+          10,
+          85,
+          128
+        ],
+        "retained_pixels": 5988,
+        "background_pixels_removed": 6708,
+        "enclosed_candidate_pixels_retained": 12,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 72.0,
+          "border_background_sample_count": 456,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/standing-front-source-resolution.png",
+        "output_sha256": "07451fe643ba4f5a13868adbf871bc4eb90bb8f2762df487f263cb0ec83ef6e2"
+      },
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/standing-front.png",
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/standing-front.export.json",
+      "height_matched": true,
+      "candidate_v1_archive": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/candidate-v1",
+      "output_sha256": "5cfe5b865022326adc0a49b5b868083c73e4ec346f23b14a2096fb6baed262cf",
+      "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/standing-front-source-resolution.png",
+      "source_resolution_sha256": "07451fe643ba4f5a13868adbf871bc4eb90bb8f2762df487f263cb0ec83ef6e2",
+      "baseline_matched": true,
+      "source_unchanged": true,
+      "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json"
+    }
+  ],
+  "completed_count": 13,
+  "reviewed_count": 13,
+  "failed_count": 0,
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "source_unchanged": true,
+  "shared_manifest_modified": false,
+  "limitations": [
+    "Base standing-front designs only; these exports do not replace complete animated native DMI sheets.",
+    "Eleven races use approved 8-angle-sheet front artwork; Kobold/Goblin use the exact approved page01 front crops.",
+    "Conservative alpha masking retains enclosed background-like colors and original dark edge pixels; no color reconstruction or body repair.",
+    "Night Elf uses an explicit audited source-alpha restoration mask to protect navy material."
+  ],
+  "independent_review": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/existing-sprite-cutout-review.json",
+  "approved_source_selection": {
+    "approved_races_8_angles_front_column": 11,
+    "approved_user_sheet_page01_front": 2
+  }
+}

@@ -1,0 +1,1475 @@
+{
+  "family": "diamond",
+  "classification": "AI_detailed_enhanced_sheet_artwork",
+  "worker_model": "gpt-6.1-sol",
+  "tool": "builtin_image_gen",
+  "external_api_used": false,
+  "native_export": false,
+  "runtime_installed": false,
+  "pages": [
+    {
+      "page": 1,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-01.png",
+      "sha256": "12614dcd58fa6b05230e21d805e323cdc4229420edbca4e83dd9540b1b132bc8",
+      "size": [
+        1430,
+        1100
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-53e40f09-ff93-4557-9a63-780a4cccb222.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-01.png",
+      "source_sha256": "c336e33763805e90adb94ceb81c373e67b85bf0386af777bd8289cf0d85ce0dd",
+      "expected_rows": [
+        {
+          "state_index": 0,
+          "state_name": "weapon.dagger.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 0
+        },
+        {
+          "state_index": 1,
+          "state_name": "weapon.arming sword.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 4
+        },
+        {
+          "state_index": 2,
+          "state_name": "weapon.longsword.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 8
+        },
+        {
+          "state_index": 3,
+          "state_name": "weapon.scimitar.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 12
+        },
+        {
+          "state_index": 4,
+          "state_name": "weapon.hand axe.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 16
+        },
+        {
+          "state_index": 5,
+          "state_name": "weapon.battle axe.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 20
+        },
+        {
+          "state_index": 6,
+          "state_name": "weapon.warhammer.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 24
+        }
+      ],
+      "expected_visible_cells": 27,
+      "observed_visible_cells": 27,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-01.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "All7weaponrows and27occupiedviews retained; daggerW blank. Repairs restore W blade/pommel fragments and separate brown axe/hammer enddots, change battleaxe S/N counterblades to blunt flat polls using approvedAdamantium construction reference.",
+      "observed_rows": [
+        {
+          "state_index": 0,
+          "state_name": "weapon.dagger.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "state_index": 1,
+          "state_name": "weapon.arming sword.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 2,
+          "state_name": "weapon.longsword.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 3,
+          "state_name": "weapon.scimitar.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 4,
+          "state_name": "weapon.hand axe.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 5,
+          "state_name": "weapon.battle axe.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 6,
+          "state_name": "weapon.warhammer.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "repair_prompts": [
+        "_meta/prompts/detailed-diamond-page-01-repair.txt",
+        "_meta/prompts/detailed-diamond-page-01-repair-axes.txt",
+        "_meta/prompts/detailed-diamond-page-01-repair-flat-poll.txt"
+      ],
+      "generation_calls": 4,
+      "repair_shape_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/candidates/diamond/native-axes-shape-reference.png"
+    },
+    {
+      "page": 2,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-02.png",
+      "sha256": "5b70f772147a1dcd2f31710570fedf27b8d90173246ee40016eea3b9c9205a1c",
+      "size": [
+        1321,
+        1191
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-46fc2979-61d7-46e1-bbb9-fe523dca78f8.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-02.png",
+      "source_sha256": "13db5144b7633f0253ccb9f9882aaedeb410de2d906849ed23c8a605e27fa4f5",
+      "expected_rows": [
+        {
+          "state_index": 7,
+          "state_name": "weapon.mace.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 28
+        },
+        {
+          "state_index": 8,
+          "state_name": "weapon.morning star.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 32
+        },
+        {
+          "state_index": 9,
+          "state_name": "weapon.spear.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 36
+        },
+        {
+          "state_index": 10,
+          "state_name": "weapon.halberd.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 40
+        },
+        {
+          "state_index": 11,
+          "state_name": "weapon.bow.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 44
+        },
+        {
+          "state_index": 12,
+          "state_name": "helmet.kettle.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 48
+        },
+        {
+          "state_index": 13,
+          "state_name": "helmet.nasal.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 52
+        }
+      ],
+      "expected_visible_cells": 28,
+      "observed_visible_cells": 28,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-02.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "minor_artistic_variations": [
+        "Tiny W halberd grip dot omitted; root explicitly accepted as minor detailed-art variation, not exact binary component preservation."
+      ],
+      "repair_prompt": "_meta/prompts/detailed-diamond-page-02-repair.txt",
+      "visual_qa_notes": "Smooth mace distinct from spiked morningstar; Wbow retained as tinyfragment, Wspear lowergripdot restored. TinyWhalberddot acceptedasminorvariation byroot.",
+      "observed_rows": [
+        {
+          "state_index": 7,
+          "state_name": "weapon.mace.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 8,
+          "state_name": "weapon.morning star.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 9,
+          "state_name": "weapon.spear.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 10,
+          "state_name": "weapon.halberd.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 11,
+          "state_name": "weapon.bow.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 12,
+          "state_name": "helmet.kettle.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 13,
+          "state_name": "helmet.nasal.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "repair_prompts": [
+        "_meta/prompts/detailed-diamond-page-02-repair.txt"
+      ],
+      "generation_calls": 2
+    },
+    {
+      "page": 3,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-03.png",
+      "sha256": "77b9cf1f0cc641dfb93892bf6ededf466299f7d3ed8a90ec4a165e74fe9cf732",
+      "size": [
+        1284,
+        1225
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-036e7c36-661a-4919-a643-6d95a014e004.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-03.png",
+      "source_sha256": "a32fbed456c98b5a7dd1bf49318515da53491fe8bcab2cfff599fb89db3b8a16",
+      "expected_rows": [
+        {
+          "state_index": 14,
+          "state_name": "helmet.horned.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 56
+        },
+        {
+          "state_index": 15,
+          "state_name": "helmet.winged.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 60
+        },
+        {
+          "state_index": 16,
+          "state_name": "helmet.great helm.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 64
+        },
+        {
+          "state_index": 17,
+          "state_name": "helmet.crested.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 68
+        },
+        {
+          "state_index": 18,
+          "state_name": "chest.plate.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 72
+        },
+        {
+          "state_index": 19,
+          "state_name": "chest.banded.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 76
+        },
+        {
+          "state_index": 20,
+          "state_name": "chest.mail.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 80
+        }
+      ],
+      "expected_visible_cells": 28,
+      "observed_visible_cells": 28,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-03.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "Horned/winged/crestedhelmet identities preserved, redcrest and horn/wing accents retained; sidechest partialfragments visible.",
+      "observed_rows": [
+        {
+          "state_index": 14,
+          "state_name": "helmet.horned.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 15,
+          "state_name": "helmet.winged.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 16,
+          "state_name": "helmet.great helm.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 17,
+          "state_name": "helmet.crested.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 18,
+          "state_name": "chest.plate.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 19,
+          "state_name": "chest.banded.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 20,
+          "state_name": "chest.mail.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "generation_calls": 1
+    },
+    {
+      "page": 4,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-04.png",
+      "sha256": "b8f57b5bb350a122f11d8f22ca868c39552e34e1389d3d3c42359f4937fc8561",
+      "size": [
+        1284,
+        1225
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-e89699d9-0e1f-4b07-a62a-c4318e4a5d58.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-04.png",
+      "source_sha256": "949eb9da483458d578ecb5a086e494fb587ae4ee92c5e01c507b2f81b366c8b5",
+      "expected_rows": [
+        {
+          "state_index": 21,
+          "state_name": "chest.scale.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 84
+        },
+        {
+          "state_index": 22,
+          "state_name": "chest.lamellar.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 88
+        },
+        {
+          "state_index": 23,
+          "state_name": "chest.brigandine.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 92
+        },
+        {
+          "state_index": 24,
+          "state_name": "chest.tabard.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 96
+        },
+        {
+          "state_index": 25,
+          "state_name": "legs.plate.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 100
+        },
+        {
+          "state_index": 26,
+          "state_name": "legs.mail.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 104
+        },
+        {
+          "state_index": 27,
+          "state_name": "legs.scale.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 108
+        }
+      ],
+      "expected_visible_cells": 28,
+      "observed_visible_cells": 28,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-04.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "Redbrigandine fabric andpalediamondstuds repaired; bluetabard/goldchevron and brownboots retained.",
+      "observed_rows": [
+        {
+          "state_index": 21,
+          "state_name": "chest.scale.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 22,
+          "state_name": "chest.lamellar.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 23,
+          "state_name": "chest.brigandine.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 24,
+          "state_name": "chest.tabard.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 25,
+          "state_name": "legs.plate.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 26,
+          "state_name": "legs.mail.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 27,
+          "state_name": "legs.scale.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "repair_prompts": [
+        "_meta/prompts/detailed-diamond-page-04-repair.txt"
+      ],
+      "generation_calls": 2
+    },
+    {
+      "page": 5,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-05.png",
+      "sha256": "4c2f6bfbb7abc2c958206195538a969ccac92b9a5753f6b14323be5be24eab91",
+      "size": [
+        1092,
+        1441
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-f99fd731-4473-407f-91bd-535c5c701c1e.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-05.png",
+      "source_sha256": "43313adc20e2641b46d21d1e4695b10cecee4e527c99328b2a4b2f019bae75e6",
+      "expected_rows": [
+        {
+          "state_index": 28,
+          "state_name": "arms.plate.diamond.L",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            3
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 112
+        },
+        {
+          "state_index": 29,
+          "state_name": "arms.plate.diamond.R",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 116
+        },
+        {
+          "state_index": 30,
+          "state_name": "arms.mail.diamond.L",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            3
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 120
+        },
+        {
+          "state_index": 31,
+          "state_name": "arms.mail.diamond.R",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 124
+        },
+        {
+          "state_index": 32,
+          "state_name": "shield.buckler.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 128
+        },
+        {
+          "state_index": 33,
+          "state_name": "shield.round.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 132
+        },
+        {
+          "state_index": 34,
+          "state_name": "shield.heater.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 136
+        }
+      ],
+      "expected_visible_cells": 24,
+      "observed_visible_cells": 24,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-05.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "Fourarmrows keep correct complementary E/W blanks; shieldfaces/woodenbacks/edge-onEfragments preserved.",
+      "observed_rows": [
+        {
+          "state_index": 28,
+          "state_name": "arms.plate.diamond.L",
+          "observed_occupied_directions": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "state_index": 29,
+          "state_name": "arms.plate.diamond.R",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "state_index": 30,
+          "state_name": "arms.mail.diamond.L",
+          "observed_occupied_directions": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "state_index": 31,
+          "state_name": "arms.mail.diamond.R",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "state_index": 32,
+          "state_name": "shield.buckler.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 33,
+          "state_name": "shield.round.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 34,
+          "state_name": "shield.heater.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "generation_calls": 1
+    },
+    {
+      "page": 6,
+      "status": "self_review_pass",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-06.png",
+      "sha256": "aa7171ac6fb82946d10c80418422cf42be3f0ead3930962da60c29aa3696866b",
+      "size": [
+        1973,
+        797
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-f898ec84-78f1-4028-b9e2-48adb5edc3a5.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-06.png",
+      "source_sha256": "5fb0854e58949a982d04430ed94dd891a70c7610b6fafbb44f2592e4207a3f3f",
+      "expected_rows": [
+        {
+          "state_index": 35,
+          "state_name": "shield.kite.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 140
+        },
+        {
+          "state_index": 36,
+          "state_name": "shield.tower.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 144
+        }
+      ],
+      "expected_visible_cells": 8,
+      "observed_visible_cells": 8,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-06.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ],
+      "visual_qa_notes": "Two shieldrows: red/gold kite+bluecrystalrim; brownwood towerwithcrystaledges; bothE fragmentedviews retained.",
+      "observed_rows": [
+        {
+          "state_index": 35,
+          "state_name": "shield.kite.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "state_index": 36,
+          "state_name": "shield.tower.diamond",
+          "observed_occupied_directions": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "artwork_quality": "detailed faceted pixel/voxel shading; source equipment semantics preserved with recorded artistic variations",
+      "no_native_downscale": true,
+      "source_unchanged": true,
+      "generation_calls": 1
+    }
+  ],
+  "expected_pages": 6,
+  "saved_pages": 6,
+  "status": "complete_self_review_pass_pending_independent_review",
+  "held_attempts": [
+    {
+      "page": 4,
+      "status": "needs_repair",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/candidates/diamond/page-04-held.png",
+      "sha256": "a945857b40aafa74b4a820b41dd3b22cd701578b223c30d8fa69132b3c65d1be",
+      "size": [
+        1284,
+        1225
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-d38ecda0-1259-430a-af6a-e029190d19c9.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-04.png",
+      "source_sha256": "949eb9da483458d578ecb5a086e494fb587ae4ee92c5e01c507b2f81b366c8b5",
+      "expected_rows": [
+        {
+          "state_index": 21,
+          "state_name": "chest.scale.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 84
+        },
+        {
+          "state_index": 22,
+          "state_name": "chest.lamellar.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 88
+        },
+        {
+          "state_index": 23,
+          "state_name": "chest.brigandine.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 92
+        },
+        {
+          "state_index": 24,
+          "state_name": "chest.tabard.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 96
+        },
+        {
+          "state_index": 25,
+          "state_name": "legs.plate.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 100
+        },
+        {
+          "state_index": 26,
+          "state_name": "legs.mail.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 104
+        },
+        {
+          "state_index": 27,
+          "state_name": "legs.scale.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 108
+        }
+      ],
+      "expected_visible_cells": 28,
+      "observed_visible_cells": null,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-04.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ]
+    },
+    {
+      "page": 2,
+      "status": "needs_repair",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/candidates/diamond/page-02-held.png",
+      "sha256": "dd9224a0668148e229ef5c78e52be966e9c0f1232ce48c06e9a1f2227b661413",
+      "size": [
+        1321,
+        1191
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-75a0f35f-b620-4cbc-a3a5-c6704f6aa6cd.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-02.png",
+      "source_sha256": "13db5144b7633f0253ccb9f9882aaedeb410de2d906849ed23c8a605e27fa4f5",
+      "expected_rows": [
+        {
+          "state_index": 7,
+          "state_name": "weapon.mace.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 28
+        },
+        {
+          "state_index": 8,
+          "state_name": "weapon.morning star.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 32
+        },
+        {
+          "state_index": 9,
+          "state_name": "weapon.spear.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 36
+        },
+        {
+          "state_index": 10,
+          "state_name": "weapon.halberd.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 40
+        },
+        {
+          "state_index": 11,
+          "state_name": "weapon.bow.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 44
+        },
+        {
+          "state_index": 12,
+          "state_name": "helmet.kettle.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 48
+        },
+        {
+          "state_index": 13,
+          "state_name": "helmet.nasal.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 52
+        }
+      ],
+      "expected_visible_cells": 28,
+      "observed_visible_cells": null,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-02.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ]
+    },
+    {
+      "page": 1,
+      "status": "needs_repair",
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/candidates/diamond/page-01-held.png",
+      "sha256": "c399650be2bee61389e6a60619ba031ba9df8ccfd2afe2b6c41c123683141480",
+      "size": [
+        1429,
+        1100
+      ],
+      "mode": "RGB",
+      "original_tool_output": "/Users/kiwimango/.codex/generated_images/01a16f0e-1e8c-7cd0-ba13-309e4b0fea5c/exec-7b47fc00-336b-406c-985a-c98e6ded4d34.png",
+      "full_tool_resolution_preserved": true,
+      "source_reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/source-references/diamond/page-01.png",
+      "source_sha256": "c336e33763805e90adb94ceb81c373e67b85bf0386af777bd8289cf0d85ce0dd",
+      "expected_rows": [
+        {
+          "state_index": 0,
+          "state_name": "weapon.dagger.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2
+          ],
+          "expected_visible_cells": 3,
+          "native_cell_start": 0
+        },
+        {
+          "state_index": 1,
+          "state_name": "weapon.arming sword.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 4
+        },
+        {
+          "state_index": 2,
+          "state_name": "weapon.longsword.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 8
+        },
+        {
+          "state_index": 3,
+          "state_name": "weapon.scimitar.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 12
+        },
+        {
+          "state_index": 4,
+          "state_name": "weapon.hand axe.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 16
+        },
+        {
+          "state_index": 5,
+          "state_name": "weapon.battle axe.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 20
+        },
+        {
+          "state_index": 6,
+          "state_name": "weapon.warhammer.diamond",
+          "dirs": 4,
+          "frames": 1,
+          "occupied_direction_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "expected_visible_cells": 4,
+          "native_cell_start": 24
+        }
+      ],
+      "expected_visible_cells": 27,
+      "observed_visible_cells": null,
+      "prompt": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/detailed-diamond-page-01.txt",
+      "style_review": "rich faceted pixel/voxel shading at full resolution",
+      "independent_review": "pending",
+      "limitations": [
+        "Artwork page only; native registration and all animation frames are not exported."
+      ]
+    }
+  ],
+  "passed_pages": 6,
+  "ordered_states": 37,
+  "occupied_views": 143,
+  "source_preview_unchanged": true,
+  "generation_calls": 11
+}

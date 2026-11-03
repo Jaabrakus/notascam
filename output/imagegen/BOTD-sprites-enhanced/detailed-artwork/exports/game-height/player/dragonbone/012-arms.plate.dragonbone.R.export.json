@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:25.633716+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/012-arms.plate.dragonbone.R.png",
+    "sha256": "bbcaff2d01f01056d67e51a1e3052c07dd5137448c4be5b9db49671009bc3add",
+    "size": [
+      71,
+      102
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      65,
+      96
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 3661,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      65,
+      96
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      65,
+      96
+    ],
+    "source_crop_size": [
+      59,
+      90
+    ],
+    "crop_rgba_sha256": "3f36a765a5460a9e24ed95dfd2a37a56ba46b25aecc892fc9e6c0a0f3fd412b5",
+    "discarded_pixel_count": 1932,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonbone.dmi",
+    "sha256": "1b62bc2092f975fed5e201cef7014b82b0711b1eb7ff5e027811f5dfb552998c",
+    "cell_index": 184,
+    "atlas_size": [
+      960,
+      960
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      13,
+      35,
+      25,
+      53
+    ],
+    "visible_height": 18,
+    "visible_width": 12,
+    "bottom_baseline_exclusive": 53,
+    "alpha_sha256": "0be1eb997a3461ba89b7af4c887294ef58513f5e28bb955869b932697bd3e2c2",
+    "state_occurrence_index": 12,
+    "state_name": "arms.plate.dragonbone.R",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "1efa2c329fd927104f0fcff26cda5d500507ccbc0e1f96fad5d35af3b0e40dd9"
+  },
+  "placement": {
+    "target_visible_height": 18,
+    "proportional_content_size": [
+      12,
+      18
+    ],
+    "uniform_scale": 0.2,
+    "actual_axis_scales": [
+      0.2033898305084746,
+      0.2
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      13,
+      35,
+      25,
+      53
+    ],
+    "actual_alpha_bbox": [
+      13,
+      35,
+      25,
+      53
+    ],
+    "actual_visible_height": 18,
+    "actual_visible_width": 12,
+    "bottom_baseline_exclusive": 53,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/dragonbone/012-arms.plate.dragonbone.R.png",
+    "sha256": "fbf0c60546381191587d8e5b24ff9ede3ba589a5f7355f7f279cce5091b59714",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      13,
+      35,
+      25,
+      53
+    ],
+    "alpha_sha256": "4e2b5c95b1f587c7bb9a91b53aac551b85b1057d686bd7119ee3b572cb04928a",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

@@ -1,0 +1,4912 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "bone",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "accepted_game_height_exports_from_detailed_artwork",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "weapon.dagger.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        341,
+        119,
+        435,
+        219
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 169.0265721877768,
+        "selected_components": [
+          {
+            "area": 3387,
+            "box": [
+              343,
+              121,
+              433,
+              217
+            ],
+            "center": [
+              386.6436374372601,
+              169.0265721877768
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/000-weapon.dagger.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          341,
+          119,
+          435,
+          219
+        ],
+        "size": [
+          102,
+          108
+        ],
+        "source_crop_size": [
+          94,
+          100
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          92,
+          98
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          96,
+          102
+        ],
+        "retained_pixels": 3387,
+        "background_pixels_removed": 6013,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 384,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/000-weapon.dagger.bone.png",
+        "output_sha256": "fdb6317513d52c9d42fe45137a0d9879665aa189c8f58621a2b480643e3015d8"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/000-weapon.dagger.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/000-weapon.dagger.bone.export.json",
+        "sha256": "34626e8eedb448164947235854f9ccd0af41e7710e1b738bdb3a7fa6cfc5c3d4",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          21,
+          14,
+          29
+        ],
+        "visible_height": 8,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 0,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            21,
+            14,
+            29
+          ],
+          "visible_height": 8,
+          "visible_width": 8,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "4cf9355e7812e57e128cba2929db7cdfbf94e49c8b69a8036783541ede382ca9",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.dagger.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/000-weapon.dagger.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/000-weapon.dagger.bone.export.json",
+        "sha256": "1b55754449fd707947f46fa3193806d6be4823366c8c6f676a369f393f2e4015",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          11,
+          41,
+          27,
+          58
+        ],
+        "visible_height": 17,
+        "baseline_exclusive": 58,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 0,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            41,
+            28,
+            58
+          ],
+          "visible_height": 17,
+          "visible_width": 17,
+          "bottom_baseline_exclusive": 58,
+          "alpha_sha256": "366d602cc8b2918973bf736c7d48beaa4bc8d3e4e486253f4c99f95e82a340d7",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.dagger.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "weapon.arming sword.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        325,
+        284,
+        455,
+        416
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 350.503249235474,
+        "selected_components": [
+          {
+            "area": 5232,
+            "box": [
+              327,
+              286,
+              453,
+              414
+            ],
+            "center": [
+              389.24751529051986,
+              350.503249235474
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/001-weapon.arming_sword.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          325,
+          284,
+          455,
+          416
+        ],
+        "size": [
+          138,
+          140
+        ],
+        "source_crop_size": [
+          130,
+          132
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          128,
+          130
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          132,
+          134
+        ],
+        "retained_pixels": 5231,
+        "background_pixels_removed": 11929,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 520,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/001-weapon.arming_sword.bone.png",
+        "output_sha256": "3905047b27bed4bc7207d8a307b0c885c19af3c342622038081e662fa9954c1d"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/001-weapon.arming_sword.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/001-weapon.arming_sword.bone.export.json",
+        "sha256": "01bc0d7d77635af3d71877d4151851fce310eeb9d7a82000d11596b4ca0c3d20",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          16,
+          14,
+          29
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 4,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            16,
+            15,
+            29
+          ],
+          "visible_height": 13,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "3d8f93bff8abd0f68ee0c72a47e11265c460e7eabef13474d8396faf570981ac",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.arming sword.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/001-weapon.arming_sword.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/001-weapon.arming_sword.bone.export.json",
+        "sha256": "76261e6c4ec7a64c91a198d064b6a8fcc9dc79d7a109ff349b9372402c318f70",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          32,
+          29,
+          59
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 20,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            32,
+            29,
+            59
+          ],
+          "visible_height": 27,
+          "visible_width": 27,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "70349f45881a0c5161dd30f42d0921499745414bca9c07d6698048cf948a3510",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.arming sword.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "weapon.scimitar.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        333,
+        468,
+        439,
+        597
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 538.3334101913765,
+        "selected_components": [
+          {
+            "area": 4337,
+            "box": [
+              335,
+              470,
+              437,
+              595
+            ],
+            "center": [
+              378.2303435554531,
+              538.3334101913765
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/002-weapon.scimitar.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          333,
+          468,
+          439,
+          597
+        ],
+        "size": [
+          114,
+          137
+        ],
+        "source_crop_size": [
+          106,
+          129
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          104,
+          127
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          108,
+          131
+        ],
+        "retained_pixels": 4329,
+        "background_pixels_removed": 9345,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 466,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/002-weapon.scimitar.bone.png",
+        "output_sha256": "8557d46746e40005374d7ddb23abbddf77537cf18aa995e3ac618d0c9673b952"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/002-weapon.scimitar.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/002-weapon.scimitar.bone.export.json",
+        "sha256": "87e4032e3c969076811c498f0d6501b18e0cf6de24cfc5fb3e943af633f2ef5a",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          3,
+          14,
+          15,
+          29
+        ],
+        "visible_height": 15,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 8,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            14,
+            15,
+            29
+          ],
+          "visible_height": 15,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "11584b76f6664aebe58673e0f09add02ddeea12a61de802720f4ddf1c3bf08e0",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.scimitar.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/002-weapon.scimitar.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/002-weapon.scimitar.bone.export.json",
+        "sha256": "4e48e2f06ebb8cdd476528a6678fc02ab9e13df620e116352d33b088c073f569",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          7,
+          27,
+          33,
+          59
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 40,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            7,
+            27,
+            29,
+            59
+          ],
+          "visible_height": 32,
+          "visible_width": 22,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "c7acbc23627570da7d1d2e7870de015efaef540646792f73e9cfafd8a13b9207",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.scimitar.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "weapon.hand axe.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        314,
+        661,
+        430,
+        766
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 707.326705940108,
+        "selected_components": [
+          {
+            "area": 4074,
+            "box": [
+              316,
+              663,
+              428,
+              764
+            ],
+            "center": [
+              361.6372115856652,
+              707.326705940108
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/003-weapon.hand_axe.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          314,
+          661,
+          430,
+          766
+        ],
+        "size": [
+          124,
+          113
+        ],
+        "source_crop_size": [
+          116,
+          105
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          3,
+          2,
+          114,
+          103
+        ],
+        "alpha_bbox": [
+          7,
+          6,
+          118,
+          107
+        ],
+        "retained_pixels": 4070,
+        "background_pixels_removed": 8110,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 438,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/003-weapon.hand_axe.bone.png",
+        "output_sha256": "bbcef44bc0c88420ddaf67a3bd5cc106e2f6c4f218cf534678dd8acbabb8d171"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/003-weapon.hand_axe.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/003-weapon.hand_axe.bone.export.json",
+        "sha256": "d666121f869283315ff5bae485e3bc562199bda0b2fe0351dfafbf7955826ed8",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          16,
+          13,
+          28
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 12,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            16,
+            13,
+            28
+          ],
+          "visible_height": 12,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6df95326d33064bb9fb445bc5a161f3daa51e354a8fc3aefa2beaf6320461a1d",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.hand axe.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/003-weapon.hand_axe.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/003-weapon.hand_axe.bone.export.json",
+        "sha256": "9a7595b3fa62c47f450fb9a6b6fe559b3062b71b2dae787d4249cd9569c7d481",
+        "size": [
+          72,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          28,
+          34,
+          57
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 57,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 60,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            28,
+            26,
+            57
+          ],
+          "visible_height": 29,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 57,
+          "alpha_sha256": "c4b0c6f962789b2ebe9b2f941f88cd6cf3c611839a7e1c6a2e14081d2616e43b",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.hand axe.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "weapon.mace.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        317,
+        835,
+        433,
+        952
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 884.8591167036762,
+        "selected_components": [
+          {
+            "area": 4053,
+            "box": [
+              319,
+              837,
+              431,
+              950
+            ],
+            "center": [
+              367.3807056501357,
+              884.8591167036762
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/004-weapon.mace.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          317,
+          835,
+          433,
+          952
+        ],
+        "size": [
+          124,
+          125
+        ],
+        "source_crop_size": [
+          116,
+          117
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          114,
+          115
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          118,
+          119
+        ],
+        "retained_pixels": 4053,
+        "background_pixels_removed": 9519,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 462,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/004-weapon.mace.bone.png",
+        "output_sha256": "2ec2fefcb8631c6ad072daebeee54ae45a75ac759b62dc78c2136ed54205798f"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/004-weapon.mace.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/004-weapon.mace.bone.export.json",
+        "sha256": "d3a11375521853548bb4afd12941c51193d62c59958c0128e272d578d24601cf",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          14,
+          14,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 16,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            14,
+            13,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "c7eddad5a26aa4350ebe96e6529c77419870bc01e74c61184029f3d3316c5cb4",
+          "state_occurrence_index": 4,
+          "state_name": "weapon.mace.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/004-weapon.mace.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/004-weapon.mace.bone.export.json",
+        "sha256": "fea3293395c438dedd0a25dcce8ac19fd17108625c8f6763ea4beae27ab20f3f",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          1,
+          27,
+          30,
+          56
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 56,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 80,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            1,
+            27,
+            26,
+            56
+          ],
+          "visible_height": 29,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 56,
+          "alpha_sha256": "867338e09484ebe4db10c55d551a84a9a731f0bee611ec7ee0ecc11fd1f90955",
+          "state_occurrence_index": 4,
+          "state_name": "weapon.mace.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 5,
+      "state_name": "weapon.spear.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        330,
+        983,
+        444,
+        1186
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1079.1959991487552,
+        "selected_components": [
+          {
+            "area": 4699,
+            "box": [
+              332,
+              985,
+              442,
+              1184
+            ],
+            "center": [
+              381.52543094275376,
+              1079.1959991487552
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/005-weapon.spear.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          330,
+          983,
+          444,
+          1186
+        ],
+        "size": [
+          122,
+          211
+        ],
+        "source_crop_size": [
+          114,
+          203
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          112,
+          201
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          116,
+          205
+        ],
+        "retained_pixels": 4699,
+        "background_pixels_removed": 18443,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 630,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/005-weapon.spear.bone.png",
+        "output_sha256": "80e11c55d10f0a26b3e4bc1166073d6fb6671111fc0a1ba882fc5049c809696d"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/005-weapon.spear.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/005-weapon.spear.bone.export.json",
+        "sha256": "e589c553b42a4c41ccb3c02d2863b4f9911d641fb0ca02e7f260037cbe9916b3",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          1,
+          18,
+          32
+        ],
+        "visible_height": 31,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 20,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            1,
+            14,
+            32
+          ],
+          "visible_height": 31,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "9301fe6fce1f928342327fd9ad879c24cd6a73b1131f5b8366b5e22d5e455192",
+          "state_occurrence_index": 5,
+          "state_name": "weapon.spear.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/005-weapon.spear.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/005-weapon.spear.bone.export.json",
+        "sha256": "206077cb0872f84c382662878077b0ef19d8e25c10e68919b77e3f6f31afe054",
+        "size": [
+          73,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          2,
+          36,
+          64
+        ],
+        "visible_height": 62,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 100,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            2,
+            27,
+            64
+          ],
+          "visible_height": 62,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "bd129ff7afe98203dcd7f62b4b794073f1eb45cd0e47c9f4456c287aed58c24b",
+          "state_occurrence_index": 5,
+          "state_name": "weapon.spear.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 6,
+      "state_name": "weapon.halberd.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+      "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "crop_box": [
+        327,
+        1197,
+        439,
+        1397
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1291.1578007145692,
+        "selected_components": [
+          {
+            "area": 5038,
+            "box": [
+              329,
+              1199,
+              437,
+              1395
+            ],
+            "center": [
+              379.9196109567289,
+              1291.1578007145692
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/006-weapon.halberd.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-01.png",
+        "source_sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+        "crop_box": [
+          327,
+          1197,
+          439,
+          1397
+        ],
+        "size": [
+          120,
+          208
+        ],
+        "source_crop_size": [
+          112,
+          200
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          110,
+          198
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          114,
+          202
+        ],
+        "retained_pixels": 5035,
+        "background_pixels_removed": 17365,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 76.0,
+          "border_background_sample_count": 620,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/006-weapon.halberd.bone.png",
+        "output_sha256": "e457e7d7e13172805796fb1909b0cbf39d010b04dca9ec3df5fae09469b9e245"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/006-weapon.halberd.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/006-weapon.halberd.bone.export.json",
+        "sha256": "5c56de032e72966f427935234784eb225f5e886301941464cb72b827db4a15c1",
+        "size": [
+          35,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          3,
+          17,
+          32
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 24,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            3,
+            14,
+            32
+          ],
+          "visible_height": 29,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "1b383dedf69faef754a1761e73a5879d51e6f93d29b14c67a9e70d809c4a61b9",
+          "state_occurrence_index": 6,
+          "state_name": "weapon.halberd.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/006-weapon.halberd.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/006-weapon.halberd.bone.export.json",
+        "sha256": "fb06d0db2978a13bff27e018cb73819183c101322413e6de38f10e23e9a4cb3e",
+        "size": [
+          72,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          5,
+          35,
+          64
+        ],
+        "visible_height": 59,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 120,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            5,
+            27,
+            64
+          ],
+          "visible_height": 59,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "f3d30c8e12462f3097428fdbc513e2f70be6f6be553479f480f20711055e19c7",
+          "state_occurrence_index": 6,
+          "state_name": "weapon.halberd.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 7,
+      "state_name": "helmet.kettle.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        312,
+        87,
+        438,
+        198
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 141.27021830109715,
+        "selected_components": [
+          {
+            "area": 8841,
+            "box": [
+              314,
+              89,
+              436,
+              196
+            ],
+            "center": [
+              375.59812238434563,
+              141.27021830109715
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/007-helmet.kettle.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          312,
+          87,
+          438,
+          198
+        ],
+        "size": [
+          134,
+          119
+        ],
+        "source_crop_size": [
+          126,
+          111
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          124,
+          109
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          128,
+          113
+        ],
+        "retained_pixels": 8844,
+        "background_pixels_removed": 5142,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 470,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/007-helmet.kettle.bone.png",
+        "output_sha256": "3aff542672cebd46b4e45b23ac42e98dbdb3c4d58c66cd51eb97f4a85a13c273"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/007-helmet.kettle.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/007-helmet.kettle.bone.export.json",
+        "sha256": "fe682b58f4986c47f8a51693c02089f61565d3bf332ea2bf239e53177017d40d",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          10,
+          5,
+          21,
+          15
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 28,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            10,
+            5,
+            22,
+            15
+          ],
+          "visible_height": 10,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "bb4f3cad7d7bcbe27b2bfa7224d38cc8490c9f6af7ceb8c70ffb71f4b1716337",
+          "state_occurrence_index": 7,
+          "state_name": "helmet.kettle.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/007-helmet.kettle.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/007-helmet.kettle.bone.export.json",
+        "sha256": "20b2c0e629d05d012a666e8462f5725af4b89135618ecc81c6303c453fa984df",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          20,
+          10,
+          43,
+          30
+        ],
+        "visible_height": 20,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 140,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            20,
+            10,
+            44,
+            30
+          ],
+          "visible_height": 20,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "41c36db68444aca0ac6e8a701ca7a62f5ec41c22c98be9f375d766c574d4f47c",
+          "state_occurrence_index": 7,
+          "state_name": "helmet.kettle.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 8,
+      "state_name": "helmet.horned.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        285,
+        275,
+        468,
+        384
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 324.4934489014312,
+        "selected_components": [
+          {
+            "area": 9922,
+            "box": [
+              287,
+              277,
+              466,
+              382
+            ],
+            "center": [
+              375.2262648659545,
+              324.4934489014312
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/008-helmet.horned.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          285,
+          275,
+          468,
+          384
+        ],
+        "size": [
+          191,
+          117
+        ],
+        "source_crop_size": [
+          183,
+          109
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          181,
+          107
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          185,
+          111
+        ],
+        "retained_pixels": 9923,
+        "background_pixels_removed": 10024,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 580,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/008-helmet.horned.bone.png",
+        "output_sha256": "debb30b0b487dc2f1f50a65322c3d601db108a7f5c28e8632bad592786247ad2"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/008-helmet.horned.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/008-helmet.horned.bone.export.json",
+        "sha256": "e9e3bad2320fbe19e6db9014ff2507aa0bf159793d46be820c92597a4e3368c6",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          2,
+          24,
+          12
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 12,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 32,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            5,
+            2,
+            26,
+            12
+          ],
+          "visible_height": 10,
+          "visible_width": 21,
+          "bottom_baseline_exclusive": 12,
+          "alpha_sha256": "53681d2ce250f193fe1b4fd8bf38bab36ed47f6509741ca8d3056312eadb47b2",
+          "state_occurrence_index": 8,
+          "state_name": "helmet.horned.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/008-helmet.horned.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/008-helmet.horned.bone.export.json",
+        "sha256": "cd3b2139b2fd23bb0a100d4136b9cd64ad0bfdef4624487d179863a0d359992e",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          4,
+          47,
+          23
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 23,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 152,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            4,
+            52,
+            23
+          ],
+          "visible_height": 19,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 23,
+          "alpha_sha256": "6744630610f9d50c7366e1a4c6a705a931b89e03fae84f99af14be8a0cf48e72",
+          "state_occurrence_index": 8,
+          "state_name": "helmet.horned.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 9,
+      "state_name": "helmet.crested.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        306,
+        465,
+        442,
+        588
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 535.8826982847934,
+        "selected_components": [
+          {
+            "area": 8687,
+            "box": [
+              308,
+              467,
+              440,
+              586
+            ],
+            "center": [
+              374.1123517900311,
+              535.8826982847934
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/009-helmet.crested.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          306,
+          465,
+          442,
+          588
+        ],
+        "size": [
+          144,
+          131
+        ],
+        "source_crop_size": [
+          136,
+          123
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          134,
+          121
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          138,
+          125
+        ],
+        "retained_pixels": 8683,
+        "background_pixels_removed": 8045,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 514,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/009-helmet.crested.bone.png",
+        "output_sha256": "962139df5ccc581942db5241f78544573261438c059b1e61820f972fa7a6c42b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/009-helmet.crested.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/009-helmet.crested.bone.export.json",
+        "sha256": "b580c697b0bd29cc7dbc0d0446edc2ba1f4091b3514914b74c0489dc85f22978",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          1,
+          22,
+          13
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 13,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 36,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            1,
+            23,
+            13
+          ],
+          "visible_height": 12,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 13,
+          "alpha_sha256": "fc8e3a482547c9e387b95f98ef4e220af47e03650f6df0cc2ec925b2ac3aa6ed",
+          "state_occurrence_index": 9,
+          "state_name": "helmet.crested.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/009-helmet.crested.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/009-helmet.crested.bone.export.json",
+        "sha256": "6c19090ad1ad41f089deca485f2d64ac27d3f16ecc01fdb2c96a7dfda8c59a7b",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          18,
+          2,
+          45,
+          26
+        ],
+        "visible_height": 24,
+        "baseline_exclusive": 26,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 164,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            18,
+            2,
+            46,
+            26
+          ],
+          "visible_height": 24,
+          "visible_width": 28,
+          "bottom_baseline_exclusive": 26,
+          "alpha_sha256": "70310e337d70c6cd5186896a52d7c047cc3f4f789ed78e0025c539f609fa046e",
+          "state_occurrence_index": 9,
+          "state_name": "helmet.crested.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 10,
+      "state_name": "chest.plate.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        283,
+        661,
+        465,
+        799
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 725.0184148880792,
+        "selected_components": [
+          {
+            "area": 15368,
+            "box": [
+              283,
+              663,
+              463,
+              797
+            ],
+            "center": [
+              373.1138729828215,
+              725.0184148880792
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/010-chest.plate.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          283,
+          661,
+          465,
+          799
+        ],
+        "size": [
+          190,
+          146
+        ],
+        "source_crop_size": [
+          182,
+          138
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          2,
+          180,
+          136
+        ],
+        "alpha_bbox": [
+          4,
+          6,
+          184,
+          140
+        ],
+        "retained_pixels": 15369,
+        "background_pixels_removed": 9747,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 633,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/010-chest.plate.bone.png",
+        "output_sha256": "7cd29e862e6164651cd2f8ccba3fc3c3a2c8bc51b16baafefba5d84444b285dc"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/010-chest.plate.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/010-chest.plate.bone.export.json",
+        "sha256": "9934a53bbd63e6886d63fb8141c8cdcc441d5a0252705341e5366155cfc6f2eb",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          24,
+          27
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 40,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            27
+          ],
+          "visible_height": 13,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "b81e188a5da200e4f336712e1e0aa5736c8679765734a0cad616845530dfb10a",
+          "state_occurrence_index": 10,
+          "state_name": "chest.plate.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/010-chest.plate.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/010-chest.plate.bone.export.json",
+        "sha256": "d50b545b78fab6734c3f9ffe884daca504ec5cc7f3c5db989aa83630a52b9cfe",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          29,
+          48,
+          53
+        ],
+        "visible_height": 24,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 176,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            14,
+            29,
+            50,
+            53
+          ],
+          "visible_height": 24,
+          "visible_width": 36,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "99a268f0bd203514bc55933aefeee1d933decdee4c5a101bb7076319899a6d16",
+          "state_occurrence_index": 10,
+          "state_name": "chest.plate.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays",
+        "Crop-border warning independently inspected at source2x: minor retained edge pixels, no visible object clipping"
+      ]
+    },
+    {
+      "state_index": 11,
+      "state_name": "chest.scale.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        298,
+        872,
+        443,
+        1018
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 946.2289352302995,
+        "selected_components": [
+          {
+            "area": 15393,
+            "box": [
+              300,
+              874,
+              441,
+              1016
+            ],
+            "center": [
+              369.5679204833366,
+              946.2289352302995
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/011-chest.scale.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          298,
+          872,
+          443,
+          1018
+        ],
+        "size": [
+          153,
+          154
+        ],
+        "source_crop_size": [
+          145,
+          146
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          143,
+          144
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          147,
+          148
+        ],
+        "retained_pixels": 15393,
+        "background_pixels_removed": 5777,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 578,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/011-chest.scale.bone.png",
+        "output_sha256": "a337208d0cd6f7328f7b7e3e166a805c0939fa76d29d41209bcc38e986ff1bbc"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/011-chest.scale.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/011-chest.scale.bone.export.json",
+        "sha256": "0fc7eb980fd57386a1000606a5d4bb365e02bd834bf9c4fc14b235768e4a5a29",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          14,
+          24,
+          29
+        ],
+        "visible_height": 15,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 44,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            14,
+            23,
+            29
+          ],
+          "visible_height": 15,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "3bc8967b993cf25449833663c68e864605ab1b81fd6920f3c179dd8804d9e4b1",
+          "state_occurrence_index": 11,
+          "state_name": "chest.scale.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/011-chest.scale.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/011-chest.scale.bone.export.json",
+        "sha256": "f6f90261c2b6011541edd5a2b17d068593954f89314ffb90fa9148a744560f9e",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          17,
+          29,
+          46,
+          58
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 58,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 188,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            17,
+            29,
+            47,
+            58
+          ],
+          "visible_height": 29,
+          "visible_width": 30,
+          "bottom_baseline_exclusive": 58,
+          "alpha_sha256": "59085afe576e645685653c3579aa12a65be6b770cbabef8ee1628c9608a7b6e1",
+          "state_occurrence_index": 11,
+          "state_name": "chest.scale.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 12,
+      "state_name": "chest.lamellar.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        301,
+        1089,
+        436,
+        1218
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1152.144271685761,
+        "selected_components": [
+          {
+            "area": 12220,
+            "box": [
+              303,
+              1091,
+              434,
+              1216
+            ],
+            "center": [
+              367.63330605564647,
+              1152.144271685761
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/012-chest.lamellar.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          301,
+          1089,
+          436,
+          1218
+        ],
+        "size": [
+          143,
+          137
+        ],
+        "source_crop_size": [
+          135,
+          129
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          133,
+          127
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          137,
+          131
+        ],
+        "retained_pixels": 12220,
+        "background_pixels_removed": 5195,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 524,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/012-chest.lamellar.bone.png",
+        "output_sha256": "8218748ea691c1a5dbe3bbb47f9f9fa4facd1aaa0714075453df1c5a33d2ce1d"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/012-chest.lamellar.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/012-chest.lamellar.bone.export.json",
+        "sha256": "afc4c084cc6da93e8c7b0781f858eef2665625320cf759a27aa3a3699ffd0bcb",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          14,
+          24,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 48,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            14,
+            23,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "8c37031b57c452b88715b6093f404adedb7d964eb1cb875b594595526b7e6eed",
+          "state_occurrence_index": 12,
+          "state_name": "chest.lamellar.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/012-chest.lamellar.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/012-chest.lamellar.bone.export.json",
+        "sha256": "2de41b6460b39f41f7115397cdbca80533a0859b451412f041bdce9395a2eeab",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          18,
+          29,
+          45,
+          55
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 200,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            17,
+            29,
+            47,
+            55
+          ],
+          "visible_height": 26,
+          "visible_width": 30,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "cd3dd3f0a1b1ff70c323d1f16fbf771d5cacef0409af32bf80e393afc392ad50",
+          "state_occurrence_index": 12,
+          "state_name": "chest.lamellar.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 13,
+      "state_name": "legs.plate.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+      "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "crop_box": [
+        298,
+        1284,
+        430,
+        1408
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1344.2826716780205,
+        "selected_components": [
+          {
+            "area": 12771,
+            "box": [
+              300,
+              1286,
+              428,
+              1406
+            ],
+            "center": [
+              364.09936575052853,
+              1344.2826716780205
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/013-legs.plate.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-02.png",
+        "source_sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+        "crop_box": [
+          298,
+          1284,
+          430,
+          1408
+        ],
+        "size": [
+          140,
+          132
+        ],
+        "source_crop_size": [
+          132,
+          124
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          130,
+          122
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          134,
+          126
+        ],
+        "retained_pixels": 12771,
+        "background_pixels_removed": 3597,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 508,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/013-legs.plate.bone.png",
+        "output_sha256": "6b6130b49fed6bd8b93fc21ae065e99177db536d967e85d65802995145c406e4"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/013-legs.plate.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/013-legs.plate.bone.export.json",
+        "sha256": "732c6aadd8dd53a8d988fd479479c44584b644b0a6f5afd5eb22fe8967701220",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          10,
+          22,
+          21,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 52,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 13,
+          "state_name": "legs.plate.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/013-legs.plate.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/013-legs.plate.bone.export.json",
+        "sha256": "006c989d4c8960f7f212ebe97284c1c34d76e721d9fe425efbb29608926b76b4",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          22,
+          45,
+          42,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 212,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 13,
+          "state_name": "legs.plate.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 14,
+      "state_name": "legs.scale.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+      "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "crop_box": [
+        358,
+        130,
+        493,
+        235
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 184.43522760502972,
+        "selected_components": [
+          {
+            "area": 10259,
+            "box": [
+              360,
+              132,
+              491,
+              233
+            ],
+            "center": [
+              424.6957793157228,
+              184.43522760502972
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/014-legs.scale.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+        "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+        "crop_box": [
+          358,
+          130,
+          493,
+          235
+        ],
+        "size": [
+          143,
+          113
+        ],
+        "source_crop_size": [
+          135,
+          105
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          133,
+          103
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          137,
+          107
+        ],
+        "retained_pixels": 10260,
+        "background_pixels_removed": 3915,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.25,
+          "border_background_sample_count": 476,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/014-legs.scale.bone.png",
+        "output_sha256": "58c5d0e0e62d9e40fe5aff0fcc50ff21ae4d0fbe87a418808d1d1fad39edf0d0"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/014-legs.scale.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/014-legs.scale.bone.export.json",
+        "sha256": "a50a047eb3573c9c19f7656da69d90a2b70b94b9d7026a74fb1cea019ff49fcd",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          22,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 56,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 14,
+          "state_name": "legs.scale.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/014-legs.scale.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/014-legs.scale.bone.export.json",
+        "sha256": "6a08ec39649255c8881a06fbb259861fb59c2e7fce8d2f865e780423ea06d3ed",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          44,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 224,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 14,
+          "state_name": "legs.scale.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 15,
+      "state_name": "arms.plate.bone.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+      "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "crop_box": [
+        420,
+        333,
+        492,
+        436
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 386.15071070234114,
+        "selected_components": [
+          {
+            "area": 4784,
+            "box": [
+              422,
+              335,
+              490,
+              434
+            ],
+            "center": [
+              453.9234949832776,
+              386.15071070234114
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/015-arms.plate.bone.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+        "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+        "crop_box": [
+          420,
+          333,
+          492,
+          436
+        ],
+        "size": [
+          80,
+          111
+        ],
+        "source_crop_size": [
+          72,
+          103
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          70,
+          101
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          74,
+          105
+        ],
+        "retained_pixels": 4784,
+        "background_pixels_removed": 2632,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 346,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/015-arms.plate.bone.L.png",
+        "output_sha256": "26977bb2c3994878211efca951e900bd977dcd8fdd9c451c313812d811f869fa"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/015-arms.plate.bone.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/015-arms.plate.bone.L.export.json",
+        "sha256": "8793f802735bdbc066fab372ef54845baf884d2674659e3cc1240bbbeacbebef",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          17,
+          26,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 60,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            17,
+            26,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "f5e7559519ff9f281df545b20274014699138bfead9c57e3d6c9acb8c453c51a",
+          "state_occurrence_index": 15,
+          "state_name": "arms.plate.bone.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/015-arms.plate.bone.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/015-arms.plate.bone.L.export.json",
+        "sha256": "e7075cb7b805198c9295c7758b9b3e000a4959f3740bee90c57ced74ba945e18",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          35,
+          51,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 236,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            35,
+            51,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "2a0615e881f32bf31b3d2eda5f1ca01b7ed0e1d65327d035ef5fff94fc008e3a",
+          "state_occurrence_index": 15,
+          "state_name": "arms.plate.bone.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 16,
+      "state_name": "arms.plate.bone.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+      "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "crop_box": [
+        344,
+        540,
+        413,
+        642
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 592.2153812918557,
+        "selected_components": [
+          {
+            "area": 4629,
+            "box": [
+              346,
+              542,
+              411,
+              640
+            ],
+            "center": [
+              378.4679196370706,
+              592.2153812918557
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/016-arms.plate.bone.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+        "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+        "crop_box": [
+          344,
+          540,
+          413,
+          642
+        ],
+        "size": [
+          77,
+          110
+        ],
+        "source_crop_size": [
+          69,
+          102
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          67,
+          100
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          71,
+          104
+        ],
+        "retained_pixels": 4625,
+        "background_pixels_removed": 2413,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.14999389648438,
+          "border_background_sample_count": 338,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/016-arms.plate.bone.R.png",
+        "output_sha256": "6674c14e0523e722591375081555d6fb89b2e05df025535eb017c1b988d0d131"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/016-arms.plate.bone.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/016-arms.plate.bone.R.export.json",
+        "sha256": "7591a6d51fd05b5b4bf934787c234314e1ad92143be3e088e69b112e034d6375",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          17,
+          13,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 64,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            17,
+            13,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "e91b32111ced068b6aae02d5b7fbb111abb560cf169eb95cdd4d43872239f6a2",
+          "state_occurrence_index": 16,
+          "state_name": "arms.plate.bone.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "lanczos",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/016-arms.plate.bone.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/016-arms.plate.bone.R.export.json",
+        "sha256": "9c5bb0b789fc423a6a1814f5509694458486c093407cb513968c01d06b1f353e",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          35,
+          25,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 248,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            35,
+            25,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0be1eb997a3461ba89b7af4c887294ef58513f5e28bb955869b932697bd3e2c2",
+          "state_occurrence_index": 16,
+          "state_name": "arms.plate.bone.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 17,
+      "state_name": "shield.buckler.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+      "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "crop_box": [
+        371,
+        733,
+        475,
+        835
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 783.7362623286793,
+        "selected_components": [
+          {
+            "area": 7807,
+            "box": [
+              373,
+              735,
+              473,
+              833
+            ],
+            "center": [
+              422.7874983988728,
+              783.7362623286793
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/017-shield.buckler.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+        "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+        "crop_box": [
+          371,
+          733,
+          475,
+          835
+        ],
+        "size": [
+          112,
+          110
+        ],
+        "source_crop_size": [
+          104,
+          102
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          102,
+          100
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          106,
+          104
+        ],
+        "retained_pixels": 7805,
+        "background_pixels_removed": 2803,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 408,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/017-shield.buckler.bone.png",
+        "output_sha256": "fbc1016300a33ea48b3de4ddb501d46659a5b06559abe4d73e6bd0507c26a345"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/017-shield.buckler.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/017-shield.buckler.bone.export.json",
+        "sha256": "0516f82532d3531e5d1a2855845a900d2bff8d6eddabd10c58be456de6d4607f",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          18,
+          17,
+          26,
+          25
+        ],
+        "visible_height": 8,
+        "baseline_exclusive": 25,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 68,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            18,
+            17,
+            26,
+            25
+          ],
+          "visible_height": 8,
+          "visible_width": 8,
+          "bottom_baseline_exclusive": 25,
+          "alpha_sha256": "18da0f18c46469cae37bc39358737ffa8172a907daf8d2dc1a171f647b320bca",
+          "state_occurrence_index": 17,
+          "state_name": "shield.buckler.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/017-shield.buckler.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/017-shield.buckler.bone.export.json",
+        "sha256": "1e23557f34013108a642588e5e12d5c5af00a70438f581c35975a69cc8fbdde2",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          36,
+          34,
+          52,
+          50
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 50,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 260,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            36,
+            34,
+            52,
+            50
+          ],
+          "visible_height": 16,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 50,
+          "alpha_sha256": "e12247a58d99d59170ac65764a8a8f1e4401cfdca73f959eae9db885233432c4",
+          "state_occurrence_index": 17,
+          "state_name": "shield.buckler.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 18,
+      "state_name": "shield.round.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+      "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "crop_box": [
+        350,
+        915,
+        493,
+        1061
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 987.9748888307612,
+        "selected_components": [
+          {
+            "area": 15292,
+            "box": [
+              352,
+              917,
+              491,
+              1059
+            ],
+            "center": [
+              420.5922050745488,
+              987.9748888307612
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/018-shield.round.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+        "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+        "crop_box": [
+          350,
+          915,
+          493,
+          1061
+        ],
+        "size": [
+          151,
+          154
+        ],
+        "source_crop_size": [
+          143,
+          146
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          141,
+          144
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          145,
+          148
+        ],
+        "retained_pixels": 15291,
+        "background_pixels_removed": 5587,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 574,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/018-shield.round.bone.png",
+        "output_sha256": "9826a72b75ebb6f9b844193902f2f2b02fdf7f430cb8f09ca82e418172fd7583"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/018-shield.round.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/018-shield.round.bone.export.json",
+        "sha256": "bf70d20e5d44173b0e5b1a94824b791b9f3e1f61017a82e0f03f4ff6b4b34140",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          15,
+          14,
+          29,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 72,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            15,
+            14,
+            29,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6b7ee5be0cd65dd5f1cd688a92aa24e9ec267b428f530d2a49bdf30913abe56e",
+          "state_occurrence_index": 18,
+          "state_name": "shield.round.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/018-shield.round.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/018-shield.round.bone.export.json",
+        "sha256": "93880f48b43e4abeae9d588ab8e88b1d1ea085bf23917c5ce3d98059ab870fef",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          31,
+          29,
+          56,
+          55
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 272,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            31,
+            29,
+            57,
+            55
+          ],
+          "visible_height": 26,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "67d1089c6065c7b5f40fe38048cd1623d4b820faae1f20b89a42c9fb7d6736bd",
+          "state_occurrence_index": 18,
+          "state_name": "shield.round.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 19,
+      "state_name": "shield.kite.bone",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+      "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "crop_box": [
+        367,
+        1128,
+        473,
+        1286
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1195.5064296520425,
+        "selected_components": [
+          {
+            "area": 10576,
+            "box": [
+              369,
+              1130,
+              471,
+              1284
+            ],
+            "center": [
+              419.43617624810895,
+              1195.5064296520425
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/019-shield.kite.bone.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bone/page-03.png",
+        "source_sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+        "crop_box": [
+          367,
+          1128,
+          473,
+          1286
+        ],
+        "size": [
+          114,
+          166
+        ],
+        "source_crop_size": [
+          106,
+          158
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          2,
+          104,
+          156
+        ],
+        "alpha_bbox": [
+          4,
+          6,
+          108,
+          160
+        ],
+        "retained_pixels": 10578,
+        "background_pixels_removed": 6170,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 83.0,
+          "border_background_sample_count": 522,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bone/019-shield.kite.bone.png",
+        "output_sha256": "71f1014260ee83c4b750d7b75410de99b34aa6d1fa73c243974abba61448386c"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/019-shield.kite.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bone/019-shield.kite.bone.export.json",
+        "sha256": "bbe541eebc548e9cc170645577781203d0e84c5d8aa25ab1da7660e0a7b00ee9",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          17,
+          13,
+          28,
+          29
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bone.dmi",
+          "sha256": "69b1d572bdfef0d170c50e4381561a71904e4bbabfda99b60192091b6273171f",
+          "cell_index": 76,
+          "atlas_size": [
+            288,
+            288
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            17,
+            13,
+            27,
+            29
+          ],
+          "visible_height": 16,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "11930ea2cb2c9e2627f0f5a5cc02d712aec503f05492a7add07415d545ad3476",
+          "state_occurrence_index": 19,
+          "state_name": "shield.kite.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "c1899549131f31d9ce496e8fa3182d2d7a11a4074e5a8b29ff326a3da74a72bc"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/019-shield.kite.bone.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bone/019-shield.kite.bone.export.json",
+        "sha256": "df5894afb3b2da36dfa89cafa31072216779fcc0dc745dc37f9ab9a78e8a5c2e",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          34,
+          27,
+          56,
+          59
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bone.dmi",
+          "sha256": "91800bdd1a8f0f3ad900678873ed0b7ff0520604c7c9c22268e40a081dd3ff26",
+          "cell_index": 284,
+          "atlas_size": [
+            1152,
+            1088
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            34,
+            27,
+            54,
+            59
+          ],
+          "visible_height": 32,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "6aaa5e429ff8a07fb5fc9343ec0a618d9ca3a70ce056888ce53b468553d81bd6",
+          "state_occurrence_index": 19,
+          "state_name": "shield.kite.bone",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9e6190be94ee419e0521318e8d7b3ab415715a6ca903ee5b0623e2368fd99968"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays",
+        "Crop-border warning independently inspected at source2x: minor retained edge pixels, no visible object clipping"
+      ]
+    }
+  ],
+  "state_count": 20,
+  "cutout_count": 20,
+  "height_export_count": 40,
+  "passed": true,
+  "visual_review": {
+    "native_preview": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/bone-native3x.png",
+    "source_border_warning_preview": "/private/tmp/detailed-height-border-warning-review.png",
+    "result": "Allstateschecked; no visible label fragments or neighboring objects"
+  },
+  "all_source_resolution_RGB_exact": true,
+  "all_native_heights_and_baselines_exact": true,
+  "all_source_and_native_hashes_verified": true
+}

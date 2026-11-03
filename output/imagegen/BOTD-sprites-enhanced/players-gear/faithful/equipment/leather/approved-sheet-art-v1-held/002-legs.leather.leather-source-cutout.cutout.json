@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/leather.png",
+  "source_sha256": "942f1c41eef116e859d386ab7ad5c9d60706b9dc7ad1f26a584300c759b4c6de",
+  "crop_box": [
+    320,
+    510,
+    465,
+    635
+  ],
+  "size": [
+    145,
+    125
+  ],
+  "alpha_bbox": [
+    23,
+    27,
+    127,
+    103
+  ],
+  "retained_pixels": 6387,
+  "background_pixels_removed": 11738,
+  "enclosed_candidate_pixels_retained": 1,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 78.0,
+    "border_background_sample_count": 536,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/leather/approved-sheet-art/002-legs.leather.leather-source-cutout.png",
+  "output_sha256": "41f5c809580eb2ef76d6fd6606ffb13a33a66625b4dd965708bc083574116e14"
+}

@@ -1,0 +1,79 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonbone/page-01.png",
+  "source_sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+  "crop_box": [
+    417,
+    515,
+    521,
+    688
+  ],
+  "size": [
+    112,
+    181
+  ],
+  "source_crop_size": [
+    104,
+    173
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    2,
+    2,
+    101,
+    171
+  ],
+  "alpha_bbox": [
+    6,
+    6,
+    105,
+    175
+  ],
+  "retained_pixels": 4215,
+  "background_pixels_removed": 13777,
+  "enclosed_candidate_pixels_retained": 1,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 75.0,
+    "border_background_sample_count": 550,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonbone/003-weapon.halberd.dragonbone.png",
+  "output_sha256": "7b0c7191ec18a444545a57ef0ae8dce4f6ee47cb46596f2bc1a3388a68be5cf9"
+}

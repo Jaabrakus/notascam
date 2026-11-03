@@ -1,0 +1,79 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/gold/page-03.png",
+  "source_sha256": "eec5c485ce1e39763b8b610eb627098fbb4c202752e2c349793b21ea91105569",
+  "crop_box": [
+    294,
+    1020,
+    463,
+    1141
+  ],
+  "size": [
+    177,
+    129
+  ],
+  "source_crop_size": [
+    169,
+    121
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    2,
+    2,
+    167,
+    119
+  ],
+  "alpha_bbox": [
+    6,
+    6,
+    171,
+    123
+  ],
+  "retained_pixels": 12443,
+  "background_pixels_removed": 8006,
+  "enclosed_candidate_pixels_retained": 2,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 77.0,
+    "border_background_sample_count": 576,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/gold/019-chest.plate.gold.png",
+  "output_sha256": "cd30b078e526e49485df333e5a8bb8e0a0779dcd757e18df14f12f42c4f68843"
+}

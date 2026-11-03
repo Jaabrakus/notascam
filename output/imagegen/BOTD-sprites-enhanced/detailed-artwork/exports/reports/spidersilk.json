@@ -1,0 +1,1138 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "spidersilk",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "helmet.kettle.spidersilk",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+      "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+      "crop_box": [
+        390,
+        70,
+        535,
+        205
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/000-helmet.kettle.spidersilk.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+        "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+        "crop_box": [
+          390,
+          70,
+          535,
+          205
+        ],
+        "size": [
+          153,
+          143
+        ],
+        "source_crop_size": [
+          145,
+          135
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          28,
+          30,
+          111,
+          117
+        ],
+        "alpha_bbox": [
+          32,
+          34,
+          115,
+          121
+        ],
+        "retained_pixels": 5351,
+        "background_pixels_removed": 14224,
+        "enclosed_candidate_pixels_retained": 123,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 556,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/000-helmet.kettle.spidersilk.png",
+        "output_sha256": "e71f1fe1dfb49eff64319d4506320dcd908ef1beb42167219009fe9d9c5aaa11"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/000-helmet.kettle.spidersilk.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/000-helmet.kettle.spidersilk.export.json",
+        "sha256": "020a577b942b6dde71fa8869249da7aac5faf0f489045d3db2d63740fb0df1f0",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          10,
+          5,
+          21,
+          17
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 17,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spidersilk.dmi",
+          "sha256": "7a7e4238c602d066ff12a0d538b295c47bd1132dc96453bbcdd2392f21eb2593",
+          "cell_index": 0,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            10,
+            5,
+            22,
+            17
+          ],
+          "visible_height": 12,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 17,
+          "alpha_sha256": "02b8157fa43b2570497e61351ddd577b85a37ceb933056df985e8a77f3408b47",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.spidersilk",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "e3b1d8c8bb61275f62972d7b6b670f09727cf5824ef29454241cc9d4df8807de"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/000-helmet.kettle.spidersilk.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/000-helmet.kettle.spidersilk.export.json",
+        "sha256": "b400b6c3d4ccf31b440834a19199d609735b4405c63b0e60bc21892cc3356bd3",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          20,
+          10,
+          43,
+          34
+        ],
+        "visible_height": 24,
+        "baseline_exclusive": 34,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spidersilk.dmi",
+          "sha256": "832d5bc1b6dfcea254b4989328d9693a114e02ffb8c7d168c461f97230f48254",
+          "cell_index": 0,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            20,
+            10,
+            44,
+            34
+          ],
+          "visible_height": 24,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 34,
+          "alpha_sha256": "f6c29ef16ce35b3fb6f68d2b2eff685040930a0f96cb1c46e413f64c96b1a063",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.spidersilk",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "110aed5ae207a1a5f2f3efa48e04259769b90252457f3d1ad074f7254593bfe1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "chest.leather.spidersilk",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+      "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+      "crop_box": [
+        350,
+        320,
+        555,
+        500
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/001-chest.leather.spidersilk.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+        "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+        "crop_box": [
+          350,
+          320,
+          555,
+          500
+        ],
+        "size": [
+          213,
+          188
+        ],
+        "source_crop_size": [
+          205,
+          180
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          20,
+          29,
+          199,
+          160
+        ],
+        "alpha_bbox": [
+          24,
+          33,
+          203,
+          164
+        ],
+        "retained_pixels": 10303,
+        "background_pixels_removed": 26597,
+        "enclosed_candidate_pixels_retained": 46,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 766,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/001-chest.leather.spidersilk.png",
+        "output_sha256": "1e362552bf5e30d7e2bfb8f3dbdeafdcb0a2a0f79077a0cf47f604e69714b8df"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/001-chest.leather.spidersilk.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/001-chest.leather.spidersilk.export.json",
+        "sha256": "6aaa9313fcbb43979285a34cd6b8a742a74e2de6a97188e14e0928ec6fb7e14a",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          5,
+          10,
+          27,
+          26
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 26,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spidersilk.dmi",
+          "sha256": "7a7e4238c602d066ff12a0d538b295c47bd1132dc96453bbcdd2392f21eb2593",
+          "cell_index": 4,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            4,
+            10,
+            28,
+            26
+          ],
+          "visible_height": 16,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 26,
+          "alpha_sha256": "c72c3fc8491ac55b159327484195c4dfbc3257c5f610b555bc6d6ed02d2d349d",
+          "state_occurrence_index": 1,
+          "state_name": "chest.leather.spidersilk",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "e3b1d8c8bb61275f62972d7b6b670f09727cf5824ef29454241cc9d4df8807de"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/001-chest.leather.spidersilk.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/001-chest.leather.spidersilk.export.json",
+        "sha256": "b39ece6f06db934187b43dd954fd08c7b9d4490f925b40edfbf530cf8676f54f",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          10,
+          20,
+          52,
+          51
+        ],
+        "visible_height": 31,
+        "baseline_exclusive": 51,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spidersilk.dmi",
+          "sha256": "832d5bc1b6dfcea254b4989328d9693a114e02ffb8c7d168c461f97230f48254",
+          "cell_index": 12,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            8,
+            20,
+            55,
+            51
+          ],
+          "visible_height": 31,
+          "visible_width": 47,
+          "bottom_baseline_exclusive": 51,
+          "alpha_sha256": "c9007a26cab8e0587bdefe7f237d684e51c01219668fea72f7037f534541c110",
+          "state_occurrence_index": 1,
+          "state_name": "chest.leather.spidersilk",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "110aed5ae207a1a5f2f3efa48e04259769b90252457f3d1ad074f7254593bfe1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "legs.leather.spidersilk",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+      "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+      "crop_box": [
+        380,
+        630,
+        540,
+        770
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/002-legs.leather.spidersilk.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+        "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+        "crop_box": [
+          380,
+          630,
+          540,
+          770
+        ],
+        "size": [
+          168,
+          148
+        ],
+        "source_crop_size": [
+          160,
+          140
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          23,
+          35,
+          137,
+          116
+        ],
+        "alpha_bbox": [
+          27,
+          39,
+          141,
+          120
+        ],
+        "retained_pixels": 7481,
+        "background_pixels_removed": 14919,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 596,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/002-legs.leather.spidersilk.png",
+        "output_sha256": "d2827424797fcce7824b5d9ebfd882523c01e4f558f2b5dcfcffe2cedc691406"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/002-legs.leather.spidersilk.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/002-legs.leather.spidersilk.export.json",
+        "sha256": "ca620520d164d9eb7cda5bed468b1055ea48d0d7e20ba7e2374451b6b90a13fd",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          23,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spidersilk.dmi",
+          "sha256": "7a7e4238c602d066ff12a0d538b295c47bd1132dc96453bbcdd2392f21eb2593",
+          "cell_index": 8,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 2,
+          "state_name": "legs.leather.spidersilk",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "e3b1d8c8bb61275f62972d7b6b670f09727cf5824ef29454241cc9d4df8807de"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/002-legs.leather.spidersilk.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/002-legs.leather.spidersilk.export.json",
+        "sha256": "d9cbe1d8dac9816cc13257af75881f38c94c140a3389aa35628072624b9b60e9",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          46,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spidersilk.dmi",
+          "sha256": "832d5bc1b6dfcea254b4989328d9693a114e02ffb8c7d168c461f97230f48254",
+          "cell_index": 24,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 2,
+          "state_name": "legs.leather.spidersilk",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "110aed5ae207a1a5f2f3efa48e04259769b90252457f3d1ad074f7254593bfe1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "arms.leather.spidersilk.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+      "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+      "crop_box": [
+        430,
+        870,
+        535,
+        960
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/003-arms.leather.spidersilk.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+        "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+        "crop_box": [
+          430,
+          870,
+          535,
+          960
+        ],
+        "size": [
+          113,
+          98
+        ],
+        "source_crop_size": [
+          105,
+          90
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          35,
+          28,
+          83,
+          75
+        ],
+        "alpha_bbox": [
+          39,
+          32,
+          87,
+          79
+        ],
+        "retained_pixels": 1572,
+        "background_pixels_removed": 7878,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 386,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/003-arms.leather.spidersilk.L.png",
+        "output_sha256": "c3b553fc8ab46f80ccfa34fe78290669a5b3438667759f6a68b2fd2c814714a6"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/003-arms.leather.spidersilk.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/003-arms.leather.spidersilk.L.export.json",
+        "sha256": "b1f8262e3a5f220ab25b2d7e9bbb0a2c869adbe590c880b80c1d3164f42d8f37",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          21,
+          25,
+          27
+        ],
+        "visible_height": 6,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spidersilk.dmi",
+          "sha256": "7a7e4238c602d066ff12a0d538b295c47bd1132dc96453bbcdd2392f21eb2593",
+          "cell_index": 12,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            21,
+            26,
+            27
+          ],
+          "visible_height": 6,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "dc5c0f5c8ffc7a18a1eb603d78957614692fb0b6339b9de3a848c150b425c686",
+          "state_occurrence_index": 3,
+          "state_name": "arms.leather.spidersilk.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "e3b1d8c8bb61275f62972d7b6b670f09727cf5824ef29454241cc9d4df8807de"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/003-arms.leather.spidersilk.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/003-arms.leather.spidersilk.L.export.json",
+        "sha256": "85c362755ddcaf64d2257ca03d75b13008b7ba1923fbda0c78bd8024217acf2f",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          41,
+          51,
+          53
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spidersilk.dmi",
+          "sha256": "832d5bc1b6dfcea254b4989328d9693a114e02ffb8c7d168c461f97230f48254",
+          "cell_index": 36,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            41,
+            51,
+            53
+          ],
+          "visible_height": 12,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0e81f7b4cef5a52ff99a0beabbeb42f1fcf70ee9ae90213498eeeb586425a2d7",
+          "state_occurrence_index": 3,
+          "state_name": "arms.leather.spidersilk.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "110aed5ae207a1a5f2f3efa48e04259769b90252457f3d1ad074f7254593bfe1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "arms.leather.spidersilk.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+      "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+      "crop_box": [
+        365,
+        1100,
+        475,
+        1200
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/004-arms.leather.spidersilk.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spidersilk/page-01.png",
+        "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+        "crop_box": [
+          365,
+          1100,
+          475,
+          1200
+        ],
+        "size": [
+          118,
+          108
+        ],
+        "source_crop_size": [
+          110,
+          100
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          28,
+          32,
+          75,
+          75
+        ],
+        "alpha_bbox": [
+          32,
+          36,
+          79,
+          79
+        ],
+        "retained_pixels": 1447,
+        "background_pixels_removed": 9553,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 416,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spidersilk/004-arms.leather.spidersilk.R.png",
+        "output_sha256": "b1a9358d5a5d795b129e6fc3f268962ae3912309b8ec040f8b71aa80dc08989e"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/004-arms.leather.spidersilk.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spidersilk/004-arms.leather.spidersilk.R.export.json",
+        "sha256": "41099770bca5d4ec991c31d46f3656b03f8b8096d65e425c4f0af76f2fc5e965",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          21,
+          13,
+          27
+        ],
+        "visible_height": 6,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spidersilk.dmi",
+          "sha256": "7a7e4238c602d066ff12a0d538b295c47bd1132dc96453bbcdd2392f21eb2593",
+          "cell_index": 16,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            21,
+            13,
+            27
+          ],
+          "visible_height": 6,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "75f79da5ee0e9c4bc97c38a510cd31dc6a8088462930c3ba59ab1c447acaf8fc",
+          "state_occurrence_index": 4,
+          "state_name": "arms.leather.spidersilk.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "e3b1d8c8bb61275f62972d7b6b670f09727cf5824ef29454241cc9d4df8807de"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/004-arms.leather.spidersilk.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spidersilk/004-arms.leather.spidersilk.R.export.json",
+        "sha256": "99802081cd3a7385a6373e3cc13f545179c5b1f99493e4cfd933408afdf93dff",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          41,
+          26,
+          53
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spidersilk.dmi",
+          "sha256": "832d5bc1b6dfcea254b4989328d9693a114e02ffb8c7d168c461f97230f48254",
+          "cell_index": 48,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            41,
+            25,
+            53
+          ],
+          "visible_height": 12,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "b3c256004a2c5eae4b6e80fea59c683a2522553fd54be2dbd3a220681b523b6c",
+          "state_occurrence_index": 4,
+          "state_name": "arms.leather.spidersilk.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "110aed5ae207a1a5f2f3efa48e04259769b90252457f3d1ad074f7254593bfe1"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    }
+  ],
+  "state_count": 5,
+  "cutout_count": 5,
+  "height_export_count": 10,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/spidersilk-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/spidersilk-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

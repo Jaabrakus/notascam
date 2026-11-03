@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:46.907129+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/silver/008-weapon.morning_star.silver.png",
+    "sha256": "ed66bd637a717bf85a130d0913d89812295b2896a8593b15165aef04eab2388a",
+    "size": [
+      120,
+      117
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      114,
+      111
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 10776,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      114,
+      111
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      114,
+      111
+    ],
+    "source_crop_size": [
+      108,
+      105
+    ],
+    "crop_rgba_sha256": "8f6f14955675c905cb380083a37ebb1ed2fd88f0de0e697d196d9b623c9d174d",
+    "discarded_pixel_count": 2700,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/silver.dmi",
+    "sha256": "e70ba48273b0295e3925aa205c70da43cedda55ebaf94ebabcd082ceabb0a631",
+    "cell_index": 32,
+    "atlas_size": [
+      416,
+      384
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      0,
+      15,
+      13,
+      28
+    ],
+    "visible_height": 13,
+    "visible_width": 13,
+    "bottom_baseline_exclusive": 28,
+    "alpha_sha256": "e4285b1700bf557bfd9ef6d536ae4222800f2e3faa93c4df6bce5a5bf81530bd",
+    "state_occurrence_index": 8,
+    "state_name": "weapon.morning star.silver",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "27ea0df34d75904c014d0c687f4f3f3049a4aaa412f9cc753179a2a78b9a6aef"
+  },
+  "placement": {
+    "target_visible_height": 13,
+    "proportional_content_size": [
+      13,
+      13
+    ],
+    "uniform_scale": 0.12380952380952381,
+    "actual_axis_scales": [
+      0.12037037037037036,
+      0.12380952380952381
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      0,
+      15,
+      13,
+      28
+    ],
+    "actual_alpha_bbox": [
+      0,
+      15,
+      13,
+      28
+    ],
+    "actual_visible_height": 13,
+    "actual_visible_width": 13,
+    "bottom_baseline_exclusive": 28,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/silver/008-weapon.morning_star.silver.png",
+    "sha256": "62f1107b34ebac6a3ab37df57fb2144c577b76a1c96244f35e90b2ce1e20e42c",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      0,
+      15,
+      13,
+      28
+    ],
+    "alpha_sha256": "ad220d29f37f814a944faf170f8ec505a1e8b0555c10047f860310a38d0c177f",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

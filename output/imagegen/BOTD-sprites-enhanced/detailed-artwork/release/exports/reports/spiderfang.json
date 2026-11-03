@@ -1,0 +1,916 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "spiderfang",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "weapon.dagger.spiderfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+      "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+      "crop_box": [
+        380,
+        180,
+        540,
+        300
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/000-weapon.dagger.spiderfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+        "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+        "crop_box": [
+          380,
+          180,
+          540,
+          300
+        ],
+        "size": [
+          168,
+          128
+        ],
+        "source_crop_size": [
+          160,
+          120
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          65,
+          28,
+          131,
+          102
+        ],
+        "alpha_bbox": [
+          69,
+          32,
+          135,
+          106
+        ],
+        "retained_pixels": 2119,
+        "background_pixels_removed": 17081,
+        "enclosed_candidate_pixels_retained": 135,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 556,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/000-weapon.dagger.spiderfang.png",
+        "output_sha256": "87657c2c0a4c74897479ea4eebf1bd2b42a74a8ccf0d1bed4ce2f74999d0c9a9"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/000-weapon.dagger.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/000-weapon.dagger.spiderfang.export.json",
+        "sha256": "7616148a2f3a8455073768c057b63052c56b301f63ddc7c17431ea99f4985116",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          20,
+          14,
+          29
+        ],
+        "visible_height": 9,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spiderfang.dmi",
+          "sha256": "ab9e8092d50c6bb886df01d0bd99f12bb5421cefb514f53d67776902360d366b",
+          "cell_index": 0,
+          "atlas_size": [
+            128,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            20,
+            14,
+            29
+          ],
+          "visible_height": 9,
+          "visible_width": 8,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "728d8798c3d783d79b74e32dd21f1b959fa331cf8d315cde84b68b32af109865",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.dagger.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "0b75923014e12232cc7881c0f4f65c88fdf8b6870fde073ff5196f8b107de1ca"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/000-weapon.dagger.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/000-weapon.dagger.spiderfang.export.json",
+        "sha256": "de62e206b7705433fe0fe77c3eb2d5fb04f4eb715a4ae671761499aa82be9d29",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          11,
+          40,
+          27,
+          58
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 58,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spiderfang.dmi",
+          "sha256": "5d30aa0e7ef4d14c0f99e9e1366012c2d367f5dc9cd051bcb2b89b7288fc275a",
+          "cell_index": 0,
+          "atlas_size": [
+            576,
+            576
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            40,
+            28,
+            58
+          ],
+          "visible_height": 18,
+          "visible_width": 17,
+          "bottom_baseline_exclusive": 58,
+          "alpha_sha256": "6b6c061a842c2c6071cf49ba1127335915c1527565cdf0b309b5d527174feb00",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.dagger.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a67f8607365cc4a1af9f5eb7e89908db5dce885f73950ac4c6540c2046b1be60"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "weapon.arming sword.spiderfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+      "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+      "crop_box": [
+        380,
+        395,
+        545,
+        560
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/001-weapon.arming_sword.spiderfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+        "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+        "crop_box": [
+          380,
+          395,
+          545,
+          560
+        ],
+        "size": [
+          173,
+          173
+        ],
+        "source_crop_size": [
+          165,
+          165
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          29,
+          136,
+          145
+        ],
+        "alpha_bbox": [
+          34,
+          33,
+          140,
+          149
+        ],
+        "retained_pixels": 3744,
+        "background_pixels_removed": 23481,
+        "enclosed_candidate_pixels_retained": 283,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 656,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/001-weapon.arming_sword.spiderfang.png",
+        "output_sha256": "1d65297be6dd41c2f8df30c8fc8dd3b684384ecdf5a055516c8cedb3944259f7"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/001-weapon.arming_sword.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/001-weapon.arming_sword.spiderfang.export.json",
+        "sha256": "6a66610af2b47d70198af79a2dcefd3504154c08f99b82fa14b7df59fd433612",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          15,
+          15,
+          29
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spiderfang.dmi",
+          "sha256": "ab9e8092d50c6bb886df01d0bd99f12bb5421cefb514f53d67776902360d366b",
+          "cell_index": 4,
+          "atlas_size": [
+            128,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            2,
+            15,
+            15,
+            29
+          ],
+          "visible_height": 14,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "2a29d55255f18226758c1708f4ff0abd56a3ccdbd952d09e3d8c7a94bb7feb1b",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.arming sword.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "0b75923014e12232cc7881c0f4f65c88fdf8b6870fde073ff5196f8b107de1ca"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/001-weapon.arming_sword.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/001-weapon.arming_sword.spiderfang.export.json",
+        "sha256": "42a15afe9c2bfd415e82f969d035683b9ad3bee8b7492b743a7aa9238b256505",
+        "size": [
+          67,
+          64
+        ],
+        "alpha_bbox": [
+          5,
+          29,
+          32,
+          59
+        ],
+        "visible_height": 30,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spiderfang.dmi",
+          "sha256": "5d30aa0e7ef4d14c0f99e9e1366012c2d367f5dc9cd051bcb2b89b7288fc275a",
+          "cell_index": 20,
+          "atlas_size": [
+            576,
+            576
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            5,
+            29,
+            29,
+            59
+          ],
+          "visible_height": 30,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "dca75d64182da68e7507cd8619afb3baea2273507bd27d9b20b4b30a5ddc9200",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.arming sword.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a67f8607365cc4a1af9f5eb7e89908db5dce885f73950ac4c6540c2046b1be60"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "weapon.scimitar.spiderfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+      "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+      "crop_box": [
+        390,
+        635,
+        540,
+        805
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/002-weapon.scimitar.spiderfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+        "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+        "crop_box": [
+          390,
+          635,
+          540,
+          805
+        ],
+        "size": [
+          158,
+          178
+        ],
+        "source_crop_size": [
+          150,
+          170
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          36,
+          23,
+          123,
+          151
+        ],
+        "alpha_bbox": [
+          40,
+          27,
+          127,
+          155
+        ],
+        "retained_pixels": 3755,
+        "background_pixels_removed": 21745,
+        "enclosed_candidate_pixels_retained": 335,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 636,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/002-weapon.scimitar.spiderfang.png",
+        "output_sha256": "0b0fa4f408319bbdfe952421c0111b8ad051711cf0ea5ae7f4f047ed315ed7d3"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/002-weapon.scimitar.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/002-weapon.scimitar.spiderfang.export.json",
+        "sha256": "240abeaf22e0e3982816b581b87c16d4d38005738bce6ebf8584ca50dc5a2f02",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          4,
+          12,
+          16,
+          29
+        ],
+        "visible_height": 17,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spiderfang.dmi",
+          "sha256": "ab9e8092d50c6bb886df01d0bd99f12bb5421cefb514f53d67776902360d366b",
+          "cell_index": 8,
+          "atlas_size": [
+            128,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            4,
+            12,
+            15,
+            29
+          ],
+          "visible_height": 17,
+          "visible_width": 11,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "bc79a94e0fa684ac5b144f4b3cf74db6a6bc6246d61735f1734729395ae88119",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.scimitar.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "0b75923014e12232cc7881c0f4f65c88fdf8b6870fde073ff5196f8b107de1ca"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/002-weapon.scimitar.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/002-weapon.scimitar.spiderfang.export.json",
+        "sha256": "dea1d6290a5f31b45b8f5730130804812593fafda3a7806a8e6cbc0d7190ecfa",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          9,
+          24,
+          33,
+          59
+        ],
+        "visible_height": 35,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spiderfang.dmi",
+          "sha256": "5d30aa0e7ef4d14c0f99e9e1366012c2d367f5dc9cd051bcb2b89b7288fc275a",
+          "cell_index": 40,
+          "atlas_size": [
+            576,
+            576
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            9,
+            24,
+            29,
+            59
+          ],
+          "visible_height": 35,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "322b13ee081a73becf36baaaaf972821a0e5bd6b1476e6d6df35a6ac4c65ef6b",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.scimitar.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a67f8607365cc4a1af9f5eb7e89908db5dce885f73950ac4c6540c2046b1be60"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "weapon.spear.spiderfang",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+      "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+      "crop_box": [
+        380,
+        805,
+        535,
+        1085
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/003-weapon.spear.spiderfang.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/spiderfang/page-01.png",
+        "source_sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+        "crop_box": [
+          380,
+          805,
+          535,
+          1085
+        ],
+        "size": [
+          163,
+          288
+        ],
+        "source_crop_size": [
+          155,
+          280
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          26,
+          133,
+          264
+        ],
+        "alpha_bbox": [
+          34,
+          30,
+          137,
+          268
+        ],
+        "retained_pixels": 5081,
+        "background_pixels_removed": 38319,
+        "enclosed_candidate_pixels_retained": 218,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 75.0,
+          "border_background_sample_count": 866,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/003-weapon.spear.spiderfang.png",
+        "output_sha256": "075c7d379ca21f56df00e5fdd5b47e2a3dc02e490fda5f62a87e79f609423239"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/003-weapon.spear.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/003-weapon.spear.spiderfang.export.json",
+        "sha256": "e060a1deafc5d20a5bd743da6f58c4c0a4d553e05346d1a86d0e43ee1f565ed0",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          1,
+          14,
+          32
+        ],
+        "visible_height": 31,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spiderfang.dmi",
+          "sha256": "ab9e8092d50c6bb886df01d0bd99f12bb5421cefb514f53d67776902360d366b",
+          "cell_index": 12,
+          "atlas_size": [
+            128,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            1,
+            14,
+            32
+          ],
+          "visible_height": 31,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "9301fe6fce1f928342327fd9ad879c24cd6a73b1131f5b8366b5e22d5e455192",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.spear.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "0b75923014e12232cc7881c0f4f65c88fdf8b6870fde073ff5196f8b107de1ca"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/003-weapon.spear.spiderfang.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/spiderfang/003-weapon.spear.spiderfang.export.json",
+        "sha256": "2e921f8d22aa93f28ed4f86fa6bcb545b676416951464fdc1fadd5a7e2b21dff",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          2,
+          29,
+          64
+        ],
+        "visible_height": 62,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/spiderfang.dmi",
+          "sha256": "5d30aa0e7ef4d14c0f99e9e1366012c2d367f5dc9cd051bcb2b89b7288fc275a",
+          "cell_index": 60,
+          "atlas_size": [
+            576,
+            576
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            2,
+            27,
+            64
+          ],
+          "visible_height": 62,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "bd129ff7afe98203dcd7f62b4b794073f1eb45cd0e47c9f4456c287aed58c24b",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.spear.spiderfang",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "a67f8607365cc4a1af9f5eb7e89908db5dce885f73950ac4c6540c2046b1be60"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    }
+  ],
+  "state_count": 4,
+  "cutout_count": 4,
+  "height_export_count": 8,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/spiderfang-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/spiderfang-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

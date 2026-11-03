@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T17:22:27.360584+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/source-art/stonelimb-Arm.png",
+    "sha256": "d5e2d08437fc72db889ddbcdd5cab63b4c31d79b6b9f60348d5900f73454da03",
+    "size": [
+      1857,
+      847
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      177,
+      184,
+      1677,
+      798
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 1226308,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 345538,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      177,
+      184,
+      1677,
+      798
+    ],
+    "requested_source_crop": [
+      440,
+      190,
+      1445,
+      640
+    ],
+    "effective_source_crop": [
+      444,
+      196,
+      1439,
+      635
+    ],
+    "source_crop_size": [
+      995,
+      439
+    ],
+    "crop_rgba_sha256": "22b2e548f3c79e5f40486ea86ecae4989d0f2340c0193ee0cbf6dc45be9f8097",
+    "discarded_pixel_count": 1136074,
+    "discarded_nonzero_alpha_pixel_count": 438,
+    "discarded_maximum_alpha": 1,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Items/stonelimb.dmi",
+    "sha256": "438a19aa08ff9c8637c5a9131dbdec46049fa49603d96437ef8d402e3f6a5551",
+    "cell_index": 0,
+    "atlas_size": [
+      32,
+      32
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      11,
+      13,
+      20,
+      17
+    ],
+    "visible_height": 4,
+    "visible_width": 9,
+    "bottom_baseline_exclusive": 17,
+    "alpha_sha256": "167741dc742b35bcfe0d170312eee2a9cc545a5692a95a141cca5b7ae76e12e2",
+    "state_occurrence_index": 0,
+    "state_name": "Arm",
+    "state_fields": [
+      [
+        "dirs",
+        "1"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "15115dcf8f227fa99596b3c77e76afe5a221e5bc58fce1291893c8514d78e4cf"
+  },
+  "placement": {
+    "target_visible_height": 4,
+    "proportional_content_size": [
+      9,
+      4
+    ],
+    "uniform_scale": 0.009111617312072893,
+    "actual_axis_scales": [
+      0.009045226130653266,
+      0.009111617312072893
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      11,
+      13,
+      20,
+      17
+    ],
+    "actual_alpha_bbox": [
+      11,
+      13,
+      20,
+      17
+    ],
+    "actual_visible_height": 4,
+    "actual_visible_width": 9,
+    "bottom_baseline_exclusive": 17,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/stonelimb/Arm.png",
+    "sha256": "a747e48e987334a5dac768f27a3a7bd7886a3dd09edffe2340aba83307ece20b",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      11,
+      13,
+      20,
+      17
+    ],
+    "alpha_sha256": "8618a95138c1b5cd64a0b083f01907ec769f9cfdd14e2b9e486420e7b05999c4",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 30
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

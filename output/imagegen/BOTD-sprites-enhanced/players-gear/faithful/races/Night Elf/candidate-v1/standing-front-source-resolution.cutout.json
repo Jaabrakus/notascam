@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/Races64/Night Elf.png",
+  "source_sha256": "a60064d6ad7e4afd3d55db7aa245b44fb39393df9e2f3d6b7251f072084c3aec",
+  "crop_box": [
+    76,
+    11,
+    144,
+    100
+  ],
+  "size": [
+    68,
+    89
+  ],
+  "alpha_bbox": [
+    10,
+    6,
+    51,
+    82
+  ],
+  "retained_pixels": 2620,
+  "background_pixels_removed": 3432,
+  "enclosed_candidate_pixels_retained": 5,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red": true,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.48,
+    "red_minimum": 13,
+    "blue_ceiling": 68.0,
+    "border_background_sample_count": 310,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-source-resolution.png",
+  "output_sha256": "46083ce3e45546da262029192b5137ef17d84e94468abaa9820d810ff025ffb4"
+}

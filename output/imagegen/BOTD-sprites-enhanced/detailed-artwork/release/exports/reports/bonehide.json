@@ -1,0 +1,1140 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "bonehide",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "complete_visual_and_height_review_pass",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "helmet.kettle.bonehide",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+      "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+      "crop_box": [
+        370,
+        65,
+        550,
+        190
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/000-helmet.kettle.bonehide.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+        "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+        "crop_box": [
+          370,
+          65,
+          550,
+          190
+        ],
+        "size": [
+          188,
+          133
+        ],
+        "source_crop_size": [
+          180,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          20,
+          15,
+          153,
+          108
+        ],
+        "alpha_bbox": [
+          24,
+          19,
+          157,
+          112
+        ],
+        "retained_pixels": 7854,
+        "background_pixels_removed": 14646,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 606,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/000-helmet.kettle.bonehide.png",
+        "output_sha256": "2acf7db0f429f6be0bb4d0e06e232cc28239305c534e5369246a37ed04f11f9a"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/000-helmet.kettle.bonehide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/000-helmet.kettle.bonehide.export.json",
+        "sha256": "8bf838c42850226c75b6aec3b4102f96c7b5348ceeddc025c7162639f6f0244e",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          8,
+          4,
+          24,
+          15
+        ],
+        "visible_height": 11,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bonehide.dmi",
+          "sha256": "4816795a280a955c6fe395775b7a246d3ae3e02185d03609dac6c9e20cdd9c0d",
+          "cell_index": 0,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            8,
+            4,
+            24,
+            15
+          ],
+          "visible_height": 11,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "2a10c36430bbbf9f04f3d9235b47b75812b9c9ea3ee473d083554ddc8c5f4216",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.bonehide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6eabd4d10c50d19bccd9334ca13a093d137a624a5b6a8fdfd5589e0d076bc876"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/000-helmet.kettle.bonehide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/000-helmet.kettle.bonehide.export.json",
+        "sha256": "67646af0eed540220e09ea844cd9b42137ab31d50e0701c3a0f12244d0d576e8",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          7,
+          49,
+          30
+        ],
+        "visible_height": 23,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bonehide.dmi",
+          "sha256": "c785c23759235c56cff71ba42f0daf04ba10000ad99008971d71ba97326fda74",
+          "cell_index": 0,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            16,
+            7,
+            48,
+            30
+          ],
+          "visible_height": 23,
+          "visible_width": 32,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "42e29028704a9b940a3c8890990110c71ef3d65340d54b029ef9025c44a2ce63",
+          "state_occurrence_index": 0,
+          "state_name": "helmet.kettle.bonehide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9a7cbb19b565b08512452a5ea2baf67e8f413c7a14ddefb344cee225f03d5156"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "chest.leather.bonehide",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+      "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+      "crop_box": [
+        350,
+        350,
+        555,
+        505
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/001-chest.leather.bonehide.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+        "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+        "crop_box": [
+          350,
+          350,
+          555,
+          505
+        ],
+        "size": [
+          213,
+          163
+        ],
+        "source_crop_size": [
+          205,
+          155
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          17,
+          27,
+          198,
+          136
+        ],
+        "alpha_bbox": [
+          21,
+          31,
+          202,
+          140
+        ],
+        "retained_pixels": 11663,
+        "background_pixels_removed": 20112,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 716,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/001-chest.leather.bonehide.png",
+        "output_sha256": "965531534229b6944a75b5f26845eb173307cd23ce04c192f395d66659d057a3"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/001-chest.leather.bonehide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/001-chest.leather.bonehide.export.json",
+        "sha256": "5fbeb37cbf5a6efa61320f53591545ad68cba76458fd93e45c0aef29211c2511",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          14,
+          26,
+          26
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 26,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bonehide.dmi",
+          "sha256": "4816795a280a955c6fe395775b7a246d3ae3e02185d03609dac6c9e20cdd9c0d",
+          "cell_index": 4,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            14,
+            26,
+            26
+          ],
+          "visible_height": 12,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 26,
+          "alpha_sha256": "4ebc455b0d008c042fb7dd2bcf40383637468a42dd8aa19f30d3c102b9d8326a",
+          "state_occurrence_index": 1,
+          "state_name": "chest.leather.bonehide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6eabd4d10c50d19bccd9334ca13a093d137a624a5b6a8fdfd5589e0d076bc876"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/001-chest.leather.bonehide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/001-chest.leather.bonehide.export.json",
+        "sha256": "ad7abea206601d4c879e52a01fcf10357b4c65ddd57b5bcaaee75264b6fcf642",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          29,
+          50,
+          51
+        ],
+        "visible_height": 22,
+        "baseline_exclusive": 51,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bonehide.dmi",
+          "sha256": "c785c23759235c56cff71ba42f0daf04ba10000ad99008971d71ba97326fda74",
+          "cell_index": 12,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            11,
+            29,
+            52,
+            51
+          ],
+          "visible_height": 22,
+          "visible_width": 41,
+          "bottom_baseline_exclusive": 51,
+          "alpha_sha256": "6b8ffb319c976dcce5e32f85f7f0d9b01c0544b327e90f5b79f7931eeb219a04",
+          "state_occurrence_index": 1,
+          "state_name": "chest.leather.bonehide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9a7cbb19b565b08512452a5ea2baf67e8f413c7a14ddefb344cee225f03d5156"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "legs.leather.bonehide",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+      "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+      "crop_box": [
+        375,
+        630,
+        540,
+        775
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/002-legs.leather.bonehide.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+        "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+        "crop_box": [
+          375,
+          630,
+          540,
+          775
+        ],
+        "size": [
+          173,
+          153
+        ],
+        "source_crop_size": [
+          165,
+          145
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          18,
+          28,
+          146,
+          126
+        ],
+        "alpha_bbox": [
+          22,
+          32,
+          150,
+          130
+        ],
+        "retained_pixels": 10447,
+        "background_pixels_removed": 13478,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 616,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/002-legs.leather.bonehide.png",
+        "output_sha256": "15a13983c71ece9581e8c6fc1b30071c2bf49a535bcfb2a6b9db129b1a8e2af2"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/002-legs.leather.bonehide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/002-legs.leather.bonehide.export.json",
+        "sha256": "4aa28405f85ee56e322fb9c896b3bc5fcfb53debf18c75e3b9000e9454cc8f42",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          22,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bonehide.dmi",
+          "sha256": "4816795a280a955c6fe395775b7a246d3ae3e02185d03609dac6c9e20cdd9c0d",
+          "cell_index": 8,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 2,
+          "state_name": "legs.leather.bonehide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6eabd4d10c50d19bccd9334ca13a093d137a624a5b6a8fdfd5589e0d076bc876"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/002-legs.leather.bonehide.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/002-legs.leather.bonehide.export.json",
+        "sha256": "12188b1bdf69012717190d187f0034706abe111d12bfce295fc29cee5c4d96a5",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          19,
+          45,
+          44,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bonehide.dmi",
+          "sha256": "c785c23759235c56cff71ba42f0daf04ba10000ad99008971d71ba97326fda74",
+          "cell_index": 24,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 2,
+          "state_name": "legs.leather.bonehide",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9a7cbb19b565b08512452a5ea2baf67e8f413c7a14ddefb344cee225f03d5156"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "arms.leather.bonehide.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+      "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+      "crop_box": [
+        390,
+        860,
+        515,
+        975
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/003-arms.leather.bonehide.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+        "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+        "crop_box": [
+          390,
+          860,
+          515,
+          975
+        ],
+        "size": [
+          133,
+          123
+        ],
+        "source_crop_size": [
+          125,
+          115
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          21,
+          97,
+          100
+        ],
+        "alpha_bbox": [
+          34,
+          25,
+          101,
+          104
+        ],
+        "retained_pixels": 3232,
+        "background_pixels_removed": 11143,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 476,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/003-arms.leather.bonehide.L.png",
+        "output_sha256": "58dd63a7c47dbdd922aa15f9eb82595bff7db42c388c5a1354fd496f55961093"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/003-arms.leather.bonehide.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/003-arms.leather.bonehide.L.export.json",
+        "sha256": "3c373c4c580bd93391053c08be33168688beaa827d0829ea79c70111229122fe",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          20,
+          24,
+          27
+        ],
+        "visible_height": 7,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bonehide.dmi",
+          "sha256": "4816795a280a955c6fe395775b7a246d3ae3e02185d03609dac6c9e20cdd9c0d",
+          "cell_index": 12,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            20,
+            26,
+            27
+          ],
+          "visible_height": 7,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "b40dd66420dae1c6c1b686b6db46ae2c381b619ddc4635265149c175dd38b23f",
+          "state_occurrence_index": 3,
+          "state_name": "arms.leather.bonehide.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6eabd4d10c50d19bccd9334ca13a093d137a624a5b6a8fdfd5589e0d076bc876"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/003-arms.leather.bonehide.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/003-arms.leather.bonehide.L.export.json",
+        "sha256": "e0e8207ee684ae99bd5a903f4dca35ce96e9dee9826a5f5dd1e7411d133aba80",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          39,
+          51,
+          53
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bonehide.dmi",
+          "sha256": "c785c23759235c56cff71ba42f0daf04ba10000ad99008971d71ba97326fda74",
+          "cell_index": 36,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            39,
+            51,
+            53
+          ],
+          "visible_height": 14,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "6bd63d1bb7b081bd0b0b6bf5a9061340b32a3df54b800c57c3cd5d5aff9151d5",
+          "state_occurrence_index": 3,
+          "state_name": "arms.leather.bonehide.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9a7cbb19b565b08512452a5ea2baf67e8f413c7a14ddefb344cee225f03d5156"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "arms.leather.bonehide.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+      "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+      "crop_box": [
+        370,
+        1080,
+        510,
+        1205
+      ],
+      "crop_method": "explicit_review_override",
+      "crop_detection": null,
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/004-arms.leather.bonehide.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/bonehide/page-01.png",
+        "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+        "crop_box": [
+          370,
+          1080,
+          510,
+          1205
+        ],
+        "size": [
+          148,
+          133
+        ],
+        "source_crop_size": [
+          140,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          30,
+          29,
+          98,
+          99
+        ],
+        "alpha_bbox": [
+          34,
+          33,
+          102,
+          103
+        ],
+        "retained_pixels": 3048,
+        "background_pixels_removed": 14452,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 79.0,
+          "border_background_sample_count": 526,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/bonehide/004-arms.leather.bonehide.R.png",
+        "output_sha256": "489f0521d340750b11007d3899495815afd16fd9e791fe13a70f281a7b4aff66"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/004-arms.leather.bonehide.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/bonehide/004-arms.leather.bonehide.R.export.json",
+        "sha256": "b41bdbeab366b798a664897b257732d460381bc6f6ef20c630bf7f5c03ea2fa2",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          20,
+          13,
+          27
+        ],
+        "visible_height": 7,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/bonehide.dmi",
+          "sha256": "4816795a280a955c6fe395775b7a246d3ae3e02185d03609dac6c9e20cdd9c0d",
+          "cell_index": 16,
+          "atlas_size": [
+            160,
+            128
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            20,
+            13,
+            27
+          ],
+          "visible_height": 7,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "39da6e38bfc09af07c9f1546c15b42896e7336b9db69e32453c7a751a651d03a",
+          "state_occurrence_index": 4,
+          "state_name": "arms.leather.bonehide.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "6eabd4d10c50d19bccd9334ca13a093d137a624a5b6a8fdfd5589e0d076bc876"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/004-arms.leather.bonehide.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/bonehide/004-arms.leather.bonehide.R.export.json",
+        "sha256": "77ba01b3911faa32c6e97c2f90277ffaefbe9e8b65983c4ffeed7beb74ebae9e",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          39,
+          27,
+          53
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/bonehide.dmi",
+          "sha256": "c785c23759235c56cff71ba42f0daf04ba10000ad99008971d71ba97326fda74",
+          "cell_index": 48,
+          "atlas_size": [
+            512,
+            512
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            39,
+            25,
+            53
+          ],
+          "visible_height": 14,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0bc205e75c27c9550b6fbc3e5b3e7a80d878ecf109a5f0b7551d57dff43dddef",
+          "state_occurrence_index": 4,
+          "state_name": "arms.leather.bonehide.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "9a7cbb19b565b08512452a5ea2baf67e8f413c7a14ddefb344cee225f03d5156"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "pass_source_and_native_height_montages",
+      "review_notes": [
+        "Explicit rectangle excludes labels, headings and neighboring objects."
+      ]
+    }
+  ],
+  "state_count": 5,
+  "cutout_count": 5,
+  "height_export_count": 10,
+  "visual_review": {
+    "source_cutout_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/bonehide-source-cutouts.png",
+    "height_montage": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/bonehide-native3x.png",
+    "complete": true,
+    "pending_states": []
+  }
+}

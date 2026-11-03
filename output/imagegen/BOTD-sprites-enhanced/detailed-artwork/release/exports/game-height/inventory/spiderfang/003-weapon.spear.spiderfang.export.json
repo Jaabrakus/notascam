@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:27.778258+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/spiderfang/003-weapon.spear.spiderfang.png",
+    "sha256": "075c7d379ca21f56df00e5fdd5b47e2a3dc02e490fda5f62a87e79f609423239",
+    "size": [
+      163,
+      288
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      34,
+      30,
+      137,
+      268
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 41863,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      34,
+      30,
+      137,
+      268
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      34,
+      30,
+      137,
+      268
+    ],
+    "source_crop_size": [
+      103,
+      238
+    ],
+    "crop_rgba_sha256": "780816ded3aecb2745c2f4bab5d4be9cb62a1347e4d14a9464769c2478aa2944",
+    "discarded_pixel_count": 22430,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/spiderfang.dmi",
+    "sha256": "ab9e8092d50c6bb886df01d0bd99f12bb5421cefb514f53d67776902360d366b",
+    "cell_index": 12,
+    "atlas_size": [
+      128,
+      128
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      1,
+      1,
+      14,
+      32
+    ],
+    "visible_height": 31,
+    "visible_width": 13,
+    "bottom_baseline_exclusive": 32,
+    "alpha_sha256": "9301fe6fce1f928342327fd9ad879c24cd6a73b1131f5b8366b5e22d5e455192",
+    "state_occurrence_index": 3,
+    "state_name": "weapon.spear.spiderfang",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "0b75923014e12232cc7881c0f4f65c88fdf8b6870fde073ff5196f8b107de1ca"
+  },
+  "placement": {
+    "target_visible_height": 31,
+    "proportional_content_size": [
+      13,
+      31
+    ],
+    "uniform_scale": 0.13025210084033614,
+    "actual_axis_scales": [
+      0.1262135922330097,
+      0.13025210084033614
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      1,
+      1,
+      14,
+      32
+    ],
+    "actual_alpha_bbox": [
+      1,
+      1,
+      14,
+      32
+    ],
+    "actual_visible_height": 31,
+    "actual_visible_width": 13,
+    "bottom_baseline_exclusive": 32,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/spiderfang/003-weapon.spear.spiderfang.png",
+    "sha256": "e060a1deafc5d20a5bd743da6f58c4c0a4d553e05346d1a86d0e43ee1f565ed0",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      1,
+      1,
+      14,
+      32
+    ],
+    "alpha_sha256": "fd7510652c7bf5fb44d71227b8b004659ac36eb95f7f5e7b7f87a335ca3b3b02",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

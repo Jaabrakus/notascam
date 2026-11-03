@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "source_relative": "Races64/Kobold.png",
+  "source": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Kobold.png",
+  "source_sha256": "6d9d3ae7781089d62f7e5d85e79f96f84adc6825c5f6589c33ccb3f6dfd9c4b3",
+  "native": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+  "native_sha256": "10021b820e4afcc3c2f94d06636a8b7905b8449145a85b0222d3a90aa64e0710",
+  "native_dimensions": [
+    704,
+    640
+  ],
+  "native_frame_dimensions": [
+    64,
+    64
+  ],
+  "tool": "built-in image_gen.imagegen",
+  "mode": "style-transfer/edit",
+  "status": "reference_only_incompatible_with_requested_original_sizes",
+  "runtime_ready": false,
+  "game_asset_validated": false,
+  "whole_source_complete": false,
+  "stopped_reason": "User clarified that enhanced existing3Dsprites must retain original pixel sizes and be game-ready. Root halted large-reference generation and repairs. Outputs from in-flight calls saved for provenance only.",
+  "pages": [
+    {
+      "page": 4,
+      "status": "reference_only_unaccepted",
+      "included_states": [
+        "NoArms"
+      ],
+      "source_rows": [
+        5
+      ],
+      "represented_native_cells": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-04.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-f2d8-7901-9a12-ed145572cfc2/exec-1a79bee1-25c0-41c0-b4e2-87f22807fca1.png",
+      "output_sha256": "e791a21d3e80bf290615f1abd844f62731331770423ea5bb9bf93925bcbd288b",
+      "generated_size": [
+        1774,
+        887
+      ],
+      "generated_mode": "RGB",
+      "generation_prompt": "Use case: style-transfer. Enhanced Kobold fantasy-game reference page. Image1 is original Races64/Kobold.png, authoritative for species/state/anatomy/pose. Image2 is checked Kobold page01 for the exact polished character identity and rendering style. Match warm GOLDEN/YELLOW-OLIVE skin, sharply triangular high pointed ears with reddish-brown interiors and darkbrown edges, blocky head, small squared muzzle, yellow eyes, tiny pale teeth and squat body. Do not change to greener Goblin or change ear shape. Crisp faceted pixel/voxel materials, dark outlines, charcoal background. Header exactly 'Races64/Kobold.dmi'. Labels at left, aligned4sprite columns to right. Four directions in every row: FRONT/SOUTH, BACK/NORTH, RIGHT-FACING/EAST PROFILE, LEFT-FACING/WEST PROFILE. Follow true source side profiles, not diagonal yaw. Missing limbs are REQUIRED source states. Tiny red source stump caps mark missing limbs; keep these small and stylized, no exaggerated wounds or blood. Never add prosthetics or restore absent limbs from full-body style reference. Full bodies/stumps and labels fully visible, clean spacing, no cropping, no additional creatures or equipment. Reference artwork only, not runtime sprite data. Create page04 showing ONLY original row5 NoArms. EXACTLY3rows\u00d74columns=12views. Every Kobold has NO ARMS and NO HANDS; keep head, torso and BOTH LEGS. Both shoulder positions terminate in small red caps, including both profiles. No forearms, wrists, fists or hand-shaped bulges beside torso. Row1 exact label 'NoArms frame 1': original row5 columns1\u20134, neutral standing stance, both feet below body. Row2 'NoArms frame 2': original row5 columns5\u20138, first walking step phase; both legs remain, one advanced. Row3 'NoArms frame 3': original row5 columns9\u201312, opposite stepping phase with the opposite leg advanced. Preserve different walking phases in all directions. Upper bodies stay armless throughout. Exactly12views and3labels. No other source states.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "runtime_ready": false,
+      "original_pixel_sizes_preserved": false,
+      "native_alpha_preserved": false,
+      "native_metadata_preserved": false,
+      "independent_acceptance": false,
+      "known_issues": [
+        {
+          "id": "NoArms-front-back-step-phases-reversed",
+          "affected_native_cells": [
+            42,
+            43,
+            46,
+            47
+          ],
+          "finding": "Source frame2front lowerfoot screenleft and frame2back screenright; frame3front screenright and frame3back screenleft. Candidate uses opposite order in those four cells.",
+          "repair_status": "not_attempted_due_to_user_direction_change"
+        }
+      ],
+      "visual_observations": "All12views and labels present, arms absent and bothlegs retained. Profile lowerbody shapes broadly coherent, but known front/back phase order is wrong."
+    },
+    {
+      "page": 5,
+      "status": "reference_only_unaccepted",
+      "included_states": [
+        "NoLeftLeg",
+        "NoRightLeg",
+        "NoLegs",
+        "NoRightArmNoRightLeg"
+      ],
+      "source_rows": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "represented_native_cells": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-05.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16ec6-f2d8-7901-9a12-ed145572cfc2/exec-eb55ced8-ea06-4ab2-af46-a0680a98e3bc.png",
+      "output_sha256": "13b2c4176397a11376f39fc65e73c80665b6ad77d45f4444980acee9144bb677",
+      "generated_size": [
+        1774,
+        887
+      ],
+      "generated_mode": "RGB",
+      "generation_prompt": "Use case: style-transfer. Enhanced Kobold fantasy-game reference page. Image1 is original Races64/Kobold.png, authoritative for species/state/anatomy/pose. Image2 is checked Kobold page01 for the exact polished character identity and rendering style. Match warm GOLDEN/YELLOW-OLIVE skin, sharply triangular high pointed ears with reddish-brown interiors and darkbrown edges, blocky head, small squared muzzle, yellow eyes, tiny pale teeth and squat body. Do not change to greener Goblin or change ear shape. Crisp faceted pixel/voxel materials, dark outlines, charcoal background. Header exactly 'Races64/Kobold.dmi'. Labels at left, aligned4sprite columns to right. Four directions in every row: FRONT/SOUTH, BACK/NORTH, RIGHT-FACING/EAST PROFILE, LEFT-FACING/WEST PROFILE. Follow true source side profiles, not diagonal yaw. Missing limbs are REQUIRED source states. Tiny red source stump caps mark missing limbs; keep these small and stylized, no exaggerated wounds or blood. Never add prosthetics or restore absent limbs from full-body style reference. Full bodies/stumps and labels fully visible, clean spacing, no cropping, no additional creatures or equipment. Reference artwork only, not runtime sprite data. Create page05 showing ONLY original rows6\u20139, EXACTLY4rows\u00d74columns=16views. Row1 label 'NoLeftLeg': BOTH ARMS and ONLY RIGHT LEG remain. Front sole foot screenLEFT, back solefoot screenRIGHT. Missing left hip ends at small redcap frontscreenRIGHT/backscreenLEFT. Profiles each retain onlyonefoot. Row2 'NoRightLeg': BOTH ARMS and ONLY LEFT LEG remain. Front solefoot screenRIGHT, back solefoot screenLEFT. Missing right hip redcap frontscreenLEFT/backscreenRIGHT. Profiles retain onlyonefoot. Row3 'NoLegs': BOTH ARMS remain, NO LEGS and ZERO FEET in all4views. Torso ends at red hipcaps, empty charcoal underneath, no green boot-shaped lowerbulges. Row4 exact label 'NoRightArmNoRightLeg': ONLY LEFT ARM and LEFT LEG remain, right arm and right leg absent. FRONT intact arm AND solefoot both on screenRIGHT; both missing-right shoulder/hipcaps screenLEFT. BACK intact arm AND solefoot both on screenLEFT; missing-right caps screenRIGHT. RIGHT-FACING profile views anatomical right side: near right shoulder and hip are red stumpcaps, left arm is far behind torso/mostly occluded, but the sole surviving FAR LEFT FOOT MUST STILL BE VISIBLE as a SMALL green foot peeking below the lower redcap. Do NOT erase this tiny surviving foot or make this profile completely legless. LEFT-FACING profile views anatomical left side: intact near left arm and leftleg/foot visible; far missing-right side mostlyoccluded. No second arm/leg/foot in any row4view. Exactly16views and4labels in source order.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "runtime_ready": false,
+      "original_pixel_sizes_preserved": false,
+      "native_alpha_preserved": false,
+      "native_metadata_preserved": false,
+      "independent_acceptance": false,
+      "known_issues": [],
+      "visual_observations": "All16views and labels present. First producer review sees correct front/back oneleg sides, NoLegs zero feet, combo leftarm/leftleg present and tiny farleftfoot visible in east view. Independent visual review not completed before direction change."
+    }
+  ],
+  "limitations": [
+    "Generated reference pages are opaque RGB at1774\u00d7887, not the64\u00d764 native cell resolution or original704\u00d7640 native DMI atlas.",
+    "Native transparency, registration, animation metadata, exact poses and equipment fitting are not preserved.",
+    "Page04 has a known walking-phase error and is not visually accepted.",
+    "No source or sharedmanifest edited. No further reference generation or repair initiated after user clarification."
+  ],
+  "source_files_unchanged": true
+}

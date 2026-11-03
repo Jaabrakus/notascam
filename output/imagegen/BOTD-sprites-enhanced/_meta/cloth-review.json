@@ -1,0 +1,252 @@
+{
+  "review_type": "independent_reference_sheet_visual_qa",
+  "review_method": "Independent read-only visual comparison using view_image at source and output resolution; manual row/cell counts. Native DMI metadata and alpha analysis provide expected states/fragment geometry. Output art was not segmented or asserted pixel-identical.",
+  "status": "pass",
+  "original": {
+    "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/cloth.png",
+    "sha256": "d99b3e0c2e876b293c9a621fcd2aa373ecb39d4ba56a9d37365985f6e2fd8fad",
+    "dimensions": [
+      558,
+      1450
+    ],
+    "mode": "RGBA"
+  },
+  "outputs": [
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-01.png",
+      "sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-02.png",
+      "sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "dimensions": [
+        1284,
+        1225
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "expected_states": 14,
+  "observed_state_rows": 14,
+  "expected_occupied_cells": 56,
+  "observed_occupied_cells": 56,
+  "expected_occupied_cells_per_row": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "observed_occupied_cells_per_row": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "direction_columns": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "row_labels": [
+    "chest.robe.black",
+    "chest.robe.red",
+    "chest.robe.white",
+    "chest.robe.brown",
+    "chest.robe.blue",
+    "chest.robe.purple",
+    "chest.robe.crimson",
+    "chest.robe.green",
+    "chest.robe.grey",
+    "chest.robe.dragonrobe",
+    "chest.robe.spiderrobe",
+    "chest.robe.bonerobe",
+    "legs.cloth",
+    "legs.boots"
+  ],
+  "checks": {
+    "state_coverage": "pass",
+    "occupied_cells": "pass",
+    "front_back_opposed_profiles": "pass",
+    "small_legs_and_boot_forms": "pass",
+    "source_hue_families": "pass",
+    "source_trim_fidelity": "pass_after_targeted_repair",
+    "label_readability": "pass"
+  },
+  "page_reviews": [
+    {
+      "page": "Gear/cloth/page-01.png",
+      "source_rows_1based": [
+        1,
+        7
+      ],
+      "observed_rows": 7,
+      "observed_cells": 28,
+      "status": "pass",
+      "findings": [
+        "Black, red, white, brown, blue, purple, and crimson remain distinct and ordered correctly.",
+        "Plain red remains distinguishable from gold-trimmed crimson. Purple retains gold trim; blue retains pale edging.",
+        "Front/back construction and opposed side silhouettes remain visibly distinct."
+      ]
+    },
+    {
+      "page": "Gear/cloth/page-02.png",
+      "source_rows_1based": [
+        8,
+        14
+      ],
+      "observed_rows": 7,
+      "observed_cells": 28,
+      "status": "pass_after_targeted_repair",
+      "findings": [
+        "Dragonrobe front center and front/back hems are red again; the invented gold stripe and gold hems have been removed.",
+        "Hornlike brown/bone shoulder ornaments remain in front/back and both profile views. All four dragonrobe views remain correctly positioned.",
+        "The six other rows remain visually consistent with the initially reviewed output: green, grey, spiderrobe, bonerobe, legs.cloth, and legs.boots.",
+        "All28 views are present; small lower-body and boot forms remain appropriately distinct from full robe overlays."
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "cloth-dragonrobe-added-gold-trim",
+      "severity": "moderate",
+      "page": "Gear/cloth/page-02.png",
+      "source_row_1based": 10,
+      "page_row_1based": 3,
+      "state": "chest.robe.dragonrobe",
+      "affected_columns": [
+        "south",
+        "north"
+      ],
+      "finding": "Generated front has a large gold center stripe and front/back have gold hem lines absent from source red dragonrobe.",
+      "requested_correction": "Remove the invented gold front stripe and gold front/back hems; preserve red fabric shading, brown/bone hornlike shoulder ornaments, and all other cells.",
+      "source_evidence": "Native south dragonrobe body below shoulder row17 through31 has red-dominant pixels throughout; no gold central stripe or hem. Source preview independently shows red fabric in the same regions.",
+      "status": "resolved",
+      "resolution": "Targeted repair removed invented gold cloth stripe and front/back hems. Brown/bone shoulder horns retained.",
+      "verified_output_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028"
+    }
+  ],
+  "runtime_compatibility": "Visual reference QA only. Changed size, rendered labels/background, pixel geometry, and RGB output mean runtime sprite registration, transparency, native DMI metadata, and equipment alignment are not validated.",
+  "summary": "All14 states and56 occupied cells pass visual reference checks. The dragonrobe gold-trim drift was corrected; horn ornaments, opposed profiles, other robe rows, and small leg/boot overlays remain intact.",
+  "review_history": [
+    {
+      "phase": "initial_independent_review",
+      "status": "needs_correction",
+      "outputs": [
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-01.png",
+          "sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+          "dimensions": [
+            1536,
+            1024
+          ],
+          "mode": "RGB"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-02.png",
+          "sha256": "d96bd76a17cc7b56c6ad8091182fbe0523c32a3e5a848599647024edb487462a",
+          "dimensions": [
+            1284,
+            1225
+          ],
+          "mode": "RGB"
+        }
+      ],
+      "checks": {
+        "state_coverage": "pass",
+        "occupied_cells": "pass",
+        "front_back_opposed_profiles": "pass",
+        "small_legs_and_boot_forms": "pass",
+        "source_hue_families": "pass",
+        "source_trim_fidelity": "needs_correction",
+        "label_readability": "pass"
+      },
+      "page_reviews": [
+        {
+          "page": "Gear/cloth/page-01.png",
+          "source_rows_1based": [
+            1,
+            7
+          ],
+          "observed_rows": 7,
+          "observed_cells": 28,
+          "status": "pass",
+          "findings": [
+            "Black, red, white, brown, blue, purple, and crimson remain distinct and ordered correctly.",
+            "Plain red remains distinguishable from gold-trimmed crimson. Purple retains gold trim; blue retains pale edging.",
+            "Front/back construction and opposed side silhouettes remain visibly distinct."
+          ]
+        },
+        {
+          "page": "Gear/cloth/page-02.png",
+          "source_rows_1based": [
+            8,
+            14
+          ],
+          "observed_rows": 7,
+          "observed_cells": 28,
+          "status": "needs_correction",
+          "findings": [
+            "Green and grey robes retain source families and trim. Spider robe keeps dark fabric, pale trim, branching shoulder decoration and red accents. Bone robe retains pale riblike shoulder/chest decoration.",
+            "Dragonrobe has invented prominent gold fabric trim: vertical stripe on the front and horizontal front/back hems. Original dragonrobe fabric is red throughout those regions; only shoulder ornaments use contrasting brown/bone detail.",
+            "legs.cloth stays a short brown lower-body overlay with light horizontal band. legs.boots remains small separated boots in front/back and single opposed profile forms."
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "id": "cloth-dragonrobe-added-gold-trim",
+          "severity": "moderate",
+          "page": "Gear/cloth/page-02.png",
+          "source_row_1based": 10,
+          "page_row_1based": 3,
+          "state": "chest.robe.dragonrobe",
+          "affected_columns": [
+            "south",
+            "north"
+          ],
+          "finding": "Generated front has a large gold center stripe and front/back have gold hem lines absent from source red dragonrobe.",
+          "requested_correction": "Remove the invented gold front stripe and gold front/back hems; preserve red fabric shading, brown/bone hornlike shoulder ornaments, and all other cells.",
+          "source_evidence": "Native south dragonrobe body below shoulder row17 through31 has red-dominant pixels throughout; no gold central stripe or hem. Source preview independently shows red fabric in the same regions."
+        }
+      ],
+      "summary": "All14 states and56 occupied cells present, with coherent facings and small leg/boot overlays. One state needs a targeted trim correction before reference fidelity is accepted."
+    }
+  ],
+  "final_recheck": {
+    "method": "Re-viewed repaired PNG with view_image and compared to source preview plus the previous review image. SHA-256 confirms the requested replacement; unchanged page01 SHA-256 matches initial review.",
+    "output_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+    "page01_hash_unchanged": true,
+    "page02_observed_rows": 7,
+    "page02_observed_occupied_cells": 28,
+    "other_six_rows": "visually unchanged; no pixel-by-pixel identity claim",
+    "dragonrobe_gold_trim_removed": true,
+    "dragonrobe_horns_retained": true,
+    "result": "pass"
+  }
+}

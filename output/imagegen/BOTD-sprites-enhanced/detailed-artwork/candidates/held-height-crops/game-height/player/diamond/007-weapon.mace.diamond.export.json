@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:20.295100+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/diamond/007-weapon.mace.diamond.png",
+    "sha256": "c7057fdcbbc29dd6be524a83bf5921b0007173aef348a69dd97e3b0408c9eef3",
+    "size": [
+      113,
+      157
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      107,
+      151
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 14280,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      107,
+      151
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      107,
+      151
+    ],
+    "source_crop_size": [
+      101,
+      145
+    ],
+    "crop_rgba_sha256": "d99ed373e40ed038bdb0d4e564fb74cbd2c9116737e411c1c88ac1227f64546c",
+    "discarded_pixel_count": 3096,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/diamond.dmi",
+    "sha256": "b700b007f34c51273b75d5a0b4bc4b8be1bf951d9d0cfc89a63afb2790a47887",
+    "cell_index": 140,
+    "atlas_size": [
+      1536,
+      1472
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      1,
+      27,
+      26,
+      56
+    ],
+    "visible_height": 29,
+    "visible_width": 25,
+    "bottom_baseline_exclusive": 56,
+    "alpha_sha256": "867338e09484ebe4db10c55d551a84a9a731f0bee611ec7ee0ecc11fd1f90955",
+    "state_occurrence_index": 7,
+    "state_name": "weapon.mace.diamond",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "5"
+      ],
+      [
+        "delay",
+        "1,1,1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "e9a9d0fbf193b46551ebac79aeca9d9e1f5a23123c38950e9b2070c2a9fe9348"
+  },
+  "placement": {
+    "target_visible_height": 29,
+    "proportional_content_size": [
+      20,
+      29
+    ],
+    "uniform_scale": 0.2,
+    "actual_axis_scales": [
+      0.19801980198019803,
+      0.2
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      3,
+      27,
+      23,
+      56
+    ],
+    "actual_alpha_bbox": [
+      3,
+      27,
+      23,
+      56
+    ],
+    "actual_visible_height": 29,
+    "actual_visible_width": 20,
+    "bottom_baseline_exclusive": 56,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/diamond/007-weapon.mace.diamond.png",
+    "sha256": "a37541f77ab5cd50c9bd46ce82b3d507aae5b03c45e0643e24243db4c42e99c1",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      3,
+      27,
+      23,
+      56
+    ],
+    "alpha_sha256": "bf683dfc84ae9589d3fbd8f87c8a72c5e213e27d983c3fce8d8193ced1f9d733",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

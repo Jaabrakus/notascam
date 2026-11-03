@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-24",
+  "quoted_request": "wait we dont need them to be 64x64 we just nee them the same height",
+  "clarification": "Match each original sprite\u2019s height",
+  "artwork": "The enhanced AI-created sprite style from the earlier generated reference sheets.",
+  "sizing_rule": "Match the visible alpha-bounds height of each corresponding original native sprite frame. Resize proportionally; width may vary. No fixed64x64 requirement.",
+  "reference": "The original native DMI frame, not the enlarged labeled preview sheet.",
+  "placement": "Preserve original frame height and original sprite bottom baseline when packaging; expand canvas width if the proportional enhanced sprite needs more room.",
+  "production_method": "Built-in image generation for artwork and transparency; mechanical cropping, proportional resizing and frame packing for the requested original-height matching.",
+  "three_dimensional_conversion": "deferred_until_after_enhanced_artwork",
+  "preservation": "Keep originals unchanged. Store new work in enhanced-height/ inside the separate BOTD-sprites-enhanced Downloads folder.",
+  "validation": "Check exact visible height against each native frame, transparent background, anatomy, facing, registration, complete ordered state/frame coverage and preserved animation metadata.",
+  "previous_exports": "enhanced-64/ and native-3d/ retain earlier experiments. Their old sizing requirements do not govern the new work.",
+  "agent_batch": "Height exporter and Goblin standing facings run alongside a small Items batch.",
+  "processing_policy": {
+    "requested_model": "Sol",
+    "worker_model": "gpt-6.1-sol",
+    "all_new_agents_explicitly_use_requested_model": true,
+    "image_generation_calls": "Not used for the completed faithful extraction batch; previous redesign candidates are excluded.",
+    "external_image_api_fallback": "not_authorized",
+    "allowed_current_work": [
+      "Read and inspect local assets",
+      "Crop explicitly selected transparent margins",
+      "Resize existing enhanced artwork proportionally to original visible height",
+      "Pack frames and preserve source metadata",
+      "Validate dimensions, transparency, identity and coverage",
+      "Generate player race and weapon/armor base designs with the built-in image tool per latest user request"
+    ],
+    "new_artwork": "Reuse the existing approved artwork. New creative redraws require a new request.",
+    "originals": "Preserve unchanged",
+    "current_artwork_mode": "Existing-pixel extraction, alpha-only matting and mechanical proportional resizing. No redraw."
+  },
+  "latest_request": "process the ones and then use sol image creation to enhance the other sprites we dont need every sprites we just need the players races and the weapons and armor",
+  "active_scope": {
+    "player_races": [
+      "Demon",
+      "DevourerZombie",
+      "Dwarves",
+      "FrogMan",
+      "Gargoyle",
+      "Goblins",
+      "Human",
+      "Kobold",
+      "LizardMan",
+      "Night Elf",
+      "Orc",
+      "Skeleton",
+      "Vampire"
+    ],
+    "weapon_armor_families": [
+      "adamantium",
+      "bone",
+      "bonehide",
+      "chitin",
+      "cloth",
+      "diamond",
+      "dragon",
+      "dragonbone",
+      "dragonfang",
+      "dragonhide",
+      "gold",
+      "hell",
+      "iron",
+      "leather",
+      "magic",
+      "silver",
+      "spiderfang",
+      "spidersilk",
+      "wood"
+    ],
+    "local_game_sheets": 279,
+    "local_game_sheet_breakdown": {
+      "base_race_sources": 13,
+      "gear_sources": 19,
+      "race_fitted_gear_sources": 247
+    },
+    "new_ai_designs": "13 race base designs and 19 representative equipment family kits for later 3D work",
+    "excluded": [
+      "Items",
+      "Rope64",
+      "Limbs64",
+      "FX",
+      "legacy cosmetic gear",
+      "status/skin variants"
+    ]
+  },
+  "latest_style_feedback": "hmmmm idk man i want it to be same as what we have in the sprites like",
+  "style_lock": [
+    "Preserve existing race face, head/body proportions and pose",
+    "Preserve eye size, pupils, ears, muzzle and fangs",
+    "Keep strong stepped outlines and broad pixel color blocks",
+    "Use existing sheet art directly wherever available",
+    "Match each original native sprite visible height with proportional width"
+  ],
+  "authoritative_style_reference": "Existing approved sprite-sheet artwork, especially Kobold page01/page07 in the user examples. Preserve each race identity; do not use new standalone redesigns as authority.",
+  "new_ai_generation": "Held while existing-art extraction is corrected. No redesigned candidate is accepted by default.",
+  "current_status": "Current existing-art batch complete and independently checked",
+  "delivery": "players-gear/final",
+  "approved_sources": "Approved eight-angle race sheet for11 races, existing Kobold/Goblin sheet art for2races, existing game equipment and32enhanced-sheet cutouts."
+}

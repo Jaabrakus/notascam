@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T18:34:23.530024+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-approved8angles.png",
+    "sha256": "fe5615452b81b9120ae102d9412c628dadd2532291bc35a2788158a4515d4750",
+    "size": [
+      96,
+      138
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      11,
+      10,
+      85,
+      126
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 6854,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      11,
+      10,
+      85,
+      126
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      11,
+      10,
+      85,
+      126
+    ],
+    "source_crop_size": [
+      74,
+      116
+    ],
+    "crop_rgba_sha256": "6670d33bda3ea2cbe28f50030694b1d7ba5a4afd5b6dbd01f83df441ca734aad",
+    "discarded_pixel_count": 4664,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Orc.dmi",
+    "sha256": "13c6e34c6dab7a62060701981666589d020f74cf5aba0e06ce976f4c13b2a8d2",
+    "cell_index": 0,
+    "atlas_size": [
+      640,
+      640
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      13,
+      9,
+      51,
+      64
+    ],
+    "visible_height": 55,
+    "visible_width": 38,
+    "bottom_baseline_exclusive": 64,
+    "alpha_sha256": "65e2640c4cd7d60c584859c122867860b8a98518f7bb308969bf0f7161ea96d1",
+    "state_occurrence_index": 0,
+    "state_name": "Normal",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "2,2,2"
+      ],
+      [
+        "rewind",
+        "0"
+      ],
+      [
+        "movement",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "b900c444b681087a5027df9edcf797aa13122046d4e3c743aa6644c602844c92"
+  },
+  "placement": {
+    "target_visible_height": 55,
+    "proportional_content_size": [
+      35,
+      55
+    ],
+    "uniform_scale": 0.47413793103448276,
+    "actual_axis_scales": [
+      0.47297297297297297,
+      0.47413793103448276
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      14,
+      9,
+      49,
+      64
+    ],
+    "actual_alpha_bbox": [
+      14,
+      9,
+      49,
+      64
+    ],
+    "actual_visible_height": 55,
+    "actual_visible_width": 35,
+    "bottom_baseline_exclusive": 64,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-approved8angles-height.png",
+    "sha256": "c0c7bb60425d73f046846ee8af2f596cd1eff8129e17ae4017d866d84ebc4261",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      14,
+      9,
+      49,
+      64
+    ],
+    "alpha_sha256": "d9642584014967dbb44e4a84346cc5c0e22b5283d96dfdfa361f6ce2937ba518",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

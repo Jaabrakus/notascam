@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T18:04:27.622426+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/gear/dragonhide/chest-leather-dragonhide-quadrant.png",
+    "sha256": "6dfaaaf0149ca7bce85d03400d6f4c830e4ceb6b407db10c38c39d366cf714c9",
+    "size": [
+      627,
+      627
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      25,
+      19,
+      583,
+      627
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 261759,
+    "transparent_perimeter_fraction": 0.9856230031948882,
+    "semi_transparent_pixels": 131010,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      25,
+      19,
+      583,
+      627
+    ],
+    "requested_source_crop": [
+      48,
+      122,
+      555,
+      514
+    ],
+    "effective_source_crop": [
+      48,
+      122,
+      555,
+      514
+    ],
+    "source_crop_size": [
+      507,
+      392
+    ],
+    "crop_rgba_sha256": "8acf18f87b50897a6e536beb01c2fe973fda482f062a7c7b2c78982d4ce3b75e",
+    "discarded_pixel_count": 194385,
+    "discarded_nonzero_alpha_pixel_count": 1185,
+    "discarded_maximum_alpha": 1,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/dragonhide.dmi",
+    "sha256": "7373a07bcc9bde191a43c31594799bfdcba408133d72e0db5a7b5a30184900e4",
+    "cell_index": 12,
+    "atlas_size": [
+      512,
+      512
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      12,
+      26,
+      51,
+      51
+    ],
+    "visible_height": 25,
+    "visible_width": 39,
+    "bottom_baseline_exclusive": 51,
+    "alpha_sha256": "b3277d503987716d64a4ff36ad424c511234adfbc4b3bd55b0ff02c2d5623a6e",
+    "state_occurrence_index": 1,
+    "state_name": "chest.leather.dragonhide",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "31e393d1d157dc0426aa0f8ba873ba8c684aced04c84fdae8fcf7a279acb806f"
+  },
+  "placement": {
+    "target_visible_height": 25,
+    "proportional_content_size": [
+      32,
+      25
+    ],
+    "uniform_scale": 0.06377551020408163,
+    "actual_axis_scales": [
+      0.0631163708086785,
+      0.06377551020408163
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      15,
+      26,
+      47,
+      51
+    ],
+    "actual_alpha_bbox": [
+      15,
+      26,
+      47,
+      51
+    ],
+    "actual_visible_height": 25,
+    "actual_visible_width": 32,
+    "bottom_baseline_exclusive": 51,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/ai-designs/gear/dragonhide/chest-leather-dragonhide.png",
+    "sha256": "1af1d2868e5e757fe2dea9144f9c311d01e85e60cf8fe3e99e5f5a1cc7757f99",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "lanczos",
+    "alpha_bbox": [
+      15,
+      26,
+      47,
+      51
+    ],
+    "alpha_sha256": "a8f2be8dcf1fb25525b6ddd0a28becaf03b34a50fa36807205e24f893afd2edd",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 542
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

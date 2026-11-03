@@ -1,0 +1,25 @@
+Use case: style-transfer. Detailed fantasy equipment sprite sheet artwork, page 2 of 6.
+Input image 1 is the exact source page and authoritative identity/layout reference. Input image 2 is the approved detailed bonehide sheet, STYLE reference only. Input image 3 is the approved detailed magic sheet, STYLE and page layout reference only. Do not transfer bonehide horns, colors or magic effects into the source designs.
+Transform the small source sprites into genuinely detailed polished pixel/voxel artwork in the same game style as the two enhanced references: crisp near-black pixel outlines, richly faceted material shading, deliberate stepped highlights, readable small texture details, solid dimensional construction. This must be a meaningful detailed artwork redraw, not a resized copy or an RGB color/lighting filter. Keep the game's actual equipment identity.
+MATERIAL: Pale icy cyan-blue diamond crystal: clear faceted planes and white sharp glints, preserve tan/brown grips and any source accent colors. Do not turn it into gray steel or change object silhouettes.
+Preserve ALL 7 rows in exact order and all four S N E W columns left to right. Keep the source shapes, proportions, weapon classes, blade curves, axe/hammer head geometry, shafts and grips, armor plate construction and facing direction. Keep disconnected pommels, handles or tiny partial fragments disconnected and in their correct cell; they are intentional equipment overlay art. Never complete a partially hidden W view into a whole object. Do not fill a source blank cell. Do not mirror an E view into a missing W view. No character bodies, heads, faces, mannequins or limbs inside armor. No additional objects, arbitrary spikes, horns, gems, trim or altered design motifs.
+ROW AND OCCUPANCY SPECIFICATION:
+Row 1: label exactly 'weapon.mace.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Row 2: label exactly 'weapon.morning star.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Row 3: label exactly 'weapon.spear.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Row 4: label exactly 'weapon.halberd.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Row 5: label exactly 'weapon.bow.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Row 6: label exactly 'helmet.kettle.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Row 7: label exactly 'helmet.nasal.diamond'; visible columns S,N,E,W; other columns must stay empty.
+Expected occupied cells total: 28; a tiny fragment counts as occupied. Preserve every listed object/view and every intentional blank.
+Create a clean full-resolution opaque charcoal blue-gray contact sheet like the style references. Enlarge and space the artwork enough to show the detailed shading clearly. Use readable white labels at the left of each row and white S N E W headers. Title exactly: Gear/diamond.dmi — Page 2 of 6. Keep every row label verbatim as specified, with ample left margin so no label is truncated. No extra words, watermark or decorative panels. No gradient halo or ground shadow touching objects. Keep all artwork completely inside its own cell with clear gutters; no cropping and no row omission. Keep the final sheet at the tool's full output resolution, no native-height reduction in this phase.
+
+CRITICAL: These are GAME EQUIPMENT OVERLAY FRAGMENTS, often split around an invisible hand. They are NOT complete product illustrations. Preserve the open hand occlusion gap: render each original disconnected colored piece separately, including the very smallest brown shaft-end/pommel dot. Never connect separate pieces, even if that makes a sword or spear look incomplete. Exact component counts per view follow:
+ROW1 weapon.mace.diamond: S=2 separate pieces, N=2 separate pieces, E=2 separate pieces, W=1 separate pieces.
+ROW2 weapon.morning star.diamond: S=2 separate pieces, N=2 separate pieces, E=2 separate pieces, W=1 separate pieces.
+ROW3 weapon.spear.diamond: S=2 separate pieces, N=2 separate pieces, E=2 separate pieces, W=2 separate pieces.
+ROW4 weapon.halberd.diamond: S=2 separate pieces, N=2 separate pieces, E=2 separate pieces, W=2 separate pieces.
+ROW5 weapon.bow.diamond: S=1 separate pieces, N=1 separate pieces, E=1 separate pieces, W=1 separate pieces.
+ROW6 helmet.kettle.diamond: S=1 separate pieces, N=1 separate pieces, E=1 separate pieces, W=1 separate pieces.
+ROW7 helmet.nasal.diamond: S=1 separate pieces, N=1 separate pieces, E=1 separate pieces, W=1 separate pieces.
+Each tiny piece has the SAME source material color: brown grips remain brown, never become blue/gold gemstone decorations. Match exact blade and single-sided axe silhouettes; no invented opposite blades. Keep crystal faceting detail WITHIN existing shapes only.

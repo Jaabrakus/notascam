@@ -1,0 +1,36 @@
+{
+  "status": "existing_sheet_design_locked_redraw_rejected",
+  "reference": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-01.png",
+  "reference_sha256": "841ef702f884ef0cce6a6ef8d5db33825eccdf96b1eefcdcac2774fbbb8d2e9f",
+  "exact_source_crop": [
+    481,
+    71,
+    639,
+    244
+  ],
+  "preview": "players-gear/style-lock/Kobold-existing-art-height-48-preview.png",
+  "preview_size": [
+    44,
+    48
+  ],
+  "preview_method": "Existing RGB sheet pixels cropped and proportionally resized with nearest-neighbor. No regenerated artwork.",
+  "preview_limitation": "Opaque source backdrop and overlapping ground shadow remain. This is a design/height comparison, not a finished transparent game sprite.",
+  "native_target": {
+    "path": "standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+    "state": "Normal",
+    "cell_index": 0,
+    "visible_height": 48
+  },
+  "rejected_candidate": "players-gear/style-lock/Kobold-cutout-rejected-drift.png",
+  "rejected_reason": "The built-in tool reinterpreted existing pixel shapes despite a background-only request; not accepted as a faithful extraction.",
+  "rejected_prompt": "_meta/prompts/Kobold-sheet-faithful-cutout.txt",
+  "style_constraints": [
+    "Preserve existing race face, head/body proportions and pose",
+    "Preserve eye size, pupils, ears, muzzle and fangs",
+    "Keep strong stepped outlines and broad pixel color blocks",
+    "Use existing sheet art directly wherever available",
+    "Match each original native sprite visible height with proportional width"
+  ],
+  "new_ai_batches": "held_for_identity_correction",
+  "local_279_sheet_batch": "unchanged_checked_native_assets"
+}

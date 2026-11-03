@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit/style-transfer",
+  "source_relative": "Gear/cloth.png",
+  "source": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/cloth.png",
+  "source_sha256": "d99b3e0c2e876b293c9a621fcd2aa373ecb39d4ba56a9d37365985f6e2fd8fad",
+  "original_size": [
+    558,
+    1450
+  ],
+  "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+  "native_sha256": "bff5c258de0c74639445b91867998355a871c7475e8fd262e8250b73ca4426b6",
+  "native_size": [
+    256,
+    224
+  ],
+  "native_state_count": 14,
+  "native_frame_cells": 56,
+  "directions": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "frames_per_state": 1,
+  "status": "reference_art_checked",
+  "runtime_ready": false,
+  "game_asset_validated": false,
+  "playable_asset_complete": false,
+  "pages": [
+    {
+      "page": 1,
+      "source_row_range_inclusive": [
+        1,
+        7
+      ],
+      "included_states": [
+        "chest.robe.black",
+        "chest.robe.red",
+        "chest.robe.white",
+        "chest.robe.brown",
+        "chest.robe.blue",
+        "chest.robe.purple",
+        "chest.robe.crimson"
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-01.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-452c64b7-37dc-4fce-87a6-6b444614c764.png",
+      "output_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "generated_size": [
+        1536,
+        1024
+      ],
+      "generated_mode": "RGB",
+      "generation_prompt": "Use case: style-transfer. Asset: polished pixel/voxel fantasy equipment reference page. Image 1 is the ORIGINAL Gear/cloth.png source sheet; Image 2 is STYLE ONLY, a checked enhanced Gear/spidersilk reference. Generate a readable portrait page with exactly SEVEN evenly separated rows and FOUR sprite columns to the right of a label margin. Use the crisp blocky pixel/voxel material treatment of image 2, faceted dimensional highlights, restrained cloth texture, dark contours, consistent upper-left lighting. Keep the original source object identities, silhouette family, colors, facing order, distinct front/back designs and spacing. The four columns match the original S,N,E,W (front,back,opposed profiles) in that order, not isometric rotations. Every cell is occupied: exactly28 sprite views. All garment views are empty equipment overlays without a person inside; no heads, hands, bare skin, mannequins, characters or extra accessories. Keep original tiny garments recognizable; do not turn torso overlays into full-length gowns. Dark charcoal background. Readable white text at left; exact header 'Gear/cloth.dmi'. Preserve exact row-label spelling below. No other text, no grid lines, no watermark. Full sheet visible with bottom margin. This is reference artwork, not runtime atlas data. This is page 1, containing ONLY original rows1\u20137, in this exact order: 'chest.robe.black' (charcoal black simple robe torso with gray seam/highlights); 'chest.robe.red' (warm red simple robe torso); 'chest.robe.white' (white silver-gray simple robe torso); 'chest.robe.brown' (muted brown simple robe torso); 'chest.robe.blue' (blue simple robe torso with light blue front seam); 'chest.robe.purple' (purple torso with gold front seam and hem trim); 'chest.robe.crimson' (crimson torso with gold front seam and hem trim). All seven share short broad-shouldered, narrow-waisted, slightly flared-bottom silhouette. Source frontal view has vertical center seam; rear view is broad back; profile views are slender opposed bends. Do not add hats, shoulder armor or limbs. Exclude rows8\u201314 entirely. Exactly7 labels,7 rows,4 columns.",
+      "prompt_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-cloth-page-01.txt",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "checks": {
+        "rows_expected": 7,
+        "rows_observed": 7,
+        "cells_expected": 28,
+        "cells_observed": 28,
+        "no_empty_or_missing_cells": true,
+        "no_added_character": true,
+        "all_labels_visible": true,
+        "no_cropped_content": true
+      },
+      "notes": "Seven colored torso robes: charcoal,red,white,brown,blue,purple,crimson. Front center seams differ from backs, opposed profiles preserved; purple/crimson gold trim distinct."
+    },
+    {
+      "page": 2,
+      "source_row_range_inclusive": [
+        8,
+        14
+      ],
+      "included_states": [
+        "chest.robe.green",
+        "chest.robe.grey",
+        "chest.robe.dragonrobe",
+        "chest.robe.spiderrobe",
+        "chest.robe.bonerobe",
+        "legs.cloth",
+        "legs.boots"
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-02.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-99e5613b-8e28-484a-9df3-ab464f4c073b.png",
+      "output_sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "generated_size": [
+        1284,
+        1225
+      ],
+      "generated_mode": "RGB",
+      "generation_prompt": "Use case: style-transfer. Asset: polished pixel/voxel fantasy equipment reference page. Image 1 is the ORIGINAL Gear/cloth.png source sheet; Image 2 is STYLE ONLY, a checked enhanced Gear/spidersilk reference. Generate a readable portrait page with exactly SEVEN evenly separated rows and FOUR sprite columns to the right of a label margin. Use the crisp blocky pixel/voxel material treatment of image 2, faceted dimensional highlights, restrained cloth texture, dark contours, consistent upper-left lighting. Keep the original source object identities, silhouette family, colors, facing order, distinct front/back designs and spacing. The four columns match the original S,N,E,W (front,back,opposed profiles) in that order, not isometric rotations. Every cell is occupied: exactly28 sprite views. All garment views are empty equipment overlays without a person inside; no heads, hands, bare skin, mannequins, characters or extra accessories. Keep original tiny garments recognizable; do not turn torso overlays into full-length gowns. Dark charcoal background. Readable white text at left; exact header 'Gear/cloth.dmi'. Preserve exact row-label spelling below. No other text, no grid lines, no watermark. Full sheet visible with bottom margin. This is reference artwork, not runtime atlas data. This is page 2, containing ONLY original rows8\u201314, in this exact order: 'chest.robe.green' (green robe torso with gold front seam and hem trim); 'chest.robe.grey' (charcoal gray robe torso with pale gold trim); 'chest.robe.dragonrobe' (red robe torso, small brown/gold jagged hornlike shoulder ornaments at sides, source pointed side trim); 'chest.robe.spiderrobe' (black robe torso with pale center seam and hem, spiky black-and-red spiderlike shoulder ornaments); 'chest.robe.bonerobe' (earthy brown robe torso with pale ivory bones across chest and projecting shoulder bones); 'legs.cloth' (small squat brown cloth lower-garment overlay, broad front/back with pale hem band, narrow opposite profile views; not a full torso); 'legs.boots' (VERY SMALL low dark-brown footwear overlay, front/back show two adjacent boot silhouettes, profile views show a single low boot). The final boots row is intentionally much lower in height than all other objects. Keep the leg/boot view orientations from the source. First five rows are short broad-shouldered, narrow-waisted torso equipment overlays, NOT complete coats or people. Exclude rows1\u20137 entirely. Exactly7 labels,7 rows,4 columns.",
+      "prompt_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-cloth-page-02.txt",
+      "generation_calls": 1,
+      "repair_calls": 1,
+      "checks": {
+        "rows_expected": 7,
+        "rows_observed": 7,
+        "cells_expected": 28,
+        "cells_observed": 28,
+        "no_empty_or_missing_cells": true,
+        "no_added_character": true,
+        "all_labels_visible": true,
+        "no_cropped_content": true,
+        "dragonrobe_invented_gold_trim_removed": true
+      },
+      "notes": "Green/gray robes, red dragon shoulder trim, black/red spider shoulders and pale bone chest/shoulders retained. Brown legs remain low and squat; final brown boots stay very low with paired front/back forms and individual profiles. One targeted repair removed invented gold stripe/hem from dragonrobe while retaining its shoulder ornaments; root rechecked all7 rows after repair.",
+      "rejected_generated_source": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-162fb511-a9cc-4653-974c-601ad0d6b902.png",
+      "rejected_output_sha256": "d96bd76a17cc7b56c6ad8091182fbe0523c32a3e5a848599647024edb487462a",
+      "rejected_reason": "Added gold front stripe and hem in dragonrobe; absent in original.",
+      "repair_prompt": "Use case: targeted correction. Image 1 is the exact edit target, polished Gear/cloth.dmi page2. Image 2 is the ORIGINAL full Gear/cloth.png for source details. Make one strictly localized correction to Image 1: in the THIRD ROW, labeled 'chest.robe.dragonrobe', REMOVE the invented GOLD VERTICAL CENTER STRIPE on the first/front sprite and REMOVE the invented GOLD HEM bands on the first/front and second/back sprites. Replace those areas with shaded RED CLOTH matching that sprite's existing red fabric, as shown in original source row10. The dragonrobe torso and bottom hem are red cloth, with dark red shading, NOT gold-trimmed. Keep its existing small brown/gold jagged hornlike SHOULDER ornaments (do not remove the shoulder ornaments). Keep all four directional views of this row. Preserve all other SIX rows absolutely unchanged: green gold-trimmed robe, gray pale-gold-trimmed robe, black spider robe, ivory/brown bone robe, cloth legs, low brown boots. Preserve ALL seven exact labels, header, four-column geometry, spacing, dimensions, dark charcoal background and crisp pixel/voxel rendering. Do not change green/gray gold trim. Do not add or remove objects. Do not include other source rows. Full page remains exactly7 rows and4 populated columns,28 views. No extra text, cropping or watermark."
+    }
+  ],
+  "checks": {
+    "rows_expected": 14,
+    "rows_observed": 14,
+    "cells_expected": 56,
+    "cells_observed": 56,
+    "all_states_represented": true,
+    "state_order_preserved": true,
+    "full_labels_visible": true,
+    "required_facing_arrangement_visible": true,
+    "originals_unchanged": true,
+    "native_registration_verified": false,
+    "native_metadata_preserved": false,
+    "source_transparency_preserved": false
+  },
+  "qa_method": "Root visual review of original and generated pages; native Description state order; source/output hashes; PNG verification. Independent visual review is recorded separately.",
+  "limitations": [
+    "Reference artwork only; no game-runtime installation.",
+    "Generated opaque RGB pages have changed dimensions, scale, spacing and raster geometry.",
+    "Native alpha, registration, equipment fitting and DMI metadata are not retained or verified.",
+    "Cloth page1 is landscape despite portrait request; all requested rows/columns and labels remain fully legible.",
+    "Small details such as robe hems and seams are reinterpreted; this review establishes broad identity and state coverage, not exact pixel geometry."
+  ],
+  "independent_review": "_meta/cloth-review.json"
+}

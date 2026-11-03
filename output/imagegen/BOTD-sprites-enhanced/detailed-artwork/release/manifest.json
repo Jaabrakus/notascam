@@ -1,0 +1,2287 @@
+{
+  "classification": "detailed_enhanced_sheet_artwork",
+  "status": "complete",
+  "race_bases": 13,
+  "completed_equipment_families": 19,
+  "equipment_family_target": 19,
+  "ready_gear_pages": 60,
+  "expected_gear_pages": 60,
+  "families": {
+    "bonehide": {
+      "status": "complete",
+      "ready_pages": 1,
+      "expected_pages": 1,
+      "state_count": 5
+    },
+    "cloth": {
+      "status": "complete",
+      "ready_pages": 2,
+      "expected_pages": 2,
+      "state_count": 14
+    },
+    "dragonfang": {
+      "status": "complete",
+      "ready_pages": 1,
+      "expected_pages": 1,
+      "state_count": 8
+    },
+    "dragonhide": {
+      "status": "complete",
+      "ready_pages": 1,
+      "expected_pages": 1,
+      "state_count": 5
+    },
+    "leather": {
+      "status": "complete",
+      "ready_pages": 1,
+      "expected_pages": 1,
+      "state_count": 7
+    },
+    "magic": {
+      "status": "complete",
+      "ready_pages": 2,
+      "expected_pages": 2,
+      "state_count": 13
+    },
+    "spiderfang": {
+      "status": "complete",
+      "ready_pages": 1,
+      "expected_pages": 1,
+      "state_count": 4
+    },
+    "spidersilk": {
+      "status": "complete",
+      "ready_pages": 1,
+      "expected_pages": 1,
+      "state_count": 5
+    },
+    "adamantium": {
+      "status": "complete",
+      "ready_pages": 6,
+      "expected_pages": 6,
+      "state_count": 38
+    },
+    "bone": {
+      "status": "complete",
+      "ready_pages": 3,
+      "expected_pages": 3,
+      "state_count": 20
+    },
+    "chitin": {
+      "status": "complete",
+      "ready_pages": 4,
+      "expected_pages": 4,
+      "state_count": 23
+    },
+    "diamond": {
+      "status": "complete",
+      "ready_pages": 6,
+      "expected_pages": 6,
+      "state_count": 37
+    },
+    "dragon": {
+      "status": "complete",
+      "ready_pages": 2,
+      "expected_pages": 2,
+      "state_count": 14
+    },
+    "dragonbone": {
+      "status": "complete",
+      "ready_pages": 3,
+      "expected_pages": 3,
+      "state_count": 15
+    },
+    "gold": {
+      "status": "complete",
+      "ready_pages": 6,
+      "expected_pages": 6,
+      "state_count": 39
+    },
+    "hell": {
+      "status": "complete",
+      "ready_pages": 6,
+      "expected_pages": 6,
+      "state_count": 38
+    },
+    "iron": {
+      "status": "complete",
+      "ready_pages": 6,
+      "expected_pages": 6,
+      "state_count": 38
+    },
+    "silver": {
+      "status": "complete",
+      "ready_pages": 6,
+      "expected_pages": 6,
+      "state_count": 38
+    },
+    "wood": {
+      "status": "complete",
+      "ready_pages": 2,
+      "expected_pages": 2,
+      "state_count": 14
+    }
+  },
+  "equipment_state_target": 375,
+  "covered_equipment_states": 375,
+  "gear_pages": [
+    {
+      "family": "adamantium",
+      "page": 1,
+      "path": "Gear/adamantium/page-01.png",
+      "sha256": "c6302cae0c744686e5fa034422c31893da6823e13ceb121b686459f0288a6a01",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.adamantium",
+        "weapon.arming sword.adamantium",
+        "weapon.longsword.adamantium",
+        "weapon.scimitar.adamantium",
+        "weapon.hand axe.adamantium",
+        "weapon.battle axe.adamantium",
+        "weapon.warhammer.adamantium"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/adamantium/page-01.txt",
+      "prompt_sha256": "9293e4bf4d403c9f915e3bf3b4d9375d5ac97a7e2103c1d53b09de0a22770232",
+      "related_prompts": [
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-01-repair.txt",
+          "sha256": "28671cf18928b8f97c1d88c948a428dc4b320cbd6e31b5c1bed7f447edd77ba8"
+        },
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-01.txt",
+          "sha256": "9293e4bf4d403c9f915e3bf3b4d9375d5ac97a7e2103c1d53b09de0a22770232"
+        }
+      ]
+    },
+    {
+      "family": "adamantium",
+      "page": 2,
+      "path": "Gear/adamantium/page-02.png",
+      "sha256": "60c5cf8e60efbd57d584097cdb8143ffd38432a45f1b896e4fe87619ae69b8a2",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.mace.adamantium",
+        "weapon.morning star.adamantium",
+        "weapon.spear.adamantium",
+        "weapon.halberd.adamantium",
+        "weapon.pickaxe.adamantium",
+        "weapon.bow.adamantium",
+        "helmet.kettle.adamantium"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/adamantium/page-02.txt",
+      "prompt_sha256": "edbf46e9b638f635b0169a9a1ca9454d7487f6a2984da899afedc48588d7893f",
+      "related_prompts": [
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-02.txt",
+          "sha256": "edbf46e9b638f635b0169a9a1ca9454d7487f6a2984da899afedc48588d7893f"
+        }
+      ]
+    },
+    {
+      "family": "adamantium",
+      "page": 3,
+      "path": "Gear/adamantium/page-03.png",
+      "sha256": "1e303eabea7b9a879e99f1b8d17aad8c80627420f4bda835c1f342c74649c513",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.nasal.adamantium",
+        "helmet.horned.adamantium",
+        "helmet.winged.adamantium",
+        "helmet.great helm.adamantium",
+        "helmet.crested.adamantium",
+        "chest.plate.adamantium",
+        "chest.banded.adamantium"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/adamantium/page-03.txt",
+      "prompt_sha256": "6c52c0c465d201cc52663398626962c546c1d164178ddc84f30a5f87f613c21b",
+      "related_prompts": [
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-03.txt",
+          "sha256": "6c52c0c465d201cc52663398626962c546c1d164178ddc84f30a5f87f613c21b"
+        }
+      ]
+    },
+    {
+      "family": "adamantium",
+      "page": 4,
+      "path": "Gear/adamantium/page-04.png",
+      "sha256": "49a8fa75128b23ec26b31201cc93f355cdc4523423e78ad87d94b1b805b11ac7",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.mail.adamantium",
+        "chest.scale.adamantium",
+        "chest.lamellar.adamantium",
+        "chest.brigandine.adamantium",
+        "chest.tabard.adamantium",
+        "legs.plate.adamantium",
+        "legs.mail.adamantium"
+      ],
+      "state_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_state_range": [
+        21,
+        27
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/adamantium/page-04.txt",
+      "prompt_sha256": "ddfafca74e85b3cd5127240e4e4cb94f97c08f5a4cbea3b2de830e9dffbce7fc",
+      "related_prompts": [
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-04.txt",
+          "sha256": "ddfafca74e85b3cd5127240e4e4cb94f97c08f5a4cbea3b2de830e9dffbce7fc"
+        }
+      ]
+    },
+    {
+      "family": "adamantium",
+      "page": 5,
+      "path": "Gear/adamantium/page-05.png",
+      "sha256": "be87878ef309c181b483d91c69f095e4bc62b0b30baba8bff344ca65b600c5de",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.adamantium",
+        "arms.plate.adamantium.L",
+        "arms.plate.adamantium.R",
+        "arms.mail.adamantium.L",
+        "arms.mail.adamantium.R",
+        "shield.buckler.adamantium",
+        "shield.round.adamantium"
+      ],
+      "state_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_state_range": [
+        28,
+        34
+      ],
+      "visible_cells": 24,
+      "prompt": "prompts/adamantium/page-05.txt",
+      "prompt_sha256": "8b0d926d6e523e5fcdcfef33efc3cfadf636363c0bb7e8676562914de4e684d8",
+      "related_prompts": [
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-05.txt",
+          "sha256": "8b0d926d6e523e5fcdcfef33efc3cfadf636363c0bb7e8676562914de4e684d8"
+        }
+      ]
+    },
+    {
+      "family": "adamantium",
+      "page": 6,
+      "path": "Gear/adamantium/page-06.png",
+      "sha256": "d3660b512bbe376761d8790051ce2428855e472821d58d1c1102cdf8f922c253",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.heater.adamantium",
+        "shield.kite.adamantium",
+        "shield.tower.adamantium"
+      ],
+      "state_indices": [
+        35,
+        36,
+        37
+      ],
+      "source_state_range": [
+        35,
+        37
+      ],
+      "visible_cells": 12,
+      "prompt": "prompts/adamantium/page-06.txt",
+      "prompt_sha256": "9f661c83a1145e62fe2c539ac4576658560a19883ccc53cbb9c2be1d1ede745e",
+      "related_prompts": [
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-06-repair.txt",
+          "sha256": "2d51462b6cf7e7ce2493484af68981f9f76735ae739864fedef95b2aac0c79a2"
+        },
+        {
+          "path": "prompts/adamantium/detailed-adamantium-page-06.txt",
+          "sha256": "9f661c83a1145e62fe2c539ac4576658560a19883ccc53cbb9c2be1d1ede745e"
+        }
+      ]
+    },
+    {
+      "family": "bone",
+      "page": 1,
+      "path": "Gear/bone/page-01.png",
+      "sha256": "e3cda1989ce47c527faad4738d7f78f061dff1a36afa23eb8abafe90b34ccbfe",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.bone",
+        "weapon.arming sword.bone",
+        "weapon.scimitar.bone",
+        "weapon.hand axe.bone",
+        "weapon.mace.bone",
+        "weapon.spear.bone",
+        "weapon.halberd.bone"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/bone/page-01.txt",
+      "prompt_sha256": "75cff82f0643da937d3d2f01b541df382787b9e1fc5be7397a9eac5c0f31fbcd",
+      "related_prompts": [
+        {
+          "path": "prompts/bone/detailed-bone-page-01.txt",
+          "sha256": "75cff82f0643da937d3d2f01b541df382787b9e1fc5be7397a9eac5c0f31fbcd"
+        }
+      ]
+    },
+    {
+      "family": "bone",
+      "page": 2,
+      "path": "Gear/bone/page-02.png",
+      "sha256": "9f5c15a33dc5218ab0d86c1dcf1152394d0172ff373ecece86ad21c13c2f5821",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.kettle.bone",
+        "helmet.horned.bone",
+        "helmet.crested.bone",
+        "chest.plate.bone",
+        "chest.scale.bone",
+        "chest.lamellar.bone",
+        "legs.plate.bone"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/bone/page-02.txt",
+      "prompt_sha256": "a49c42e25e613542430343df429fe0f7ca4deae12171c87731bace244bbf8c2f",
+      "related_prompts": [
+        {
+          "path": "prompts/bone/detailed-bone-page-02.txt",
+          "sha256": "a49c42e25e613542430343df429fe0f7ca4deae12171c87731bace244bbf8c2f"
+        }
+      ]
+    },
+    {
+      "family": "bone",
+      "page": 3,
+      "path": "Gear/bone/page-03.png",
+      "sha256": "49040155164c98705f97da7e538572e6e7183b1a10d93c24b6d2316f7056c04d",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.bone",
+        "arms.plate.bone.L",
+        "arms.plate.bone.R",
+        "shield.buckler.bone",
+        "shield.round.bone",
+        "shield.kite.bone"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "source_state_range": [
+        14,
+        19
+      ],
+      "visible_cells": 22,
+      "prompt": "prompts/bone/page-03.txt",
+      "prompt_sha256": "91f48409af5d48f72e8c3f0f00eb7dac35c8653dc218a712c46470bef1facad7",
+      "related_prompts": [
+        {
+          "path": "prompts/bone/detailed-bone-page-03.txt",
+          "sha256": "91f48409af5d48f72e8c3f0f00eb7dac35c8653dc218a712c46470bef1facad7"
+        }
+      ]
+    },
+    {
+      "family": "bonehide",
+      "page": 1,
+      "path": "Gear/bonehide/page-01.png",
+      "sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+      "status": "existing_checked_artwork",
+      "states": [
+        "helmet.kettle.bonehide",
+        "chest.leather.bonehide",
+        "legs.leather.bonehide",
+        "arms.leather.bonehide.L",
+        "arms.leather.bonehide.R"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "family": "chitin",
+      "page": 1,
+      "path": "Gear/chitin/page-01.png",
+      "sha256": "1f4378633e010c46035cd755c4c10d89b7e6fe6d25efb3857d9943daec200ec4",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.chitin",
+        "weapon.arming sword.chitin",
+        "weapon.scimitar.chitin",
+        "weapon.hand axe.chitin",
+        "weapon.battle axe.chitin",
+        "weapon.mace.chitin",
+        "weapon.spear.chitin"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/chitin/page-01.txt",
+      "prompt_sha256": "d576696275ab4efe26b4951dd4bfb673636e22c53d868ba88d3ba81ecad8fb55",
+      "related_prompts": [
+        {
+          "path": "prompts/chitin/detailed-chitin-page-01.txt",
+          "sha256": "d576696275ab4efe26b4951dd4bfb673636e22c53d868ba88d3ba81ecad8fb55"
+        }
+      ]
+    },
+    {
+      "family": "chitin",
+      "page": 2,
+      "path": "Gear/chitin/page-02.png",
+      "sha256": "bb5d7e4dd811e0260925b82658256f33a2e499178848396d8702819b707a2f0c",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.halberd.chitin",
+        "helmet.kettle.chitin",
+        "helmet.horned.chitin",
+        "helmet.crested.chitin",
+        "helmet.great helm.chitin",
+        "chest.plate.chitin",
+        "chest.scale.chitin"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/chitin/page-02.txt",
+      "prompt_sha256": "8e50ae29eac3ca3bb0faa4e6ac305f13aa7104f46d931fd00c905d51d98d28b1",
+      "related_prompts": [
+        {
+          "path": "prompts/chitin/detailed-chitin-page-02.txt",
+          "sha256": "8e50ae29eac3ca3bb0faa4e6ac305f13aa7104f46d931fd00c905d51d98d28b1"
+        }
+      ]
+    },
+    {
+      "family": "chitin",
+      "page": 3,
+      "path": "Gear/chitin/page-03.png",
+      "sha256": "25b889f9e94557edba949df307e752fb2b1ce09e803edd6f7806293e3b80fb4b",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.lamellar.chitin",
+        "legs.plate.chitin",
+        "legs.scale.chitin",
+        "arms.plate.chitin.L",
+        "arms.plate.chitin.R",
+        "shield.buckler.chitin",
+        "shield.round.chitin"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 26,
+      "prompt": "prompts/chitin/page-03.txt",
+      "prompt_sha256": "16b4e8787c1a4777c2f662ce532da250f0a93eb38ee24543a24b42b48008f460",
+      "related_prompts": [
+        {
+          "path": "prompts/chitin/detailed-chitin-page-03.txt",
+          "sha256": "16b4e8787c1a4777c2f662ce532da250f0a93eb38ee24543a24b42b48008f460"
+        }
+      ]
+    },
+    {
+      "family": "chitin",
+      "page": 4,
+      "path": "Gear/chitin/page-04.png",
+      "sha256": "ab7c1c0dd8cbf85a7109f898aa8276dc0deda6cbcb60481ee852a8082c12933b",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.kite.chitin",
+        "shield.heater.chitin"
+      ],
+      "state_indices": [
+        21,
+        22
+      ],
+      "source_state_range": [
+        21,
+        22
+      ],
+      "visible_cells": 8,
+      "prompt": "prompts/chitin/page-04.txt",
+      "prompt_sha256": "24f3f78c8655f612f987153a452279a915985c0b74316d6b2a9239972a2a2a8f",
+      "related_prompts": [
+        {
+          "path": "prompts/chitin/detailed-chitin-page-04.txt",
+          "sha256": "24f3f78c8655f612f987153a452279a915985c0b74316d6b2a9239972a2a2a8f"
+        }
+      ]
+    },
+    {
+      "family": "cloth",
+      "page": 1,
+      "path": "Gear/cloth/page-01.png",
+      "sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+      "status": "existing_checked_artwork",
+      "states": [
+        "chest.robe.black",
+        "chest.robe.red",
+        "chest.robe.white",
+        "chest.robe.brown",
+        "chest.robe.blue",
+        "chest.robe.purple",
+        "chest.robe.crimson"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "family": "cloth",
+      "page": 2,
+      "path": "Gear/cloth/page-02.png",
+      "sha256": "b7fe57994d7183a42512d879decdb1ad3c5f83a1f0ecb9e61ce156573b0f4028",
+      "status": "existing_checked_artwork",
+      "states": [
+        "chest.robe.green",
+        "chest.robe.grey",
+        "chest.robe.dragonrobe",
+        "chest.robe.spiderrobe",
+        "chest.robe.bonerobe",
+        "legs.cloth",
+        "legs.boots"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "family": "diamond",
+      "page": 1,
+      "path": "Gear/diamond/page-01.png",
+      "sha256": "12614dcd58fa6b05230e21d805e323cdc4229420edbca4e83dd9540b1b132bc8",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.diamond",
+        "weapon.arming sword.diamond",
+        "weapon.longsword.diamond",
+        "weapon.scimitar.diamond",
+        "weapon.hand axe.diamond",
+        "weapon.battle axe.diamond",
+        "weapon.warhammer.diamond"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/diamond/page-01.txt",
+      "prompt_sha256": "756c3e002b1a571b6bd2123f03123711e6756fba97cbfa16654d6b52ba2bdde2",
+      "related_prompts": [
+        {
+          "path": "prompts/diamond/detailed-diamond-page-01-repair-axes.txt",
+          "sha256": "c59809b17dcd67e5109e5a41698996059c94b544c52cba96b42621a08687654f"
+        },
+        {
+          "path": "prompts/diamond/detailed-diamond-page-01-repair-flat-poll.txt",
+          "sha256": "8f4dccec2cf216d9f9e9459513a5caf6b5fc69c622a29cea7a8789a5b8420a13"
+        },
+        {
+          "path": "prompts/diamond/detailed-diamond-page-01-repair.txt",
+          "sha256": "766c1d2bd0bf0093325b8db6f5bb7419a2f18bcda810646fa1c46feaffab19e6"
+        },
+        {
+          "path": "prompts/diamond/detailed-diamond-page-01.txt",
+          "sha256": "756c3e002b1a571b6bd2123f03123711e6756fba97cbfa16654d6b52ba2bdde2"
+        }
+      ]
+    },
+    {
+      "family": "diamond",
+      "page": 2,
+      "path": "Gear/diamond/page-02.png",
+      "sha256": "5b70f772147a1dcd2f31710570fedf27b8d90173246ee40016eea3b9c9205a1c",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.mace.diamond",
+        "weapon.morning star.diamond",
+        "weapon.spear.diamond",
+        "weapon.halberd.diamond",
+        "weapon.bow.diamond",
+        "helmet.kettle.diamond",
+        "helmet.nasal.diamond"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/diamond/page-02.txt",
+      "prompt_sha256": "6660dccb7bd9ba3812965c6a4f9d57bea96ed2c4e8f688a565ec5053461dbb5e",
+      "related_prompts": [
+        {
+          "path": "prompts/diamond/detailed-diamond-page-02-repair.txt",
+          "sha256": "90ba86bc54cb3e1e0c90515e34f30b212cc81996375a4311bac161c89884565c"
+        },
+        {
+          "path": "prompts/diamond/detailed-diamond-page-02.txt",
+          "sha256": "6660dccb7bd9ba3812965c6a4f9d57bea96ed2c4e8f688a565ec5053461dbb5e"
+        }
+      ]
+    },
+    {
+      "family": "diamond",
+      "page": 3,
+      "path": "Gear/diamond/page-03.png",
+      "sha256": "77b9cf1f0cc641dfb93892bf6ededf466299f7d3ed8a90ec4a165e74fe9cf732",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.horned.diamond",
+        "helmet.winged.diamond",
+        "helmet.great helm.diamond",
+        "helmet.crested.diamond",
+        "chest.plate.diamond",
+        "chest.banded.diamond",
+        "chest.mail.diamond"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/diamond/page-03.txt",
+      "prompt_sha256": "f3a380a061f481b94883b217e856b35a3dacaa3502e040a12be13058db19ded0",
+      "related_prompts": [
+        {
+          "path": "prompts/diamond/detailed-diamond-page-03.txt",
+          "sha256": "f3a380a061f481b94883b217e856b35a3dacaa3502e040a12be13058db19ded0"
+        }
+      ]
+    },
+    {
+      "family": "diamond",
+      "page": 4,
+      "path": "Gear/diamond/page-04.png",
+      "sha256": "b8f57b5bb350a122f11d8f22ca868c39552e34e1389d3d3c42359f4937fc8561",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.scale.diamond",
+        "chest.lamellar.diamond",
+        "chest.brigandine.diamond",
+        "chest.tabard.diamond",
+        "legs.plate.diamond",
+        "legs.mail.diamond",
+        "legs.scale.diamond"
+      ],
+      "state_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_state_range": [
+        21,
+        27
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/diamond/page-04.txt",
+      "prompt_sha256": "76b1fc9a209026cb6dc72da9fdbc56bf89e623d1692197215f7a2d12f4c90852",
+      "related_prompts": [
+        {
+          "path": "prompts/diamond/detailed-diamond-page-04-repair.txt",
+          "sha256": "ad7b8fcc29b50580f93945d004e667d5ac97124153894f0d61dcf2946f466126"
+        },
+        {
+          "path": "prompts/diamond/detailed-diamond-page-04.txt",
+          "sha256": "76b1fc9a209026cb6dc72da9fdbc56bf89e623d1692197215f7a2d12f4c90852"
+        }
+      ]
+    },
+    {
+      "family": "diamond",
+      "page": 5,
+      "path": "Gear/diamond/page-05.png",
+      "sha256": "4c2f6bfbb7abc2c958206195538a969ccac92b9a5753f6b14323be5be24eab91",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "arms.plate.diamond.L",
+        "arms.plate.diamond.R",
+        "arms.mail.diamond.L",
+        "arms.mail.diamond.R",
+        "shield.buckler.diamond",
+        "shield.round.diamond",
+        "shield.heater.diamond"
+      ],
+      "state_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_state_range": [
+        28,
+        34
+      ],
+      "visible_cells": 24,
+      "prompt": "prompts/diamond/page-05.txt",
+      "prompt_sha256": "a37c7900b757ab1e16f14666f035d3048a6dce4ef0781360273fb196393852de",
+      "related_prompts": [
+        {
+          "path": "prompts/diamond/detailed-diamond-page-05.txt",
+          "sha256": "a37c7900b757ab1e16f14666f035d3048a6dce4ef0781360273fb196393852de"
+        }
+      ]
+    },
+    {
+      "family": "diamond",
+      "page": 6,
+      "path": "Gear/diamond/page-06.png",
+      "sha256": "aa7171ac6fb82946d10c80418422cf42be3f0ead3930962da60c29aa3696866b",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.kite.diamond",
+        "shield.tower.diamond"
+      ],
+      "state_indices": [
+        35,
+        36
+      ],
+      "source_state_range": [
+        35,
+        36
+      ],
+      "visible_cells": 8,
+      "prompt": "prompts/diamond/page-06.txt",
+      "prompt_sha256": "857bae119f2f1d874068185c379f3f23419a95ae91b82b803470620d1c4b60bb",
+      "related_prompts": [
+        {
+          "path": "prompts/diamond/detailed-diamond-page-06.txt",
+          "sha256": "857bae119f2f1d874068185c379f3f23419a95ae91b82b803470620d1c4b60bb"
+        }
+      ]
+    },
+    {
+      "family": "dragon",
+      "page": 1,
+      "path": "Gear/dragon/page-01.png",
+      "sha256": "f92d3c5f876b802e292441b15a8ef7523d673b7473d586f934b62b8a2a179a29",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.kettle.dragon",
+        "helmet.horned.dragon",
+        "helmet.crested.dragon",
+        "helmet.great helm.dragon",
+        "chest.scale.dragon",
+        "chest.lamellar.dragon",
+        "chest.plate.dragon"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/dragon/page-01.txt",
+      "prompt_sha256": "fcd547a079731c33c5b51dacebe4029703d4b0cf7c22aa7b3efa75ff683cd447",
+      "related_prompts": [
+        {
+          "path": "prompts/dragon/detailed-dragon-page-01.txt",
+          "sha256": "fcd547a079731c33c5b51dacebe4029703d4b0cf7c22aa7b3efa75ff683cd447"
+        }
+      ]
+    },
+    {
+      "family": "dragon",
+      "page": 2,
+      "path": "Gear/dragon/page-02.png",
+      "sha256": "62d192c870cc619514b513b3a91df55dbf01ca3b7aa01a67201c8027a736313f",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.dragon",
+        "legs.plate.dragon",
+        "arms.plate.dragon.L",
+        "arms.plate.dragon.R",
+        "shield.round.dragon",
+        "shield.kite.dragon",
+        "shield.heater.dragon"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 26,
+      "prompt": "prompts/dragon/page-02.txt",
+      "prompt_sha256": "65172a634bffc4a85ad790cdc508e2254866d19b250f744a3534074c1236363c",
+      "related_prompts": [
+        {
+          "path": "prompts/dragon/detailed-dragon-page-02.txt",
+          "sha256": "65172a634bffc4a85ad790cdc508e2254866d19b250f744a3534074c1236363c"
+        }
+      ]
+    },
+    {
+      "family": "dragonbone",
+      "page": 1,
+      "path": "Gear/dragonbone/page-01.png",
+      "sha256": "df4108b37986eab956178b9533b7475be1a46101425cb5057907ceb6c2b20b98",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.longsword.dragonbone",
+        "weapon.battle axe.dragonbone",
+        "weapon.warhammer.dragonbone",
+        "weapon.halberd.dragonbone",
+        "weapon.bow.dragonbone",
+        "helmet.kettle.dragonbone",
+        "helmet.horned.dragonbone"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/dragonbone/page-01.txt",
+      "prompt_sha256": "1fc8b394aa6f7b89e8f100443a265d185c3edbfb63d2d8c274b2ed1d26f5990e",
+      "related_prompts": [
+        {
+          "path": "prompts/dragonbone/detailed-dragonbone-page-01.txt",
+          "sha256": "1fc8b394aa6f7b89e8f100443a265d185c3edbfb63d2d8c274b2ed1d26f5990e"
+        }
+      ]
+    },
+    {
+      "family": "dragonbone",
+      "page": 2,
+      "path": "Gear/dragonbone/page-02.png",
+      "sha256": "474aa5495f7e89af457feb2727f5a3c84bbb722c81f41dfe47e050f8c0ff7334",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.great helm.dragonbone",
+        "chest.plate.dragonbone",
+        "chest.lamellar.dragonbone",
+        "legs.plate.dragonbone",
+        "arms.plate.dragonbone.L",
+        "arms.plate.dragonbone.R",
+        "shield.round.dragonbone"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 26,
+      "prompt": "prompts/dragonbone/page-02.txt",
+      "prompt_sha256": "fed2ca366a7bd18d1f3faa35abe8c8f591ad46a03db6c184b6507512b3b37732",
+      "related_prompts": [
+        {
+          "path": "prompts/dragonbone/detailed-dragonbone-page-02.txt",
+          "sha256": "fed2ca366a7bd18d1f3faa35abe8c8f591ad46a03db6c184b6507512b3b37732"
+        }
+      ]
+    },
+    {
+      "family": "dragonbone",
+      "page": 3,
+      "path": "Gear/dragonbone/page-03.png",
+      "sha256": "6dbec7557866cb44b7590a0dbda60a35e71a37bd72fe24f89a930af579af8b02",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.kite.dragonbone"
+      ],
+      "state_indices": [
+        14
+      ],
+      "source_state_range": [
+        14,
+        14
+      ],
+      "visible_cells": 4,
+      "prompt": "prompts/dragonbone/page-03.txt",
+      "prompt_sha256": "1e6f524d35259a0c56ac8511d1783fd45dba447dca2bc61de9bc4a390412c8e4",
+      "related_prompts": [
+        {
+          "path": "prompts/dragonbone/detailed-dragonbone-page-03.txt",
+          "sha256": "1e6f524d35259a0c56ac8511d1783fd45dba447dca2bc61de9bc4a390412c8e4"
+        }
+      ]
+    },
+    {
+      "family": "dragonfang",
+      "page": 1,
+      "path": "Gear/dragonfang/page-01.png",
+      "sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+      "status": "existing_checked_artwork",
+      "states": [
+        "weapon.dagger.dragonfang",
+        "weapon.arming sword.dragonfang",
+        "weapon.longsword.dragonfang",
+        "weapon.scimitar.dragonfang",
+        "weapon.hand axe.dragonfang",
+        "weapon.battle axe.dragonfang",
+        "weapon.spear.dragonfang",
+        "weapon.halberd.dragonfang"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "family": "dragonhide",
+      "page": 1,
+      "path": "Gear/dragonhide/page-01.png",
+      "sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+      "status": "existing_checked_artwork",
+      "states": [
+        "helmet.kettle.dragonhide",
+        "chest.leather.dragonhide",
+        "legs.leather.dragonhide",
+        "arms.leather.dragonhide.L",
+        "arms.leather.dragonhide.R"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "family": "gold",
+      "page": 1,
+      "path": "Gear/gold/page-01.png",
+      "sha256": "3737e4db960f1bcca1601db00f76f97ec991079918ff0bf2b2576be51a231fe8",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.gold",
+        "weapon.arming sword.gold",
+        "weapon.longsword.gold",
+        "weapon.scimitar.gold",
+        "weapon.hand axe.gold",
+        "weapon.battle axe.gold",
+        "weapon.warhammer.gold"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/gold/page-01.txt",
+      "prompt_sha256": "1b51195c7ea81c7c106ffd36532fe40ea41a4017a5493617f0ba6053fd448a98",
+      "related_prompts": [
+        {
+          "path": "prompts/gold/detailed-gold-page-01.txt",
+          "sha256": "1b51195c7ea81c7c106ffd36532fe40ea41a4017a5493617f0ba6053fd448a98"
+        }
+      ]
+    },
+    {
+      "family": "gold",
+      "page": 2,
+      "path": "Gear/gold/page-02.png",
+      "sha256": "14ddc1aecfc6847e5c325e7d123e2d9e9f24c1ddc73613d762cb4e8203bec011",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.mace.gold",
+        "weapon.morning star.gold",
+        "weapon.spear.gold",
+        "weapon.halberd.gold",
+        "weapon.pickaxe.gold",
+        "weapon.bow.gold",
+        "helmet.kettle.gold"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/gold/page-02.txt",
+      "prompt_sha256": "675b4d673e0ac9fff22c7b61f8f5be687312ae621cf6b82d6aa26da7b63e7bcf",
+      "related_prompts": [
+        {
+          "path": "prompts/gold/detailed-gold-page-02.txt",
+          "sha256": "675b4d673e0ac9fff22c7b61f8f5be687312ae621cf6b82d6aa26da7b63e7bcf"
+        }
+      ]
+    },
+    {
+      "family": "gold",
+      "page": 3,
+      "path": "Gear/gold/page-03.png",
+      "sha256": "eec5c485ce1e39763b8b610eb627098fbb4c202752e2c349793b21ea91105569",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.nasal.gold",
+        "helmet.horned.gold",
+        "helmet.winged.gold",
+        "helmet.great helm.gold",
+        "helmet.crested.gold",
+        "chest.plate.gold",
+        "chest.banded.gold"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/gold/page-03.txt",
+      "prompt_sha256": "a84c2e2e91b113605fac314b4870adcb120cfdda7b578537d4f751d22c7cccbd",
+      "related_prompts": [
+        {
+          "path": "prompts/gold/detailed-gold-page-03.txt",
+          "sha256": "a84c2e2e91b113605fac314b4870adcb120cfdda7b578537d4f751d22c7cccbd"
+        }
+      ]
+    },
+    {
+      "family": "gold",
+      "page": 4,
+      "path": "Gear/gold/page-04.png",
+      "sha256": "1711333ace038425aca73bf09bf93e782b0b7252f25863343fcac41d5cc5fed7",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.mail.gold",
+        "chest.scale.gold",
+        "chest.lamellar.gold",
+        "chest.brigandine.gold",
+        "chest.tabard.gold",
+        "legs.plate.gold",
+        "legs.mail.gold"
+      ],
+      "state_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_state_range": [
+        21,
+        27
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/gold/page-04.txt",
+      "prompt_sha256": "3d152e25c99218d591b298211cc054e01325f15d604c5d6e757eb297823535cd",
+      "related_prompts": [
+        {
+          "path": "prompts/gold/detailed-gold-page-04.txt",
+          "sha256": "3d152e25c99218d591b298211cc054e01325f15d604c5d6e757eb297823535cd"
+        }
+      ]
+    },
+    {
+      "family": "gold",
+      "page": 5,
+      "path": "Gear/gold/page-05.png",
+      "sha256": "d0a73456e654a62fd63248d8f8ddb769a62ab6a3479929d466a58657e002710e",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.gold",
+        "arms.plate.gold.L",
+        "arms.plate.gold.R",
+        "arms.mail.gold.L",
+        "arms.mail.gold.R",
+        "shield.buckler.gold",
+        "shield.round.gold"
+      ],
+      "state_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_state_range": [
+        28,
+        34
+      ],
+      "visible_cells": 24,
+      "prompt": "prompts/gold/page-05.txt",
+      "prompt_sha256": "87d7d5587649886ad44d28e24e4c2218aad89875787ffd29d250f7a43b0c1327",
+      "related_prompts": [
+        {
+          "path": "prompts/gold/detailed-gold-page-05.txt",
+          "sha256": "87d7d5587649886ad44d28e24e4c2218aad89875787ffd29d250f7a43b0c1327"
+        }
+      ]
+    },
+    {
+      "family": "gold",
+      "page": 6,
+      "path": "Gear/gold/page-06.png",
+      "sha256": "64765191f114fbd96d08cba2c9f103e5eb09123edca2d0225df896d0070c8891",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.heater.gold",
+        "shield.kite.gold",
+        "shield.tower.gold",
+        "chest.robe.gold"
+      ],
+      "state_indices": [
+        35,
+        36,
+        37,
+        38
+      ],
+      "source_state_range": [
+        35,
+        38
+      ],
+      "visible_cells": 16,
+      "prompt": "prompts/gold/page-06.txt",
+      "prompt_sha256": "39522b6de2f80ce3dbe419012981e35a1f3b07fef9c4d1118534d4a98df3a4e9",
+      "related_prompts": [
+        {
+          "path": "prompts/gold/detailed-gold-page-06.txt",
+          "sha256": "39522b6de2f80ce3dbe419012981e35a1f3b07fef9c4d1118534d4a98df3a4e9"
+        }
+      ]
+    },
+    {
+      "family": "hell",
+      "page": 1,
+      "path": "Gear/hell/page-01.png",
+      "sha256": "65c579b3ab75e68051656eadaef0afc722d49806eeb8cae94ac5e0e343c5095d",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.hell",
+        "weapon.arming sword.hell",
+        "weapon.longsword.hell",
+        "weapon.scimitar.hell",
+        "weapon.hand axe.hell",
+        "weapon.battle axe.hell",
+        "weapon.warhammer.hell"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/hell/page-01.txt",
+      "prompt_sha256": "e8d78312bfe130c91e94bdd0d2c8343408bb23764ba0ba6f1117afca78736a44",
+      "related_prompts": [
+        {
+          "path": "prompts/hell/detailed-hell-page-01-repair.txt",
+          "sha256": "4fe98495ae409a0360aea15f5c5e62360812a01c15503db09de74df9af738687"
+        },
+        {
+          "path": "prompts/hell/detailed-hell-page-01.txt",
+          "sha256": "e8d78312bfe130c91e94bdd0d2c8343408bb23764ba0ba6f1117afca78736a44"
+        }
+      ]
+    },
+    {
+      "family": "hell",
+      "page": 2,
+      "path": "Gear/hell/page-02.png",
+      "sha256": "2a32e9d7ad0c4745a4ff82c0408ee73382b1884d9fd567899b4d6bc11ca774d6",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.mace.hell",
+        "weapon.morning star.hell",
+        "weapon.spear.hell",
+        "weapon.halberd.hell",
+        "weapon.pickaxe.hell",
+        "weapon.bow.hell",
+        "helmet.kettle.hell"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/hell/page-02.txt",
+      "prompt_sha256": "eb5b5b7e0292c6cd79974689fe2347ef33fed8ed8faf526dd6e65a54917d39f6",
+      "related_prompts": [
+        {
+          "path": "prompts/hell/detailed-hell-page-02-repair.txt",
+          "sha256": "4853c612b86c7511c48d413d8c17465ef3fc17be6f625fa0794211a2779e419b"
+        },
+        {
+          "path": "prompts/hell/detailed-hell-page-02.txt",
+          "sha256": "eb5b5b7e0292c6cd79974689fe2347ef33fed8ed8faf526dd6e65a54917d39f6"
+        }
+      ]
+    },
+    {
+      "family": "hell",
+      "page": 3,
+      "path": "Gear/hell/page-03.png",
+      "sha256": "33d735888ee5348ffa427713c0ce8beb30eb88a2d92afd689bac42214c712f43",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.nasal.hell",
+        "helmet.horned.hell",
+        "helmet.winged.hell",
+        "helmet.great helm.hell",
+        "helmet.crested.hell",
+        "chest.plate.hell",
+        "chest.banded.hell"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/hell/page-03.txt",
+      "prompt_sha256": "f726a260c0a0a1d92f49b87e1eec5e6ad8856d915a2f587a87bc3d52a1cbeff6",
+      "related_prompts": [
+        {
+          "path": "prompts/hell/detailed-hell-page-03.txt",
+          "sha256": "f726a260c0a0a1d92f49b87e1eec5e6ad8856d915a2f587a87bc3d52a1cbeff6"
+        }
+      ]
+    },
+    {
+      "family": "hell",
+      "page": 4,
+      "path": "Gear/hell/page-04.png",
+      "sha256": "0b1ba980735bfcfcb0045749900e93600164e7f225c11489a751f352287edb4b",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.mail.hell",
+        "chest.scale.hell",
+        "chest.lamellar.hell",
+        "chest.brigandine.hell",
+        "chest.tabard.hell",
+        "legs.plate.hell",
+        "legs.mail.hell"
+      ],
+      "state_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_state_range": [
+        21,
+        27
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/hell/page-04.txt",
+      "prompt_sha256": "eef07f5cfe8d95a87cb2151e4ef8bf640c03556de5b4fcbf89086f0e5518276a",
+      "related_prompts": [
+        {
+          "path": "prompts/hell/detailed-hell-page-04.txt",
+          "sha256": "eef07f5cfe8d95a87cb2151e4ef8bf640c03556de5b4fcbf89086f0e5518276a"
+        }
+      ]
+    },
+    {
+      "family": "hell",
+      "page": 5,
+      "path": "Gear/hell/page-05.png",
+      "sha256": "3e8afa3e82535478e89e5e619abac17966a5ee6647d28c866770ab8baefdb333",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.hell",
+        "arms.plate.hell.L",
+        "arms.plate.hell.R",
+        "arms.mail.hell.L",
+        "arms.mail.hell.R",
+        "shield.buckler.hell",
+        "shield.round.hell"
+      ],
+      "state_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_state_range": [
+        28,
+        34
+      ],
+      "visible_cells": 24,
+      "prompt": "prompts/hell/page-05.txt",
+      "prompt_sha256": "7c6e178300e772d94b4d3f6e217f4069831e918deb37e491f190d5a5d63d150d",
+      "related_prompts": [
+        {
+          "path": "prompts/hell/detailed-hell-page-05.txt",
+          "sha256": "7c6e178300e772d94b4d3f6e217f4069831e918deb37e491f190d5a5d63d150d"
+        }
+      ]
+    },
+    {
+      "family": "hell",
+      "page": 6,
+      "path": "Gear/hell/page-06.png",
+      "sha256": "101b0807f88dafe9948d84486f5c54e718d4886d55d57ba0a1c48febcebfe972",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.heater.hell",
+        "shield.kite.hell",
+        "shield.tower.hell"
+      ],
+      "state_indices": [
+        35,
+        36,
+        37
+      ],
+      "source_state_range": [
+        35,
+        37
+      ],
+      "visible_cells": 12,
+      "prompt": "prompts/hell/page-06.txt",
+      "prompt_sha256": "e0826292301b451db2e11b87202504c87a48ab07796c2f2597226521b356c133",
+      "related_prompts": [
+        {
+          "path": "prompts/hell/detailed-hell-page-06.txt",
+          "sha256": "e0826292301b451db2e11b87202504c87a48ab07796c2f2597226521b356c133"
+        }
+      ]
+    },
+    {
+      "family": "iron",
+      "page": 1,
+      "path": "Gear/iron/page-01.png",
+      "sha256": "b6d8e0b5235b913ce85efabacb79ebf9707770cd5b035f6b96baee0d83ac743d",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.iron",
+        "weapon.arming sword.iron",
+        "weapon.longsword.iron",
+        "weapon.scimitar.iron",
+        "weapon.hand axe.iron",
+        "weapon.battle axe.iron",
+        "weapon.warhammer.iron"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/iron/page-01.txt",
+      "prompt_sha256": "a728bc2a5f395620c48dd3cd22cf3a2e0e5e827c0f316e0c9e1b389cd7f452a5",
+      "related_prompts": [
+        {
+          "path": "prompts/iron/detailed-iron-page-01.txt",
+          "sha256": "a728bc2a5f395620c48dd3cd22cf3a2e0e5e827c0f316e0c9e1b389cd7f452a5"
+        }
+      ]
+    },
+    {
+      "family": "iron",
+      "page": 2,
+      "path": "Gear/iron/page-02.png",
+      "sha256": "4af335b6d26a11db1a0838535660c8c8c9838f554e7f42364667a5b0fd76c2ba",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.mace.iron",
+        "weapon.morning star.iron",
+        "weapon.spear.iron",
+        "weapon.halberd.iron",
+        "weapon.pickaxe.iron",
+        "weapon.bow.iron",
+        "helmet.kettle.iron"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/iron/page-02.txt",
+      "prompt_sha256": "24f6d6d7207dbfb4c0b3fe652fff0a4934d8e7983ab32b0a33f06847fcae1dfc",
+      "related_prompts": [
+        {
+          "path": "prompts/iron/detailed-iron-page-02.txt",
+          "sha256": "24f6d6d7207dbfb4c0b3fe652fff0a4934d8e7983ab32b0a33f06847fcae1dfc"
+        }
+      ]
+    },
+    {
+      "family": "iron",
+      "page": 3,
+      "path": "Gear/iron/page-03.png",
+      "sha256": "96c6a9d8ce2dae55fb98e0b0b8140b918fb1c743753d6f9d1f17187347ab078e",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.nasal.iron",
+        "helmet.horned.iron",
+        "helmet.winged.iron",
+        "helmet.great helm.iron",
+        "helmet.crested.iron",
+        "chest.plate.iron",
+        "chest.banded.iron"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/iron/page-03.txt",
+      "prompt_sha256": "2a9c3c7bf61f8f7b71d8579c20f9b9dc310dcbcb487bc1e7b77f6ba36a9c2526",
+      "related_prompts": [
+        {
+          "path": "prompts/iron/detailed-iron-page-03.txt",
+          "sha256": "2a9c3c7bf61f8f7b71d8579c20f9b9dc310dcbcb487bc1e7b77f6ba36a9c2526"
+        }
+      ]
+    },
+    {
+      "family": "iron",
+      "page": 4,
+      "path": "Gear/iron/page-04.png",
+      "sha256": "74e979c5666fb9f55fa31abeced4a0bd1e48e508658c949cd3aea69d80c40cb1",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.mail.iron",
+        "chest.scale.iron",
+        "chest.lamellar.iron",
+        "chest.brigandine.iron",
+        "chest.tabard.iron",
+        "legs.plate.iron",
+        "legs.mail.iron"
+      ],
+      "state_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_state_range": [
+        21,
+        27
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/iron/page-04.txt",
+      "prompt_sha256": "c37714f7a8bd3aa72f8ecbfbb7b6e820f29d7275d87070cb96183c9227dfbcd0",
+      "related_prompts": [
+        {
+          "path": "prompts/iron/detailed-iron-page-04.txt",
+          "sha256": "c37714f7a8bd3aa72f8ecbfbb7b6e820f29d7275d87070cb96183c9227dfbcd0"
+        }
+      ]
+    },
+    {
+      "family": "iron",
+      "page": 5,
+      "path": "Gear/iron/page-05.png",
+      "sha256": "4f75c977a0d2a423fde6f16c427f34296798df0488db710047073326567ca0e8",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.iron",
+        "arms.plate.iron.L",
+        "arms.plate.iron.R",
+        "arms.mail.iron.L",
+        "arms.mail.iron.R",
+        "shield.buckler.iron",
+        "shield.round.iron"
+      ],
+      "state_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_state_range": [
+        28,
+        34
+      ],
+      "visible_cells": 24,
+      "prompt": "prompts/iron/page-05.txt",
+      "prompt_sha256": "0158aad31946d959fa8fe11cc29ebe3bd32e1b20610e7068d62d40941bc659a9",
+      "related_prompts": [
+        {
+          "path": "prompts/iron/detailed-iron-page-05.txt",
+          "sha256": "0158aad31946d959fa8fe11cc29ebe3bd32e1b20610e7068d62d40941bc659a9"
+        }
+      ]
+    },
+    {
+      "family": "iron",
+      "page": 6,
+      "path": "Gear/iron/page-06.png",
+      "sha256": "c9a2b1d2784a99c50b8473579d224dba5f5b84cad431d1c1d6ac8bdc59424607",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.heater.iron",
+        "shield.kite.iron",
+        "shield.tower.iron"
+      ],
+      "state_indices": [
+        35,
+        36,
+        37
+      ],
+      "source_state_range": [
+        35,
+        37
+      ],
+      "visible_cells": 12,
+      "prompt": "prompts/iron/page-06.txt",
+      "prompt_sha256": "304032f13ce118bc46bfe1dd09ba95eab2f687cdd5cc27c005b1cc38be0a46ac",
+      "related_prompts": [
+        {
+          "path": "prompts/iron/detailed-iron-page-06.txt",
+          "sha256": "304032f13ce118bc46bfe1dd09ba95eab2f687cdd5cc27c005b1cc38be0a46ac"
+        }
+      ]
+    },
+    {
+      "family": "leather",
+      "page": 1,
+      "path": "Gear/leather/page-01.png",
+      "sha256": "942f1c41eef116e859d386ab7ad5c9d60706b9dc7ad1f26a584300c759b4c6de",
+      "status": "existing_checked_artwork",
+      "states": [
+        "helmet.kettle.leather",
+        "chest.leather.leather",
+        "legs.leather.leather",
+        "arms.leather.leather.L",
+        "arms.leather.leather.R",
+        "shield.buckler.leather",
+        "shield.round.leather"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "family": "magic",
+      "page": 1,
+      "path": "Gear/magic/page-01.png",
+      "sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "status": "existing_checked_artwork",
+      "states": [
+        "magic.crystal staff",
+        "magic.orb staff",
+        "magic.skull staff",
+        "magic.flame staff",
+        "magic.nature staff",
+        "magic.dragon staff",
+        "magic.spider staff"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "family": "magic",
+      "page": 2,
+      "path": "Gear/magic/page-02.png",
+      "sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "status": "existing_checked_artwork",
+      "states": [
+        "magic.rune sword",
+        "magic.flame sword",
+        "magic.frost axe",
+        "magic.storm spear",
+        "magic.void blade",
+        "magic.holy mace"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "family": "silver",
+      "page": 1,
+      "path": "Gear/silver/page-01.png",
+      "sha256": "2456b90d14e3a23769059a06e1b9c25dc639e243cda4b7b74de91a0773044a25",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.dagger.silver",
+        "weapon.arming sword.silver",
+        "weapon.longsword.silver",
+        "weapon.scimitar.silver",
+        "weapon.hand axe.silver",
+        "weapon.battle axe.silver",
+        "weapon.warhammer.silver"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 27,
+      "prompt": "prompts/silver/page-01.txt",
+      "prompt_sha256": "970dbc44f3c67d3035676d5492bdbb227375f04cac571715046debaf17db0465",
+      "related_prompts": [
+        {
+          "path": "prompts/silver/detailed-silver-page-01-repair.txt",
+          "sha256": "1c644ae8470057ee708821b67af1aeaedfc625112743461f27a62d37e490d9a4"
+        },
+        {
+          "path": "prompts/silver/detailed-silver-page-01.txt",
+          "sha256": "970dbc44f3c67d3035676d5492bdbb227375f04cac571715046debaf17db0465"
+        }
+      ]
+    },
+    {
+      "family": "silver",
+      "page": 2,
+      "path": "Gear/silver/page-02.png",
+      "sha256": "c2a0956ba79b1413d62bdd35911d483f7d624364ae157d21fb36b99e1abc7b4a",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.mace.silver",
+        "weapon.morning star.silver",
+        "weapon.spear.silver",
+        "weapon.halberd.silver",
+        "weapon.pickaxe.silver",
+        "weapon.bow.silver",
+        "helmet.kettle.silver"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/silver/page-02.txt",
+      "prompt_sha256": "320c4657cccebae07e85e7524482759f21bb92616a3069777fd19f22b2b3a556",
+      "related_prompts": [
+        {
+          "path": "prompts/silver/detailed-silver-page-02.txt",
+          "sha256": "320c4657cccebae07e85e7524482759f21bb92616a3069777fd19f22b2b3a556"
+        }
+      ]
+    },
+    {
+      "family": "silver",
+      "page": 3,
+      "path": "Gear/silver/page-03.png",
+      "sha256": "2e4732fd6d8e8562cee619bbbb33953dc5f5fc38564d532db3cce9012d70b92a",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "helmet.nasal.silver",
+        "helmet.horned.silver",
+        "helmet.winged.silver",
+        "helmet.great helm.silver",
+        "helmet.crested.silver",
+        "chest.plate.silver",
+        "chest.banded.silver"
+      ],
+      "state_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "source_state_range": [
+        14,
+        20
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/silver/page-03.txt",
+      "prompt_sha256": "730e6c9042cc81c6d3d5e8ca0656873986ad426decdce5db4fa793b4321f7894",
+      "related_prompts": [
+        {
+          "path": "prompts/silver/detailed-silver-page-03-repair.txt",
+          "sha256": "4647f70db53ac4b53ba1010825b6be707cf7258da3ea4a749ae395ae04d35959"
+        },
+        {
+          "path": "prompts/silver/detailed-silver-page-03.txt",
+          "sha256": "730e6c9042cc81c6d3d5e8ca0656873986ad426decdce5db4fa793b4321f7894"
+        }
+      ]
+    },
+    {
+      "family": "silver",
+      "page": 4,
+      "path": "Gear/silver/page-04.png",
+      "sha256": "bd804fcc23fd912ddb34244fa5574b3dc823044f8073a6edc52d44544120f32b",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "chest.mail.silver",
+        "chest.scale.silver",
+        "chest.lamellar.silver",
+        "chest.brigandine.silver",
+        "chest.tabard.silver",
+        "legs.plate.silver",
+        "legs.mail.silver"
+      ],
+      "state_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_state_range": [
+        21,
+        27
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/silver/page-04.txt",
+      "prompt_sha256": "c874a7977dd5653d2ca2a46bded0e2ee51e5fc46cce9ad87720780b44b9f79f0",
+      "related_prompts": [
+        {
+          "path": "prompts/silver/detailed-silver-page-04.txt",
+          "sha256": "c874a7977dd5653d2ca2a46bded0e2ee51e5fc46cce9ad87720780b44b9f79f0"
+        }
+      ]
+    },
+    {
+      "family": "silver",
+      "page": 5,
+      "path": "Gear/silver/page-05.png",
+      "sha256": "4f913062951aa20864fe8890ab16f4c55e231c514141efdcfa3bd1890f14dcf2",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "legs.scale.silver",
+        "arms.plate.silver.L",
+        "arms.plate.silver.R",
+        "arms.mail.silver.L",
+        "arms.mail.silver.R",
+        "shield.buckler.silver",
+        "shield.round.silver"
+      ],
+      "state_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_state_range": [
+        28,
+        34
+      ],
+      "visible_cells": 24,
+      "prompt": "prompts/silver/page-05.txt",
+      "prompt_sha256": "683366bfa8d4b8308bf9beb5c51356ce5b785f03468d38bc53deab19bfd55f5e",
+      "related_prompts": [
+        {
+          "path": "prompts/silver/detailed-silver-page-05.txt",
+          "sha256": "683366bfa8d4b8308bf9beb5c51356ce5b785f03468d38bc53deab19bfd55f5e"
+        }
+      ]
+    },
+    {
+      "family": "silver",
+      "page": 6,
+      "path": "Gear/silver/page-06.png",
+      "sha256": "1afd61eac2595b3fb6edbdd04a96cb45844788ebcc226b29b5d31290fc98cd03",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "shield.heater.silver",
+        "shield.kite.silver",
+        "shield.tower.silver"
+      ],
+      "state_indices": [
+        35,
+        36,
+        37
+      ],
+      "source_state_range": [
+        35,
+        37
+      ],
+      "visible_cells": 12,
+      "prompt": "prompts/silver/page-06.txt",
+      "prompt_sha256": "42d81f84de161856df76ab766c9b09cd05dd9151aff57171dae61eaf585aa470",
+      "related_prompts": [
+        {
+          "path": "prompts/silver/detailed-silver-page-06.txt",
+          "sha256": "42d81f84de161856df76ab766c9b09cd05dd9151aff57171dae61eaf585aa470"
+        }
+      ]
+    },
+    {
+      "family": "spiderfang",
+      "page": 1,
+      "path": "Gear/spiderfang/page-01.png",
+      "sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+      "status": "existing_checked_artwork",
+      "states": [
+        "weapon.dagger.spiderfang",
+        "weapon.arming sword.spiderfang",
+        "weapon.scimitar.spiderfang",
+        "weapon.spear.spiderfang"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "family": "spidersilk",
+      "page": 1,
+      "path": "Gear/spidersilk/page-01.png",
+      "sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+      "status": "existing_checked_artwork",
+      "states": [
+        "helmet.kettle.spidersilk",
+        "chest.leather.spidersilk",
+        "legs.leather.spidersilk",
+        "arms.leather.spidersilk.L",
+        "arms.leather.spidersilk.R"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "family": "wood",
+      "page": 1,
+      "path": "Gear/wood/page-01.png",
+      "sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "weapon.arming sword.wood",
+        "weapon.hand axe.wood",
+        "weapon.mace.wood",
+        "weapon.spear.wood",
+        "helmet.kettle.wood",
+        "chest.plate.wood",
+        "legs.plate.wood"
+      ],
+      "state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_state_range": [
+        0,
+        6
+      ],
+      "visible_cells": 28,
+      "prompt": "prompts/wood/page-01.txt",
+      "prompt_sha256": "6ceab7167d1cdec4a053323ff7e40b3122c7ac77a25a23e221eefcc304ef78a0",
+      "related_prompts": [
+        {
+          "path": "prompts/wood/detailed-wood-page-01.txt",
+          "sha256": "6ceab7167d1cdec4a053323ff7e40b3122c7ac77a25a23e221eefcc304ef78a0"
+        }
+      ]
+    },
+    {
+      "family": "wood",
+      "page": 2,
+      "path": "Gear/wood/page-02.png",
+      "sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "status": "new_detailed_artwork_checked",
+      "states": [
+        "arms.plate.wood.L",
+        "arms.plate.wood.R",
+        "shield.buckler.wood",
+        "shield.round.wood",
+        "shield.kite.wood",
+        "shield.heater.wood",
+        "shield.tower.wood"
+      ],
+      "state_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "source_state_range": [
+        7,
+        13
+      ],
+      "visible_cells": 26,
+      "prompt": "prompts/wood/page-02.txt",
+      "prompt_sha256": "f97fff72deb458cf58c7eb6ed2105467672e72885efa01e3c2aa4e5bd50153fc",
+      "related_prompts": [
+        {
+          "path": "prompts/wood/detailed-wood-page-02.txt",
+          "sha256": "f97fff72deb458cf58c7eb6ed2105467672e72885efa01e3c2aa4e5bd50153fc"
+        }
+      ]
+    }
+  ],
+  "race_plates": [
+    {
+      "title": "13 races \u2014 eight body views",
+      "path": "Races/races-8-angles.png",
+      "sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033"
+    },
+    {
+      "title": "13 races \u2014 eight head views",
+      "path": "Races/races-8-angles-heads.png",
+      "sha256": "50ce2878ae46cd99d2b390732e1da27086791db3443870cb01872a6cfd819c01"
+    },
+    {
+      "title": "Kobold \u2014 original detailed sheet",
+      "path": "Races/Kobold-detailed-sheet.png",
+      "sha256": "841ef702f884ef0cce6a6ef8d5db33825eccdf96b1eefcdcac2774fbbb8d2e9f"
+    },
+    {
+      "title": "Goblin \u2014 original detailed sheet",
+      "path": "Races/Goblins-detailed-sheet.png",
+      "sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0"
+    },
+    {
+      "title": "Kobold \u2014 detailed four-view sheet",
+      "path": "Races/Kobold-four-views.png",
+      "sha256": "0bf14d6df2945ccfe8ab87ec3de0ae8a30618bd2c429c82bc4ce9f5a955bab5b"
+    },
+    {
+      "title": "Goblin \u2014 detailed four-view sheet",
+      "path": "Races/Goblins-four-views.png",
+      "sha256": "c209e269d0893e450bef2a282e376c2acda44a88b2e2e094072d759a1879aeba"
+    }
+  ],
+  "runtime_atlas_exports": false,
+  "original_tool_resolution_retained": true,
+  "limitations": [
+    "Detailed artwork plates, not runtime sprite atlases.",
+    "Some embedded labels are abbreviated; the page metadata retains full names."
+  ],
+  "existing_detailed_gear_pages": 10,
+  "new_detailed_gear_pages": 50,
+  "independent_art_reviews": [
+    "reports/independent-art-review.json",
+    "reports/root-independent-art-review.json"
+  ],
+  "independently_reviewed_new_pages": 50,
+  "original_height_exports": {
+    "status": "complete_checked",
+    "equipment_states": 375,
+    "source_cutouts": 388,
+    "height_exports": 763,
+    "equipment_height_exports": 750,
+    "race_height_exports": 13
+  },
+  "export_gallery": "exports/index.html"
+}

@@ -1,0 +1,126 @@
+{
+  "review_type": "independent_reference_sheet_visual_qa",
+  "review_method": "Independent read-only visual comparison using view_image at source and output resolution; manual row/cell counts. Native DMI metadata and alpha analysis provide expected states/fragment geometry. Output art was not segmented or asserted pixel-identical.",
+  "status": "pass_with_label_truncation",
+  "original": {
+    "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/dragonfang.png",
+    "sha256": "7a21f7ac0813b7c6139e1735dd0d5caaa84f0dd1cd6a6538154cd4b3f0aea9df",
+    "dimensions": [
+      558,
+      838
+    ],
+    "mode": "RGBA"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/dragonfang.png",
+    "sha256": "eda0e9d5a90fc782d138972753bc161c60265aa59f0f298c6bea0a99ad47708e",
+    "dimensions": [
+      1023,
+      1538
+    ],
+    "mode": "RGB"
+  },
+  "expected_states": 8,
+  "observed_state_rows": 8,
+  "expected_occupied_cells": 32,
+  "observed_occupied_cells": 32,
+  "expected_occupied_cells_per_row": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "observed_occupied_cells_per_row": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "direction_columns": [
+    "south",
+    "north",
+    "east",
+    "west"
+  ],
+  "row_labels": [
+    "weapon.dagger.dragonfang",
+    "weapon.arming sword.dragonfang",
+    "weapon.longsword.dragonfang",
+    "weapon.scimitar.dragonfang",
+    "weapon.hand axe.dragonfang",
+    "weapon.battle axe.dragonfang",
+    "weapon.spear.dragonfang",
+    "weapon.halberd.dragonfang"
+  ],
+  "checks": {
+    "state_coverage": "pass",
+    "occupied_cells": "pass",
+    "opposed_facings": "pass",
+    "ivory_fang_and_brown_grip_palette": "pass",
+    "sparse_west_overlays": "pass",
+    "complete_label_text": "minor_truncation"
+  },
+  "fragment_review": [
+    {
+      "source_row_1based": 1,
+      "state": "weapon.dagger.dragonfang",
+      "west": "Two isolated brown fragments retained; no full dagger invented. Original consists of exactly two separate native pixels; output enlarges them as reference art."
+    },
+    {
+      "source_row_1based": 2,
+      "state": "weapon.arming sword.dragonfang",
+      "west": "Detached blade tip plus two separate small grip fragments retained."
+    },
+    {
+      "source_row_1based": 3,
+      "state": "weapon.longsword.dragonfang",
+      "west": "Detached long blade tip and lower grip fragment groups retained."
+    },
+    {
+      "source_row_1based": 4,
+      "state": "weapon.scimitar.dragonfang",
+      "west": "Detached curved blade tip plus two small grip fragments retained."
+    },
+    {
+      "source_row_1based": 5,
+      "state": "weapon.hand axe.dragonfang",
+      "west": "Small axe-head-only overlay retained."
+    },
+    {
+      "source_row_1based": 6,
+      "state": "weapon.battle axe.dragonfang",
+      "west": "Small axe head with short adjoining grip stub retained."
+    },
+    {
+      "source_row_1based": 7,
+      "state": "weapon.spear.dragonfang",
+      "west": "Short upper tip and distant lower dot retained; omitted intervening shaft remains absent."
+    },
+    {
+      "source_row_1based": 8,
+      "state": "weapon.halberd.dragonfang",
+      "west": "Short upper head and distant lower dot retained; omitted intervening shaft remains absent."
+    }
+  ],
+  "issues": [
+    {
+      "id": "dragonfang-clipped-labels",
+      "severity": "minor",
+      "source_rows_1based": [
+        6,
+        8
+      ],
+      "finding": "Generated labels retain some original truncation (e.g. weapon.battle axe.drag and weapon.halberd.dragonf). Full native state names remain available in next-gear-batch.json; no state or object is missing."
+    }
+  ],
+  "runtime_compatibility": "Visual reference QA only. Changed size, rendered labels/background, pixel geometry, and RGB output mean runtime sprite registration, transparency, native DMI metadata, and equipment alignment are not validated.",
+  "summary": "All8 states and32 occupied cells are present with consistent ivory fang/brown grip treatment. Critical sparse west cells and detached fragments are retained. Text truncation is a minor presentation issue only."
+}

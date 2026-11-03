@@ -1,0 +1,115 @@
+{
+  "source_relative": "Races64/Goblins.png",
+  "status": "checked_reference_art",
+  "runtime_ready": false,
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit/style-transfer",
+  "pages": [
+    {
+      "page": 6,
+      "source_rows": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "included_states": [
+        "NoLeftLegNoRightArm",
+        "NoRightArmNoRightLeg",
+        "NoLeftArmNoLeftLeg",
+        "NoLegsNoLeftArm"
+      ],
+      "represented_native_cells": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-06.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-16e759b3-c3ee-41ad-9629-468c4a1e969f.png",
+      "output_sha256": "03be485bec6163974a631e48e16ee742601f17f8918f3089d61f002d76af2ca4",
+      "generated_size": [
+        1536,
+        1024
+      ],
+      "generated_mode": "RGB",
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "generation_prompt": "Use case: precise sprite-reference enhancement. Image1 is original Races64/Goblins.dmi full preview, authoritative for anatomy and poses. Image2 is the approved new Goblins page01, STYLE/IDENTITY ONLY. Render the SAME olive-green squat big-headed goblin with large pointed brown-inner ears, yellow eyes, two tiny pale teeth, chunky faceted pixel/voxel shading, dark outlines. Four by four page: exactly4 rows,4 occupied columns perrow=16figures. Header exactly 'Races64/Goblins.dmi'. Clear white exact row labels at left, no other text. Dark charcoal background. Column1 FRONT/SOUTH, column2 BACK/NORTH, column3 RIGHT-FACING/EAST profile, column4 LEFT-FACING/WEST profile. No diagonal views. Head and torso always retained. This page consists of required game states with missing limbs; red source pixels are small stylized stump caps. No realistic gore, no enlarged wounds, no prosthetics, no bandages, no added gear. DO NOT RESTORE MISSING LIMBS even though style reference is full-bodied. Whole arms/hands and legs/feet absent as specified, red stump caps visible instead; retain ONLY the named surviving limbs, with source profile occlusion. Anatomicalleft belongs to character: in FRONT it appears screenRIGHT, in BACK screenLEFT. Anatomicalright is opposite. Image1 original state rows below have exact source pose; preserve them while improving materials. Full figures visible with margins, no cropped extremities. Reference artwork only, not a runtime atlas. Include ONLY original rows10\u201313. Row1 exact label 'NoLeftLegNoRightArm': ONLY LEFT ARM and RIGHT LEG remain; missing right arm and left leg. Front has arm on screenright, sole foot screenleft; back arm screenleft, sole foot screenright. Row2 'NoRightArmNoRightLeg': ONLY LEFT ARM and LEFT LEG remain, both on screenright in front, screenleft in back. Right side has small red shoulder/hip stump caps. Row3 'NoLeftArmNoLeftLeg': ONLY RIGHT ARM and RIGHT LEG remain, both on screenleft in front, screenright in back. Left side has red shoulder/hip caps. Row4 'NoLegsNoLeftArm': ONLY RIGHT ARM remains; NO LEGS, NO FEET, no knees, no boots, no hands except sole right hand. Front sole arm screenleft; back sole arm screenright. Torso terminates at red hip caps in all4views with EMPTY charcoal beneath. East/right profile shows intact right arm; west/left profile has a missing near left arm and any far right arm is largely occluded. Critical all row4views are legless; all other rows exactlyONEleg andONEarm each. Exactly4labels in order and16figures.",
+      "repair_prompt": "Use case: strictly localized sprite correction. Image1 is Goblins page06 target; Image2 is original Goblins.dmi anatomy reference. Modify ONLY row2 column3, the RIGHT-FACING/EAST profile in row 'NoRightArmNoRightLeg'. This figure is missing right arm and right leg, but it must retain a visible small far-side LEFT FOOT. Add one small olive-green far-side lower-left-leg/foot below and behind the red near right-hip stump cap, matching the original source row11 east profile. Currently that one cell ends at the red stump without any foot, which is wrong. The single remaining foot should be visibly planted at the figure baseline, subtle/narrow because far side, same voxel/pixel style. Keep near missing right leg red cap, missing right arm red shoulder cap, and retained far left arm visibility as original. DO NOT give it two legs, restore the missing near right leg, or add an arm. Change no other cell, label, image dimension, background or lighting. All16figures, row names, source missinglimb distinctions and face orientations remain unchanged. Header 'Races64/Goblins.dmi'.",
+      "generation_calls": 1,
+      "repair_calls": 1,
+      "initial_candidate": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-b4760cb8-069a-4439-b18d-889fffd25832.png",
+      "corrected_finding": "Added missing far-left foot in NoRightArmNoRightLeg east profile.",
+      "runtime_ready": false
+    },
+    {
+      "page": 7,
+      "source_rows": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "included_states": [
+        "NoLegsNoRightArm",
+        "None",
+        "NoArmsNoRightLeg",
+        "NoArmsNoLeftLeg"
+      ],
+      "represented_native_cells": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-07.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-b6b510ad-f2d1-4f3e-a765-abaf87aa711b.png",
+      "output_sha256": "c72dca35e1968003c67503da6f4c3a1975117039d97f143a23e894bdf0adaff4",
+      "generated_size": [
+        1536,
+        1024
+      ],
+      "generated_mode": "RGB",
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "generation_prompt": "Use case: precise sprite-reference enhancement. Image1 is original Races64/Goblins.dmi full preview, authoritative for anatomy and poses. Image2 is the approved new Goblins page01, STYLE/IDENTITY ONLY. Render the SAME olive-green squat big-headed goblin with large pointed brown-inner ears, yellow eyes, two tiny pale teeth, chunky faceted pixel/voxel shading, dark outlines. Four by four page: exactly4 rows,4 occupied columns perrow=16figures. Header exactly 'Races64/Goblins.dmi'. Clear white exact row labels at left, no other text. Dark charcoal background. Column1 FRONT/SOUTH, column2 BACK/NORTH, column3 RIGHT-FACING/EAST profile, column4 LEFT-FACING/WEST profile. No diagonal views. Head and torso always retained. This page consists of required game states with missing limbs; red source pixels are small stylized stump caps. No realistic gore, no enlarged wounds, no prosthetics, no bandages, no added gear. DO NOT RESTORE MISSING LIMBS even though style reference is full-bodied. Whole arms/hands and legs/feet absent as specified, red stump caps visible instead; retain ONLY the named surviving limbs, with source profile occlusion. Anatomicalleft belongs to character: in FRONT it appears screenRIGHT, in BACK screenLEFT. Anatomicalright is opposite. Image1 original state rows below have exact source pose; preserve them while improving materials. Full figures visible with margins, no cropped extremities. Reference artwork only, not a runtime atlas. Include ONLY original rows14\u201317. Row1 exact label 'NoLegsNoRightArm': ONLY LEFT ARM remains, no right arm, NO LEGS, NO FEET, no boots. Front sole arm screenright; back sole arm screenleft. Torso ends at red hip caps with empty charcoal beneath. Row2 exact label 'None': ZERO ARMS and ZERO LEGS, NO HANDS, NO FEET. Head+torso only with small red shoulder/hip caps. In every view body stops at torso; absolutely no dangling green limbs or footwear. Row3 exact label 'NoArmsNoRightLeg': ONLY LEFT LEG remains; NO ARMS/HANDS at either shoulder, no right leg. Front single foot screenright; back single foot screenleft. Keep small red caps at bothshoulders and missing right hip. Row4 exact label 'NoArmsNoLeftLeg': ONLY RIGHT LEG remains; NO ARMS/HANDS, no left leg. Front single foot screenleft; back single foot screenright. Keep source profile silhouettes, far/near retained leg may overlap in profile but there is exactlyoneleg total. Critical first2rows haveZEROfeet in all8views; last2rows haveONEfoot perfigure andZEROarms. Exactly4labels in order and16figures.",
+      "repair_prompt": "Use case: strictly localized sprite correction. Image1 is Goblins page07 target; Image2 is original Goblins.dmi reference. Modify ONLY bottom row column2, the BACK/NORTH figure in row 'NoArmsNoLeftLeg'. It must retain anatomical RIGHT LEG only, which in a BACK view belongs on SCREEN RIGHT. Move its single green leg and foot from screen-left to SCREEN-RIGHT below the right hip; put the small red missing-left-leg stump cap on SCREEN-LEFT below the left hip. Match original finalrow backview. The torso, ears, head, facing, both red shoulder caps and absence of both arms stay unchanged. ExactlyONEgreenleg/foot, no arms/hands. Do not change bottom-row frontview (its foot correctly screenleft), profiles, or any other row. First2rows remain entirely legless. Preserve all16figures,4labels, header, dimensions, charcoal backdrop, pixel/voxel style, shadows and spacing. No extra text or objects.",
+      "generation_calls": 1,
+      "repair_calls": 1,
+      "initial_candidate": "/Users/kiwimango/.codex/generated_images/01a16e88-788e-7322-ba9b-50f8f0fe367d/exec-ee1dbc82-5f5a-4304-b8c3-56a115d50167.png",
+      "corrected_finding": "Moved NoArmsNoLeftLeg backview retained right foot to screen-right and red left hipcap to screen-left.",
+      "runtime_ready": false
+    }
+  ],
+  "limitations": [
+    "Reference artwork only, with changed size, layout, geometry and RGB background.",
+    "Native frame registration, exact alpha and DMI metadata are not preserved; no runtime installation.",
+    "Perspective and retained-far-limb depth remain stylized; exact pixel identity is not asserted."
+  ],
+  "independent_review": "_meta/goblins-pages-06-07-review.json"
+}

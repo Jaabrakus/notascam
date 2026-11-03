@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "source_relative": "Races64/Kobold.png",
+  "page": 1,
+  "status": "pass_reference_art_with_documented_eye_stylization",
+  "runtime_ready": false,
+  "files": {
+    "original": {
+      "path": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Kobold.png",
+      "sha256": "6d9d3ae7781089d62f7e5d85e79f96f84adc6825c5f6589c33ccb3f6dfd9c4b3",
+      "dimensions": [
+        2526,
+        3586
+      ],
+      "mode": "RGBA"
+    },
+    "native": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Kobold.dmi",
+      "sha256": "10021b820e4afcc3c2f94d06636a8b7905b8449145a85b0222d3a90aa64e0710",
+      "dimensions": [
+        704,
+        640
+      ],
+      "mode": "RGBA"
+    },
+    "output": {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-01.png",
+      "sha256": "841ef702f884ef0cce6a6ef8d5db33825eccdf96b1eefcdcac2774fbbb8d2e9f",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "mode": "RGB"
+    }
+  },
+  "included_states": [
+    "Normal",
+    "Sleep"
+  ],
+  "represented_native_cells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "expected_occupied_cells": 14,
+  "observed_occupied_cells": 14,
+  "expected_empty_cells": 2,
+  "observed_empty_cells": 2,
+  "checks": {
+    "normal_twelve_views": "pass",
+    "three_distinct_normal_phases": "pass_at_reference_level",
+    "direction_order_front_back_east_west": "pass",
+    "full_limb_anatomy": "pass",
+    "standing_sleep_body": "pass",
+    "sleep_second_frame_z_only": "pass",
+    "sleep_remaining_cells_empty": "pass",
+    "sleep_no_awake_eye_glow": "pass",
+    "kobold_species_palette_and_ears": "pass",
+    "labels_readable": "pass"
+  },
+  "findings": [
+    "Golden olive/yellow skin and large pointed brown-interior ears distinguish Kobold from the greener Goblin reference while retaining the same polished voxel/pixel treatment.",
+    "Normal rows show standing and opposing stepping phases across four directions; all twelve figures complete.",
+    "Sleep retains neutral standing body and botharms/legs; separate secondframe is white Zbubble only.",
+    "Source sleepy eyes are dim filled olive patches; generated closed dark slits are a stylistic expression change, with sleepy state still clear and noawakeglow."
+  ],
+  "native_sleep_comparison": {
+    "sheet_columns": 11,
+    "normal_front_cell": 0,
+    "sleep_front_cell": 12,
+    "rgba_different_pixel_count": 53,
+    "alpha_different_pixel_count": 0,
+    "difference_bbox_xyxy": [
+      26,
+      29,
+      38,
+      40
+    ],
+    "body_outside_eye_region_identical": true
+  },
+  "deviations": [
+    "Sleep eyepatch shape changes from dim filled olive source ovals to dark closed slits; accepted as reference-art expression interpretation, not exactpixelidentity.",
+    "Size/geometry/spacing/background/alpha differ from native source."
+  ],
+  "limitations": [
+    "Only first2of18native states covered; entire Kobold source remains incomplete.",
+    "Reference-art coverage/anatomy review only, no native registration/animationmetadata/runtime compatibility validation.",
+    "Visual animation phase distinctions do not prove exact original animation geometry/timing."
+  ],
+  "review_method": "Independent view_image inspection of original and output; native metadata and first Normal-versus-Sleep RGBA comparison using actual11-column sheetstride.",
+  "mutations": "Only JSON reportwritten; no raster/source/manifest changes."
+}

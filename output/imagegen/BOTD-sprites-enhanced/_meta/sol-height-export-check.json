@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-24T17:22:57.866849+00:00",
+  "status": "passed",
+  "processing": "Local Pillow processing only; no image generation, network calls or paid services",
+  "exporter_changed": false,
+  "hashes_sha256": {
+    "output/imagegen/BOTD-sprites-enhanced/enhanced-64/source-art/Goblins-standing-front.png": "a95a5ddc8369d0b12c6cb8c002cd2476366cb86c1200f35944e9a460cefc4e3f",
+    "standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi": "9eef9feca0f31894fc74e0270f362b0809a6fd7d686b1f4aa96c21fc9856d9dc",
+    "output/imagegen/BOTD-sprites-enhanced/enhanced-height/Races64/Goblins/standing-front.png": "1c0cd97c95930bad358817e5fb579efcfdf5d6467a7726c8c2981f8381bfa8c8",
+    "output/imagegen/BOTD-sprites-enhanced/enhanced-height/Races64/Goblins/standing-front.export.json": "c0f85ed6fc79ab50971ad12b760b07c7c11ed6a4635e1100b3b29765d8416ebe",
+    "output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b",
+    "output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "output/imagegen/BOTD-sprites-enhanced/_tools/validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "facts": {
+    "native_cell_index": 0,
+    "native_visible_height": 44,
+    "native_bottom_baseline_exclusive": 64,
+    "approved_source_crop": [
+      208,
+      251,
+      1045,
+      1132
+    ],
+    "source_crop_size": [
+      837,
+      881
+    ],
+    "output_canvas_size": [
+      72,
+      64
+    ],
+    "output_visible_size": [
+      42,
+      44
+    ],
+    "output_alpha_bbox": [
+      15,
+      20,
+      57,
+      64
+    ],
+    "fixed_square_required": false,
+    "discarded_crop_nonzero_pixels": 1053,
+    "discarded_crop_maximum_alpha": 1
+  },
+  "tests": [
+    {
+      "name": "existing_native_height_baseline",
+      "passed": true,
+      "evidence": {
+        "canvas": [
+          72,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          20,
+          57,
+          64
+        ],
+        "native_alpha_bbox": [
+          15,
+          20,
+          49,
+          64
+        ]
+      }
+    },
+    {
+      "name": "existing_transparency",
+      "passed": true,
+      "evidence": {
+        "mode": "RGBA",
+        "fully_transparent_pixels": 3359,
+        "semi_transparent_pixels": 1246,
+        "hidden_rgb_cleared": true
+      }
+    },
+    {
+      "name": "recorded_hashes",
+      "passed": true,
+      "evidence": "Recorded source, native and output hashes match their files"
+    },
+    {
+      "name": "reproducible_existing_export",
+      "passed": true,
+      "evidence": {
+        "png_sha256": "1c0cd97c95930bad358817e5fb579efcfdf5d6467a7726c8c2981f8381bfa8c8",
+        "decoded_rgba_identical": true
+      }
+    },
+    {
+      "name": "existing_png_overwrite_refused",
+      "passed": true,
+      "evidence": "Refusing to overwrite existing file: /private/var/folders/28/10z2rygn2rqd266txklmc3mw0000gn/T/sol-height-check-16xp6z7m/native.png"
+    },
+    {
+      "name": "existing_sidecar_overwrite_refused",
+      "passed": true,
+      "evidence": "Refusing to overwrite existing file: /private/var/folders/28/10z2rygn2rqd266txklmc3mw0000gn/T/sol-height-check-16xp6z7m/report-collision.export.json"
+    },
+    {
+      "name": "explicit_height_22",
+      "passed": true,
+      "evidence": {
+        "target_height": 22,
+        "canvas": [
+          21,
+          22
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          21,
+          22
+        ]
+      }
+    },
+    {
+      "name": "explicit_height_44",
+      "passed": true,
+      "evidence": {
+        "target_height": 44,
+        "canvas": [
+          42,
+          44
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          42,
+          44
+        ]
+      }
+    },
+    {
+      "name": "explicit_height_88",
+      "passed": true,
+      "evidence": {
+        "target_height": 88,
+        "canvas": [
+          84,
+          88
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          84,
+          88
+        ]
+      }
+    },
+    {
+      "name": "variable_width_no_fixed_square",
+      "passed": true,
+      "evidence": [
+        {
+          "target_height": 22,
+          "canvas": [
+            21,
+            22
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            21,
+            22
+          ]
+        },
+        {
+          "target_height": 44,
+          "canvas": [
+            42,
+            44
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            42,
+            44
+          ]
+        },
+        {
+          "target_height": 88,
+          "canvas": [
+            84,
+            88
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            84,
+            88
+          ]
+        }
+      ]
+    },
+    {
+      "name": "explicit_baseline_inside_taller_frame",
+      "passed": true,
+      "evidence": {
+        "canvas": [
+          42,
+          80
+        ],
+        "alpha_bbox": [
+          0,
+          26,
+          42,
+          70
+        ]
+      }
+    },
+    {
+      "name": "invalid_baseline",
+      "passed": true,
+      "evidence": "Bottom baseline must fit the complete visible sprite inside the frame"
+    },
+    {
+      "name": "native_height_override",
+      "passed": true,
+      "evidence": "Choose a native reference or an explicit target height, not both"
+    },
+    {
+      "name": "lanczos_height_baseline",
+      "passed": true,
+      "evidence": {
+        "canvas": [
+          72,
+          64
+        ],
+        "alpha_bbox": [
+          15,
+          20,
+          57,
+          64
+        ]
+      }
+    },
+    {
+      "name": "source_previous_output_and_tools_preserved",
+      "passed": true,
+      "evidence": "All seven tracked files retain their starting hashes; temporary exports removed"
+    }
+  ],
+  "limitations": [
+    "Mechanical verification does not establish visual identity, animation consistency, equipment registration or complete atlas compatibility.",
+    "Existing reviewed crop omits 1053 nonzero-alpha source pixels, all alpha=1, as recorded by the original export.",
+    "Generated edges may require explicit reviewed crops; exporter does not threshold alpha.",
+    "Variable-width PNGs remain staging assets; runtime integration and DMI atlas packing were not performed."
+  ]
+}

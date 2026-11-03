@@ -1,0 +1,3524 @@
+{
+  "version": "detailed-original-height-1.0",
+  "family": "wood",
+  "classification": "game_height_exports_from_detailed_artwork",
+  "status": "accepted_game_height_exports_from_detailed_artwork",
+  "new_artwork_generated": false,
+  "source_large_plates_unchanged": true,
+  "drop_in_overlay": false,
+  "states": [
+    {
+      "state_index": 0,
+      "state_name": "weapon.arming sword.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        314,
+        83,
+        439,
+        213
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 147.9098779134295,
+        "selected_components": [
+          {
+            "area": 4505,
+            "box": [
+              316,
+              85,
+              437,
+              211
+            ],
+            "center": [
+              376.2175360710322,
+              147.9098779134295
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/000-weapon.arming_sword.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          314,
+          83,
+          439,
+          213
+        ],
+        "size": [
+          133,
+          138
+        ],
+        "source_crop_size": [
+          125,
+          130
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          123,
+          128
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          127,
+          132
+        ],
+        "retained_pixels": 4504,
+        "background_pixels_removed": 11746,
+        "enclosed_candidate_pixels_retained": 158,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 506,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/000-weapon.arming_sword.wood.png",
+        "output_sha256": "e30c505e44d3b6b641596ddd46faeda89843081ce048df36292ec745db079338"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/000-weapon.arming_sword.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/000-weapon.arming_sword.wood.export.json",
+        "sha256": "3f3fd3928f1228a1f50f0611248b53f58a79340da0dce6a0d91ed6fe46acfb61",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          2,
+          16,
+          14,
+          29
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 0,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            16,
+            15,
+            29
+          ],
+          "visible_height": 13,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "3d8f93bff8abd0f68ee0c72a47e11265c460e7eabef13474d8396faf570981ac",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.arming sword.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/000-weapon.arming_sword.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/000-weapon.arming_sword.wood.export.json",
+        "sha256": "4cdf6a7441dde13118764643f1a8bc78e19c872c791abc4f506f0e02cd5dcd98",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          32,
+          28,
+          59
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 0,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            32,
+            29,
+            59
+          ],
+          "visible_height": 27,
+          "visible_width": 27,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "70349f45881a0c5161dd30f42d0921499745414bca9c07d6698048cf948a3510",
+          "state_occurrence_index": 0,
+          "state_name": "weapon.arming sword.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 1,
+      "state_name": "weapon.hand axe.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        317,
+        288,
+        436,
+        391
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 331.796509152831,
+        "selected_components": [
+          {
+            "area": 4698,
+            "box": [
+              319,
+              290,
+              434,
+              389
+            ],
+            "center": [
+              367.7711792252022,
+              331.796509152831
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/001-weapon.hand_axe.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          317,
+          288,
+          436,
+          391
+        ],
+        "size": [
+          127,
+          111
+        ],
+        "source_crop_size": [
+          119,
+          103
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          117,
+          101
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          121,
+          105
+        ],
+        "retained_pixels": 4701,
+        "background_pixels_removed": 7556,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.04998779296875,
+          "border_background_sample_count": 440,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/001-weapon.hand_axe.wood.png",
+        "output_sha256": "f35937b078c432a80252b66ac079de37814cd507b1ba34fa2dafceae2b388e85"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/001-weapon.hand_axe.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/001-weapon.hand_axe.wood.export.json",
+        "sha256": "fef81d6a17d0e24fe3b66c93589f39073f5f62661cf57a43234fae22786a304d",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          16,
+          14,
+          28
+        ],
+        "visible_height": 12,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 4,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            16,
+            13,
+            28
+          ],
+          "visible_height": 12,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6df95326d33064bb9fb445bc5a161f3daa51e354a8fc3aefa2beaf6320461a1d",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.hand axe.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/001-weapon.hand_axe.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/001-weapon.hand_axe.wood.export.json",
+        "sha256": "7b99ba2cf37aa1671e7f0c8bfbcb4415def8fa8c31229919b769cd5c87d98909",
+        "size": [
+          74,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          28,
+          36,
+          57
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 57,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 20,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            28,
+            26,
+            57
+          ],
+          "visible_height": 29,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 57,
+          "alpha_sha256": "c4b0c6f962789b2ebe9b2f941f88cd6cf3c611839a7e1c6a2e14081d2616e43b",
+          "state_occurrence_index": 1,
+          "state_name": "weapon.hand axe.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 2,
+      "state_name": "weapon.mace.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        318,
+        453,
+        443,
+        578
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 507.95518723143033,
+        "selected_components": [
+          {
+            "area": 4887,
+            "box": [
+              320,
+              455,
+              441,
+              576
+            ],
+            "center": [
+              372.15305913648456,
+              507.95518723143033
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/002-weapon.mace.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          318,
+          453,
+          443,
+          578
+        ],
+        "size": [
+          133,
+          133
+        ],
+        "source_crop_size": [
+          125,
+          125
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          123,
+          123
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          127,
+          127
+        ],
+        "retained_pixels": 4891,
+        "background_pixels_removed": 10734,
+        "enclosed_candidate_pixels_retained": 1,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 496,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/002-weapon.mace.wood.png",
+        "output_sha256": "fd2c1e7302c6ca52b4f2a253517ee23f67374faab87db0ca09b4ea7122588ea0"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/002-weapon.mace.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/002-weapon.mace.wood.export.json",
+        "sha256": "1cd5f0fba1b582d8b466ebc1d964ac7a6f0c8090309d79aa78e740d9559ddbd2",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          0,
+          14,
+          14,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 8,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            14,
+            13,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "c7eddad5a26aa4350ebe96e6529c77419870bc01e74c61184029f3d3316c5cb4",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.mace.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/002-weapon.mace.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/002-weapon.mace.wood.export.json",
+        "sha256": "e637a2e578d05838a873e8478426fb091be6e14b27a4d5e709bd1f3eefaadb84",
+        "size": [
+          68,
+          64
+        ],
+        "alpha_bbox": [
+          1,
+          27,
+          30,
+          56
+        ],
+        "visible_height": 29,
+        "baseline_exclusive": 56,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 40,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            1,
+            27,
+            26,
+            56
+          ],
+          "visible_height": 29,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 56,
+          "alpha_sha256": "867338e09484ebe4db10c55d551a84a9a731f0bee611ec7ee0ecc11fd1f90955",
+          "state_occurrence_index": 2,
+          "state_name": "weapon.mace.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 3,
+      "state_name": "weapon.spear.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        325,
+        608,
+        437,
+        814
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 703.8321245733788,
+        "selected_components": [
+          {
+            "area": 4688,
+            "box": [
+              327,
+              610,
+              435,
+              812
+            ],
+            "center": [
+              378.11369453924914,
+              703.8321245733788
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              409,
+              743,
+              410,
+              746
+            ],
+            "center": [
+              409.0,
+              744.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/003-weapon.spear.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          325,
+          608,
+          437,
+          814
+        ],
+        "size": [
+          120,
+          214
+        ],
+        "source_crop_size": [
+          112,
+          206
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          110,
+          204
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          114,
+          208
+        ],
+        "retained_pixels": 4691,
+        "background_pixels_removed": 18381,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 632,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/003-weapon.spear.wood.png",
+        "output_sha256": "9342020f03eb66e250eab598b6150e6d4584921ecc42f7ab8d805abce466ce9c"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/003-weapon.spear.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/003-weapon.spear.wood.export.json",
+        "sha256": "dec50cf63b5a493c0552b45bfc8d5089e466b3a3e0c979d34ddd3e00eba12f43",
+        "size": [
+          36,
+          32
+        ],
+        "alpha_bbox": [
+          1,
+          1,
+          18,
+          32
+        ],
+        "visible_height": 31,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 12,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            1,
+            14,
+            32
+          ],
+          "visible_height": 31,
+          "visible_width": 13,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "9301fe6fce1f928342327fd9ad879c24cd6a73b1131f5b8366b5e22d5e455192",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.spear.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/003-weapon.spear.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/003-weapon.spear.wood.export.json",
+        "sha256": "197f7fe254b5e5f0f9ad79b68e0334c08cedf76cc4f1a8a49944c68be480357b",
+        "size": [
+          72,
+          64
+        ],
+        "alpha_bbox": [
+          2,
+          2,
+          35,
+          64
+        ],
+        "visible_height": 62,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 60,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            2,
+            27,
+            64
+          ],
+          "visible_height": 62,
+          "visible_width": 25,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "bd129ff7afe98203dcd7f62b4b794073f1eb45cd0e47c9f4456c287aed58c24b",
+          "state_occurrence_index": 3,
+          "state_name": "weapon.spear.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "5"
+            ],
+            [
+              "delay",
+              "1,1,1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 4,
+      "state_name": "helmet.kettle.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        329,
+        857,
+        441,
+        956
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 907.105112154408,
+        "selected_components": [
+          {
+            "area": 7668,
+            "box": [
+              331,
+              859,
+              439,
+              954
+            ],
+            "center": [
+              386.72665623369846,
+              907.105112154408
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/004-helmet.kettle.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          329,
+          857,
+          441,
+          956
+        ],
+        "size": [
+          120,
+          107
+        ],
+        "source_crop_size": [
+          112,
+          99
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          110,
+          97
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          114,
+          101
+        ],
+        "retained_pixels": 7668,
+        "background_pixels_removed": 3420,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 77.0,
+          "border_background_sample_count": 418,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/004-helmet.kettle.wood.png",
+        "output_sha256": "9ef3987540da30786f0c10222c1e0731d14ba68625cabf46ab7a7e8a1a2e31dd"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/004-helmet.kettle.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/004-helmet.kettle.wood.export.json",
+        "sha256": "254ed861c5926cb595c1c1fd8f996657144875f4dbb44401c737d5c8439aeccb",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          10,
+          5,
+          21,
+          15
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 15,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 16,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            10,
+            5,
+            22,
+            15
+          ],
+          "visible_height": 10,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 15,
+          "alpha_sha256": "bb4f3cad7d7bcbe27b2bfa7224d38cc8490c9f6af7ceb8c70ffb71f4b1716337",
+          "state_occurrence_index": 4,
+          "state_name": "helmet.kettle.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/004-helmet.kettle.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/004-helmet.kettle.wood.export.json",
+        "sha256": "c2b350412b50c18ba7fc81723af680755b441b81cd4651377358c930051c7fb9",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          20,
+          10,
+          43,
+          30
+        ],
+        "visible_height": 20,
+        "baseline_exclusive": 30,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 80,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            20,
+            10,
+            44,
+            30
+          ],
+          "visible_height": 20,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 30,
+          "alpha_sha256": "41c36db68444aca0ac6e8a701ca7a62f5ec41c22c98be9f375d766c574d4f47c",
+          "state_occurrence_index": 4,
+          "state_name": "helmet.kettle.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 5,
+      "state_name": "chest.plate.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        314,
+        1042,
+        465,
+        1156
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1094.5315627405696,
+        "selected_components": [
+          {
+            "area": 10392,
+            "box": [
+              316,
+              1044,
+              463,
+              1154
+            ],
+            "center": [
+              389.31610854503464,
+              1094.5315627405696
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              338,
+              1090,
+              339,
+              1092
+            ],
+            "center": [
+              338.0,
+              1090.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/005-chest.plate.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          314,
+          1042,
+          465,
+          1156
+        ],
+        "size": [
+          159,
+          122
+        ],
+        "source_crop_size": [
+          151,
+          114
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          149,
+          112
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          153,
+          116
+        ],
+        "retained_pixels": 10393,
+        "background_pixels_removed": 6821,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 526,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/005-chest.plate.wood.png",
+        "output_sha256": "17561edbc4b3c9fbab8611488815f48066d34bb0ebfa5b1201f7d6bacdc95aac"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/005-chest.plate.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/005-chest.plate.wood.export.json",
+        "sha256": "7e431520d70bd5ee551af89138bbf3ae2b497e1f2da94c9ad977cb2e0e66a588",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          7,
+          14,
+          24,
+          27
+        ],
+        "visible_height": 13,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 20,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            7,
+            14,
+            25,
+            27
+          ],
+          "visible_height": 13,
+          "visible_width": 18,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "b81e188a5da200e4f336712e1e0aa5736c8679765734a0cad616845530dfb10a",
+          "state_occurrence_index": 5,
+          "state_name": "chest.plate.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/005-chest.plate.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/005-chest.plate.wood.export.json",
+        "sha256": "07e29fc7f6bf531f017c29a9e6992f9bcbe5c9690dbd67caf2c83ba9d34768af",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          16,
+          29,
+          48,
+          53
+        ],
+        "visible_height": 24,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 92,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            14,
+            29,
+            50,
+            53
+          ],
+          "visible_height": 24,
+          "visible_width": 36,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "99a268f0bd203514bc55933aefeee1d933decdee4c5a101bb7076319899a6d16",
+          "state_occurrence_index": 5,
+          "state_name": "chest.plate.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 6,
+      "state_name": "legs.plate.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+      "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+      "crop_box": [
+        325,
+        1260,
+        464,
+        1371
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1317.8998955431755,
+        "selected_components": [
+          {
+            "area": 11488,
+            "box": [
+              327,
+              1262,
+              462,
+              1369
+            ],
+            "center": [
+              393.90198467966576,
+              1317.8998955431755
+            ]
+          },
+          {
+            "area": 3,
+            "box": [
+              388,
+              1355,
+              389,
+              1358
+            ],
+            "center": [
+              388.0,
+              1356.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/006-legs.plate.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-01.png",
+        "source_sha256": "183e64dd9c07b573d1e3e4b2a11e1cedd943911a8f48576facc40f976c75149c",
+        "crop_box": [
+          325,
+          1260,
+          464,
+          1371
+        ],
+        "size": [
+          147,
+          119
+        ],
+        "source_crop_size": [
+          139,
+          111
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          137,
+          109
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          141,
+          113
+        ],
+        "retained_pixels": 11491,
+        "background_pixels_removed": 3938,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 78.0,
+          "border_background_sample_count": 496,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/006-legs.plate.wood.png",
+        "output_sha256": "c5f31049e19818ae2b67ab7eeacb94f33f02f661567e0247132c24acac015a21"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/006-legs.plate.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/006-legs.plate.wood.export.json",
+        "sha256": "7f5f3984f90f10a30492a8485df1fca188976ed846bb768d388d00641e4930ec",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          9,
+          22,
+          22,
+          32
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 32,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 24,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            9,
+            22,
+            23,
+            32
+          ],
+          "visible_height": 10,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 32,
+          "alpha_sha256": "e08a353bcc35c438056a9f8246081e50bca9cdf543f0bdd7da12e302007a494e",
+          "state_occurrence_index": 6,
+          "state_name": "legs.plate.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/006-legs.plate.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/006-legs.plate.wood.export.json",
+        "sha256": "fa9729473fa8c6a5b543cf4d22c5d3ad56beeccf851d3220a0367d99424a64a9",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          20,
+          45,
+          44,
+          64
+        ],
+        "visible_height": 19,
+        "baseline_exclusive": 64,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 104,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            19,
+            45,
+            45,
+            64
+          ],
+          "visible_height": 19,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 64,
+          "alpha_sha256": "85949ec5afb31e7cfbefcfc94cbed6ea62f1d92946f7598af747b7821fdb86bf",
+          "state_occurrence_index": 6,
+          "state_name": "legs.plate.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 7,
+      "state_name": "arms.plate.wood.L",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        351,
+        91,
+        425,
+        192
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 141.26736111111111,
+        "selected_components": [
+          {
+            "area": 4608,
+            "box": [
+              353,
+              93,
+              423,
+              190
+            ],
+            "center": [
+              387.0618489583333,
+              141.26736111111111
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              415,
+              137,
+              416,
+              139
+            ],
+            "center": [
+              415.0,
+              137.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/007-arms.plate.wood.L.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          351,
+          91,
+          425,
+          192
+        ],
+        "size": [
+          82,
+          109
+        ],
+        "source_crop_size": [
+          74,
+          101
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          72,
+          99
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          76,
+          103
+        ],
+        "retained_pixels": 4611,
+        "background_pixels_removed": 2863,
+        "enclosed_candidate_pixels_retained": 0,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 346,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/007-arms.plate.wood.L.png",
+        "output_sha256": "76280973aa7b8f5632bdd2dc68783eaed61a19a7fbe3e64dcb96b99bcb0cc539"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/007-arms.plate.wood.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/007-arms.plate.wood.L.export.json",
+        "sha256": "d36dd31002583b07b8bf990b930d361f70d42e2a1c2d204c0ae874659ec02f7b",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          19,
+          17,
+          26,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 28,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            19,
+            17,
+            26,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "f5e7559519ff9f281df545b20274014699138bfead9c57e3d6c9acb8c453c51a",
+          "state_occurrence_index": 7,
+          "state_name": "arms.plate.wood.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/007-arms.plate.wood.L.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/007-arms.plate.wood.L.export.json",
+        "sha256": "15b2a3eb5d20280142bfd22df5b36cb0cfe3514be3aecb5fa401ac8b9954665c",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          39,
+          35,
+          52,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 116,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            39,
+            35,
+            51,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "2a0615e881f32bf31b3d2eda5f1ca01b7ed0e1d65327d035ef5fff94fc008e3a",
+          "state_occurrence_index": 7,
+          "state_name": "arms.plate.wood.L",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 8,
+      "state_name": "arms.plate.wood.R",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        322,
+        294,
+        394,
+        395
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 343.92930845225027,
+        "selected_components": [
+          {
+            "area": 4555,
+            "box": [
+              324,
+              296,
+              392,
+              393
+            ],
+            "center": [
+              358.94379802414926,
+              343.92930845225027
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/008-arms.plate.wood.R.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          322,
+          294,
+          394,
+          395
+        ],
+        "size": [
+          80,
+          109
+        ],
+        "source_crop_size": [
+          72,
+          101
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          2,
+          70,
+          99
+        ],
+        "alpha_bbox": [
+          4,
+          6,
+          74,
+          103
+        ],
+        "retained_pixels": 4557,
+        "background_pixels_removed": 2715,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 341,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/008-arms.plate.wood.R.png",
+        "output_sha256": "4fd3727fbd5561af487bc35faeff9b4ff5cbaaa1a9e91111c2f08897178030c5"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/008-arms.plate.wood.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/008-arms.plate.wood.R.export.json",
+        "sha256": "6df75566c4ab6065a5322792831778a333aa552bdb43a6176a56c9067821371e",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          6,
+          17,
+          13,
+          27
+        ],
+        "visible_height": 10,
+        "baseline_exclusive": 27,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 32,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            17,
+            13,
+            27
+          ],
+          "visible_height": 10,
+          "visible_width": 7,
+          "bottom_baseline_exclusive": 27,
+          "alpha_sha256": "e91b32111ced068b6aae02d5b7fbb111abb560cf169eb95cdd4d43872239f6a2",
+          "state_occurrence_index": 8,
+          "state_name": "arms.plate.wood.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/008-arms.plate.wood.R.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/008-arms.plate.wood.R.export.json",
+        "sha256": "c18fb0d994956290a73cbc181172d74a4baf293719c4edb83e728ec25934a12c",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          13,
+          35,
+          26,
+          53
+        ],
+        "visible_height": 18,
+        "baseline_exclusive": 53,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 128,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            13,
+            35,
+            25,
+            53
+          ],
+          "visible_height": 18,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 53,
+          "alpha_sha256": "0be1eb997a3461ba89b7af4c887294ef58513f5e28bb955869b932697bd3e2c2",
+          "state_occurrence_index": 8,
+          "state_name": "arms.plate.wood.R",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays",
+        "Crop-border warning independently inspected at source2x: minor retained edge pixels, no visible object clipping"
+      ]
+    },
+    {
+      "state_index": 9,
+      "state_name": "shield.buckler.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        342,
+        469,
+        427,
+        554
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 511.15688180404356,
+        "selected_components": [
+          {
+            "area": 5144,
+            "box": [
+              344,
+              471,
+              425,
+              552
+            ],
+            "center": [
+              383.2591368584759,
+              511.15688180404356
+            ]
+          },
+          {
+            "area": 7,
+            "box": [
+              424,
+              517,
+              425,
+              524
+            ],
+            "center": [
+              424.0,
+              520.0
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/009-shield.buckler.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          342,
+          469,
+          427,
+          554
+        ],
+        "size": [
+          93,
+          93
+        ],
+        "source_crop_size": [
+          85,
+          85
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          83,
+          83
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          87,
+          87
+        ],
+        "retained_pixels": 5153,
+        "background_pixels_removed": 2072,
+        "enclosed_candidate_pixels_retained": 2,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 81.0,
+          "border_background_sample_count": 336,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/009-shield.buckler.wood.png",
+        "output_sha256": "61fa7870fd7c9c4817686d1e1e2612a8b9fcf9ab19853532d819123810b0eb46"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/009-shield.buckler.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/009-shield.buckler.wood.export.json",
+        "sha256": "d3277a8f8703a22a86a9ef30cd77aa3aac785367ded742c5f363db4898819987",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          18,
+          17,
+          26,
+          25
+        ],
+        "visible_height": 8,
+        "baseline_exclusive": 25,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 36,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            18,
+            17,
+            26,
+            25
+          ],
+          "visible_height": 8,
+          "visible_width": 8,
+          "bottom_baseline_exclusive": 25,
+          "alpha_sha256": "18da0f18c46469cae37bc39358737ffa8172a907daf8d2dc1a171f647b320bca",
+          "state_occurrence_index": 9,
+          "state_name": "shield.buckler.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/009-shield.buckler.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/009-shield.buckler.wood.export.json",
+        "sha256": "84d9231b3eebef53e12fe6ac510ad2274558e19cad2ab206e4d8d3528aeb016d",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          36,
+          34,
+          52,
+          50
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 50,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 140,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            36,
+            34,
+            52,
+            50
+          ],
+          "visible_height": 16,
+          "visible_width": 16,
+          "bottom_baseline_exclusive": 50,
+          "alpha_sha256": "e12247a58d99d59170ac65764a8a8f1e4401cfdca73f959eae9db885233432c4",
+          "state_occurrence_index": 9,
+          "state_name": "shield.buckler.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 10,
+      "state_name": "shield.round.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        317,
+        629,
+        452,
+        763
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 695.5911547537489,
+        "selected_components": [
+          {
+            "area": 13137,
+            "box": [
+              319,
+              631,
+              450,
+              761
+            ],
+            "center": [
+              383.43868463119435,
+              695.5911547537489
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/010-shield.round.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          317,
+          629,
+          452,
+          763
+        ],
+        "size": [
+          143,
+          142
+        ],
+        "source_crop_size": [
+          135,
+          134
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          0,
+          2,
+          133,
+          132
+        ],
+        "alpha_bbox": [
+          4,
+          6,
+          137,
+          136
+        ],
+        "retained_pixels": 13138,
+        "background_pixels_removed": 4952,
+        "enclosed_candidate_pixels_retained": 6,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 85.0,
+          "border_background_sample_count": 528,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Retained pixels touch crop border; verify crop does not clip artwork",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/010-shield.round.wood.png",
+        "output_sha256": "c70206565df9b155fa799803c135ba140b7cadaf48e470679c450fc2070d11ec"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/010-shield.round.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/010-shield.round.wood.export.json",
+        "sha256": "70b8f92d38cbff4348cd2f6e0991487aed524da2060e849487ef70076f0a5032",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          15,
+          14,
+          29,
+          28
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 28,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 40,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            15,
+            14,
+            29,
+            28
+          ],
+          "visible_height": 14,
+          "visible_width": 14,
+          "bottom_baseline_exclusive": 28,
+          "alpha_sha256": "6b7ee5be0cd65dd5f1cd688a92aa24e9ec267b428f530d2a49bdf30913abe56e",
+          "state_occurrence_index": 10,
+          "state_name": "shield.round.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/010-shield.round.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/010-shield.round.wood.export.json",
+        "sha256": "20421ff6077d1d993711716805a2b9dadd7657590e3da277e4a5aed6610b42a0",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          31,
+          29,
+          58,
+          55
+        ],
+        "visible_height": 26,
+        "baseline_exclusive": 55,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 152,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            31,
+            29,
+            57,
+            55
+          ],
+          "visible_height": 26,
+          "visible_width": 26,
+          "bottom_baseline_exclusive": 55,
+          "alpha_sha256": "67d1089c6065c7b5f40fe38048cd1623d4b820faae1f20b89a42c9fb7d6736bd",
+          "state_occurrence_index": 10,
+          "state_name": "shield.round.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays",
+        "Crop-border warning independently inspected at source2x: minor retained edge pixels, no visible object clipping"
+      ]
+    },
+    {
+      "state_index": 11,
+      "state_name": "shield.kite.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        333,
+        834,
+        431,
+        974
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 894.9278249510124,
+        "selected_components": [
+          {
+            "area": 9186,
+            "box": [
+              335,
+              836,
+              429,
+              972
+            ],
+            "center": [
+              381.38939690833877,
+              894.9278249510124
+            ]
+          },
+          {
+            "area": 2,
+            "box": [
+              349,
+              929,
+              350,
+              931
+            ],
+            "center": [
+              349.0,
+              929.5
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/011-shield.kite.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          333,
+          834,
+          431,
+          974
+        ],
+        "size": [
+          106,
+          148
+        ],
+        "source_crop_size": [
+          98,
+          140
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          96,
+          138
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          100,
+          142
+        ],
+        "retained_pixels": 9186,
+        "background_pixels_removed": 4534,
+        "enclosed_candidate_pixels_retained": 4,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 81.0,
+          "border_background_sample_count": 472,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/011-shield.kite.wood.png",
+        "output_sha256": "620658732ad068ef48b327bfda3178a6139687321dcd4a6ad1be39d645631416"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/011-shield.kite.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/011-shield.kite.wood.export.json",
+        "sha256": "ae64b78a898ebd3ff60b6b52dd4c410c59fc30b6f2d04756ff10fdbe43eea377",
+        "size": [
+          33,
+          32
+        ],
+        "alpha_bbox": [
+          17,
+          13,
+          28,
+          29
+        ],
+        "visible_height": 16,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 44,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            17,
+            13,
+            27,
+            29
+          ],
+          "visible_height": 16,
+          "visible_width": 10,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "11930ea2cb2c9e2627f0f5a5cc02d712aec503f05492a7add07415d545ad3476",
+          "state_occurrence_index": 11,
+          "state_name": "shield.kite.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/011-shield.kite.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/011-shield.kite.wood.export.json",
+        "sha256": "2b98129e6bd894b041fc277f19e1d08ac5e217d020de636db58cdac746c66baa",
+        "size": [
+          66,
+          64
+        ],
+        "alpha_bbox": [
+          34,
+          27,
+          56,
+          59
+        ],
+        "visible_height": 32,
+        "baseline_exclusive": 59,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 164,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            34,
+            27,
+            54,
+            59
+          ],
+          "visible_height": 32,
+          "visible_width": 20,
+          "bottom_baseline_exclusive": 59,
+          "alpha_sha256": "6aaa5e429ff8a07fb5fc9343ec0a618d9ca3a70ce056888ce53b468553d81bd6",
+          "state_occurrence_index": 11,
+          "state_name": "shield.kite.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 12,
+      "state_name": "shield.heater.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        320,
+        1031,
+        433,
+        1163
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1087.4480559737844,
+        "selected_components": [
+          {
+            "area": 11291,
+            "box": [
+              322,
+              1033,
+              431,
+              1161
+            ],
+            "center": [
+              375.99070055796653,
+              1087.4480559737844
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/012-shield.heater.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          320,
+          1031,
+          433,
+          1163
+        ],
+        "size": [
+          121,
+          140
+        ],
+        "source_crop_size": [
+          113,
+          132
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          111,
+          130
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          115,
+          134
+        ],
+        "retained_pixels": 11289,
+        "background_pixels_removed": 3627,
+        "enclosed_candidate_pixels_retained": 58,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 80.0,
+          "border_background_sample_count": 486,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials",
+          "Blue-gray material above background brightness retained"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/012-shield.heater.wood.png",
+        "output_sha256": "16ed2199b145799077e274bd1d131aa5ac476a28d190bfff8621e84f6015875b"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/012-shield.heater.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/012-shield.heater.wood.export.json",
+        "sha256": "55f338a7c274865b720b4940d09d8c9f46200a8d3a07efec8f0f7603721cd68c",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          16,
+          15,
+          28,
+          29
+        ],
+        "visible_height": 14,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 48,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            16,
+            15,
+            28,
+            29
+          ],
+          "visible_height": 14,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "e12d41779cb08f3b6c256a122ac833c20f847c1d41d2704ffbee607bf0cad348",
+          "state_occurrence_index": 12,
+          "state_name": "shield.heater.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/012-shield.heater.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/012-shield.heater.wood.export.json",
+        "sha256": "5f70c88fff131e04848b6e7b753809c21f6209ee7dde5f1bdf77ed3cd57dd12a",
+        "size": [
+          65,
+          64
+        ],
+        "alpha_bbox": [
+          33,
+          30,
+          56,
+          57
+        ],
+        "visible_height": 27,
+        "baseline_exclusive": 57,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 176,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            33,
+            30,
+            55,
+            57
+          ],
+          "visible_height": 27,
+          "visible_width": 22,
+          "bottom_baseline_exclusive": 57,
+          "alpha_sha256": "7046635f765c0b141fcf783d47b8ebfa808ea3372f36cc7e82503dedd2c30dbe",
+          "state_occurrence_index": 12,
+          "state_name": "shield.heater.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    },
+    {
+      "state_index": 13,
+      "state_name": "shield.tower.wood",
+      "same_name_occurrence": 0,
+      "source_plate": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+      "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+      "crop_box": [
+        322,
+        1192,
+        439,
+        1392
+      ],
+      "crop_method": "automatic_proposal",
+      "crop_detection": {
+        "row_center": 1290.8456870193645,
+        "selected_components": [
+          {
+            "area": 21586,
+            "box": [
+              324,
+              1194,
+              437,
+              1390
+            ],
+            "center": [
+              379.99346798851104,
+              1290.8456870193645
+            ]
+          }
+        ],
+        "rule": "Area-weighted Y clusters; largest body plus nearby detached components"
+      },
+      "source_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/013-shield.tower.wood.png",
+      "extraction": {
+        "version": "existing-pixels-cutout-1.2",
+        "classification": "existing_art_alpha_only_cutout",
+        "status": "source_resolution_cutout_pending_visual_review",
+        "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/wood/page-02.png",
+        "source_sha256": "43ee778d3e99f9dac394deb24583da7530118b3ae629ee0bf5c99e64769bf7cd",
+        "crop_box": [
+          322,
+          1192,
+          439,
+          1392
+        ],
+        "size": [
+          125,
+          208
+        ],
+        "source_crop_size": [
+          117,
+          200
+        ],
+        "transparent_padding": 4,
+        "padded_source_offset": [
+          4,
+          4
+        ],
+        "unpadded_alpha_bbox": [
+          2,
+          2,
+          115,
+          198
+        ],
+        "alpha_bbox": [
+          6,
+          6,
+          119,
+          202
+        ],
+        "retained_pixels": 21585,
+        "background_pixels_removed": 1815,
+        "enclosed_candidate_pixels_retained": 3,
+        "retained_rgb_exact": true,
+        "all_rgb_exact_including_hidden": true,
+        "retained_alpha_exact": true,
+        "mask_rules": {
+          "connectivity": 4,
+          "selection": "Only border-connected charcoal-blue cone",
+          "blue_minus_red_min": 3,
+          "blue_minus_red_max": 32,
+          "green_at_least_red_minus": 1,
+          "blue_minus_green_min": 1,
+          "red_at_least_blue_fraction": 0.2,
+          "red_minimum": 4,
+          "blue_ceiling": 84.0,
+          "border_background_sample_count": 630,
+          "protected_black_maximum_channel": 18,
+          "enclosed_candidates": "Retain and warn; never automatically erase"
+        },
+        "operations": [
+          "Explicit rectangle crop",
+          "Set alpha=0 only on background flood mask",
+          "Add four transparent pixels around crop for export packaging"
+        ],
+        "generated": false,
+        "repainted": false,
+        "color_filters": false,
+        "resized": false,
+        "near_black_ink_removed": 0,
+        "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+        "warnings": [
+          "Enclosed background-colored pixels retained; inspect holes/materials"
+        ],
+        "limitations": [
+          "Conservative chroma segmentation requires visual outline/feet/hole review",
+          "A pass proves RGB retention, not correct semantic segmentation"
+        ],
+        "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/wood/013-shield.tower.wood.png",
+        "output_sha256": "35f1ba20fc770532093706d78bd3145e4200c03bd9664e566f6d6a631f82bfe2"
+      },
+      "source_resolution_retained_rgb_exact": true,
+      "inventory": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/013-shield.tower.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/wood/013-shield.tower.wood.export.json",
+        "sha256": "119f9d55ed5a5d5a46ef99793e48e37a2c78a765ec59be4e0525394d4aba32a1",
+        "size": [
+          32,
+          32
+        ],
+        "alpha_bbox": [
+          17,
+          12,
+          27,
+          29
+        ],
+        "visible_height": 17,
+        "baseline_exclusive": 29,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/wood.dmi",
+          "sha256": "d0e716e8024ac9df7639d965915b4c68a116df7d9d9a9d9d0d7bfa14a9f30152",
+          "cell_index": 52,
+          "atlas_size": [
+            256,
+            224
+          ],
+          "frame_size": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            16,
+            12,
+            28,
+            29
+          ],
+          "visible_height": 17,
+          "visible_width": 12,
+          "bottom_baseline_exclusive": 29,
+          "alpha_sha256": "efec4de4565548da15c3cd9a9aed103cb45403cb1c09078f504a590db64768a7",
+          "state_occurrence_index": 13,
+          "state_name": "shield.tower.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "abb16b377f5177d38e2ddb2e4b878f71271d7f5d1984c5af5ade8ae132c276c8"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "player": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/013-shield.tower.wood.png",
+        "report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/wood/013-shield.tower.wood.export.json",
+        "sha256": "dbf6e8ec2f5131c059a2bbfad5f75be0331cdc9d465d05ff96ca2a6da5fc33dd",
+        "size": [
+          64,
+          64
+        ],
+        "alpha_bbox": [
+          34,
+          25,
+          53,
+          58
+        ],
+        "visible_height": 33,
+        "baseline_exclusive": 58,
+        "native_reference": {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/wood.dmi",
+          "sha256": "1dde4ef056e7c2aff731933a424c32ab9d34f559ac892e1fa8823dab33b7f63a",
+          "cell_index": 188,
+          "atlas_size": [
+            960,
+            896
+          ],
+          "frame_size": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            32,
+            25,
+            56,
+            58
+          ],
+          "visible_height": 33,
+          "visible_width": 24,
+          "bottom_baseline_exclusive": 58,
+          "alpha_sha256": "7cab052e81ec787fc6fcf4647d6b21888ebd7967ba95f09036101189c97b65ed",
+          "state_occurrence_index": 13,
+          "state_name": "shield.tower.wood",
+          "state_fields": [
+            [
+              "dirs",
+              "4"
+            ],
+            [
+              "frames",
+              "3"
+            ],
+            [
+              "delay",
+              "1,1,1"
+            ]
+          ],
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "description_sha256": "7858ee5d16d49091166761992133dc481942fe6523846348fde1f719b4c8fb47"
+        },
+        "resample": "nearest",
+        "visible_height_exact": true,
+        "baseline_exact": true,
+        "drop_in_overlay": false
+      },
+      "visual_review": "accepted_source_cutout_and_native3x_pair",
+      "no_label_or_neighbor_contamination": true,
+      "source_and_native_hashes_independently_verified": true,
+      "warnings": [
+        "Original edge/matte pixels conservatively retained; no repaint or creative filters",
+        "Sized designs are not drop-in equipment overlays"
+      ]
+    }
+  ],
+  "state_count": 14,
+  "cutout_count": 14,
+  "height_export_count": 28,
+  "passed": true,
+  "visual_review": {
+    "native_preview": "output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/review/wood-native3x.png",
+    "source_border_warning_preview": "/private/tmp/detailed-height-border-warning-review.png",
+    "result": "Allstateschecked; no visible label fragments or neighboring objects"
+  },
+  "all_source_resolution_RGB_exact": true,
+  "all_native_heights_and_baselines_exact": true,
+  "all_source_and_native_hashes_verified": true
+}

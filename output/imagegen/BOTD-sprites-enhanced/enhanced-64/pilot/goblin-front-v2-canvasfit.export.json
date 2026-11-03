@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T17:11:32.351011+00:00",
+  "status": "mechanical_64x64_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/source-art/Goblins-standing-front.png",
+    "sha256": "a95a5ddc8369d0b12c6cb8c002cd2476366cb86c1200f35944e9a460cefc4e3f",
+    "size": [
+      1254,
+      1254
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      0,
+      21,
+      1208,
+      1254
+    ],
+    "crop_rule": "Explicit requested source rectangle; all RGBA pixels inside preserved, no threshold filtering",
+    "fully_transparent_pixels": 1074274,
+    "transparent_perimeter_fraction": 0.9964086193136472,
+    "semi_transparent_pixels": 496422,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      0,
+      21,
+      1208,
+      1254
+    ],
+    "requested_source_crop": [
+      204,
+      247,
+      1049,
+      1136
+    ],
+    "effective_source_crop": [
+      204,
+      247,
+      1049,
+      1136
+    ],
+    "crop_rgba_sha256": "1762fcd8176aae64499f9af98d9720b6ec7024ebe26ff95e9b6addf6f198db6e",
+    "discarded_pixel_count": 821311,
+    "discarded_nonzero_alpha_pixel_count": 977,
+    "discarded_maximum_alpha": 1,
+    "inside_crop_rgba_preserved_exactly": true
+  },
+  "native_reference": null,
+  "placement": {
+    "content_box": [
+      8,
+      4,
+      56,
+      60
+    ],
+    "anchor_x": 32.0,
+    "feet_anchor_bottom_exclusive": 60,
+    "source_crop_size": [
+      845,
+      889
+    ],
+    "resized_size": [
+      48,
+      50
+    ],
+    "uniform_fit_scale": 0.05680473372781065,
+    "actual_axis_scales": [
+      0.05680473372781065,
+      0.0562429696287964
+    ],
+    "rounding": "Nearest integer dimensions; aspect ratio differs only by unavoidable pixel rounding",
+    "destination_box": [
+      8,
+      10,
+      56,
+      60
+    ]
+  },
+  "outputs": [
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-canvasfit.nearest.64.png",
+      "sha256": "38fd2af87c405e459605d99b5ddce7c5e0cf20a67e4f6ad0f6da7e8e5eaeb192",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "resample": "nearest",
+      "alpha_bbox": [
+        8,
+        10,
+        56,
+        60
+      ],
+      "alpha_sha256": "83aba77552c719245f6d878844210280c4292b575dcb127829f330a361920321",
+      "zero_rgba_outside_alpha": true,
+      "semi_transparent_pixels": 1589
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/pilot/goblin-front-v2-canvasfit.lanczos.64.png",
+      "sha256": "35302ba245e6f076244ac91b3e069db3c7c198bd8e968876fb72a43e5bbdf4f1",
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGBA",
+      "resample": "lanczos",
+      "alpha_bbox": [
+        8,
+        10,
+        56,
+        60
+      ],
+      "alpha_sha256": "cfc613b3ebef1db57b8ce1ed19c002afbb6f61be3c0b7806a2a82a5f73e74cdd",
+      "zero_rgba_outside_alpha": true,
+      "semi_transparent_pixels": 1691
+    }
+  ],
+  "frame_size": [
+    64,
+    64
+  ],
+  "operations": [
+    "Explicit requested source rectangle crop",
+    "Resize proportionally using requested resampler",
+    "Place on transparent 64x64 frame at recorded anchor",
+    "Clear hidden RGB where alpha is zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "drop_in_original_registration_claimed": false,
+  "delivery_scope": "Single-sprite 64x64 design review variants; not completed game assets",
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite64.py",
+    "sha256": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Single-sprite identity requires visual review",
+    "Native sizing alone does not verify a complete animation atlas"
+  ]
+}

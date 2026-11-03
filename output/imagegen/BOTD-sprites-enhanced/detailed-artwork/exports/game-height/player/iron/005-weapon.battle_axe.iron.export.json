@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:46.302567+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/iron/005-weapon.battle_axe.iron.png",
+    "sha256": "5c7c1e17b3bca13c0a56b962bb6d44c4b1694846b8b88142c1cf7f158e3fd382",
+    "size": [
+      133,
+      132
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      127,
+      126
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 12893,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      127,
+      126
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      127,
+      126
+    ],
+    "source_crop_size": [
+      121,
+      120
+    ],
+    "crop_rgba_sha256": "7127f4c4b9d4a89e4f63ed65e6af78de19d0ed9ba77f822d61fd58e4f140da95",
+    "discarded_pixel_count": 3036,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/iron.dmi",
+    "sha256": "3408d98a234d84b99997f74ce54d0bca61ee875d05b43fe410d3f713a98bf3a0",
+    "cell_index": 100,
+    "atlas_size": [
+      1536,
+      1536
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      3,
+      21,
+      26,
+      61
+    ],
+    "visible_height": 40,
+    "visible_width": 23,
+    "bottom_baseline_exclusive": 61,
+    "alpha_sha256": "c1d05f3fc51da7bafaf7c7fcd8fe24deca3fa72be5fec2763fdac04c86e9f9f7",
+    "state_occurrence_index": 5,
+    "state_name": "weapon.battle axe.iron",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "5"
+      ],
+      [
+        "delay",
+        "1,1,1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "f6b5f90f0948a058ff6706f8fc57cf4a69bf7b83e15c38cd3fb8b95f730d5f29"
+  },
+  "placement": {
+    "target_visible_height": 40,
+    "proportional_content_size": [
+      40,
+      40
+    ],
+    "uniform_scale": 0.3333333333333333,
+    "actual_axis_scales": [
+      0.3305785123966942,
+      0.3333333333333333
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      81,
+      64
+    ],
+    "destination_box": [
+      3,
+      21,
+      43,
+      61
+    ],
+    "actual_alpha_bbox": [
+      3,
+      21,
+      43,
+      61
+    ],
+    "actual_visible_height": 40,
+    "actual_visible_width": 40,
+    "bottom_baseline_exclusive": 61,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/iron/005-weapon.battle_axe.iron.png",
+    "sha256": "f294552c692ab9a85d4bc53e48602dd85656bc5ecd01481218146e4073710137",
+    "size": [
+      81,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      3,
+      21,
+      43,
+      61
+    ],
+    "alpha_sha256": "c1032721495e3df1ebab1b603591915f377475e432d133b6710d9193ee45155b",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T17:22:44.590301+00:00",
+  "worker": "sol_local_items",
+  "status": "complete_native_height_export_pending_independent_review",
+  "scope": "Only existing transparent Items art under staging enhanced-height; mechanical crop/resize/pack only",
+  "source_scan": [
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/source-art/stonelimb-Arm.png",
+      "size": [
+        1857,
+        847
+      ],
+      "has_zero_alpha": true,
+      "sha256": "d5e2d08437fc72db889ddbcdd5cab63b4c31d79b6b9f60348d5900f73454da03",
+      "role": "existing_source_art"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/stonelimb/Arm.png",
+      "size": [
+        32,
+        32
+      ],
+      "has_zero_alpha": true,
+      "sha256": "a747e48e987334a5dac768f27a3a7bd7886a3dd09edffe2340aba83307ece20b",
+      "role": "export"
+    }
+  ],
+  "missing_art_regenerated": false,
+  "image_generation_used": false,
+  "game_originals_modified": false,
+  "shared_manifest_modified": false,
+  "exports": [
+    {
+      "native_asset": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Items/stonelimb.dmi",
+      "native_sha256": "438a19aa08ff9c8637c5a9131dbdec46049fa49603d96437ef8d402e3f6a5551",
+      "ordered_state_coverage": [
+        {
+          "state_occurrence_index": 0,
+          "state_name": "Arm",
+          "cell_index": 0,
+          "frame_index": 0,
+          "direction_index": 0,
+          "direction": "S",
+          "visible_height_native": 4,
+          "visible_height_output": 4,
+          "native_frame_height": 32,
+          "bottom_baseline_exclusive": 17,
+          "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/stonelimb/Arm.png",
+          "output_sha256": "a747e48e987334a5dac768f27a3a7bd7886a3dd09edffe2340aba83307ece20b"
+        }
+      ],
+      "complete_ordered_state_coverage": true,
+      "native_declared_states": 1,
+      "native_used_cells": 1,
+      "export_report": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Items/stonelimb/Arm.export.json",
+      "export_report_sha256": "d1febf0a7c0589b85e37b201a4f0a37261e89582bc360b9d3b8c2992a9bcc00d",
+      "source_sha256": "d5e2d08437fc72db889ddbcdd5cab63b4c31d79b6b9f60348d5900f73454da03",
+      "crop_review": {
+        "requested_rectangle": [
+          440,
+          190,
+          1445,
+          640
+        ],
+        "effective_rectangle": [
+          444,
+          196,
+          1439,
+          635
+        ],
+        "discarded_nonzero_alpha_pixel_count": 438,
+        "discarded_maximum_alpha": 1,
+        "rationale": "Visual inspection and read-only connected-component/alpha-bounds analysis identify main artwork around x444..1439, y196..635. Explicit enclosing rectangle retains all alpha greater than 1 plus main-art edge pixels; discarded nonzero pixels are detached alpha-1 background specks. No alpha threshold or background removal filter applied."
+      }
+    }
+  ],
+  "other_saved_item_sources_found": 0
+}

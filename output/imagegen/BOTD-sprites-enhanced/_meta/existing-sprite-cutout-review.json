@@ -1,0 +1,1072 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "status": "pilot_visual_review_pass_with_conservative_hole_warnings",
+  "pilots": [
+    {
+      "version": "existing-pixels-cutout-1.2",
+      "classification": "existing_art_alpha_only_cutout",
+      "status": "source_resolution_cutout_pending_visual_review",
+      "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Kobold/page-01.png",
+      "source_sha256": "841ef702f884ef0cce6a6ef8d5db33825eccdf96b1eefcdcac2774fbbb8d2e9f",
+      "crop_box": [
+        481,
+        71,
+        639,
+        244
+      ],
+      "size": [
+        166,
+        181
+      ],
+      "source_crop_size": [
+        158,
+        173
+      ],
+      "transparent_padding": 4,
+      "padded_source_offset": [
+        4,
+        4
+      ],
+      "unpadded_alpha_bbox": [
+        0,
+        0,
+        158,
+        173
+      ],
+      "alpha_bbox": [
+        4,
+        4,
+        162,
+        177
+      ],
+      "retained_pixels": 19334,
+      "background_pixels_removed": 8000,
+      "enclosed_candidate_pixels_retained": 0,
+      "retained_rgb_exact": true,
+      "all_rgb_exact_including_hidden": true,
+      "retained_alpha_exact": true,
+      "mask_rules": {
+        "connectivity": 4,
+        "selection": "Only border-connected charcoal-blue cone",
+        "blue_minus_red_min": 3,
+        "blue_minus_red_max": 32,
+        "green_at_least_red_minus": 1,
+        "blue_minus_green_min": 1,
+        "red_at_least_blue_fraction": 0.2,
+        "red_minimum": 4,
+        "blue_ceiling": 69.0,
+        "border_background_sample_count": 563,
+        "protected_black_maximum_channel": 18,
+        "enclosed_candidates": "Retain and warn; never automatically erase"
+      },
+      "operations": [
+        "Explicit rectangle crop",
+        "Set alpha=0 only on background flood mask",
+        "Add four transparent pixels around crop for export packaging"
+      ],
+      "generated": false,
+      "repainted": false,
+      "color_filters": false,
+      "resized": false,
+      "near_black_ink_removed": 0,
+      "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+      "warnings": [
+        "Retained pixels touch crop border; verify crop does not clip artwork",
+        "Blue-gray material above background brightness retained"
+      ],
+      "limitations": [
+        "Conservative chroma segmentation requires visual outline/feet/hole review",
+        "A pass proves RGB retention, not correct semantic segmentation"
+      ],
+      "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/extraction-pilot/Kobold-v12.png",
+      "output_sha256": "e2d2a9aaa6c7439c3234bfb635b50858f0b415683b005129e0d9e41aff6d99f4"
+    },
+    {
+      "version": "existing-pixels-cutout-1.2",
+      "classification": "existing_art_alpha_only_cutout",
+      "status": "source_resolution_cutout_pending_visual_review",
+      "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+      "source_sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0",
+      "crop_box": [
+        486,
+        74,
+        638,
+        245
+      ],
+      "size": [
+        160,
+        179
+      ],
+      "source_crop_size": [
+        152,
+        171
+      ],
+      "transparent_padding": 4,
+      "padded_source_offset": [
+        4,
+        4
+      ],
+      "unpadded_alpha_bbox": [
+        0,
+        0,
+        152,
+        171
+      ],
+      "alpha_bbox": [
+        4,
+        4,
+        156,
+        175
+      ],
+      "retained_pixels": 18432,
+      "background_pixels_removed": 7560,
+      "enclosed_candidate_pixels_retained": 5,
+      "retained_rgb_exact": true,
+      "all_rgb_exact_including_hidden": true,
+      "retained_alpha_exact": true,
+      "mask_rules": {
+        "connectivity": 4,
+        "selection": "Only border-connected charcoal-blue cone",
+        "blue_minus_red_min": 3,
+        "blue_minus_red_max": 32,
+        "green_at_least_red_minus": 1,
+        "blue_minus_green_min": 1,
+        "red_at_least_blue_fraction": 0.2,
+        "red_minimum": 4,
+        "blue_ceiling": 65.0,
+        "border_background_sample_count": 588,
+        "protected_black_maximum_channel": 18,
+        "enclosed_candidates": "Retain and warn; never automatically erase"
+      },
+      "operations": [
+        "Explicit rectangle crop",
+        "Set alpha=0 only on background flood mask",
+        "Add four transparent pixels around crop for export packaging"
+      ],
+      "generated": false,
+      "repainted": false,
+      "color_filters": false,
+      "resized": false,
+      "near_black_ink_removed": 0,
+      "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+      "warnings": [
+        "Enclosed background-colored pixels retained; inspect holes/materials",
+        "Retained pixels touch crop border; verify crop does not clip artwork",
+        "Blue-gray material above background brightness retained"
+      ],
+      "limitations": [
+        "Conservative chroma segmentation requires visual outline/feet/hole review",
+        "A pass proves RGB retention, not correct semantic segmentation"
+      ],
+      "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/extraction-pilot/Goblins-v12.png",
+      "output_sha256": "b1f61d4f11fb1cb00b173d7f7c43a46aa37ca44e0bdb1d05d8745e736190c7a8"
+    },
+    {
+      "version": "existing-pixels-cutout-1.2",
+      "classification": "existing_art_alpha_only_cutout",
+      "status": "source_resolution_cutout_pending_visual_review",
+      "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/Races64/Night Elf.png",
+      "source_sha256": "a60064d6ad7e4afd3d55db7aa245b44fb39393df9e2f3d6b7251f072084c3aec",
+      "crop_box": [
+        76,
+        11,
+        144,
+        100
+      ],
+      "size": [
+        76,
+        97
+      ],
+      "source_crop_size": [
+        68,
+        89
+      ],
+      "transparent_padding": 4,
+      "padded_source_offset": [
+        4,
+        4
+      ],
+      "unpadded_alpha_bbox": [
+        10,
+        6,
+        51,
+        82
+      ],
+      "alpha_bbox": [
+        14,
+        10,
+        55,
+        86
+      ],
+      "retained_pixels": 2576,
+      "background_pixels_removed": 3476,
+      "enclosed_candidate_pixels_retained": 79,
+      "retained_rgb_exact": true,
+      "all_rgb_exact_including_hidden": true,
+      "retained_alpha_exact": true,
+      "mask_rules": {
+        "connectivity": 4,
+        "selection": "Only border-connected charcoal-blue cone",
+        "blue_minus_red_min": 3,
+        "blue_minus_red_max": 32,
+        "green_at_least_red_minus": 1,
+        "blue_minus_green_min": 1,
+        "red_at_least_blue_fraction": 0.2,
+        "red_minimum": 4,
+        "blue_ceiling": 74.0,
+        "border_background_sample_count": 310,
+        "protected_black_maximum_channel": 18,
+        "enclosed_candidates": "Retain and warn; never automatically erase"
+      },
+      "operations": [
+        "Explicit rectangle crop",
+        "Set alpha=0 only on background flood mask",
+        "Add four transparent pixels around crop for export packaging"
+      ],
+      "generated": false,
+      "repainted": false,
+      "color_filters": false,
+      "resized": false,
+      "near_black_ink_removed": 0,
+      "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+      "warnings": [
+        "Enclosed background-colored pixels retained; inspect holes/materials",
+        "Blue-gray material above background brightness retained"
+      ],
+      "limitations": [
+        "Conservative chroma segmentation requires visual outline/feet/hole review",
+        "A pass proves RGB retention, not correct semantic segmentation"
+      ],
+      "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/extraction-pilot/Night Elf-v12.png",
+      "output_sha256": "62d62620d7f33c7ed0062068467b867ff8259872072f752dc218597a08d1aeed"
+    },
+    {
+      "version": "existing-pixels-cutout-1.2",
+      "classification": "existing_art_alpha_only_cutout",
+      "status": "source_resolution_cutout_pending_visual_review",
+      "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+      "source_sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+      "crop_box": [
+        61,
+        1282,
+        153,
+        1417
+      ],
+      "size": [
+        100,
+        143
+      ],
+      "source_crop_size": [
+        92,
+        135
+      ],
+      "transparent_padding": 4,
+      "padded_source_offset": [
+        4,
+        4
+      ],
+      "unpadded_alpha_bbox": [
+        11,
+        10,
+        80,
+        120
+      ],
+      "alpha_bbox": [
+        15,
+        14,
+        84,
+        124
+      ],
+      "retained_pixels": 5918,
+      "background_pixels_removed": 6502,
+      "enclosed_candidate_pixels_retained": 26,
+      "retained_rgb_exact": true,
+      "all_rgb_exact_including_hidden": true,
+      "retained_alpha_exact": true,
+      "mask_rules": {
+        "connectivity": 4,
+        "selection": "Only border-connected charcoal-blue cone",
+        "blue_minus_red_min": 3,
+        "blue_minus_red_max": 32,
+        "green_at_least_red_minus": 1,
+        "blue_minus_green_min": 1,
+        "red_at_least_blue_fraction": 0.2,
+        "red_minimum": 4,
+        "blue_ceiling": 72.0,
+        "border_background_sample_count": 450,
+        "protected_black_maximum_channel": 18,
+        "enclosed_candidates": "Retain and warn; never automatically erase"
+      },
+      "operations": [
+        "Explicit rectangle crop",
+        "Set alpha=0 only on background flood mask",
+        "Add four transparent pixels around crop for export packaging"
+      ],
+      "generated": false,
+      "repainted": false,
+      "color_filters": false,
+      "resized": false,
+      "near_black_ink_removed": 0,
+      "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+      "warnings": [
+        "Enclosed background-colored pixels retained; inspect holes/materials",
+        "Blue-gray material above background brightness retained"
+      ],
+      "limitations": [
+        "Conservative chroma segmentation requires visual outline/feet/hole review",
+        "A pass proves RGB retention, not correct semantic segmentation"
+      ],
+      "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/source-art/races/extraction-pilot/Gargoyle-v12.png",
+      "output_sha256": "d95f4b5e0f5299d2a886e65cd432d6f53a0433d1e9340878b4ee449cdefc9808"
+    }
+  ],
+  "review": {
+    "Kobold": "Source/lightgray/charcoal6x: ears eyes fangs limbs feet and dark outline visually preserved; shadow removed. Source crop knownbounds481,71,639,244.",
+    "Goblins": "6x paired inspection: head eyes fangs ears feet retain original design; sourceRGB exact, zero nearblack pixels removed.",
+    "Night Elf": "6x inspection: saturated navy skin and palegrayhair intact, eyes intact; dark foot outline preserved, minor mask-edge uncertainty retained.",
+    "Gargoyle": "6x inspection: stonegray face/body/horns and teeth intact; shadow mostly removed, enclosed background-colored candidates intentionally retained for review."
+  },
+  "production_tool_ready": true,
+  "no_generation_or_color_processing": true,
+  "races_review": {
+    "status": "accepted_all_13_with_nonblocking_conservative_edge_warnings",
+    "reviewed_at": [
+      "source-resolution pilot6x",
+      "all13nativeheight4x_lightgray_charcoal"
+    ],
+    "preview": "/private/tmp/faithful-races-v2-native-4x-independent.png",
+    "assets": [
+      {
+        "race": "Kobold",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Kobold/standing-front-v2.png",
+        "warnings": []
+      },
+      {
+        "race": "Goblins",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      },
+      {
+        "race": "Human",
+        "status": "accepted_authoritative_8angle_identity_source_correction",
+        "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "crop_box": [
+          65,
+          35,
+          149,
+          158
+        ],
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-approved8angles-height.png",
+        "resample": "nearest",
+        "warnings": [
+          "Source-resolution RGB exact; proportional height export may resample original pixels",
+          "Original dark edge pixels conservatively retained"
+        ],
+        "identity_review": "Approved angular black eyes and broad yellow/tan head, no blue-eyed prior-reference face.",
+        "authoritative_source": "_reference-samples/races-8-angles-enhanced.png frontcolumn rows0..3"
+      },
+      {
+        "race": "Dwarves",
+        "status": "accepted_authoritative_8angle_identity_source_correction",
+        "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "crop_box": [
+          64,
+          160,
+          150,
+          268
+        ],
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-approved8angles-height.png",
+        "resample": "lanczos",
+        "warnings": [
+          "Source-resolution RGB exact; proportional height export may resample original pixels",
+          "Original dark edge pixels conservatively retained"
+        ],
+        "identity_review": "Approved black-eyed ochre compact dwarf, same bald/angular forehead and short body as eight-angle source.",
+        "authoritative_source": "_reference-samples/races-8-angles-enhanced.png frontcolumn rows0..3"
+      },
+      {
+        "race": "Night Elf",
+        "status": "accepted_authoritative_8angle_identity_source_correction",
+        "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "crop_box": [
+          64,
+          267,
+          150,
+          395
+        ],
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protected-height-v2.png",
+        "resample": "nearest",
+        "warnings": [
+          "Source-resolution RGB exact; proportional height export may resample original pixels",
+          "Original dark edge pixels conservatively retained",
+          "Source-specific navy protection required; generic extraction alone was rejected and preserved as candidate"
+        ],
+        "identity_review": "Approved slate gray stepped hair, pointed ears, navy face/body and red-white eyes; reviewed209pixel sourcealpha restoration protects navy shoulders and hips.",
+        "authoritative_source": "_reference-samples/races-8-angles-enhanced.png frontcolumn rows0..3",
+        "source_resolution_cutout": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protected-v2.png",
+        "manual_alpha_protection": {
+          "restored_source_pixels": 209,
+          "mask": "players-gear/faithful/races/Night Elf/standing-front-approved8angles-navy-protection-mask.png",
+          "rgb_changed": 0,
+          "extractor_changed": false
+        },
+        "native_visible_height": 58,
+        "native_baseline_exclusive": 64
+      },
+      {
+        "race": "Orc",
+        "status": "accepted_authoritative_8angle_identity_source_correction",
+        "source_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+        "crop_box": [
+          63,
+          395,
+          151,
+          525
+        ],
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-approved8angles-height.png",
+        "resample": "nearest",
+        "warnings": [
+          "Source-resolution RGB exact; proportional height export may resample original pixels",
+          "Original dark edge pixels conservatively retained"
+        ],
+        "identity_review": "Approved vivid green head/body, red eyes, tiny white tusks and pointed ears; same eight-angle front design.",
+        "authoritative_source": "_reference-samples/races-8-angles-enhanced.png frontcolumn rows0..3"
+      },
+      {
+        "race": "LizardMan",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/LizardMan/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      },
+      {
+        "race": "FrogMan",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/FrogMan/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      },
+      {
+        "race": "Vampire",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Vampire/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      },
+      {
+        "race": "Demon",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Demon/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      },
+      {
+        "race": "Gargoyle",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Gargoyle/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x",
+          "Minor original dark edge pixels retained to protect outline; visible on light backgrounds at high magnification"
+        ]
+      },
+      {
+        "race": "Skeleton",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Skeleton/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x",
+          "Minor original dark edge pixels retained to protect outline; visible on light backgrounds at high magnification"
+        ]
+      },
+      {
+        "race": "DevourerZombie",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/DevourerZombie/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      }
+    ],
+    "superseded_prior_identity_reviews": [
+      {
+        "race": "Human",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Human/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      },
+      {
+        "race": "Dwarves",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Dwarves/standing-front-v2.png",
+        "warnings": []
+      },
+      {
+        "race": "Night Elf",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Night Elf/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x",
+          "Minor original dark edge pixels retained to protect outline; visible on light backgrounds at high magnification"
+        ]
+      },
+      {
+        "race": "Orc",
+        "status": "accepted_existing_art_base_cutout",
+        "retained_rgb_exact_independently_verified": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Orc/standing-front-v2.png",
+        "warnings": [
+          "Conservative closed color-matched pixels retained; no visible blocking hole artifact at native/4x"
+        ]
+      }
+    ],
+    "identity_correction_review": {
+      "status": "accepted_all_four_authoritative_source_corrections",
+      "preview": "/private/tmp/faithful-races-corrected4-independent.png",
+      "nightelf_corrected_preview": "/private/tmp/nightelf-corrected-finalheight-4x.png",
+      "source_resolution_RGB_exact": true,
+      "native_heights_and_baselines_exact": true,
+      "prior_candidates_preserved": true
+    }
+  },
+  "equipment_review": {
+    "status": "accepted_all_32_with_source_artifact_warnings",
+    "reviewed_at": [
+      "source-resolution montage",
+      "all32nativeheight2x",
+      "native4x_lightgray_charcoal (tall staffs also inspected fullheight in2xmontage)"
+    ],
+    "preview": "/private/tmp/faithful-equipment32-native4x-independent.png",
+    "assets": [
+      {
+        "material": "bonehide",
+        "state_name": "helmet.kettle.bonehide",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/bonehide/approved-sheet-art-v2/000-helmet.kettle.bonehide.png",
+        "warnings": []
+      },
+      {
+        "material": "bonehide",
+        "state_name": "chest.leather.bonehide",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/bonehide/approved-sheet-art-v2/001-chest.leather.bonehide.png",
+        "warnings": []
+      },
+      {
+        "material": "bonehide",
+        "state_name": "legs.leather.bonehide",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/bonehide/approved-sheet-art-v2/002-legs.leather.bonehide.png",
+        "warnings": []
+      },
+      {
+        "material": "bonehide",
+        "state_name": "arms.leather.bonehide.L",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/bonehide/approved-sheet-art-v2/003-arms.leather.bonehide.L.png",
+        "warnings": []
+      },
+      {
+        "material": "dragonhide",
+        "state_name": "helmet.kettle.dragonhide",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonhide/approved-sheet-art-v2/000-helmet.kettle.dragonhide.png",
+        "warnings": []
+      },
+      {
+        "material": "dragonhide",
+        "state_name": "chest.leather.dragonhide",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonhide/approved-sheet-art-v2/001-chest.leather.dragonhide.png",
+        "warnings": []
+      },
+      {
+        "material": "dragonhide",
+        "state_name": "legs.leather.dragonhide",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonhide/approved-sheet-art-v2/002-legs.leather.dragonhide.png",
+        "warnings": []
+      },
+      {
+        "material": "dragonhide",
+        "state_name": "arms.leather.dragonhide.L",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonhide/approved-sheet-art-v2/003-arms.leather.dragonhide.L.png",
+        "warnings": []
+      },
+      {
+        "material": "spidersilk",
+        "state_name": "helmet.kettle.spidersilk",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spidersilk/approved-sheet-art-v2/000-helmet.kettle.spidersilk.png",
+        "warnings": []
+      },
+      {
+        "material": "spidersilk",
+        "state_name": "chest.leather.spidersilk",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spidersilk/approved-sheet-art-v2/001-chest.leather.spidersilk.png",
+        "warnings": []
+      },
+      {
+        "material": "spidersilk",
+        "state_name": "legs.leather.spidersilk",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spidersilk/approved-sheet-art-v2/002-legs.leather.spidersilk.png",
+        "warnings": []
+      },
+      {
+        "material": "spidersilk",
+        "state_name": "arms.leather.spidersilk.L",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spidersilk/approved-sheet-art-v2/003-arms.leather.spidersilk.L.png",
+        "warnings": []
+      },
+      {
+        "material": "leather",
+        "state_name": "helmet.kettle.leather",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/leather/approved-sheet-art-v2/000-helmet.kettle.leather.png",
+        "warnings": []
+      },
+      {
+        "material": "leather",
+        "state_name": "chest.leather.leather",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/leather/approved-sheet-art-v2/001-chest.leather.leather.png",
+        "warnings": []
+      },
+      {
+        "material": "leather",
+        "state_name": "legs.leather.leather",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/leather/approved-sheet-art-v2/002-legs.leather.leather.png",
+        "warnings": []
+      },
+      {
+        "material": "leather",
+        "state_name": "shield.round.leather",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/leather/approved-sheet-art-v2/006-shield.round.leather.png",
+        "warnings": []
+      },
+      {
+        "material": "spiderfang",
+        "state_name": "weapon.dagger.spiderfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spiderfang/approved-sheet-art-v2/000-weapon.dagger.spiderfang.png",
+        "warnings": []
+      },
+      {
+        "material": "spiderfang",
+        "state_name": "weapon.arming sword.spiderfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spiderfang/approved-sheet-art-v2/001-weapon.arming-sword.spiderfang.png",
+        "warnings": []
+      },
+      {
+        "material": "spiderfang",
+        "state_name": "weapon.scimitar.spiderfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spiderfang/approved-sheet-art-v2/002-weapon.scimitar.spiderfang.png",
+        "warnings": []
+      },
+      {
+        "material": "spiderfang",
+        "state_name": "weapon.spear.spiderfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spiderfang/approved-sheet-art-v2/003-weapon.spear.spiderfang.png",
+        "warnings": []
+      },
+      {
+        "material": "dragonfang",
+        "state_name": "weapon.dagger.dragonfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonfang/approved-sheet-art-v2/000-weapon.dagger.dragonfang.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "dragonfang",
+        "state_name": "weapon.arming sword.dragonfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonfang/approved-sheet-art-v2/001-weapon.arming-sword.dragonfang.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "dragonfang",
+        "state_name": "weapon.battle axe.dragonfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonfang/approved-sheet-art-v2/005-weapon.battle-axe.dragonfang.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "dragonfang",
+        "state_name": "weapon.halberd.dragonfang",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/dragonfang/approved-sheet-art-v2/007-weapon.halberd.dragonfang.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "cloth",
+        "state_name": "chest.robe.red",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/cloth/approved-sheet-art-v2/001-chest.robe.red.png",
+        "warnings": [
+          "Conservative gray/blue edge pixels remain visible on light backdrop; preserved rather than erasing potential fabric pixels"
+        ]
+      },
+      {
+        "material": "cloth",
+        "state_name": "chest.robe.white",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/cloth/approved-sheet-art-v2/002-chest.robe.white.png",
+        "warnings": [
+          "Conservative gray/blue edge pixels remain visible on light backdrop; preserved rather than erasing potential fabric pixels"
+        ]
+      },
+      {
+        "material": "cloth",
+        "state_name": "chest.robe.blue",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/cloth/approved-sheet-art-v2/004-chest.robe.blue.png",
+        "warnings": []
+      },
+      {
+        "material": "cloth",
+        "state_name": "chest.robe.purple",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/cloth/approved-sheet-art-v2/005-chest.robe.purple.png",
+        "warnings": []
+      },
+      {
+        "material": "magic",
+        "state_name": "magic.crystal staff",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/magic/approved-sheet-art-v2/000-magic.crystal-staff.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "magic",
+        "state_name": "magic.skull staff",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/magic/approved-sheet-art-v2/002-magic.skull-staff-v3.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "magic",
+        "state_name": "magic.rune sword",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/magic/approved-sheet-art-v2/007-magic.rune-sword.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      },
+      {
+        "material": "magic",
+        "state_name": "magic.void blade",
+        "status": "accepted_existing_sheet_cutout_with_recorded_source_artifacts",
+        "retained_rgb_exact_independently_verified": true,
+        "all_hidden_rgb_exact": true,
+        "near_black_ink_removed": 0,
+        "native_visible_height_exact": true,
+        "native_baseline_exact": true,
+        "source_unchanged": true,
+        "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/magic/approved-sheet-art-v2/011-magic.void-blade.png",
+        "warnings": [
+          "Existing detached handle/pommel/effect fragments preserved; not repaired or invented"
+        ]
+      }
+    ]
+  }
+}

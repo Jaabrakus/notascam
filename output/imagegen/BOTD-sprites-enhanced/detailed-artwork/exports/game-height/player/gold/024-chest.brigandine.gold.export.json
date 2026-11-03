@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:41.358540+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/gold/024-chest.brigandine.gold.png",
+    "sha256": "7dd7926f3172a12b4ccaf12ae717be3f7eeef0fb63ec59b59aa3165e3c6f1557",
+    "size": [
+      140,
+      120
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      134,
+      114
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 7219,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      134,
+      114
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      134,
+      114
+    ],
+    "source_crop_size": [
+      128,
+      108
+    ],
+    "crop_rgba_sha256": "cd91d500e9e0f41ee6e5fca092ed355b290e7b444a6e4ef3b2655d7e2bc179f7",
+    "discarded_pixel_count": 2976,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/gold.dmi",
+    "sha256": "2dfd9a43ede42582358fa6109fb0cc2e636642c519d403b3a4f56df3c64b9952",
+    "cell_index": 392,
+    "atlas_size": [
+      1536,
+      1536
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      17,
+      29,
+      47,
+      52
+    ],
+    "visible_height": 23,
+    "visible_width": 30,
+    "bottom_baseline_exclusive": 52,
+    "alpha_sha256": "1142982cee7c1b072b6bcb3c87823a4ba9b630df7b9f1d177f10acc8320a615c",
+    "state_occurrence_index": 24,
+    "state_name": "chest.brigandine.gold",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "eadebd33d52ec98b928bd84081ca2c41729f0b824f92654b448cb1c8015ced66"
+  },
+  "placement": {
+    "target_visible_height": 23,
+    "proportional_content_size": [
+      27,
+      23
+    ],
+    "uniform_scale": 0.21296296296296297,
+    "actual_axis_scales": [
+      0.2109375,
+      0.21296296296296297
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      18,
+      29,
+      45,
+      52
+    ],
+    "actual_alpha_bbox": [
+      18,
+      29,
+      45,
+      52
+    ],
+    "actual_visible_height": 23,
+    "actual_visible_width": 27,
+    "bottom_baseline_exclusive": 52,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/gold/024-chest.brigandine.gold.png",
+    "sha256": "9e6f6d6a31de4e359a7600989f041d8bb3569dc2f889d1b4da98901cc9efee48",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      18,
+      29,
+      45,
+      52
+    ],
+    "alpha_sha256": "ffd2ed167cd0076ca25eff39995b7ae3f78f3dcc7d301f8f319b88b2abb61319",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

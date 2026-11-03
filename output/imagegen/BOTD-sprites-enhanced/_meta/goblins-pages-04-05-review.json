@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_reference_art_anatomy_and_coverage_review",
+  "status": "page04_needs_native_phase_order_correction_page05_pass",
+  "runtime_ready": false,
+  "source_relative": "Races64/Goblins.png",
+  "review_method": "Original preview, native source expectations and generated pages inspected read-only. Manual cell counts, front/back anatomical-side check and profile limb-form inspection; not pixel-identical segmentation.",
+  "pages": [
+    {
+      "page": 4,
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-04.png",
+        "sha256": "839d6c63b107135827359e31bc60937bcfd6acbdb97177c753dde94df84db561",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "mode": "RGB"
+      },
+      "status": "needs_native_phase_order_correction",
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "included_states": [
+        "NoArms"
+      ],
+      "represented_native_cells": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "findings": [
+        "All12NoArms views present in3frame rows and4S/N/E/Wcolumns.",
+        "Front/back views retain bothlegs and terminate bothshoulders at redcaps, with nohands/forearms.",
+        "Profile greenbulges connect into hip/thigh/leg forms; no concrete restored hand or arm found. Bothfeet remain visible where expected.",
+        "Front/back walking phases clearly alternate; profiles show similar but differing strideforms.",
+        "Later nativebottomrowanalysis shows front/back phases2and3 are reversed relativeto source NoArms frameorder; distinctposesalone was insufficient."
+      ]
+    },
+    {
+      "page": 5,
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-05.png",
+        "sha256": "f5502dbdcf7d0791192c3d00096979b24d9e0f59354dfa4e8a36c5d0a57ed6f3",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "status": "pass_reference_art",
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "included_states": [
+        "NoLeftLeg",
+        "NoRightLeg",
+        "NoLegs",
+        "NoRightLegNoLeftArm"
+      ],
+      "represented_native_cells": [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "findings": [
+        "All16views present for NoLeftLeg,NoRightLeg,NoLegs,NoRightLegNoLeftArm.",
+        "NoLeftLeg retains rightleg: screenleft front/screenright back. NoRightLeg retains leftleg with oppositeplacement.",
+        "NoLegs retains botharms and has zero greenlegs/feet in all4views; redhipcaps are stumpmarkers.",
+        "Combo state retains rightarm and leftleg; front/back anatomicalsides correct, opposedprofiles retain onefoot and near-arm/missing-arm arrangement."
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "goblins-noarms-frontback-phase-order",
+      "severity": "moderate",
+      "page": 4,
+      "affected_output_cells": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "finding": "Generated phase2front lowfoot screenright/back screenleft and phase3front screenleft/back screenright, opposite native NoArms ordering.",
+      "native_evidence": [
+        {
+          "cell": 42,
+          "frame": 2,
+          "direction": "south",
+          "bottom_alpha_xrange": [
+            23,
+            32
+          ],
+          "lowerfoot_side": "screen_left"
+        },
+        {
+          "cell": 43,
+          "frame": 2,
+          "direction": "north",
+          "bottom_alpha_xrange": [
+            31,
+            38
+          ],
+          "lowerfoot_side": "screen_right"
+        },
+        {
+          "cell": 46,
+          "frame": 3,
+          "direction": "south",
+          "bottom_alpha_xrange": [
+            31,
+            40
+          ],
+          "lowerfoot_side": "screen_right"
+        },
+        {
+          "cell": 47,
+          "frame": 3,
+          "direction": "north",
+          "bottom_alpha_xrange": [
+            25,
+            32
+          ],
+          "lowerfoot_side": "screen_left"
+        }
+      ],
+      "requested_correction": "Swap only front/back steppingstances between rows2and3 to match native frameorder. Preserve noarms, bothlegs, profiles, row1 andlabels.",
+      "status": "open"
+    }
+  ],
+  "limitations": [
+    "Opaque generated pages have changed geometry/registration/size; alpha and DMI metadata are not retained.",
+    "Side walking phases on NoArms are similar though distinguishable; no exact source animation/timing equivalence claimed.",
+    "Profile injury depth and occlusion are simplified in generated reference art; this checks visible limb count and broad anatomy, not exact native pixel correspondence."
+  ],
+  "mutations": "Only JSON review written; no raster/source/manifest changes.",
+  "history": [
+    {
+      "status": "pass_reference_art",
+      "pages": [
+        {
+          "page": 4,
+          "file": {
+            "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-04.png",
+            "sha256": "839d6c63b107135827359e31bc60937bcfd6acbdb97177c753dde94df84db561",
+            "dimensions": [
+              1774,
+              887
+            ],
+            "mode": "RGB"
+          },
+          "status": "pass_reference_art",
+          "expected_occupied_cells": 12,
+          "observed_occupied_cells": 12,
+          "included_states": [
+            "NoArms"
+          ],
+          "represented_native_cells": [
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "findings": [
+            "All12NoArms views present in3frame rows and4S/N/E/Wcolumns.",
+            "Front/back views retain bothlegs and terminate bothshoulders at redcaps, with nohands/forearms.",
+            "Profile greenbulges connect into hip/thigh/leg forms; no concrete restored hand or arm found. Bothfeet remain visible where expected.",
+            "Front/back walking phases clearly alternate; profiles show similar but differing strideforms."
+          ]
+        },
+        {
+          "page": 5,
+          "file": {
+            "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-05.png",
+            "sha256": "f5502dbdcf7d0791192c3d00096979b24d9e0f59354dfa4e8a36c5d0a57ed6f3",
+            "dimensions": [
+              1536,
+              1024
+            ],
+            "mode": "RGB"
+          },
+          "status": "pass_reference_art",
+          "expected_occupied_cells": 16,
+          "observed_occupied_cells": 16,
+          "included_states": [
+            "NoLeftLeg",
+            "NoRightLeg",
+            "NoLegs",
+            "NoRightLegNoLeftArm"
+          ],
+          "represented_native_cells": [
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65
+          ],
+          "findings": [
+            "All16views present for NoLeftLeg,NoRightLeg,NoLegs,NoRightLegNoLeftArm.",
+            "NoLeftLeg retains rightleg: screenleft front/screenright back. NoRightLeg retains leftleg with oppositeplacement.",
+            "NoLegs retains botharms and has zero greenlegs/feet in all4views; redhipcaps are stumpmarkers.",
+            "Combo state retains rightarm and leftleg; front/back anatomicalsides correct, opposedprofiles retain onefoot and near-arm/missing-arm arrangement."
+          ]
+        }
+      ],
+      "note": "Initial review checked distinctphases but didnotverify nativefront/back phase-sideorder."
+    }
+  ]
+}

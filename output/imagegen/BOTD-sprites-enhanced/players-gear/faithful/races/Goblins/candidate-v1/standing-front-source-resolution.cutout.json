@@ -1,0 +1,61 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-01.png",
+  "source_sha256": "92bcca5a9302bf1b83cf6dc9af59ac46768a224ba00be4f0792d1990f811cea0",
+  "crop_box": [
+    486,
+    74,
+    638,
+    245
+  ],
+  "size": [
+    152,
+    171
+  ],
+  "alpha_bbox": [
+    0,
+    0,
+    152,
+    171
+  ],
+  "retained_pixels": 18494,
+  "background_pixels_removed": 7498,
+  "enclosed_candidate_pixels_retained": 16,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red": true,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.48,
+    "red_minimum": 13,
+    "blue_ceiling": 59.0,
+    "border_background_sample_count": 588,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Retained pixels touch crop border; verify crop does not clip artwork",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/races/Goblins/standing-front-source-resolution.png",
+  "output_sha256": "46ecbeaf4a675d964a8b55bb0d19b2c772122f3aad685090b17fc917a7ab2778"
+}

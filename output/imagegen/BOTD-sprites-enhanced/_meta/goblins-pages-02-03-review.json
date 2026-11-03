@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_read_only_reference_anatomy_and_phase_review",
+  "status": "pass_reference_art",
+  "runtime_ready": false,
+  "source_relative": "Races64/Goblins.png",
+  "pages": [
+    {
+      "page": 2,
+      "status": "pass_reference_art",
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-02.png",
+        "sha256": "cbdde7ee6ba05a068fe445bcc810b2e93403470b6fd5a8b336fb3cdacffb2c8b",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "included_states": [
+        "NoLeftArm"
+      ],
+      "represented_native_cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "findings": [
+        "All12NoLeftArm views present:3animationrows\u00d7S/N/E/W.",
+        "Front retains rightarm on screenleft, leftshoulder terminatesred on screenright. Back retains rightarm screenright, leftstump screenleft.",
+        "Wprofile near leftarm remains absent with redshouldercap; Eprofile near rightarm retained. Bothlegs preserved.",
+        "Front/back phases2/3 use opposite steppinglegs; sidephases remain similar but visibly distinct."
+      ],
+      "native_projection_evidence": {
+        "NoLeftArm_east_cells": [
+          16,
+          20,
+          24
+        ],
+        "corresponding_default_east_cells": [
+          2,
+          6,
+          10
+        ],
+        "rgba_difference_counts": [
+          0,
+          0,
+          0
+        ],
+        "meaning": "Authoritative native Eprojection is exactly unchanged for missing far-side leftarm; apparent chest/hip silhouettes alone must not be mistaken for an invented arm."
+      }
+    },
+    {
+      "page": 3,
+      "status": "pass_reference_art",
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-03.png",
+        "sha256": "2730f3d374225141cbf7fceca06f87c3821f3d0891e1e13a0102a91a3d4ae71c",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "included_states": [
+        "NoRightArm"
+      ],
+      "represented_native_cells": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "expected_occupied_cells": 12,
+      "observed_occupied_cells": 12,
+      "findings": [
+        "All12NoRightArm views present in3animationrows\u00d7S/N/E/W.",
+        "Front rightarm absent with screenleftredcap and leftarm retained screenright; back reverses placement correctly.",
+        "Eprofile near rightarm absent/redcap; Wprofile near leftarm retained with no invented near redcap. Bothlegs visible in allviews.",
+        "Wframe1 now neutralstanding; front/back phases2/3 use opposing steppinglegs.",
+        "NoRightArm frame2front has lowerfoot screenleft and frame3front screenright, matching native phaseorder rather than default/NoLeftArm order."
+      ],
+      "native_projection_evidence": {
+        "NoRightArm_west_cells": [
+          29,
+          33,
+          37
+        ],
+        "corresponding_default_west_cells": [
+          3,
+          7,
+          11
+        ],
+        "rgba_difference_counts": [
+          0,
+          0,
+          0
+        ],
+        "meaning": "Native Wviews retain default near-side appearance because removed rightarm is far-side; no exposed near stump should be added."
+      },
+      "native_gait_evidence": {
+        "front_frame2_cell": 30,
+        "front_frame3_cell": 34,
+        "observed_source_lowerfoot_sides": [
+          "screen_left",
+          "screen_right"
+        ],
+        "back_frame2_cell": 31,
+        "back_frame3_cell": 35,
+        "observed_source_back_lowerfoot_sides": [
+          "screen_right",
+          "screen_left"
+        ],
+        "method": "Read-only native bottom-row RGBA footprint inspection at y60\u201363."
+      }
+    }
+  ],
+  "issues": [],
+  "review_method": "Manual visual comparison to original and source queue; read-only native RGBA comparison tests profile projection equality.",
+  "limitations": [
+    "Referenceart only: no native alpha/registration/equipmentalignment/DMI metadata preservation.",
+    "Broad phase distinction is verified visually; exact source animation geometry/timing is not established.",
+    "Native far-side limb occlusion can make affected profile identical to default; review respects that source evidence."
+  ],
+  "mutations": "Only JSON report written; noimages ormanifest changed.",
+  "expected_total_occupied_cells": 24,
+  "observed_total_occupied_cells": 24
+}

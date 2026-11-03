@@ -1,0 +1,59 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/cloth/page-01.png",
+  "source_sha256": "7049944f65c35c1d8102ab29e585930e05a01d68936c398ec31bfb3b59c9937c",
+  "crop_box": [
+    435,
+    185,
+    600,
+    320
+  ],
+  "size": [
+    165,
+    135
+  ],
+  "alpha_bbox": [
+    25,
+    14,
+    142,
+    119
+  ],
+  "retained_pixels": 8469,
+  "background_pixels_removed": 13806,
+  "enclosed_candidate_pixels_retained": 0,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 67.0,
+    "border_background_sample_count": 596,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/cloth/approved-sheet-art/001-chest.robe.red-source-cutout.png",
+  "output_sha256": "c368216ee638b25ea5cd48bfa8416a6d201e625b974f5b0d986f05496c8caa60"
+}

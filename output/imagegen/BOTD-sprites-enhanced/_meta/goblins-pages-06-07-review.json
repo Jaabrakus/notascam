@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "review_type": "independent_visual_and_native_cell_anatomy_review",
+  "status": "pass_reference_art_after_two_targeted_repairs",
+  "runtime_ready": false,
+  "source_relative": "Races64/Goblins.png",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/BOTD-sprites/Races64/Goblins.png",
+    "sha256": "9bf0c9d7d53dc29f8b9bb9900e8194c17b6ce424c6b249ef0082a671f72e5359",
+    "dimensions": [
+      2526,
+      3388
+    ],
+    "mode": "RGBA"
+  },
+  "native_source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+    "sha256": "52c6f3fa00c8dce18e38eeb8d7b4b07cd6ac37fed90c6752e528221b60331cef",
+    "dimensions": [
+      640,
+      640
+    ],
+    "mode": "RGBA"
+  },
+  "pages": [
+    {
+      "page": 6,
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-06.png",
+        "sha256": "03be485bec6163974a631e48e16ee742601f17f8918f3089d61f002d76af2ca4",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "status": "pass_reference_art_after_targeted_repair",
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "included_states": [
+        "NoLeftLegNoRightArm",
+        "NoRightArmNoRightLeg",
+        "NoLeftArmNoLeftLeg",
+        "NoLegsNoLeftArm"
+      ],
+      "represented_native_cells": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "findings": [
+        "All fourstates/16views remain present. Front/back retained arm andleg sides correct; row4 remains legless with only rightarm.",
+        "Row2east now has one small visible far-side olivefoot beneath red right-hip cap, restoring retained leftfoot shown in native source.",
+        "Other15cells show no new anatomical or facing regression at visualreference level."
+      ]
+    },
+    {
+      "page": 7,
+      "file": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-07.png",
+        "sha256": "c72dca35e1968003c67503da6f4c3a1975117039d97f143a23e894bdf0adaff4",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGB"
+      },
+      "status": "pass_reference_art_after_targeted_repair",
+      "expected_occupied_cells": 16,
+      "observed_occupied_cells": 16,
+      "included_states": [
+        "NoLegsNoRightArm",
+        "None",
+        "NoArmsNoRightLeg",
+        "NoArmsNoLeftLeg"
+      ],
+      "represented_native_cells": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "findings": [
+        "All fourstates/16views remain present. Top tworows still have zero greenlegs/feet; None has head/torso only with redstump caps.",
+        "Row4back now places intact rightleg on screenright and missingleftleg redcap on screenleft; row4front remains correct.",
+        "Other15cells show no new anatomical or facing regression at visualreference level."
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "page06-row2-east-omitted-retained-foot",
+      "page": 6,
+      "output_row_1based": 2,
+      "output_column_1based": 3,
+      "state": "NoRightArmNoRightLeg",
+      "direction": "east",
+      "native_cell_0based": 72,
+      "severity": "moderate",
+      "finding": "Generated profile ends at red right-hip stump with no green foot, omitting visible far-side retained left foot.",
+      "source_evidence": {
+        "native_alpha_bbox": [
+          21,
+          18,
+          43,
+          64
+        ],
+        "green_foot_pixels_at_y61": 4,
+        "native_foot_outline_extends_through_y63": true,
+        "comparison": "NoLegs variants end above y61 and have zero such lower-foot green pixels."
+      },
+      "requested_correction": "Add one small olive green left foot visible below/behind red right-hip stump, matching native source profile; retain missing right arm/right leg.",
+      "status": "resolved",
+      "resolution": "Targeted repair restored one small visible far-side leftfoot below red right-hip cap; final page reviewed against native footprint evidence."
+    },
+    {
+      "id": "page07-row4-back-wrong-leg-side",
+      "page": 7,
+      "output_row_1based": 4,
+      "output_column_1based": 2,
+      "state": "NoArmsNoLeftLeg",
+      "direction": "north",
+      "native_cell_0based": 95,
+      "severity": "moderate",
+      "finding": "Generated back view shows sole leg on screen left; surviving anatomical right leg should be screen right in back view.",
+      "requested_correction": "Move sole intact right leg/foot to screen right and red missing-left-leg cap to screen left. Both arms remain absent.",
+      "status": "resolved",
+      "resolution": "Targeted repair moved sole back-view leg/foot to screenright and stump to screenleft."
+    }
+  ],
+  "review_method": "view_image inspection of original and both generated pages; read-only native RGBA analysis of profile cell footprints distinguishes visible retained feet from natural occlusion. No raster output modifications.",
+  "limitations": [
+    "Reference-art anatomy/coverage review only; no exact pixel registration, alpha or animation metadata validation.",
+    "Rounded red stump caps, silhouette thickness and shading are reinterpreted; they do not establish native runtime equivalence."
+  ],
+  "mutations": "Only this QA JSON written; no raster or manifest edits.",
+  "history": [
+    {
+      "status": "needs_two_targeted_corrections",
+      "pages": [
+        {
+          "page": 6,
+          "file": {
+            "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-06.png",
+            "sha256": "5343d45ede5ecc5755efdc3dfacca93599bc6c9586a4def2e8e8ed913bb5020f",
+            "dimensions": [
+              1536,
+              1024
+            ],
+            "mode": "RGB"
+          },
+          "status": "needs_correction",
+          "expected_occupied_cells": 16,
+          "observed_occupied_cells": 16,
+          "included_states": [
+            "NoLeftLegNoRightArm",
+            "NoRightArmNoRightLeg",
+            "NoLeftArmNoLeftLeg",
+            "NoLegsNoLeftArm"
+          ],
+          "represented_native_cells": [
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "findings": [
+            "All four states/16 views present. Front/back retained arm and leg sides are correct. Row4 remains legless with only right arm.",
+            "Row2 east wrongly omits visible retained far-side left foot; other single-leg profile views retain a foot."
+          ]
+        },
+        {
+          "page": 7,
+          "file": {
+            "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Races64/Goblins/page-07.png",
+            "sha256": "1e222993464ae9573b3bb0f18ba3aa2758726782f99fcb12a37bcb702b182ae0",
+            "dimensions": [
+              1536,
+              1024
+            ],
+            "mode": "RGB"
+          },
+          "status": "needs_correction",
+          "expected_occupied_cells": 16,
+          "observed_occupied_cells": 16,
+          "included_states": [
+            "NoLegsNoRightArm",
+            "None",
+            "NoArmsNoRightLeg",
+            "NoArmsNoLeftLeg"
+          ],
+          "represented_native_cells": [
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "findings": [
+            "All four states/16 views present. Top two rows have no green legs or feet; red hip caps are stylized stumps. None retains head/torso only.",
+            "Row3 single left-leg front/back placement is correct. Row4 front placement is correct but back has wrong side.",
+            "Source direction order front/back/east/west preserved; no accidental full-bodied replacement."
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "id": "page06-row2-east-omitted-retained-foot",
+          "page": 6,
+          "output_row_1based": 2,
+          "output_column_1based": 3,
+          "state": "NoRightArmNoRightLeg",
+          "direction": "east",
+          "native_cell_0based": 72,
+          "severity": "moderate",
+          "finding": "Generated profile ends at red right-hip stump with no green foot, omitting visible far-side retained left foot.",
+          "source_evidence": {
+            "native_alpha_bbox": [
+              21,
+              18,
+              43,
+              64
+            ],
+            "green_foot_pixels_at_y61": 4,
+            "native_foot_outline_extends_through_y63": true,
+            "comparison": "NoLegs variants end above y61 and have zero such lower-foot green pixels."
+          },
+          "requested_correction": "Add one small olive green left foot visible below/behind red right-hip stump, matching native source profile; retain missing right arm/right leg."
+        },
+        {
+          "id": "page07-row4-back-wrong-leg-side",
+          "page": 7,
+          "output_row_1based": 4,
+          "output_column_1based": 2,
+          "state": "NoArmsNoLeftLeg",
+          "direction": "north",
+          "native_cell_0based": 95,
+          "severity": "moderate",
+          "finding": "Generated back view shows sole leg on screen left; surviving anatomical right leg should be screen right in back view.",
+          "requested_correction": "Move sole intact right leg/foot to screen right and red missing-left-leg cap to screen left. Both arms remain absent."
+        }
+      ]
+    }
+  ],
+  "final_check_summary": "32of32occupiedcells preserved; both concrete anatomy findings resolved; non-target rows visually rechecked."
+}

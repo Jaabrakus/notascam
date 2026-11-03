@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:37.016837+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragon/002-helmet.crested.dragon.png",
+    "sha256": "cddf20069673b6358ecc5a7ff28920c5d192706e36e5e5acdd426e7eb13caed4",
+    "size": [
+      139,
+      121
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      133,
+      115
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 9739,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      133,
+      115
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      133,
+      115
+    ],
+    "source_crop_size": [
+      127,
+      109
+    ],
+    "crop_rgba_sha256": "17a9b13383f9127e948c5644bc82fd76e5e20fb8b3ba96f40b843c52bb3cff0a",
+    "discarded_pixel_count": 2976,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragon.dmi",
+    "sha256": "87aee8ae592f4bebc612759cea1a47613131e8c32bb9e187ad72c40d36cf8112",
+    "cell_index": 8,
+    "atlas_size": [
+      256,
+      224
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      7,
+      0,
+      25,
+      13
+    ],
+    "visible_height": 13,
+    "visible_width": 18,
+    "bottom_baseline_exclusive": 13,
+    "alpha_sha256": "7e7b8277a42c179fb5a3d649b41da2646637bd3c4de07bf0d049c2c5e9e938e0",
+    "state_occurrence_index": 2,
+    "state_name": "helmet.crested.dragon",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "5ece63fa3d6806044a16ecc3398c94469b7f7e742515fb0de6bb80586faa3e55"
+  },
+  "placement": {
+    "target_visible_height": 13,
+    "proportional_content_size": [
+      15,
+      13
+    ],
+    "uniform_scale": 0.11926605504587157,
+    "actual_axis_scales": [
+      0.11811023622047244,
+      0.11926605504587157
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      8,
+      0,
+      23,
+      13
+    ],
+    "actual_alpha_bbox": [
+      8,
+      0,
+      23,
+      13
+    ],
+    "actual_visible_height": 13,
+    "actual_visible_width": 15,
+    "bottom_baseline_exclusive": 13,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragon/002-helmet.crested.dragon.png",
+    "sha256": "fa48125a719ff5e3ce8ff1fafba9a81fbc281482012ac34765f5c6a968382769",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      8,
+      0,
+      23,
+      13
+    ],
+    "alpha_sha256": "94c3180ab0ae79f911220df16a556c1886f89345f967e30b88e8c5ec92955035",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

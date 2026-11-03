@@ -1,0 +1,30 @@
+{
+  "status": "complete_checked_detailed_artwork",
+  "race_bases": 13,
+  "equipment_families": 19,
+  "detailed_gear_pages": 60,
+  "new_gear_pages": 50,
+  "existing_gear_pages": 10,
+  "equipment_states": 375,
+  "source_cutouts": 388,
+  "original_height_exports": 763,
+  "height_variants": "375inventory+375player-equipment+13races",
+  "archive": "detailed-enhanced-artwork.zip",
+  "archive_bytes": 97073905,
+  "archive_sha256": "59f4043429d6be96e1a7aa988487ff5ab2ae3ac59437c8c993ec4e2dfef5ca46",
+  "builtin_image_tool_used_for_new_artwork": true,
+  "worker_model": "gpt-6.1-sol",
+  "native_local_reshading_previews_in_collection": false,
+  "rejected_candidates_in_collection": false,
+  "runtime_installed": false,
+  "game_animation_exported_from_new_artwork": false,
+  "validation": [
+    "All60detailedgearPNGhashes/CRC verified",
+    "Full375statecoverage withpageindices verified",
+    "All50newpages independently reviewed",
+    "All375sourcecutoutsRGBA/RGBsourcecomparison passed",
+    "All763sizePNGheight/baselines checked",
+    "MainandcutoutgalleryJavaScriptsyntax passed",
+    "ZIPintegrity passed"
+  ]
+}

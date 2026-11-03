@@ -1,0 +1,239 @@
+{
+  "review_type": "Independent read-only visual comparison of five generated enhanced reference sheets",
+  "review_method": "Original and final PNGs inspected with view_image; row/cell counts are manual visual counts, not automated segmentation. SHA-256 and dimensions read without modifying images.",
+  "total_expected_occupied_cells": 95,
+  "total_observed_occupied_cells": 95,
+  "summary": "All five retain visible source object types, state-row counts, occupied/empty-cell patterns, and broad facing/pose arrangement. Fragment-only source cells are retained. Artwork shows clearer outlines, lighting, and material details. Minor label punctuation variation is distinct from a lost state or object.",
+  "runtime_compatibility": "Not claimed or tested. Outputs are RGB generated reference sheets at changed dimensions and scale. Exact sprite pixels, original registration, transparency, native DMI timing/state metadata and runtime equipment alignment are not validated.",
+  "images": [
+    {
+      "name": "bonehide",
+      "original": {
+        "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/bonehide.png",
+        "sha256": "7c8c4c366cacfddb647de3b95621fbc35e2028662f04bdec454b41ca5041b500",
+        "dimensions": [
+          558,
+          532
+        ],
+        "mode": "RGBA"
+      },
+      "final": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/bonehide.png",
+        "sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+        "dimensions": [
+          1284,
+          1225
+        ],
+        "mode": "RGB"
+      },
+      "prompt": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-bonehide.txt",
+        "sha256": "a3413394ae84f51642167f1c4515c7dbcfb3821ec61315434bd1d2b75ef19595"
+      },
+      "qa": {
+        "rows": 5,
+        "occupied_cells_per_row": [
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "expected_occupied_cells": 18,
+        "observed_occupied_cells": 18,
+        "objects": "Horned brown/bone helmet; chest armor with pale rib/shoulder details; leg armor; two arm-overlay states.",
+        "occupancy": "All source occupied cells retained; arm row 4 column 3 and arm row 5 column 4 remain empty.",
+        "facings": "Front/back/opposed profiles remain in the source four-column positions. Arm overlays retain source orientation and blank-facing pattern.",
+        "art": "Crisper silhouettes, cream bone highlights, warmer hide shading, visible panel/rivet detail, and stronger depth.",
+        "labels": "Title correct. 'helmet.kettle.bonehide' and 'chest.leather.bonehide' visually use a space where the first dot appeared. Other source label truncation retained. This is a minor text-fidelity issue, not a lost row or object.",
+        "lost_state_or_object": false,
+        "obvious_wrong_facing": false,
+        "reference_review": "pass_with_minor_label_variation"
+      }
+    },
+    {
+      "name": "dragonhide",
+      "original": {
+        "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/dragonhide.png",
+        "sha256": "575177aa8766ef7514faad47a15f97c6ec52f3fe0e53fa19f694592fc79e6ebf",
+        "dimensions": [
+          558,
+          532
+        ],
+        "mode": "RGBA"
+      },
+      "final": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/dragonhide.png",
+        "sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+        "dimensions": [
+          1284,
+          1225
+        ],
+        "mode": "RGB"
+      },
+      "prompt": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-dragonhide.txt",
+        "sha256": "9c51be99979121851ed67cf49b7d682ff7683702193c82ba8cb87e50c97ae186"
+      },
+      "qa": {
+        "rows": 5,
+        "occupied_cells_per_row": [
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "expected_occupied_cells": 18,
+        "observed_occupied_cells": 18,
+        "objects": "Horned red-brown helmet, horn-shouldered red chest armor, red leg armor, and two red arm-overlay states.",
+        "occupancy": "All occupied source cells retained; arm row 4 column 3 and arm row 5 column 4 remain empty.",
+        "facings": "The front, rear, and opposed side orientations remain in the source columns; small arm pieces keep the matching source pattern.",
+        "art": "Red hide reads more clearly through brighter warm highlights, dimensional scale/panel shading and clean dark outlines.",
+        "labels": "Header and visible truncated source labels retained.",
+        "lost_state_or_object": false,
+        "obvious_wrong_facing": false,
+        "reference_review": "pass"
+      }
+    },
+    {
+      "name": "spidersilk",
+      "original": {
+        "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/spidersilk.png",
+        "sha256": "150a8e9787e401e6dcef8831586a10d80e0ea94be2f84e848f0b39db859b3d98",
+        "dimensions": [
+          558,
+          532
+        ],
+        "mode": "RGBA"
+      },
+      "final": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spidersilk.png",
+        "sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+        "dimensions": [
+          1284,
+          1225
+        ],
+        "mode": "RGB"
+      },
+      "prompt": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-spidersilk.txt",
+        "sha256": "76615170942d9c7df048f26e5be4eda44e6b080eac08bf850a860a98ac976d41"
+      },
+      "qa": {
+        "rows": 5,
+        "occupied_cells_per_row": [
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        "expected_occupied_cells": 18,
+        "observed_occupied_cells": 18,
+        "objects": "Pale/lavender helmet with red detail and hanging gold tabs, pale chest armor with dark/red shoulder details, pale leg armor with brown footwear, and two pale arm-overlay states.",
+        "occupancy": "18 occupied cells retained. Arm row 4 column 3 and arm row 5 column 4 remain empty.",
+        "facings": "Source front/back/profile arrangement and opposed arm-overlay orientations remain apparent.",
+        "art": "Higher contrast gives the pale silk clear facets and texture; red gems, black shoulder details, gold tabs and brown boots are more legible.",
+        "labels": "Header and source's truncated row-label spellings retained.",
+        "lost_state_or_object": false,
+        "obvious_wrong_facing": false,
+        "reference_review": "pass"
+      }
+    },
+    {
+      "name": "leather",
+      "original": {
+        "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/leather.png",
+        "sha256": "b53faedc95301ba3747a24b5923b1be12fc2aefddf37ed20615bc100abfa8a2b",
+        "dimensions": [
+          558,
+          736
+        ],
+        "mode": "RGBA"
+      },
+      "final": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/leather.png",
+        "sha256": "942f1c41eef116e859d386ab7ad5c9d60706b9dc7ad1f26a584300c759b4c6de",
+        "dimensions": [
+          1092,
+          1441
+        ],
+        "mode": "RGB"
+      },
+      "prompt": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-leather.txt",
+        "sha256": "016765356d6558b1f0d1bb1a45c2420694b636a0f97085624fabb73cd92ca11e"
+      },
+      "qa": {
+        "rows": 7,
+        "occupied_cells_per_row": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          4,
+          4
+        ],
+        "expected_occupied_cells": 26,
+        "observed_occupied_cells": 26,
+        "objects": "Leather helmet, chest armor, leg armor, left and right arm overlays, buckler shield and larger round shield.",
+        "occupancy": "All 26 occupied source cells retained. Arm row 4 column 3 and arm row 5 column 4 remain empty.",
+        "facings": "Armor and arm overlays follow source facing positions. Shield broad, edge-on and fragment views follow their source columns rather than being normalized into generic turnarounds.",
+        "fragments": "Buckler row 6 column 3 is still a thin visible sliver. Round shield row 7 column 3 retains two separated narrow fragments inside that one cell, as the original does. These are not extra cells or missing shields.",
+        "art": "Clearer leather folds and rivets, warm edge highlights, raised buckler center and readable larger round-shield surface.",
+        "labels": "Header and all seven state labels visibly retained, including arm L/R suffixes.",
+        "lost_state_or_object": false,
+        "obvious_wrong_facing": false,
+        "reference_review": "pass"
+      }
+    },
+    {
+      "name": "spiderfang",
+      "original": {
+        "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/spiderfang.png",
+        "sha256": "11954a9f52162e862237f166dccaa25a4f4fef2f67be2917be7b5e8135876a3e",
+        "dimensions": [
+          558,
+          430
+        ],
+        "mode": "RGBA"
+      },
+      "final": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png",
+        "sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452",
+        "dimensions": [
+          1429,
+          1101
+        ],
+        "mode": "RGB"
+      },
+      "prompt": {
+        "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/prompts/Gear-spiderfang.txt",
+        "sha256": "04364c8852aaeefe27d3e23273818d7510a16749d96b9fdb69ea8310496b591f"
+      },
+      "qa": {
+        "rows": 4,
+        "occupied_cells_per_row": [
+          3,
+          4,
+          4,
+          4
+        ],
+        "expected_occupied_cells": 15,
+        "observed_occupied_cells": 15,
+        "objects": "Short dagger, longer straight arming sword, curved scimitar and long-shaft spear.",
+        "occupancy": "15 source occupied cells retained. Dagger row 1 column 4 remains empty.",
+        "facings": "The source blade/head directions are retained: left-leaning first-column weapons, right-leaning second/third-column weapons, and partial fourth-column views where present.",
+        "fragments": "Fourth-column arming sword/scimitar retain separate blade fragments and distant small red pommel details. Fourth-column spear retains top head/short shaft and distant small bottom shaft fragment. These intentionally partial source views were not incorrectly restored into complete weapons.",
+        "art": "Black blades gain crisp green cutting-edge highlights, red pommels are brighter and dimensional, and spear wood has visible warm segmented shading.",
+        "labels": "Source truncated weapon row labels retained. Header visually reads Gear/spiderfang.dmi; a tiny bright mark near the slash may be a minor text artifact.",
+        "lost_state_or_object": false,
+        "obvious_wrong_facing": false,
+        "reference_review": "pass_with_possible_minor_header_artifact"
+      }
+    }
+  ],
+  "edits_performed": "Only this QA JSON was written. No raster edits, image-generation calls, original/final image changes, or shared manifest changes."
+}

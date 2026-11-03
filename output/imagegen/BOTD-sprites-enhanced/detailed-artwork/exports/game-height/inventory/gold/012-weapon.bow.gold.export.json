@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:39.649811+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/gold/012-weapon.bow.gold.png",
+    "sha256": "f8f561cd6fc39e84f227cab7919d24335ed104fb35da9550497a0897b290a02f",
+    "size": [
+      61,
+      123
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      55,
+      117
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 4633,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      55,
+      117
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      55,
+      117
+    ],
+    "source_crop_size": [
+      49,
+      111
+    ],
+    "crop_rgba_sha256": "ae7bbc099c057dd8b61cc0f809e9367102ace98b72f0ee302dc83ff657de3de6",
+    "discarded_pixel_count": 2064,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/gold.dmi",
+    "sha256": "8036322c63b7e9989be323b2f3dd7570dc02ac7eda8dc73205c4be68c82c98e7",
+    "cell_index": 48,
+    "atlas_size": [
+      416,
+      384
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      7,
+      17,
+      14,
+      32
+    ],
+    "visible_height": 15,
+    "visible_width": 7,
+    "bottom_baseline_exclusive": 32,
+    "alpha_sha256": "024f8047c7a39a708aa2e356ffaa430babe4409225f4699565331802b7f5ccdc",
+    "state_occurrence_index": 12,
+    "state_name": "weapon.bow.gold",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "e5d29a85b40de4b8b4b58ab06dbae48f9138c0fb4935d3ac71b3f465ba591809"
+  },
+  "placement": {
+    "target_visible_height": 15,
+    "proportional_content_size": [
+      7,
+      15
+    ],
+    "uniform_scale": 0.13513513513513514,
+    "actual_axis_scales": [
+      0.14285714285714285,
+      0.13513513513513514
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      7,
+      17,
+      14,
+      32
+    ],
+    "actual_alpha_bbox": [
+      7,
+      17,
+      14,
+      32
+    ],
+    "actual_visible_height": 15,
+    "actual_visible_width": 7,
+    "bottom_baseline_exclusive": 32,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/gold/012-weapon.bow.gold.png",
+    "sha256": "07423c36e1d9974e0ddd01be512e8ba9967d0c2edc21d13a8c9987b85fc847ee",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      7,
+      17,
+      14,
+      32
+    ],
+    "alpha_sha256": "155f0414521a4f925f9a28aa393b2dc67cb775eb70e111b8fc6f493d12f17199",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

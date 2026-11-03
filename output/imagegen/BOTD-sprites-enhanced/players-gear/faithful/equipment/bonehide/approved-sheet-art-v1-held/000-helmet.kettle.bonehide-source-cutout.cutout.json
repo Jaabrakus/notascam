@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/bonehide.png",
+  "source_sha256": "399e70ad8bc1cc9751f11a66acb206d6340a1a1c2c4572304731b07d57806a87",
+  "crop_box": [
+    370,
+    65,
+    550,
+    190
+  ],
+  "size": [
+    180,
+    125
+  ],
+  "alpha_bbox": [
+    20,
+    15,
+    153,
+    108
+  ],
+  "retained_pixels": 7854,
+  "background_pixels_removed": 14646,
+  "enclosed_candidate_pixels_retained": 2,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 78.0,
+    "border_background_sample_count": 606,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/bonehide/approved-sheet-art/000-helmet.kettle.bonehide-source-cutout.png",
+  "output_sha256": "9825a0597c00e55993abc8c50a27e72c195b4d5b8054a0a1de41739fac1cb328"
+}

@@ -1,0 +1,60 @@
+{
+  "version": "existing-pixels-cutout-1.0",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spidersilk.png",
+  "source_sha256": "a95b6baa3133dd787f0a7b8599245e83e3036ed0c5888cda2b22232717f81057",
+  "crop_box": [
+    350,
+    320,
+    555,
+    500
+  ],
+  "size": [
+    205,
+    180
+  ],
+  "alpha_bbox": [
+    20,
+    29,
+    199,
+    160
+  ],
+  "retained_pixels": 10217,
+  "background_pixels_removed": 26683,
+  "enclosed_candidate_pixels_retained": 46,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 75.0,
+    "border_background_sample_count": 766,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/players-gear/faithful/equipment/spidersilk/approved-sheet-art/001-chest.leather.spidersilk-source-cutout.png",
+  "output_sha256": "64919357f9710f1753a1a6c61b07312d5ea40a5ac43b92e936b38069743d65e6"
+}

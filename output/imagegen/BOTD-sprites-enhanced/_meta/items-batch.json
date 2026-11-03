@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "batch": "items-batch",
+  "date": "2026-10-24",
+  "producer": "items_enhancement",
+  "tool": "built-in image_gen.imagegen",
+  "skill": "/Users/kiwimango/.codex/skills/.system/imagegen/SKILL.md",
+  "scope": "Three enhanced reference sheets; not playable DMI assets",
+  "review_method": "Visual comparison of each generated tool-returned image to original preview, plus native DMI Description read, source/generated dimensions read, SHA256, PNG verify. No scripted artistic image transformation.",
+  "global_qa_limits": [
+    "Reference artwork only; not game-ready and not installed into running game.",
+    "Output is opaque RGB on dark charcoal and has changed resolution, object geometry, pixel registration and typography scale.",
+    "Exact native sprite coordinates, source alpha, palette limits, and complete native animation metadata are not embedded or verified as retained in generated PNGs.",
+    "No AI reference counts as completed playable asset.",
+    "All three native DMI files have one direction and one frame per state; output counts match their 4, 1 and 3 state counts.",
+    "Source files were read only; outputs were copied non-destructively from built-in generated images."
+  ],
+  "entries": [
+    {
+      "source_relative": "Items/rope.png",
+      "source": "/Users/kiwimango/Downloads/BOTD-sprites/Items/rope.png",
+      "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Items/rope.dmi",
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Items/rope.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-d1e29cff-81ae-4d3e-b48a-48da441134e2.png",
+      "status": "reference_art_checked",
+      "playable_asset_complete": false,
+      "original_size": [
+        252,
+        430
+      ],
+      "generated_size": [
+        960,
+        1638
+      ],
+      "generated_mode": "RGB",
+      "source_sha256": "da66c72b68c8e16dc607587615d8f20488b97d320d00d8eadbe21c2f2112dfed",
+      "native_sha256": "0372f920be00cd23e3f5eaf8fb87391d94b6f83fd65e562628a8389216b628a2",
+      "output_sha256": "1de41fa9a8bfea39425796dae58c9cf4eb58d69d039b2daa4ee47af57211eb6c",
+      "prompt": "Use case: style-transfer. Asset type: enhanced fantasy-game item reference sheet. Image 1 is the exact edit target / original rope item sheet; Image 2 is a visual style reference only. Enhance Image 1 with clean polished pixel/voxel materials, blocky faceted shading, rich but restrained highlight detail, and crisp dark contours matching the approved characters in Image 2. Preserve Image 1's identity, composition and count: exactly FOUR vertically stacked rows, exactly one item per row. Row 1 yellow-olive plant-fiber rope coil with loose end descending right, row 2 warm brown leather rope coil with loose end descending right, row 3 pale lavender-white silk rope coil with loose end descending right, row 4 a single pointed wooden stake diagonally rising from lower left to upper right. Rope coils must have visible layered loop structure. Keep the dark charcoal solid background and ample spacing. Preserve the exact header text 'Items/rope.dmi' at the upper left and exact left-aligned row labels in this order: 'rope-plant', 'rope-leather', 'rope-silk', 'stake'. No other text. Keep same relative placement, vertical ordering, object orientations, material colors, and row count; no character, no extra object, no cropping, no border, no watermark. Improve readability and material depth. Full sheet including all labels and every item visible. This is artwork, not a runtime sprite atlas; do not invent animation frames.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "checks": {
+        "png_decodes": true,
+        "rows_expected": 4,
+        "rows_observed": 4,
+        "objects_expected": 4,
+        "objects_observed": 4,
+        "header_expected": "Items/rope.dmi",
+        "header_observed": "Items/rope.dmi",
+        "labels_expected": [
+          "rope-plant",
+          "rope-leather",
+          "rope-silk",
+          "stake"
+        ],
+        "labels_observed": [
+          "rope-plant",
+          "rope-leather",
+          "rope-silk",
+          "stake"
+        ],
+        "text_verbatim": true,
+        "all_required_states_visible": true,
+        "one_native_facing_per_state": true,
+        "relative_composition_preserved": true,
+        "no_added_objects": true,
+        "no_cropped_content": true,
+        "readability": "pass at generated reference-sheet resolution",
+        "native_frame_registration_verified": false,
+        "native_metadata_preserved": false,
+        "source_transparency_preserved": false
+      },
+      "notes": "Three rope coils with right-descending loose ends, in olive-gold, warm brown, and pale lavender-white, followed by one pointed wooden stake angled from lower left to upper right. Four complete items and all labels visible. Stronger highlights and thicker apparent rope cross sections.",
+      "deviations": [
+        "Generated dimensions differ from original preview.",
+        "Dark charcoal backdrop has a slight generated lighting gradient.",
+        "Art is reinterpreted with dimensional shading; pixel geometry and native metadata are not preserved."
+      ]
+    },
+    {
+      "source_relative": "Items/stonelimb.png",
+      "source": "/Users/kiwimango/Downloads/BOTD-sprites/Items/stonelimb.png",
+      "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Items/stonelimb.dmi",
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Items/stonelimb.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-745f7161-650a-44e5-97b0-c9ccde46da6c.png",
+      "status": "reference_art_checked",
+      "playable_asset_complete": false,
+      "original_size": [
+        252,
+        124
+      ],
+      "generated_size": [
+        1788,
+        880
+      ],
+      "generated_mode": "RGB",
+      "source_sha256": "a9da86c36e6e5eff6cfb574837e988d4bc19191c6a1cf482af6b1d1daacd3cde",
+      "native_sha256": "61d526aa2243d895480597ce240b5004646c44900c007b0b93a4a694af538127",
+      "output_sha256": "d21af3e73c5007bc6ab28421571f90d2397f60c3784f0b7a24ab49d5327a81c0",
+      "prompt": "Use case: style-transfer. Asset type: enhanced fantasy-game item reference sheet. Image 1 is the exact edit target stone-limb sheet; Image 2 is a visual style reference only. Enhance Image 1 into a clean, legible pixel/voxel reference with faceted stone shading matching Image 2's stone gargoyle material. Preserve the entire sparse horizontal sheet: header at upper left, one row label left, exactly ONE object to the right, dark charcoal background. Text verbatim: header 'Items/stonelimb.dmi'; row label 'Arm'. The only object is the VERY SMALL horizontal irregular gray stone arm fragment in Image 1. Faithfully retain its squat horizontal silhouette and orientation, with dark recessed irregularities, medium-gray stone body and upper-left gray highlights. It is roughly twice as wide as tall, with a couple irregular prongs at its left and a short stub at the right. Do NOT replace it with a realistic anatomical hand, long arm, muscular arm, complete limb, axe, weapon or creature. Keep it recognizable as this exact fragment while improving volume, depth and readability. Preserve all source content; no extra objects, no characters, no added text, no border, no watermark, no cropping. Leave generous blank charcoal area, consistent with source. This is reference artwork, not a runtime sprite atlas.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "checks": {
+        "png_decodes": true,
+        "rows_expected": 1,
+        "rows_observed": 1,
+        "objects_expected": 1,
+        "objects_observed": 1,
+        "header_expected": "Items/stonelimb.dmi",
+        "header_observed": "Items/stonelimb.dmi",
+        "labels_expected": [
+          "Arm"
+        ],
+        "labels_observed": [
+          "Arm"
+        ],
+        "text_verbatim": true,
+        "all_required_states_visible": true,
+        "one_native_facing_per_state": true,
+        "relative_composition_preserved": true,
+        "no_added_objects": true,
+        "no_cropped_content": true,
+        "readability": "pass at generated reference-sheet resolution",
+        "native_frame_registration_verified": false,
+        "native_metadata_preserved": false,
+        "source_transparency_preserved": false
+      },
+      "notes": "One short horizontal irregular stone fragment, gray with dark recesses and raised upper prongs, occupying right of one-row sheet. No invented complete arm or anatomical hand. Native source occupied bbox is only 9x4 pixels; interpretation of its small irregular form remains approximate, not pixel-identical.",
+      "deviations": [
+        "Generated dimensions differ from original preview.",
+        "Dark charcoal backdrop has a slight generated lighting gradient.",
+        "Art is reinterpreted with dimensional shading; pixel geometry and native metadata are not preserved."
+      ]
+    },
+    {
+      "source_relative": "Items/stumpcare.png",
+      "source": "/Users/kiwimango/Downloads/BOTD-sprites/Items/stumpcare.png",
+      "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Items/stumpcare.dmi",
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Items/stumpcare.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-e52d7075-93d3-4463-b418-8b2ba7186d36.png",
+      "status": "reference_art_checked",
+      "playable_asset_complete": false,
+      "original_size": [
+        252,
+        328
+      ],
+      "generated_size": [
+        1099,
+        1431
+      ],
+      "generated_mode": "RGB",
+      "source_sha256": "12c05efb603b3c5b5622e67d744d842cc6dcbc62712e9b6012e6e8f8df297a19",
+      "native_sha256": "b351f30e54d3160db4a81be8cd22e1a21ce9bbc17ad70e32e372e36f6e4a4668",
+      "output_sha256": "f99d3148ba999063d1655cd78b76ec1f4d9a6e63f5b55275f6e62f6349d24dc9",
+      "prompt": "Use case: style-transfer. Asset type: enhanced fantasy-game item reference sheet. Image 1 is the exact edit target stump-care item sheet. Image 2 is a style reference only for polished, chunky pixel/voxel shading. Enhance Image 1 with clean material definition, dimensional blocks, crisp dark contours and controlled highlights. Keep exact composition, identity and count: THREE vertically stacked rows, exactly one item per row. First row a cream-tan leather bandage roll shown at a slight angle, round tightly rolled left face with a cream tail extending along the bottom toward the right; second row the same type of bandage roll in pale lavender-white silk, with lavender-white tail extending right; third row a single UNLIT torch, diagonal from lower-left wooden handle to upper-right dark brown cloth-wrapped oval head. No fire or smoke. The rolls and tails are each one continuous bandage item, never separate extra bandages. Preserve original item orientations and colors. Charcoal background, generous row spacing, objects on the right, labels on the left. Header text exactly 'Items/stumpcare.dmi'. Row labels verbatim, top to bottom: 'bandage-leather', 'bandage-silk', 'torch'. No additional text, no added items, no characters, no border, no watermark, no cropped content. Show every item and label clearly. Reference artwork only; do not invent animation frames or a runtime grid.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "checks": {
+        "png_decodes": true,
+        "rows_expected": 3,
+        "rows_observed": 3,
+        "objects_expected": 3,
+        "objects_observed": 3,
+        "header_expected": "Items/stumpcare.dmi",
+        "header_observed": "Items/stumpcare.dmi",
+        "labels_expected": [
+          "bandage-leather",
+          "bandage-silk",
+          "torch"
+        ],
+        "labels_observed": [
+          "bandage-leather",
+          "bandage-silk",
+          "torch"
+        ],
+        "text_verbatim": true,
+        "all_required_states_visible": true,
+        "one_native_facing_per_state": true,
+        "relative_composition_preserved": true,
+        "no_added_objects": true,
+        "no_cropped_content": true,
+        "readability": "pass at generated reference-sheet resolution",
+        "native_frame_registration_verified": false,
+        "native_metadata_preserved": false,
+        "source_transparency_preserved": false
+      },
+      "notes": "Cream/tan and lavender/white bandage rolls each retain one attached tail extending right; single unlit torch angles lower-left to upper-right with dark wrapped head. Three complete objects; no flame, smoke, extra bandages, or clipping.",
+      "deviations": [
+        "Generated dimensions differ from original preview.",
+        "Dark charcoal backdrop has a slight generated lighting gradient.",
+        "Art is reinterpreted with dimensional shading; pixel geometry and native metadata are not preserved."
+      ]
+    }
+  ]
+}

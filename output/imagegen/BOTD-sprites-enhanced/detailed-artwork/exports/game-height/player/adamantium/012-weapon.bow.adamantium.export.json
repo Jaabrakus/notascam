@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:42:27.166086+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/adamantium/012-weapon.bow.adamantium.png",
+    "sha256": "821d960a371b237402dca926ab72da77cf19d64f9874a0613ff56e536b47b87f",
+    "size": [
+      62,
+      130
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      6,
+      6,
+      56,
+      124
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 5694,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      6,
+      6,
+      56,
+      124
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      6,
+      6,
+      56,
+      124
+    ],
+    "source_crop_size": [
+      50,
+      118
+    ],
+    "crop_rgba_sha256": "e09936e216ca12e0effcd79097a76f61e0f33ac66cb81634d5788e3a47aec14f",
+    "discarded_pixel_count": 2160,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear64/Human/adamantium.dmi",
+    "sha256": "28eed3105e156cd554706ee44f4feff757ccb3c38b603d44f1eecb992e9ffeb5",
+    "cell_index": 240,
+    "atlas_size": [
+      1536,
+      1536
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      15,
+      33,
+      28,
+      64
+    ],
+    "visible_height": 31,
+    "visible_width": 13,
+    "bottom_baseline_exclusive": 64,
+    "alpha_sha256": "3db838756f85d8ca56b59947ae8c7e0c677a8516a18f52d4545c7bb5734380f8",
+    "state_occurrence_index": 12,
+    "state_name": "weapon.bow.adamantium",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "5"
+      ],
+      [
+        "delay",
+        "1,1,1,1,1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "bc6b395f64e364937f1f16472e3c4caf2e94aed8a43e868a2b4dfb406079f095"
+  },
+  "placement": {
+    "target_visible_height": 31,
+    "proportional_content_size": [
+      13,
+      31
+    ],
+    "uniform_scale": 0.2627118644067797,
+    "actual_axis_scales": [
+      0.26,
+      0.2627118644067797
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      64,
+      64
+    ],
+    "destination_box": [
+      15,
+      33,
+      28,
+      64
+    ],
+    "actual_alpha_bbox": [
+      15,
+      33,
+      28,
+      64
+    ],
+    "actual_visible_height": 31,
+    "actual_visible_width": 13,
+    "bottom_baseline_exclusive": 64,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/player/adamantium/012-weapon.bow.adamantium.png",
+    "sha256": "fbf55ad8d74adde4e5e9634316293fd76941c181f0101d8ced0b0a24f1b66dd3",
+    "size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      15,
+      33,
+      28,
+      64
+    ],
+    "alpha_sha256": "1f9010ba48dd91edbb089dc1a8e5a8bcadfe8642e56f9cd747d71e80eb668ab1",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

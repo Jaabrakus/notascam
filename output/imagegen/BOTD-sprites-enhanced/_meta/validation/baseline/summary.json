@@ -1,0 +1,75 @@
+{
+  "purpose": "Original-versus-itself preservation baseline only; no enhancements validated.",
+  "require_enhanced": false,
+  "total": 7,
+  "passed": 7,
+  "results": [
+    {
+      "source": "Races64/Human.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Races64/Human.json",
+      "frame_cells": 98,
+      "duplicate_state_names": {},
+      "failures": []
+    },
+    {
+      "source": "Races64/Demon.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Races64/Demon.json",
+      "frame_cells": 96,
+      "duplicate_state_names": {
+        "\"NoLeftArmNoLeftLeg\"": 2
+      },
+      "failures": []
+    },
+    {
+      "source": "Gear/adamantium.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Gear/adamantium.json",
+      "frame_cells": 152,
+      "duplicate_state_names": {},
+      "failures": []
+    },
+    {
+      "source": "Gear64/Demon/adamantium.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Gear64/Demon/adamantium.json",
+      "frame_cells": 560,
+      "duplicate_state_names": {},
+      "failures": []
+    },
+    {
+      "source": "Items/beastparts.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Items/beastparts.json",
+      "frame_cells": 27,
+      "duplicate_state_names": {},
+      "failures": []
+    },
+    {
+      "source": "Limbs64/Human.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Limbs64/Human.json",
+      "frame_cells": 584,
+      "duplicate_state_names": {},
+      "failures": []
+    },
+    {
+      "source": "Rope64/Demon.dmi",
+      "passed": true,
+      "report": "output/imagegen/BOTD-sprites-enhanced/_meta/validation/baseline/Rope64/Demon.json",
+      "frame_cells": 768,
+      "duplicate_state_names": {
+        "\"plant|NoLeftArmNoLeftLeg\"": 2,
+        "\"hobble-plant|NoLeftArmNoLeftLeg\"": 2,
+        "\"leather|NoLeftArmNoLeftLeg\"": 2,
+        "\"hobble-leather|NoLeftArmNoLeftLeg\"": 2,
+        "\"silk|NoLeftArmNoLeftLeg\"": 2,
+        "\"hobble-silk|NoLeftArmNoLeftLeg\"": 2,
+        "\"chains|NoLeftArmNoLeftLeg\"": 2,
+        "\"hobble-chains|NoLeftArmNoLeftLeg\"": 2
+      },
+      "failures": []
+    }
+  ]
+}

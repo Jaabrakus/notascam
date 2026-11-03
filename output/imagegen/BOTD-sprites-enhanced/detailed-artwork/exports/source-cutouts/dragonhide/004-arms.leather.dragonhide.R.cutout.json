@@ -1,0 +1,76 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/dragonhide/page-01.png",
+  "source_sha256": "e66e22cb2db7abe2eee0043994e3c05c24f1fcbd5d2245eb6cd04f7d817079a1",
+  "crop_box": [
+    370,
+    1080,
+    510,
+    1205
+  ],
+  "size": [
+    148,
+    133
+  ],
+  "source_crop_size": [
+    140,
+    125
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    33,
+    34,
+    98,
+    103
+  ],
+  "alpha_bbox": [
+    37,
+    38,
+    102,
+    107
+  ],
+  "retained_pixels": 2686,
+  "background_pixels_removed": 14814,
+  "enclosed_candidate_pixels_retained": 0,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 80.0,
+    "border_background_sample_count": 526,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/004-arms.leather.dragonhide.R.png",
+  "output_sha256": "4f3af53b1d6e5bdc58f3472ddf67de945f3f289b2c0ac11cf4d639609d50433f"
+}

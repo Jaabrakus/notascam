@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:29.280540+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/cloth/013-legs.boots.png",
+    "sha256": "8750266745f44edbe7e28b474009b592417a9530e1bd915b0c3fc55264dd1f3a",
+    "size": [
+      148,
+      88
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      30,
+      28,
+      121,
+      54
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 11097,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      30,
+      28,
+      121,
+      54
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      30,
+      28,
+      121,
+      54
+    ],
+    "source_crop_size": [
+      91,
+      26
+    ],
+    "crop_rgba_sha256": "63e0f68c1e8f75ebcdf164d0cabb9a653ddd4ab237b80443723a486335f61aee",
+    "discarded_pixel_count": 10658,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/cloth.dmi",
+    "sha256": "33d81b55df17efb5f018c40c163f95ec1cdfa60ffece14ea441e53f371cd6179",
+    "cell_index": 52,
+    "atlas_size": [
+      256,
+      224
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      9,
+      29,
+      23,
+      32
+    ],
+    "visible_height": 3,
+    "visible_width": 14,
+    "bottom_baseline_exclusive": 32,
+    "alpha_sha256": "7aa61e5e31cf7bcd8f1542018eea3e777b36c11e6eb06b5f60525c6ce8d61d37",
+    "state_occurrence_index": 13,
+    "state_name": "legs.boots",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "a70575b070fb36b5b037792fb835759fc8fd4f7d3f9cfc28666cb05431cd9bb9"
+  },
+  "placement": {
+    "target_visible_height": 3,
+    "proportional_content_size": [
+      11,
+      3
+    ],
+    "uniform_scale": 0.11538461538461539,
+    "actual_axis_scales": [
+      0.12087912087912088,
+      0.11538461538461539
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      10,
+      29,
+      21,
+      32
+    ],
+    "actual_alpha_bbox": [
+      10,
+      29,
+      21,
+      32
+    ],
+    "actual_visible_height": 3,
+    "actual_visible_width": 11,
+    "bottom_baseline_exclusive": 32,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/cloth/013-legs.boots.png",
+    "sha256": "58f011ca4a6bebd327a249f71c5e6c2adaba1da62ff8e9c69ced5600ee997836",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      10,
+      29,
+      21,
+      32
+    ],
+    "alpha_sha256": "bfd4e6dacf715fb553b76434e79d53e560033a8ca30b6751e8a3b5c46985e875",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

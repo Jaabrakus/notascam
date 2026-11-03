@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T17:20:10.195651+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-64/source-art/Goblins-standing-front.png",
+    "sha256": "a95a5ddc8369d0b12c6cb8c002cd2476366cb86c1200f35944e9a460cefc4e3f",
+    "size": [
+      1254,
+      1254
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      0,
+      21,
+      1208,
+      1254
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 1074274,
+    "transparent_perimeter_fraction": 0.9964086193136472,
+    "semi_transparent_pixels": 496422,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      0,
+      21,
+      1208,
+      1254
+    ],
+    "requested_source_crop": [
+      208,
+      251,
+      1045,
+      1132
+    ],
+    "effective_source_crop": [
+      208,
+      251,
+      1045,
+      1132
+    ],
+    "source_crop_size": [
+      837,
+      881
+    ],
+    "crop_rgba_sha256": "b4a3622e06133e9f925f389dcc0366494ace0fd201cddccda20e79d43429aafb",
+    "discarded_pixel_count": 835119,
+    "discarded_nonzero_alpha_pixel_count": 1053,
+    "discarded_maximum_alpha": 1,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Goblins.dmi",
+    "sha256": "9eef9feca0f31894fc74e0270f362b0809a6fd7d686b1f4aa96c21fc9856d9dc",
+    "cell_index": 0,
+    "atlas_size": [
+      640,
+      640
+    ],
+    "frame_size": [
+      64,
+      64
+    ],
+    "alpha_bbox": [
+      15,
+      20,
+      49,
+      64
+    ],
+    "visible_height": 44,
+    "visible_width": 34,
+    "bottom_baseline_exclusive": 64,
+    "alpha_sha256": "0f2960df9dfcc4303d2c01cdd672910cf1c6868844a8f68922b2b41b1a6f68b0",
+    "state_occurrence_index": 0,
+    "state_name": "",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "3"
+      ],
+      [
+        "delay",
+        "2,2,2"
+      ],
+      [
+        "movement",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "7738f54c20db11587c7e700ebd53aea7ff085c569f0a53c4b1b4f247e53c6516"
+  },
+  "placement": {
+    "target_visible_height": 44,
+    "proportional_content_size": [
+      42,
+      44
+    ],
+    "uniform_scale": 0.049943246311010214,
+    "actual_axis_scales": [
+      0.05017921146953405,
+      0.049943246311010214
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      72,
+      64
+    ],
+    "destination_box": [
+      15,
+      20,
+      57,
+      64
+    ],
+    "actual_alpha_bbox": [
+      15,
+      20,
+      57,
+      64
+    ],
+    "actual_visible_height": 44,
+    "actual_visible_width": 42,
+    "bottom_baseline_exclusive": 64,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/enhanced-height/Races64/Goblins/standing-front.png",
+    "sha256": "1c0cd97c95930bad358817e5fb579efcfdf5d6467a7726c8c2981f8381bfa8c8",
+    "size": [
+      72,
+      64
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      15,
+      20,
+      57,
+      64
+    ],
+    "alpha_sha256": "1331e0c1ef429fb19d26f6fc2e7193a9d829b115fd0a084b53d4b0b597d74432",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 1246
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

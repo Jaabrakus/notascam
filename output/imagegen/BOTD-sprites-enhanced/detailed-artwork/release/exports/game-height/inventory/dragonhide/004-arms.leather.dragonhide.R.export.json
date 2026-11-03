@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-24T19:43:26.796505+00:00",
+  "status": "original_height_export_pending_visual_review",
+  "source": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/dragonhide/004-arms.leather.dragonhide.R.png",
+    "sha256": "4f3af53b1d6e5bdc58f3472ddf67de945f3f289b2c0ac11cf4d639609d50433f",
+    "size": [
+      148,
+      133
+    ],
+    "original_mode": "RGBA",
+    "working_mode": "RGBA",
+    "crop_alpha_bbox": [
+      37,
+      38,
+      102,
+      107
+    ],
+    "crop_rule": "Explicit rectangle if supplied, followed by alpha-zero margin trim; no alpha threshold",
+    "fully_transparent_pixels": 16998,
+    "transparent_perimeter_fraction": 1.0,
+    "semi_transparent_pixels": 0,
+    "input_is_single_sprite": "Required from caller; visual identity and sheet content must be reviewed",
+    "background_validation": "Transparent pixels and perimeter verified; opaque/background-filled sheets refused",
+    "original_alpha_bbox": [
+      37,
+      38,
+      102,
+      107
+    ],
+    "requested_source_crop": null,
+    "effective_source_crop": [
+      37,
+      38,
+      102,
+      107
+    ],
+    "source_crop_size": [
+      65,
+      69
+    ],
+    "crop_rgba_sha256": "c604c26a74bb3777d058f4b5a409c5fe88d48a13bb7a4ef7c8fffa5bacba77e6",
+    "discarded_pixel_count": 15199,
+    "discarded_nonzero_alpha_pixel_count": 0,
+    "discarded_maximum_alpha": 0,
+    "retained_source_rgba_preserved_before_resize": true
+  },
+  "native_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/dragonhide.dmi",
+    "sha256": "5a29ddabba386417d925329c4d8f80ced3fb2858d9cba7cd23c084a7d7b0e9f6",
+    "cell_index": 16,
+    "atlas_size": [
+      160,
+      128
+    ],
+    "frame_size": [
+      32,
+      32
+    ],
+    "alpha_bbox": [
+      6,
+      20,
+      13,
+      27
+    ],
+    "visible_height": 7,
+    "visible_width": 7,
+    "bottom_baseline_exclusive": 27,
+    "alpha_sha256": "39da6e38bfc09af07c9f1546c15b42896e7336b9db69e32453c7a751a651d03a",
+    "state_occurrence_index": 4,
+    "state_name": "arms.leather.dragonhide.R",
+    "state_fields": [
+      [
+        "dirs",
+        "4"
+      ],
+      [
+        "frames",
+        "1"
+      ]
+    ],
+    "frame_index": 0,
+    "direction_index": 0,
+    "direction": "S",
+    "description_sha256": "595946649c9ffa4d4fb57b8ee7c489e3994ce0882a2008b9ab229db789e7deea"
+  },
+  "placement": {
+    "target_visible_height": 7,
+    "proportional_content_size": [
+      7,
+      7
+    ],
+    "uniform_scale": 0.10144927536231885,
+    "actual_axis_scales": [
+      0.1076923076923077,
+      0.10144927536231885
+    ],
+    "width_rounding": "Nearest integer; no independent width fit or distortion",
+    "canvas_size": [
+      32,
+      32
+    ],
+    "destination_box": [
+      6,
+      20,
+      13,
+      27
+    ],
+    "actual_alpha_bbox": [
+      6,
+      20,
+      13,
+      27
+    ],
+    "actual_visible_height": 7,
+    "actual_visible_width": 7,
+    "bottom_baseline_exclusive": 27,
+    "horizontal_policy": "Keep native side margins when wider; center narrower art in the native visible region",
+    "height_rule": "Original native cell alpha > 0 bounds"
+  },
+  "output": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/game-height/inventory/dragonhide/004-arms.leather.dragonhide.R.png",
+    "sha256": "531e4efcd70f66c87960f99782a155ee8f61423aaa9c5f5aefad99bfc6543844",
+    "size": [
+      32,
+      32
+    ],
+    "mode": "RGBA",
+    "resample": "nearest",
+    "alpha_bbox": [
+      6,
+      20,
+      13,
+      27
+    ],
+    "alpha_sha256": "39da6e38bfc09af07c9f1546c15b42896e7336b9db69e32453c7a751a651d03a",
+    "visible_height_matches_reference": true,
+    "zero_rgba_outside_alpha": true,
+    "semi_transparent_pixels": 0
+  },
+  "operations": [
+    "Explicit crop if requested and alpha-zero margin trim",
+    "Proportional resize to original visible height",
+    "Place at original bottom baseline; allow canvas width to vary",
+    "Clear hidden RGB where alpha equals zero"
+  ],
+  "artwork_redrawn": false,
+  "creative_filters_applied": false,
+  "source_overwritten": false,
+  "fixed_square_required": false,
+  "three_dimensional_conversion": false,
+  "runtime_installed": false,
+  "complete_source_sheet": false,
+  "drop_in_original_registration_claimed": false,
+  "script": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_tools/export_sprite_height.py",
+    "sha256": "fa259c7cb53a32f721bc502c80d4d3849054a9c9b283dd9437287caf17bbd16b"
+  },
+  "dependencies": {
+    "export_sprite64.py": "5d5d26e109ee71ce73295c4e8a248640254002e1eb31ef2b7615952e39e1e870",
+    "validate_dmi.py": "e8bfca9e087caf52826f676bcf21c116b6da2e8da24ada8346ce1c079ec58375"
+  },
+  "pillow_version": "11.3.0",
+  "limitations": [
+    "Visual identity, anatomy and animation consistency require review",
+    "Matching visible height does not establish equipment overlay alignment or complete atlas compatibility",
+    "Generated sparse edge pixels may need a reviewed crop; no automatic alpha threshold is applied"
+  ]
+}

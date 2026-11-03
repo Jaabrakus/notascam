@@ -1,0 +1,851 @@
+{
+  "schema_version": 1,
+  "source_relative": "Gear/magic.png",
+  "source_absolute": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+  "native_source_absolute": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Gear/magic.dmi",
+  "status": "checked_reference_art",
+  "runtime_ready": false,
+  "generation_mode": "built-in imagegen; no paid API, CLI fallback, or scripted artistic transformations",
+  "direction_columns": [
+    "S",
+    "N",
+    "E",
+    "W"
+  ],
+  "source_state_count": 13,
+  "expected_occupied_cells": 52,
+  "expected_empty_cells": 0,
+  "generated_source_sheet_count": 1,
+  "generated_page_count": 2,
+  "source_artwork_unchanged": true,
+  "shared_manifest_modified": false,
+  "provenance_note": "Reference paths in generation records identify immutable generated images actually used; workspace copies of interim pages were later replaced by selected final images.",
+  "generation_history": [
+    {
+      "id": "page-01-initial",
+      "prompt": "Use case: style-transfer.\nAsset type: enhanced pixel/voxel equipment reference sheet, page 1 of 2.\nInput image 1 is the ORIGINAL Gear/magic.dmi contact sheet and is authoritative for the item designs, occupied cells and directional silhouettes. Input image 2 (Gear/spiderfang.dmi) is only the STYLE reference: polished crisp pixel/voxel edges, dark outlines, dimensional stepped highlights, compact bright accents on a plain charcoal background.\n\nRedraw and enhance ONLY the first SEVEN state rows from input image 1, keeping their exact order and all FOUR directional views per row. Output a complete clean page with exactly 7 rows and 4 evenly spaced artwork columns. Keep generous label margin on the left. No other rows, no missing or duplicate rows. Compact title at the top: \"Gear/magic.dmi \u2014 Page 1 of 2\". Column headings: \"S\", \"N\", \"E\", \"W\", in that exact left-to-right order.\nExact left-side row labels, one per row:\nmagic.crystal staff\nmagic.orb staff\nmagic.skull staff\nmagic.flame staff\nmagic.nature staff\nmagic.dragon staff\nmagic.spider staff\n\nPreserve each original cell's orientation, distinct silhouette, length and item identity. Every one of these 28 cells is occupied. Staff shafts are slender dark brown wood with warm golden brown stepped highlights. Their heads keep the source colors and designs: cyan faceted crystal; violet orb; pale green skull-like magical head; small orange fire head; green nature sprout/orb; brown-gold dragon-shaped head; dark charcoal spider-shaped head with restrained green accents. Enhance the existing small shapes without inventing large new decorations.\nLighting: consistent top-left highlights, rich dark recesses and restrained vibrant emissive pixels. Pixel-art edges must remain clean, no airbrush blur, no soft glow halos, no photographic textures. Match the reference's restrained polished game-asset presentation.\n\nConstraints: exact seven listed rows, four columns and 28 staff drawings. Preserve partial or occluded directional forms exactly where present. Do not fill in obscured parts. No characters, no hands, no equipment wearers, no extra items, no runes or text on items, no giant detailed skulls or dragons. Each row's four views must depict the same source item, not four creative variants. Keep rows aligned and all labels legible. Plain uniform charcoal background. This is enhanced reference artwork, not a native runtime sprite atlas.\nAdditional source details to preserve: the green skull staff includes tiny detached green magic particles in all four views; keep them small and distinct. The flame staff's west view includes a tiny detached orange spark; retain it. The orb staff is purple, and the skull staff is green.",
+      "generated_file": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-db99a679-013e-4a30-a555-c655045ff2d6.png",
+      "references": [
+        "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+        "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png"
+      ],
+      "result": "All seven rows and 28 occupied views present; some lower-grip gaps joined.",
+      "generated_sha256": "ebbbdc30fe4e9487c58cd99965ae5bf0be7002246a60e0fdfcc72f11b125cd07",
+      "generated_size": [
+        1429,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "reference_sha256": [
+        {
+          "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+          "sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png",
+          "sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452"
+        }
+      ]
+    },
+    {
+      "id": "page-02-initial",
+      "prompt": "Use case: style-transfer.\nAsset type: enhanced pixel/voxel equipment reference sheet, page 2 of 2.\nInput image 1 is the ORIGINAL Gear/magic.dmi contact sheet; its final SIX state rows are authoritative for every design and directional silhouette. Input image 2 (Gear/spiderfang.dmi) supplies the established polished pixel/voxel equipment style. Input image 3 is the completed magic page 1; match its plain charcoal background, crisp stepped material highlights, type, title and four-column layout.\n\nProduce exactly 6 rows and 4 artwork columns, totaling 24 occupied cells, from rows 8\u201313 of the ORIGINAL image, in their original order. Do not draw any staffs from original rows 1\u20137. Generous left label margin, evenly aligned row centers, no extra items. Title: \"Gear/magic.dmi \u2014 Page 2 of 2\". Column headings left to right: \"S\", \"N\", \"E\", \"W\".\nExact left-side labels:\nmagic.rune sword\nmagic.flame sword\nmagic.frost axe\nmagic.storm spear\nmagic.void blade\nmagic.holy mace\n\nPreserve the source colors and shapes: rune sword icy cyan/blue; flame sword orange/yellow; frost axe frosty cyan/white; storm spear pale blue/white with brown shaft; void blade deep violet; holy mace golden yellow. Enhance compact material depth, shaded bevels and clean bright pixel highlights using the same style as page 1. Keep each cell's ORIGINAL pose and partial silhouette. This is not a four-view inventory redesign: these are directional equipment overlays that include intentionally occluded parts.\n\nCRITICAL WEST COLUMN REQUIREMENTS:\n- magic.rune sword: ONLY its source's short cyan partial blade near upper-left of the cell, plus the tiny detached dark grip fragment at the lower-right. Do not join the fragment to the blade or draw a complete sword.\n- magic.flame sword: ONLY its short orange partial blade near upper-left, plus a tiny distant dark grip dot lower-right. Do not invent the missing middle.\n- magic.frost axe: preserve the source's compact icy axe head in the west cell; do not invent a long connecting handle.\n- magic.storm spear: ONLY the source's small pale spearhead near the top and tiny separated brown shaft remnant near the bottom. Keep the long empty gap; NO continuous pole in this west cell.\n- magic.void blade: ONLY the short violet blade fragment near upper-left, plus its tiny distant dark grip dot lower-right. No full dagger.\n- magic.holy mace: preserve the west view's golden head-only/short-neck silhouette; no long handle.\nIn the holy mace S, N and E cells, retain the source's small detached grip segments; don't erase them or force a continuous handle.\n\nAll 24 cells remain occupied, but partial cells have substantial empty charcoal space exactly because the source is occluded. Do not complete or beautify these missing parts. The first three columns retain their corresponding original views and proportions. No characters, hands, borders, photorealism, blur, halos, gradients, extra labels, or decorative runes. Crisp polished pixel-art edges, dark contours, consistent top-left highlights. All text legible and spelled exactly. This is reference art, not a native registered sprite atlas.",
+      "generated_file": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-1efe4854-d83b-4ce7-819f-f67c6fafeecd.png",
+      "references": [
+        "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+        "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png",
+        "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-db99a679-013e-4a30-a555-c655045ff2d6.png"
+      ],
+      "result": "All six rows and 24 occupied views present; west partials and detached dots retained, but some S/N/E lower-grip gaps joined.",
+      "generated_sha256": "6f63e827c31f93a76d47dcb81625d713c3208adbbfe7eb22ad1526df6b81d446",
+      "generated_size": [
+        1430,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "reference_sha256": [
+        {
+          "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+          "sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png",
+          "sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452"
+        },
+        {
+          "path": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-db99a679-013e-4a30-a555-c655045ff2d6.png",
+          "sha256": "ebbbdc30fe4e9487c58cd99965ae5bf0be7002246a60e0fdfcc72f11b125cd07"
+        }
+      ]
+    },
+    {
+      "id": "page-01-grip-repair",
+      "prompt": "Use case: precise-object-edit.\nEdit target: image 1, the completed enhanced magic Page 1 of 2. Image 2 is the original Gear/magic.dmi and is authoritative for separation of parts.\nMake ONE targeted correction only: restore the short transparent-looking CHARCOAL gaps between each staff's long main shaft and its detached lower grip segment. In the original, every one of the 28 staffs in these seven rows has a small detached lower grip. This is an intentional equipment-overlay gap, not a shading band. The first crystal staff's original32pixel cell has main shaft through y24, empty y25, and a detached grip at y26\u201331. The other staffs have comparable separation. In this enlarged artwork, add a clearly visible small charcoal background gap of roughly 4\u20136 image pixels just above each lower grip, leaving the final approximately20percent of each shaft as a detached short golden-brown lower segment. It stays on the same diagonal and in its current location. Do this in all seven rows and all four directional columns,28staffs total.\nKeep all staff heads, colored particles, shaft angles, lengths, outlines, shading, item colors, font, layout, page dimensions, title and labels unchanged. Keep the original small green particles and west flame spark. No new objects, no extra fragments, no changing a staff into a different item. Preserve seven rows by four columns. The background visible inside each separation must match the existing charcoal background. This is reference artwork; only restore the missing visible shaft/grip separation.",
+      "generated_file": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-c0c2dfd4-85d3-412c-9dea-6c7731ad2bfc.png",
+      "references": [
+        "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-db99a679-013e-4a30-a555-c655045ff2d6.png",
+        "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png"
+      ],
+      "result": "Selected final page 1. Restored visible separation of all 28 lower grips.",
+      "generated_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "generated_size": [
+        1429,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "reference_sha256": [
+        {
+          "path": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-db99a679-013e-4a30-a555-c655045ff2d6.png",
+          "sha256": "ebbbdc30fe4e9487c58cd99965ae5bf0be7002246a60e0fdfcc72f11b125cd07"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+          "sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5"
+        }
+      ]
+    },
+    {
+      "id": "page-02-grip-repair",
+      "prompt": "Use case: precise-object-edit.\nEdit target: image 1, enhanced Gear/magic.dmi Page 2 of 2. Image 2 is its original source.\nMake only a targeted correction to the genuine detached lower-grip gaps that the original equipment overlay contains. Preserve the existing polished pixel art, all 6 rows, all 4 columns, labels, title, colors, shape identities, positions and page dimensions.\n\nLeave the ENTIRE WEST COLUMN completely unchanged. Its partial blades, separated dots, spearhead and remote shaft remnant are already correct. Leave the entire first row (magic.rune sword) unchanged; its first three full views are connected in the original. Leave the last row (magic.holy mace) unchanged; it already has detached grips.\n\nOnly in S, N and E columns of these four rows:\n- magic.flame sword: add a small clear charcoal gap separating the tiny lower dark grip/pommel piece from the main weapon above it.\n- magic.frost axe: add a small clear charcoal gap separating the small brown bottom grip from the rest of the axe handle.\n- magic.storm spear: separate the final short golden-brown lower grip segment from the long main shaft with a small charcoal gap, as in the original. Retain the long spear shaft above.\n- magic.void blade: add a small clear charcoal gap separating the tiny dark-violet lower grip/pommel from the main weapon above.\nThese are12targeted separations total. Each gap should be approximately4image pixels, just enough to show that the lower segment floats separately on the same diagonal. Remove only a tiny connector; do not move the pieces, enlarge the gap, shorten the weapon, erase the grip, or add any new fragment. Background inside each gap must match the existing charcoal background. Everything else stays the same.",
+      "generated_file": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-7fea0d26-79b5-4ba8-9daf-d05890618b72.png",
+      "references": [
+        "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-1efe4854-d83b-4ce7-819f-f67c6fafeecd.png",
+        "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png"
+      ],
+      "result": "Axe and storm-spear grip gaps restored. Flame/void pommels remained connected in some S/N/E views.",
+      "generated_sha256": "b768b7150be2fa27c6da92668ba959f513d55887e0e88539d81287ad9bd632c7",
+      "generated_size": [
+        1430,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "reference_sha256": [
+        {
+          "path": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-1efe4854-d83b-4ce7-819f-f67c6fafeecd.png",
+          "sha256": "6f63e827c31f93a76d47dcb81625d713c3208adbbfe7eb22ad1526df6b81d446"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+          "sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5"
+        }
+      ]
+    },
+    {
+      "id": "page-02-pommel-repair",
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the current enhanced magic page 2. Image 2 is the original equipment source.\nCorrect only SIX small connectors: the S,N,E views of \"magic.flame sword\" (row2) and \"magic.void blade\" (row5).\nTheir small LOWER POMMEL/GRIP CHUNKS must FLOAT SEPARATELY from the blade/guard. Right now black/brown connecting pixels still join them. REMOVE the connecting neck entirely. Make a clearly visible approximately8-pixel CHARCOAL-BACKGROUND GAP across the entire neck width between each weapon and its lower pommel, with no black outlines or brown pixels bridging it. Keep each pommel intact and aligned on the same diagonal. If needed shorten only the narrow neck above the pommel to expose that clear gap. There must be two genuinely separated shapes per edited cell: large upper weapon and small floating lower grip.\nTargets: flame sword S,N,E; void blade S,N,E. Six cells only.\nPreserve every other pixel-art object, the entire west column, all row1 rune swords, all axes, all storm spears, all holy maces and their existing gaps, labels, title, background, canvas size, layout, colors and shading. Do not change blades, create extra pieces, erase lower grips, add shadows in the gap, or reconnect any existing separated piece. This is a tiny structural correction, not a redesign.",
+      "generated_file": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-9954cfb8-7bd3-4ce0-9914-4820a078e98d.png",
+      "references": [
+        "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-7fea0d26-79b5-4ba8-9daf-d05890618b72.png",
+        "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png"
+      ],
+      "result": "Flame/void grips separated, but this edit also incorrectly detached rune-sword grips in the first row.",
+      "generated_sha256": "d3ecec288006fdea7d61bbc49a06844ed88aadd1894255e9db17cd53fa6b3f50",
+      "generated_size": [
+        1430,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "reference_sha256": [
+        {
+          "path": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-7fea0d26-79b5-4ba8-9daf-d05890618b72.png",
+          "sha256": "b768b7150be2fa27c6da92668ba959f513d55887e0e88539d81287ad9bd632c7"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+          "sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5"
+        }
+      ]
+    },
+    {
+      "id": "page-02-rune-restoration",
+      "prompt": "Use case: precise-object-edit.\nImage1 is the current enhanced magic Page2 and is the EDIT TARGET. Image2 is an earlier version with the correct TOP ROW. Image3 is the original source.\nMake exactly one correction confined to the FIRST ROW \"magic.rune sword\": restore the tiny connecting dark hilts between each cyan blade and its blue lower pommel in the S,N,E columns, matching the connected first-row weapons in Image2. Each of those three top-row swords must form ONE continuous connected item again. Do not move the blue pommels; add the small dark connecting neck from each guard to its pommel. The first-row WEST fragment and its separated dot must remain unchanged.\nONLY FIRST ROW S,N,E. Do not edit any pixel-art object in rows2\u20136. In particular the orange flame swords and purple void blades MUST KEEP their now-correct detached lower pommels with clear charcoal gaps. The lower rows' gaps are intentional. Do not join any axe, spear, flame, void, holy-mace grips. Restore connected rune-sword hilts in top row only. All text, layout, backgrounds, dimensions, styles, colors, row2\u20136 artwork and west-column fragments must stay as in Image1.",
+      "generated_file": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-d95c1bc4-b119-4fc9-8b46-5025e3afe99b.png",
+      "references": [
+        "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-9954cfb8-7bd3-4ce0-9914-4820a078e98d.png",
+        "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-7fea0d26-79b5-4ba8-9daf-d05890618b72.png",
+        "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png"
+      ],
+      "result": "Selected final page 2. Rune S/N/E grips connected again; flame/void detached grips, axe/spear/mace gaps and sparse west fragments retained.",
+      "generated_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "generated_size": [
+        1430,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "reference_sha256": [
+        {
+          "path": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-9954cfb8-7bd3-4ce0-9914-4820a078e98d.png",
+          "sha256": "d3ecec288006fdea7d61bbc49a06844ed88aadd1894255e9db17cd53fa6b3f50"
+        },
+        {
+          "path": "/Users/kiwimango/.codex/generated_images/01a16eb2-24e5-7280-b93e-6c998bb451bb/exec-7fea0d26-79b5-4ba8-9daf-d05890618b72.png",
+          "sha256": "b768b7150be2fa27c6da92668ba959f513d55887e0e88539d81287ad9bd632c7"
+        },
+        {
+          "path": "/Users/kiwimango/Downloads/BOTD-sprites/Gear/magic.png",
+          "sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/magic/page-01.png",
+      "selected_generation_id": "page-01-grip-repair",
+      "source_row_range_inclusive": [
+        1,
+        7
+      ],
+      "included_states": [
+        "magic.crystal staff",
+        "magic.orb staff",
+        "magic.skull staff",
+        "magic.flame staff",
+        "magic.nature staff",
+        "magic.dragon staff",
+        "magic.spider staff"
+      ],
+      "expected_occupied_cells": 28,
+      "observed_occupied_cells": 28,
+      "observed_empty_cells": 0,
+      "visual_checks": [
+        "Seven correctly named rows in source order and four S/N/E/W columns.",
+        "All 28 staff views occupied; lower grip segments visibly detached after repair.",
+        "Purple orb and green skull staffs retain their distinct colors; small green particles and west flame spark visible.",
+        "Source staff-head motifs and directional orientation broadly retained in enhanced pixel/voxel style."
+      ],
+      "output_sha256": "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "generated_size": [
+        1429,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "occupied_cell_checks": [
+        {
+          "source_row_1based": 1,
+          "state": "magic.crystal staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            85,
+            86,
+            85,
+            79
+          ],
+          "native_connected_component_sizes": [
+            [
+              72,
+              13
+            ],
+            [
+              73,
+              13
+            ],
+            [
+              72,
+              13
+            ],
+            [
+              66,
+              13
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 2,
+          "state": "magic.orb staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            91,
+            91,
+            90,
+            83
+          ],
+          "native_connected_component_sizes": [
+            [
+              78,
+              13
+            ],
+            [
+              78,
+              13
+            ],
+            [
+              77,
+              13
+            ],
+            [
+              70,
+              13
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 3,
+          "state": "magic.skull staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            92,
+            91,
+            92,
+            85
+          ],
+          "native_connected_component_sizes": [
+            [
+              77,
+              13,
+              1,
+              1
+            ],
+            [
+              77,
+              13,
+              1
+            ],
+            [
+              78,
+              13,
+              1
+            ],
+            [
+              70,
+              13,
+              1,
+              1
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 4,
+          "state": "magic.flame staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            83,
+            85,
+            88,
+            74
+          ],
+          "native_connected_component_sizes": [
+            [
+              70,
+              13
+            ],
+            [
+              72,
+              13
+            ],
+            [
+              75,
+              13
+            ],
+            [
+              60,
+              13,
+              1
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 5,
+          "state": "magic.nature staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            84,
+            84,
+            79,
+            78
+          ],
+          "native_connected_component_sizes": [
+            [
+              70,
+              14
+            ],
+            [
+              70,
+              14
+            ],
+            [
+              67,
+              12
+            ],
+            [
+              66,
+              12
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 6,
+          "state": "magic.dragon staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            78,
+            78,
+            79,
+            79
+          ],
+          "native_connected_component_sizes": [
+            [
+              65,
+              13
+            ],
+            [
+              65,
+              13
+            ],
+            [
+              66,
+              13
+            ],
+            [
+              66,
+              13
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 7,
+          "state": "magic.spider staff",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            82,
+            82,
+            82,
+            81
+          ],
+          "native_connected_component_sizes": [
+            [
+              69,
+              13
+            ],
+            [
+              69,
+              13
+            ],
+            [
+              69,
+              13
+            ],
+            [
+              68,
+              13
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        }
+      ]
+    },
+    {
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/magic/page-02.png",
+      "selected_generation_id": "page-02-rune-restoration",
+      "source_row_range_inclusive": [
+        8,
+        13
+      ],
+      "included_states": [
+        "magic.rune sword",
+        "magic.flame sword",
+        "magic.frost axe",
+        "magic.storm spear",
+        "magic.void blade",
+        "magic.holy mace"
+      ],
+      "expected_occupied_cells": 24,
+      "observed_occupied_cells": 24,
+      "observed_empty_cells": 0,
+      "visual_checks": [
+        "Six correctly named rows in source order and four S/N/E/W columns.",
+        "All 24 directional cells occupied.",
+        "West rune/flame/void blades retain incomplete upper fragments plus detached distant grip dots.",
+        "West storm spear retains separated head and lower shaft remnant with a long empty gap.",
+        "West frost axe and holy mace remain compact head/short-neck forms.",
+        "Rune S/N/E remain connected; flame/void S/N/E grips visibly detached.",
+        "Frost axe, storm spear and holy mace S/N/E retain detached lower grips."
+      ],
+      "output_sha256": "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86",
+      "generated_size": [
+        1430,
+        1100
+      ],
+      "generated_mode": "RGB",
+      "occupied_cell_checks": [
+        {
+          "source_row_1based": 8,
+          "state": "magic.rune sword",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            130,
+            130,
+            131,
+            39
+          ],
+          "native_connected_component_sizes": [
+            [
+              130
+            ],
+            [
+              130
+            ],
+            [
+              131
+            ],
+            [
+              37,
+              2
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 9,
+          "state": "magic.flame sword",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            80,
+            79,
+            79,
+            36
+          ],
+          "native_connected_component_sizes": [
+            [
+              70,
+              10
+            ],
+            [
+              69,
+              10
+            ],
+            [
+              70,
+              9
+            ],
+            [
+              35,
+              1
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 10,
+          "state": "magic.frost axe",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            89,
+            89,
+            114,
+            80
+          ],
+          "native_connected_component_sizes": [
+            [
+              82,
+              7
+            ],
+            [
+              82,
+              7
+            ],
+            [
+              107,
+              7
+            ],
+            [
+              80
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 11,
+          "state": "magic.storm spear",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            113,
+            113,
+            111,
+            59
+          ],
+          "native_connected_component_sizes": [
+            [
+              100,
+              13
+            ],
+            [
+              100,
+              13
+            ],
+            [
+              95,
+              16
+            ],
+            [
+              57,
+              2
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 12,
+          "state": "magic.void blade",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            96,
+            96,
+            96,
+            46
+          ],
+          "native_connected_component_sizes": [
+            [
+              86,
+              10
+            ],
+            [
+              86,
+              10
+            ],
+            [
+              87,
+              9
+            ],
+            [
+              45,
+              1
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        },
+        {
+          "source_row_1based": 13,
+          "state": "magic.holy mace",
+          "expected_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "expected_empty_columns": [],
+          "native_occupied_pixel_counts": [
+            75,
+            75,
+            87,
+            60
+          ],
+          "native_connected_component_sizes": [
+            [
+              71,
+              4
+            ],
+            [
+              71,
+              4
+            ],
+            [
+              83,
+              4
+            ],
+            [
+              60
+            ]
+          ],
+          "visually_observed_occupied_columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "occupied_cell_check_passed": true
+        }
+      ]
+    }
+  ],
+  "occupied_cell_check_method": "Direct visual inspection of generated pages against the original contact sheet and native DMI occupancy/components supplied in next-gear-batch.json; no alpha-mask equivalence is claimed.",
+  "remaining_deviations": [
+    "Generated pages differ in pixel dimensions, cell spacing, silhouette geometry, and exact internal registration from the original.",
+    "Grip gaps are illustrative and sometimes wider than the original one-pixel separations.",
+    "Material bevels, shaft thickness, ornate highlights, and small magic particles are stylized; their exact pixel shapes and particle counts are not preserved.",
+    "Opaque charcoal backgrounds replace native transparency; no DMI Description metadata is embedded.",
+    "No gameplay, animation, equipment-overlay alignment, or runtime integration has been validated."
+  ],
+  "limitations": [
+    "Reference artwork only; runtime_ready remains false.",
+    "Coverage checks establish named rows and occupied directional cells, not native frame/alpha preservation.",
+    "The native DMI preservation validator does not apply to these redrawn presentation pages.",
+    "Original PNG and DMI source files are unchanged."
+  ],
+  "independent_review": {
+    "status": "passed_at_reference_sheet_level",
+    "reviewer": "batch_review",
+    "report": "_meta/magic-review.json",
+    "verified_output_sha256": [
+      "12e3617f6012836f518348a9f1c54cf1c945a8e6506b55c109ca73af1f66c4f9",
+      "2fe17b07c9652fc6d6d660dd10255d7f5c8dc84bf898899dedfb8fea00873a86"
+    ],
+    "findings": "All13states/52directional cells and labels present. All28staff grip gaps retained; rune S/N/E connected, flame/void S/N/E detached; axe/mace/spear gaps and sparse west fragments retained. Wider gaps and stylized particles remain reference-art deviations."
+  },
+  "source_sha256": "6384d61400ab72e9c31d287450d1b7ca456562f4b630eda93faf54337d059ab5",
+  "source_dimensions": [
+    558,
+    1348
+  ],
+  "source_mode": "RGBA",
+  "native_source_sha256": "40711acbc540d83dbf39e136eeb7042156f15f725078b19e13f445a20f608a90",
+  "native_frame_dimensions": [
+    32,
+    32
+  ],
+  "source_hash_matches_pre_generation_inventory": true,
+  "style_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Gear/spiderfang.png",
+    "sha256": "1d0cbabe33546ffa6a67cb5471c321220274ce4708cea497a80868ac51901452"
+  }
+}

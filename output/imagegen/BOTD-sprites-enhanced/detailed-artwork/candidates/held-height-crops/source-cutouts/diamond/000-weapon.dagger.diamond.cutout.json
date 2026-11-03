@@ -1,0 +1,80 @@
+{
+  "version": "existing-pixels-cutout-1.2",
+  "classification": "existing_art_alpha_only_cutout",
+  "status": "source_resolution_cutout_pending_visual_review",
+  "input_sheet": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/Gear/diamond/page-01.png",
+  "source_sha256": "12614dcd58fa6b05230e21d805e323cdc4229420edbca4e83dd9540b1b132bc8",
+  "crop_box": [
+    464,
+    100,
+    543,
+    174
+  ],
+  "size": [
+    87,
+    82
+  ],
+  "source_crop_size": [
+    79,
+    74
+  ],
+  "transparent_padding": 4,
+  "padded_source_offset": [
+    4,
+    4
+  ],
+  "unpadded_alpha_bbox": [
+    2,
+    0,
+    77,
+    72
+  ],
+  "alpha_bbox": [
+    6,
+    4,
+    81,
+    76
+  ],
+  "retained_pixels": 1882,
+  "background_pixels_removed": 3964,
+  "enclosed_candidate_pixels_retained": 17,
+  "retained_rgb_exact": true,
+  "all_rgb_exact_including_hidden": true,
+  "retained_alpha_exact": true,
+  "mask_rules": {
+    "connectivity": 4,
+    "selection": "Only border-connected charcoal-blue cone",
+    "blue_minus_red_min": 3,
+    "blue_minus_red_max": 32,
+    "green_at_least_red_minus": 1,
+    "blue_minus_green_min": 1,
+    "red_at_least_blue_fraction": 0.2,
+    "red_minimum": 4,
+    "blue_ceiling": 72.0,
+    "border_background_sample_count": 302,
+    "protected_black_maximum_channel": 18,
+    "enclosed_candidates": "Retain and warn; never automatically erase"
+  },
+  "operations": [
+    "Explicit rectangle crop",
+    "Set alpha=0 only on background flood mask",
+    "Add four transparent pixels around crop for export packaging"
+  ],
+  "generated": false,
+  "repainted": false,
+  "color_filters": false,
+  "resized": false,
+  "near_black_ink_removed": 0,
+  "engine_sha256": "5bb3de4c771e250435799600c6bac07287eb8bf03d5b82c5a584041a7fe1bca8",
+  "warnings": [
+    "Enclosed background-colored pixels retained; inspect holes/materials",
+    "Retained pixels touch crop border; verify crop does not clip artwork",
+    "Blue-gray material above background brightness retained"
+  ],
+  "limitations": [
+    "Conservative chroma segmentation requires visual outline/feet/hole review",
+    "A pass proves RGB retention, not correct semantic segmentation"
+  ],
+  "output_path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/detailed-artwork/exports/source-cutouts/diamond/000-weapon.dagger.diamond.png",
+  "output_sha256": "c0ff176c9029a09afd99b799435e0f3aed6f0b2889f411bfbd0286f68bbe4048"
+}

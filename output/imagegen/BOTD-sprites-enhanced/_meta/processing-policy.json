@@ -1,0 +1,18 @@
+{
+  "requested_model": "Sol",
+  "worker_model": "gpt-6.1-sol",
+  "all_new_agents_explicitly_use_requested_model": true,
+  "image_generation_calls": "Not used for the completed faithful extraction batch; previous redesign candidates are excluded.",
+  "external_image_api_fallback": "not_authorized",
+  "allowed_current_work": [
+    "Read and inspect local assets",
+    "Crop explicitly selected transparent margins",
+    "Resize existing enhanced artwork proportionally to original visible height",
+    "Pack frames and preserve source metadata",
+    "Validate dimensions, transparency, identity and coverage",
+    "Generate player race and weapon/armor base designs with the built-in image tool per latest user request"
+  ],
+  "new_artwork": "Reuse the existing approved artwork. New creative redraws require a new request.",
+  "originals": "Preserve unchanged",
+  "current_artwork_mode": "Existing-pixel extraction, alpha-only matting and mechanical proportional resizing. No redraw."
+}

@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "batch": "beastparts-batch",
+  "date": "2026-10-24",
+  "tool": "built-in image_gen.imagegen",
+  "skill": "/Users/kiwimango/.codex/skills/.system/imagegen/SKILL.md",
+  "scope": "One source reference sheet split into three enhanced reference pages; not runtime sprites",
+  "source_relative": "Items/beastparts.png",
+  "source": "/Users/kiwimango/Downloads/BOTD-sprites/Items/beastparts.png",
+  "original_size": [
+    252,
+    2776
+  ],
+  "source_sha256": "9e4dc97f511ce08ba742b4384132b5326def12408a3bbc60ab28b439321ad752",
+  "native_source": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Items/beastparts.dmi",
+  "native_size": [
+    192,
+    160
+  ],
+  "native_frame_size": [
+    32,
+    32
+  ],
+  "native_sha256": "f58bac59a0f6ebee589acef08e3e00012e0b68c2ffb968901c492ad54bc90b8e",
+  "native_state_count": 27,
+  "native_occupied_frames": 27,
+  "native_directions_per_state": 1,
+  "native_frames_per_state": 1,
+  "status": "reference_art_checked",
+  "playable_asset_complete": false,
+  "all_native_states_represented": true,
+  "missing_states": [],
+  "extra_states": [],
+  "qa_method": "Visual review of full original and all generated pages, native DMI Description inspection, exact state-name comparison to all page labels, visual item/group counts and orientations, PNG decode/size/hash inspection. Each scale cluster, egg-sac cluster, chain coil, and bone group counts as one source-state item.",
+  "qa_limits": [
+    "Reference artwork only; no native-runtime claims.",
+    "Output pages are opaque RGB and have different dimensions, spacing, silhouettes, and typography scale than preview/native source.",
+    "Native pixel registration, source alpha, palette limits and DMI metadata are not preserved.",
+    "Individual pixels and exact subcomponent shapes within clusters are not verified as identical; visual identity and complete state/group coverage are verified.",
+    "All work used built-in imagegen; no scripted raster crop or artistic enhancement, no paid API.",
+    "Source files read only and not overwritten. Root shared manifest not edited."
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source_row_range_inclusive": [
+        1,
+        9
+      ],
+      "included_states": [
+        "scales-red",
+        "scales-red2",
+        "scales-black",
+        "scales-ice",
+        "scales-green",
+        "scales-sand",
+        "scales-blue",
+        "scales-zombie",
+        "tooth"
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Items/beastparts/page-01.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-a8e9c830-dc3d-4dfd-a859-5bd7584503eb.png",
+      "generated_size": [
+        1024,
+        1536
+      ],
+      "generated_mode": "RGB",
+      "output_sha256": "98edf6e6c001ca7e69cc1f95c1856dc1224693421247da430a8796ba16e453d2",
+      "status": "reference_art_checked",
+      "playable_asset_complete": false,
+      "generation_prompt": "Use case: style-transfer. Asset type: enhanced fantasy-game beast-part reference sheet, page 1 of 3. Image 1 is the exact content reference: long Items/beastparts.dmi original. Image 2 is STYLE ONLY: approved polished chunky pixel/voxel character rendering. Create a readable portrait reference page containing ONLY source rows 1 through 9, in EXACT order, one item per row, exactly NINE vertically stacked, clearly separated rows. Header at upper left must be 'Items/beastparts.dmi'. Keep dark charcoal background, white small readable labels on left, item sprites on right. Enhance each original item with clean crisp pixel contours and dimensional faceted shading while retaining its identity, silhouette, color, orientation and arrangement. Objects for rows 1-8 are small triangular clusters of overlapping pointed dragon scales, not individual scales or eggs; top edges broader, lower edge tapered. Row 1 label 'scales-red': red dragon scale cluster. Row 2 'scales-red2': orange dragon scale cluster. Row 3 'scales-black': charcoal-purple dragon scale cluster. Row 4 'scales-ice': icy pale blue dragon scale cluster. Row 5 'scales-green': green dragon scale cluster. Row 6 'scales-sand': sandy beige-gold dragon scale cluster. Row 7 'scales-blue': cobalt blue dragon scale cluster. Row 8 'scales-zombie': muted gray-green dragon scale cluster. Row 9 'tooth': a single curved ivory-yellow tooth, thick red root at upper left, smoothly tapering to a small point toward lower right. Labels must be reproduced verbatim exactly once with their own object. All nine full items visible with ample bottom margin. Do not include any source row after tooth. No extra objects, no duplicated rows, no omitted rows, no row merging, no extra text, no cropping, no characters, no frame numbers, no border or watermark. This is enhanced reference artwork, not a runtime animation atlas.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "checks": {
+        "png_decodes": true,
+        "expected_rows": 9,
+        "observed_rows": 9,
+        "expected_item_groups": 9,
+        "observed_item_groups": 9,
+        "header_expected": "Items/beastparts.dmi",
+        "header_observed": "Items/beastparts.dmi",
+        "labels_expected": [
+          "scales-red",
+          "scales-red2",
+          "scales-black",
+          "scales-ice",
+          "scales-green",
+          "scales-sand",
+          "scales-blue",
+          "scales-zombie",
+          "tooth"
+        ],
+        "labels_observed": [
+          "scales-red",
+          "scales-red2",
+          "scales-black",
+          "scales-ice",
+          "scales-green",
+          "scales-sand",
+          "scales-blue",
+          "scales-zombie",
+          "tooth"
+        ],
+        "text_verbatim": true,
+        "correct_order": true,
+        "missing_states": [],
+        "extra_states": [],
+        "missing_item_groups": [],
+        "extra_item_groups": [],
+        "no_row_merging": true,
+        "no_cropped_content": true,
+        "readability": "pass at generated page resolution",
+        "native_registration_verified": false,
+        "native_metadata_preserved": false,
+        "source_transparency_preserved": false
+      },
+      "notes": "Eight overlapping scale clusters in source color order, then one curved ivory tooth with red root. All nine object groups and exact labels present. No extra states.",
+      "deviations": [
+        "Layout split into nine-state page at different dimensions than original long sheet.",
+        "Charcoal background has slight generated gradient.",
+        "Rendering reinterprets forms into dimensional pixel artwork."
+      ]
+    },
+    {
+      "page": 2,
+      "source_row_range_inclusive": [
+        10,
+        18
+      ],
+      "included_states": [
+        "claw",
+        "heart",
+        "winghide",
+        "fang",
+        "venomsac",
+        "egg-red",
+        "egg-red2",
+        "egg-black",
+        "egg-ice"
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Items/beastparts/page-02.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-5896dbed-bef3-4c9c-b214-28cf90be33c0.png",
+      "generated_size": [
+        1024,
+        1536
+      ],
+      "generated_mode": "RGB",
+      "output_sha256": "49a59a55d90fd5bd9182a4af02aabbff657ee82e3dabdf21b155cbc36442de24",
+      "status": "reference_art_checked",
+      "playable_asset_complete": false,
+      "generation_prompt": "Use case: style-transfer. Asset type: enhanced fantasy-game beast-part reference sheet, page 2 of 3. Image 1 is the exact content reference, long Items/beastparts.dmi original. Image 2 is STYLE ONLY: approved polished chunky pixel/voxel characters. Produce a readable portrait page containing ONLY original rows 10 through 18 in EXACT order, one item per row, exactly NINE clearly separated rows. Header upper left 'Items/beastparts.dmi'. Dark charcoal background; small readable pale labels on left; centered item art to right; consistent ample spacing. Enhance materials with clean crisp pixel edges and dimensional faceted shading; preserve original object identity, silhouette, orientation, color. Nine rows: 1 label 'claw': a single thick charcoal curved hooked claw with reddish root at upper left, arch curving over and pointing down at right. 2 'heart': a single stylized crimson anatomical heart with two short vessel stubs rising at top and tapered bottom, no blood splatter. 3 'winghide': one small red-brown torn wing membrane hanging downward from a cream-colored horizontal top bone, with cream vertical rib lines and ragged pointed lower edge. 4 'fang': one slender dark purple-gray curved fang, thick at upper left and tapering toward ivory-yellow point at lower right. 5 'venomsac': one vivid green bulbous sac with a narrow curved neck extending upward-left. 6 'egg-red': one upright red mottled egg. 7 'egg-red2': one upright orange mottled egg. 8 'egg-black': one upright dark charcoal-purple mottled egg. 9 'egg-ice': one upright icy pale-blue mottled egg. Labels exactly as quoted, each once, with exactly one correct item. Do not include any earlier scale rows/tooth or any later egg-green or nest rows. No duplicate egg, no omitted row, no merged rows. All nine items fully visible and separated, with bottom margin. No character, no bonus item, no numbers or extra text, no border, no watermark, no cropping. Enhanced reference artwork, not runtime animation atlas.",
+      "generation_calls": 1,
+      "repair_calls": 0,
+      "checks": {
+        "png_decodes": true,
+        "expected_rows": 9,
+        "observed_rows": 9,
+        "expected_item_groups": 9,
+        "observed_item_groups": 9,
+        "header_expected": "Items/beastparts.dmi",
+        "header_observed": "Items/beastparts.dmi",
+        "labels_expected": [
+          "claw",
+          "heart",
+          "winghide",
+          "fang",
+          "venomsac",
+          "egg-red",
+          "egg-red2",
+          "egg-black",
+          "egg-ice"
+        ],
+        "labels_observed": [
+          "claw",
+          "heart",
+          "winghide",
+          "fang",
+          "venomsac",
+          "egg-red",
+          "egg-red2",
+          "egg-black",
+          "egg-ice"
+        ],
+        "text_verbatim": true,
+        "correct_order": true,
+        "missing_states": [],
+        "extra_states": [],
+        "missing_item_groups": [],
+        "extra_item_groups": [],
+        "no_row_merging": true,
+        "no_cropped_content": true,
+        "readability": "pass at generated page resolution",
+        "native_registration_verified": false,
+        "native_metadata_preserved": false,
+        "source_transparency_preserved": false
+      },
+      "notes": "Nine source objects represented with matching orientations and materials: hooked claw, two-vessel red heart, bone-ribbed winghide, dark fang with ivory tip, green curved-neck venom sac, red/orange/charcoal/ice eggs. Bottom ice egg remains fully within frame; bottom margin smaller than requested but no cropping.",
+      "deviations": [
+        "Layout split into nine-state page at different dimensions than original long sheet.",
+        "Charcoal background has slight generated gradient.",
+        "Rendering reinterprets forms into dimensional pixel artwork."
+      ]
+    },
+    {
+      "page": 3,
+      "source_row_range_inclusive": [
+        19,
+        27
+      ],
+      "included_states": [
+        "egg-green",
+        "egg-sand",
+        "egg-blue",
+        "egg-zombie",
+        "eggsac",
+        "nest",
+        "webnest",
+        "chains",
+        "dragonbones"
+      ],
+      "output": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/Items/beastparts/page-03.png",
+      "generated_source": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-ceba4fd6-8baf-4cf7-b079-b0493bced4b8.png",
+      "generated_size": [
+        1024,
+        1536
+      ],
+      "generated_mode": "RGB",
+      "output_sha256": "6fda1247ea93d23813397c96b724c94b7d2244908651939d9292ae3ba9501310",
+      "status": "reference_art_checked",
+      "playable_asset_complete": false,
+      "generation_prompt": "Use case: style-transfer. Asset type: enhanced fantasy-game beast-part reference sheet, page 3 of 3. Image 1 is the exact content reference, long Items/beastparts.dmi original. Image 2 is STYLE ONLY: approved polished chunky pixel/voxel characters. Create one readable portrait reference page containing ONLY source rows 19 through 27, in EXACT order. Exactly NINE vertically stacked separate rows, one original item/group per row. Header upper left 'Items/beastparts.dmi'. Dark charcoal background, readable pale labels on left, item sprites centered right. Render clean faceted pixel/voxel materials, crisp dark outlines and upper-left highlights, while retaining original silhouettes, orientations, colors and contents. Row1 label 'egg-green': one upright green mottled egg. Row2 'egg-sand': one upright sand-gold mottled egg. Row3 'egg-blue': one upright cobalt blue mottled egg. Row4 'egg-zombie': one upright muted gray-green mottled egg. Row5 'eggsac': one small white pearly cluster of bundled overlapping rounded egg sacs, matching the source white cluster silhouette. Row6 'nest': one round empty nest formed by a rough ring of gray-brown/tan stones around a dark empty center, viewed obliquely from above; no eggs inside. Row7 'webnest': one white-gray oval central spiderweb pouch with several thin white spoke-like strands projecting outward, exactly as the original; no spider or creature. Row8 'chains': one compact coil of interlinked charcoal-gray metal chains with pale edge highlights, retaining a loose short end at right. Row9 'dragonbones': one small group of pale ivory-yellow curved crossed long bones, following the original two-branch bone silhouette, no skull or complete skeleton. Labels exactly as quoted each appearing once with its own matching item. Keep all nine items fully inside frame with generous margins. No earlier source states, no duplicates, no omissions, no row merging, no added items or characters, no additional text, no border, no watermark. This is enhanced reference artwork, not a runtime sprite atlas.",
+      "generation_calls": 1,
+      "repair_calls": 1,
+      "repair_prompt": "Use case: precise-object-edit. Edit this enhanced Items/beastparts.dmi reference page with ONE targeted correction only. In the 'chains' row, the short chain end floating separately to the right of the coil must be connected to the main coil by linked metal chain. Make this entire row depict ONE continuous coiled chain with an attached short end, not an isolated extra chain segment. Keep the compact overall size, dark metal material and bright pixel-edge highlights. Preserve EVERY other pixel-art object's identity, color, orientation and relative placement, all nine rows, dark charcoal background, full frame and all text exactly unchanged: header 'Items/beastparts.dmi'; labels top to bottom 'egg-green', 'egg-sand', 'egg-blue', 'egg-zombie', 'eggsac', 'nest', 'webnest', 'chains', 'dragonbones'. Do not omit, duplicate, merge, crop or add any item, and do not redesign the other eight item groups. Keep reference page composition, dimensions and polished crisp pixel/voxel look. No extra text, watermark or borders.",
+      "rejected_candidate": "/Users/kiwimango/.codex/generated_images/01a16eb2-fffa-75c2-b6cb-54f5b797ad15/exec-78437f70-a125-470b-8ea1-e14f24758b39.png",
+      "rejected_reason": "Chain tail appeared as separate floating component; replaced by repaired candidate.",
+      "checks": {
+        "png_decodes": true,
+        "expected_rows": 9,
+        "observed_rows": 9,
+        "expected_item_groups": 9,
+        "observed_item_groups": 9,
+        "header_expected": "Items/beastparts.dmi",
+        "header_observed": "Items/beastparts.dmi",
+        "labels_expected": [
+          "egg-green",
+          "egg-sand",
+          "egg-blue",
+          "egg-zombie",
+          "eggsac",
+          "nest",
+          "webnest",
+          "chains",
+          "dragonbones"
+        ],
+        "labels_observed": [
+          "egg-green",
+          "egg-sand",
+          "egg-blue",
+          "egg-zombie",
+          "eggsac",
+          "nest",
+          "webnest",
+          "chains",
+          "dragonbones"
+        ],
+        "text_verbatim": true,
+        "correct_order": true,
+        "missing_states": [],
+        "extra_states": [],
+        "missing_item_groups": [],
+        "extra_item_groups": [],
+        "no_row_merging": true,
+        "no_cropped_content": true,
+        "readability": "pass at generated page resolution",
+        "native_registration_verified": false,
+        "native_metadata_preserved": false,
+        "source_transparency_preserved": false
+      },
+      "notes": "Nine source object groups present: green/sand/blue/gray-green eggs, white egg-sac cluster, empty stone-rimmed nest, spoke-strand web pouch, one continuous coiled chain with attached short end, crossed pale bones. Initial candidate had floating chain tail; targeted built-in repair connected it. Rechecked every label and object after repair.",
+      "deviations": [
+        "Layout split into nine-state page at different dimensions than original long sheet.",
+        "Charcoal background has slight generated gradient.",
+        "Rendering reinterprets forms into dimensional pixel artwork."
+      ]
+    }
+  ]
+}

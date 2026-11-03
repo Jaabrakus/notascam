@@ -1,0 +1,542 @@
+{
+  "status": "native_size_standing_pose_pilot_checked",
+  "created_utc": "2026-10-24T17:03:17.855344+00:00",
+  "scope": "Human standing pose only at four yaw angles; not a complete game atlas",
+  "runtime_ready": false,
+  "installed_in_game": false,
+  "source_assets_modified": false,
+  "method": "Existing inflate2 3D voxel geometry; per-voxel normal illumination and geometry-derived ambient occlusion before unchanged render3 rasterization",
+  "prohibited_shortcuts_used": {
+    "ai_reference_downscale": false,
+    "2d_relighting": false,
+    "pasted_bitmap_replacement": false,
+    "paid_api": false
+  },
+  "native_exports": {
+    "frame_size": [
+      64,
+      64
+    ],
+    "mode": "RGBA",
+    "direct_native_rasterization": true,
+    "supersampling": false,
+    "palette_lock": false
+  },
+  "camera": {
+    "pitch": 37,
+    "scale": 0.94,
+    "size": 64,
+    "stretch": 1.2,
+    "foot": 0.890625,
+    "inner": true,
+    "bands": true,
+    "shadow": false,
+    "yaw_degrees": [
+      0,
+      45,
+      90,
+      180
+    ],
+    "fixed_horizontal_center_px": 32,
+    "fixed_ground_anchor_px": 57,
+    "model_rotation_center_voxels": [
+      64.0,
+      63.0
+    ],
+    "framing_note": "One shared projection for every frame. Alpha bounding boxes can differ by yaw because the same 3D volume rotates. No per-frame crop, translation, fit, or resize."
+  },
+  "baseline": {
+    "model": "inflate2.inflate('Human') defaults, sub=2, style=grey, bright=1.06, normal_sigma=2.8",
+    "lighting": {
+      "direction": [
+        -0.5,
+        0.75,
+        -0.45
+      ],
+      "ambient": 0.7,
+      "diffuse": 0.36,
+      "offset": 0.45,
+      "spread": 1.3,
+      "exponent": 0.9
+    },
+    "ao": null
+  },
+  "enhanced": {
+    "lighting": {
+      "direction": [
+        -0.5,
+        0.8,
+        -0.4
+      ],
+      "ambient": 0.64,
+      "diffuse": 0.48,
+      "offset": 0.45,
+      "spread": 1.3,
+      "exponent": 0.88
+    },
+    "ambient_occlusion": {
+      "rad": 3,
+      "out": 4.0,
+      "strength": 0.65,
+      "base": 0.12,
+      "floor": 0.86
+    },
+    "feature_rule": "Model lit mask retains original eye/mouth/painted-feature colors and AO=1",
+    "material_implementation": "Float RGB voxel material multiplied by desired/baseline irradiance before render3. No clipping until render3 final face shading.",
+    "material_irradiance_ratio_range_nonfeature": [
+      0.8853382983858802,
+      1.065969942703046
+    ],
+    "ao_range_occupied": [
+      0.8600000143051147,
+      1.0
+    ],
+    "ao_affected_voxels": 73660,
+    "feature_materials_exactly_preserved": true,
+    "feature_ao_exactly_one": true
+  },
+  "geometry": {
+    "grid_shape": [
+      128,
+      128,
+      128
+    ],
+    "sub": 2,
+    "occupied_voxels": 98044,
+    "owner_sha256": "38f2493df29432011caeac0944a8dc2eb1e2c4824739ef5f34733f9616f02ab3",
+    "normals_sha256": "5a4fbd3ff97dd6232d1de0b3c6ad677d17bf7947dbcd5fb8bd21ec795dab95af",
+    "feature_mask_sha256": "8ccc7796cf0a2ca49eea3fb0a46cdf963cc2f784eeb6b7ad7a970686088918a6",
+    "owner_part_normals_features_center_identical": true
+  },
+  "validation": {
+    "all_native_frames_64x64_rgba": true,
+    "all_baseline_enhanced_alpha_masks_exactly_equal": true,
+    "no_frame_edge_contact": true,
+    "geometry_preserved": true,
+    "visual_review": "Producer and independent reviewer passed native-size standing-pose scope. Portable/cache additions independently inspected without changes to material/camera settings.",
+    "flat_2d_dmi_alpha_or_registration_match_claimed": false,
+    "full_animation_or_equipment_alignment_claimed": false
+  },
+  "numerical_validation": {
+    "all_products_finite": true,
+    "scalar_axis_reference_agrees": true,
+    "matrix_products_checked": 55,
+    "maximum_absolute_difference": 7.105427357601002e-15,
+    "inherited_host_matmul_warning_messages": [
+      "divide by zero encountered in matmul",
+      "invalid value encountered in matmul",
+      "overflow encountered in matmul"
+    ],
+    "render_warning_messages": [
+      "divide by zero encountered in matmul",
+      "invalid value encountered in matmul",
+      "overflow encountered in matmul"
+    ],
+    "handling": "Warnings recorded; corresponding existing-renderer products independently checked for finite values and agreement with einsum. No source renderer changes."
+  },
+  "frames": [
+    {
+      "baseline": {
+        "path": "native-3d/pilot/Human-yaw-000-baseline-64.png",
+        "sha256": "5e7b55412fbad61879ac375129ae147752a6df2f4b6bf5a0b41a764b0335cf24",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          15,
+          7,
+          49,
+          60
+        ],
+        "alpha_sha256": "9ceb470fe22bc65adf8b10e3f4cdb8d73aa45bf5c65aac4908c5f907a1d26d3a",
+        "opaque_pixels": 1422,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "enhanced": {
+        "path": "native-3d/pilot/Human-yaw-000-enhanced-64.png",
+        "sha256": "0d6c70dfac04c4118fec4afa90a87a2a26ea4fdab026160c12d7b585f4aa659e",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          15,
+          7,
+          49,
+          60
+        ],
+        "alpha_sha256": "9ceb470fe22bc65adf8b10e3f4cdb8d73aa45bf5c65aac4908c5f907a1d26d3a",
+        "opaque_pixels": 1422,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "yaw": 0,
+      "alpha_exact_match": true,
+      "changed_visible_rgb_pixels": 1052,
+      "mean_absolute_rgb_delta_visible": 3.7323019221753397,
+      "mean_rgb_delta_visible": 1.4449132676980778
+    },
+    {
+      "baseline": {
+        "path": "native-3d/pilot/Human-yaw-045-baseline-64.png",
+        "sha256": "28c70cce2fb1b91572b11012fb4fae48999db9beb05336b072904e7aa37d99a6",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          18,
+          6,
+          48,
+          63
+        ],
+        "alpha_sha256": "c39244d1bdf6af7d6ae066f438efac56388efa91c9c279750c5f31b88accddec",
+        "opaque_pixels": 1296,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "enhanced": {
+        "path": "native-3d/pilot/Human-yaw-045-enhanced-64.png",
+        "sha256": "717a55ebf2c0a7d98d8cd3278603f2867eb98a213a686b584b3b0e4e30da0780",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          18,
+          6,
+          48,
+          63
+        ],
+        "alpha_sha256": "c39244d1bdf6af7d6ae066f438efac56388efa91c9c279750c5f31b88accddec",
+        "opaque_pixels": 1296,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "yaw": 45,
+      "alpha_exact_match": true,
+      "changed_visible_rgb_pixels": 953,
+      "mean_absolute_rgb_delta_visible": 3.921810699588477,
+      "mean_rgb_delta_visible": 3.037551440329218
+    },
+    {
+      "baseline": {
+        "path": "native-3d/pilot/Human-yaw-090-baseline-64.png",
+        "sha256": "482e2e143769ab996274fd56cdb0178218020a12b18d2e9361dd46d60bac6490",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          20,
+          7,
+          45,
+          62
+        ],
+        "alpha_sha256": "441cf9c35f642321c1785e2fa32c5d5fc8ec32b977ae6823062784e1c4814dbb",
+        "opaque_pixels": 1046,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "enhanced": {
+        "path": "native-3d/pilot/Human-yaw-090-enhanced-64.png",
+        "sha256": "a87c3b8f5453effd78f491d2c143a3d4aae5d81ec54e4fda6d18fb16bd1aa90a",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          20,
+          7,
+          45,
+          62
+        ],
+        "alpha_sha256": "441cf9c35f642321c1785e2fa32c5d5fc8ec32b977ae6823062784e1c4814dbb",
+        "opaque_pixels": 1046,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "yaw": 90,
+      "alpha_exact_match": true,
+      "changed_visible_rgb_pixels": 767,
+      "mean_absolute_rgb_delta_visible": 4.4818355640535374,
+      "mean_rgb_delta_visible": 3.594008922880816
+    },
+    {
+      "baseline": {
+        "path": "native-3d/pilot/Human-yaw-180-baseline-64.png",
+        "sha256": "bf1a2ed8df583717a6cd63e3f831e8b36d1655b0f5880e85ed88e12d123ce2e7",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          15,
+          7,
+          49,
+          58
+        ],
+        "alpha_sha256": "364d6810f3c510f09ad5abc18f42adedc7169d559f02bca02b94620de2ae185a",
+        "opaque_pixels": 1389,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "enhanced": {
+        "path": "native-3d/pilot/Human-yaw-180-enhanced-64.png",
+        "sha256": "8ac7b5995e764da766c56c8ddb134d152e206a543916e69b3383fa22d5bc733d",
+        "size": [
+          64,
+          64
+        ],
+        "mode": "RGBA",
+        "alpha_bbox": [
+          15,
+          7,
+          49,
+          58
+        ],
+        "alpha_sha256": "364d6810f3c510f09ad5abc18f42adedc7169d559f02bca02b94620de2ae185a",
+        "opaque_pixels": 1389,
+        "alpha_values": [
+          0,
+          255
+        ],
+        "touches_frame_edge": false
+      },
+      "yaw": 180,
+      "alpha_exact_match": true,
+      "changed_visible_rgb_pixels": 1103,
+      "mean_absolute_rgb_delta_visible": 5.48836093112551,
+      "mean_rgb_delta_visible": -1.476841852651788
+    }
+  ],
+  "preview": {
+    "path": "native-3d/pilot/Human-comparison-6x-nearest.png",
+    "sha256": "f22dd4c1f73e8f35edf1d24cdcc8b0d96925279d5208edf54d9d7db857544bc6",
+    "size": [
+      1584,
+      1010
+    ],
+    "interpolation": "nearest",
+    "enlargement": 6,
+    "presentation_only": true
+  },
+  "script": {
+    "path": "_tools/native_voxel_pilot.py",
+    "sha256": "541e1c31f16c20881b59f12576488bd39322cd5752c560978760a2a155c4b5af"
+  },
+  "cache": {
+    "recipe_key": "7574a7b8c85208d992b24cd8d90e1c5f97021a437f549cc48d4dc91c16abeca7",
+    "recipe": {
+      "schema": 1,
+      "subject": "Human",
+      "pose": "default standing",
+      "model_call": "inflate2.inflate('Human') with repository defaults",
+      "camera": {
+        "pitch": 37,
+        "scale": 0.94,
+        "size": 64,
+        "stretch": 1.2,
+        "foot": 0.890625,
+        "inner": true,
+        "bands": true,
+        "shadow": false,
+        "yaw_degrees": [
+          0,
+          45,
+          90,
+          180
+        ]
+      },
+      "enhanced_light": {
+        "direction": [
+          -0.5,
+          0.8,
+          -0.4
+        ],
+        "ambient": 0.64,
+        "diffuse": 0.48,
+        "offset": 0.45,
+        "spread": 1.3,
+        "exponent": 0.88
+      },
+      "enhanced_ao": {
+        "rad": 3,
+        "out": 4.0,
+        "strength": 0.65,
+        "base": 0.12,
+        "floor": 0.86
+      },
+      "native_frame": [
+        64,
+        64
+      ],
+      "script_sha256": "541e1c31f16c20881b59f12576488bd39322cd5752c560978760a2a155c4b5af",
+      "voxel_python_sources": {
+        "angles.py": "066176a732f9cea043cdb8db33b307fd1d9bca4ce49827346130cfbac064f0e4",
+        "anglesheet.py": "7f75e15f65cb180daf66ecd0b64a66705212d19b496128410a2c0bab39b53bbb",
+        "anim.py": "aa750a52a0b4c50840d05ede523c341b58857ca239ae9d17ca533c867bd67521",
+        "anim2d.py": "64d2aca42f4482d7543526b83d96fe499878323db6888e7770a9db9153a767c9",
+        "armstyles.py": "4b41385ca34316de190fb7490f7169abd6b17d8a9764a69b203765f6d801d0e4",
+        "attempts.py": "213234056732b5f055dc2cd7252de98922072d7a6ad656b20ebb4a3cee7c7447",
+        "bclose.py": "84a46520aa44e4ef85cd59640d98dd01426c7698957ecbe2b7ded51c19e74841",
+        "build3d.py": "4d3ec2e4760f920403e9ef4677cfdf7389fca3ce20c44ffc78fd8736cd0700da",
+        "build3d10.py": "b48b1b274e0219a47c3c5314f1cb93ade8432102a06b1daf50f661e1b1c81e91",
+        "build3d11.py": "5e4ce513993f9fb5af93029daea8e720e3df99d22479ddf4a6a86a5c0e5a8f6e",
+        "build3d12.py": "b8cb826a1d9ce237d41a66fe9c9a6d1a417fc9a9ea54857c54ba708d4868cbd4",
+        "build3d2.py": "291d6c98404abf4c69ed4e342f85e71d56ccd1053c4846089b2e81fa013734f9",
+        "build3d3.py": "1ff27f561f883d5dd709bc537c7afbd4dccd78217289a421b50728d2e86b0cc7",
+        "build3d4.py": "05d40900b6957bfa1ed72ec26b547b2aafe38ea4b98c46b80fb9ac5d02ae35d9",
+        "build3d5.py": "d390d960819ead860c359da495da09f85e28451716b6d590469e5bc40e74ca4e",
+        "build3d6.py": "d03603b866514460fa0791bd80f81527bf07a8351cb64b139f04a25e1cc06223",
+        "build3d7.py": "a75a89a54a67274d6a7497c2f781f922a8cef5eefe206dac0fdc2936a4fa4197",
+        "build3d8.py": "9e93208c4f4136efbe7c571dd324ca0b14d566926b20bedc3103bb925dbc2389",
+        "build3d9.py": "b083f9705216ea2c827a2eab1f816a32ad9be4f94838a6006cb5772b7c277600",
+        "carve.py": "01ee28d08c88099f768be9bb7feed30c2784421da21972ae143e7b981e8a0500",
+        "closeup.py": "85328d1cb90498ae927cf0cc233200addc6459b71087eda10b22a6f4934033bf",
+        "compare.py": "16c8e5c4208fa352ddf8a180c0d8486d9f325032a2910077c3dae009916bf043",
+        "compose64.py": "a2ee4ba696a5495f545680df5544f2e7bb941b453eb6536eb2cfcb6017f358b5",
+        "dmi.py": "4d46234eca273a42c16cd58529e9222f01914b50ffcee52b20f1783adf44940a",
+        "enhance2d.py": "0350408892712913873c445a75d0241fe8127b798e9d4ce39fa0fe2e62763185",
+        "export_sprites.py": "21e171965830d78bd7eedafdd401ab1fba2344a96a64de297596055b3a9a6db0",
+        "export_sprites_lib.py": "b372730d28c01faae80577c925e9c3444aadc98ae983e727d12d3984033a46f8",
+        "faces.py": "3a064abc0df53d1a462d8b23985eac2e275a111a5cba17ba3e807f7d38254983",
+        "gear3d.py": "2f526d29f92d9505eb321bd57893366c49e2ec7fae8de6d168c739b7d7ac3b22",
+        "gearsheet.py": "70cec2e64187f15a6593a42cd33e880009ed91b445d3f64fb63c23847fd10ff6",
+        "headcmp.py": "985561ef2aa6c8cc0196eaae23edf7f3fc59844c11ffe3c9450533d3d8221412",
+        "headratio.py": "d33c4ad217ffdc573128deafcb79d190bdb51e7db5c025a4ce318562e32ce828",
+        "heads.py": "aba651e7af68d4d5a2db8a7f07b274c35ee00c85cbbb3db8e63c5238ed537ca7",
+        "inflate.py": "8c9a9b6b40a835631cc812fefb7495f9febc87dccdbcec241e175a2757cbe146",
+        "inflate2.py": "ce516842b908a0a19fccc5020b4ce1770bf1fe47a7195e219627d3331a44cb03",
+        "landmarks.py": "50e01ef6d2f1b91f69b8a0728290f68fe0f316b8210cad6bbef6fc5d8ee7495b",
+        "matview.py": "87e507e17b9ccee7fbbd3132248fcf3da9f45ed7a07e1b0676523cbfa4724e4f",
+        "partmap.py": "fd4be5a416ce83bb23f8252c308f2b00fcb49876390777cfc372417cc2c9021e",
+        "poses.py": "65302015d7ae8e9d0c1f6249a891a818965684aa56de1292815b694205cae0a9",
+        "racebody.py": "877f080602d759a0573db7ac6a14561fb893a7c47a6a49c0a5d810ba5258287a",
+        "races.py": "742c5b49cd62715659fa037583239257387ff220027a8ff5b94748380b481b1d",
+        "refsheet.py": "3590f340f3c8fa7186034ab6b6b27ba180c3aecc57c8c4257380bd0bdf03a7c2",
+        "render2.py": "5919372f979567c34941379df85b21ac215b136bc33f08822f94b74cc610667c",
+        "render3.py": "ec294d4cb4a5a3bd134a28fb84961bf9c5425bd208155b453dd5891608ffc2e8",
+        "review.py": "74530a94ff6da4456b9b58a1bff90cb38a193c47798bb68af8c132cb7cad2fb3",
+        "sheet2.py": "251f39b79d2f97421a29519730995b3a50880718a72341e8f3eba8dfaedb0906",
+        "sheet3.py": "0eefde8870d8ff937412c029def25db14dacff1490a765bed460d7a3c3e26670",
+        "showcase.py": "34af7ca6e9b0ce4994e143fa328b7f6de140c32cf56020f5e37ac69b78789da4",
+        "sidecheck.py": "d0c8ceab6c4f54c194d16b3183f91462e470b37a8ae87dd3e8ed6c5451c9d1bc",
+        "spritemap.py": "ea91352fba5368358e8e120b9685f8d4edc3ab5fac3a1744fd36852ae8fd7381",
+        "views.py": "792a4f883be047851277bace86358fe540600d7002e07f0bec22a6179b5c588a"
+      },
+      "human_dmi_sha256": "127a67dce9e43d68eb7254cac3cad0bbaee37d4d7f02127c224d995eaf823c17",
+      "optional_measurement_helmet_sha256": "cd096ace850ae606b07f9d1dac66496dd700b697e01a0f60ef4b6bab8c723eae",
+      "dependencies": {
+        "numpy": "2.0.2",
+        "Pillow": "11.3.0"
+      },
+      "presentation_font_sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9"
+    },
+    "policy": "Skip rendering only when recipe and all eight native frame plus preview hashes match",
+    "cache_state_at_creation": "rebuilt",
+    "validation_report": "native-3d/pilot/cache-validation.json",
+    "tested_unchanged_skip": true,
+    "tested_read_only_setting_source_and_output_invalidation": true,
+    "tested_relocated_delivery_copy": true
+  },
+  "source_project_resolution": {
+    "project_root": "/Users/kiwimango/Downloads/Dungeon-Master-master",
+    "manifest": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_meta/manifest.json",
+    "environment_override": false
+  },
+  "source_provenance": [
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/voxel/inflate2.py",
+      "sha256": "ce516842b908a0a19fccc5020b4ce1770bf1fe47a7195e219627d3331a44cb03"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/voxel/render3.py",
+      "sha256": "ec294d4cb4a5a3bd134a28fb84961bf9c5425bd208155b453dd5891608ffc2e8"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/voxel/anglesheet.py",
+      "sha256": "7f75e15f65cb180daf66ecd0b64a66705212d19b496128410a2c0bab39b53bbb"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/voxel/refsheet.py",
+      "sha256": "3590f340f3c8fa7186034ab6b6b27ba180c3aecc57c8c4257380bd0bdf03a7c2"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/voxel/build3d9.py",
+      "sha256": "b083f9705216ea2c827a2eab1f816a32ad9be4f94838a6006cb5772b7c277600"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/voxel/landmarks.py",
+      "sha256": "50e01ef6d2f1b91f69b8a0728290f68fe0f316b8210cad6bbef6fc5d8ee7495b"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/game/Icons/Remastered/Races64/Human.dmi",
+      "sha256": "127a67dce9e43d68eb7254cac3cad0bbaee37d4d7f02127c224d995eaf823c17"
+    },
+    {
+      "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/standalone/remastered/art/ref/Human-34.png",
+      "sha256": "fd368bef73727a54f9f099199e5eec27b69c45a9f417c19fa8b47a0f4f0f073d"
+    }
+  ],
+  "remaining_work": [
+    "Independent visual review of native-size result",
+    "Calibrate additional race/material families before bulk processing",
+    "Full native animation/state/direction and equipment alignment work"
+  ],
+  "user_feedback": "Optional; broader work already authorized. No additional approval gate is imposed.",
+  "producer_visual_review": {
+    "passed": true,
+    "checked": [
+      "All four baseline/enhanced angle pairs in nearest-neighbor preview",
+      "Actual 64x64 enhanced yaw45 frame",
+      "Original Human-34 and approved eight-angle reference"
+    ],
+    "observations": [
+      "Clearer head and limb lighting with restrained brighter planes",
+      "Mild creases retain original silhouette and facial geometry",
+      "Eye contrast, feet, transparent margins, and standing pose retained"
+    ],
+    "repairs": []
+  },
+  "independent_review": {
+    "path": "_meta/native-voxel-pilot-review.json",
+    "status": "pass_native_frame_pilot_scope"
+  },
+  "visual_style_reference": {
+    "path": "/Users/kiwimango/Downloads/Dungeon-Master-master/output/imagegen/BOTD-sprites-enhanced/_reference-samples/races-8-angles-enhanced.png",
+    "sha256": "57fc2e06dc881dc5a6ceecb8026361d6134f984a51d12ae2ff72dc59a8038033",
+    "used_as_pixels_or_texture": false,
+    "purpose": "Visual inspection only"
+  }
+}
